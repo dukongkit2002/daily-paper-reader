@@ -6,47 +6,46 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-05-07 ~ 2026-06-05
-- 运行时间：2026-06-05 05:59:37 UTC
+- 最新运行日期：2026-06-05
+- 运行时间：2026-06-05 22:02:42 UTC
 - 运行状态：成功
 - 本次总论文数：8
-- 精读区：0
-- 速读区：8
+- 精读区：4
+- 速读区：4
 
 ### 今日简报（AI）
-本期速读8篇论文，聚焦3项高分研究：干电极与凝胶脑电的认知负荷灵敏度对比、联合稀疏编码驱动情境重构、以及α/θ振荡区分决策风险等级。  
-最值得关注：新型干电极可穿戴脑电在认知负荷评估中性能可比肩传统凝胶设备，且大脑α与θ波能精准反映决策中的递增风险。  
-建议对神经技术感兴趣的读者，留意低成本干电极在日常认知监测中的应用潜力。
-- 详情：[/20260507-20260605/README](/20260507-20260605/README)
+今日精读两篇高分研究，聚焦脑电情感解码的Morlet谱变换与AI健康谣言中的智识谦逊认知过滤机制。  
+情感脑机接口迎来更稳健的跨被试解码方案，而智识谦逊可成为抵御虚假健康信息的关键心理防线。  
+建议关注可穿戴脑电增强技术与经颅交流电相位调控工作记忆的速读快讯，拓展实际应用视野。
+- 详情：[/202606/05/README](/202606/05/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Dive into Waves: Morlet Spectral Transformer for Cross-Subject Emotion Decoding from EEG](/202606/05/2606.00884v1-dive-into-waves-morlet-spectral-transformer-for-cross-subject-emotion-decoding-from-eeg)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：提出基于频谱功率的Morlet频谱Transformer用于EEG情绪识别
+2. [Intellectual Humility as a Cognitive Filter for AI-Generated Health Misinformation. An Evolutionary Perspective on Epistemic Vigilance](/202606/05/2606.03377v1-intellectual-humility-as-a-cognitive-filter-for-ai-generated-health-misinformation-an-evolutionary-perspective-on-epistemic-vigilance)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：研究智力谦逊（一种批判性思维倾向）如何影响对AI生成的健康对话（社会性科学议题）的评价。
+3. [Frequency and Laminar Profile of Feature Specific Visual Activity Revealed by Interleaved EEG-fMRI](/202606/05/biorxiv-10-1101-2024-07-31-605816-v3-frequency-and-laminar-profile-of-feature-specific-visual-activity-revealed-by-interleaved-eeg-fmri)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：在视觉认知加工中进行EEG相对功率谱分析
+4. [Engagement-Dependent Neural Entrainment Underlies Dissociable tACS Effects on Item and Sequence Working Memory](/202606/05/biorxiv-10-64898-2026-05-27-728324-v1-engagement-dependent-neural-entrainment-underlies-dissociable-tacs-effects-on-item-and-sequence-working-memory)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：前额叶theta刺激分离增强项目和序列工作记忆，揭示执行功能角色
 
 ### 速读区论文标签
-1. [Evaluating the Sensitivity of Dry and Gel-Based Wearable EEG for Cognitive Load Estimation](/20260507-20260605/biorxiv-10-64898-2026-05-05-723048-v1-evaluating-the-sensitivity-of-dry-and-gel-based-wearable-eeg-for-cognitive-load-estimation)  
-   标签：评分：10.0/10、query:cog-eeg-mpfc
-   evidence：直接使用频谱特征比较EEG系统在认知负荷估计中的表现。
-2. [Joint sparse coding and temporal dynamics support context reconfiguration](/20260507-20260605/2605.10178v1-joint-sparse-coding-and-temporal-dynamics-support-context-reconfiguration)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：发现小鼠内侧前额叶皮层中联合稀疏编码与时间动态是情境重配置的机制，涉及mPFC认知控制
-3. [Alpha and theta oscillations differentiate escalating risk levels during reward anticipation in sequential decision making](/20260507-20260605/biorxiv-10-1101-2025-07-08-663699-v4-alpha-and-theta-oscillations-differentiate-escalating-risk-levels-during-reward-anticipation-in-sequential-decision-making)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：在序列决策任务中使用EEG频谱功率分析来区分风险水平
-4. [A spectral partial information decomposition framework for quantifying information about cognitive variables in oscillatory brain networks](/20260507-20260605/biorxiv-10-64898-2026-05-13-724846-v1-a-spectral-partial-information-decomposition-framework-for-quantifying-information-about-cognitive-variables-in-oscillatory-brain-networks)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：引入谱部分信息分解框架，量化振荡脑网络中认知变量在功率和相位贡献中的信息
-5. [Internal state dynamically gates task-specific attractor dynamics in prefrontal cortex](/20260507-20260605/biorxiv-10-64898-2026-05-20-726585-v1-internal-state-dynamically-gates-task-specific-attractor-dynamics-in-prefrontal-cortex)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：记录小鼠mPFC并结合RNN模型，揭示内部状态对工作记忆吸引子动力学的调控，直接显示mPFC在执行功能中的作用。
-6. [Choice-driven remapping of action- and stimulus-anchored value in human single neurons](/20260507-20260605/biorxiv-10-64898-2026-05-28-728546-v1-choice-driven-remapping-of-action--and-stimulus-anchored-value-in-human-single-neurons)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：人类腹内侧前额叶皮层（vmPFC）单神经元活动在基于价值的决策中
-7. [Hippocampal and prefrontal contributions to memory-guided navigation depend on task epoch](/20260507-20260605/biorxiv-10-64898-2026-05-29-728861-v1-hippocampal-and-prefrontal-contributions-to-memory-guided-navigation-depend-on-task-epoch)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：直接检验mPFC在延迟工作记忆任务中的作用，发现其在早期臂穿越阶段而非延迟期必要。
-8. [Spatiotemporal Decoding of Explore-Exploit Decisions in the Human Brain](/20260507-20260605/biorxiv-10-64898-2026-06-01-729427-v1-spatiotemporal-decoding-of-explore-exploit-decisions-in-the-human-brain)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：研究vmPFC在探索-利用决策这一高级认知执行功能中的作用。
+1. [Robust Frequency-Calibrated Virtual EEG Channel Generation from Four Frontal Electrodes for Wearable EEG Augmentation](/202606/05/2605.29263v1-robust-frequency-calibrated-virtual-eeg-channel-generation-from-four-frontal-electrodes-for-wearable-eeg-augmentation)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：采用Welch功率谱密度校准的频率校准EEG生成方法，支持频谱分析。
+2. [Phase of transcranial alternating current stimulation modulates working memory processing speed](/202606/05/biorxiv-10-64898-2026-05-26-727793-v1-phase-of-transcranial-alternating-current-stimulation-modulates-working-memory-processing-speed)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：通过前额叶theta-tACS调节工作记忆，表明前额叶在高级认知中的作用
+3. [Strong mnemonic prediction errors increase cognitive control, attention, and arousal](/202606/05/biorxiv-10-1101-2025-10-02-680173-v2-strong-mnemonic-prediction-errors-increase-cognitive-control-attention-and-arousal)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：使用头皮脑电图在记忆任务中测量额叶theta功率，将频谱功率与认知控制联系起来
+4. [Distinct associations between multimodal brain measures and psychopathology domains predict adolescent functioning](/202606/05/biorxiv-10-64898-2026-06-03-729937-v1-distinct-associations-between-multimodal-brain-measures-and-psychopathology-domains-predict-adolescent-functioning)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：考查包括执行控制网络在内的多模态脑测量与精神病理的关联
 
 
 <div class="dpr-home-promo-card">
