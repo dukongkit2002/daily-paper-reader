@@ -6,46 +6,43 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-05
-- 运行时间：2026-06-05 22:02:42 UTC
+- 最新运行日期：2026-06-06
+- 运行时间：2026-06-06 21:23:21 UTC
 - 运行状态：成功
-- 本次总论文数：8
-- 精读区：4
-- 速读区：4
+- 本次总论文数：7
+- 精读区：1
+- 速读区：6
 
 ### 今日简报（AI）
-今日精读两篇高分研究，聚焦脑电情感解码的Morlet谱变换与AI健康谣言中的智识谦逊认知过滤机制。  
-情感脑机接口迎来更稳健的跨被试解码方案，而智识谦逊可成为抵御虚假健康信息的关键心理防线。  
-建议关注可穿戴脑电增强技术与经颅交流电相位调控工作记忆的速读快讯，拓展实际应用视野。
-- 详情：[/202606/05/README](/202606/05/README)
+今日脑科学日报聚焦计算与认知交叉前沿：精读了一篇用PFC环路的短期突触可塑性实现多步目标规划的计算模型，并速览了工作记忆干扰抑制、EEG个体化解耦与精神分裂症伽马振荡易损性等新见解。  
+值得重点关注：短期可塑性如何为灵活决策提供稳定动态，以及工作记忆中通过beta振荡转换“不选”项目来减少干扰的机制，两项研究共同指向脑对目标信息流的高效调控。  
+对读者而言，若想跟进，可先围绕“目标导向行为的神经计算”线索，对比精读模型的储备池框架与速读中的干扰抑制实验，看理论计算与认知实验如何彼此印证。
+- 详情：[/202606/06/README](/202606/06/README)
 
 ### 精读区论文标签
-1. [Dive into Waves: Morlet Spectral Transformer for Cross-Subject Emotion Decoding from EEG](/202606/05/2606.00884v1-dive-into-waves-morlet-spectral-transformer-for-cross-subject-emotion-decoding-from-eeg)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：提出基于频谱功率的Morlet频谱Transformer用于EEG情绪识别
-2. [Intellectual Humility as a Cognitive Filter for AI-Generated Health Misinformation. An Evolutionary Perspective on Epistemic Vigilance](/202606/05/2606.03377v1-intellectual-humility-as-a-cognitive-filter-for-ai-generated-health-misinformation-an-evolutionary-perspective-on-epistemic-vigilance)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：研究智力谦逊（一种批判性思维倾向）如何影响对AI生成的健康对话（社会性科学议题）的评价。
-3. [Frequency and Laminar Profile of Feature Specific Visual Activity Revealed by Interleaved EEG-fMRI](/202606/05/biorxiv-10-1101-2024-07-31-605816-v3-frequency-and-laminar-profile-of-feature-specific-visual-activity-revealed-by-interleaved-eeg-fmri)  
+1. [Short-Term Synaptic Plasticity Stabilizes Goal-Conditioned Dynamics in a PFC-Inspired Reservoir Model for Multistep Goal-Directed Action Planning](/202606/06/2606.03481v1-short-term-synaptic-plasticity-stabilizes-goal-conditioned-dynamics-in-a-pfc-inspired-reservoir-model-for-multistep-goal-directed-action-planning)  
    标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：在视觉认知加工中进行EEG相对功率谱分析
-4. [Engagement-Dependent Neural Entrainment Underlies Dissociable tACS Effects on Item and Sequence Working Memory](/202606/05/biorxiv-10-64898-2026-05-27-728324-v1-engagement-dependent-neural-entrainment-underlies-dissociable-tacs-effects-on-item-and-sequence-working-memory)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：前额叶theta刺激分离增强项目和序列工作记忆，揭示执行功能角色
+   evidence：采用PFC启发的储备池模型，研究短期突触可塑性如何稳定目标条件动力学以进行多步动作规划，直接针对mPFC在执行功能中的作用
 
 ### 速读区论文标签
-1. [Robust Frequency-Calibrated Virtual EEG Channel Generation from Four Frontal Electrodes for Wearable EEG Augmentation](/202606/05/2605.29263v1-robust-frequency-calibrated-virtual-eeg-channel-generation-from-four-frontal-electrodes-for-wearable-eeg-augmentation)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：采用Welch功率谱密度校准的频率校准EEG生成方法，支持频谱分析。
-2. [Phase of transcranial alternating current stimulation modulates working memory processing speed](/202606/05/biorxiv-10-64898-2026-05-26-727793-v1-phase-of-transcranial-alternating-current-stimulation-modulates-working-memory-processing-speed)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：通过前额叶theta-tACS调节工作记忆，表明前额叶在高级认知中的作用
-3. [Strong mnemonic prediction errors increase cognitive control, attention, and arousal](/202606/05/biorxiv-10-1101-2025-10-02-680173-v2-strong-mnemonic-prediction-errors-increase-cognitive-control-attention-and-arousal)  
+1. [Prioritization in working memory reduces interference via a beta-linked transformation of the not-selected item](/202606/06/biorxiv-10-64898-2026-02-24-707753-v3-prioritization-in-working-memory-reduces-interference-via-a-beta-linked-transformation-of-the-not-selected-item)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：使用头皮脑电图在记忆任务中测量额叶theta功率，将频谱功率与认知控制联系起来
-4. [Distinct associations between multimodal brain measures and psychopathology domains predict adolescent functioning](/202606/05/biorxiv-10-64898-2026-06-03-729937-v1-distinct-associations-between-multimodal-brain-measures-and-psychopathology-domains-predict-adolescent-functioning)  
+   evidence：工作记忆优先级相关的EEG 15 Hz相位重置
+2. [A UNIVERSAL FRAMEWORK FOR DISENTANGLING SUBJECT-SPECIFIC SIGNATURES IN EEG SIGNALS](/202606/06/biorxiv-10-64898-2026-05-26-727876-v1-a-universal-framework-for-disentangling-subject-specific-signatures-in-eeg-signals)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：考查包括执行控制网络在内的多模态脑测量与精神病理的关联
+   evidence：用于解缠个体特异性EEG特征的深度学习框架，可用于认知倾向评估中的个体差异分析
+3. [Differential Vulnerability of Stimulus-Locked and Persistent Gamma Oscillations: Implications in Schizophrenia](/202606/06/biorxiv-10-64898-2026-05-29-728634-v1-differential-vulnerability-of-stimulus-locked-and-persistent-gamma-oscillations-implications-in-schizophrenia)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：工作记忆依赖于前额叶皮层的gamma振荡，论文比较刺激锁定与持续性gamma，将前额叶gamma与认知维持相联系
+4. [Low-dimensional prefrontal representations of objects during working memory](/202606/06/biorxiv-10-64898-2026-06-03-729348-v2-low-dimensional-prefrontal-representations-of-objects-during-working-memory)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：工作记忆期间前额叶皮层的低维表征，一项关键执行功能
+5. [Theta gates and routes information in the frontal cortex](/202606/06/biorxiv-10-64898-2026-06-03-729810-v1-theta-gates-and-routes-information-in-the-frontal-cortex)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：Theta振荡在前额叶皮层门控和路由信息，研究背外侧、腹外侧前额叶和额叶眼区在分类任务中的作用，与前额叶认知协调相关
+6. [Theta phase and theta-gamma coupling organise the spoken language network](/202606/06/biorxiv-10-64898-2026-06-03-729880-v2-theta-phase-and-theta-gamma-coupling-organise-the-spoken-language-network)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：内侧额颞网络中的theta相位耦合支持语义词汇检索，暗示内侧前额叶参与语言产生
 
 
 <div class="dpr-home-promo-card">

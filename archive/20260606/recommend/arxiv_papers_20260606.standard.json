@@ -1,0 +1,279 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-06T21:17:07.543174+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 6,
+    "quick_skim_target": 11,
+    "quick_selected": 6
+  },
+  "deep_dive": [
+    {
+      "id": "2606.03481v1",
+      "source": "arxiv",
+      "title": "Short-Term Synaptic Plasticity Stabilizes Goal-Conditioned Dynamics in a PFC-Inspired Reservoir Model for Multistep Goal-Directed Action Planning",
+      "abstract": "The prefrontal cortex (PFC) maintains goal information for action planning, but how recurrent circuits preserve it in an action-usable form over behavioral timescales remains unclear. Here we ask whether short-term synaptic plasticity (STP) can stabilize goal information as action-usable, goal-conditioned dynamics. We incorporated STP into a PFC-inspired reservoir computing model with basal-ganglia-inspired temporal-difference readout learning, and evaluated paired models with and without STP across 100 independently generated networks in a multistep goal-directed action-selection task with delayed execution. Goal identity was highly decodable during the delay even without STP, so STP was not required to form a linearly readable goal representation. Under state noise, however, success without STP fell from 75.8% to 49.5%, whereas the model with STP remained essentially unchanged (91.8% without noise versus 89.2% under noise; paired Cohen's dz=1.31). Time-resolved decoding, state-space separability, and action-value-difference analyses showed that STP preserved goal information as action-relevant goal-conditioned dynamics available at later action opportunities. Gain-matched and STP-state perturbation controls argued against a simple fixed recurrent-scaling explanation and supported online, history-dependent synaptic modulation. Effective-connectivity analyses showed delay-period goal-specific patterning that increased toward the later part of the trial with STP, where it should be read as goal- and task-state-conditioned patterning; effective connectivity without STP was time-invariant. A grid search identified a facilitation-dominant range of STP time constants associated with high success rates. These results suggest that STP supports robust goal-conditioned dynamics through dynamic modulation of goal-dependent effective recurrent connectivity.",
+      "authors": [
+        "Jin Nakamura",
+        "Yuichi Katori"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "cs.NE"
+      ],
+      "published": "2026-06-02T10:59:46+00:00",
+      "link": "https://arxiv.org/pdf/2606.03481v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Uses a PFC-inspired reservoir model to investigate how short-term synaptic plasticity stabilizes goal-conditioned dynamics for multistep action planning, directly addressing mPFC's role in executive function",
+      "llm_evidence_cn": "采用PFC启发的储备池模型，研究短期突触可塑性如何稳定目标条件动力学以进行多步动作规划，直接针对mPFC在执行功能中的作用",
+      "llm_evidence": "采用PFC启发的储备池模型，研究短期突触可塑性如何稳定目标条件动力学以进行多步动作规划，直接针对mPFC在执行功能中的作用",
+      "canonical_evidence": "采用PFC启发的储备池模型，研究短期突触可塑性如何稳定目标条件动力学以进行多步动作规划，直接针对mPFC在执行功能中的作用",
+      "llm_tldr_en": "This computational study shows that short-term synaptic plasticity (STP) in a PFC-inspired reservoir model stabilizes goal-conditioned dynamics, enabling robust multistep goal-directed action planning, providing a potential mechanism for how the prefrontal cortex maintains goal information over time.",
+      "llm_tldr_cn": "本研究针对前额叶皮层维持目标信息的问题，构建受PFC启发的储备池模型并引入短期突触可塑性。仿真实验显示，STP能稳定目标导向的神经网络动力学，显著提升多步动作规划任务性能。结果提示STP可能是PFC支持目标导向行为的关键机制，为理解高级认知网络的动态特性提供了新见解。",
+      "llm_tldr": "本研究针对前额叶皮层维持目标信息的问题，构建受PFC启发的储备池模型并引入短期突触可塑性。仿真实验显示，STP能稳定目标导向的神经网络动力学，显著提升多步动作规划任务性能。结果提示STP可能是PFC支持目标导向行为的关键机制，为理解高级认知网络的动态特性提供了新见解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-02-24-707753-v3",
+      "source": "biorxiv",
+      "title": "Prioritization in working memory reduces interference via a beta-linked transformation of the not-selected item",
+      "abstract": "We studied the effects of prioritization in a two-step retrocuing task in which male and female humans hold two items in working memory, and the item not cued by the first cue cannot be dropped because it may be prioritized by the second cue. In Experiment 1, using a dense sampling procedure, recall performance oscillated at 15 Hz in the prioritization task, in comparison to 20 Hz in a matched neutral-cue task. Furthermore, the prioritized item was shielded from bias exerted by the uncued item, as well as by items from the previous trial. In Experiment 2, we sought EEG correlates of these effects while participants performed variants of the two tasks. The prioritization cue uniquely triggered a phase reset at 15 Hz and an increase in oscillatory peaks at this frequency. Burst analysis ruled out bursting as a possible underlying factor. Time-resolved representational similarity analysis (RSA) revealed that the prioritization cue triggered representational transformations that were larger for the uncued item. These results provide evidence that the shielding effects of prioritization may arise from the transformation of the not-prioritized item into an unprioritized state that is implemented and maintained by a mechanism that cycles at 15 Hz.",
+      "authors": [
+        "Fulvio, J. M.",
+        "Postle, B. R."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-04T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.02.24.707753v3.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "EEG correlates of working memory prioritization, including 15 Hz phase reset",
+      "llm_evidence_cn": "工作记忆优先级相关的EEG 15 Hz相位重置",
+      "llm_evidence": "工作记忆优先级相关的EEG 15 Hz相位重置",
+      "canonical_evidence": "工作记忆优先级相关的EEG 15 Hz相位重置",
+      "llm_tldr_en": "This study shows that working memory prioritization triggers a 15 Hz phase reset in EEG, linked to reduced interference, providing neural evidence for active transformation mechanisms in memory.",
+      "llm_tldr_cn": "本研究通过双步回溯线索任务，结合密集采样与EEG记录，揭示了工作记忆优先化过程伴随15 Hz的相位重置，这一振荡特征与干扰减少相关，表明未选项目可能经过动态转换以降低干扰。该发现为理解工作记忆中注意控制与信息保护的神经振荡机制提供了新见解。",
+      "llm_tldr": "本研究通过双步回溯线索任务，结合密集采样与EEG记录，揭示了工作记忆优先化过程伴随15 Hz的相位重置，这一振荡特征与干扰减少相关，表明未选项目可能经过动态转换以降低干扰。该发现为理解工作记忆中注意控制与信息保护的神经振荡机制提供了新见解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-05-26-727876-v1",
+      "source": "biorxiv",
+      "title": "A UNIVERSAL FRAMEWORK FOR DISENTANGLING SUBJECT-SPECIFIC SIGNATURES IN EEG SIGNALS",
+      "abstract": "Extracting stable subject-specific features from EEG signals remains challenging due to their entanglement with transient brain states. We propose a universal neural framework that disentangles subject-specific features from state-dependent components in raw EEG signals. Our approach employs a disentanglement module with a cross-reconstruction objective to isolate subject-specific representations. We validate our framework on EEG-based biometric recognition using two public datasets with leave-one-state-out cross-validation. Results demonstrate significant improvements in out-of-distribution identification accuracy across four different backbone models, confirming our methods universality and plug-and-play capability. This work advances reliable extraction of neural signatures for personalized neurotechnology applications.",
+      "authors": [
+        "Pei, Z."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-05-29T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.05.26.727876v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Deep learning framework for disentangling subject-specific EEG features, useful for individual differences analysis in cognitive disposition assessment",
+      "llm_evidence_cn": "用于解缠个体特异性EEG特征的深度学习框架，可用于认知倾向评估中的个体差异分析",
+      "llm_evidence": "用于解缠个体特异性EEG特征的深度学习框架，可用于认知倾向评估中的个体差异分析",
+      "canonical_evidence": "用于解缠个体特异性EEG特征的深度学习框架，可用于认知倾向评估中的个体差异分析",
+      "llm_tldr_en": "This paper proposes a universal neural framework that disentangles subject-specific features from state-dependent components in raw EEG, validated on biometric recognition. The method's ability to isolate stable individual signatures may facilitate EEG-based assessment of stable cognitive dispositions such as critical thinking, by providing cleaner representations of individual variability.",
+      "llm_tldr_cn": "该文提出一种通用神经框架，从原始EEG信号中解缠出个体特异性特征与状态依赖成分，并在生物特征识别上验证。该方法隔离稳定个体签名的能力可能有助于基于EEG的稳定认知倾向（如批判性思维）评估，通过提供更纯净的个体差异表征。具体而言，框架采用解缠模块与交叉重构目标，强迫模型分离出不受状态影响的个人身份信息。在两个公开数据集上的留出状态交叉验证表明，该方法能大幅提升对未知分布样本的识别准确率，且可即插即用于不同骨干网络。这为建立基于EEG的个体认知倾向评估提供了稳健的特征学习工具，有望应用于批判性思维等稳定特质的神经标记发掘。",
+      "llm_tldr": "该文提出一种通用神经框架，从原始EEG信号中解缠出个体特异性特征与状态依赖成分，并在生物特征识别上验证。该方法隔离稳定个体签名的能力可能有助于基于EEG的稳定认知倾向（如批判性思维）评估，通过提供更纯净的个体差异表征。具体而言，框架采用解缠模块与交叉重构目标，强迫模型分离出不受状态影响的个人身份信息。在两个公开数据集上的留出状态交叉验证表明，该方法能大幅提升对未知分布样本的识别准确率，且可即插即用于不同骨干网络。这为建立基于EEG的个体认知倾向评估提供了稳健的特征学习工具，有望应用于批判性思维等稳定特质的神经标记发掘。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition assessment and EEG correlates of cognitive processing",
+      "matched_requirement_id": "req-10",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-05-29-728634-v1",
+      "source": "biorxiv",
+      "title": "Differential Vulnerability of Stimulus-Locked and Persistent Gamma Oscillations: Implications in Schizophrenia",
+      "abstract": "Working memory depends on gamma oscillations generated across sensory and prefrontal cortices. In sensory cortices such as primary visual cortex (V1), stimulus-locked gamma oscillations encode stimulus information, while in prefrontal cortex (PFC), persistent gamma oscillations maintain this information after the stimulus is removed. In schizophrenia (SZ), gamma power is reduced in both V1 and PFC, consistent with deficits in sensory encoding and working memory maintenance in the illness. These two regimes of gamma oscillations arise from a canonical microcircuit involving pyramidal neurons (PNs) and parvalbumin-expressing interneurons (PVIs). Yet, whether stimulus-locked and persistent gamma oscillations are similarly or differentially vulnerable to synaptic alterations within this circuit in SZ remains unknown. To investigate this question, we used a mean-field model of the PN-PVI circuit generating either stimulus-locked or persistent gamma oscillations. We then assessed the effects of three synaptic alterations found in SZ: lower excitatory drive to PVIs (E[-&gt;]I), lower inhibitory drive to PNs (I[-&gt;]E), and greater variability in E[-&gt;]I synaptic strength. Each alteration produced larger gamma power deficits in the persistent regime than in the stimulus-locked regime. When applied together, these alterations interacted synergistically to reduce gamma power in both regimes, with the persistent regime exhibiting a more pronounced deficit. Among the three parameters, E[-&gt;]I synaptic strength was the strongest contributor to the synergistic loss of gamma power. Two-dimensional bifurcation analyses further revealed that this differential vulnerability arises from a narrower margin of oscillatory stability in the persistent regime, where the parameter values producing maximum gamma power sit closer to the Hopf bifurcation boundary. Together, these findings identify the persistent regime as intrinsically more fragile than the stimulus-locked regime, with the implications for understanding regional patterns of synaptic pathology and cortical gamma oscillations with distinct dynamics in SZ.\n\nAuthor summaryWorking memory depends on stimulus-locked gamma oscillations in sensory cortices such as primary visual cortex (V1) for encoding stimulus information, and persistent gamma oscillations in prefrontal cortex (PFC) for maintaining this information after stimulus offset. In schizophrenia (SZ), gamma power is reduced in both V1 and PFC, and postmortem human brain studies suggest that the underlying synaptic alterations are more severe in V1 than in PFC. Our computational modeling results suggest that this regional pattern arises because persistent gamma oscillations are intrinsically more fragile than stimulus-locked gamma oscillations, so that smaller synaptic alterations are sufficient to disrupt gamma oscillations in PFC while larger alterations are required to produce comparable disruption in V1. Together, these findings give rise to a differential vulnerability model of cortical gamma oscillations in SZ, linking the regional patterns of synaptic pathology to the deficits in gamma oscillations observed across sensory and prefrontal cortices in the illness.",
+      "authors": [
+        "Chung, D. W.",
+        "Ermentrout, G. B."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-05-29T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.05.29.728634v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Working memory depends on gamma oscillations in prefrontal cortex, and the paper examines stimulus-locked vs. persistent gamma, linking prefrontal gamma to cognitive maintenance",
+      "llm_evidence_cn": "工作记忆依赖于前额叶皮层的gamma振荡，论文比较刺激锁定与持续性gamma，将前额叶gamma与认知维持相联系",
+      "llm_evidence": "工作记忆依赖于前额叶皮层的gamma振荡，论文比较刺激锁定与持续性gamma，将前额叶gamma与认知维持相联系",
+      "canonical_evidence": "工作记忆依赖于前额叶皮层的gamma振荡，论文比较刺激锁定与持续性gamma，将前额叶gamma与认知维持相联系",
+      "llm_tldr_en": "This computational study models gamma oscillations in primary visual and prefrontal cortices to explain differential vulnerability in schizophrenia, highlighting the role of prefrontal persistent gamma in working memory maintenance.",
+      "llm_tldr_cn": "该研究针对工作记忆中感觉编码和维持的gamma振荡脆弱性差异问题，利用锥体神经元和PV中间神经元的典型微电路计算模型，模拟刺激锁定与持续性gamma对不同类型回路扰动的响应。结果揭示了两种gamma振荡的差异性脆弱性，可能解释精神分裂症中编码与维持的分离缺陷。这强调了前额叶持续性gamma振荡在工作记忆维持中的关键作用，为理解前额叶在认知功能中的回路机制提供了见解。",
+      "llm_tldr": "该研究针对工作记忆中感觉编码和维持的gamma振荡脆弱性差异问题，利用锥体神经元和PV中间神经元的典型微电路计算模型，模拟刺激锁定与持续性gamma对不同类型回路扰动的响应。结果揭示了两种gamma振荡的差异性脆弱性，可能解释精神分裂症中编码与维持的分离缺陷。这强调了前额叶持续性gamma振荡在工作记忆维持中的关键作用，为理解前额叶在认知功能中的回路机制提供了见解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-03-729348-v2",
+      "source": "biorxiv",
+      "title": "Low-dimensional prefrontal representations of objects during working memory",
+      "abstract": "There is an ongoing debate regarding the dimensionality of neural representations. Some accounts emphasize representation within low-dimensional subspaces or manifolds, while others suggest high-dimensional neural codes where neurons respond independently. Here, we investigate the dimensionality of prefrontal cortex (PFC) representations of visual objects held in working memory. We found that object representations are low-dimensional, occupying only 3-6 effective dimensions during both encoding and maintenance in working memory. Control analyses indicate this dimensionality was not limited by the number of objects tested (40) or neurons sampled (~100). We also compared PFC dimensionality to that of a well-established deep neural network model of its inferotemporal (IT) inputs and found an approximately 7-fold dimensionality reduction in PFC. These results suggest object representations are compressed into a low-dimensional manifold in PFC, which might be related to attractor dynamics for working memory, and might facilitate interaction with other variables and cognitive control.",
+      "authors": [
+        "Sakelliadou, D. G.",
+        "Brincat, S. L.",
+        "Lundqvist, M.",
+        "Miller, E. K."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-05T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.03.729348v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Low-dimensional representations in prefrontal cortex during working memory, a key executive function",
+      "llm_evidence_cn": "工作记忆期间前额叶皮层的低维表征，一项关键执行功能",
+      "llm_evidence": "工作记忆期间前额叶皮层的低维表征，一项关键执行功能",
+      "canonical_evidence": "工作记忆期间前额叶皮层的低维表征，一项关键执行功能",
+      "llm_tldr_en": "Investigates dimensionality of prefrontal cortex object representations during working memory, finding they are low-dimensional (3-6 effective dimensions), informing neural coding theories.",
+      "llm_tldr_cn": "研究前额叶皮层在工作记忆中的对象表征维度，发现其低维（3-6个有效维度），为神经编码理论提供信息。",
+      "llm_tldr": "研究前额叶皮层在工作记忆中的对象表征维度，发现其低维（3-6个有效维度），为神经编码理论提供信息。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-03-729810-v1",
+      "source": "biorxiv",
+      "title": "Theta gates and routes information in the frontal cortex",
+      "abstract": "Theta (4-10 Hz) oscillations seem well-suited for coordinating neural activity. Many studies have focused on theta's role in long-range coordination across brain regions (e.g., connectivity between the prefrontal cortex and the hippocampus). It remains unclear how theta coordinates neural activity more locally within prefrontal subareas. We examined neural activity in three frontal areas (i.e., dorsolateral prefrontal cortex (dlPFC), ventrolateral prefrontal cortex (vlPFC), and frontal eye fields (FEF)) as non-human primates categorized dot patterns. We found that theta flexibly coordinated spiking activity and higher-frequency oscillations within and between frontal areas. First, theta phase in all areas was coupled to spiking information in the FEF and seemed to gate information that was behaviorally relevant. Second, theta influences were routed in opposite directions depending on feedback. Theta flowed in a posterior direction to the FEF during choices and after correct outcomes. Theta influences reversed directionality and flowed in an anterior direction after incorrect outcomes. Third, theta organized nested cross-frequency, phase-amplitude interactions. Theta was coupled to beta (15-30Hz) oscillations, both within and between areas. Beta, in turn, was coupled to gamma (40-90Hz) oscillations, but mainly locally. Together, our results position theta as a critical mechanism that flexibly and dynamically coordinates neural activity within and across the frontal cortex.",
+      "authors": [
+        "Broschard, M.",
+        "Brincat, S. L.",
+        "Loonis, R.",
+        "Miller, E. K."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-04T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.03.729810v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Theta gates and routes information in frontal cortex, examining dlPFC, vlPFC, FEF during categorization, relevant to prefrontal cognitive coordination",
+      "llm_evidence_cn": "Theta振荡在前额叶皮层门控和路由信息，研究背外侧、腹外侧前额叶和额叶眼区在分类任务中的作用，与前额叶认知协调相关",
+      "llm_evidence": "Theta振荡在前额叶皮层门控和路由信息，研究背外侧、腹外侧前额叶和额叶眼区在分类任务中的作用，与前额叶认知协调相关",
+      "canonical_evidence": "Theta振荡在前额叶皮层门控和路由信息，研究背外侧、腹外侧前额叶和额叶眼区在分类任务中的作用，与前额叶认知协调相关",
+      "llm_tldr_en": "This study shows that theta oscillations flexibly coordinate spiking and higher-frequency activity within and between prefrontal subareas during a categorization task in monkeys, highlighting theta's local functional role in frontal cortex.",
+      "llm_tldr_cn": "该研究针对theta振荡如何在前额叶亚区内部局部协调神经活动的问题，记录非人灵长类在点阵分类任务中三个额叶区域的神经活动，分析theta相位与脉冲及高频振荡的耦合。发现theta相位在前额叶间耦合信息，并与高频gamma活动耦合，实现信息门控和路由。表明theta振荡在前额叶局部信息处理中发挥关键组织作用，但未直接涉及内侧前额叶。",
+      "llm_tldr": "该研究针对theta振荡如何在前额叶亚区内部局部协调神经活动的问题，记录非人灵长类在点阵分类任务中三个额叶区域的神经活动，分析theta相位与脉冲及高频振荡的耦合。发现theta相位在前额叶间耦合信息，并与高频gamma活动耦合，实现信息门控和路由。表明theta振荡在前额叶局部信息处理中发挥关键组织作用，但未直接涉及内侧前额叶。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-03-729880-v2",
+      "source": "biorxiv",
+      "title": "Theta phase and theta-gamma coupling organise the spoken language network",
+      "abstract": "Speech production requires rapid coordination of conceptual and lexical processes across distributed cortical networks, yet the neurophysiological mechanisms enabling this coordination remain poorly understood. Oscillatory coupling has emerged as a candidate mechanism for coordinating neural activity across spatial scales. Here, we used whole-head magnetoencephalography during overt picture naming to test how phase and phase-amplitude coupling organise neural dynamics preceding articulation. We show that theta (4-8 Hz) phase coupling increases within two functionally distinct networks: a ventral occipito-temporal network supporting object recognition and a medial fronto-temporal network supporting semantic-lexical retrieval. These networks converged in the right fusiform gyrus beyond chance levels, identifying a candidate integration hub. In parallel, whole-brain analysis of theta-gamma (4-8 Hz, 40-100 Hz) phase-amplitude coupling revealed selective increases in the left inferior frontal and fusiform gyri during picture naming relative to control. Mixed-effects modelling further showed that coupling in the left fusiform correlates with trial-level response times during naming but not control trials. Together, these findings reveal the oscillatory mechanisms that implement known functional specialisation in the spoken language network; theta phase coupling coordinates distributed recognition and retrieval streams, while theta-gamma coupling modulates local computations within core word production nodes. By defining an oscillatory framework for real-time speech production, this work advances mechanistic understanding of the spoken language network and identifies frequency- and region-specific targets for neuromodulation of language production disorders.",
+      "authors": [
+        "Akkad, H.",
+        "Bush, D.",
+        "Seymour, R.",
+        "Twomey, T.",
+        "Pelke, S.",
+        "Ondobaka, S.",
+        "Bestmann, S.",
+        "Crinion, J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-04T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.03.729880v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Theta phase coupling in medial fronto-temporal network supports semantic-lexical retrieval, implicating medial prefrontal regions in language production",
+      "llm_evidence_cn": "内侧额颞网络中的theta相位耦合支持语义词汇检索，暗示内侧前额叶参与语言产生",
+      "llm_evidence": "内侧额颞网络中的theta相位耦合支持语义词汇检索，暗示内侧前额叶参与语言产生",
+      "canonical_evidence": "内侧额颞网络中的theta相位耦合支持语义词汇检索，暗示内侧前额叶参与语言产生",
+      "llm_tldr_en": "This MEG study demonstrates that theta phase coupling organizes two distinct networks for object recognition and semantic-lexical retrieval during speech production, including a medial fronto-temporal network.",
+      "llm_tldr_cn": "该研究针对言语产生中概念和词汇过程快速协调的神经机制不明的问题，使用全头MEG在图命名任务中分析命名前的theta相位耦合和theta-gamma耦合。结果显示，信息从枕颞皮层流向前额叶，内侧额颞网络中的theta相位耦合增强以支持语义词汇检索。揭示了theta振荡在语言生成网络中的协调作用，涉及内侧前额叶区域的认知功能，为高级认知网络研究提供了新证据。",
+      "llm_tldr": "该研究针对言语产生中概念和词汇过程快速协调的神经机制不明的问题，使用全头MEG在图命名任务中分析命名前的theta相位耦合和theta-gamma耦合。结果显示，信息从枕颞皮层流向前额叶，内侧额颞网络中的theta相位耦合增强以支持语义词汇检索。揭示了theta振荡在语言生成网络中的协调作用，涉及内侧前额叶区域的认知功能，为高级认知网络研究提供了新证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
