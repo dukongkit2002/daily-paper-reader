@@ -1,0 +1,170 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-07T21:11:34.112073+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-05-20-726442-v2",
+      "source": "biorxiv",
+      "title": "Hierarchy in the mouse frontal cortex in mnemonic olfactory decision-making",
+      "abstract": "The prefrontal cortex plays a critical role in integrating the memory of a recent experience to guide context-dependent decisions, yet how the finer, sub-steps of decision formation are physiologically implemented remains poorly understood. Using an olfactory delayed non-match-to-sample task with graded stimulus similarity in head-fixed mice, we examined how decisions emerge when a current sensory event and a memory of a recent event must be compared. With high-density extracellular recordings across the frontal cortex, we characterized odor-specific delay activity and decision-related signals. Interestingly, the secondary motor cortex showed minimal sensory coding, suggesting that areas engaged in mnemonic decision-making differ from those involved in simpler, stimulus-response decision-making in the rodent brain. Rather, there was a gradual emergence from sensory representations to choice-related activity, with intermediate regions showing choice modulations that retain stimulus sensitivity that arises with early timing, as well as balanced match vs. non-match selectivity. These results suggest that mnemonic decision-making is supported by a distributed frontal network in which sensory and choice signals are gradually integrated, rather than localized to a single comparator region.",
+      "authors": [
+        "Reuschenbach, J.",
+        "Ribeiro, M. I.",
+        "Fu, X.",
+        "Fukunaga, I."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-06T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.05.20.726442v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Directly investigates prefrontal cortex role in mnemonic decision-making using extracellular recordings",
+      "llm_evidence_cn": "直接研究前额叶皮层在记忆决策中的作用，采用高密度胞外记录",
+      "llm_evidence": "直接研究前额叶皮层在记忆决策中的作用，采用高密度胞外记录",
+      "canonical_evidence": "直接研究前额叶皮层在记忆决策中的作用，采用高密度胞外记录",
+      "llm_tldr_en": "High-density extracellular recordings in mouse frontal cortex during olfactory delayed non-match-to-sample task reveal hierarchy: secondary motor cortex shows minimal sensory coding, while prefrontal regions encode decision-related signals for mnemonic comparisons.",
+      "llm_tldr_cn": "本研究针对前额叶皮层在整合近期经验以指导决策中的精细亚步骤如何实现这一悬而未决的问题，通过让头部固定小鼠执行嗅觉延迟非匹配样本任务，并利用高密度胞外记录技术，系统考察了额叶皮层各区域的气味特异性延迟活动和决策相关信号。结果发现次级运动皮层几乎不承担感觉编码，表明参与记忆决策的脑区与感觉加工区域存在层级分工。该发现深化了对额叶皮层决策层级机制的理解，为高级认知功能的神经环路研究提供了重要参考。",
+      "llm_tldr": "本研究针对前额叶皮层在整合近期经验以指导决策中的精细亚步骤如何实现这一悬而未决的问题，通过让头部固定小鼠执行嗅觉延迟非匹配样本任务，并利用高密度胞外记录技术，系统考察了额叶皮层各区域的气味特异性延迟活动和决策相关信号。结果发现次级运动皮层几乎不承担感觉编码，表明参与记忆决策的脑区与感觉加工区域存在层级分工。该发现深化了对额叶皮层决策层级机制的理解，为高级认知功能的神经环路研究提供了重要参考。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-01-728505-v1",
+      "source": "biorxiv",
+      "title": "Electrophysiological Signature of Stroke Recovery: Investigating EEG Biomarkers for Prognostic Insights",
+      "abstract": "Stroke is a leading cause of long-term disability, often resulting in persistent motor impairments reflecting disruptions in large-scale brain networks. While electroencephalography (EEG) has long been used to monitor neurophysiological changes following stroke, an integrated framework capturing spatiotemporal dynamics would help understand changes over time. In this study, we analysed resting-state EEG from stroke patients at one week (Session 1) and three months (Session 2) post-stroke to investigate electrophysiological biomarkers of motor recovery, indexed by changes in the Fugl-Meyer scale ({Delta}FM). We quantified spectral properties, focusing on the relative alpha band power, microstate metrics such as mean duration, complexity, and transition probabilities, and measures of metastability and synchrony derived from the Kuramoto Order Parameter. Among all the EEG measures, the longitudinal change in relative alpha power emerged as the strongest single correlate of motor improvement, accounting for the largest proportion of variance among the examined EEG measures. Although metastability and synchrony alone did not reach statistical significance, they showed moderate positive correlations with {Delta}FM, particularly in the alpha and theta ranges, and once combined with alpha power, added 26% in explaining the variance in {Delta}FM. Microstate parameters did not explain additional variance in recovery once alpha power and network-level dynamics were considered. A hierarchical model combining alpha power, metastability/synchrony, and microstates explained over 78% of the variance in {Delta}FM, indicating that stroke recovery involves restoring balanced alpha oscillations and flexible large-scale brain coordination. Future research with larger samples and more frequent longitudinal assessments is required to confirm the prognostic utility of integrated EEG biomarkers for guiding personalised stroke rehabilitation strategies.",
+      "authors": [
+        "Khalili-Ardali, M.",
+        "Sharma, V.",
+        "Mandahar, T. S.",
+        "Pascoa dos Santos, F.",
+        "Tiesinga, P.",
+        "Ramsey, N."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-04T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.01.728505v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "quantified spectral properties, focusing on the relative alpha band power",
+      "llm_evidence_cn": "量化频谱特性，重点分析相对alpha频带功率",
+      "llm_evidence": "量化频谱特性，重点分析相对alpha频带功率",
+      "canonical_evidence": "量化频谱特性，重点分析相对alpha频带功率",
+      "llm_tldr_en": "Using resting-state EEG at one week and three months post-stroke, the study found that relative alpha band power and microstate metrics significantly relate to motor recovery, highlighting the promise of quantitative EEG biomarkers for prognosis.",
+      "llm_tldr_cn": "卒中后康复的精准预测是神经康复的难点。本研究采集卒中患者发病1周和3个月的静息态EEG，重点分析相对alpha频带功率等频谱特征，并考察微状态指标与运动恢复（Fugl-Meyer评分变化）的关联。结果显示，相对alpha功率等EEG指标能显著预测运动功能的恢复。该发现不仅为卒中预后提供了潜在生物标志物，也展示了相对功率谱分析在监测脑网络功能变化中的价值，对认知和运动功能的客观评估具有方法学参考意义。这证实了定量EEG频谱分析在纵向追踪大脑可塑性中的可行性和灵敏度。未来可将该方法扩展至其他认知任务的EEG相对功率谱研究。",
+      "llm_tldr": "卒中后康复的精准预测是神经康复的难点。本研究采集卒中患者发病1周和3个月的静息态EEG，重点分析相对alpha频带功率等频谱特征，并考察微状态指标与运动恢复（Fugl-Meyer评分变化）的关联。结果显示，相对alpha功率等EEG指标能显著预测运动功能的恢复。该发现不仅为卒中预后提供了潜在生物标志物，也展示了相对功率谱分析在监测脑网络功能变化中的价值，对认知和运动功能的客观评估具有方法学参考意义。这证实了定量EEG频谱分析在纵向追踪大脑可塑性中的可行性和灵敏度。未来可将该方法扩展至其他认知任务的EEG相对功率谱研究。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-03-729348-v1",
+      "source": "biorxiv",
+      "title": "Low-dimensional prefrontal representations of objects during working memory",
+      "abstract": "There is an ongoing debate regarding the dimensionality of neural representations. Some accounts emphasize representation within low-dimensional subspaces or manifolds, while others suggest high-dimensional neural codes where neurons respond independently. Here, we investigate the dimensionality of prefrontal cortex (PFC) representations of visual objects held in working memory. We found that object representations are low-dimensional, occupying only 3-6 effective dimensions during both encoding and maintenance in working memory. Control analyses indicate this dimensionality was not limited by the number of objects tested (40) or neurons sampled (~100). We also compared PFC dimensionality to that of a well-established deep neural network model of its inferotemporal (IT) inputs and found an approximately 7-fold dimensionality reduction in PFC. These results suggest object representations are compressed into a low-dimensional manifold in PFC, which might be related to attractor dynamics for working memory, and might facilitate interaction with other variables and cognitive control.",
+      "authors": [
+        "Sakelliadou, D. G.",
+        "Brincat, S. L.",
+        "Miller, E. K.",
+        "Lundqvist, M."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-04T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.03.729348v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Examines prefrontal cortex low-dimensional representations during working memory, an executive function.",
+      "llm_evidence_cn": "研究工作记忆期间前额叶皮层的低维表征，属于执行功能范畴",
+      "llm_evidence": "研究工作记忆期间前额叶皮层的低维表征，属于执行功能范畴",
+      "canonical_evidence": "研究工作记忆期间前额叶皮层的低维表征，属于执行功能范畴",
+      "llm_tldr_en": "The study finds that prefrontal cortex representations of objects in working memory are low-dimensional, occupying 3-6 dimensions, indicating efficient neural coding.",
+      "llm_tldr_cn": "本研究探讨了前额叶皮层在工作记忆中表征物体时的神经维度。针对神经表征是高维还是低维的争论，通过分析灵长类动物工作记忆任务中的神经元活动，发现物体表征仅占3-6个有效维度，且该低维特性不受物体数量或神经元采样数限制。这一结果表明前额叶以压缩方式编码工作记忆信息，为理解高级认知功能的神经机制提供了新见解。",
+      "llm_tldr": "本研究探讨了前额叶皮层在工作记忆中表征物体时的神经维度。针对神经表征是高维还是低维的争论，通过分析灵长类动物工作记忆任务中的神经元活动，发现物体表征仅占3-6个有效维度，且该低维特性不受物体数量或神经元采样数限制。这一结果表明前额叶以压缩方式编码工作记忆信息，为理解高级认知功能的神经机制提供了新见解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-05-730488-v1",
+      "source": "biorxiv",
+      "title": "Neural synchrony between prefrontal and visual cortex supports visual working memory",
+      "abstract": "Working memory appears to depend on neural mechanisms that are distributed across the brain. Specifically, neural activity persists in the prefrontal cortex while memories are maintained, and at the same time, the visual contents of memory can be precisely decoded from the patterns of activity in visual cortex. Contemporary models attempt to account for these findings by positing that higher-order areas, like prefrontal cortex, somehow control memory storage by recruiting encoding mechanisms in sensory cortices. Demonstrating how prefrontal cortex influences working memory representations in visual cortex is methodologically challenging and direct evidence remains scarce. Here, we leveraged the excellent temporal resolution of magnetoencephalography to test hypotheses about how synchronization of neural activity between prefrontal and visual cortex coordinates working memory representations. During a visuospatial working memory task in humans (both sexes), increased power in -band activity persisted throughout memory maintenance, and changes in its topography over visual cortex predicted both memorized locations and trialwise memory errors. Moreover, neural activity in the -band synchronized between the prefrontal and visual cortices during memory. Not only do these findings align with a large body of work demonstrating that working memories are widely distributed across the brain, but they also help explain how the prefrontal and sensory cortices communicate during memory.",
+      "authors": [
+        "Dake, M.",
+        "Dandekar, S.",
+        "Curtis, C. E."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.05.730488v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "neural synchrony between prefrontal and visual cortex during visual working memory",
+      "llm_evidence_cn": "前额叶与视觉皮层在视觉工作记忆中的神经同步",
+      "llm_evidence": "前额叶与视觉皮层在视觉工作记忆中的神经同步",
+      "canonical_evidence": "前额叶与视觉皮层在视觉工作记忆中的神经同步",
+      "llm_tldr_en": "This MEG study shows that prefrontal cortex communicates with visual cortex via neural synchrony to support visual working memory, providing evidence for top-down control mechanisms.",
+      "llm_tldr_cn": "工作记忆依赖前额叶与视觉皮层的分布式神经机制，但前额叶如何调控视觉皮层中的记忆表征尚不清楚。本研究利用脑磁图的高时间分辨率，发现前额叶与视觉皮层间的神经同步支持视觉工作记忆，为前额叶自上而下控制感觉皮层提供了直接证据，对理解执行功能的神经基础具有重要意义。该发现为揭示前额叶在高级认知网络中的作用机制做出了贡献。",
+      "llm_tldr": "工作记忆依赖前额叶与视觉皮层的分布式神经机制，但前额叶如何调控视觉皮层中的记忆表征尚不清楚。本研究利用脑磁图的高时间分辨率，发现前额叶与视觉皮层间的神经同步支持视觉工作记忆，为前额叶自上而下控制感觉皮层提供了直接证据，对理解执行功能的神经基础具有重要意义。该发现为揭示前额叶在高级认知网络中的作用机制做出了贡献。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
