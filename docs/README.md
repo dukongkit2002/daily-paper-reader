@@ -6,34 +6,35 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-07
-- 运行时间：2026-06-07 21:13:22 UTC
+- 最新运行日期：2026-06-08
+- 运行时间：2026-06-08 21:59:27 UTC
 - 运行状态：成功
 - 本次总论文数：4
-- 精读区：1
-- 速读区：3
+- 精读区：0
+- 速读区：4
 
 ### 今日简报（AI）
-今日精读小鼠额叶决策层级机制，速读工作记忆表征与中风EEG预后标志物  
-最值得关注：嗅觉决策中额叶层级信号传递，以及前额叶-视觉皮层同步如何支撑工作记忆  
-普通读者延伸建议：若对记忆神经机制感兴趣，可先读《低维前额叶表征》和《神经同步》两篇速读，快速建立工作记忆的两种核心假说认知
-- 详情：[/202606/07/README](/202606/07/README)
+今日速读4篇论文，聚焦脑信号表征与学习机制。  
+亮点发现：多元连接的超图可重塑EEG/MEG分析；运动中的空间注意依赖α振荡与头部旋转的不同分工。  
+建议关注超图连接模型与真实运动场景下脑机制的交叉应用。
+- 详情：[/202606/08/README](/202606/08/README)
 
 ### 精读区论文标签
-1. [Hierarchy in the mouse frontal cortex in mnemonic olfactory decision-making](/202606/07/biorxiv-10-64898-2026-05-20-726442-v2-hierarchy-in-the-mouse-frontal-cortex-in-mnemonic-olfactory-decision-making)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：直接研究前额叶皮层在记忆决策中的作用，采用高密度胞外记录
+- 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Electrophysiological Signature of Stroke Recovery: Investigating EEG Biomarkers for Prognostic Insights](/202606/07/biorxiv-10-64898-2026-06-01-728505-v1-electrophysiological-signature-of-stroke-recovery-investigating-eeg-biomarkers-for-prognostic-insights)  
+1. [Hypergraphs from multivariate connectivity: caCoh-based EEG/MEG representation](/202606/08/2606.01357v1-hypergraphs-from-multivariate-connectivity-cacoh-based-eegmeg-representation)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：量化频谱特性，重点分析相对alpha频带功率
-2. [Low-dimensional prefrontal representations of objects during working memory](/202606/07/biorxiv-10-64898-2026-06-03-729348-v1-low-dimensional-prefrontal-representations-of-objects-during-working-memory)  
+   evidence：提出一种用于频率分辨分析的多变量EEG/MEG连接方法，可应用于认知EEG研究
+2. [Spatial Attention in the Moving Brain: Dissociable Roles of Neural Alpha Oscillations and Head Rotation](/202606/08/biorxiv-10-1101-2025-11-10-687554-v3-spatial-attention-in-the-moving-brain-dissociable-roles-of-neural-alpha-oscillations-and-head-rotation)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：测量听觉空间注意任务中EEG α功率变化
+3. [Creative Reading: Scaffolding Reading for Transformation](/202606/08/2606.04308v1-creative-reading-scaffolding-reading-for-transformation)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：研究工作记忆期间前额叶皮层的低维表征，属于执行功能范畴
-3. [Neural synchrony between prefrontal and visual cortex supports visual working memory](/202606/07/biorxiv-10-64898-2026-06-05-730488-v1-neural-synchrony-between-prefrontal-and-visual-cortex-supports-visual-working-memory)  
+   evidence：提出创造性阅读作为阅读增强目标，支持文本的解读与批判性参与
+4. [Transcutanenous auricular vagus nerve stimulation affects sustained attention in an order-dependent manner.](/202606/08/biorxiv-10-1101-2025-10-07-680948-v3-transcutanenous-auricular-vagus-nerve-stimulation-affects-sustained-attention-in-an-order-dependent-manner)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：前额叶与视觉皮层在视觉工作记忆中的神经同步
+   evidence：该研究在持续注意任务中记录脑电并分析电生理标记，与认知任务中的谱功率分析相关。
 
 
 <div class="dpr-home-promo-card">

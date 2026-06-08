@@ -1,0 +1,173 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-08T21:57:52.254157+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2606.01357v1",
+      "source": "arxiv",
+      "title": "Hypergraphs from multivariate connectivity: caCoh-based EEG/MEG representation",
+      "abstract": "Hypergraphs provide a natural framework for representing neurophysiological interactions distributed across sets of sensors. A key methodological question is how hyperedges should be defined from frequency-resolved electroencephalography/magnetoencephalography (EEG/MEG) data. We demonstrate a construction strategy in which hyperedges are obtained from canonical coherence (caCoh), an extension of coherence that estimates coupling between multidimensional signal spaces. To our knowledge, this is the first work to construct hypergraphs directly from a multivariate connectivity measure specifically designed for frequency-resolved neurophysiological analysis. We propose two caCoh-based representations: a one-to-space hypergraph, where each external signal defines a hyperedge over the EEG/MEG sensor space, and a space-to-space hypergraph, where two multidimensional signal spaces are represented by a single hyperedge. We evaluate the approach in controlled simulations with known coupling frequencies and varying signal-to-noise ratio (SNR). Compared with graphs based on magnitude-squared coherence (MSC), caCoh-based hypergraphs showed statistically higher target-baseline contrasts at almost all SNR levels, indicating stronger recovery of coupling frequencies. They also recovered sensor-level spatial patterns associated with the simulated sources. In addition, one-to-space and space-to-space representations reduced 610 MSC edges per frequency to 10 and 1 hyperedges, respectively. These results establish multivariate spectral connectivity as a natural methodological basis for EEG/MEG hypergraphs.",
+      "authors": [
+        "Daniil Vlasenko",
+        "Irina Saranskaia",
+        "Denis Zakharov"
+      ],
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "physics.data-an",
+        "q-bio.NC"
+      ],
+      "published": "2026-05-31T17:29:31+00:00",
+      "link": "https://arxiv.org/pdf/2606.01357v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "proposes a multivariate EEG/MEG connectivity method for frequency-resolved analysis, applicable to EEG studies of cognition",
+      "llm_evidence_cn": "提出一种用于频率分辨分析的多变量EEG/MEG连接方法，可应用于认知EEG研究",
+      "llm_evidence": "提出一种用于频率分辨分析的多变量EEG/MEG连接方法，可应用于认知EEG研究",
+      "canonical_evidence": "提出一种用于频率分辨分析的多变量EEG/MEG连接方法，可应用于认知EEG研究",
+      "llm_tldr_en": "This paper introduces a method to construct hypergraphs from EEG/MEG data using canonical coherence, enabling multivariate connectivity analysis across frequency bands.",
+      "llm_tldr_cn": "当前EEG/MEG连接分析主要局限于成对传感器，难以捕捉集合水平的多变量交互。该文提出一种基于典型相干(caCoh)从EEG/MEG数据构建超图的方法，将每个外部空间模式定义为一个超边，实现跨频段多变量连接分析，为认知任务中脑网络动态研究提供了新的表征工具。该方法可扩展应用于高级认知网络分析，与EEG相对功率谱相结合，有望揭示认知过程中的频谱-网络对应关系。",
+      "llm_tldr": "当前EEG/MEG连接分析主要局限于成对传感器，难以捕捉集合水平的多变量交互。该文提出一种基于典型相干(caCoh)从EEG/MEG数据构建超图的方法，将每个外部空间模式定义为一个超边，实现跨频段多变量连接分析，为认知任务中脑网络动态研究提供了新的表征工具。该方法可扩展应用于高级认知网络分析，与EEG相对功率谱相结合，有望揭示认知过程中的频谱-网络对应关系。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.04308v1",
+      "source": "arxiv",
+      "title": "Creative Reading: Scaffolding Reading for Transformation",
+      "abstract": "Reading augmentation systems increasingly help readers process text at scale. While these tools address real constraints of time and cognitive load, they often implicitly frame reading as information transmission, or \"reading to discard,\" delegating interpretation and effort to the machine. Yet this delegation changes the outcome of reading. For example, in scholarly reading, deciding what a research text implies and why it matters is central to the work of scholarly production. We propose creative reading as an alternative goal: reading augmentation that supports readers in creating both readings and themselves as readers. By putting literary and narrative theories into conversation with scholarly sensemaking and creativity support, we present a provocation-oriented design space for valuing the process of reading as a way of preserving a plurality of readings and transforming readers over time.",
+      "authors": [
+        "Sophia Liu",
+        "Sarah Abowitz",
+        "Yijun Liu",
+        "Sarah Sterman",
+        "Shm Garanganao Almeda",
+        "Max Kreminski"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.IR",
+        "cs.SI"
+      ],
+      "published": "2026-06-03T00:27:05+00:00",
+      "link": "https://arxiv.org/pdf/2606.04308v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "proposes creative reading as a goal for reading augmentation, supporting interpretive and critical engagement with text",
+      "llm_evidence_cn": "提出创造性阅读作为阅读增强目标，支持文本的解读与批判性参与",
+      "llm_evidence": "提出创造性阅读作为阅读增强目标，支持文本的解读与批判性参与",
+      "canonical_evidence": "提出创造性阅读作为阅读增强目标，支持文本的解读与批判性参与",
+      "llm_tldr_en": "The paper introduces creative reading, an augmentation approach that fosters readers' transformation and deep engagement, contrasting with passive information consumption.",
+      "llm_tldr_cn": "该文提出创造性阅读理念，旨在通过阅读增强工具支持读者进行意义的构建和自身转变，反对将阅读简化为信息传递，为科学阅读中的批判性思维培养提供了新视角。针对当前阅读增强工具将阅读视为被动信息提取的局限，该文结合文学理论和学术意义建构，提出创造性阅读支架设计原则，强调读者在阅读过程中的积极解读和转变，为支持科学文本中的批判性思维和知识创造提供了框架。该框架可应用于社会性科学议题阅读教学，促进学生高阶思维发展。",
+      "llm_tldr": "该文提出创造性阅读理念，旨在通过阅读增强工具支持读者进行意义的构建和自身转变，反对将阅读简化为信息传递，为科学阅读中的批判性思维培养提供了新视角。针对当前阅读增强工具将阅读视为被动信息提取的局限，该文结合文学理论和学术意义建构，提出创造性阅读支架设计原则，强调读者在阅读过程中的积极解读和转变，为支持科学文本中的批判性思维和知识创造提供了框架。该框架可应用于社会性科学议题阅读教学，促进学生高阶思维发展。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-1101-2025-11-10-687554-v3",
+      "source": "biorxiv",
+      "title": "Spatial Attention in the Moving Brain: Dissociable Roles of Neural Alpha Oscillations and Head Rotation",
+      "abstract": "The brain is part of a moving body. Most insights about the relationship between neural activity and cognition come from studies involving movement-constrained participants. Here, we test the roles of neural alpha oscillations (~10 Hz) and head movements for auditory spatial attention in human participants (N=33). Neural attention filtering showed up as decreased alpha power in the electroencephalogram (EEG) contralateral to targets and vice versa for distractors. Gyroscopic tracking of head movements revealed consistent head turns towards lateral targets. Lateral distractors induced more variable movement patterns. Systematic miniature movements remained even when listeners were instructed not to move. Head rotations improved task accuracy by reducing target uncertainty. Trial-by-trial modulation of neural filtering and head rotation correlated positively, with neural alpha modulation being followed by lateral eye movements and head rotations. Spatial attention emerges from neural coding of relevant and irrelevant stimuli, co-occurring with lateral head rotations supporting sensory sampling.",
+      "authors": [
+        "Woestmann, M.",
+        "Obleser, J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-08T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.11.10.687554v3.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "measures EEG alpha power changes during auditory spatial attention task",
+      "llm_evidence_cn": "测量听觉空间注意任务中EEG α功率变化",
+      "llm_evidence": "测量听觉空间注意任务中EEG α功率变化",
+      "canonical_evidence": "测量听觉空间注意任务中EEG α功率变化",
+      "llm_tldr_en": "Investigates the roles of neural alpha oscillations and head movements in auditory spatial attention, finding that alpha power decreases contralaterally to targets, while head rotations show distinct patterns, highlighting the importance of studying active movement.",
+      "llm_tldr_cn": "本研究考察神经α振荡和头部运动在听觉空间注意中的作用。发现目标对侧EEG α功率降低，同时头动显示出朝向目标的偏向，揭示了在主动移动中注意的神经和行为机制，对理解生态化认知具有重要意义。",
+      "llm_tldr": "本研究考察神经α振荡和头部运动在听觉空间注意中的作用。发现目标对侧EEG α功率降低，同时头动显示出朝向目标的偏向，揭示了在主动移动中注意的神经和行为机制，对理解生态化认知具有重要意义。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-1101-2025-10-07-680948-v3",
+      "source": "biorxiv",
+      "title": "Transcutanenous auricular vagus nerve stimulation affects sustained attention in an order-dependent manner.",
+      "abstract": "BackgroundSustained attention, the ability to remain focused during a task, relies on Locus coeruleus - Noradrenaline (LC-NA) activity. Noninvasive transcutaneous auricular vagus nerve stimulation (taVNS) is a promising tool to modulate LC-NA activity. We investigated the effects of taVNS on behavioral and electrophysiological markers of sustained attention during a Go-Nogo task.\n\nMethodsForty-four healthy participants (36 female) performed the gradual-onset Continuous Performance Task (gradCPT) on two days > 24 hours apart while EEG was recorded. 500 ms trains of taVNS or Sham stimulation was applied with each stimulus in a pseudorandomized fashion. Brain activity during the task was recorded with EEG. Behavioral and electrophysiological parameters of sustained attention were analyzed using (generalized) linear mixed models.\n\nResultsWhen delivered during the first session, taVNS accelerated reaction times and enhanced fronto-central P1-N1 and parietal N1-P2 amplitudes. Larger P1-N1 amplitudes predicted faster responses, linking early cortical gain to behavioral performance. RT improvements persisted into the next-day sham session, whereas taVNS applied only during the familiar second session was ineffective. However, taVNS also increased RT variability, speaking against a general beneficial effect of taVNS on response automation.\n\nConclusionWe show that taVNS modulates behavioral and electrophysiologial parameters of sustained attention and that this modulation depended on the applied stimulation order. These observations have important implications for future taVNS studies where the order of stimulation is counterbalanced across subjects.",
+      "authors": [
+        "Wienke, C.",
+        "Woller, J. P.",
+        "Zuberer, A.",
+        "Gharabaghi, A.",
+        "Zaehle, T."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-01T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.10.07.680948v3.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Study uses EEG recordings during a sustained attention task and analyzes electrophysiological markers, relevant to spectral power analysis in cognitive tasks.",
+      "llm_evidence_cn": "该研究在持续注意任务中记录脑电并分析电生理标记，与认知任务中的谱功率分析相关。",
+      "llm_evidence": "该研究在持续注意任务中记录脑电并分析电生理标记，与认知任务中的谱功率分析相关。",
+      "canonical_evidence": "该研究在持续注意任务中记录脑电并分析电生理标记，与认知任务中的谱功率分析相关。",
+      "llm_tldr_en": "This study investigates the effects of transcutaneous auricular vagus nerve stimulation on sustained attention using EEG and behavioral measures during a Go-Nogo task, providing insight into EEG correlates of cognitive attention.",
+      "llm_tldr_cn": "针对持续注意的神经调控研究，本文使用脑电图和行为指标，考察了经皮耳迷走神经刺激对渐变持续表现任务（gradCPT）中持续注意的影响，并分析了电生理标记。研究包含44名被试，采用伪随机给予刺激与假刺激对照，发现刺激顺序依赖性地调节了注意行为。该研究为利用脑电频谱分析探究高级认知过程提供了方法参考和实验证据。",
+      "llm_tldr": "针对持续注意的神经调控研究，本文使用脑电图和行为指标，考察了经皮耳迷走神经刺激对渐变持续表现任务（gradCPT）中持续注意的影响，并分析了电生理标记。研究包含44名被试，采用伪随机给予刺激与假刺激对照，发现刺激顺序依赖性地调节了注意行为。该研究为利用脑电频谱分析探究高级认知过程提供了方法参考和实验证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
