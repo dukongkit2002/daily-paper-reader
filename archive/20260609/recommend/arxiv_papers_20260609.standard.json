@@ -1,0 +1,302 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-09T21:10:36.189671+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-1101-2025-08-06-668891-v3",
+      "source": "biorxiv",
+      "title": "Inhibition tunes prefrontal circuit dynamics to promote sociosexual behavior in female mice",
+      "abstract": "The prefrontal cortex (PFC) plays a central role in the selection and expression of diverse social behaviors. A balance of excitation and inhibition is necessary for normal social functioning, but it remains unclear how inhibition sculpts pyramidal activity to promote specific social behaviors. To address this question, we developed a novel decision-making task in which female mice chose between interaction with a male (sociosexual stimulus) or an appetitive non-social option (milk solution). To explore the role of a task-relevant inhibitory subpopulation, we targeted neurons in the medial PFC (mPFC) expressing oxytocin receptors (OXTR neurons). Combining optogenetic inhibition of OXTR neurons with population calcium imaging of pyramidal neural activity, we found that OXTR neurons normally promote interaction with a male compared to a non-social alternative. OXTR neurons also regulate pyramidal activity, which enables a specific ensemble to represent the male option during decision-making. Computational modeling reproduced these findings through a pyramidal competition mechanism, in which regulation by OXTR neurons allows a male-representing pyramidal ensemble to effectively compete against the remaining pyramidal population to drive male choice. These results provide a candidate mechanism by which inhibition enables mPFC pyramidal activity to select for specific social behaviors and may help explain why excitation/inhibition balance is so important for social functioning.",
+      "authors": [
+        "Amadei, E. A.",
+        "Vilimelis Aceituno, P.",
+        "Loidl, R.",
+        "Boehringer, R.",
+        "Streit Morsch, E.",
+        "Ehret, B.",
+        "Grewe, B. F."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-09T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.08.06.668891v3.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Studies the role of medial prefrontal cortex (mPFC) in social decision-making, a higher cognitive function",
+      "llm_evidence_cn": "研究内侧前额叶皮层在社会决策这一高级认知功能中的作用",
+      "llm_evidence": "研究内侧前额叶皮层在社会决策这一高级认知功能中的作用",
+      "canonical_evidence": "研究内侧前额叶皮层在社会决策这一高级认知功能中的作用",
+      "llm_tldr_en": "Combines optogenetics and calcium imaging in female mice to show that inhibition of mPFC OXTR neurons promotes sociosexual choice over food, revealing circuit mechanisms for social behavior.",
+      "llm_tldr_cn": "本研究开发了一项雌性小鼠社交与摄食选择的新决策任务，通过光遗传学抑制内侧前额叶皮层中的催产素受体神经元，并结合群体钙成像，发现抑制该神经元群可促进对雄鼠的社交选择而非食物奖励。这些结果揭示了mPFC抑制性微环路如何调控高级社会决策的动力学机制，为理解前额叶在执行控制网络中的功能提供了跨物种参考。",
+      "llm_tldr": "本研究开发了一项雌性小鼠社交与摄食选择的新决策任务，通过光遗传学抑制内侧前额叶皮层中的催产素受体神经元，并结合群体钙成像，发现抑制该神经元群可促进对雄鼠的社交选择而非食物奖励。这些结果揭示了mPFC抑制性微环路如何调控高级社会决策的动力学机制，为理解前额叶在执行控制网络中的功能提供了跨物种参考。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-08-730545-v1",
+      "source": "biorxiv",
+      "title": "Prefrontal cortical pathways mediating cognitive control enhancement from internal capsule stimulation",
+      "abstract": "Background: Deep brain stimulation (DBS) targeting the ventral internal capsule/ventral striatum (VCVS) is an effective treatment for several psychiatric disorders, but clinical responses often vary amongst patients likely due to an incomplete mechanistic understanding of the brain pathways mediating response. VCVS DBS can improve cognitive control, a core deficit in multiple psychiatric disorders. Here, we investigated which prefrontal cortical pathway(s) in the internal capsule are associated with improving cognitive control during VCVS DBS. Methods: Four participants with bilateral VCVS DBS completed the Multi-Source Interference Task (MSIT) under 27 stimulation settings varying by side (left/right lead), electrode, amplitude, and frequency. Each condition included 100 trials and response time (RT) assessed task performance. Personalized pathway activation models quantified axonal recruitment across 11 segmented prefrontal cortical fiber bundles per brain hemisphere. Associations between pathway activation and task RT were analyzed to identify circuits linked to improved cognitive control performance. Results: Right-sided VCVS stimulation produced greater improvements in cognitive control (reductions in MSIT RT) than left-sided stimulation. Activation of right dorsal prefrontal cortical pathways connected to the dorsolateral prefrontal cortex (dlPFC) and dorsomedial prefrontal cortex (dmPFC) most strongly predicted faster MSIT RTs, whereas no left-sided pathways were associated with performance changes. Conclusions: These findings suggest that the effects of VCVS DBS on cognitive control are primarily mediated by right dorsal prefrontal cortical axons projecting from the dlPFC and dmPFC. Targeting these pathways may improve stimulation strategies and outcomes for psychiatric disorders characterized by impaired cognitive control.",
+      "authors": [
+        "Sretavan Wong, K.",
+        "Nagrale, S. S.",
+        "Pipia, V.",
+        "Sachse, E. M.",
+        "Dastin-van Rijn, E. M.",
+        "Kim, J.",
+        "Eiting, S.",
+        "McInnes, A. N.",
+        "Palnitkar, T.",
+        "Chandrasekaran, J.",
+        "Braun, H.",
+        "Brenny, S.",
+        "Seddighi, Y.",
+        "Patriat, R.",
+        "Harel, N.",
+        "Johnson, M. D.",
+        "Widge, A. S."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-09T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.08.730545v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Examines prefrontal cortical pathways responsible for improving cognitive control via deep brain stimulation, directly informing mPFC role in executive functions.",
+      "llm_evidence_cn": "研究通过深部脑刺激改善认知控制的前额叶皮层通路，直接揭示内侧前额叶在高级认知与执行功能中的作用。",
+      "llm_evidence": "研究通过深部脑刺激改善认知控制的前额叶皮层通路，直接揭示内侧前额叶在高级认知与执行功能中的作用。",
+      "canonical_evidence": "研究通过深部脑刺激改善认知控制的前额叶皮层通路，直接揭示内侧前额叶在高级认知与执行功能中的作用。",
+      "llm_tldr_en": "Investigates which prefrontal cortical pathways in the internal capsule mediate cognitive control improvements from ventral internal capsule/ventral striatum deep brain stimulation. Using multiple stimulation settings during the Multi-Source Interference Task, finds specific prefrontal pathways associated with enhanced cognitive control, advancing understanding of prefrontal contributions to executive functions.",
+      "llm_tldr_cn": "本研究针对精神疾病中认知控制缺陷及深部脑刺激机制的未知问题，通过双侧内囊腹侧/腹侧纹状体深部脑刺激，结合多源干扰任务，探索了前额叶皮层通路在认知控制增强中的作用。结果发现特定的前额叶通路与认知控制的改善相关，为明确前额叶在高级认知网络中的功能提供了直接证据。",
+      "llm_tldr": "本研究针对精神疾病中认知控制缺陷及深部脑刺激机制的未知问题，通过双侧内囊腹侧/腹侧纹状体深部脑刺激，结合多源干扰任务，探索了前额叶皮层通路在认知控制增强中的作用。结果发现特定的前额叶通路与认知控制的改善相关，为明确前额叶在高级认知网络中的功能提供了直接证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.01767v1",
+      "source": "arxiv",
+      "title": "EvoBrain: Continual Learning of EEG Foundation Models Across Heterogeneous BCI Tasks",
+      "abstract": "Electroencephalography (EEG) is the cornerstone of non-invasive brain-computer interfaces (BCIs), yet conventional decoding relies on fragmented, task-specific architectures that severely limit cross-task scalability. While EEG foundation models pre-trained on massive corpora promise universal brain decoding, current post-training depends on task-isolated fine-tuning. This static paradigm restricts knowledge transfer across heterogeneous tasks, hinders model scalability, and incurs computational and storage overheads that scale linearly with task count. To overcome these bottlenecks, we formulate downstream adaptation as a cross-task continual learning problem and propose EvoBrain, a dynamic, task-aware continual learning framework for unified EEG decoding. EvoBrain addresses the plasticity-stability trade-off via two complementary components: (1) Neuro-Spectral Task Normalization (NSN) aligns incoming tasks with historical statistics while recalibrating spectral responses to handle distributional and neuro-spectral shifts; and (2) Response-Affinity Distillation (RAD), combined with time-dependent replay, preserves old-task response geometry and promotes selective knowledge transfer between spectrally compatible tasks, effectively mitigating forgetting. Extensive evaluations across six distinct BCI tasks demonstrate that EvoBrain consistently surpasses state-of-the-art methods across diverse foundation backbones, optimally balancing plasticity and stability. To our knowledge, this work pioneers cross-task continual learning in the EEG domain, advancing the realization of a unified, one-for-all brain decoding system.",
+      "authors": [
+        "Yangxuan Zhou",
+        "Sha Zhao",
+        "Jiquan Wang",
+        "Shijian Li",
+        "Gang Pan"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-01T06:49:50+00:00",
+      "link": "https://arxiv.org/pdf/2606.01767v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Proposes a continual learning framework for EEG foundation models to decode heterogeneous BCI tasks, facilitating scalable EEG analysis for cognitive tasks.",
+      "llm_evidence_cn": "提出一种脑电图基础模型的持续学习框架，用于解码异构脑机接口任务，支持认知任务的扩展脑电图分析。",
+      "llm_evidence": "提出一种脑电图基础模型的持续学习框架，用于解码异构脑机接口任务，支持认知任务的扩展脑电图分析。",
+      "canonical_evidence": "提出一种脑电图基础模型的持续学习框架，用于解码异构脑机接口任务，支持认知任务的扩展脑电图分析。",
+      "llm_tldr_en": "Addresses the scalability challenge in EEG decoding by formulating downstream adaptation as a cross-task continual learning problem. Proposes EvoBrain, a dynamic framework that enables EEG foundation models to learn across heterogeneous BCI tasks without forgetting, reducing computational overhead and improving knowledge transfer for universal brain decoding in cognitive tasks.",
+      "llm_tldr_cn": "现有脑电图解码模型存在任务孤岛和扩展性差的问题，本研究将下游任务适应转化为跨任务持续学习问题，提出EvoBrain动态持续学习框架，使脑电图基础模型在异构脑机接口任务中持续学习而不遗忘，显著降低了计算开销，提升了认知任务中通用脑解码的知识迁移能力。",
+      "llm_tldr": "现有脑电图解码模型存在任务孤岛和扩展性差的问题，本研究将下游任务适应转化为跨任务持续学习问题，提出EvoBrain动态持续学习框架，使脑电图基础模型在异构脑机接口任务中持续学习而不遗忘，显著降低了计算开销，提升了认知任务中通用脑解码的知识迁移能力。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.08583v1",
+      "source": "arxiv",
+      "title": "A spectral audit framework reveals task-dependent aperiodic reliance across EEG and ECG deep learning",
+      "abstract": "Deep learning on physiological time series is interpreted through domain-specific features -- oscillatory rhythms in EEG, morphological complexes in ECG -- yet these signals sit atop a broadband aperiodic 1/f-like envelope that covaries with arousal, age, and pathology. We introduce a spectral audit framework combining aperiodic/periodic decomposition, phase-preserving Fourier interventions, sham controls, and simulation validation. Aperiodic reliance was task-dependent and architecture-general: across six neural architectures, flattening drops exceeded 0.42 balanced-accuracy points for sleep-wake classification, reached 0.07-0.13 for clinical abnormality detection, and remained minimal for motor imagery. Six of seven EEG foundation models showed FDR-significant aperiodic reliance on clinical EEG; age/sex and recording-era controls reduced but did not eliminate the effect. Applying the audit to PTB-XL ECG revealed neural drops of 0.32--0.36 persisting after demographic matching, confirming this confound class extends beyond EEG. Aperiodic controls should become standard for interpretable physiological time-series deep learning.",
+      "authors": [
+        "Jasmeet Singh Bindra",
+        "Siddharth Panwar",
+        "Shubhajit Roy Chowdhury"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "published": "2026-06-07T11:37:52+00:00",
+      "link": "https://arxiv.org/pdf/2606.08583v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Spectral audit framework for EEG analyzing aperiodic and periodic components, applicable to cognitive task data.",
+      "llm_evidence_cn": "脑电图频谱审计框架，分析非周期性和周期性成分，适用于认知任务数据。",
+      "llm_evidence": "脑电图频谱审计框架，分析非周期性和周期性成分，适用于认知任务数据。",
+      "canonical_evidence": "脑电图频谱审计框架，分析非周期性和周期性成分，适用于认知任务数据。",
+      "llm_tldr_en": "This paper proposes a spectral audit framework that decomposes EEG signals into aperiodic and periodic components, revealing deep learning models' reliance on aperiodic features varies across cognitive tasks.",
+      "llm_tldr_cn": "本文提出一种频谱审计框架，将脑电图信号分解为非周期和周期性成分，发现深度学习模型在不同认知任务中对非周期特征的依赖程度不同，睡眠-觉醒分类高度依赖非周期成分，运动想象则几乎不依赖。",
+      "llm_tldr": "本文提出一种频谱审计框架，将脑电图信号分解为非周期和周期性成分，发现深度学习模型在不同认知任务中对非周期特征的依赖程度不同，睡眠-觉醒分类高度依赖非周期成分，运动想象则几乎不依赖。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-1101-2025-11-16-688684-v2",
+      "source": "biorxiv",
+      "title": "Neural dynamics in ventrolateral prefrontal cortex underlie learning from feedback",
+      "abstract": "Learning often depends on feedback, yet how positive and negative outcomes reorganize target representations to support later memory retrieval remains poorly understood. Accumulating evidence suggests that the ventrolateral prefrontal cortex (vlPFC) acts as a central hub linking learning and retrieval, raising the possibility that it plays a critical role in this process. Here we analysed spiking activity and local field potentials (LFPs) recorded from vlPFC while monkeys performed a multi-cycle object-learning task. During the initial learning cycle, correct and incorrect feedback elicited distinct vlPFC neural responses in both spiking and LFPs. In particular, positive feedback produced elevated theta power and enhanced phase-amplitude coupling (PAC) between theta phase and high-frequency amplitude, associated with sustained suppression of neural spiking. Incorrect feedback induced stronger beta power. Despite comparable levels of object information under both feedback conditions, decoders trained and tested within the same feedback state outperformed those tested across states, revealing feedback-dependent coding formats. State-space and cross-period generalisation analyses further showed that object representations following positive feedback were geometrically closer to and shared a common coding format with those reinstated during later retrieval, indicating that feedback reshapes neural geometry toward retrieval-compatible states. Moreover, these geometric and generalisation effects were selectively expressed on electrodes showing stronger PAC or beta power, suggesting that oscillatory coordination may regulate how feedback signals are transformed into stable target codes. Together, our results reveal how vlPFC serves as a critical bridge between learning and memory retrieval, with feedback-driven dynamics reorganizing population geometry through rhythmic coordination and bringing successful outcome states closer to future retrieval representations.",
+      "authors": [
+        "Lu, R.",
+        "Kadohisa, M.",
+        "Kusunoki, M.",
+        "Mitchell, D. J.",
+        "Woolgar, A.",
+        "Buckley, M. J.",
+        "Duncan, J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.11.16.688684v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Analyzes theta power and phase-amplitude coupling in vlPFC during feedback learning, demonstrating relative power spectrum analysis in a cognitive task.",
+      "llm_evidence_cn": "研究反馈学习过程中腹外侧前额叶的神经动力学，测量theta功率变化，即认知过程中的相对功率谱分析。",
+      "llm_evidence": "研究反馈学习过程中腹外侧前额叶的神经动力学，测量theta功率变化，即认知过程中的相对功率谱分析。",
+      "canonical_evidence": "研究反馈学习过程中腹外侧前额叶的神经动力学，测量theta功率变化，即认知过程中的相对功率谱分析。",
+      "llm_tldr_en": "Using spiking and LFP recordings in monkey vlPFC during a multi-cycle object-learning task, this study reveals distinct neural responses to correct vs. incorrect feedback. Positive feedback increases theta power and phase-amplitude coupling, which reorganize target representations to support later memory retrieval.",
+      "llm_tldr_cn": "学习常依赖反馈，但反馈如何重组表征以支持记忆提取仍不清楚。本研究利用猕猴腹外侧前额叶皮层（vlPFC）的棘波和局部场电位记录，发现正确和错误反馈引起不同的神经响应，其中正反馈选择性地增强了theta频段功率和相位-幅度耦合，这些神经变化重塑了目标表征，并促进了后续的记忆提取。该结果揭示了vlPFC在反馈学习与记忆检索连接中的核心枢纽功能，为理解前额叶在高级认知中的计算机制提供了新见解。",
+      "llm_tldr": "学习常依赖反馈，但反馈如何重组表征以支持记忆提取仍不清楚。本研究利用猕猴腹外侧前额叶皮层（vlPFC）的棘波和局部场电位记录，发现正确和错误反馈引起不同的神经响应，其中正反馈选择性地增强了theta频段功率和相位-幅度耦合，这些神经变化重塑了目标表征，并促进了后续的记忆提取。该结果揭示了vlPFC在反馈学习与记忆检索连接中的核心枢纽功能，为理解前额叶在高级认知中的计算机制提供了新见解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-06-730575-v1",
+      "source": "biorxiv",
+      "title": "Neurophysiological Functional Connectivity Changes during Difficult Listening in Older and Younger Adults",
+      "abstract": "Older adults often report increased difficulty understanding speech in noisy listening environments. These difficulties are thought to arise from neurophysiological changes associated with aging, including at the level of cortex. Speech comprehension is believed to rely on coordinated activity across distributed cortical regions, mediated by the directional flow of neural signals -- their functional connectivity. This connectivity can be analyzed within specific frequency bands, e.g., Delta and Theta, each thought to play a distinct role in speech and language processing. Here, we utilize the Network Localized Granger Causality (NLGC) framework applied to magnetoencephalography (MEG) data to simultaneously estimate cortical source current activities and the their directed functional connectivity. Whole-brain connectivity graphs were analyzed using graph-cluster enhancement and cluster testing. Temporal Response Functions (TRFs) were obtained by relating NLGC-derived neural current estimates to the speech stimulus presented to listeners. The band-specific networks we identify are consistent with the canonical \"dual-stream\" model of the auditory processing pathway. Delta-band networks primarily involve temporofrontal connections, whereas Theta-band networks showed stronger temporoparietal connectivity. These cortical networks are shown to evolve as listening conditions become increasingly adverse, incorporating frontoparietal areas associated with attention orienting and control. We find that older adults exhibit increased connectivity within areas of the ventral and dorsal auditory streams across all listening conditions, suggesting increased cortical recruitment to support speech comprehension. Although older adults exhibit enhanced time-locked responses to the speech stimulus, these responses did not significantly coincide with their connectivity patterns (and similarly for younger adults), indicating that their connectivity increases are not explained by central gain mechanisms. Together, our findings demonstrate age- and condition-dependent reorganization of speech-related cortical connectivity across neurophysiological frequency bands.",
+      "authors": [
+        "Commuri, V.",
+        "Fisher, C.",
+        "Karunathilake, I. M. D.",
+        "Das, P.",
+        "Kuchinsky, S. E.",
+        "Babadi, B.",
+        "Simon, J. Z."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.06.730575v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Uses MEG to study functional connectivity in delta and theta bands during speech comprehension, analogous to EEG spectrum analysis in cognitive tasks.",
+      "llm_evidence_cn": "使用脑磁图研究言语理解中δ和θ频带的功能连接，类似于认知任务中的脑电图频谱分析。",
+      "llm_evidence": "使用脑磁图研究言语理解中δ和θ频带的功能连接，类似于认知任务中的脑电图频谱分析。",
+      "canonical_evidence": "使用脑磁图研究言语理解中δ和θ频带的功能连接，类似于认知任务中的脑电图频谱分析。",
+      "llm_tldr_en": "Investigates age-related neurophysiological changes in functional connectivity during speech-in-noise listening using MEG and network-localized Granger causality. Finds that delta and theta band connectivity patterns differ between older and younger adults, linking cortical network disruptions to speech comprehension difficulties. Demonstrates a framework for frequency-specific analysis of directed neural signals in cognitive tasks.",
+      "llm_tldr_cn": "本研究针对老年人在噪声环境中言语理解困难的现象，利用脑磁图和网络局部格兰杰因果分析框架，考察了老年人与年轻人在困难听力任务中δ和θ频带神经生理功能连接的差异。结果揭示了与年龄相关的定向神经信号变化，这些变化与言语理解能力下降相关，为研究认知任务中的频域连接提供了方法。",
+      "llm_tldr": "本研究针对老年人在噪声环境中言语理解困难的现象，利用脑磁图和网络局部格兰杰因果分析框架，考察了老年人与年轻人在困难听力任务中δ和θ频带神经生理功能连接的差异。结果揭示了与年龄相关的定向神经信号变化，这些变化与言语理解能力下降相关，为研究认知任务中的频域连接提供了方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-01-20-700694-v3",
+      "source": "biorxiv",
+      "title": "Hierarchical Reconfiguration of Neurocognitive Task Set Representations Mediates Cognitive Flexibility",
+      "abstract": "Cognitive control organizes abstract contexts, stimuli, and actions into hierarchically structured representations. This organization supports flexible behavior but requires updating at multiple levels of the hierarchy, a process reflected in task switch costs. However, it remains unclear how updating differs across levels of abstraction and how these differences relate to behavior and neural representations. Here, we investigated the behavioral and neural sources of switch costs using fMRI and behavioral data from healthy adult participants (male and female). We employed a hierarchical control task that dissociates abstract context reconfiguration from more concrete task-set reconfiguration of stimulus-response mappings. We predicted that task sets, which incorporate sensory-motor mappings, would be more strongly influenced by feedforward inputs than higher-level contextual goals, which are more abstracted from immediate perceptual and motor demands. As predicted, subordinate rule switches were faster and were more strongly influenced by task-irrelevant perceptual changes, whereas context switches were slower and relatively insensitive to such interference. To characterize the neural basis of these effects, we quantified trial-to-trial reconfiguration of multivoxel activity patterns. Across the brain, larger pattern shifts predicted larger RT switch costs, linking representational reorganization to behavioral performance. Importantly, representational reconfiguration differed across hierarchical levels and anatomical systems. Subordinate rule updating was modulated by task-irrelevant perceptual features and expressed in distributed perceptual and motor networks, whereas context reconfiguration engaged the mid-lateral frontal cortex and was comparatively insulated from interference. Our results reveal how the hierarchical structure of neural representations supports flexible updating with interference-shielded contextual representations subserving behavioral control.",
+      "authors": [
+        "Leach, S. C.",
+        "Chen, X.",
+        "Hwang, K."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-08T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.01.20.700694v3.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Studies hierarchical cognitive control using fMRI, a core executive function likely engaging mPFC networks",
+      "llm_evidence_cn": "使用fMRI研究层次化认知控制，这一核心执行功能可能涉及内侧前额叶网络",
+      "llm_evidence": "使用fMRI研究层次化认知控制，这一核心执行功能可能涉及内侧前额叶网络",
+      "canonical_evidence": "使用fMRI研究层次化认知控制，这一核心执行功能可能涉及内侧前额叶网络",
+      "llm_tldr_en": "Uses fMRI and a hierarchical task to dissociate context and task-set reconfiguration, showing distinct behavioral and neural switch costs, informing executive control network function.",
+      "llm_tldr_cn": "认知控制需要更新层次化表征，但不同抽象水平上的更新过程与神经表征如何差异仍不明。本研究设计层次化控制任务，通过fMRI分离抽象上下文重构与具体任务集重构，发现不同层次的更新引发不同的行为代价和脑活动模式，涉及额顶网络的多区域协同。这些结果揭示了认知灵活性背后的层次化神经计算机制，为理解内侧前额叶等执行控制网络的功能组织提供了实证依据。",
+      "llm_tldr": "认知控制需要更新层次化表征，但不同抽象水平上的更新过程与神经表征如何差异仍不明。本研究设计层次化控制任务，通过fMRI分离抽象上下文重构与具体任务集重构，发现不同层次的更新引发不同的行为代价和脑活动模式，涉及额顶网络的多区域协同。这些结果揭示了认知灵活性背后的层次化神经计算机制，为理解内侧前额叶等执行控制网络的功能组织提供了实证依据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "executive control network and medial prefrontal cortex involvement",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
