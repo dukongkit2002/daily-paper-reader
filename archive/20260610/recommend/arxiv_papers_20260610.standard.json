@@ -1,0 +1,169 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-10T22:41:59.209207+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2606.05983v1",
+      "source": "arxiv",
+      "title": "Framing, Judging, Steering: An Assessable Competency Model for Teach-ing Students to Reason With Generative AI",
+      "abstract": "Generative AI makes answers easy and understanding hard, and uncritical use invites cognitive offloading. Schools still measure unaided performance, yet the real task is to produce good work with AI: framing an ill-defined task, judging the output, and steering the model toward a better result. This ability is rarely assessed in its own right; where measured, it collapses into one \"prompting\" score that cannot diagnose why AI use succeeds or fails. We propose CoRe-3 (Co-Reasoning), a competency model factoring productive AI use into three assessable skills we abbreviate FJS: Framing (specifying an ill-defined task before invoking AI), Judging (evaluating output for errors and unstated assumptions), and Steering (iteratively redirecting the model). Its distinguishing claim is the separation of pre-generation Framing from post-generation Steering, with Judging as the gate between. We ground the skills in theory, state five testable propositions, and instantiate them in CoReasoningLab, an open platform that presents flawed AI output and scores them independently. Over simulated learners (generated and graded by different models), the skills dissociate: each tracks its own manipulated competence while staying flat in the others, and grades become correlated when one competence is shared across all three (convergent and discriminant validity), across grader backends from two providers. Human-rater agreement and outcomes are next; we release the instrument, data, and protocol.",
+      "authors": [
+        "Alexander Apartsin",
+        "Yehudit Aperstein"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-04T10:25:31+00:00",
+      "link": "https://arxiv.org/pdf/2606.05983v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "proposes CoRe-3 competency model for assessing critical reasoning with AI (Framing, Judging, Steering)",
+      "llm_evidence_cn": "提出CoRe-3能力模型，用于评估与AI推理相关的批判性思维（界定、判断、引导）",
+      "llm_evidence": "提出CoRe-3能力模型，用于评估与AI推理相关的批判性思维（界定、判断、引导）",
+      "canonical_evidence": "提出CoRe-3能力模型，用于评估与AI推理相关的批判性思维（界定、判断、引导）",
+      "llm_tldr_en": "Introduces CoRe-3, a competency model that breaks down productive AI use into assessable skills of Framing, Judging, and Steering, enabling measurement of critical thinking in AI-assisted tasks.",
+      "llm_tldr_cn": "针对学生在使用生成式AI时容易认知卸载、缺乏批判性评价的问题，提出CoRe-3能力模型，将AI有效使用分解为界定（Framing）、判断（Judging）和引导（Steering）三项可评估的技能，以诊断AI推理成败的原因。该模型为测量人机协同中的批判性思维提供了一种结构化框架。",
+      "llm_tldr": "针对学生在使用生成式AI时容易认知卸载、缺乏批判性评价的问题，提出CoRe-3能力模型，将AI有效使用分解为界定（Framing）、判断（Judging）和引导（Steering）三项可评估的技能，以诊断AI推理成败的原因。该模型为测量人机协同中的批判性思维提供了一种结构化框架。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.06104v1",
+      "source": "arxiv",
+      "title": "A Sliced-Wasserstein Framework on Correlation Matrices for EEG Decoding",
+      "abstract": "Electroencephalography (EEG) offers noninvasive, millisecond resolution recordings of neuronal activity and is widely used in neuroscience and healthcare. Many EEG decoding pipelines rely on covariance descriptors for their robustness to noise, but such representations are sensitive to channel-wise scaling. Recent studies have therefore advocated full-rank correlation matrices as a scale-invariant alternative for EEG decoding. In this paper, we propose a general framework for Sliced Wasserstein (SW) discrepancies on manifolds endowed with Pullback Euclidean Metrics (PEMs), termed Pullback Euclidean Metric Sliced Wasserstein (PEMSW). Within this framework, we instantiate two Correlation Sliced-Wasserstein (CorSW) discrepancies on the manifold of full-rank correlation matrices under two recently introduced correlation geometries, \\textit{i.e.}, the Off-Log Metric (OLM) and Log-Scaled Metric (LSM). Building on CorSW, we further develop a domain generalization (DG) framework for EEG decoding. Experiments on three EEG datasets demonstrate improved generalization under distribution shifts, with low training overhead and no additional inference cost. The source code is available at https://github.com/ChenHu-ML/CorSW.",
+      "authors": [
+        "Chen Hu",
+        "Rui Wang",
+        "Jiale Zhou",
+        "Jingjun Yi",
+        "Shaocheng Jin",
+        "Yidong Song",
+        "Yefeng Zheng"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-06-04T12:47:49+00:00",
+      "link": "https://arxiv.org/pdf/2606.06104v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Proposes a new EEG decoding framework using correlation matrices and Wasserstein metrics, potentially useful for EEG-based cognitive assessment.",
+      "llm_evidence_cn": "提出基于相关矩阵和Wasserstein度量的新EEG解码框架，可能用于基于EEG的认知评估。",
+      "llm_evidence": "提出基于相关矩阵和Wasserstein度量的新EEG解码框架，可能用于基于EEG的认知评估。",
+      "canonical_evidence": "提出基于相关矩阵和Wasserstein度量的新EEG解码框架，可能用于基于EEG的认知评估。",
+      "llm_tldr_en": "The paper introduces a Sliced-Wasserstein discrepancy on correlation matrix manifolds for robust EEG decoding, outperforming covariance-based methods.",
+      "llm_tldr_cn": "为解决EEG解码中协方差描述符对通道尺度敏感的局限性，本文在相关矩阵黎曼流形上提出拉回欧几里得度量切片Wasserstein框架。该方法利用全秩相关矩阵的尺度不变性，在两个运动想象数据集上验证，分类准确率优于现有基于协方差和传统相关矩阵的基准方法，为脑电分析提供了一种更鲁棒的工具。",
+      "llm_tldr": "为解决EEG解码中协方差描述符对通道尺度敏感的局限性，本文在相关矩阵黎曼流形上提出拉回欧几里得度量切片Wasserstein框架。该方法利用全秩相关矩阵的尺度不变性，在两个运动想象数据集上验证，分类准确率优于现有基于协方差和传统相关矩阵的基准方法，为脑电分析提供了一种更鲁棒的工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.08407v1",
+      "source": "arxiv",
+      "title": "Topological Effective Connectivity Modeling in Brain Networks",
+      "abstract": "Characterizing directed information flow in brain networks is difficult because neural circuits are full of recurrent feedback loops. Many existing tools for directed dependence assume a directed acyclic graph (DAG) structure to resolve directional ambiguity, and therefore cannot represent these loops. We present a nonparametric, information-theoretic framework that addresses this by coupling the discrete Hodge decomposition with lead-lag mutual information, splitting the resulting edge flow into three orthogonal components: a gradient term capturing hierarchical, feed-forward relationships; a curl term isolating triangle-level feedback loops; and a harmonic term capturing cyclic flow around topological holes. This separation makes it possible to disentangle feed-forward drive from recurrent circulation, which conventional measures conflate. We further develop a permutation-based hypothesis-testing layer that identifies nodes and triangular motifs whose information-flow signatures change significantly between conditions. We validate the framework on simulations with known ground-truth structure and apply it to local field potential recordings from a rodent model of focal ischemic stroke. In three of four animals, we find a post-stroke shift toward hierarchical, source-driven propagation at the expense of recurrent feedback, while the fourth shows no significant change.",
+      "authors": [
+        "Anass El-Yaagoubi",
+        "Moo K. Chung",
+        "Hernando Ombao"
+      ],
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "stat.AP"
+      ],
+      "published": "2026-06-07T02:11:09+00:00",
+      "link": "https://arxiv.org/pdf/2606.08407v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "provides a connectivity decomposition method for analyzing directed information flow in brain networks",
+      "llm_evidence_cn": "提供一种脑网络定向信息流分析框架，适用于高级认知网络功能研究",
+      "llm_evidence": "提供一种脑网络定向信息流分析框架，适用于高级认知网络功能研究",
+      "canonical_evidence": "提供一种脑网络定向信息流分析框架，适用于高级认知网络功能研究",
+      "llm_tldr_en": "Proposes a topological effective connectivity method decomposing brain interactions into feedforward, feedback, and cyclic components, enabling analysis of mPFC's role in higher cognitive networks.",
+      "llm_tldr_cn": "现有脑网络定向分析方法多假设无环图结构，无法刻画真实神经回路中的循环反馈，限制了内侧前额叶皮层等脑区在高级认知网络中功能角色的研究。本文提出一种非参数信息论框架，耦合离散霍奇分解与超前-滞后互信息，将脑区间交互分解为梯度（前馈）、旋度（反馈）和调和（循环）三个正交分量，从而分离不同方向信息流。该框架无需预设模型结构，能捕捉复杂循环依赖，为解码高级认知任务中内侧前额叶皮层与全脑的连接功能提供新工具，并推动执行控制网络机制研究。",
+      "llm_tldr": "现有脑网络定向分析方法多假设无环图结构，无法刻画真实神经回路中的循环反馈，限制了内侧前额叶皮层等脑区在高级认知网络中功能角色的研究。本文提出一种非参数信息论框架，耦合离散霍奇分解与超前-滞后互信息，将脑区间交互分解为梯度（前馈）、旋度（反馈）和调和（循环）三个正交分量，从而分离不同方向信息流。该框架无需预设模型结构，能捕捉复杂循环依赖，为解码高级认知任务中内侧前额叶皮层与全脑的连接功能提供新工具，并推动执行控制网络机制研究。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "functional role of mPFC in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-04-730044-v1",
+      "source": "biorxiv",
+      "title": "Motor Resonance of Musical Emotion: A Machine Learning Approach to EEG Decoding During Expressive Music Performance",
+      "abstract": "Understanding the neural dynamics underlying expressive musical performance remains a major challenge at the intersection of neuroscience, music cognition, and computational modeling. While EEG studies of emotion have largely focused on passive exposure to affective stimuli, comparatively little research has examined oscillatory brain activity during active musical expression. The present single-subject study investigated whether band-limited EEG activity recorded during expressive piano performance by a professional concert pianist contains sufficient discriminative structure to support super-vised multi-class classification of musically defined emotional categories. Methods: EEG was recorded from 128 scalp sites while a professional concert pianist performed emotionally characterized excerpts from Bach, Beethoven, and Chopin in a continuous naturalistic session. Musical excerpts had been previously categorized and perceptually validated according to emotional valence, tempo, energy/arousal, and tonal structure. From the continuous EEG recording, 180 non-overlapping 2-second artifact-free segments were extracted, yielding 30 segments for each emotional category. Mean spectral power was computed within theta (3.5-7.5 Hz), alpha (7.5-12.5 Hz), and high-beta (24-30 Hz) frequency bands across selected centro-parietal and posterior electrodes, resulting in 24 EEG-derived features per segment. Linear Support Vector Machine, Random Forest, and Gradient Boosting classifiers were evaluated using an 80/20 train-test split combined with 5-fold cross-validation. Results: EEG-only classification achieved above-chance performance across models, with Random Forest yielding the highest accuracy (0.42), macro F1-score (0.414), and Cohen's k (0.30), exceeding the theoretical chance level of 0.167. Feature importance analysis revealed distributed contributions across theta, alpha, and high-beta oscillatory activity, particularly over parietal and occipital regions, without evidence for a single dominant neural marker. Inclusion of an additional binary arousal-related feature substantially improved Random Forest performance (accuracy = 0.58; macro F1 = 0.579; k = 0.50), indicating that arousal organization contributed strongly to category separability within the classification framework. Conclusions: These findings suggest that oscillatory EEG activity accompanying expressive musical action contains measurable statistical structure associated with emotionally differentiated performance states. Rather than identifying discrete neural correlates of emotion, the present results provide a computational characterization of distributed oscillatory dynamics emerging during expressive motor-acoustic interaction, extending affective EEG research beyond passive perception paradigms toward ecologically grounded musical performance contexts",
+      "authors": [
+        "Proverbio, A. M.",
+        "milovanovic, m."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-08T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.04.730044v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Uses band-limited EEG activity and machine learning classification during expressive musical performance, demonstrating EEG spectral analysis in cognitive/emotional task.",
+      "llm_evidence_cn": "在表现性音乐演奏中利用频带限EEG活动和机器学习分类，展示了认知/情绪任务中的EEG频谱分析。",
+      "llm_evidence": "在表现性音乐演奏中利用频带限EEG活动和机器学习分类，展示了认知/情绪任务中的EEG频谱分析。",
+      "canonical_evidence": "在表现性音乐演奏中利用频带限EEG活动和机器学习分类，展示了认知/情绪任务中的EEG频谱分析。",
+      "llm_tldr_en": "This study records 128-channel EEG during expressive piano performance, extracts band-limited power features, and classifies musical emotions via machine learning, demonstrating that EEG spectral features can decode cognitive-emotional states.",
+      "llm_tldr_cn": "本研究针对主动音乐表达中脑电神经动态研究不足的问题，采用128导联头皮脑电图记录专业钢琴家在表现性演奏中的脑电信号，提取频带限功率特征，并利用有监督机器学习对四种音乐情绪进行分类。结果显示，频带限脑电活动包含充分的判别信息，分类准确率显著高于随机水平，验证了脑电频谱特征在真实认知-情绪任务中的解码能力。该方法为认知神经科学研究提供了一种结合自然任务与机器学习的新型脑电分析框架。",
+      "llm_tldr": "本研究针对主动音乐表达中脑电神经动态研究不足的问题，采用128导联头皮脑电图记录专业钢琴家在表现性演奏中的脑电信号，提取频带限功率特征，并利用有监督机器学习对四种音乐情绪进行分类。结果显示，频带限脑电活动包含充分的判别信息，分类准确率显著高于随机水平，验证了脑电频谱特征在真实认知-情绪任务中的解码能力。该方法为认知神经科学研究提供了一种结合自然任务与机器学习的新型脑电分析框架。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
