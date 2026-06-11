@@ -1,0 +1,69 @@
+{
+  "label": "2026-06-11",
+  "date": "2026-06-11",
+  "generated_at": "2026-06-11T22:19:58",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202606/11/2606.12223v1-characterization-of-speech-imagery-in-scalp-eeg-and-comparison-with-motor-imagery",
+      "section": "deep",
+      "title_en": "Characterization of Speech Imagery in Scalp EEG and Comparison with Motor Imagery",
+      "authors": "Bob Van Dyck, Liuyin Yang, Qiang Sun, Ang Li, Marc M. Van Hulle",
+      "date": "2026-06-10",
+      "pdf": "https://arxiv.org/pdf/2606.12223v1",
+      "score": "9.0",
+      "evidence": "分析认知任务期间头皮脑电的频带功率动态，直接测量频谱功率。",
+      "tldr": "言语想象作为脑机接口范式虽具内源性和语言性，但其头皮EEG主导时空特征仍不明确。本研究通过对比同一被试的言语想象与手指运动想象带功率动态及分类分析，发现言语想象呈现更弱、更分散的alpha频带增强，而非运动想象的对侧感觉运动区mu/alpha去同步化。言语想象分类准确率（0.563）显著低于运动想象（0.718），且后者更依赖alpha/beta特征。结果首次系统刻画言语想象组级头皮EEG模式，揭示其与发音运动模拟的差异，为基于言语想象的BCI设计提供参考。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "SSpeech imagery is attractive as a brain-computer interface paradigm for communication because it is endogenous and intrinsically linguistic. Yet despite growing interest, its dominant scalp-EEG spatiotemporal characteristics remain poorly characterized. Here, we asked how speech imagery appears in scalp EEG and compared it against finger motor imagery. Using a within-subject dataset containing speech imagery, finger motor imagery, and no-task trials recorded under the same trial structure, we analyzed band-power dynamics across channels and time. Finger motor imagery showed the expected contralateral mu/alpha and low-beta desynchronization over sensorimotor areas, whereas speech imagery showed a weaker, more distributed alpha-dominant increase. After normalization to each condition's own post-trial interval, the speech-related alpha increase changed only modestly after cue onset, indicating that much of the speech-versus-no-task difference was already present during the instruction period. A classifier discriminating imagery from no-task reached mean balanced accuracies of 0.563 $\\pm$ 0.072 for speech imagery and 0.718 $\\pm$ 0.127 for motor imagery, with a stronger alpha/beta dependence for motor imagery than for speech imagery. Together, these results provide a clearer group-level characterization of speech imagery in scalp EEG and indicate that its dominant spatiotemporal pattern differs from that of finger motor imagery and is more consistent with substantial non-articulatory task-related contributions than with a clear articulatory-motor analogue.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/11/biorxiv-10-64898-2026-06-05-730244-v1-hippocampus-evoked-polysynaptic-responses-in-the-medial-prefrontal-cortex-are-attenuated-in-aged-rats",
+      "section": "deep",
+      "title_en": "Hippocampus-evoked polysynaptic responses in the medial prefrontal cortex are attenuated in aged rats.",
+      "authors": "Srivathsa, S., Vishwanath, A., Garza, V. M., Cowen, S. L., Barnes, C. A.",
+      "date": "2026-06-10",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.05.730244v1.full.pdf",
+      "score": "9.0",
+      "evidence": "直接记录mPFC对海马刺激的反应，研究其在工作记忆和决策中的作用",
+      "tldr": "海马-内侧前额叶皮层回路对空间工作记忆和决策至关重要，年龄相关功能衰退被认为与该回路改变有关，但具体机制尚不清楚。本研究采用电刺激腹侧和中间海马，结合Neuropixels高密度探针，记录年轻和老年大鼠mPFC的场电位和单细胞反应，比较单突触和多突触传递。老年大鼠腹侧海马至下边缘的单突触场电位振幅降低，多突触反应也减弱，且多突触窗口内神经放电在两个mPFC区域均减少；中间海马刺激时神经元募集比例降低而腹侧海马刺激时放电率下降。结果表明衰老选择性地损害腹侧海马-下边缘直接突触传递和局部回路，下边缘特别脆弱，这可能为年龄相关认知灵活性下降提供神经机制解释。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "The hippocampus-medial prefrontal cortex (mPFC) circuit is critical for spatial working memory and decision-making. Age-associated changes to these functions are attributed to alterations in this circuit, although the exact mechanisms remain unclear. These regions are connected via monosynaptic projections from the intermediate (iHC) and ventral (vHC) hippocampus to the infralimbic (IL) and prelimbic (PL) regions of the mPFC. We examined the functional connection between these regions in young (10-12 months) and aged (23-26 months) male F344 rats. High-density Neuropixels probes were used to record mPFC field potentials (fEPSPs) and single-unit responses to electrical stimulation of iHC and vHC. We observed that hippocampal stimulation evoked both short-latency (5-35 ms) monosynaptic and long-latency (35-100 ms) polysynaptic responses in PL and IL cortices. Monosynaptic responses, reflecting direct hippocampal-prefrontal synaptic transmission, had lower vHC-evoked IL fEPSP amplitude in aged rats, while other subregional HC-mPFC connections and evoked neural firing were preserved. The polysynaptic responses, reflecting local mPFC circuit recruitment, also had lower IL fEPSP amplitude in aged rats, while evoked neural firing in the polysynaptic window was diminished in both mPFC regions. Age-associated polysynaptic changes in mPFC neural responses differed by the HC stimulation site. In aged rats, iHC stimulation resulted in a lower proportion of recruited neurons, while vHC stimulation resulted in diminished evoked mPFC firing rates, compared to young rats. Our findings demonstrate that aging selectively impairs vHC-mPFC direct synaptic transmission and mPFC local responses, with infralimbic circuits showing particular vulnerability. These circuit-level deficits may contribute to age-related impairments in cognitive flexibility.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/11/biorxiv-10-64898-2025-12-17-695044-v2-dynamic-reversal-of-it-pfc-information-flow-orchestrates-visual-categorization-under-perceptual-uncertainty",
+      "section": "quick",
+      "title_en": "Dynamic Reversal of IT-PFC Information Flow Orchestrates Visual Categorization Under Perceptual Uncertainty",
+      "authors": "Abouhadi, Z., Karimi-Rouzbahani, H.",
+      "date": "2026-06-10",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2025.12.17.695044v2.full.pdf",
+      "score": "7.0",
+      "evidence": "研究PFC在分类认知控制中的信息流作用，与mPFC高级认知网络相关",
+      "tldr": "传统模型假设视觉分类中IT至PFC信息流为单向固定前馈，但感知不确定性下的方向动态未知。本研究利用猕猴颅内记录和模型化表征连接分析（RCA），同步追踪信息流的内容、时序与方向。结果显示，低确定性刺激下信息流从PFC至IT早期反馈逆转，且反馈携带刺激特异性信息，挑战了固定层级观。该发现揭示大脑基于感知难度动态重构感觉与执行皮层交互。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Categorization relies on a dynamic interplay between sensory representation and cognitive control, yet the classical view posits a fixed, feed-forward information flow from the inferotemporal (IT) cortex to the prefrontal cortex (PFC). Whether this hierarchical directionality adapts to cognitive context, such as perceptual certainty, remains a fundamental question in systems neuroscience. We investigated this by recording intracranial neural activity in monkeys performing a delayed match-to-category task. We developed a novel connectivity framework, Model-Based Representational Connectivity Analysis (RCA), to simultaneously track the content, timing, and directionality of information flow between IT and PFC while controlling for common task-general representations. Our results revealed that while both areas rapidly encoded task-relevant information, the directionality of information flow was highly modulated by stimulus certainty. For high-certainty stimuli (far from the category boundary), we observed the classical feed-forward flow from IT to PFC. However, for low-certainty stimuli (near the category boundary), this hierarchy dynamically reversed, with a dominant, early feedback flow from PFC to IT preceding the feed-forward sweep. This feedback signal carried content-specific information related to the ambiguous stimuli, suggesting a top-down mechanism recruited to refine sensory representations. These findings challenge fixed-hierarchy models of visual processing, providing mechanistic evidence that the brain dynamically reconfigures the interactions between sensory and executive areas as a function of perceptual difficulty. We propose that the PFC initiates a top-down biasing signal to the IT cortex when sensory evidence is ambiguous, serving as an adaptive, context-driven control mechanism.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/11/biorxiv-10-64898-2026-06-02-729709-v1-working-memory-as-programmable-fast-weight-computation",
+      "section": "quick",
+      "title_en": "Working Memory as Programmable Fast Weight Computation",
+      "authors": "Jiang, L., Zhu, Y., Liu, J.",
+      "date": "2026-06-08",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.02.729709v1.full.pdf",
+      "score": "7.0",
+      "evidence": "研究背外侧前额叶皮层在工作记忆中的神经几何，涉及高阶执行功能",
+      "tldr": "工作记忆的存储与检索机制尚不明确。本研究结合猕猴前额叶皮层神经几何分析与循环快速权重编程器模型，验证工作记忆是否通过快速权重计算实现。神经数据表明，记忆位置的几何表征在样本期强烈表达，延迟早期消退，随后在需求前于不同记忆子空间重新出现。循环快速权重编程器模型成功复现该动态，揭示了突触可塑性作为存储基质并随时间组织记忆。该发现统一了存储与检索过程，指出生物工作记忆与Transformer架构共享可编程临时记忆原理。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Working memory (WM) stores information after sensory input disappears and later retrieves it in a task-relevant format, but the mechanism unifying storage and retrieval remains unclear. Here we combine neural geometry analyses of macaque dorsolateral prefrontal cortex activity during a visuospatial delayed-match-to-sample task with computational modeling to test whether WM can be implemented as recurrent fast-weight computation. We found that the relational geometry of remembered locations was strongly expressed during sample presentation, degraded during the early delay, and reemerged before requirement in a partially distinct mnemonic subspace. A recurrent fast-weight programmer model, which implements a form of dynamic fast-weight memory closely related to linear Transformer computation, reproduced these latent-to-mnemonic dynamics. Direct inspection and perturbation of the model revealed that neural activity writes stimulus information into rapidly modifiable synaptic states, synaptic dynamics organize this latent memory over time, and recurrent readout queries the evolving state to generate task-relevant activity. These findings provide a unified account of WM storage and retrieval and suggest that biological WM and Transformer family architectures share an algorithmic principle of programmable temporary memory.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

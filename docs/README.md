@@ -6,34 +6,32 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-10
-- 运行时间：2026-06-10 22:45:02 UTC
+- 最新运行日期：2026-06-11
+- 运行时间：2026-06-11 22:19:45 UTC
 - 运行状态：成功
 - 本次总论文数：4
-- 精读区：0
-- 速读区：4
+- 精读区：2
+- 速读区：2
 
 ### 今日简报（AI）
-今日速读三篇论文：从教学生与生成式AI推理的胜任力模型，到脑电相关矩阵的切片Wasserstein解码框架
-重点关注《Framing, Judging, Steering》提出的“框定—判断—引导”AI教学能力模型，以及《Sliced
-- 详情：[/202606/10/README](/202606/10/README)
+今日脑科学精读聚焦言语想象脑电特征与海马-前额叶老化通路衰减，速读关注视觉分类的动态信息流反转及工作记忆快速权重模型
+- 详情：[/202606/11/README](/202606/11/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Characterization of Speech Imagery in Scalp EEG and Comparison with Motor Imagery](/202606/11/2606.12223v1-characterization-of-speech-imagery-in-scalp-eeg-and-comparison-with-motor-imagery)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：分析认知任务期间头皮脑电的频带功率动态，直接测量频谱功率。
+2. [Hippocampus-evoked polysynaptic responses in the medial prefrontal cortex are attenuated in aged rats.](/202606/11/biorxiv-10-64898-2026-06-05-730244-v1-hippocampus-evoked-polysynaptic-responses-in-the-medial-prefrontal-cortex-are-attenuated-in-aged-rats)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：直接记录mPFC对海马刺激的反应，研究其在工作记忆和决策中的作用
 
 ### 速读区论文标签
-1. [Framing, Judging, Steering: An Assessable Competency Model for Teach-ing Students to Reason With Generative AI](/202606/10/2606.05983v1-framing-judging-steering-an-assessable-competency-model-for-teach-ing-students-to-reason-with-generative-ai)  
+1. [Dynamic Reversal of IT-PFC Information Flow Orchestrates Visual Categorization Under Perceptual Uncertainty](/202606/11/biorxiv-10-64898-2025-12-17-695044-v2-dynamic-reversal-of-it-pfc-information-flow-orchestrates-visual-categorization-under-perceptual-uncertainty)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：提出CoRe-3能力模型，用于评估与AI推理相关的批判性思维（界定、判断、引导）
-2. [A Sliced-Wasserstein Framework on Correlation Matrices for EEG Decoding](/202606/10/2606.06104v1-a-sliced-wasserstein-framework-on-correlation-matrices-for-eeg-decoding)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：提出基于相关矩阵和Wasserstein度量的新EEG解码框架，可能用于基于EEG的认知评估。
-3. [Topological Effective Connectivity Modeling in Brain Networks](/202606/10/2606.08407v1-topological-effective-connectivity-modeling-in-brain-networks)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：提供一种脑网络定向信息流分析框架，适用于高级认知网络功能研究
-4. [Motor Resonance of Musical Emotion: A Machine Learning Approach to EEG Decoding During Expressive Music Performance](/202606/10/biorxiv-10-64898-2026-06-04-730044-v1-motor-resonance-of-musical-emotion-a-machine-learning-approach-to-eeg-decoding-during-expressive-music-performance)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：在表现性音乐演奏中利用频带限EEG活动和机器学习分类，展示了认知/情绪任务中的EEG频谱分析。
+   evidence：研究PFC在分类认知控制中的信息流作用，与mPFC高级认知网络相关
+2. [Working Memory as Programmable Fast Weight Computation](/202606/11/biorxiv-10-64898-2026-06-02-729709-v1-working-memory-as-programmable-fast-weight-computation)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：研究背外侧前额叶皮层在工作记忆中的神经几何，涉及高阶执行功能
 
 
 <div class="dpr-home-promo-card">
