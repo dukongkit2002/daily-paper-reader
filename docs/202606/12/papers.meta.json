@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-12",
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T20:50:47",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/12/biorxiv-10-1101-2023-01-16-524214-v2-single-neuron-selectivity-rules-underlying-population-representations-in-prefrontal-cortex",
+      "section": "quick",
+      "title_en": "Single-neuron selectivity rules underlying population representations in prefrontal cortex",
+      "authors": "Böhm, C., Lee, A. K.",
+      "date": "2026-06-04",
+      "pdf": "https://www.biorxiv.org/content/10.1101/2023.01.16.524214v2.full.pdf",
+      "score": "6.0",
+      "evidence": "前额叶皮层单神经元对空间、时间、类别等任务变量的编码",
+      "tldr": "前额叶皮层神经元对多种行为变量表现出选择性，但单神经元水平的编码如何组织成层级或几何等群体表征结构仍不清楚。本研究通过大鼠导航任务，分析了内侧前额叶皮层(mPFC)神经元对空间、时间及行为类别的编码。群体活动呈现层级结构，类别内神经距离小于类别间距离；单神经元则独立编码类别与空间，并表现出跨类别的空间/时间编码偏好。这些发现揭示了不同抽象水平下独特的选择性规则，表明前额叶表征可能源于模块化计算，支持灵活的行为适应。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Neurons in prefrontal cortex exhibit selectivity for a range of behaviorally relevant variables, such as sensory stimuli, place, time, choice, context, and category. At the population level, representations of these variables can be organized in various ways--for instance, geometrically or hierarchically. However, how selectivity for each feature is distributed across cells and how this gives rise to such population-level representational structure is unclear. To address these questions, we analyzed coding for space, time, and category in rats performing a navigational task featuring two behavioral categories, starts and goals, each consisting of multiple locations. Population activity was organized hierarchically, with neural distances between elements of a category being smaller than the distances between categories. At the single cell level, individual medial prefrontal cortex (mPFC) neurons were tuned to category and space independently, consistent with hierarchical population geometry emerging from random mixed selectivity, while neurons exhibited preferences for representing space or time across categories, consistent with functional specialization. These distinct selectivity rules across different levels of abstraction suggest that different aspects of prefrontal representations have disparate origins and may enable modularized computations across multiple behaviors and contexts.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

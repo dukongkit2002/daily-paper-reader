@@ -6,32 +6,24 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-11
-- 运行时间：2026-06-11 22:19:45 UTC
+- 最新运行日期：2026-06-12
+- 运行时间：2026-06-12 20:50:41 UTC
 - 运行状态：成功
-- 本次总论文数：4
-- 精读区：2
-- 速读区：2
+- 本次总论文数：1
+- 精读区：0
+- 速读区：1
 
 ### 今日简报（AI）
-今日脑科学精读聚焦言语想象脑电特征与海马-前额叶老化通路衰减，速读关注视觉分类的动态信息流反转及工作记忆快速权重模型
-- 详情：[/202606/11/README](/202606/11/README)
+大脑是一支管弦乐队而非独奏家：今日速读《Single-neuron selectivity rules underlying population representations in prefrontal cortex》，发现前额叶皮层的信息编码并非由单个“超级神经元”主导，而是靠一群神经元按简单规则组合出复杂表征。如果想理解决策、工作记忆等高级认知的神经密码，这篇关于群体编码规则的研究值得一看。普通读者可从“群体智慧”视角去读它：思考大脑如何用大量简单元素编织出灵活而稳健的思维。
+- 详情：[/202606/12/README](/202606/12/README)
 
 ### 精读区论文标签
-1. [Characterization of Speech Imagery in Scalp EEG and Comparison with Motor Imagery](/202606/11/2606.12223v1-characterization-of-speech-imagery-in-scalp-eeg-and-comparison-with-motor-imagery)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：分析认知任务期间头皮脑电的频带功率动态，直接测量频谱功率。
-2. [Hippocampus-evoked polysynaptic responses in the medial prefrontal cortex are attenuated in aged rats.](/202606/11/biorxiv-10-64898-2026-06-05-730244-v1-hippocampus-evoked-polysynaptic-responses-in-the-medial-prefrontal-cortex-are-attenuated-in-aged-rats)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：直接记录mPFC对海马刺激的反应，研究其在工作记忆和决策中的作用
+- 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Dynamic Reversal of IT-PFC Information Flow Orchestrates Visual Categorization Under Perceptual Uncertainty](/202606/11/biorxiv-10-64898-2025-12-17-695044-v2-dynamic-reversal-of-it-pfc-information-flow-orchestrates-visual-categorization-under-perceptual-uncertainty)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：研究PFC在分类认知控制中的信息流作用，与mPFC高级认知网络相关
-2. [Working Memory as Programmable Fast Weight Computation](/202606/11/biorxiv-10-64898-2026-06-02-729709-v1-working-memory-as-programmable-fast-weight-computation)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：研究背外侧前额叶皮层在工作记忆中的神经几何，涉及高阶执行功能
+1. [Single-neuron selectivity rules underlying population representations in prefrontal cortex](/202606/12/biorxiv-10-1101-2023-01-16-524214-v2-single-neuron-selectivity-rules-underlying-population-representations-in-prefrontal-cortex)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：前额叶皮层单神经元对空间、时间、类别等任务变量的编码
 
 
 <div class="dpr-home-promo-card">

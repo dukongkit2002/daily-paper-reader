@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-06-12 <!--dpr-date:20260612-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/12/biorxiv-10-1101-2023-01-16-524214-v2-single-neuron-selectivity-rules-underlying-population-representations-in-prefrontal-cortex" data-sidebar-item="{&quot;title&quot;: &quot;Single-neuron selectivity rules underlying population representations in prefrontal cortex&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-1101-2023-01-16-524214-v2-single-neuron-selectivity-rules-underlying-population-representations-in-prefrontal-cortex&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;前额叶皮层单神经元对空间、时间、类别等任务变量的编码&quot;}">Single-neuron selectivity rules underlying population representations in prefrontal cortex</a>
   * 2026-06-11 <!--dpr-date:20260611-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/11/2606.12223v1-characterization-of-speech-imagery-in-scalp-eeg-and-comparison-with-motor-imagery" data-sidebar-item="{&quot;title&quot;: &quot;Characterization of Speech Imagery in Scalp EEG and Comparison with Motor Imagery&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2606.12223v1-characterization-of-speech-imagery-in-scalp-eeg-and-comparison-with-motor-imagery&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;分析认知任务期间头皮脑电的频带功率动态，直接测量频谱功率。&quot;}">Characterization of Speech Imagery in Scalp EEG and Comparison with Motor Imagery</a>
