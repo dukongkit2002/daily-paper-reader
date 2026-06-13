@@ -1,0 +1,69 @@
+{
+  "label": "2026-06-13",
+  "date": "2026-06-13",
+  "generated_at": "2026-06-13T21:21:04",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202606/13/biorxiv-10-1101-2025-01-15-633176-v3-redundant-prefrontal-hemispheres-adapt-storage-strategy-to-working-memory-demands",
+      "section": "deep",
+      "title_en": "Redundant prefrontal hemispheres adapt storage strategy to working memory demands",
+      "authors": "Tschiersch, M., Umakantha, A., Williamson, R. C., Smith, M. A., Barbosa, J., Compte, A.",
+      "date": "2026-06-11",
+      "pdf": "https://www.biorxiv.org/content/10.1101/2025.01.15.633176v3.full.pdf",
+      "score": "9.0",
+      "evidence": "同步双侧前额叶皮层记录于视觉空间工作记忆任务中，揭示冗余存储策略",
+      "tldr": "前额叶半球如何动态协调以维持统一视觉空间表征存在争议：专业化架构认为各半球独立控制对侧空间，而冗余架构主张两半球共同引导全空间行为。本研究通过猕猴的双侧前额叶皮层同时记录，发现两半球对行为误差的预测贡献相同、解码错误弱相关、序列依赖局限于半球内，提示冗余且弱耦合的组织方式。吸引子网络模拟表明，低负荷任务中冗余提升精度，高负荷任务中弱耦合促进半球专业化从而增加容量，该模式在人类与猴子数据中均得到验证，为理解半球间灵活适应认知需求的架构提供了统一框架。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "The prefrontal hemispheres must coordinate dynamically to maintain a unified representation of visual space. Recently, two opposing theories using distinct storage strategies have been proposed: A high-capacity specialized architecture, where each hemisphere governs contralateral behavior, and a fail-safe redundant one, where both hemispheres jointly guide behavior across the visual space. Here, we analyzed simultaneous bilateral prefrontal cortex recordings from three macaque monkeys performing a visuo-spatial working memory task. Both hemispheres equally predicted behavioral imprecision, decoding errors were weakly correlated between hemispheres, and serial dependence remained local within hemispheres, suggesting a redundant, weakly coupled organization. Attractor network simulations showed that redundancy improved precision when task demands were below memory capacity, while weak interhemispheric coupling increased capacity in more demanding tasks by allowing hemispheric specialization. These predicted patterns were validated in human and monkey data, reconciling previous findings and revealing a versatile interhemispheric architecture that adapts to varying cognitive demands.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/13/biorxiv-10-1101-2025-11-20-689403-v2-complexity-as-a-potential-neurophysiological-correlate-of-awe",
+      "section": "deep",
+      "title_en": "Complexity as a Potential Neurophysiological Correlate of Awe",
+      "authors": "Chen, J. C. C., Mace, G., Ostrand, A., Valtierra, C., Griffith, S., Campusano, R., Li, A., Vinson, E., Schlomberg, J., Eshel, M., Suntay, J. M., Rahim, S., Anguera-Singla, R., Nandi, B., Hartley, I., Brown, D. A., Swann, N. C., Mazzucato, L., Hu, X., Zhang, D., Timmermann, C., Bijanzadeh, M., Abbasi-Asl, R., Carhart-Harris, R., Zanto, T., Ziegler, D., Gazzaley, A., Pasquini, L.",
+      "date": "2026-06-11",
+      "pdf": "https://www.biorxiv.org/content/10.1101/2025.11.20.689403v2.full.pdf",
+      "score": "9.0",
+      "evidence": "在敬畏体验期间分析脑电α/θ频段功率谱",
+      "tldr": "敬畏是一种带来广阔感和统一感的积极情绪，已知对幸福和社会行为有促进，但其神经生理基础至今缺乏清晰认识。本研究通过记录23名健康老年人观看沉浸式自然影片时的脑电图(EEG)、皮肤电导(SCL)水平，并让被试在观看过程中持续评定敬畏等情绪强度，来捕捉敬畏的动态神经生理特征。敬畏事件发生时，SCL和EEG alpha/theta功率显著下降，而Lempel-Ziv复杂度(LZC)则增高，且LZC与敬畏主观强度正相关、与SCL负相关；这一模式在视频片段和DMT药物诱发的敬畏数据中得到重复验证，尤其见于枕叶区域。该发现揭示了敬畏可能以神经信号熵增加为标志，暗示意识体验丰富度的提升，LZC有望成为跨情境的敬畏神经生理标记。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Awe is a positive emotion often accompanied by sensations of vastness and unity, with known benefits for well-being and social behavior. However, its neural underpinnings remain poorly understood. We recorded electroencephalography (EEG) and autonomic physiology in 23 healthy older participants while they watched a nature-based audiovisual film and subjectively rated awe events. Awe was the predominant emotion reported - though other positive emotions (e.g., joy) were also highly rated. Awe events were associated with decreased skin conductance level (SCL), and decreased EEG alpha and theta spectral power - physiological changes associated with low arousal and positively valenced emotional states. Interestingly, awe events exhibited increased Lempel Ziv Complexity (LZC) - indicating heightened neural signal entropy and increased richness of the conscious experience. LZC was also positively associated with the intensity of the awe ratings and negatively associated with SCL. Three additional datasets with separate independent induction methods (video clips and pharmacological induction via N,N-dimethyltryptamine) also showed positive occipital LZC associations with awe - suggesting some generalizability of LZC as a neurophysiological marker of awe. These results suggest that awe evokes neurophysiological states linked to the subjective affective experience.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/13/biorxiv-10-64898-2026-06-09-729603-v1-structured-and-flexible-representations-in-medial-frontal-cortex-support-goal-directed-navigation",
+      "section": "deep",
+      "title_en": "Structured and flexible representations in medial-frontal cortex support goal-directed navigation",
+      "authors": "Doohan, P. T., Jensen, K. T., Chen, Y., Godinho, B. S., Burns, C. D. G., Qin, C., Emery, J. L., Cini, R. J., Walton, M. E., Behrens, T. E. J., Akam, T. E.",
+      "date": "2026-06-10",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.09.729603v1.full.pdf",
+      "score": "9.0",
+      "evidence": "直接探究内侧前额叶皮层在灵活目标导向导航任务中的神经表征和动态，该任务涉及高级认知",
+      "tldr": "目标导向导航依赖前额叶皮层，但其细胞机制尚不清楚。本研究通过训练小鼠在结构化迷宫中执行每试次改变目标的导航任务，利用光遗传学沉默和电生理记录，探究内侧前额叶皮层（mFC）在灵活导航中的神经机制。我们发现mFC活动包含两个因子化成分：一是结构化位置表征，高效编码行为轨迹；二是灵活目标距离表征，两者在theta节律中顺序加工。这些结果揭示mFC可能通过评估未来距离来更新结构化行为策略，支持灵活导航，为理解前额叶规划的计算原理提供新机制。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Humans and animals plan actions to achieve goals in worlds that are complex and continually changing. While planning is critically dependent on the prefrontal cortex in humans, little is known about its cellular underpinnings. Mechanistic understanding has been limited by a scarcity of controlled animal experiments in which subjects must flexibly plan novel behaviours on every trial. Here we characterise the neural representations and dynamics of mouse medial frontal cortex (mFC) during flexible navigation in structured environments. We trained mice to navigate complex mazes, to goals that changed location on every trial. Optogenetic silencing established that mFC was necessary for efficient navigation. mFC activity was dominated by two factorised components: (i) a structured representation of subjects' position within the maze that formed an efficient code for behavioural trajectories, and (ii) a flexible representation of the shortest path-distance to the current goal. Both representations oscillated within local field potential (LFP) theta cycles, processing from further to closer to the goal at a systematic offset. These data suggest a computation in which mFC evaluates possible futures by their distance-to-goal to update a structured behavioural policy.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/13/biorxiv-10-64898-2026-06-11-731696-v1-early-resource-scarcity-drives-persistent-transcriptional-changes-and-vascular-remodeling-in-the-female-prefrontal-cortex",
+      "section": "deep",
+      "title_en": "Early resource scarcity drives persistent transcriptional changes and vascular remodeling in the female prefrontal cortex",
+      "authors": "Andrews, E. R., Crist, R. C., Silva, A. I., Chehimi, S. N., Miranda, G., Shuey, J., Berhane, L., Hoot, L., Harris, E., Cuarenta, A., Wimmer, M. E., Bangasser, D. A., Reiner, B. C.",
+      "date": "2026-06-12",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.11.731696v1.full.pdf",
+      "score": "9.0",
+      "evidence": "直接研究内侧前额叶皮层（mPFC）与执行功能",
+      "tldr": "早期儿童贫困与成年后精神疾病和神经退行性疾病风险增加相关，但细胞机制不明。内侧前额叶皮质（mPFC）对早期环境敏感，可能介导长期易感性。本研究采用大鼠有限垫料模型（LBN）模拟早期资源匮乏，通过单核RNA测序和3D血管重建分析成年mPFC的性别和细胞类型特异性变化。结果显示，仅雌性动物出现锥体神经元和血管细胞的大规模转录失调，以及血管体积和长度减少导致的血管覆盖降低。这一发现首次揭示早期逆境通过雌性特异性血管重塑持久损害脑功能，为理解贫困相关脑健康性别差异提供了新机制。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Early childhood poverty is an environmental risk factor for psychiatric and neurodegenerative disorders, yet the cellular mechanisms by which resource scarcity produces persistent brain vulnerability remain poorly understood. The medial prefrontal cortex (mPFC), which regulates executive function and motivated behavior, is sensitive to early environmental conditions. To identify mechanisms linking early resource scarcity to lasting mPFC dysfunction, we used the rat limited bedding and nesting (LBN) model, which recapitulates key features of poverty. Prior work shows LBN disrupts mPFC-mediated behaviors in adulthood, often in a sex-specific manner. Here, we used single-nucleus RNA sequencing (snRNAseq) to identify sex- and cell-type-specific transcriptional alterations in the adult mPFC following brief postnatal LBN exposure or control housing. LBN induced more differentially expressed genes (DEGs) across multiple pyramidal neuron clusters in females than in males. Unexpectedly, the largest transcriptional changes due to LBN occurred in vascular cells in females, whereas male vascular cells exhibited no DEGs. These female-specific vascular genes were enriched for alterations of transcriptional programs regulating angiogenesis and endothelial structure. This molecular profile was orthogonally validated with 3D vascular reconstruction, revealing LBN reduced vascular coverage in the adult female mPFC, driven by decreased vessel volume and shortened vessel length, while males were unaffected. Reduced vascular coverage may constrain metabolic support to this region. The postnatal period is a critical window for vascular maturation, and, taken together, these findings identify persistent, female-specific vascular alterations as a novel and previously unrecognized mechanism through which early resource scarcity may persistently affect brain function and vulnerability.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

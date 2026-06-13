@@ -1,0 +1,206 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-13T21:18:20.527941+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-1101-2025-01-15-633176-v3",
+      "source": "biorxiv",
+      "title": "Redundant prefrontal hemispheres adapt storage strategy to working memory demands",
+      "abstract": "The prefrontal hemispheres must coordinate dynamically to maintain a unified representation of visual space. Recently, two opposing theories using distinct storage strategies have been proposed: A high-capacity specialized architecture, where each hemisphere governs contralateral behavior, and a fail-safe redundant one, where both hemispheres jointly guide behavior across the visual space. Here, we analyzed simultaneous bilateral prefrontal cortex recordings from three macaque monkeys performing a visuo-spatial working memory task. Both hemispheres equally predicted behavioral imprecision, decoding errors were weakly correlated between hemispheres, and serial dependence remained local within hemispheres, suggesting a redundant, weakly coupled organization. Attractor network simulations showed that redundancy improved precision when task demands were below memory capacity, while weak interhemispheric coupling increased capacity in more demanding tasks by allowing hemispheric specialization. These predicted patterns were validated in human and monkey data, reconciling previous findings and revealing a versatile interhemispheric architecture that adapts to varying cognitive demands.",
+      "authors": [
+        "Tschiersch, M.",
+        "Umakantha, A.",
+        "Williamson, R. C.",
+        "Smith, M. A.",
+        "Barbosa, J.",
+        "Compte, A."
+      ],
+      "primary_category": "animal behavior and cognition",
+      "categories": [
+        "animal behavior and cognition"
+      ],
+      "published": "2026-06-11T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.01.15.633176v3.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Simultaneous bilateral prefrontal cortex recordings during visuo-spatial working memory task reveal redundant storage strategy",
+      "llm_evidence_cn": "同步双侧前额叶皮层记录于视觉空间工作记忆任务中，揭示冗余存储策略",
+      "llm_evidence": "同步双侧前额叶皮层记录于视觉空间工作记忆任务中，揭示冗余存储策略",
+      "canonical_evidence": "同步双侧前额叶皮层记录于视觉空间工作记忆任务中，揭示冗余存储策略",
+      "llm_tldr_en": "Recorded bilateral prefrontal cortex in macaques during a working memory task, finding redundant hemispheric storage that adapts to demands, advancing understanding of prefrontal executive function",
+      "llm_tldr_cn": "该研究针对前额叶半球如何协调表征视觉空间的问题，同时记录了三只猕猴在执行视觉空间工作记忆任务时的双侧前额叶皮层活动。分析发现，两个半球的神经活动均能预测行为不精确性，但半球间解码错误弱相关，序列依赖局限于半球内，表明采用的是冗余且弱耦合的存储策略。这一结果挑战了特化架构假说，揭示了前额叶皮层在执行功能中采用灵活冗余的存储机制，为更高认知网络中前额叶功能的研究提供了直接神经生理证据。",
+      "llm_tldr": "该研究针对前额叶半球如何协调表征视觉空间的问题，同时记录了三只猕猴在执行视觉空间工作记忆任务时的双侧前额叶皮层活动。分析发现，两个半球的神经活动均能预测行为不精确性，但半球间解码错误弱相关，序列依赖局限于半球内，表明采用的是冗余且弱耦合的存储策略。这一结果挑战了特化架构假说，揭示了前额叶皮层在执行功能中采用灵活冗余的存储机制，为更高认知网络中前额叶功能的研究提供了直接神经生理证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-1101-2025-11-20-689403-v2",
+      "source": "biorxiv",
+      "title": "Complexity as a Potential Neurophysiological Correlate of Awe",
+      "abstract": "Awe is a positive emotion often accompanied by sensations of vastness and unity, with known benefits for well-being and social behavior. However, its neural underpinnings remain poorly understood. We recorded electroencephalography (EEG) and autonomic physiology in 23 healthy older participants while they watched a nature-based audiovisual film and subjectively rated awe events. Awe was the predominant emotion reported - though other positive emotions (e.g., joy) were also highly rated. Awe events were associated with decreased skin conductance level (SCL), and decreased EEG alpha and theta spectral power - physiological changes associated with low arousal and positively valenced emotional states. Interestingly, awe events exhibited increased Lempel Ziv Complexity (LZC) - indicating heightened neural signal entropy and increased richness of the conscious experience. LZC was also positively associated with the intensity of the awe ratings and negatively associated with SCL. Three additional datasets with separate independent induction methods (video clips and pharmacological induction via N,N-dimethyltryptamine) also showed positive occipital LZC associations with awe - suggesting some generalizability of LZC as a neurophysiological marker of awe. These results suggest that awe evokes neurophysiological states linked to the subjective affective experience.",
+      "authors": [
+        "Chen, J. C. C.",
+        "Mace, G.",
+        "Ostrand, A.",
+        "Valtierra, C.",
+        "Griffith, S.",
+        "Campusano, R.",
+        "Li, A.",
+        "Vinson, E.",
+        "Schlomberg, J.",
+        "Eshel, M.",
+        "Suntay, J. M.",
+        "Rahim, S.",
+        "Anguera-Singla, R.",
+        "Nandi, B.",
+        "Hartley, I.",
+        "Brown, D. A.",
+        "Swann, N. C.",
+        "Mazzucato, L.",
+        "Hu, X.",
+        "Zhang, D.",
+        "Timmermann, C.",
+        "Bijanzadeh, M.",
+        "Abbasi-Asl, R.",
+        "Carhart-Harris, R.",
+        "Zanto, T.",
+        "Ziegler, D.",
+        "Gazzaley, A.",
+        "Pasquini, L."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-11T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.11.20.689403v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "EEG alpha/theta spectral power analysis during awe experience",
+      "llm_evidence_cn": "在敬畏体验期间分析脑电α/θ频段功率谱",
+      "llm_evidence": "在敬畏体验期间分析脑电α/θ频段功率谱",
+      "canonical_evidence": "在敬畏体验期间分析脑电α/θ频段功率谱",
+      "llm_tldr_en": "In 23 older adults, awe while watching a nature film was linked to decreased EEG alpha/theta power and increased Lempel-Ziv complexity, indicating low-arousal positive states and enhanced neural processing.",
+      "llm_tldr_cn": "针对敬畏情绪神经机制尚不明确的问题，本研究在23名老年参与者观看自然影片时记录脑电图和生理指标，发现敬畏事件伴随α和θ频段功率下降、皮肤电导降低以及Lempel-Ziv复杂度升高，表明敬畏与低唤醒积极状态及增强的神经处理复杂性相关，为情绪神经科学研究提供了新视角。",
+      "llm_tldr": "针对敬畏情绪神经机制尚不明确的问题，本研究在23名老年参与者观看自然影片时记录脑电图和生理指标，发现敬畏事件伴随α和θ频段功率下降、皮肤电导降低以及Lempel-Ziv复杂度升高，表明敬畏与低唤醒积极状态及增强的神经处理复杂性相关，为情绪神经科学研究提供了新视角。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-09-729603-v1",
+      "source": "biorxiv",
+      "title": "Structured and flexible representations in medial-frontal cortex support goal-directed navigation",
+      "abstract": "Humans and animals plan actions to achieve goals in worlds that are complex and continually changing. While planning is critically dependent on the prefrontal cortex in humans, little is known about its cellular underpinnings. Mechanistic understanding has been limited by a scarcity of controlled animal experiments in which subjects must flexibly plan novel behaviours on every trial. Here we characterise the neural representations and dynamics of mouse medial frontal cortex (mFC) during flexible navigation in structured environments. We trained mice to navigate complex mazes, to goals that changed location on every trial. Optogenetic silencing established that mFC was necessary for efficient navigation. mFC activity was dominated by two factorised components: (i) a structured representation of subjects' position within the maze that formed an efficient code for behavioural trajectories, and (ii) a flexible representation of the shortest path-distance to the current goal. Both representations oscillated within local field potential (LFP) theta cycles, processing from further to closer to the goal at a systematic offset. These data suggest a computation in which mFC evaluates possible futures by their distance-to-goal to update a structured behavioural policy.",
+      "authors": [
+        "Doohan, P. T.",
+        "Jensen, K. T.",
+        "Chen, Y.",
+        "Godinho, B. S.",
+        "Burns, C. D. G.",
+        "Qin, C.",
+        "Emery, J. L.",
+        "Cini, R. J.",
+        "Walton, M. E.",
+        "Behrens, T. E. J.",
+        "Akam, T. E."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-10T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.09.729603v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Directly investigates medial frontal cortex neural representations and dynamics during flexible goal-directed navigation, a higher cognitive task",
+      "llm_evidence_cn": "直接探究内侧前额叶皮层在灵活目标导向导航任务中的神经表征和动态，该任务涉及高级认知",
+      "llm_evidence": "直接探究内侧前额叶皮层在灵活目标导向导航任务中的神经表征和动态，该任务涉及高级认知",
+      "canonical_evidence": "直接探究内侧前额叶皮层在灵活目标导向导航任务中的神经表征和动态，该任务涉及高级认知",
+      "llm_tldr_en": "Characterizes mouse medial frontal cortex activity during flexible navigation, revealing structured representations and sequential dynamics that support goal-directed planning.",
+      "llm_tldr_cn": "为揭示内侧前额叶皮层如何支持复杂世界中的灵活规划，研究训练小鼠在目标位置随机变换的迷宫中导航，并记录内侧额叶皮层神经活动。光遗传沉默证实该脑区为高效导航所必需，其活动呈现结构化和顺序性表征，编码迷宫布局和目标位置。结果阐明了mPFC通过结构化、灵活的表征支持目标导向行为的细胞水平机制，为理解前额叶高级认知功能提供神经基础。",
+      "llm_tldr": "为揭示内侧前额叶皮层如何支持复杂世界中的灵活规划，研究训练小鼠在目标位置随机变换的迷宫中导航，并记录内侧额叶皮层神经活动。光遗传沉默证实该脑区为高效导航所必需，其活动呈现结构化和顺序性表征，编码迷宫布局和目标位置。结果阐明了mPFC通过结构化、灵活的表征支持目标导向行为的细胞水平机制，为理解前额叶高级认知功能提供神经基础。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-11-731696-v1",
+      "source": "biorxiv",
+      "title": "Early resource scarcity drives persistent transcriptional changes and vascular remodeling in the female prefrontal cortex",
+      "abstract": "Early childhood poverty is an environmental risk factor for psychiatric and neurodegenerative disorders, yet the cellular mechanisms by which resource scarcity produces persistent brain vulnerability remain poorly understood. The medial prefrontal cortex (mPFC), which regulates executive function and motivated behavior, is sensitive to early environmental conditions. To identify mechanisms linking early resource scarcity to lasting mPFC dysfunction, we used the rat limited bedding and nesting (LBN) model, which recapitulates key features of poverty. Prior work shows LBN disrupts mPFC-mediated behaviors in adulthood, often in a sex-specific manner. Here, we used single-nucleus RNA sequencing (snRNAseq) to identify sex- and cell-type-specific transcriptional alterations in the adult mPFC following brief postnatal LBN exposure or control housing. LBN induced more differentially expressed genes (DEGs) across multiple pyramidal neuron clusters in females than in males. Unexpectedly, the largest transcriptional changes due to LBN occurred in vascular cells in females, whereas male vascular cells exhibited no DEGs. These female-specific vascular genes were enriched for alterations of transcriptional programs regulating angiogenesis and endothelial structure. This molecular profile was orthogonally validated with 3D vascular reconstruction, revealing LBN reduced vascular coverage in the adult female mPFC, driven by decreased vessel volume and shortened vessel length, while males were unaffected. Reduced vascular coverage may constrain metabolic support to this region. The postnatal period is a critical window for vascular maturation, and, taken together, these findings identify persistent, female-specific vascular alterations as a novel and previously unrecognized mechanism through which early resource scarcity may persistently affect brain function and vulnerability.",
+      "authors": [
+        "Andrews, E. R.",
+        "Crist, R. C.",
+        "Silva, A. I.",
+        "Chehimi, S. N.",
+        "Miranda, G.",
+        "Shuey, J.",
+        "Berhane, L.",
+        "Hoot, L.",
+        "Harris, E.",
+        "Cuarenta, A.",
+        "Wimmer, M. E.",
+        "Bangasser, D. A.",
+        "Reiner, B. C."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-12T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.11.731696v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "directly examines medial prefrontal cortex (mPFC) and executive function",
+      "llm_evidence_cn": "直接研究内侧前额叶皮层（mPFC）与执行功能",
+      "llm_evidence": "直接研究内侧前额叶皮层（mPFC）与执行功能",
+      "canonical_evidence": "直接研究内侧前额叶皮层（mPFC）与执行功能",
+      "llm_tldr_en": "Uses a rat model of early poverty (LBN) to investigate lasting molecular and vascular changes in the female mPFC, revealing mechanisms of disrupted executive function.",
+      "llm_tldr_cn": "该研究利用大鼠有限垫料和筑巢（LBN）模型模拟早期贫困，探索其对雌性内侧前额叶皮层（mPFC）的长期分子和细胞影响。通过单核RNA测序发现，早期资源匮乏导致mPFC特定细胞类型的转录变化和血管重塑，且具有性别特异性。这些发现揭示了早期逆境如何通过改变mPFC的结构和功能而影响成年后的执行功能，为理解贫困对大脑健康的持久影响提供了机制性解释。",
+      "llm_tldr": "该研究利用大鼠有限垫料和筑巢（LBN）模型模拟早期贫困，探索其对雌性内侧前额叶皮层（mPFC）的长期分子和细胞影响。通过单核RNA测序发现，早期资源匮乏导致mPFC特定细胞类型的转录变化和血管重塑，且具有性别特异性。这些发现揭示了早期逆境如何通过改变mPFC的结构和功能而影响成年后的执行功能，为理解贫困对大脑健康的持久影响提供了机制性解释。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}

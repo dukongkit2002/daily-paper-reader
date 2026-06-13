@@ -6,24 +6,35 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-12
-- 运行时间：2026-06-12 20:50:41 UTC
+- 最新运行日期：2026-06-13
+- 运行时间：2026-06-13 21:20:57 UTC
 - 运行状态：成功
-- 本次总论文数：1
-- 精读区：0
-- 速读区：1
+- 本次总论文数：4
+- 精读区：4
+- 速读区：0
 
 ### 今日简报（AI）
-大脑是一支管弦乐队而非独奏家：今日速读《Single-neuron selectivity rules underlying population representations in prefrontal cortex》，发现前额叶皮层的信息编码并非由单个“超级神经元”主导，而是靠一群神经元按简单规则组合出复杂表征。如果想理解决策、工作记忆等高级认知的神经密码，这篇关于群体编码规则的研究值得一看。普通读者可从“群体智慧”视角去读它：思考大脑如何用大量简单元素编织出灵活而稳健的思维。
-- 详情：[/202606/12/README](/202606/12/README)
+大脑如何聪明地调整记忆策略，以及敬畏感背后的神经密码，是今天探索的焦点。  
+研究发现，大脑前额叶会像团队分工一样动态分配记忆存储，而“复杂感”可能是我们体验到敬畏时的关键脑活动特征。  
+想优化自己的记忆效率？不妨了解大脑如何自动切换存储模式；想感受敬畏，可以试着去寻找那些让你感到既着迷又难以简单描述的体验。
+- 详情：[/202606/13/README](/202606/13/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Redundant prefrontal hemispheres adapt storage strategy to working memory demands](/202606/13/biorxiv-10-1101-2025-01-15-633176-v3-redundant-prefrontal-hemispheres-adapt-storage-strategy-to-working-memory-demands)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：同步双侧前额叶皮层记录于视觉空间工作记忆任务中，揭示冗余存储策略
+2. [Complexity as a Potential Neurophysiological Correlate of Awe](/202606/13/biorxiv-10-1101-2025-11-20-689403-v2-complexity-as-a-potential-neurophysiological-correlate-of-awe)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：在敬畏体验期间分析脑电α/θ频段功率谱
+3. [Structured and flexible representations in medial-frontal cortex support goal-directed navigation](/202606/13/biorxiv-10-64898-2026-06-09-729603-v1-structured-and-flexible-representations-in-medial-frontal-cortex-support-goal-directed-navigation)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：直接探究内侧前额叶皮层在灵活目标导向导航任务中的神经表征和动态，该任务涉及高级认知
+4. [Early resource scarcity drives persistent transcriptional changes and vascular remodeling in the female prefrontal cortex](/202606/13/biorxiv-10-64898-2026-06-11-731696-v1-early-resource-scarcity-drives-persistent-transcriptional-changes-and-vascular-remodeling-in-the-female-prefrontal-cortex)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：直接研究内侧前额叶皮层（mPFC）与执行功能
 
 ### 速读区论文标签
-1. [Single-neuron selectivity rules underlying population representations in prefrontal cortex](/202606/12/biorxiv-10-1101-2023-01-16-524214-v2-single-neuron-selectivity-rules-underlying-population-representations-in-prefrontal-cortex)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：前额叶皮层单神经元对空间、时间、类别等任务变量的编码
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">
