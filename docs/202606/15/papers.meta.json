@@ -1,0 +1,54 @@
+{
+  "label": "2026-06-15",
+  "date": "2026-06-15",
+  "generated_at": "2026-06-15T22:51:47",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202606/15/2606.14120v1-faconformer-frequency-aware-convolutional-transformer-for-auditory-attention-decoding",
+      "section": "deep",
+      "title_en": "FAConformer: Frequency-Aware Convolutional Transformer for Auditory Attention Decoding",
+      "authors": "Ziwei Wang, Xingyi He, Tianwang Jia, Hongbin Wang, Dongrui Wu",
+      "date": "2026-06-12",
+      "pdf": "https://arxiv.org/pdf/2606.14120v1",
+      "score": "9.0",
+      "evidence": "提出利用多频带EEG模式的频率感知模型进行听觉注意解码",
+      "tldr": "听觉注意力解码（AAD）旨在从多人语音环境中通过神经反应推断听者注意的说话人，是神经导向助听系统的关键。但现有模型大多手工提取或简单拼接多频带EEG特征，未能充分建模频带特定模式及频带间交互。因此提出FAConformer，将EEG分解为多频带后，每个频带用独立CNN-Transformer编码，然后通过频率感知注意力模块自适应融合跨频带依赖，并利用频带辅助监督优化弱贡献分支。在两个公开AAD数据集上，三种决策窗长下，FAConformer均超越12个基线模型，较现有最佳模型提升4.9%，且消融及可解释性分析验证其有效性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Auditory attention decoding (AAD) aims to infer the attended speaker from neural responses in multi-speaker acoustic environments and is a key problem for neuro-steered hearing systems. Although recent studies have achieved encouraging progress, existing AAD models still do not fully exploit frequency domain electroencephalography (EEG) information. In particular, most approaches introduce multi-band information through handcrafted feature extraction or direct cross-band feature concatenation, which mainly exploit frequency information at a shallow level and may overlook band-specific patterns and cross-band interactions. To address these limitations, this paper proposes FAConformer, a frequency-aware CNN-Transformer framework for AAD that explicitly integrates band-specific encoding and adaptive cross-band interaction. Specifically, FAConformer first decomposes EEG signals into multiple frequency bands and assigns each band to an independent CNN-Transformer encoder for band-specific modeling. The resulting band-wise features are then adaptively fused by a carefully designed frequency-aware attention (FAA) module that models cross-band dependencies by treating band-wise features as tokens. Further, band-wise auxiliary supervision (BAS) is introduced to prevent weakly contributing branches from being under-optimized during joint training. In this way, FAConformer performs frequency-aware modeling that more effectively exploits frequency domain information. Extensive experiments on two public AAD datasets with three decision-window lengths demonstrated that FAConformer consistently outperformed 12 competitive baselines, surpassing the current state-of-the-art model by 4.9%. Further analyses of band importance, ablation, and parameter sensitivity verify the effectiveness, robustness, and interpretability of the proposed framework. Code is available at https://github.com/wzwvv/FAConformer.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/15/biorxiv-10-64898-2026-06-04-729854-v1-oscillatory-correlates-of-visuomotor-control-under-varying-amount-of-feedback-delay",
+      "section": "quick",
+      "title_en": "Oscillatory correlates of visuomotor control under varying amount of feedback delay",
+      "authors": "Wang, P., Graefe, J., Wang, Z., Peters, F., Yi, J., Limanowski, J.",
+      "date": "2026-06-08",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.04.729854v1.full.pdf",
+      "score": "7.0",
+      "evidence": "研究视觉运动控制（认知任务）期间α、β、θ振荡与EEG的相关性",
+      "tldr": "自适应身体表征需不断整合视觉与本体感觉反馈，以往研究指出alpha/beta振荡与感觉冲突下的注意控制有关，但不知其是否随冲突程度渐变。本研究采用虚拟现实手-目标相位匹配任务，通过添加大小两种视觉反馈延迟，记录EEG。结果发现感觉运动beta振荡、夹带振荡和额中线theta振荡的调制均与延迟量相关，且夹带振荡更预测视觉信号而体感预测减弱，beta与它们相位耦合。这为理解视觉引导动作中感觉冲突的神经调整机制提供了关键振荡指标。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "A weighted integration of visual and proprioceptive movement feedback is key for an adaptive body representation by the brain. Previous work has suggested a relationship between alpha and beta oscillations in sensory cortices and inter-sensory attentional control under visuo-proprioceptive incongruence compared with congruence; and frontal theta oscillations as a marker of the related cognitive-attentional control and response inhibition. Here, we asked whether these oscillatory correlates indicate a gradual adjustment of attention and the corresponding sensory weights, rather than merely a response to conflict per se. Thus, we adopted a recently developed virtual reality based hand-target phase matching task: Participants had to track a target oscillation with recurrent grasping movements of a virtual hand, which they controlled via a data glove. We added a small or a large delay to the virtual hands movements, introducing varying amounts of visuo-proprioceptive conflict. Concurrent EEG recordings revealed a delay-dependent modulation of (i) sensorimotor beta oscillations, (ii) oscillations \"entrained\" at key movement frequencies over central-parietal sensors, and (iii) mid-frontal theta oscillations. Granger causality analysis suggested that entrained oscillations were more strongly predictive of visual kinematic signals, whereas the prediction of somatosensory kinematics was attenuated depending on the amount of delay. Finally, phase-amplitude couplings suggested that sensorimotor beta coupled with the movement-related oscillations as well as mid-frontal theta. Our results thus establish key oscillatory correlates that scale with the amount of visuo-proprioceptive conflict during visually guided action.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/15/biorxiv-10-64898-2026-03-03-709208-v2-long-term-reliability-and-stability-of-parameterized-resting-state-eeg-evidence-from-a-five-year-follow-up",
+      "section": "quick",
+      "title_en": "Long-term reliability and stability of parameterized resting state EEG: Evidence from a five-year follow-up",
+      "authors": "Politanskaia, P., Bywater, J., Finley, A. J., Keage, H. A. D., Kelley, N. J., McKeown, D. J., Schinazi, V. R., Angus, D. J.",
+      "date": "2026-06-11",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.03.03.709208v2.full.pdf",
+      "score": "6.0",
+      "evidence": "参数化静息态脑电图包含非周期指数和峰值频率，为认知EEG频谱分析提供可靠方法",
+      "tldr": "参数化EEG指标（如非周期指数和个体α峰值频率）作为衰老生物标志物潜力巨大，但长期稳定性证据不足。本研究对20-70岁成人进行间隔五年的静息态EEG重复测量，提取非周期指数、偏移、α功率及峰值频率。所有参数在通道和簇水平均表现出良好至优秀的重测信度（ICC 0.51–0.88），且α峰值频率下降、非周期指数变平坦，变化与衰老进程一致。研究证实参数化EEG的五年稳定性，为纵向追踪个体神经生理变化及识别病理偏差提供了可靠工具。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Several aspects of parameterized neural activity, including the aperiodic exponent and individual peak alpha frequency, have emerged as promising biomarkers for ageing, pathology, and cognitive decline. Their potential clinical application is tempered by a lack of evidence on long-term temporal stability. Existing investigations have largely relied on cross-sectional designs or considered stability for up to 90 days. Here, we examined five-year reliability, stability, and age-related changes in periodic and aperiodic neural activity using electroencephalography in adults aged 20-70 years. Resting-state EEG was recorded in two sessions, approximately five years apart. We extracted the aperiodic exponent, aperiodic offset, peak alpha power, and individual alpha peak frequency and examined test-retest reliability at both the channel and cluster levels. All parameters demonstrated fair to excellent test-retest reliability (intraclass correlations = 0.51-0.88). Linear mixed models revealed that individual peak alpha frequency decreased, the aperiodic exponent flattened, and parameterized alpha power remained unchanged. There were no interactions between time and age. Our findings suggest that parameterized activity is reliable over long timeframes, and demonstrates changes consistent with ageing-related processes. Spectral parameterization may provide a means of characterizing within-person neurophysiological changes across adulthood. Future research should explore the utility of identifying deviations that may indicate pathology.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

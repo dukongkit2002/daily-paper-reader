@@ -1,0 +1,142 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-15T22:49:24.125208+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2606.14120v1",
+      "source": "arxiv",
+      "title": "FAConformer: Frequency-Aware Convolutional Transformer for Auditory Attention Decoding",
+      "abstract": "Auditory attention decoding (AAD) aims to infer the attended speaker from neural responses in multi-speaker acoustic environments and is a key problem for neuro-steered hearing systems. Although recent studies have achieved encouraging progress, existing AAD models still do not fully exploit frequency domain electroencephalography (EEG) information. In particular, most approaches introduce multi-band information through handcrafted feature extraction or direct cross-band feature concatenation, which mainly exploit frequency information at a shallow level and may overlook band-specific patterns and cross-band interactions. To address these limitations, this paper proposes FAConformer, a frequency-aware CNN-Transformer framework for AAD that explicitly integrates band-specific encoding and adaptive cross-band interaction. Specifically, FAConformer first decomposes EEG signals into multiple frequency bands and assigns each band to an independent CNN-Transformer encoder for band-specific modeling. The resulting band-wise features are then adaptively fused by a carefully designed frequency-aware attention (FAA) module that models cross-band dependencies by treating band-wise features as tokens. Further, band-wise auxiliary supervision (BAS) is introduced to prevent weakly contributing branches from being under-optimized during joint training. In this way, FAConformer performs frequency-aware modeling that more effectively exploits frequency domain information. Extensive experiments on two public AAD datasets with three decision-window lengths demonstrated that FAConformer consistently outperformed 12 competitive baselines, surpassing the current state-of-the-art model by 4.9%. Further analyses of band importance, ablation, and parameter sensitivity verify the effectiveness, robustness, and interpretability of the proposed framework. Code is available at https://github.com/wzwvv/FAConformer.",
+      "authors": [
+        "Ziwei Wang",
+        "Xingyi He",
+        "Tianwang Jia",
+        "Hongbin Wang",
+        "Dongrui Wu"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "cs.AI",
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "published": "2026-06-12T04:59:09+00:00",
+      "link": "https://arxiv.org/pdf/2606.14120v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "proposes a frequency-aware model that exploits multi-band EEG patterns for auditory attention decoding",
+      "llm_evidence_cn": "提出利用多频带EEG模式的频率感知模型进行听觉注意解码",
+      "llm_evidence": "提出利用多频带EEG模式的频率感知模型进行听觉注意解码",
+      "canonical_evidence": "提出利用多频带EEG模式的频率感知模型进行听觉注意解码",
+      "llm_tldr_en": "This paper introduces FAConformer, a frequency-aware CNN-Transformer that improves auditory attention decoding by fully exploiting frequency domain EEG information, including band-specific patterns and cross-band interactions.",
+      "llm_tldr_cn": "现有听觉注意解码模型未充分利用频域脑电信息，尤其是频带特定模式与跨频带交互。本文提出频率感知CNN-Transformer框架FAConformer，通过浅层频率科学、深层交叉科学等模块协同提取多频带特征。实验表明，该方法在听觉注意解码任务上显著优于现有基线，验证了深度利用频域信息对神经语音追踪的重要价值。",
+      "llm_tldr": "现有听觉注意解码模型未充分利用频域脑电信息，尤其是频带特定模式与跨频带交互。本文提出频率感知CNN-Transformer框架FAConformer，通过浅层频率科学、深层交叉科学等模块协同提取多频带特征。实验表明，该方法在听觉注意解码任务上显著优于现有基线，验证了深度利用频域信息对神经语音追踪的重要价值。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-04-729854-v1",
+      "source": "biorxiv",
+      "title": "Oscillatory correlates of visuomotor control under varying amount of feedback delay",
+      "abstract": "A weighted integration of visual and proprioceptive movement feedback is key for an adaptive body representation by the brain. Previous work has suggested a relationship between alpha and beta oscillations in sensory cortices and inter-sensory attentional control under visuo-proprioceptive incongruence compared with congruence; and frontal theta oscillations as a marker of the related cognitive-attentional control and response inhibition. Here, we asked whether these oscillatory correlates indicate a gradual adjustment of attention and the corresponding sensory weights, rather than merely a response to conflict per se. Thus, we adopted a recently developed virtual reality based hand-target phase matching task: Participants had to track a target oscillation with recurrent grasping movements of a virtual hand, which they controlled via a data glove. We added a small or a large delay to the virtual hands movements, introducing varying amounts of visuo-proprioceptive conflict. Concurrent EEG recordings revealed a delay-dependent modulation of (i) sensorimotor beta oscillations, (ii) oscillations \"entrained\" at key movement frequencies over central-parietal sensors, and (iii) mid-frontal theta oscillations. Granger causality analysis suggested that entrained oscillations were more strongly predictive of visual kinematic signals, whereas the prediction of somatosensory kinematics was attenuated depending on the amount of delay. Finally, phase-amplitude couplings suggested that sensorimotor beta coupled with the movement-related oscillations as well as mid-frontal theta. Our results thus establish key oscillatory correlates that scale with the amount of visuo-proprioceptive conflict during visually guided action.",
+      "authors": [
+        "Wang, P.",
+        "Graefe, J.",
+        "Wang, Z.",
+        "Peters, F.",
+        "Yi, J.",
+        "Limanowski, J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-08T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.04.729854v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "investigates oscillatory correlates (alpha, beta, theta) of visuomotor control, a cognitive task, using EEG",
+      "llm_evidence_cn": "研究视觉运动控制（认知任务）期间α、β、θ振荡与EEG的相关性",
+      "llm_evidence": "研究视觉运动控制（认知任务）期间α、β、θ振荡与EEG的相关性",
+      "canonical_evidence": "研究视觉运动控制（认知任务）期间α、β、θ振荡与EEG的相关性",
+      "llm_tldr_en": "This study uses EEG to examine how alpha/beta oscillations in sensory cortices and frontal theta relate to attentional control during a visuomotor phase-matching task with varying feedback delay, indicating that these oscillatory measures reflect continuous adjustment of sensory weights.",
+      "llm_tldr_cn": "该研究利用虚拟现实手靶相位匹配任务，探讨视觉与本体感觉反馈延迟对感觉运动控制中振荡活动的影响。结果发现，感觉皮层的α/β振荡和额叶θ振荡随延迟量连续变化，反映了注意权重的渐进式调整，而非仅冲突响应。为理解多感觉整合中的认知控制机制提供了电生理证据。",
+      "llm_tldr": "该研究利用虚拟现实手靶相位匹配任务，探讨视觉与本体感觉反馈延迟对感觉运动控制中振荡活动的影响。结果发现，感觉皮层的α/β振荡和额叶θ振荡随延迟量连续变化，反映了注意权重的渐进式调整，而非仅冲突响应。为理解多感觉整合中的认知控制机制提供了电生理证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-03-709208-v2",
+      "source": "biorxiv",
+      "title": "Long-term reliability and stability of parameterized resting state EEG: Evidence from a five-year follow-up",
+      "abstract": "Several aspects of parameterized neural activity, including the aperiodic exponent and individual peak alpha frequency, have emerged as promising biomarkers for ageing, pathology, and cognitive decline. Their potential clinical application is tempered by a lack of evidence on long-term temporal stability. Existing investigations have largely relied on cross-sectional designs or considered stability for up to 90 days. Here, we examined five-year reliability, stability, and age-related changes in periodic and aperiodic neural activity using electroencephalography in adults aged 20-70 years. Resting-state EEG was recorded in two sessions, approximately five years apart. We extracted the aperiodic exponent, aperiodic offset, peak alpha power, and individual alpha peak frequency and examined test-retest reliability at both the channel and cluster levels. All parameters demonstrated fair to excellent test-retest reliability (intraclass correlations = 0.51-0.88). Linear mixed models revealed that individual peak alpha frequency decreased, the aperiodic exponent flattened, and parameterized alpha power remained unchanged. There were no interactions between time and age. Our findings suggest that parameterized activity is reliable over long timeframes, and demonstrates changes consistent with ageing-related processes. Spectral parameterization may provide a means of characterizing within-person neurophysiological changes across adulthood. Future research should explore the utility of identifying deviations that may indicate pathology.",
+      "authors": [
+        "Politanskaia, P.",
+        "Bywater, J.",
+        "Finley, A. J.",
+        "Keage, H. A. D.",
+        "Kelley, N. J.",
+        "McKeown, D. J.",
+        "Schinazi, V. R.",
+        "Angus, D. J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-11T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.03.709208v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "parameterized resting state EEG including aperiodic exponent and peak frequency; method for spectral analysis reliable over years",
+      "llm_evidence_cn": "参数化静息态脑电图包含非周期指数和峰值频率，为认知EEG频谱分析提供可靠方法",
+      "llm_evidence": "参数化静息态脑电图包含非周期指数和峰值频率，为认知EEG频谱分析提供可靠方法",
+      "canonical_evidence": "参数化静息态脑电图包含非周期指数和峰值频率，为认知EEG频谱分析提供可靠方法",
+      "llm_tldr_en": "This study demonstrates five-year reliability and stability of parameterized EEG measures (aperiodic exponent, peak alpha frequency) in adults, supporting their use as biomarkers for aging and cognition.",
+      "llm_tldr_cn": "该研究针对脑电参数化活动缺乏长期稳定性证据的问题，对20-70岁成年人进行了间隔五年的两次静息态脑电记录，提取非周期指数和峰值α频率。结果显示这些参数在五年内具有高度可靠性和稳定性，且随年龄变化，为将参数化脑电指标作为老化、病理和认知衰退的生物标志物提供了关键证据。方法上为认知EEG频谱分析提供了可信赖的工具。",
+      "llm_tldr": "该研究针对脑电参数化活动缺乏长期稳定性证据的问题，对20-70岁成年人进行了间隔五年的两次静息态脑电记录，提取非周期指数和峰值α频率。结果显示这些参数在五年内具有高度可靠性和稳定性，且随年龄变化，为将参数化脑电指标作为老化、病理和认知衰退的生物标志物提供了关键证据。方法上为认知EEG频谱分析提供了可信赖的工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
