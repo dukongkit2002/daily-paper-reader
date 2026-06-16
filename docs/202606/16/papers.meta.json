@@ -1,0 +1,54 @@
+{
+  "label": "2026-06-16",
+  "date": "2026-06-16",
+  "generated_at": "2026-06-16T23:14:53",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202606/16/2606.15278v1-rector-masked-region-channel-temporal-modeling-for-affective-and-cognitive-representation-learning",
+      "section": "deep",
+      "title_en": "RECTOR: Masked Region-Channel-Temporal Modeling for Affective and Cognitive Representation Learning",
+      "authors": "Jinhan Liu, Mahsa Shoaran",
+      "date": "2026-06-13",
+      "pdf": "https://arxiv.org/pdf/2606.15278v1",
+      "score": "8.0",
+      "evidence": "自监督EEG/sEEG表征学习用于认知障碍,提取区域-通道-时间特征。",
+      "tldr": "情感与认知障碍表现为跨脑区、通道和时间的动态网络，从EEG/sEEG学习鲁棒表示极具挑战。RECTOR提出自监督联合区域-通道-时间建模框架，核心是自适应功能分区诱导的层次块稀疏自注意力。在EEG情绪识别和sEEG任务参与分类上均达到最优，且对缺失通道和跨导联泛化鲁棒。为异构脑电数据的大规模预训练提供可解释的解决方案，揭示区域与通道层面的见解。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Affective and cognitive disorders manifest as distributed, time-varying brain network dynamics across regions, channels, and time, challenging robust representation learning from EEG/sEEG for clinical diagnosis. We propose RECTOR (Masked Region-Channel-Temporal Modeling), an end-to-end self-supervised framework that unifies joint region-channel-temporal representation learning beyond fixed anatomical priors. At its core, RECTOR-SA is a hierarchical, block-sparse self-attention induced by Adaptive Functional Partitioning that evolves region structures from static anatomical definitions to adaptive functional regions. The self-supervision is driven by Masked Topology and Representation Learning, which jointly optimizes three complementary objectives: Masked Predictive Modeling, Topological Structure Modeling, and Cross-View Consistency. Across diverse benchmarks, RECTOR sets a new state-of-the-art in EEG emotion recognition and sEEG task-engagement classification. Crucially, its strong robustness to missing channels and cross-montage generalization underscores its potential for large-scale pre-training on heterogeneous EEG/sEEG, providing interpretable insights at both region and channel levels.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/16/2606.14614v1-decoding-semantic-categories-from-picture-naming-eeg",
+      "section": "quick",
+      "title_en": "Decoding Semantic Categories from Picture-Naming EEG",
+      "authors": "Wei Hu, Binbin Xu",
+      "date": "2026-06-12",
+      "pdf": "https://arxiv.org/pdf/2606.14614v1",
+      "score": "7.0",
+      "evidence": "图片命名中EEG语义解码",
+      "tldr": "图片命名涉及从视觉感知到口语产出的复杂认知过程，但语义类别信息是否可从脑电信号中解码尚待探究。本研究采用高密度脑电图记录图片命名任务，利用预训练编码器与文本嵌入模型构建九类语义目标空间。通过结合早期视觉和晚期命名窗口，九分类解码准确率达0.781，表明语义类别在EEG中可显著区分。该发现为语言产出的词汇语义加工研究提供了新的神经解码证据。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Picture naming requires the transformation of visual object information into a spoken lexical response through perceptual, semantic, lexical, and articulatory processes. This study asked whether semantic-category information is recoverable from high-density EEG during overt picture naming. Sixteen native French-speaking participants performed a picture-naming task using line drawings. Picture labels were embedded with a multilingual text-embedding model and organized into nine interpretable semantic categories, providing a data-driven semantic target space for neural decoding. EEG activity was represented channel-wise using a pre-trained single-channel EEG encoder over an early post-stimulus window, a later naming-related window, and their combination. Nine-class decoding showed above-chance semantic-category discrimination in all temporal representations. Balanced accuracy increased from 0.562 in the early window to 0.610 in the naming-related window, and reached 0.781 when both windows were combined, with a maximum Macro-F1 of 0.784. Class-level F1 scores showed consistent gains across semantic categories, and sensor-level decoding maps indicated spatially distributed category information. These findings suggest that semantic-category structure is reflected in EEG activity during overt picture naming and that early and naming-related temporal windows provide complementary information. The results support the use of modern neural decoding methods as tools for investigating lexical-semantic processing in spoken language production.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/16/biorxiv-10-64898-2026-03-16-712233-v3-eeg-based-classification-models-reveal-differential-neural-processing-of-words-and-images",
+      "section": "quick",
+      "title_en": "EEG-based classification models reveal differential neural processing of words and images",
+      "authors": "Morakabati, N. R., Thiha, A. S., Schechtman, E.",
+      "date": "2026-06-15",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.03.16.712233v3.full.pdf",
+      "score": "7.0",
+      "evidence": "利用机器学习对EEG进行认知类别解码",
+      "tldr": "大脑如何区分处理词语与图像类别信息尚不明确。本研究设计类别重复检测任务，采集30名被试观看五类物体图像和词语时的脑电数据，训练支持向量机进行类别解码。结果发现图像分类准确率显著高于词语，且所有图像类别对均可区分，顶叶和左颞电极贡献突出，模式可跨被试泛化。该方法为利用脑电解码类别表征并探索清醒及离线状态下的神经动态提供了有效工具。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Background: Machine learning methods employing neuroimaging data are useful for monitoring the activation of neural representations. Specifically, they can be used to discern the brain networks engaged in processing specific categories of items. This approach has been employed on neuroimaging data, including functional magnetic resonance imaging data and electroencephalography (EEG) data. New method: Here, we present a task and an analytical pipeline for investigating category representations using EEG. Participants (N = 30) viewed a series of images and words of objects belonging to five categories (Animals, Tools, Food, Scenes, and Vehicles) and responded when items from the same category were presented consecutively. Results: We trained support vector machines on EEG data within participants and found that both image trials and word trials yielded significant category classification accuracy, with image trials achieving higher accuracy than word trials. When comparing categories in a pair-wise fashion, all pairs were statistically distinguishable for image trials, whereas only one pair was distinguishable for word trials. Parietal and Left Temporal electrodes contributed more to image classification than Frontal and Right Temporal electrodes. Category-specific activity patterns also generalized across participants for image trials. Comparison with existing methods: Our data and analytic pipeline yielded high classification accuracies, primarily for image trials, providing support for the utility of EEG data for neural decoding. Conclusions: These methods can be instrumental for exploring the activation and reactivation of neural representations at the category level during wakefulness and, potentially, during offline states.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
