@@ -6,31 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-16
-- 运行时间：2026-06-16 23:14:43 UTC
+- 最新运行日期：2026-06-17
+- 运行时间：2026-06-17 21:49:08 UTC
 - 运行状态：成功
-- 本次总论文数：3
+- 本次总论文数：1
 - 精读区：1
-- 速读区：2
+- 速读区：0
 
 ### 今日简报（AI）
-今日聚焦EEG脑电与表征学习，精读一篇创新性掩码建模论文，速览两篇语义解码研究。  
-最值得关注：RECTOR通过区域-通道-时间三重掩码，在情感与认知任务上显著提升EEG表征的泛化能力。  
-读者可跟进多模态掩码策略，并尝试将其应用到语义分类识别实验中。
-- 详情：[/202606/16/README](/202606/16/README)
+今日精读高分研究，揭秘中英双语儿童大脑后部α波如何预测早期读写能力。  
+核心发现：顶枕叶周期性α功率是衡量双语读写技能的潜在神经标志，且快速自动命名起关键中介作用。  
+想提升孩子的双语能力，不妨从锻炼快速命名的趣味游戏入手。
+- 详情：[/202606/17/README](/202606/17/README)
 
 ### 精读区论文标签
-1. [RECTOR: Masked Region-Channel-Temporal Modeling for Affective and Cognitive Representation Learning](/202606/16/2606.15278v1-rector-masked-region-channel-temporal-modeling-for-affective-and-cognitive-representation-learning)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：自监督EEG/sEEG表征学习用于认知障碍,提取区域-通道-时间特征。
+1. [Posterior Periodic Alpha Power as a Neural Marker of Early Biliteracy Skills: The Mediating Role of Rapid Automatized Naming in Chinese-English Bilingual Children](/202606/17/biorxiv-10-64898-2026-06-10-731265-v1-posterior-periodic-alpha-power-as-a-neural-marker-of-early-biliteracy-skills-the-mediating-role-of-rapid-automatized-naming-in-chinese-english-bilingual-children)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：使用周期性α功率（EEG频谱测量）预测双文能力
 
 ### 速读区论文标签
-1. [Decoding Semantic Categories from Picture-Naming EEG](/202606/16/2606.14614v1-decoding-semantic-categories-from-picture-naming-eeg)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：图片命名中EEG语义解码
-2. [EEG-based classification models reveal differential neural processing of words and images](/202606/16/biorxiv-10-64898-2026-03-16-712233-v3-eeg-based-classification-models-reveal-differential-neural-processing-of-words-and-images)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：利用机器学习对EEG进行认知类别解码
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">

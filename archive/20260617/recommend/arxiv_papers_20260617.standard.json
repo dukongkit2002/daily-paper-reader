@@ -1,0 +1,55 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-17T21:48:06.961926+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-06-10-731265-v1",
+      "source": "biorxiv",
+      "title": "Posterior Periodic Alpha Power as a Neural Marker of Early Biliteracy Skills: The Mediating Role of Rapid Automatized Naming in Chinese-English Bilingual Children",
+      "abstract": "In school-aged children, resting-state posterior alpha activity has been linked to thalamocortical signal coordination and literacy-related cognition. However, findings are mixed, partly because conventional band power measures conflate oscillatory (periodic) activity with the broadband aperiodic (1/f) background. We tested Chinese-English bilingual children in Grades 1 to 5 (N = 121; 72 families; mean age = 8.23 years, SD = 0.81) to examine if posterior periodic alpha power (8-12 Hz), isolated from aperiodic components, predicts foundational biliteracy skills (Chinese and English word reading and dictation). We also tested whether Chinese digit rapid automatized naming (CDRAN) mediates these associations. In regression models that accounted for family clustering and controlled for age, socioeconomic status (SES), and aperiodic components (exponent and offset), higher periodic alpha power uniquely predicted better performance on all four literacy outcomes. In structural equation models that accounted for family clustering, periodic alpha power predicted CDRAN ({beta} = .213, p = .011), and CDRAN significantly predicted Chinese word reading ({beta} = .442, p < .001), Chinese dictation ({beta} = .346, p = .003), English word reading ({beta} = .302, p < .001), and English dictation ({beta} = .349, p < .001). Indirect effects via CDRAN were significant for all outcomes. These findings suggest that aperiodic-adjusted periodic alpha power is associated with biliteracy variation across Chinese and English and that its association with biliteracy operates in part through rapid serial naming efficiency.",
+      "authors": [
+        "Lam, T. K.",
+        "Huo, S.",
+        "Lui, F. H. K.",
+        "Mcbride, C.",
+        "Maurer, U."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-11T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.10.731265v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "uses periodic alpha power (EEG spectral measure) to predict biliteracy skills",
+      "llm_evidence_cn": "使用周期性α功率（EEG频谱测量）预测双文能力",
+      "llm_evidence": "使用周期性α功率（EEG频谱测量）预测双文能力",
+      "canonical_evidence": "使用周期性α功率（EEG频谱测量）预测双文能力",
+      "llm_tldr_en": "This study isolates periodic alpha power from aperiodic components in resting EEG and shows that posterior alpha power predicts early biliteracy skills in Chinese-English bilingual children, with rapid automatized naming mediating the relationship.",
+      "llm_tldr_cn": "针对传统α频带功率测量混淆周期性与非周期性成分的问题，本研究从静息态EEG中分离出后部周期性α功率（8-12Hz），并检验其对汉英双语儿童早期双文能力的预测作用。结果显示，后部周期性α功率能显著预测中英文单词阅读和听写成绩，且快速自动命名在其中起中介作用。该发现为利用脑电频谱特征预测读写能力提供了准确的电生理标记。",
+      "llm_tldr": "针对传统α频带功率测量混淆周期性与非周期性成分的问题，本研究从静息态EEG中分离出后部周期性α功率（8-12Hz），并检验其对汉英双语儿童早期双文能力的预测作用。结果显示，后部周期性α功率能显著预测中英文单词阅读和听写成绩，且快速自动命名在其中起中介作用。该发现为利用脑电频谱特征预测读写能力提供了准确的电生理标记。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}
