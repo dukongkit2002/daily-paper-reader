@@ -6,26 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-17
-- 运行时间：2026-06-17 21:49:08 UTC
+- 最新运行日期：2026-06-18
+- 运行时间：2026-06-18 22:18:35 UTC
 - 运行状态：成功
 - 本次总论文数：1
-- 精读区：1
-- 速读区：0
+- 精读区：0
+- 速读区：1
 
 ### 今日简报（AI）
-今日精读高分研究，揭秘中英双语儿童大脑后部α波如何预测早期读写能力。  
-核心发现：顶枕叶周期性α功率是衡量双语读写技能的潜在神经标志，且快速自动命名起关键中介作用。  
-想提升孩子的双语能力，不妨从锻炼快速命名的趣味游戏入手。
-- 详情：[/202606/17/README](/202606/17/README)
+今日速读了一篇探究决策过程中神经活动动态几何重映射的研究，重点追踪了额叶与皮层下区域。  
+最有启发的方向是：发现在决策的不同阶段，这些脑区的神经群体编码会主动切换至截然不同的几何映射模式，揭示了比传统观点更灵活的认知切换机制。  
+若您对决策的神经基础或认知灵活性感兴趣，建议找原文速览其核心实验设计与几何分析方法图解，直观理解这种动态重构。
+- 详情：[/202606/18/README](/202606/18/README)
 
 ### 精读区论文标签
-1. [Posterior Periodic Alpha Power as a Neural Marker of Early Biliteracy Skills: The Mediating Role of Rapid Automatized Naming in Chinese-English Bilingual Children](/202606/17/biorxiv-10-64898-2026-06-10-731265-v1-posterior-periodic-alpha-power-as-a-neural-marker-of-early-biliteracy-skills-the-mediating-role-of-rapid-automatized-naming-in-chinese-english-bilingual-children)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：使用周期性α功率（EEG频谱测量）预测双文能力
+- 本次无精读推荐。
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Dynamic geometry remapping of neural activity within frontal and subcortical areas during decision-making](/202606/18/biorxiv-10-64898-2026-06-11-731612-v1-dynamic-geometry-remapping-of-neural-activity-within-frontal-and-subcortical-areas-during-decision-making)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：决策过程中额叶皮层神经几何动态重映射反映执行功能加工.
 
 
 <div class="dpr-home-promo-card">
