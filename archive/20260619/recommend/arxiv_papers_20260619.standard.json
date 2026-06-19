@@ -1,0 +1,227 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-19T21:34:29.211522+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-06-18-732791-v1",
+      "source": "biorxiv",
+      "title": "A Tripartite Map of the Ventromedial Prefrontal Cortex",
+      "abstract": "The ventromedial prefrontal cortex (VMPFC) has been repeatedly implicated in affect, valuation, and social cognition, yet how these diverse functions are organized within a single cortical territory has remained unresolved. Here, we integrate large-scale meta-analysis, individual-level task fMRI, artificial neural-network encoding models, and multimodal connectivity analyses to reveal the internal functional architecture of the human VMPFC. Across four complementary studies, we identify a robust tripartite organization along the anterior-posterior axis, comprising posterior affective, middle valuation, and anterior social functional motifs. Connectivity fingerprinting demonstrates that each motif is preferentially embedded within distinct large-scale brain networks, providing a mechanistic account of VMPFC functional specialization. This organization is reproducible at the level of individual subjects, generalizes to naturalistic stimuli, extends across development, and shows cross-species correspondence with non-human primates and multiple neurobiological markers. Together, these findings resolve a long-standing organizational question and establish a biologically grounded framework for interpreting VMPFC function.",
+      "authors": [
+        "Chen, G.",
+        "Song, D.",
+        "Fu, M.",
+        "Li, S.",
+        "Zhang, M.",
+        "Cui, Z.",
+        "Xia, M.",
+        "Sun, L.",
+        "He, Y.",
+        "Xu, T.",
+        "Yu, X.",
+        "Zang, Y.",
+        "Zhou, J.",
+        "Zhang, K.",
+        "Qin, S.",
+        "Popal, H.",
+        "Saygin, Z. M.",
+        "Osher, D. E.",
+        "Olson, I. R.",
+        "Rushworth, M. F. S.",
+        "Wang, Y."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-19T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.18.732791v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Reveals functional organization of VMPFC, a key mPFC subregion, into affective, valuation, and social motifs",
+      "llm_evidence_cn": "揭示腹内侧前额叶（mPFC关键子区）分为情感、估值和社会三元功能组织",
+      "llm_evidence": "揭示腹内侧前额叶（mPFC关键子区）分为情感、估值和社会三元功能组织",
+      "canonical_evidence": "揭示腹内侧前额叶（mPFC关键子区）分为情感、估值和社会三元功能组织",
+      "llm_tldr_en": "Using meta-analysis, task fMRI, ANN encoding, and connectivity, the study uncovers a tripartite anterior-posterior functional organization of human VMPFC, each motif embedded in distinct large-scale networks.",
+      "llm_tldr_cn": "该论文整合大规模元分析、个体任务态fMRI、人工神经网络编码模型和多模态连接分析，系统揭示了人类腹内侧前额叶皮层沿前后轴分为后部情感、中部估值和前部社会三个功能区域，每个区域特异地嵌入不同的大规模脑网络，为理解高级认知功能的分工与整合提供了新框架。",
+      "llm_tldr": "该论文整合大规模元分析、个体任务态fMRI、人工神经网络编码模型和多模态连接分析，系统揭示了人类腹内侧前额叶皮层沿前后轴分为后部情感、中部估值和前部社会三个功能区域，每个区域特异地嵌入不同的大规模脑网络，为理解高级认知功能的分工与整合提供了新框架。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-15-731669-v1",
+      "source": "biorxiv",
+      "title": "Language Immersion Enhances Attentional Speech Processing via Low-Frequency Neural Tracking",
+      "abstract": "Language experience is a powerful driver of neurocognitive plasticity, shown to modulate attentional and executive processing in speakers of multiple languages. This paper investigated how immersion in a second-language environment shapes attentional processing of speech. Fifty-eight bilingual Chinese-English speakers matched on their English language proficiency listened to competing continuous speech streams in a naturalistic listening task. They were immersed either in their native language environment (Beijing, China), or in the second language environment (Cambridge, UK). In an identical EEG experiment across the two immersion contexts, we assessed the listeners cortical tracking of attended and unattended speech and task-related attentional allocation using Temporal Response Function (mTRF) and Power Spectral Density (PSD) analyses. Behavioral comprehension of the attended narratives was uniformly high. PSD analyses showed no group difference in task-related attentional allocation, but mTRF results revealed robust differences in cortical tracking, with increased tracking of attended - but not unattended - streams in the immersed group, driven by the delta band (1-4 Hz). This boost in tracking of the attended signal declined with prolonged immersion, indicative of changes to attentional speech processing as the language environment stabilizes and consistent with the expansion-renormalization framework of neurocognitive adaptation. Jointly, these data imply that immersion in second-language environments shapes the way listeners encode speech, sharpening the brains ability to extract target auditory information from background noise. They furthermore suggest that, rather than being static or monotonous, this modulation reflects a flexible and dynamic process that is continuously shaped by changes in environmental demands and their duration.\n\nKey pointsO_LISecond language immersion boosts cortical tracking of attended speech, driven by the delta band (1-4 Hz).\nC_LIO_LIThis boost decreases with prolonged immersion, reflecting the dynamic, expansion-renormalization adaptation trajectory.\nC_LIO_LIImmersion does not influence task-related attentional allocation.\nC_LI",
+      "authors": [
+        "Wang, J.",
+        "Guo, T.",
+        "Bozic, M."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-16T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.15.731669v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "EEG study of attentional speech processing using low-frequency neural tracking",
+      "llm_evidence_cn": "使用低频神经追踪的注意性言语加工EEG研究",
+      "llm_evidence": "使用低频神经追踪的注意性言语加工EEG研究",
+      "canonical_evidence": "使用低频神经追踪的注意性言语加工EEG研究",
+      "llm_tldr_en": "The study used EEG to compare cortical tracking of attended and unattended speech in bilingual speakers immersed in L1 vs L2 environments, finding that immersion enhances low-frequency neural tracking, demonstrating experience-dependent plasticity in attentional speech processing.",
+      "llm_tldr_cn": "该研究通过EEG比较了沉浸在母语和二语环境中的双语者在竞争性连续言语流中对注意和非注意言语的皮层追踪，发现语言沉浸增强了低频神经追踪，表明经验依赖的神经可塑性在注意性言语加工中的作用。这为理解环境如何塑造认知加工提供了新证据。",
+      "llm_tldr": "该研究通过EEG比较了沉浸在母语和二语环境中的双语者在竞争性连续言语流中对注意和非注意言语的皮层追踪，发现语言沉浸增强了低频神经追踪，表明经验依赖的神经可塑性在注意性言语加工中的作用。这为理解环境如何塑造认知加工提供了新证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.18816v1",
+      "source": "arxiv",
+      "title": "SwitchBraidNet: Quantisation-Aware Lightweight Architecture for Hybrid Brain-Computer Interface",
+      "abstract": "Hybrid brain-computer interfaces (BCIs) that integrate motor imagery (MI) and steady-state visual evoked potentials (SSVEP) provide high-dimensional neural decoding but typically exceed the computational limits of embedded hardware. To address this, we propose SwitchBraidNet, a compact EEG classification architecture designed for low-power deployment. The model employs a dual-path temporal braid to extract multiscale oscillatory features, an adaptive squeeze-and-excitation spatial switch for electrode gating, and a log-variance readout layer for direct band-power encoding. Furthermore, through systematic quantisation-aware training on the OpenBMI dataset, we compared SwitchBraidNet against four established baselines across FP32, FP16, and INT8 precisions. Experimental results demonstrate superior efficiency and performance, achieving MI accuracy of 69.49% (FP16), SSVEP accuracy of 93.48% (FP32), and a hybrid information transfer rate of 64.82 bits/min (FP16). With an INT8 footprint of only 3.03 KB, SwitchBraidNet maintains high accuracy across varying numerical precisions, demonstrating its suitability for low-power embedded BCI deployment.",
+      "authors": [
+        "Gourav Siddhad",
+        "Yogesh Kumar Meena"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.ET"
+      ],
+      "published": "2026-06-17T08:35:29+00:00",
+      "link": "https://arxiv.org/pdf/2606.18816v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "log-variance readout for direct band-power encoding",
+      "llm_evidence_cn": "对数方差读出层直接编码频带功率",
+      "llm_evidence": "对数方差读出层直接编码频带功率",
+      "canonical_evidence": "对数方差读出层直接编码频带功率",
+      "llm_tldr_en": "Proposes SwitchBraidNet, a lightweight EEG architecture using dual-path temporal braid for multiscale oscillatory features and log-variance readout for band-power encoding, designed for low-power BCI deployment.",
+      "llm_tldr_cn": "针对混合脑机接口在嵌入式硬件上的计算限制，提出轻量级EEG分类架构SwitchBraidNet，通过双路径时间编织提取多尺度振荡特征，并采用对数方差读出层直接编码频带功率。在OpenBMI数据集上的量化感知训练表明，该架构在保持低功耗的同时实现了有竞争力的性能，为低资源EEG频谱分析提供了高效工具。",
+      "llm_tldr": "针对混合脑机接口在嵌入式硬件上的计算限制，提出轻量级EEG分类架构SwitchBraidNet，通过双路径时间编织提取多尺度振荡特征，并采用对数方差读出层直接编码频带功率。在OpenBMI数据集上的量化感知训练表明，该架构在保持低功耗的同时实现了有竞争力的性能，为低资源EEG频谱分析提供了高效工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.20287v1",
+      "source": "arxiv",
+      "title": "PsyScore: A Psychometrically-Aware Framework for Trait-Adaptive Essay Scoring and ZPD-Scaffolded Feedback",
+      "abstract": "Effective Automated Essay Scoring (AES) are expected to support both reliable assessment and actionable instructional feedback. However, existing approaches often treat scoring and feedback as separate components: neural scoring models provide limited interpretability, while Large Language Model (LLM)-based feedback is typically insensitive to learners proficiency levels. To address this fragmentation, this work proposes PsyScore, a psychometrically-aware framework that integrates diagnostic assessment with instructional scaffolding through a shared latent ability representation. PsyScore comprises three key modules: a Trait-Adaptive Neural IRT Scorer that incorporates the Graded Partial Credit Model (GPCM) into a neural architecture, enabling the precise estimation of student ability while maintaining psychometric interpretability, a ZPD-Scaffolded Feedback Generator, which conditions multi-agent feedback strategies on the diagnosed ability parameter to adapt instructional focus across different proficiency levels, and a Multi-Perspective Feedback Evaluation Strategy that assesses feedback quality via pairwise preference judgements and student revision simulations. Experiments on the ASAP++ dataset demonstrate that PsyScore achieves competitive scoring performance while providing more pedagogically aligned feedback.",
+      "authors": [
+        "Wei Xia",
+        "Jin Wu",
+        "Haoran Shi",
+        "Xiangyu Wang",
+        "Chanjin Zheng"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-18T14:29:13+00:00",
+      "link": "https://arxiv.org/pdf/2606.20287v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Psychometric framework for trait-adaptive essay scoring applicable to critical thinking disposition assessment",
+      "llm_evidence_cn": "适用于批判性思维倾向评估的特质自适应作文评分心理测量框架",
+      "llm_evidence": "适用于批判性思维倾向评估的特质自适应作文评分心理测量框架",
+      "canonical_evidence": "适用于批判性思维倾向评估的特质自适应作文评分心理测量框架",
+      "llm_tldr_en": "PsyScore integrates diagnostic assessment with instructional scaffolding via a shared latent ability representation, enabling trait-adaptive scoring that could measure scientific critical thinking disposition from essays.",
+      "llm_tldr_cn": "该研究针对现有自动作文评分系统将评估与反馈割裂的问题，提出PsyScore框架，将基于项目反应理论的神经评分器与最近发展区支架式反馈相结合，通过共享潜在能力表征实现诊断性评估与教学支架的整合；实验表明该框架能适应学习者特质，为测量科学批判性思维倾向提供了一种可操作的心理测量工具。",
+      "llm_tldr": "该研究针对现有自动作文评分系统将评估与反馈割裂的问题，提出PsyScore框架，将基于项目反应理论的神经评分器与最近发展区支架式反馈相结合，通过共享潜在能力表征实现诊断性评估与教学支架的整合；实验表明该框架能适应学习者特质，为测量科学批判性思维倾向提供了一种可操作的心理测量工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-12-731889-v1",
+      "source": "biorxiv",
+      "title": "Stimulus identity rather than emotion drives EEG classification on the FACED dataset",
+      "abstract": "Reliable benchmark datasets are critical for advancing EEG-based emotion recognition. The Finer-grained Affective Computing EEG Dataset (FACED) is the largest publicly available EEG emotion dataset (123 subjects, nine emotion categories) and a widely adopted benchmark. We demonstrate that both intra-subject and cross-subject classification on FACED primarily reflects stimulus identity rather than emotion. Using a linear classifier (LinearSVC) and a deep learning model (CLISA), we show that (1) classification performance is comparable for trials where subjects reported feeling versus not feeling the assigned emotion; (2) accuracy drops when stimulus-assigned labels are replaced with individual self-reports; and (3) accuracy increases when reducing to one video per emotion despite discarding two-thirds of the data. These results reflect three design choices in FACED: few stimuli per category, stimulus-assigned labels, and within-video temporal splits for cross-validation. Together, these make the dataset susceptible to temporal autocorrelation and stimulus-identity confounds. To guide future work, we propose five recommendations -- spanning stimulus diversity, temporal independence, and label validation -- for emotion-decoding study designs that mitigate these confounds.",
+      "authors": [
+        "Gerster, M.",
+        "Sirotina, E.",
+        "Orlovskii, A.",
+        "Hertz, A.",
+        "Champaud, J.",
+        "Guarino, D.",
+        "Tulli, S."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-16T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.12.731889v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "EEG-based classification of cognitive/affective states, leveraging spectral features",
+      "llm_evidence_cn": "基于EEG的认知/情感状态分类，涉及频谱特征分析",
+      "llm_evidence": "基于EEG的认知/情感状态分类，涉及频谱特征分析",
+      "canonical_evidence": "基于EEG的认知/情感状态分类，涉及频谱特征分析",
+      "llm_tldr_en": "On the FACED EEG emotion dataset, both linear and deep learning classifiers primarily detect stimulus identity rather than emotion, challenging the validity of EEG-based emotion recognition benchmarks.",
+      "llm_tldr_cn": "本研究在最大的公开EEG情绪数据集FACED上发现，线性分类器和深度学习模型的分类性能主要反映了刺激身份而非真实情绪，表明当前基准存在混淆因素，对基于脑电的情绪识别可靠性提出了质疑。",
+      "llm_tldr": "本研究在最大的公开EEG情绪数据集FACED上发现，线性分类器和深度学习模型的分类性能主要反映了刺激身份而非真实情绪，表明当前基准存在混淆因素，对基于脑电的情绪识别可靠性提出了质疑。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

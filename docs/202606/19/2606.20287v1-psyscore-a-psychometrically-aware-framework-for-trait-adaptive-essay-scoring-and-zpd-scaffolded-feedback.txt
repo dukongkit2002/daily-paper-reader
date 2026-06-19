@@ -1,0 +1,713 @@
+Title: PsyScore: A Psychometrically-Aware Framework for Trait-Adaptive Essay Scoring and ZPD-Scaffolded Feedback
+
+URL Source: https://arxiv.org/pdf/2606.20287v1
+
+Published Time: Fri, 19 Jun 2026 01:03:18 GMT
+
+Number of Pages: 19
+
+Markdown Content:
+# PsyScore: A Psychometrically-Aware Framework for Trait-Adaptive Essay Scoring and ZPD-Scaffolded Feedback 
+
+Wei Xia 1*, Jin Wu 2,3 *, Haoran Shi 1, Xiangyu Wang 1, Chanjin Zheng 2†1Department of Educational Psychology, East China Normal University, 
+
+> 2
+
+Shanghai Institute of Artificial Intelligence for Education, East China Normal University, 
+
+> 3
+
+School of Computer Science and Technology, East China Normal University 
+
+{51264118006, 52275901018}@stu.ecnu.edu.cn, chjzheng@dep.ecnu.edu.cn 
+
+Abstract 
+
+Effective Automated Essay Scoring (AES) are expected to support both reliable assessment and actionable instructional feedback. How-ever, existing approaches often treat scoring and feedback as separate components: neural scoring models provide limited interpretabil-ity, while Large Language Model (LLM)-based feedback is typically insensitive to learn-ers’ proficiency levels. To address this frag-mentation, this work proposes PsyScore , a psychometrically-aware framework that inte-grates diagnostic assessment with instructional scaffolding through a shared latent ability repre-sentation. PsyScore comprises three key mod-ules: a Trait-Adaptive Neural IRT Scorer 
+
+that incorporates the Graded Partial Credit Model (GPCM) into a neural architecture, en-abling the precise estimation of student ability while maintaining psychometric interpretabil-ity, a ZPD-Scaffolded Feedback Genera-tor , which conditions multi-agent feedback strategies on the diagnosed ability parameter to adapt instructional focus across different proficiency levels, and a Multi-Perspective Feedback Evaluation Strategy that assesses feedback quality via pairwise preference judg-ments and student revision simulations. Ex-periments on the ASAP++ dataset demonstrate that PsyScore achieves competitive scoring per-formance while providing more pedagogically aligned feedback. 
+
+1 Introduction 
+
+Automated Essay Scoring (AES) has become a central component of scalable digital educa-tion, evolving from early feature-engineering ap-proaches (ElMassry et al., 2025) to deep repre-sentation learning and pre-trained language mod-els (PLMs) (Taghipour and Ng, 2016; Dong et al., 2017; Faseeh et al., 2024; Kumar and Boulanger,  
+
+> *
+
+Co-first authors with equal contribution.  
+
+> †
+
+Corresponding author. (a) Traditional AES  (b) Traditional Feedback    
+
+> “Black Box ”Scorer
+> Student Essay Student Essay
+> Generic LLM
+> Feedback
+> Generic Feedback
+
+(c) The Proposed PsyScore Framework  
+
+> Neural Network
+> Pretrained /
+> Generative
+> language models
+> Essay Score
+> From Holistic to
+> Multi -Traits Scoring
+> Mismatch between Score & Feedback
+> ZPD -Aligned Feedback
+> Student Essay Trait -Adaptive
+> Neural IRT
+> ZPD Strategy
+> Mapping
+> Diagnostic -Driven
+> Feedback Generation
+> Multi -Agent
+> Scaffolding System
+> ZPD -Aligned
+> Feedback
+> Latent Ability ( 𝜽 )
+
+Figure 1: Comparison of traditional approaches and our proposed PsyScore framework. PsyScore aligns diagnostic scoring with scaffolded feedback. 
+
+2020). Beyond predictive accuracy, an effective as-sessment system is expected to operate as a forma-tive loop, in which reliable measurement directly informs targeted instructional scaffolding (Clark, 2012; Frank et al., 2018; Wang et al., 2020; Adair, 2024). With the rapid expansion of online learning platforms (Mashau and Nyawo, 2021; Li and Xing, 2025), the demand for timely, individualized, and actionable feedback has increased substantially. Despite the strong performance of recent AES models (Ludwig et al., 2021a; ElMassry et al., 2025), current solutions often treat diagnostic scor-ing and pedagogical feedback as separate compo-nents (Huang et al., 2025). While recent pioneering 
+
+> arXiv:2606.20287v1 [cs.CL] 18 Jun 2026
+
+efforts such as IFlyEA and CEAES (Gong et al., 2021; Li and Pan, 2025) have begun to bridge this gap by modeling the synergy between scoring and review generation, these approaches typically lack a principled psychometric grounding. This frag-mentation gives rise to three persistent limitations (Figure 1). First, most neural AES models func-tion as opaque predictors (Misgna et al., 2024). Although they optimize standard objectives such as mean squared error (L. et al., 2023), they are weakly grounded in educational measurement the-ory (Voss, 2025), raising concerns about psychome-tric validity, interpretability, and fairness (Schaller et al., 2024; Shin et al., 2021; Jiang et al., 2023). Second, the separation between scoring and feed-back restricts diagnostic utility. A single holis-tic score or even loosely coupled multi-trait pre-dictions, fails to capture the structured nature of writing proficiency needed to support targeted in-structional decisions (ONO et al., 2019; Imbler et al., 2022; Binbin et al., 2024; Stahl et al., 2024a). Third, while Large Language Models (LLMs) are capable of generating fluent feedback (Policar et al., 2025), such feedback is typically ability-agnostic. Without explicit modeling of learner proficiency or the Zone of Proximal Development (ZPD) (Chaik-lin et al., 2003), LLM-generated comments fre-quently exhibit a cognitive mismatch, being overly procedural for advanced learners or overly abstract for novices (Jacobsen and Weber, 2025; Yang et al., 2025). These limitations suggest a shared underlying cause: the absence of the principled latent represen-tation that simultaneously supports measurement and instruction. Motivated by this observation, we explore the hypothesis that modeling student ability within a shared psychometric latent space can unify interpretable scoring and ZPD-aligned feedback. To this end, we propose PsyScore , a psychometrically-aware framework that integrates diagnostic assessment with instructional scaffold-ing through a latent representation (Figure 2). PsyScore comprises two tightly coupled com-ponents. On the assessment side, it introduces a 
+
+Trait-Adaptive Neural IRT Scorer that embeds Item Response Theory into a neural architecture to estimate interpretable student ability across multi-ple writing traits. This latent ability representation is then shared with a ZPD-Scaffolded Feedback Generator , which conditions pedagogical strate-gies on the diagnosed proficiency level within a multi-agent framework, enabling feedback that is aligned with learners’ cognitive readiness. The contributions of this work are threefold: • Psychometric Calibration. We propose a trait-adaptive initialization strategy for neural IRT models that aligns discrimination and dif-ficulty parameters with psychometric priors. • Pedagogical Alignment. We introduce a ZPD-scaffolded multi-agent feedback frame-work that conditions instructional strategies on diagnosed learner ability ( θ). • Empirical Insight. We conduct a dual-layer evaluation that analyzes the relationship be-tween scoring performance and downstream learning outcomes across proficiency levels. 
+
+2 Related Work 
+
+2.1 From Holistic Scoring to Multi-Trait Analysis 
+
+AES research has evolved from early feature-engineering paradigms (Chen et al., 2014) to mod-ern deep neural networks (Taghipour and Ng, 2016) and pre-trained language models (Ludwig et al., 2021b). While achieving high predictive accuracy, holistic scoring offers limited diagnostic value. To address this, recent frameworks like ArTS (Do et al., 2024b) and T-MES (Wang and Liu, 2025) adopt multi-task learning to evaluate essays along multiple dimensions. However, these models re-main primarily predictive: trait scores are treated as parallel outputs rather than manifestations of a shared latent ability. This lack of psychomet-ric grounding limits their interpretability and their capacity to guide principled instructional feedback. 
+
+2.2 Item Response Theory in AES 
+
+Item Response Theory (IRT) provides a probabilis-tic framework linking latent ability to observed per-formance (Li et al., 2025; Samejima, 1969; Uto and Ueno, 2018; Wu and Zheng, 2025). Within AES, recent neuro-symbolic approaches have integrated IRT to enhance interpretability and fairness (Shin et al., 2021; Jiang et al., 2023). Notably, Shibata and Uto (2022) combined IRT with deep learning for analytic scoring, achieving robust multidimen-sional assessment. However, these prior neural IRT methods focus predominantly on score estima-tion as a regularization term or multi-task objective. They typically suffer from calibration instability and, crucially, fail to utilize the estimated latent (b)  ZPD -Conditional Feedback Generator  (c)  Multi -Perspective Evaluation Strategy 
+
+> Pairwise Comparison
+> Simulated Scaffolding Assessment
+
+(a)  Trait -Adaptive  GPCM Scorer   
+
+> Multi -Head Attention
+> Add & Norm
+> Feed Forward
+> Add & Norm
+> Positional
+> Encoding
+> Essay Input Embedding
+> Essay
+
+N                           
+
+> BERT
+> Latent Ability Estimation
+> TraitIRTModel
+> [CLS] Embedding
+> 𝜽
+> 𝑆𝑐𝑜𝑟𝑒 :𝑦 𝑂𝑣𝑒𝑟𝑎𝑙𝑙 ,𝑦 𝑚𝑢𝑙𝑡𝑖 −𝑡𝑟𝑎𝑖𝑡𝑠
+> 𝐼𝑡𝑒𝑚 𝑃𝑎𝑟𝑎𝑚𝑒𝑡𝑒𝑟 :𝑫 𝒙 ={𝜽 ,𝜶 ,𝜷 }
+> 𝑷 𝒚 =𝒋 𝜽 ,𝜶 ,𝜷 =𝒆𝒙𝒑 (σ𝒌 =𝟏
+> 𝒋 𝜶 𝜽 −𝜷 𝒌 )
+> σ𝒉 =𝟎
+> 𝒎 −𝟏 𝒆𝒙𝒑 (σ𝒌 =𝟏
+> 𝒉 𝜶 (𝜽 −𝜷 𝒌 ))
+> Trait -Specific
+> Encoder
+> Grid -Search Initialization: 𝛼 ,𝛽
+> ZPD -Aligned Strategy Mapping
+> Multi -Agent Consensus
+> Fusion Module
+> (DeepSeek -V3.1)
+> Aggregates & Optimizes for
+> Consistency with 𝐷 𝑥 & ZPD
+> Final Feedback
+> (𝒇 𝒇𝒊𝒏𝒂𝒍 )
+
+Figure 2: Overview of the PsyScore framework. (a) Trait-Adaptive GPCM Scorer estimates the student’s latent ability ( θ) and outputs a diagnostic vector ( Dx). (b) ZPD-Conditional Feedback Generator synthesizes consensus feedback ( ff inal ) by mapping θ to adaptive strategies via multi-agent fusion. (c) Multi-Perspective Evaluation 
+
+validates quality via intrinsic LLM-based comparison and extrinsic simulated revision. 
+
+ability ( θ) as a control signal for downstream tasks, leaving the critical loop between diagnosis and in-structional intervention unconnected. While recent work such as SMART (Scarlatos et al., 2025) uses IRT-aligned simulated students primarily for item difficulty prediction, PsyScore framework extends the application of IRT latent traits to individualized diagnostic feedback generation, focusing on max-imizing the pedagogical gain within the student’s ZPD. 
+
+2.3 LLM-based Personalized Feedback 
+
+The transition from Seq2Seq models (Liu et al., 2024) to Large Language Models (LLMs) has en-abled scalable, fluent feedback generation (Stahl et al., 2024b). However, current prompting strate-gies often lack explicit adaptation mechanisms, risking a cognitive mismatch where feedback is ei-ther too simplistic or overly complex for the learner. While benchmarks like PROF (Nair et al., 2024) and eRevise (Liu et al., 2025) assess feedback util-ity based on revision outcomes, they do not ver-ify cognitive alignment. Consequently, existing systems often suffer from content homogenization (Padmakumar and He, 2024) and fail to operational-ize Zone of Proximal Development principles, lim-iting their efficacy as adaptive instructional scaf-folds. 
+
+3 The PsyScore Framework 
+
+3.1 Overall Architecture 
+
+PsyScore establishes an integrated framework that couples psychometrically grounded latent trait anal-ysis with generative instructional scaffolding. As illustrated in Figure 2, the system pipeline consists of three mathematically integrated modules: (1) A 
+
+Trait-Adaptive Neural GPCM Scorer for disen-tangled representation learning and latent parame-ter estimation. (2) A ZPD-Conditional Feedback Generator utilizing a “Generate-and-Fuse” mech-anism with heterogeneous agents. And (3) a Multi-Perspective Feedback Evaluation Strategy quan-tifying both semantic alignment and pedagogical efficacy. 
+
+3.2 Trait-Adaptive Neural GPCM Scorer 
+
+This module functions as a probabilistic regressor that maps input text x to a psychometric latent space, which is a common strategy to improve ro-bustness in high-stakes educational assessment. 
+
+3.2.1 Latent Ability Estimation 
+
+For a given writing trait t, a BERT-based encoder extracts a dense contextual representation hx ∈ Rd.This vector is projected onto a scalar latent ability 
+
+θ via a linear transformation. To align with the standard normal assumption of IRT ( θ ∼ N (0 , 1) )and ensure numerical stability within the GPCM exponent, we enforce a hard clipping constraint:           
+
+> θ=Clamp (Wθhx+bθ,min = −3.0,max = 3 .0) (1)
+
+This constraint restricts θ to the effective discrimi-nation interval [−3, 3] , preventing gradient explo-sion during end-to-end training. 
+
+3.2.2 GPCM Probability Modeling 
+
+The constrained θ serves as the input to a Graded Partial Credit Model (GPCM) layer. The proba-bility of assigning a discrete score category k ∈{0, . . . , K } is modeled as:              
+
+> P(y=k|θ, a t,bt) = exp
+> Pkj=0 at(θ−bt,j )
+> PKc=0 exp
+> Pcj=0 at(θ−bt,j )
+> 
+> (2)
+
+where at ∈ R+ is the learnable discrimination pa-rameter, and bt = {bt, 0, . . . , b t,K } represents the step difficulty thresholds. The model is optimized by minimizing the Negative Log-Likelihood (NLL) of the true labels ytrue :
+
+L = −
+
+> N
+
+X
+
+> i=1
+
+log P (yi|θi, a t, bt) (3) 
+
+3.2.3 Initialization and Ensemble Strategy 
+
+To resolve the non-convexity of the GPCM loss landscape, which has been noted as a practical challenge in neural IRT-based models, this work employ a grid-search initialization strategy. We pre-compute the optimal priors for ainit and binit over the hyperparameter space H = {0.5, 1.0, 1.5} × 
+
+RK to prevent mode collapse. During inference, the system aggregates parameters from all k folds to construct a robust diagnostic vector Dx =
+
+{¯θ, ¯a, ¯b}, which serves as the conditioning signal for the feedback module. 
+
+3.3 ZPD-Conditional Feedback Generator 
+
+This module operates as a conditional generation pipeline F (x, D x) → Y . It leverages diagnostic parameters to synthesize feedback via a multi-agent fusion architecture. 
+
+3.3.1 ZPD-Aligned Strategy Mapping 
+
+We define a deterministic mapping function M :
+
+R → S inspired by the notion of the ZPD, that translates the estimated ability ¯θ into a pedagogical control token:             
+
+> Sstrategy =
+> 
+> Explicit Correction if ¯θ < −1.0
+> Scaffolding if ¯θ∈[−1.0,1.0]
+> Socratic Questioning if ¯θ > 1.0
+> (4)
+
+Additionally, traits with high discrimination ( ¯a > 
+
+1.2) are identified as “High-Information Dimen-sions” and are assigned higher weights in the prompt attention mechanism. This threshold is grounded in standard psychometric evaluation cri-teria, where discrimination values above 1.2 are categorized as “High” to “Very High”, ensuring the selected traits possess sufficient statistical validity to distinguish between proficiency levels (Baker, 2001). The ZPD boundary values are designed to operationalize scaffolding theory within a compu-tational framework (Wood et al., 1976). 
+
+3.3.2 Multi-Agent Consensus and Debiasing 
+
+To maximize pedagogical diversity, consistent with prior findings on diversity-oriented generation, we deploy a set of heterogeneous LLMs M =
+
+{Llama-4-Scout , Qwen3-235B-A22B-Instruct-2507 , GPT-4o } as can-didate generators. Each model m ∈ M indepen-dently generates a draft fm conditioned on the es-say x and strategy Sstrategy . A superior model (DeepSeek-V3.1 ) functions as the Fusion Module. It aggregates the candidate set {fm}|M|  
+
+> m=1
+
+into a fi-nal response ff inal by optimizing for consistency with the diagnostic vector Dx:
+
+ff inal = Fusion ({f1, f 2, f 3}, D x) (5) This fusion step resolves semantic conflicts and en-sures the linguistic complexity of the output strictly adheres to the learner’s ZPD. 
+
+3.4 Multi-Perspective Feedback Evaluation Strategy 
+
+Evaluating open-ended instructional feedback re-quires moving beyond surface-level lexical overlap. We therefore establish a three-tier evaluation frame-work to holistically assess the generated feedback: 
+
+Preference-based Comparison : Pairwise ranking by independent LLM judges to measure relative pedagogical quality. Simulated Revision : Mea-suring the normalized score gain achieved when a simulated student agent revises essays conditioned on the feedback. Human Expert Evaluation :Fine-grained assessment by education profession-als along theoretically grounded dimensions. 
+
+3.4.1 Preference Comparison Evaluation with LLM Judges 
+
+To mitigate the inherent calibration biases of ab-solute scoring, we adopt a pairwise preference comparison paradigm. This approach compels the judge model to perform discriminative analysis be-tween feedback generated by PsyScore-AEF (The PsyScore Automated Essay Feedback module) and baseline models, effectively capturing fine-grained qualitative differences. This work designated GPT-5 and Gemini-3-pro 
+
+as independent judges to perform pairwise compar-isons, selecting them for their superior discrimina-tive performance. The evaluation process adheres to two rigorous protocols: (1) Anonymized Evalu-ation, a double-blind setup where models receive de-identified texts labeled solely as Response A and B; and (2) Positional Bias Mitigation, which employs stochastic position swapping to counteract the “lead bias” prevalent in LLMs by evaluating each pair twice in randomized orders to ensure con-sistent judgment. Judges assign a “Win”,“Tie”, or “Loss” across multiple pedagogical dimensions. We report the aggregate win rate to quantify the relative superi-ority of PsyScore-AEF in generating personalized, high-quality feedback. 
+
+3.4.2 Simulation-based Revision Assessment 
+
+To evaluate whether feedback provides cognitive scaffolding rather than direct answers, we imple-ment a simulation-based revision protocol. We construct a “Student Agent” Astu conditioned on ability-specific profiles aligned with the estimated latent trait θ. The agent is instructed to emulate a learner at the diagnosed proficiency level and revise the original essay x based strictly on the received feedback f , yielding a revised version x′.To ensure measurement invariance across the draft-revision sequence, we utilize the fine-tuned PsyScore-AES as the uniform scoring function 
+
+S(·). Given the heterogeneous score ranges across prompts (e.g., 0–3 vs. 0–60), absolute differ-ences ∆S = S(x′) − S(x) would introduce range-dependent bias. We therefore compute a normal-ized revision gain ∆Snorm to project improvements onto a unified [−1, 1] scale: 
+
+∆Snorm = S(x′) − S(x)
+
+Smax − Smin 
+
+(6) where Smax and Smin denote the prompt-specific score bounds. This metric quantifies the marginal pedagogical contribution of the feedback while eliminating confounding effects from disparate scoring scales. 
+
+3.4.3 Human Expert Evaluation 
+
+To validate the pedagogical efficacy of the gen-erated feedback and to mitigate potential biases inherent in LLM-as-a-judge evaluations, we con-ducted a double-blind study involving three senior education experts. The experts assessed a strati-fied random sample of 80 essays along with their corresponding feedback across five theoretically grounded dimensions. The detailed rubric defining each dimension is provided in Appendix H. 
+
+4 Experiments and Results 
+
+4.1 Dataset 
+
+This work conduct experiments on the ASAP++ 
+
+dataset (Mathias and Bhattacharyya, 2018), uti-lizing a standard 6:2:2 data split (60% training, 20% validation, and 20% testing). This dataset extends the original ASAP corpus by provid-ing trait-specific scores (e.g., Content, Organiza-tion,Conventions,Word Choice,Sentence Fluency) alongside holistic scores, enabling granular psycho-metric analysis. 
+
+4.2 Implementation Setup 
+
+All experiments were implemented using PyTorch 
+
+and the bert-base-uncased (Devlin et al., 2019). To ensure reproducibility, we fixed the random seed to 42 for all data splitting and model initialization steps. The computational processes were executed on a single NVIDIA RTX A6000 GPU (48 GB of VRAM). The experiments leveraged CUDA 12.1 and cuDNN 8.9 to optimize GPU performance, with all operations carried out on a Linux-based en-vironment (Ubuntu 22.04) to ensure reproducibility and stability of results. 
+
+4.2.1 Scoring Model Training 
+
+For the PsyScore-AES module, we fine-tune the 
+
+bert-base-uncased backbone using a 5-fold cross-validation strategy; final results are reported as the ensemble average to minimize variance. The model is optimized with AdamW (learning rate 5e-6, batch size 16) for up to 30 epochs. We apply early stopping with a patience of 10 epochs, moni-toring the Quadratic Weighted Kappa (QWK) on the validation set to prevent overfitting. For the psychometric calibration, the grid search for GPCM parameters is performed within the following spaces: discrimination prior ainit ∈{0.5, 1.0, 1.5} and difficulty range brange ∈{[−1, 1] , [−2, 2] , [−3, 3] }. We select the optimal Table 1: Main results on each prompt. The average QWK across all traits for each prompt is reported. 
+
+Model P1 P2 P3 P4 P5 P6 P7 P8 AVG 
+
+STL-LSTM (Dong et al., 2017) 0.690 0.622 0.663 0.719 0.719 0.753 0.704 0.592 0.683 HISK (Cozma et al., 2018) 0.674 0.586 0.651 0.681 0.693 0.709 0.641 0.516 0.644 MTL-BiLSTM (Kumar et al., 2022) 0.670 0.611 0.647 0.708 0.704 0.712 0.684 0.581 0.665 DualTrans (Cho et al., 2024) 0.712 0.671 0.690 0.760 0.714 0.740 0.748 0.620 0.707 ArTS (Do et al., 2024a) 0.708 0.706 0.704 0.767 0.723 0.776 0.749 0.603 0.717 SaMRL-large (Do et al., 2024b) 0.702 0.711 0.708 0.766 0.722 0.773 0.743 0.649 0.722 T-MES (Wang and Liu, 2025) 0.728 0.684 0.702 0.771 0.726 0.754 0.755 0.629 0.719 Shibata and Uto (2022) 0.667 0.642 0.655 0.669 0.658 0.651 0.644 0.638 0.653 
+
+PsyScore-AES (Our Model) 0.744 0.723 0.732 0.770 0.750 0.773 0.760 0.730 0.747 
+
+PsyScore-AES (w/o-IRT) 0.709 0.685 0.707 0.756 0.714 0.737 0.717 0.613 0.705  
+
+> w/o IRT: This denotes the ablation experiment in which the IRT module is removed from the proposed PsyScore-AES model.
+
+Table 2: Main results of each trait. The average QWK across all prompts for each trait is reported.                                                                                                                         
+
+> Model Ovr. Cont. PA Lang. Nar. Org. Conv. WC SF Style Voice AVG
+> STL-LSTM 0.750 0.707 0.731 0.640 0.699 0.649 0.605 0.621 0.612 0.659 0.544 0.656 HISK 0.718 0.679 0.697 0.605 0.659 0.610 0.527 0.579 0.553 0.609 0.489 0.611 MTL-BiLSTM 0.762 0.719 0.731 0.659 0.703 0.669 0.656 0.676 0.625 0.693 0.610 0.682 DualTrans 0.764 0.685 0.701 0.604 0.668 0.615 0.560 0.615 0.598 0.632 0.582 0.639 ArTS 0.778 0.726 0.732 0.660 0.704 0.682 0.668 0.674 0.663 0.689 0.619 0.690 SaMRL-large 0.774 0.730 0.750 0.702 0.730 0.685 0.686 0.679 0.675 0.693 0.590 0.699 T-MES 0.754 0.730 0.751 0.698 0.725 0.672 0.668 0.679 0.678 0.721 0.570 0.695
+> PsyScore-AES (Our) 0.790 0.761 0.762 0.708 0.749 0.707 0.733 0.725 0.725 0.683 0.740 0.735
+> PsyScore-AES (w/o-IRT) 0.735 0.739 0.726 0.676 0.717 0.650 0.671 0.680 0.653 0.619 0.636 0.682
+
+configuration for each trait based on validation per-formance. The final trait-specific hyperparameters are detailed in Table 3. 
+
+4.2.2 Feedback Model Configuration 
+
+The PsyScore-AEF module implement a Generate-then-Fuse multi-agent system where the latent trait 
+
+θ serves as a cognitive control signal. First, three heterogeneous agents ( Llama-4-Scout , Qwen3-2 35B-A22B-Instruct-2507 , GPT-4o ) generate ini-tial drafts to ensure broad pedagogical coverage within the learner’s ZPD. Subsequently, an expert agent ( DeepSeek-V3.1 ) synthesizes these drafts into a coherent response, filtering hallucinations and aligning the instructional scaffolding with the diagnosed ability θ.
+
+4.2.3 Sampling Strategy and Data Validity 
+
+To balance evaluation depth with computational efficiency, we conducted the feedback analysis on a stratified random sample of N = 400 es-says (50 per prompt) from the ASAP++ dataset. This subset preserves the original distribution of writing genres—narrative, persuasive, and expos-itory—ensuring statistical representativeness. A negligible portion of cases ( < 1% ) was excluded due to stochastic API invocation issues. Given this minimal attrition rate, the exclusions do not com-promise the statistical validity of the results. 
+
+4.3 Main Results: Scoring Performance 
+
+Tables 1 and 2 summarize the comparative scoring performance of PsyScore-AES against state-of-the-art baselines. 
+
+4.3.1 Prompt-level Comparison 
+
+PsyScore-AES achieves a new state-of-the-art av-erage Quadratic Weighted Kappa (QWK) of 0.747, surpassing the strongest baseline (SaMRL-large, 0.722) and ranking first in 6 out of 8 prompts. On the narrative-focused Prompt 8, our model attains a QWK of 0.730, compared with the previous best of 0.649. This improvement suggests that the Trait-Adaptive Calibration strategy enhances model per-formance on prompts with higher narrative content. Specificity Actionability Pedagogical Overall                  
+
+> 0
+> 50
+> 100
+> 150
+> 200
+> 250
+> 300
+> 350
+> 400
+> Number of Wins
+> 357
+> 397 389 393
+> 25
+> 311 7
+> 18
+> 000
+> Judge = Gemini-3-Pro
+> Specificity Actionability Pedagogical Overall
+> 0
+> 50
+> 100
+> 150
+> 200
+> 250
+> 300
+> 350
+> 400
+> 351
+> 395 390 393
+> 29
+> 466
+> 19
+> 030
+> Judge = GPT-5
+> Comparison of Win Rates: Ours vs Llama
+> Ours Llama Tie
+
+(a) PsyScore-AEF vs. Llama-4-Scout Specificity Actionability Pedagogical Overall              
+
+> 0
+> 50
+> 100
+> 150
+> 200
+> 250
+> 300
+> 350
+> Number of Wins
+> 331
+> 379
+> 354 363
+> 50
+> 21
+> 46 37
+> 19
+> 000
+> Judge = Gemini-3-Pro
+> Specificity Actionability Pedagogical Overall
+> 0
+> 50
+> 100
+> 150
+> 200
+> 250
+> 300
+> 350
+> 317
+> 373
+> 346
+> 366
+> 70
+> 20 30 25
+> 71
+> 18
+> 3
+> Judge = GPT-5
+> Comparison of Win Rates: Ours vs GPT-4o
+> Ours GPT-4o Tie
+
+(b) PsyScore-AEF vs. GPT-4o Specificity Actionability Pedagogical Overall          
+
+> 0
+> 50
+> 100
+> 150
+> 200
+> Number of Wins
+> 148
+> 221 217 217
+> 174
+> 155
+> 176 182
+> 77
+> 23
+> 60
+> Judge = Gemini-3-Pro
+> Specificity Actionability Pedagogical Overall
+> 0
+> 50
+> 100
+> 150
+> 200
+> 250
+> 163
+> 258
+> 223
+> 255
+> 190
+> 120
+> 104
+> 123
+> 46
+> 21
+> 72
+> 21
+> Judge = GPT-5
+> Comparison of Win Rates: Ours vs Qwen
+> Ours Qwen Tie
+
+(c) PsyScore-AEF vs. Qwen3-235B-A22B-Instruct-2507 Adaptivity Scaffolding Tone Overall                 
+
+> 0
+> 50
+> 100
+> 150
+> 200
+> 250
+> 300
+> Number of Wins
+> 285 279
+> 318
+> 285
+> 100 106
+> 66
+> 100
+> 0010
+> Judge = Gemini-3-Pro
+> Adaptivity Scaffolding Tone Overall
+> 0
+> 50
+> 100
+> 150
+> 200
+> 250
+> 300
+> 329
+> 266
+> 323 315
+> 70
+> 133
+> 73 81
+> 1144
+> Judge = GPT-5
+> Adaptive Evaluation: Ours vs No Diagnosis
+> Ours No Diagnosis Tie
+
+(d) PsyScore-AEF vs. No IRT 
+
+Figure 3: Pairwise preference evaluation results across four baselines. The bars represent the number of wins awarded by judges. PsyScore demonstrates consistent superiority across both open-source (a-c) and closed-source (d) models, particularly in Actionability and Adaptivity .Table 3: Optimal psychometric initialization parameters derived via grid search. Distinct configurations validate the necessity of trait-adaptive modeling. 
+
+Trait ainit brange 
+
+Overall 0.5 [−3, 3] 
+
+Content 1.5 [−2, 2] 
+
+Organization 0.5 [−3, 3] 
+
+Word Choice 1.0 [−3, 3] 
+
+Sentence Fluency 1.0 [−1, 1] 
+
+Conventions 1.5 [−1, 1] 
+
+Prompt Adherence 1.5 [−2, 2] 
+
+Narrativity 1.5 [−1, 1] 
+
+Language 0.5 [−3, 3] 
+
+Style 1.5 [−1, 1] 
+
+Voice 0.5 [−2, 2] 
+
+4.3.2 Trait-level Assessment 
+
+At the trait level, PsyScore-AES ranks first in 10 out of 11 evaluated dimensions, achieving a mean QWK of 0.735. In the Voice dimension, which is typically more subjective, the model improves the QWK from 0.619 (ArTS) to 0.740. While slightly trailing T-MES in the Style dimension (0.683 vs. 0.721), PsyScore-AES maintains the highest over-all performance across traits, indicating the effec-tiveness of disentangled representation learning in capturing multiple aspects of essay quality. 
+
+4.3.3 Ablation Analysis 
+
+We evaluate the contribution of the psychometric calibration by comparing the full model with a vari-ant in which the IRT module is included without grid-search initialization of discrimination ( a) and difficulty ( b) parameters. Removing this initial-ization results in a performance drop from QWK 0.747 to 0.705. This observation highlights the im-portance of properly optimizing IRT priors to align neural representations with expected psychometric distributions. 
+
+4.4 Statistical Significance Analysis 
+
+We assess significance of QWK differences be-tween PsyScore-MAES and BERT using the 
+
+Wilcoxon Signed-Rank Test (one-tailed, n = 5 
+
+folds). This non-parametric choice avoids normal-ity assumptions and leverages paired test splits. Under the one-tailed criterion, PsyScore-MAES outperforming BERT on all five folds yields p =1/25 = 0 .03125 , the minimum attainable p-value. Full per-trait results with exact p-values are pro-vided in Appendix E. Across prompts, PsyScore-MAES achieves statistically significant gains on the majority of traits, with the largest improvements on wide-range, fine-grained tasks (e.g., Prompts 7–8) and on core dimensions such as Content and Orga-nization . Surface-level traits show smaller, often non-significant differences, indicating that the psy-chometric layer primarily enhances modeling of higher-order writing constructs. 
+
+4.5 Robustness Analysis of Hyperparameter Initialization 
+
+To assess the sensitivity of the PsyScore-MAES framework to IRT initialization parameters, we con-ducted experiments under nine distinct parameter configurations. The settings spanned discrimina-tion values a ∈ { 0.5, 1.0, 1.5} and difficulty ranges 
+
+brange ∈ { [−1, 1] , [−2, 2] , [−3, 3] }. Table 4 and Table 5 report the mean Quadratic Weighted Kappa (QWK), standard deviation ( σ), and Coefficient of Variation (CV) at the prompt level and trait level, respectively. In psychometric practice, a CV be-low 5% is generally regarded as indicative of high stability. As shown in Table 4, the Coefficient of Varia-tion (CV) across all prompts ranges from 0.80% 
+
+to 3.27% , with an average of 1.67% , substantially below the 5% stability threshold. This confirms that PsyScore-MAES is highly robust to variations in IRT initialization, maintaining consistent scor-ing regardless of starting parameter values. No-tably, performance and stability are not coupled: the framework adapts reliably across prompts with differing score distributions and task types. 
+
+> Table 4: Performance statistics across different initial-ization settings (Prompt-level).
+
+Prompt Mean QWK Std. ( σ) CV (%) 
+
+Prompt 1 0.730 0.016 2.290 Prompt 2 0.706 0.012 1.760 Prompt 3 0.714 0.014 1.970 Prompt 4 0.762 0.008 1.090 Prompt 5 0.711 0.017 2.390 Prompt 6 0.746 0.024 3.270 Prompt 7 0.746 0.013 1.800 Prompt 8 0.706 0.006 0.800 
+
+Average 0.727 0.0121 1.67 
+
+Table 5 reports trait-level statistics. The Over-all trait exhibits the lowest CV ( 0.99% ), while subjective dimensions such as Style and Voice 
+
+show slightly higher variability ( 4.72% and 4.00% ,respectively), remaining well within acceptable bounds. These results demonstrate that PsyScore-MAES yields reliable scoring outcomes across all traits, irrespective of initialization settings.                                      
+
+> Table 5: Performance statistics across different initial-ization settings (Trait-level).
+> Trait Mean QWK Std. ( σ) CV (%)
+> Overall 0.777 0.008 0.990 Content 0.743 0.012 1.590 Organization 0.695 0.015 2.140 Word Choice 0.702 0.012 1.750 Sentence Fluency 0.700 0.011 1.530 Conventions 0.712 0.012 1.690 Prompt Adherence 0.739 0.017 2.280 Narrativity 0.717 0.015 2.020 Language 0.686 0.022 3.230 Style 0.666 0.032 4.720 Voice 0.712 0.029 4.000
+> Average 0.714 0.012 1.710
+> Table 6: Normalized revision gains and final scores stratified by student proficiency.
+
+Group Count PsyScore No-IRT 
+
+Low ( θ < −1) 66 0.1738 0.0607 Mid ( θ ∈ [−1, 1] ) 251 0.1139 0.0080 High ( θ > 1) 82 0.0111 0.0009 
+
+4.6 Main Results: Feedback Quality 4.6.1 Pairwise Comparison Result 
+
+Figure 3 presents the pairwise comparison results of PsyScore-AEF against strong baselines. Ac-tionability vs. General LLMs: When compared to general-purpose models such as GPT-4o and Llama-3, PsyScore-AEF achieves win rates exceed-ing 90% in the Actionability dimension. This in-dicates that the Multi-Agent Fusion mechanism produces more concrete and executable feedback compared to standard generative models. 
+
+Adaptivity via Psychometric Diagnosis: Abla-tion analysis (Figure 3) demonstrates that removing the psychometric module results in a substantial re-duction in both Adaptivity and Tone , with PsyScore retaining a win rate above 75%. This confirms that conditioning feedback generation on latent abil-ity ( θ) and discrimination ( a) parameters is essen-tial for aligning instructional scaffolding with the learner’s ZPD. 
+
+4.6.2 Simulation-based Revision Result 
+
+Table 6 reports normalized revision gains by stu-dent proficiency. PsyScore achieves 17.38% gain for low-proficiency ( θ < −1) vs. 6.07% for No-Table 7: Expert Evaluation Results (Mean ± SD on a 1-5 Likert Scale). 
+
+Model Accuracy Actionability Adaptivity Specificity Tone 
+
+GPT-4o 3.10 ± .45 2.88 ± .77 2.79 ± .53 2.55 ± .61 3.15 ± .63 Llama-4 2.88 ± .52 2.42 ± .66 2.66 ± .68 2.34 ± .50 2.62 ± .69 Qwen-3 3.13 ± .49 2.91 ± .77 2.91 ± .83 2.70 ± .75 3.11 ± .74 PsyScore-No-IRT 3.65 ± .60 4.03 ± .63 3.48 ± .61 3.84 ± .84 3.77 ± .67 
+
+PsyScore 4.01 ± .48 4.13 ± .68 4.21 ± .54 4.17 ± .70 4.25 ± .63 
+
+IRT, confirming targeted scaffolding for founda-tional deficits. Mid-proficiency gains are 11 .39% 
+
+(vs. 0.80% ), while high-proficiency gains are mod-est ( 1.11% vs. 0.09% ) due to a ceiling effect. Ab-lation confirms that removing the psychometric layer ( θ) severely degrades gains, particularly for low-ability learners, validating θ’s role in calibrat-ing feedback to cognitive readiness and avoiding over-assistance. The resulting expert ratings, together with com-prehensive inter-rater reliability statistics, are re-ported in Table7. PsyScore significantly outper-forms all LLM baselines (GPT-4o, Llama-4, Qwen-3) on every dimension ( p < . 001 , paired t-test with Bonferroni correction). The ablation variant (PsyScore-No-IRT ) exhibits marked declines in 
+
+Adaptivity and Accuracy (p < . 05 ), confirming that IRT-based student modeling is indispensable for generating feedback that is both contextually appropriate and diagnostically precise. Inter-rater reliability analysis indicates substantial agreement among the three experts: Fleiss’ κ reaches 0.733 
+
+for Specificity and 0.690 for Accuracy, while all pairwise weighted Cohen’s κ values exceed 0.60 .These metrics collectively validate the robustness and pedagogical validity of the expert assessments. 
+
+5 Discussion and Conclusion 
+
+5.1 Discussion 
+
+The IRT layer acts as a psychometric regularizer, constraining representations to improve robustness on high-variance traits like Voice (Prompt 8). This transforms AES from summative scoring into for-mative diagnosis. Simulated revision confirms ZPD-aligned scaffolding: PsyScore achieves a 
+
+17.38% normalized gain for low-proficiency stu-dents ( θ < −1), far exceeding the baseline. Gains diminish for advanced learners due to a ceiling ef-fect, underscoring that evaluation should prioritize long-term competency development over immedi-ate text improvement. 
+
+5.2 Conclusion 
+
+PsyScore integrates psychometric calibration with ZPD-conditioned multi-agent feedback, advancing AES from static scoring to adaptive instructional scaffolding. Trait-adaptive IRT priors yield state-of-the-art scoring accuracy, while ability-aware feedback generation dynamically aligns support with learner proficiency, advocating a formative turn in educational AI. 
+
+Limitations 
+
+Computational Overhead. The multi-agent con-sensus mechanism trades off inference latency for pedagogical reliability. While acceptable for asyn-chronous feedback, this limits real-time classroom deployment. Future compression via knowledge distillation could preserve diagnostic fidelity while enabling interactive responsiveness. 
+
+Annotation Dependency. The trait-adaptive scorer requires fine-grained analytic labels (e.g., 
+
+Voice , Organization ), which are scarce in opera-tional assessment settings. This restricts immedi-ate generalization to holistic-only corpora. Semi-supervised trait disentanglement offers a promising path toward label-efficient psychometric modeling. 
+
+Ecological Validity of Simulation. The simu-lated revision protocol captures competency gains 
+
+under idealized adherence, but cannot model mo-tivational dynamics, epistemic trust, or cognitive fatigue that mediate real-world feedback uptake. Controlled classroom trials are necessary to vali-date whether scaffolding benefits persist under au-thentic instructional conditions. 
+
+References    
+
+> Amy Adair. 2024. AI-Driven Assessment and Scaffold-ing for Mathematical Modeling and Explanations During Science Investigations .Ph.D. thesis, Rut-gers The State University of New Jersey, School of Graduate Studies. Frank B Baker. 2001. The basics of item response the-ory . ERIC.
+
+Chen Binbin, Bao Lina, Zhang Rui, Zhang Jingyu, Liu Feng, Wang Shuai, and Li Mingjiang. 2024. A multi-strategy computer-assisted efl writing learning sys-tem with deep learning incorporated and its effects on learning: A writing feedback perspective. Journal of Educational Computing Research , 61(8):60–102. Seth Chaiklin and 1 others. 2003. The zone of proximal development in vygotsky’s analysis of learning and instruction. Vygotsky’s educational theory in cultural context , 1(2):39–64. H. Chen, J. Xu, and B. He. 2014. Automated Essay Scoring by Capturing Relative Writing Quality. The Computer Journal , 57(9):1318–1330. Minsoo Cho, Jin-Xia Huang, and Oh-Woog Kwon. 2024. Dual-scale BERT using multi-trait representations for holistic and trait-specific essay grading. ETRI Journal , 46(1):82–95. Ian Clark. 2012. Formative assessment: Assessment is for self-regulated learning. Educational psychology review , 24(2):205–249. M˘ ad˘ alina Cozma, Andrei Butnaru, and Radu Tudor Ionescu. 2018. Automated essay scoring with string kernels and word embeddings. In Proceedings of the 56th Annual Meeting of the Association for Com-putational Linguistics (Volume 2: Short Papers) ,pages 503–509, Melbourne, Australia. Association for Computational Linguistics. Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language under-standing. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Tech-nologies, Volume 1 (Long and Short Papers) , pages 4171–4186, Minneapolis, Minnesota. Association for Computational Linguistics. Heejin Do, Yunsu Kim, and Gary Lee. 2024a. Autore-gressive score generation for multi-trait essay scoring. In Findings of the Association for Computational Lin-guistics: EACL 2024 , pages 1659–1666, St. Julian’s, Malta. Association for Computational Linguistics. Heejin Do, Sangwon Ryu, and Gary Lee. 2024b. Au-toregressive multi-trait essay scoring via reinforce-ment learning with scoring-aware multiple rewards. In Proceedings of the 2024 Conference on Empiri-cal Methods in Natural Language Processing , pages 16427–16438, Miami, Florida, USA. Association for Computational Linguistics. Fei Dong, Yue Zhang, and Jie Yang. 2017. Attention-based Recurrent Convolutional Neural Network for Automatic Essay Scoring. In Proceedings of the 21st Conference on Computational Natural Language Learning (CoNLL 2017) , pages 153–162, Vancouver, Canada. Association for Computational Linguistics. Ahmed M ElMassry, Nazar Zaki, Negmeldin AlSheikh, and Mohammed Mediani. 2025. A systematic re-view of pretrained models in automated essay scoring. 
+
+IEEE Access .Muhammad Faseeh, Abdul Jaleel, Naeem Iqbal, Anwar Ghani, Akmalbek Abdusalomov, Asif Mehmood, and Young-Im Cho. 2024. Hybrid approach to automated essay scoring: Integrating deep learning embeddings with handcrafted linguistic features for improved ac-curacy. Mathematics , 12(21):3416. Brian Frank, Natalie Simper, and James Kaupp. 2018. Formative feedback and scaffolding for develop-ing complex problem solving and modelling out-comes. European Journal of Engineering Education ,43(4):552–568. Jiefu Gong, Xiao Hu, Wei Song, Ruiji Fu, Zhichao Sheng, Bo Zhu, Shijin Wang, and Ting Liu. 2021. Iflyea: A chinese essay assessment system with au-tomated rating, review generation, and recommen-dation. In Proceedings of the 59th Annual Meet-ing of the Association for Computational Linguistics and the 11th International Joint Conference on Nat-ural Language Processing: System Demonstrations ,pages 240–248. John Hattie and Helen Timperley. 2007. The power of feedback. Review of educational research , 77(1):81– 112. Yue Huang, C. Palermo, Ruitao Liu, and Yong He. 2025. An early review of generative language models in automated writing evaluation: Advancements, chal-lenges, and future directions for automated essay scoring and feedback generation. Chinese/English Journal of Educational Measurement and Evaluation .Angenette C. Imbler, S. Clark, T. Young, and Erika Fein-auer. 2022. Teaching second-grade students to write science expository text: Does a holistic or analytic rubric provide more meaningful results? Assessing Writing .L. Jacobsen and Kira Elena Weber. 2025. The promises and pitfalls of large language models as feedback providers: A study of prompt engineering and the quality of ai-driven feedback. AI .Rui Jiang, Yijia Xue, and Dongmian Zou. 2023. Interpretability-aware industrial anomaly detection using autoencoders. IEEE Access , 11:60490–60500. Stephen Krashen. 1982. Principles and practice in sec-ond language acquisition. Rahul Kumar, Sandeep Mathias, Sriparna Saha, and Pushpak Bhattacharyya. 2022. Many hands make light work: Using essay traits to automatically score essays. In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Tech-nologies, NAACL 2022, Seattle, WA, United States, July 10-15, 2022 , pages 1485–1495. Association for Computational Linguistics. Vivekanandan Kumar and David Boulanger. 2020. Ex-plainable automated essay scoring: Deep learning really has pedagogical value. In Frontiers in educa-tion , volume 5, page 572367. Frontiers Media SA. Hannah L., Jang E. E., Shah M., and Gupta V. 2023. Validity arguments for automated essay scoring of young students’ writing traits. Language Assessment Quarterly , 20(4-5):399–420. Deming Li and Wei Xing. 2025. A comparative study on sustainable development of online education plat-forms at home and abroad since the twenty-first cen-tury based on big data analysis. Education and Infor-mation Technologies , pages 1–22. Xia Li and Wenjing Pan. 2025. Ceaes: Bidirectional reinforcement learning optimization for consistent and explainable essay assessment. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) ,pages 26267–26279. Xiaoyu Li, Shaoyang Guo, Jin Wu, and Chanjin Zheng. 2025. An interpretable polytomous cognitive di-agnosis framework for predicting examinee perfor-mance. Information Processing & Management ,62(1):103913. Yuanchao Liu, Jiawei Han, Alexander Sboev, and Ilya Makarov. 2024. GEEF: A neural network model for automatic essay feedback generation by integrating writing skills assessment. Expert Systems with Appli-cations , 245:123043. Zhexiong Liu, Diane Litman, Elaine L Wang, Tianwen Li, Mason Gobat, Lindsay Clare Matsumura, and Richard Correnti. 2025. eRevise+RF: A writing eval-uation system for assessing student essay revisions and providing formative feedback. In Proceedings of the 2025 Conference of the Nations of the Amer-icas Chapter of the Association for Computational Linguistics: Human Language Technologies (System Demonstrations) , pages 173–190, Albuquerque, New Mexico. Association for Computational Linguistics. Sabrina Ludwig, Christian Mayer, Christopher Hansen, Kerstin Eilers, and Steffen Brandt. 2021a. Au-tomated essay scoring using transformer models. 
+
+Psych , 3(4):897–915. Sabrina Ludwig, Christian Mayer, Christopher Hansen, Kerstin Eilers, and Steffen Brandt. 2021b. Auto-mated Essay Scoring Using Transformer Models. 
+
+Psych , 3(4):897–915. Pfano Mashau and Jabulani C Nyawo. 2021. The use of an online learning platform: A step towards e-learning. South African Journal of Higher Education ,35(2):123–143. Sandeep Mathias and Pushpak Bhattacharyya. 2018. ASAP++: Enriching the ASAP Automated Essay Grading Dataset with Essay Attribute Scores. In Pro-ceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018) ,pages 730–734. European Language Resources As-sociation (ELRA). Haile Misgna, Byung-Won On, Ingyu Lee, and G. Choi. 2024. A survey on deep learning-based automated essay scoring and feedback generation. Artificial Intelligence Review , 58. Inderjeet Jayakumar Nair, Jiaye Tan, Xiaotian Su, Anne Gere, Xu Wang, and Lu Wang. 2024. Closing the loop: Learning to generate writing feedback via lan-guage model simulated student revisions. In Proceed-ings of the 2024 Conference on Empirical Methods in Natural Language Processing , pages 16636–16657, Miami, Florida, USA. Association for Computational Linguistics. Masumi ONO, Hiroyuki YAMANISHI, and Yuko HI-JIKATA. 2019. Holistic and analytic assessments of the toefl ibt® integrated writing task. JLTA Journal ,22:65–88. Vishakh Padmakumar and He He. 2024. Does writing with language models reduce content diversity? In 
+
+International Conference on Representation Learn-ing , volume 2024, pages 642–669. P. G. Policar, Martin Špendl, Tomaž Curk, and Blaz Zupan. 2025. Automated assignment grading with large language models: insights from a bioinformat-ics course. Bioinformatics , 41:i21 – i29. Fumiko Samejima. 1969. Estimation of latent ability using a response pattern of graded scores. Psychome-trika , 34(S1):1–97. Alexander Scarlatos, Nigel Fernandez, Christopher Ormerod, Susan Lottridge, and Andrew Lan. 2025. SMART: Simulated students aligned with item re-sponse theory for question difficulty prediction. In 
+
+Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing , pages 25071–25094, Suzhou, China. Association for Com-putational Linguistics. Nils-Jonathan Schaller, Yuning Ding, Andrea Horbach, Jennifer Meyer, and Thorben Jansen. 2024. Fairness in automated essay scoring: A comparative analysis of algorithms on german learner essays from sec-ondary education. pages 210–221. Takumi Shibata and Masaki Uto. 2022. Analytic Au-tomated Essay Scoring Based on Deep Neural Net-works Integrating Multidimensional Item Response Theory. Jinnie Shin, Qi Guo, and Mark J. Gierl. 2021. Auto-mated essay scoring using deep learning algorithms. pages 37–47. Lee S Shulman. 1986. Those who understand: Knowl-edge growth in teaching. Educational researcher ,15(2):4–14. Maja Stahl, Leon Biermann, Andreas Nehring, and Hen-ning Wachsmuth. 2024a. Exploring LLM Prompting Strategies for Joint Essay Scoring and Feedback Gen-eration. arXiv preprint . ArXiv:2404.15845 [cs]. Maja Stahl, Leon Biermann, Andreas Nehring, and Hen-ning Wachsmuth. 2024b. Exploring LLM prompting strategies for joint essay scoring and feedback gen-eration. In Proceedings of the 19th Workshop on Innovative Use of NLP for Building Educational Ap-plications (BEA 2024) , pages 283–298, Mexico City, Mexico. Association for Computational Linguistics. John Sweller. 1988. Cognitive load during problem solving: Effects on learning. Cognitive science ,12(2):257–285. Kaveh Taghipour and Hwee Tou Ng. 2016. A Neural Approach to Automated Essay Scoring. In Proceed-ings of the 2016 Conference on Empirical Methods in Natural Language Processing , pages 1882–1891, Austin, Texas. Association for Computational Lin-guistics. Masaki Uto and Maomi Ueno. 2018. Item Response Theory Without Restriction of Equal Interval Scale for Rater’s Score. In Carolyn Penstein Rosé, Roberto Martínez-Maldonado, H. Ulrich Hoppe, Rose Luckin, Manolis Mavrikis, Kaska Porayska-Pomsta, Bruce McLaren, and Benedict Du Boulay, editors, Artificial Intelligence in Education , volume 10948, pages 363– 368. Springer International Publishing, Cham. Series Title: Lecture Notes in Computer Science. Erik Voss. 2025. Comparison of traditional machine learning and neural network approaches for auto-mated scoring of second language english essays. 
+
+Language Testing , 42:369 – 396. Lev S Vygotsky. 1978. Mind in society: The develop-ment of higher psychological processes , volume 86. Harvard university press. Elaine Lin Wang, Lindsay Clare Matsumura, Richard Correnti, Diane Litman, Haoran Zhang, Emily Howe, Ahmed Magooda, and Rafael Quintana. 2020. ere-vis(ing): Students’ revision of text evidence use in an automated writing evaluation system. Assessing Writing , 44:100449. Jiong Wang and Jie Liu. 2025. T-MES: Trait-aware mix-of-experts representation learning for multi-trait essay scoring. In Proceedings of the 31st Inter-national Conference on Computational Linguistics ,pages 1224–1236, Abu Dhabi, UAE. Association for Computational Linguistics. David J. Wood, Jérôme Seymour Bruner, and Gail P. Ross. 1976. The role of tutoring in problem solv-ing. Journal of child psychology and psychiatry, and allied disciplines , 17 2:89–100. Jin Wu and Chanjin Zheng. 2025. Metacd: A meta learning framework for cognitive diagnosis based on continual learning. Preprint , arXiv:2512.22904. Kaixun Yang, Mladen Rakovi´ c, Dragan Gaševi´ c, and Guanliang Chen. 2025. Does the prompt-based large language model recognize students’ demographics and introduce bias in essay scoring? In Artifi-cial Intelligence in Education , pages 75–89, Cham. Springer Nature Switzerland. A ASAP++ Dataset Details 
+
+The ASAP++ dataset (Mathias and Bhattacharyya, 2018) extends the original Automated Student As-sessment Prize (ASAP) corpus by providing fine-grained, trait-specific scores in addition to holistic essay ratings. It comprises eight distinct writing prompts spanning three genres: argumentative (per-suasive essays), source-based responses, and narra-tive storytelling. Table 8 summarizes the prompt-level statistics, including the number of essays, av-erage length, and overall score range for each task. Each essay is evaluated along multiple analytic dimensions, the set of which varies by prompt. Commonly assessed traits include Content , Orga-nization , Word Choice , Sentence Fluency , Conven-tions , Prompt Adherence , Narrativity , Language ,
+
+Style , and Voice . Score ranges for individual traits differ from holistic scores; for instance, Prompt 8 assigns holistic scores on a 0–60 scale while trait scores follow a 2–12 range. A detailed mapping of trait dimensions and their corresponding score intervals is provided in Table 8. 
+
+> Table 8: Basic statistics of the ASAP-AES dataset by prompt.
+
+Prompt Type Count Length Range 
+
+Prompt 1 Argumentative 1,785 350 2–12 Prompt 2 Argumentative 1,800 350 1–6 Prompt 3 Response 1,726 150 0–3 Prompt 4 Response 1,772 150 0–3 Prompt 5 Response 1,805 150 0–4 Prompt 6 Response 1,800 150 0–4 Prompt 7 Narrative 1,569 300 0–30 Prompt 8 Narrative 723 650 0–60 
+
+B Initialization and Ensemble Strategy 
+
+Table 9 presents a comprehensive grid search over IRT parameter initialization strategies. We eval-uate nine combinations of discrimination ( a ∈{0.5, 1.0, 1.5}) and difficulty ( b ∈ { 1.0, 2.0, 3.0})parameters across all writing traits and prompts using two metrics: Quadratic Weighted Kappa (QWK) and Pearson Correlation Coefficient (PCC). The results demonstrate that moderate initialization values ( a = 1 .0, b = 2 .0) generally yield optimal performance, with consistent stability across differ-ent writing dimensions. The table provides empir-ical evidence supporting our parameter selection strategy for the diagnostic feedback system. 
+
+C ZPD-Aligned Strategy Mapping 
+
+Table 10 presents our Zone of Proximal Develop-ment (ZPD) aligned pedagogical strategy mapping that dynamically selects teaching approaches based on the student’s latent ability parameter ( θ) esti-mated through our IRT model. The system im-plements three distinct instructional strategies: ex-plicit directive instruction for struggling learners (θ < −1.0), targeted scaffolding for developing learners ( −1.0 ≤ θ ≤ 1.0), and intellectual chal-lenge for advanced learners ( θ > 1.0). This adap-tive strategy selection forms the foundation of our diagnostic feedback generation pipeline, ensuring pedagogical appropriateness for each student’s pro-ficiency level. 
+
+D Multi-Agent Consensus and Debiasing 
+
+Table 11 details the three-stage prompting archi-tecture used in our diagnostic feedback generation pipeline. The first stage generates personalized pedagogical instructions based on the student’s la-tent ability parameter (theta) and item response theory metrics. The second stage employs multi-ple expert writing tutors to generate initial feed-back drafts following these instructions. The final stage uses an expert editor model to synthesize the best elements from all drafts into a cohesive, ped-agogically appropriate final feedback report. This multi-stage approach ensures both diagnostic preci-sion and pedagogical effectiveness in the generated feedback. 
+
+E Full Statistical Significance Results 
+
+Table 12 presents the complete per-trait scoring performance of PsyScore-MAES compared against the BERT baseline across all eight prompts in the ASAP++ dataset. For each prompt and each eval-uated writing trait, we report the mean Quadratic Weighted Kappa (QWK) and its standard deviation over five cross-validation folds, the absolute dif-ference in mean QWK between the two models (Diff.), the exact one-tailed p-value derived from the Wilcoxon Signed-Rank Test, and an asterisk denoting statistical significance at the p < 0.05 
+
+level. Traits without a defined score range in a given prompt are omitted from the corresponding row group. Table 9: The table reports metrics across all traits and prompts for nine different initialization combinations of discrimination ( a) and difficulty ( b). 
+
+> Dimensions A=0.5  A=0.5  A=0.5  A=1.0  A=1.0  A=1.0  A=1.5  A=1.5  A=1.5 B=[-1, 1]  B=[-2, 2]  B=[-3, 3]  B=[-1, 1]  B=[-2, 2]  B=[-3, 3]  B=[-1, 1]  B=[-2, 2]  B=[-3, 3]
+> QWK  PCC  QWK  PCC  QWK  PCC  QWK  PCC  QWK  PCC  QWK  PCC  QWK  PCC  QWK  PCC  QWK  PCC
+> Trait-wise Performance
+> Overall  0.775  0.782  0.774  0.784  0.783  0.785  0.775  0.782  0.785  0.786  0.781  0.784  0.779  0.782  0.778  0.781  0.780  0.782 Content  0.738  0.755  0.743  0.753  0.738  0.751  0.738  0.755  0.752  0.759  0.750  0.755  0.754  0.759  0.754  0.758  0.747  0.755 Organization  0.709  0.721  0.710  0.714  0.702  0.711  0.709  0.721  0.696  0.710  0.696  0.700  0.692  0.700  0.705  0.710  0.691  0.696 Word Choice  0.693  0.697  0.694  0.696  0.704  0.715  0.693  0.697  0.715  0.713  0.716  0.717  0.710  0.717  0.708  0.717  0.701  0.705 Sentence Fluency 0.717  0.720  0.703  0.721  0.691  0.700  0.717  0.720  0.700  0.704  0.703  0.708  0.708  0.711  0.697  0.713  0.705  0.714 Conventions  0.714  0.731  0.716  0.734  0.717  0.729  0.714  0.731  0.709  0.719  0.713  0.723  0.724  0.730  0.725  0.738  0.702  0.708 Prompt Adherence0.740  0.760  0.739  0.751  0.745  0.754  0.740  0.760  0.754  0.758  0.746  0.751  0.743  0.765  0.751  0.761  0.743  0.752 Narrativity  0.720  0.732  0.722  0.740  0.720  0.734  0.720  0.732  0.706  0.722  0.726  0.737  0.731  0.750  0.727  0.734  0.722  0.740 Language  0.689  0.714  0.690  0.709  0.704  0.718  0.689  0.714  0.702  0.710  0.697  0.708  0.668  0.687  0.700  0.715  0.696  0.718 Style  0.641  0.686  0.693  0.726  0.668  0.682  0.641  0.686  0.684  0.703  0.679  0.702  0.685  0.712  0.681  0.686  0.680  0.705 Voice  0.701  0.692  0.738  0.733  0.742  0.756  0.701  0.692  0.711  0.710  0.723  0.738  0.705  0.732  0.641  0.697  0.727  0.737 Trait Avg  0.712  0.727  0.720  0.733  0.720  0.730  0.712  0.727  0.719  0.727  0.721  0.729  0.718  0.731  0.715  0.728  0.718  0.728
+> Prompt-wise Performance
+> Prompt 1  0.733  0.748  0.732  0.749  0.743  0.754  0.733  0.748  0.733  0.742  0.731  0.739  0.743  0.749  0.741  0.747  0.724  0.732 Prompt 2  0.712  0.720  0.707  0.713  0.722  0.727  0.712  0.720  0.703  0.714  0.717  0.721  0.711  0.718  0.704  0.717  0.697  0.706 Prompt 3  0.707  0.731  0.724  0.740  0.705  0.720  0.707  0.731  0.720  0.727  0.730  0.739  0.724  0.732  0.712  0.724  0.722  0.736 Prompt 4  0.759  0.775  0.763  0.777  0.764  0.770  0.759  0.775  0.764  0.775  0.762  0.769  0.762  0.773  0.772  0.784  0.768  0.771 Prompt 5  0.721  0.739  0.705  0.725  0.712  0.725  0.721  0.739  0.727  0.733  0.711  0.718  0.712  0.731  0.733  0.735  0.712  0.730 Prompt 6  0.741  0.764  0.752  0.766  0.765  0.772  0.741  0.764  0.760  0.767  0.757  0.767  0.736  0.761  0.761  0.771  0.758  0.771 Prompt 7  0.743  0.761  0.753  0.766  0.744  0.749  0.743  0.761  0.753  0.758  0.752  0.762  0.752  0.761  0.758  0.762  0.749  0.757 Prompt 8  0.706  0.700  0.707  0.707  0.697  0.712  0.706  0.700  0.709  0.709  0.710  0.711  0.712  0.713  0.697  0.709  0.713  0.715 Prompt Avg  0.728  0.742  0.730  0.743  0.731  0.741  0.728  0.742  0.734  0.741  0.734  0.741  0.732  0.742  0.735  0.744  0.730  0.740 Table 10: Zone of Proximal Development (ZPD) aligned pedagogical strategy mapping based on student latent ability ( θ)
+
+θ Range Student Profi-ciency Pedagogical Strategy 
+
+θ <
+
+−1.0
+
+Struggling Learner 
+
+Strategy: EXPLICIT INSTRUCTION (Directive) The student struggles with fundamentals. Action: Provide direct corrections for grammar and mechanics. Explanation: Keep explanations concise and rule-based. Goal: Fix errors that block communication. 
+
+−1.0 ≤
+
+θ ≤ 1.0
+
+Developing Learner 
+
+Strategy: TARGETED SCAFFOLDING The student has emerging competence. Action: Balance praise with 1-2 key areas for improvement. Goal: Guide the student to the next proficiency level (ZPD). 
+
+θ > 1.0 Advanced Learner 
+
+Strategy: INTELLECTUAL CHALLENGE (Facilitative) The student shows strong command. Action: Focus on rhetorical analysis, logic flow, and voice. Explanation: Use open-ended questions to trigger self-reflection. Goal: Refine style and depth of argument. 
+
+> Table 11: Prompt templates used at different stages of the diagnostic feedback generation pipeline
+
+Stage Prompt Template 
+
+Diagnostic In-struction Gen-eration 
+
+1. PEDAGOGICAL STRATEGY PROTOCOL > Student Latent Ability (Theta): <theta_value> > Required Approach: <strategy_description> CRITICAL INSTRUCTION: Must adopt defined ’Tone’ and execute ’Action’. 2. FEEDBACK PRIORITY MAP - <trait> (a=<value>): [CRITICAL FOCUS/Standard/Secondary] 3. DIAGNOSTIC INTERVENTION POINTS - <trait>: <status> (Score: <score>) 
+
+Initial Feed-back Genera-tion 
+
+Role: Expert Writing Tutor implementing “Differentiated Instruction” [STUDENT ESSAY] <full essay text> [PEDAGOGICAL DIAGNOSIS &INSTRUCTIONS] <diagnostic instructions> Task: Write personalized feedback adhering to the defined Strategy. Output: Return feedback content directly. 
+
+Expert Synthe-sis 
+
+Role: Chief Editor of Educational Feedback [TRUTH - STUDENT PROFILE] - Latent Ability: <value> - Required Strategy: <strategy_desc> [DRAFT FEEDBACK FROM TUTORS] <multiple candidate drafts> Task: Combine best insights into ONE FINAL PERFECT FEEDBACK REPORT Fusion Rules: 1. Filter by Strategy: Ignore parts violating required strategy 2. ...... Output: Return ONLY the final synthesized feedback text. Table 12: Performance comparison between PsyScore-MAES and the BERT baseline across prompts and traits. 
+
+Prompt Trait PsyScore-MAES BERT Diff. p-value Sig. 
+
+1 Overall 0.831 ± 0.007 0.794 ± 0.013 0.037 0.031 *Content 0.730 ± 0.012 0.716 ± 0.008 0.014 0.031 *Organization 0.696 ± 0.013 0.669 ± 0.016 0.028 0.031 *Conventions 0.706 ± 0.018 0.704 ± 0.010 -0.001 0.500 Word Choice 0.716 ± 0.014 0.705 ± 0.018 0.011 0.094 Sentence Fluency 0.689 ± 0.018 0.702 ± 0.008 -0.013 0.844 2 Overall 0.680 ± 0.020 0.644 ± 0.021 0.036 0.063 Content 0.688 ± 0.019 0.659 ± 0.010 0.030 0.031 *Organization 0.689 ± 0.018 0.669 ± 0.014 0.020 0.031 *Conventions 0.721 ± 0.017 0.688 ± 0.020 0.033 0.031 *Word Choice 0.743 ± 0.011 0.708 ± 0.010 0.035 0.031 *Sentence Fluency 0.718 ± 0.008 0.691 ± 0.018 0.027 0.063 3 Overall 0.707 ± 0.011 0.713 ± 0.014 -0.006 0.844 Content 0.715 ± 0.012 0.695 ± 0.013 0.020 0.031 *Prompt Adherence 0.740 ± 0.007 0.727 ± 0.008 0.013 0.031 *Language 0.689 ± 0.020 0.684 ± 0.018 0.005 0.406 Narrativity 0.743 ± 0.012 0.741 ± 0.018 0.002 0.313 4 Overall 0.779 ± 0.003 0.774 ± 0.012 0.005 0.219 Content 0.772 ± 0.007 0.758 ± 0.023 0.015 0.406 Prompt Adherence 0.766 ± 0.012 0.755 ± 0.012 0.011 0.156 Language 0.708 ± 0.012 0.677 ± 0.017 0.031 0.031 *Narrativity 0.782 ± 0.008 0.753 ± 0.014 0.029 0.031 *5 Overall 0.815 ± 0.006 0.797 ± 0.007 0.018 0.031 *Content 0.738 ± 0.014 0.720 ± 0.015 0.018 0.063 Prompt Adherence 0.700 ± 0.032 0.692 ± 0.008 0.004 0.313 Language 0.706 ± 0.004 0.684 ± 0.015 0.021 0.063 Narrativity 0.684 ± 0.001 0.654 ± 0.004 0.030 0.031 *6 Overall 0.808 ± 0.010 0.801 ± 0.014 0.008 0.156 Content 0.824 ± 0.011 0.800 ± 0.015 0.024 0.031 *Prompt Adherence 0.783 ± 0.015 0.766 ± 0.016 0.016 0.063 Language 0.673 ± 0.018 0.682 ± 0.031 -0.009 0.781 Narrativity 0.708 ± 0.022 0.674 ± 0.012 0.034 0.063 7 Overall 0.829 ± 0.006 0.779 ± 0.011 0.050 0.031 *Content 0.858 ± 0.007 0.708 ± 0.017 0.149 0.031 *Organization 0.679 ± 0.019 0.539 ± 0.031 0.140 0.031 *Conventions 0.710 ± 0.012 0.456 ± 0.029 0.253 0.031 *Style 0.664 ± 0.021 0.419 ± 0.022 0.245 0.031 *8 Overall 0.791 ± 0.015 0.667 ± 0.031 0.125 0.031 *Content 0.666 ± 0.019 0.505 ± 0.052 0.161 0.031 *Organization 0.704 ± 0.017 0.532 ± 0.029 0.172 0.031 *Conventions 0.697 ± 0.043 0.535 ± 0.033 0.162 0.031 *Word Choice 0.674 ± 0.022 0.409 ± 0.058 0.265 0.031 *Sentence Fluency 0.678 ± 0.038 0.511 ± 0.029 0.167 0.031 *Voice 0.721 ± 0.017 0.484 ± 0.031 0.237 0.031 *F Preference Compare Evaluation 
+
+Table 13 presents the prompt template used for human-aligned preference evaluation between feed-back variants. The prompt instructs an LLM to act as a pedagogical expert evaluating two feedback versions across three critical educational dimen-sions: specificity (citing concrete examples from the student essay), actionability (providing clear revision guidance), and pedagogical value (support-ing student learning). The structured JSON output format ensures consistent, machine-readable eval-uation results. This multi-dimensional assessment framework allows us to quantitatively compare the pedagogical quality of different feedback genera-tion approaches while maintaining alignment with educational best practices. 
+
+G Simulated Scaffolding Assessment 
+
+Table 14 outlines the dual-role prompt templates used in our simulated pedagogical evaluation framework. The first template simulates a student who revises their essay strictly according to pro-vided feedback, with explicit constraints ensuring revisions remain faithful to the feedback content. The second template simulates a professional es-say grader who evaluates essay quality on a stan-dardized 1.0-6.0 scale across multiple dimensions (Organization, Content, Grammar, and Style) with structured JSON output. This simulation frame-work allows us to quantitatively measure feedback effectiveness by tracking score improvements be-tween original and revised essays, providing an automated yet pedagogically grounded evaluation of feedback quality. 
+
+H Human Expert Rubric 
+
+To address the limitations of automated evaluation in capturing pedagogical context and to validate the external validity of the experimental findings, we invited three experts with extensive experience in English language instruction to conduct a fine-grained human evaluation. The assessment em-ployed a five-point Likert scale, with detailed crite-ria provided in Table 15. 
+
+> Table 13: Prompt template used for multi-dimensional preference comparison between feedback variants
+
+Evaluation Prompt Template 
+
+You are an expert Pedagogical Evaluator. [STUDENT ESSAY]: <essay content (smart truncated)> [FEEDBACK A]: <feedback variant A> [FEEDBACK B]: <feedback variant B> [TASK]: Compare Feedback A and Feedback B along THREE distinct dimensions. For each dimension, choose a winner (“A”, “B”, or “Tie”) and provide abrief reason. 1. Specificity : Does the feedback cite specific text from the essay? 2. Actionability : Does it give clear instructions on HOW to revise? 3. Pedagogical_Value : Is the feedback supportive and conducive to learning? [OUTPUT FORMAT]: Return ONLY a valid JSON object with these exact keys. {“specificity”: { “winner”: “A” or “B” or “Tie”, “reason”: “explanation” }, “actionability”: { “winner”: “A” or “B” or “Tie“, “reason”: “explanation” }, “pedagogical”: { “winner”: “A” or “B” or “Tie”, “reason”: “explanation” }, “overall_preference”: “A” or “B” or “Tie” }Table 14: Prompt templates used in the simulated peda-gogical evaluation framework 
+
+Role Prompt Template 
+
+Student Simulator 
+
+You are a student revising your essay based on a teacher’s feedback. [YOUR ORIGINAL ESSAY]: <original essay text> [TEACHER’S FEEDBACK]: “<feedback content>” [TASK]: Revise your essay to improve its quality. **CRITICAL RULES**: 1. You must **ONLY** make changes that are suggested or implied by the feedback. 2. If the feedback is specific (e.g., “fix the intro”), focus on that. 3. If the feedback is generic (e.g., “write better”), try your best but do not rewrite the whole essay from scratch. 4. Do not add conversational text. Output ONLY the revised essay. 
+
+Essay Grader 
+
+You are a professional Essay Grader. [ESSAY]: <essay text> [TASK]: Rate this essay on a scale of 1.0 to 6.0 (increments of 0.5 allowed). Assess: Organization, Content, Grammar, and Style. - 1.0 = Very Poor - 6.0 = Excellent [OUTPUT FORMAT]: Return ONLY a valid JSON object. Do not simply copy the example values; determine the score based strictly on the essay quality. Example Structure: {“score”: <FLOAT_BETWEEN_1_AND_6>, “reason”: “<YOUR_SHORT_JUSTIFICATION>” }Table 15: Human Expert Rubric for Writing Feedback Quality Assessment 
+
+Dim Theoretical Ground-ing Core Evaluation Focus 1 (Poor) 2 (Fair) 3 (Moderate) 4 (Good) 5 (Excellent) 
+
+1. Adap-tivity Zone of Proximal Develop-ment (Vygot-sky, 1978) Does the depth and complexity of the feedback align with the learner’s current cognitive level and ZPD? Severe mismatch. Feedback is either far too difficult or too trivial ,completely ignoring individual proficiency. Low align-ment. Feed-back feels rigid and lacks mean-ingful person-alization for the specific learner. Moderate. No obvious logical errors, but exhibits a “generic tem-plate” style; lacks targeted adaptation. Good align-ment. Dy-namically adjusts se-mantic depth or linguistic complexity based on in-ferred student ability. Perfect alignment. Precisely tar-gets the ZPD. Provides scaffolding for low-proficiency learners and facilitative challenges for advanced learners. 2. Action-ability Feedforward Theory (Hattie and Tim-perley, 2007) Does the feedback provide clear revision paths or scaffolding that the learner can immedi-ately act upon? Not action-able. Offers only vague criticism with no direction for change; advice is confusing. Vague in-structions. Suggestions are overly ab-stract, leaving the student un-certain where to begin. Acceptable direction. Indicates ageneral area for revision but lacks con-crete steps or methodologi-cal support. Clear instruc-tions. Explic-itly identifies a revision path that the stu-dent can fol-low indepen-dently, though specific exam-ples may be absent. Fully scaf-folded. Provides actionable directives alongside revision strate-gies, worked examples, or stepwise reasoning guidance. 3. Speci-ficity Cognitive Load Theory (Sweller, 1988) Does the feedback cite specific textual evidence rather than offering vague evaluations that increase cognitive load? Completely detached. Exhibits hallucination, referencing non-existent content, or is entirely off-topic. Generic plat-itudes. Re-lies on boiler-plate phrases with no con-nection to the actual text. Slight rel-evance. Mentions the general topic or isolated keywords but fails to engage with textual details. Concrete cita-tion. Precisely references specific paragraphs, sentences, or phrases in the essay for targeted commentary. Deep insight. Functions like a microscope, accurately citing origi-nal text and analyzing underlying logical or rhetorical issues with definitive evidence. 4. Ac-curacy Pedagogical Content Knowl-edge (Shul-man, 1986) Are diagnostic informa-tion, linguistic corrections, and factual statements objectively correct and free of misleading content? Severely erroneous. Provides incorrect knowledge, misidentifies correct usage as error, or introduces factual mis-takes. Obvious mistakes. Contains clear grammatical misjudgments or factual in-accuracies in the diagnosis. Generally accurate. No fundamental errors, but may overlook deeper logical issues, or suggestions are debatable. Professionally accurate. Di-agnostic conclusions are precise; instructional suggestions fully align with linguistic conventions and norms. Exemplary precision. Be-yond surface correction, accurately identifies sub-tle issues such as pragmatic missteps or logical incon-sistencies. 5. Sup-portive Tone Affective Filter Hy-pothesis (Krashen, 1982) Is the wording empathetic, aiming to reduce learner anxiety while stimulating motivation to revise? Negative and cold. Robotic or conde-scending tone; feedback consists solely of negative criticism. Lacks warmth. Reads like a machine-generated error log; purely task-oriented with no humanistic encourage-ment. Polite and objective. Neutral in tone; accept-able to the learner but uninspiring and unlikely to boost moti-vation. Positively encouraging. Employs aconstructive approach, fostering apositive feed-back loop. Highly in-spiring. Demonstrates empathy and adopts a collaborative stance that cultivates agrowth mind-set and strong revision will-ingness.

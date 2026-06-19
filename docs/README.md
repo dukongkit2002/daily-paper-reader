@@ -6,26 +6,37 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-18
-- 运行时间：2026-06-18 22:18:35 UTC
+- 最新运行日期：2026-06-19
+- 运行时间：2026-06-19 21:36:56 UTC
 - 运行状态：成功
-- 本次总论文数：1
-- 精读区：0
-- 速读区：1
+- 本次总论文数：5
+- 精读区：1
+- 速读区：4
 
 ### 今日简报（AI）
-今日速读了一篇探究决策过程中神经活动动态几何重映射的研究，重点追踪了额叶与皮层下区域。  
-最有启发的方向是：发现在决策的不同阶段，这些脑区的神经群体编码会主动切换至截然不同的几何映射模式，揭示了比传统观点更灵活的认知切换机制。  
-若您对决策的神经基础或认知灵活性感兴趣，建议找原文速览其核心实验设计与几何分析方法图解，直观理解这种动态重构。
-- 详情：[/202606/18/README](/202606/18/README)
+1) 今日解码大脑“价值-自我-社交”的腹内侧前额叶三重地图，兼探语言沉浸、轻量脑机接口与自适应作文评分。
+2) 最亮发现：腹内侧前额叶并非铁板一块，而是由价值计算、自我参照和社交认知三个子系统精准分工；同时，语言沉浸能通过低频神经追踪显著增强听者的语音加工注意力。
+3) 想提升语言感知，不妨多创造沉浸式语境；若对自我与决策的神经根源好奇，这篇9分vmPFC研究值得细啃。
+- 详情：[/202606/19/README](/202606/19/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [A Tripartite Map of the Ventromedial Prefrontal Cortex](/202606/19/biorxiv-10-64898-2026-06-18-732791-v1-a-tripartite-map-of-the-ventromedial-prefrontal-cortex)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：揭示腹内侧前额叶（mPFC关键子区）分为情感、估值和社会三元功能组织
 
 ### 速读区论文标签
-1. [Dynamic geometry remapping of neural activity within frontal and subcortical areas during decision-making](/202606/18/biorxiv-10-64898-2026-06-11-731612-v1-dynamic-geometry-remapping-of-neural-activity-within-frontal-and-subcortical-areas-during-decision-making)  
+1. [Language Immersion Enhances Attentional Speech Processing via Low-Frequency Neural Tracking](/202606/19/biorxiv-10-64898-2026-06-15-731669-v1-language-immersion-enhances-attentional-speech-processing-via-low-frequency-neural-tracking)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：使用低频神经追踪的注意性言语加工EEG研究
+2. [SwitchBraidNet: Quantisation-Aware Lightweight Architecture for Hybrid Brain-Computer Interface](/202606/19/2606.18816v1-switchbraidnet-quantisation-aware-lightweight-architecture-for-hybrid-brain-computer-interface)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：决策过程中额叶皮层神经几何动态重映射反映执行功能加工.
+   evidence：对数方差读出层直接编码频带功率
+3. [PsyScore: A Psychometrically-Aware Framework for Trait-Adaptive Essay Scoring and ZPD-Scaffolded Feedback](/202606/19/2606.20287v1-psyscore-a-psychometrically-aware-framework-for-trait-adaptive-essay-scoring-and-zpd-scaffolded-feedback)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：适用于批判性思维倾向评估的特质自适应作文评分心理测量框架
+4. [Stimulus identity rather than emotion drives EEG classification on the FACED dataset](/202606/19/biorxiv-10-64898-2026-06-12-731889-v1-stimulus-identity-rather-than-emotion-drives-eeg-classification-on-the-faced-dataset)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：基于EEG的认知/情感状态分类，涉及频谱特征分析
 
 
 <div class="dpr-home-promo-card">
