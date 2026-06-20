@@ -6,37 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-19
-- 运行时间：2026-06-19 21:36:56 UTC
+- 最新运行日期：2026-06-20
+- 运行时间：2026-06-20 20:52:26 UTC
 - 运行状态：成功
-- 本次总论文数：5
-- 精读区：1
-- 速读区：4
+- 本次总论文数：1
+- 精读区：0
+- 速读区：1
 
 ### 今日简报（AI）
-1) 今日解码大脑“价值-自我-社交”的腹内侧前额叶三重地图，兼探语言沉浸、轻量脑机接口与自适应作文评分。
-2) 最亮发现：腹内侧前额叶并非铁板一块，而是由价值计算、自我参照和社交认知三个子系统精准分工；同时，语言沉浸能通过低频神经追踪显著增强听者的语音加工注意力。
-3) 想提升语言感知，不妨多创造沉浸式语境；若对自我与决策的神经根源好奇，这篇9分vmPFC研究值得细啃。
-- 详情：[/202606/19/README](/202606/19/README)
+今日速读一篇探讨AI如何作为学习伙伴协助科学教育的论文，核心警示在于“保持警惕”是有效增强而非盲目依赖的关键。  
+该研究强调，人机协作中持续的批判性审视（vigilance）能避免认知偏移，让AI真正促进理解、实践与科学参与。  
+建议普通读者不妨在日常使用AI工具时，刻意多问一句“这背后的依据是什么”，以培养主动核查的习惯。
+- 详情：[/202606/20/README](/202606/20/README)
 
 ### 精读区论文标签
-1. [A Tripartite Map of the Ventromedial Prefrontal Cortex](/202606/19/biorxiv-10-64898-2026-06-18-732791-v1-a-tripartite-map-of-the-ventromedial-prefrontal-cortex)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：揭示腹内侧前额叶（mPFC关键子区）分为情感、估值和社会三元功能组织
+- 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Language Immersion Enhances Attentional Speech Processing via Low-Frequency Neural Tracking](/202606/19/biorxiv-10-64898-2026-06-15-731669-v1-language-immersion-enhances-attentional-speech-processing-via-low-frequency-neural-tracking)  
+1. [AI as a Partner in Learning about, Doing, and Engaging with Science: Vigilance as the Key to Productive Augmentation](/202606/20/2606.16822v1-ai-as-a-partner-in-learning-about-doing-and-engaging-with-science-vigilance-as-the-key-to-productive-augmentation)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：使用低频神经追踪的注意性言语加工EEG研究
-2. [SwitchBraidNet: Quantisation-Aware Lightweight Architecture for Hybrid Brain-Computer Interface](/202606/19/2606.18816v1-switchbraidnet-quantisation-aware-lightweight-architecture-for-hybrid-brain-computer-interface)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：对数方差读出层直接编码频带功率
-3. [PsyScore: A Psychometrically-Aware Framework for Trait-Adaptive Essay Scoring and ZPD-Scaffolded Feedback](/202606/19/2606.20287v1-psyscore-a-psychometrically-aware-framework-for-trait-adaptive-essay-scoring-and-zpd-scaffolded-feedback)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：适用于批判性思维倾向评估的特质自适应作文评分心理测量框架
-4. [Stimulus identity rather than emotion drives EEG classification on the FACED dataset](/202606/19/biorxiv-10-64898-2026-06-12-731889-v1-stimulus-identity-rather-than-emotion-drives-eeg-classification-on-the-faced-dataset)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：基于EEG的认知/情感状态分类，涉及频谱特征分析
+   evidence：认知警觉性是科学学习中有效增强的关键
 
 
 <div class="dpr-home-promo-card">

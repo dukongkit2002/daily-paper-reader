@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-20",
+  "date": "2026-06-20",
+  "generated_at": "2026-06-20T20:52:32",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/20/2606.16822v1-ai-as-a-partner-in-learning-about-doing-and-engaging-with-science-vigilance-as-the-key-to-productive-augmentation",
+      "section": "quick",
+      "title_en": "AI as a Partner in Learning about, Doing, and Engaging with Science: Vigilance as the Key to Productive Augmentation",
+      "authors": "Marcus Kubsch",
+      "date": "2026-06-15",
+      "pdf": "https://arxiv.org/pdf/2606.16822v1",
+      "score": "7.0",
+      "evidence": "认知警觉性是科学学习中有效增强的关键",
+      "tldr": "人工智能正成为人们学习、实践和参与科学的伙伴，但盲目信任AI的流畅输出可能使合作有害。作者强调认知警惕性的核心作用：它是指人对AI输出进行校准评估，从而安全地放大AI的能力。本文具体阐述了警惕性的构成、它与深度加工的机制联系，并提出一种不直接询问评估的测量方法。警惕性决定了学习者能否进行深层概念整合，因此是AI辅助学习的先决条件；任何教学设计都不能绕过激发评估。然而，AI表面的可信性会抑制警惕性，且警惕性分布不均，统一引入AI可能加剧教育不平等。最后，作者建议通过渐减支持来培养警惕性，这为公平有效的AI教育应用提供了方向。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "AI has become a partner in how people learn about, do, and engage with science, and the partnership takes three forms: a scientist works with a co-scientist whose output must be checked; a member of the public looks something up to decide whether a diet works or whether to fit solar panels; and a student takes up an inquiry with AI in a science class. Across all three, one thing decides whether the partnership helps or harms: whether the human evaluates what the AI returns or takes it on trust. I argue that this evaluation -- epistemic vigilance calibrated to how far a fallible source can be trusted -- is, given adequate prior knowledge, the binding constraint on productive augmentation. You can hand the AI a great deal precisely because you stay vigilant; vigilance makes generative partnership safe, so it licenses augmentation rather than restricting it. Vigilance is already invoked in science education but under-specified for the AI case; I specify its components, the mechanism tying it to learning, and a way to measure it without soliciting the evaluation it is meant to detect. What is distinctive is that the machine's fluent, confident prose reads as trustworthy whether or not it is, so its surface works against the human evaluating it. The argument bears hardest on education: the integrated conceptual knowledge instruction aims to foster forms only under deep processing, and vigilance sets how deeply a claim is processed, so it is the precondition for learning with AI. The design factors the field reports matter through whether they engage the learner's evaluation; none works around it. Untested is vigilance as a measured disposition, above all where the AI is confidently wrong. Because it is unevenly distributed, integrating AI uniformly is likely to widen the gap between better- and less-prepared students. I close on how it might be built by fading support as the learner takes over.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

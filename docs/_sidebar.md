@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-06-20 <!--dpr-date:20260620-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/20/2606.16822v1-ai-as-a-partner-in-learning-about-doing-and-engaging-with-science-vigilance-as-the-key-to-productive-augmentation" data-sidebar-item="{&quot;title&quot;: &quot;AI as a Partner in Learning about, Doing, and Engaging with Science: Vigilance as the Key to Productive Augmentation&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2606.16822v1-ai-as-a-partner-in-learning-about-doing-and-engaging-with-science-vigilance-as-the-key-to-productive-augmentation&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;认知警觉性是科学学习中有效增强的关键&quot;}">AI as a Partner in Learning about, Doing, and Engaging with Science: Vigilance as the Key to Productive Augmentation</a>
   * 2026-06-19 <!--dpr-date:20260619-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/19/biorxiv-10-64898-2026-06-18-732791-v1-a-tripartite-map-of-the-ventromedial-prefrontal-cortex" data-sidebar-item="{&quot;title&quot;: &quot;A Tripartite Map of the Ventromedial Prefrontal Cortex&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-64898-2026-06-18-732791-v1-a-tripartite-map-of-the-ventromedial-prefrontal-cortex&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;揭示腹内侧前额叶（mPFC关键子区）分为情感、估值和社会三元功能组织&quot;}">A Tripartite Map of the Ventromedial Prefrontal Cortex</a>

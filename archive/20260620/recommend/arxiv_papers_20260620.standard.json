@@ -1,0 +1,53 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-20T20:51:03.159742+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2606.16822v1",
+      "source": "arxiv",
+      "title": "AI as a Partner in Learning about, Doing, and Engaging with Science: Vigilance as the Key to Productive Augmentation",
+      "abstract": "AI has become a partner in how people learn about, do, and engage with science, and the partnership takes three forms: a scientist works with a co-scientist whose output must be checked; a member of the public looks something up to decide whether a diet works or whether to fit solar panels; and a student takes up an inquiry with AI in a science class. Across all three, one thing decides whether the partnership helps or harms: whether the human evaluates what the AI returns or takes it on trust. I argue that this evaluation -- epistemic vigilance calibrated to how far a fallible source can be trusted -- is, given adequate prior knowledge, the binding constraint on productive augmentation. You can hand the AI a great deal precisely because you stay vigilant; vigilance makes generative partnership safe, so it licenses augmentation rather than restricting it. Vigilance is already invoked in science education but under-specified for the AI case; I specify its components, the mechanism tying it to learning, and a way to measure it without soliciting the evaluation it is meant to detect. What is distinctive is that the machine's fluent, confident prose reads as trustworthy whether or not it is, so its surface works against the human evaluating it. The argument bears hardest on education: the integrated conceptual knowledge instruction aims to foster forms only under deep processing, and vigilance sets how deeply a claim is processed, so it is the precondition for learning with AI. The design factors the field reports matter through whether they engage the learner's evaluation; none works around it. Untested is vigilance as a measured disposition, above all where the AI is confidently wrong. Because it is unevenly distributed, integrating AI uniformly is likely to widen the gap between better- and less-prepared students. I close on how it might be built by fading support as the learner takes over.",
+      "authors": [
+        "Marcus Kubsch"
+      ],
+      "primary_category": "physics.ed-ph",
+      "categories": [
+        "physics.ed-ph",
+        "cs.CY"
+      ],
+      "published": "2026-06-15T15:06:53+00:00",
+      "link": "https://arxiv.org/pdf/2606.16822v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Epistemic vigilance as key to productive augmentation in science learning",
+      "llm_evidence_cn": "认知警觉性是科学学习中有效增强的关键",
+      "llm_evidence": "认知警觉性是科学学习中有效增强的关键",
+      "canonical_evidence": "认知警觉性是科学学习中有效增强的关键",
+      "llm_tldr_en": "This paper argues that epistemic vigilance—calibrated trust evaluation—is the key constraint on productive use of AI in science learning, working, and public engagement, requiring users to critically evaluate AI outputs rather than trust blindly.",
+      "llm_tldr_cn": "本文指出，在利用AI学习、实践和参与科学的过程中，人类能否有效评估AI输出、保持认知警觉，是决定AI辅助是否奏效的关键约束。文章分析了科学家、公众和学生在三种情境下与AI的合作形式，认为精准校准的信任而非盲从，是提升科学素养和保护批判性思维的保障。该研究为理解科学教育中批判性思维倾向与信息评估行为提供了理论框架。",
+      "llm_tldr": "本文指出，在利用AI学习、实践和参与科学的过程中，人类能否有效评估AI输出、保持认知警觉，是决定AI辅助是否奏效的关键约束。文章分析了科学家、公众和学生在三种情境下与AI的合作形式，认为精准校准的信任而非盲从，是提升科学素养和保护批判性思维的保障。该研究为理解科学教育中批判性思维倾向与信息评估行为提供了理论框架。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "studies examining critical thinking disposition in the context of socio scientific issues and scientific reading",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
