@@ -6,26 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-20
-- 运行时间：2026-06-20 20:52:26 UTC
+- 最新运行日期：2026-06-21
+- 运行时间：2026-06-21 20:43:29 UTC
 - 运行状态：成功
 - 本次总论文数：1
 - 精读区：0
 - 速读区：1
 
 ### 今日简报（AI）
-今日速读一篇探讨AI如何作为学习伙伴协助科学教育的论文，核心警示在于“保持警惕”是有效增强而非盲目依赖的关键。  
-该研究强调，人机协作中持续的批判性审视（vigilance）能避免认知偏移，让AI真正促进理解、实践与科学参与。  
-建议普通读者不妨在日常使用AI工具时，刻意多问一句“这背后的依据是什么”，以培养主动核查的习惯。
-- 详情：[/202606/20/README](/202606/20/README)
+今日速读：量子机器学习用脑电图检测睡眠剥夺，评分一般但视角新奇。  
+核心看点：利用量子核方法提升EEG特征识别效率，精准判断睡眠不足状态。  
+不妨了解量子计算如何切入医疗检测，留意该交叉领域的实用性进展。
+- 详情：[/202606/21/README](/202606/21/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [AI as a Partner in Learning about, Doing, and Engaging with Science: Vigilance as the Key to Productive Augmentation](/202606/20/2606.16822v1-ai-as-a-partner-in-learning-about-doing-and-engaging-with-science-vigilance-as-the-key-to-productive-augmentation)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：认知警觉性是科学学习中有效增强的关键
+1. [Quantum machine learning for detection of sleep deprivation from EEG signals](/202606/21/biorxiv-10-64898-2026-06-14-732153-v1-quantum-machine-learning-for-detection-of-sleep-deprivation-from-eeg-signals)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：使用EEG频谱带功率和带比值对睡眠剥夺进行分类，体现了认知状态下的相对功率谱分析。
 
 
 <div class="dpr-home-promo-card">

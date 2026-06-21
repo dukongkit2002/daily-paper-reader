@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-21",
+  "date": "2026-06-21",
+  "generated_at": "2026-06-21T20:43:35",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/21/biorxiv-10-64898-2026-06-14-732153-v1-quantum-machine-learning-for-detection-of-sleep-deprivation-from-eeg-signals",
+      "section": "quick",
+      "title_en": "Quantum machine learning for detection of sleep deprivation from EEG signals",
+      "authors": "Sarma-Sarkar, P., Saini, R., Roy, P. P.",
+      "date": "2026-06-18",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.14.732153v1.full.pdf",
+      "score": "6.0",
+      "evidence": "使用EEG频谱带功率和带比值对睡眠剥夺进行分类，体现了认知状态下的相对功率谱分析。",
+      "tldr": "睡眠问题困扰印度约50%人口，睡眠剥夺严重损害认知与神经功能。脑电图可客观记录神经改变，适合构建自动检测系统。本研究使用量子支持向量机和混合量子神经网络，通过频谱功率、带比率、Hjorth参数和功能连接提取特征，并将特征编码为量子态构建量子核进行分类。在基于epoch的评估中，混合量子网络准确率达96.88%，QSVM达93.75%；在subject级评估中，HQNN达81.25%，QSVM为75.00%，HQNN显著超越先前最佳结果（68.23%）。这些结果表明量子机器学习在EEG睡眠剥夺检测中表现优异，为生物医学诊断提供了新工具。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Approximately 50% of the population in India is estimated to experience sleep-related disorders. Sleep deprivation is a prevalent condition that adversely impacts cognitive performance, neural functioning, and overall health. Electroencephalography (EEG) offers an objective means of capturing neural alterations associated with sleep loss, making it well-suited for automated detection frameworks. In this study, we explore the application of a Quantum Support Vector Machine and Hybrid Quantum Neural Networks to classify sleep-deprived and well-rested states using resting-state EEG signals.\n\nA comprehensive feature extraction pipeline is employed, incorporating spectral band power, band ratios, Hjorth parameters, and functional connectivity measures. These features are subsequently encoded into quantum states to construct a quantum kernel, which is then utilized for classification. Model performance is evaluated under both epoch-level and subject-level data partitioning schemes.\n\nThe Hybrid Quantum Neural Network (HQNN) achieves the highest performance across both evaluation settings, attaining an accuracy of 96.88% at the epoch level and 81.25% at the subject level. The QSVM model achieves accuracies of 93.75% and 75.00% for epoch-level and subject-level evaluations, respectively. At subject-level and epoch -level evaluation, HQNN outperforms previously reported results (68.23% and 95.72%). Overall, these findings highlight the potential of quantum machine learning as a competitive approach for EEG-based sleep deprivation detection, with promising implications for real-world biomedical applications.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
