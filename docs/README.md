@@ -6,26 +6,28 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-21
-- 运行时间：2026-06-21 20:43:29 UTC
+- 最新运行日期：2026-06-22
+- 运行时间：2026-06-22 22:38:50 UTC
 - 运行状态：成功
-- 本次总论文数：1
-- 精读区：0
+- 本次总论文数：2
+- 精读区：1
 - 速读区：1
 
 ### 今日简报（AI）
-今日速读：量子机器学习用脑电图检测睡眠剥夺，评分一般但视角新奇。  
-核心看点：利用量子核方法提升EEG特征识别效率，精准判断睡眠不足状态。  
-不妨了解量子计算如何切入医疗检测，留意该交叉领域的实用性进展。
-- 详情：[/202606/21/README](/202606/21/README)
+今日精读颠覆性发现：刺激后theta节律实则非周期性活动；速读揭示基底前脑胆碱能神经元亚区输入差异及阿尔茨海默病模型抑制弱化。  
+最值得关注：经典theta振荡可能是误读的“噪音”，需重新定义脑节律；病理下的连接环路失调值得深挖。  
+打开视野，下次看到“脑电节律”先问是不是周期性的。
+- 详情：[/202606/22/README](/202606/22/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Revisiting post-stimulus theta activity: evidence for an aperiodic rather than oscillatory origin](/202606/22/biorxiv-10-64898-2026-06-16-732609-v1-revisiting-post-stimulus-theta-activity-evidence-for-an-aperiodic-rather-than-oscillatory-origin)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：考察刺激后EEG功率变化，质疑振荡性解释，直接涉及认知中相对功率谱分析
 
 ### 速读区论文标签
-1. [Quantum machine learning for detection of sleep deprivation from EEG signals](/202606/21/biorxiv-10-64898-2026-06-14-732153-v1-quantum-machine-learning-for-detection-of-sleep-deprivation-from-eeg-signals)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：使用EEG频谱带功率和带比值对睡眠剥夺进行分类，体现了认知状态下的相对功率谱分析。
+1. [Subregion-Specific Input Organization of Prefrontal-Projecting Basal Forebrain Cholinergic Neurons and Weakened Striatum-to-NBM Inhibitory Transmission in 5xFAD mice](/202606/22/biorxiv-10-64898-2026-06-11-731708-v1-subregion-specific-input-organization-of-prefrontal-projecting-basal-forebrain-cholinergic-neurons-and-weakened-striatum-to-nbm-inhibitory-transmission-in-5xfad-mice)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：绘制全脑至mPFC投射胆碱能神经元的输入图谱
 
 
 <div class="dpr-home-promo-card">

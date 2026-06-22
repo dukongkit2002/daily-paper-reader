@@ -1,0 +1,96 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-22T22:37:38.251875+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-06-16-732609-v1",
+      "source": "biorxiv",
+      "title": "Revisiting post-stimulus theta activity: evidence for an aperiodic rather than oscillatory origin",
+      "abstract": "The aperiodic, 1/f-like component of electrophysiological activity is increasingly recognized as a meaningful feature of neural function, rather than background noise. In parallel, many EEG studies report transient changes in oscillatory power following stimulus onset and interpret these effects as signatures of attention, salience, or cognitive control. However, such conclusions usually rely on baseline normalization procedures that assume aperiodic activity remains stable from pre- to post-stimulus periods. Using high-density EEG recordings from typically developing children, we tested this assumption in two paradigms: an audiovisual simple reaction-time task (n = 36) and a visual oddball task (n = 38). For each task, conventional spectral analyses were compared with analyses that explicitly modeled and removed the aperiodic component in both pre- and post-stimulus windows. Across tasks, stimulus onset was associated with robust increases in aperiodic exponent and offset, indicating systematic changes in the 1/f component of the spectrum. In the audiovisual task, these changes were modality-specific, with central, parieto-occipital, or combined topographies depending on stimulus type. These effects were reduced but remained significant after ERP removal, indicating that they were not fully explained by phase-locked activity. Critically, once aperiodic activity was accounted for, the apparent post-stimulus increase in theta power was largely abolished in both tasks, including the canonical fronto-central theta enhancement to infrequent targets in the oddball paradigm. The conventional method also overestimated the magnitude of beta desynchronization, particularly in the induced (ERP-removed) signal. The apparent gamma desynchronization detected by conventional analyses was reversed after aperiodic correction, revealing either synchronization or no change, indicating that it reflects a spurious consequence of spectral slope steepening rather than a true suppression of gamma oscillatory activity. In contrast, alpha desynchronization remained robust after aperiodic correction and was in fact enhanced, suggesting it reflects genuine oscillatory suppression. Together, these findings indicate that a substantial portion of conventional time-frequency effects, particularly apparent theta synchronization, may reflect changes in aperiodic activity in response to stimulation rather than genuine periodic oscillations, challenging core assumptions of conventional time-frequency analyses.",
+      "authors": [
+        "Vanneau, T.",
+        "Quiquempoix, M.",
+        "Voytek, B.",
+        "Gyurkovics, M.",
+        "Molholm, S."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-22T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.16.732609v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Examines post-stimulus EEG power changes, challenging oscillatory interpretation, directly relevant to relative power spectrum analysis in cognition",
+      "llm_evidence_cn": "考察刺激后EEG功率变化，质疑振荡性解释，直接涉及认知中相对功率谱分析",
+      "llm_evidence": "考察刺激后EEG功率变化，质疑振荡性解释，直接涉及认知中相对功率谱分析",
+      "canonical_evidence": "考察刺激后EEG功率变化，质疑振荡性解释，直接涉及认知中相对功率谱分析",
+      "llm_tldr_en": "Shows that post-stimulus theta power increases in cognitive tasks are largely aperiodic, not oscillatory; critical for valid spectral power interpretation in cognition.",
+      "llm_tldr_cn": "许多EEG研究将刺激后θ频段功率增加解释为注意力或认知控制的振荡标志，但通常依赖基线校正假设。本研究利用高密度EEG记录儿童在反应时和oddball任务中的数据，通过参数化频谱分离方法表明，这种功率变化主要源于非周期性活动（1/f成分）而非真正的振荡。该发现挑战了传统认知EEG中谱功率的解释，强调在分析相对功率谱时必须分离非周期成分，对于准确理解认知任务中EEG谱特征具有重要方法论意义。",
+      "llm_tldr": "许多EEG研究将刺激后θ频段功率增加解释为注意力或认知控制的振荡标志，但通常依赖基线校正假设。本研究利用高密度EEG记录儿童在反应时和oddball任务中的数据，通过参数化频谱分离方法表明，这种功率变化主要源于非周期性活动（1/f成分）而非真正的振荡。该发现挑战了传统认知EEG中谱功率的解释，强调在分析相对功率谱时必须分离非周期成分，对于准确理解认知任务中EEG谱特征具有重要方法论意义。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-11-731708-v1",
+      "source": "biorxiv",
+      "title": "Subregion-Specific Input Organization of Prefrontal-Projecting Basal Forebrain Cholinergic Neurons and Weakened Striatum-to-NBM Inhibitory Transmission in 5xFAD mice",
+      "abstract": "Basal forebrain cholinergic neurons regulate cortical activity and cognition and are vulnerable in Alzheimers disease (AD). However, the upstream circuits controlling projection-defined basal forebrain cholinergic populations remain incompletely understood. Here, we used projection-specific rabies-mediated monosynaptic tracing to map whole-brain inputs to medial prefrontal cortex (mPFC)-projecting cholinergic neurons in the nucleus basalis of Meynert (NBM) and horizontal limb of the diagonal band of Broca (HDB). mPFC-projecting NBM and HDB cholinergic neurons received broad but distinct input patterns. NBM cholinergic neurons received prominent striatal input, including input from D1-expressing medium spiny neurons, whereas HDB cholinergic neurons showed proportionally weaker striatal input and broader non-striatal contributions. Optogenetic electrophysiology confirmed that striatal inputs formed monosynaptic GABAergic inhibitory synapses onto NBM cholinergic neurons. This inhibitory transmission was weakened in 5xFAD mice, indicating impairment of a striatal-NBM inhibitory circuit in an AD mouse model. Together, these findings reveal subregion-specific input organization of mPFC-projecting basal forebrain cholinergic neurons and identify a vulnerable striatal-NBM circuit in AD.\n\nHighlightsO_LIWhole-brain rabies tracing reveals input organization of mPFC-projecting BF cholinergic neurons.\nC_LIO_LINBM and HDB cholinergic neurons projecting to mPFC show distinct monosynaptic input profiles.\nC_LIO_LIStriatal D1-MSNs are a major input source to mPFC-projecting NBM cholinergic neurons.\nC_LIO_LIStriatal-NBM inhibitory transmission is functionally impaired in 5xFAD mice.\nC_LI",
+      "authors": [
+        "Huang, Y.",
+        "Xie, X.",
+        "Fernaine, M.",
+        "Li, Z.",
+        "Wang, X.",
+        "Wang, J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-16T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.11.731708v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "maps whole-brain inputs to mPFC-projecting cholinergic neurons",
+      "llm_evidence_cn": "绘制全脑至mPFC投射胆碱能神经元的输入图谱",
+      "llm_evidence": "绘制全脑至mPFC投射胆碱能神经元的输入图谱",
+      "canonical_evidence": "绘制全脑至mPFC投射胆碱能神经元的输入图谱",
+      "llm_tldr_en": "Reveals distinct input patterns to mPFC-projecting cholinergic neurons and weakened striatal inhibition in Alzheimer's model.",
+      "llm_tldr_cn": "该研究采用狂犬病毒单突触示踪技术，绘制投射至内侧前额叶皮层（mPFC）的基底前脑胆碱能神经元全脑输入图谱，发现NBM胆碱能神经元接收显著纹状体输入，并在阿尔茨海默病模型小鼠中观察到纹状体至NBM抑制传递减弱，为理解mPFC胆碱能调控的环路组织及其在认知障碍中的作用提供了新见解。",
+      "llm_tldr": "该研究采用狂犬病毒单突触示踪技术，绘制投射至内侧前额叶皮层（mPFC）的基底前脑胆碱能神经元全脑输入图谱，发现NBM胆碱能神经元接收显著纹状体输入，并在阿尔茨海默病模型小鼠中观察到纹状体至NBM抑制传递减弱，为理解mPFC胆碱能调控的环路组织及其在认知障碍中的作用提供了新见解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

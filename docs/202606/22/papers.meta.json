@@ -1,0 +1,39 @@
+{
+  "label": "2026-06-22",
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T22:38:56",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202606/22/biorxiv-10-64898-2026-06-16-732609-v1-revisiting-post-stimulus-theta-activity-evidence-for-an-aperiodic-rather-than-oscillatory-origin",
+      "section": "deep",
+      "title_en": "Revisiting post-stimulus theta activity: evidence for an aperiodic rather than oscillatory origin",
+      "authors": "Vanneau, T., Quiquempoix, M., Voytek, B., Gyurkovics, M., Molholm, S.",
+      "date": "2026-06-22",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.16.732609v1.full.pdf",
+      "score": "9.0",
+      "evidence": "考察刺激后EEG功率变化，质疑振荡性解释，直接涉及认知中相对功率谱分析",
+      "tldr": "越来越多的证据表明脑电非周期（1/f）活动并非背景噪声，但传统时频分析假设其在刺激前后不变，易将非周期变化误读为振荡。本研究在高密度EEG的视听和视觉oddball任务中，对比常规方法与显式建模去除非周期成分的效应。结果显示刺激诱发非周期指数和偏移显著增加；去除后，额中央theta增强几乎消失，beta去同步被高估，gamma伪迹反转，而alpha去同步化为真正抑制。这些发现质疑了大量以theta为代表的时频效应解释，凸显非周期活动在认知加工中的关键作用，需重新评估现有时频分析结论。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "The aperiodic, 1/f-like component of electrophysiological activity is increasingly recognized as a meaningful feature of neural function, rather than background noise. In parallel, many EEG studies report transient changes in oscillatory power following stimulus onset and interpret these effects as signatures of attention, salience, or cognitive control. However, such conclusions usually rely on baseline normalization procedures that assume aperiodic activity remains stable from pre- to post-stimulus periods. Using high-density EEG recordings from typically developing children, we tested this assumption in two paradigms: an audiovisual simple reaction-time task (n = 36) and a visual oddball task (n = 38). For each task, conventional spectral analyses were compared with analyses that explicitly modeled and removed the aperiodic component in both pre- and post-stimulus windows. Across tasks, stimulus onset was associated with robust increases in aperiodic exponent and offset, indicating systematic changes in the 1/f component of the spectrum. In the audiovisual task, these changes were modality-specific, with central, parieto-occipital, or combined topographies depending on stimulus type. These effects were reduced but remained significant after ERP removal, indicating that they were not fully explained by phase-locked activity. Critically, once aperiodic activity was accounted for, the apparent post-stimulus increase in theta power was largely abolished in both tasks, including the canonical fronto-central theta enhancement to infrequent targets in the oddball paradigm. The conventional method also overestimated the magnitude of beta desynchronization, particularly in the induced (ERP-removed) signal. The apparent gamma desynchronization detected by conventional analyses was reversed after aperiodic correction, revealing either synchronization or no change, indicating that it reflects a spurious consequence of spectral slope steepening rather than a true suppression of gamma oscillatory activity. In contrast, alpha desynchronization remained robust after aperiodic correction and was in fact enhanced, suggesting it reflects genuine oscillatory suppression. Together, these findings indicate that a substantial portion of conventional time-frequency effects, particularly apparent theta synchronization, may reflect changes in aperiodic activity in response to stimulation rather than genuine periodic oscillations, challenging core assumptions of conventional time-frequency analyses.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/22/biorxiv-10-64898-2026-06-11-731708-v1-subregion-specific-input-organization-of-prefrontal-projecting-basal-forebrain-cholinergic-neurons-and-weakened-striatum-to-nbm-inhibitory-transmission-in-5xfad-mice",
+      "section": "quick",
+      "title_en": "Subregion-Specific Input Organization of Prefrontal-Projecting Basal Forebrain Cholinergic Neurons and Weakened Striatum-to-NBM Inhibitory Transmission in 5xFAD mice",
+      "authors": "Huang, Y., Xie, X., Fernaine, M., Li, Z., Wang, X., Wang, J.",
+      "date": "2026-06-16",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.11.731708v1.full.pdf",
+      "score": "7.0",
+      "evidence": "绘制全脑至mPFC投射胆碱能神经元的输入图谱",
+      "tldr": "基底前脑胆碱能神经元调控皮质认知，在阿尔茨海默病中易受损，但其上游输入回路尚不明确。本研究利用狂犬病毒单突触追踪和光遗传学，系统解析了投射至内侧前额叶皮质的NBM和HDB胆碱能神经元的全脑输入模式。发现NBM胆碱能神经元主要接受纹状体D1-MSN的GABA能抑制性输入，而HDB输入来源更广，且该抑制性传输在5xFAD小鼠模型中显著减弱。该工作揭示了基底前脑投射神经元的亚区特异性输入组织，并鉴定出AD中受损的纹状体-NBM回路，为胆碱能系统功能障碍研究提供新线索。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Basal forebrain cholinergic neurons regulate cortical activity and cognition and are vulnerable in Alzheimers disease (AD). However, the upstream circuits controlling projection-defined basal forebrain cholinergic populations remain incompletely understood. Here, we used projection-specific rabies-mediated monosynaptic tracing to map whole-brain inputs to medial prefrontal cortex (mPFC)-projecting cholinergic neurons in the nucleus basalis of Meynert (NBM) and horizontal limb of the diagonal band of Broca (HDB). mPFC-projecting NBM and HDB cholinergic neurons received broad but distinct input patterns. NBM cholinergic neurons received prominent striatal input, including input from D1-expressing medium spiny neurons, whereas HDB cholinergic neurons showed proportionally weaker striatal input and broader non-striatal contributions. Optogenetic electrophysiology confirmed that striatal inputs formed monosynaptic GABAergic inhibitory synapses onto NBM cholinergic neurons. This inhibitory transmission was weakened in 5xFAD mice, indicating impairment of a striatal-NBM inhibitory circuit in an AD mouse model. Together, these findings reveal subregion-specific input organization of mPFC-projecting basal forebrain cholinergic neurons and identify a vulnerable striatal-NBM circuit in AD.\n\nHighlightsO_LIWhole-brain rabies tracing reveals input organization of mPFC-projecting BF cholinergic neurons.\nC_LIO_LINBM and HDB cholinergic neurons projecting to mPFC show distinct monosynaptic input profiles.\nC_LIO_LIStriatal D1-MSNs are a major input source to mPFC-projecting NBM cholinergic neurons.\nC_LIO_LIStriatal-NBM inhibitory transmission is functionally impaired in 5xFAD mice.\nC_LI",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
