@@ -1,0 +1,69 @@
+{
+  "label": "2026-06-23",
+  "date": "2026-06-23",
+  "generated_at": "2026-06-23T21:28:58",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202606/23/2606.22695v1-spider----stitched-power-spectra-for-inferring-directed-information-flow-from-incomplete-and-asynchronous-experimental-recordings",
+      "section": "deep",
+      "title_en": "SPIDER -- Stitched Power-spectra for Inferring Directed information flow from incomplete and asynchronous Experimental Recordings",
+      "authors": "Yisi S. Zhang, Daniel Y. Takahashi",
+      "date": "2026-06-21",
+      "pdf": "https://arxiv.org/pdf/2606.22695v1",
+      "score": "8.0",
+      "evidence": "SPIDER利用功率谱从碎片化、异步神经记录中推断脑区间定向信息流，直接适用于EEG频谱分析。",
+      "tldr": "脑有向连接分析需同时记录和统一时钟，但多实验室、多被试数据常异步且覆盖不全。SPIDER利用重叠通道的功率谱拼接、核范数补全和典型谱分解，从异步不完全记录恢复频率分辨的有向信息流。在啮齿类钙成像和Neuropixels数据集，以及人颅内EEG中，一致发现静息态脑功能在theta频段呈现海马源前馈层级。SPIDER使大规模多数据集的有效连接推断成为可能。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Mapping the directed flow of information between brain regions -- their effective connectivity -- is central to understanding brain function, yet large-scale recordings sample only a fraction of the brain at a time: sessions, animals, and laboratories cover different, partially overlapping regions, usually without a shared temporal reference. Established directed-connectivity methods (Granger causality, dynamic causal modeling, partial directed coherence, PDC) require all regions to be recorded simultaneously and with a common clock. We introduce SPIDER, a non-parametric, frequency-domain framework that recovers directed information flow from such incomplete, asynchronous recordings: it stitches local power-spectral estimates from overlapping channel subsets into a global spectral matrix and obtains frequency-resolved directed interactions by canonical spectral factorization and PDC, without temporal alignment, while nuclear-norm completion fills in never-co-observed region pairs. With consistency guarantees, we validate SPIDER on simulations, two-photon calcium imaging, and the International Brain Laboratory Neuropixels dataset, recovering directed flow among 50 areas from 43 sessions in 12 laboratories never recorded together. Beyond validation, SPIDER reveals what no single recording can: brain-wide spontaneous flow is largely recurrent, but in the theta band it forms a significant feedforward hierarchy with the hippocampal formation at its source. Applied to resting human intracranial EEG (43 patients, non-overlapping coverage), it recovers the same theta-band hierarchy across species and modality. SPIDER makes whole-brain effective-connectivity analysis tractable for multi-session, multi-animal datasets previously incompatible with directed-flow inference.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/23/biorxiv-10-64898-2026-06-18-732701-v1-periodic-and-aperiodic-spectral-signatures-of-being-moved-by-art",
+      "section": "deep",
+      "title_en": "PERIODIC AND APERIODIC SPECTRAL SIGNATURES OF BEING MOVED BY ART",
+      "authors": "Poyser, D., Rodriguez Balboa, E.",
+      "date": "2026-06-23",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.18.732701v1.full.pdf",
+      "score": "8.0",
+      "evidence": "使用EEG分析审美体验中周期性与非周期性频谱成分，直接符合认知中的脑电图相对功率谱分析",
+      "tldr": "强烈审美体验作为一种复杂的意识状态，其神经动态是否为简单的强度线性变化尚不明确。本研究使用EEG和贝叶斯模型分析观看艺术品时的脑电活动，发现beta振荡和1/f非周期成分仅在最强烈感动等级时出现特异性变化，而非随强度连续缩放。这一结果表明被艺术深深打动可能对应一种定性不同的神经状态，强调了大脑以阈值方式标记高峰体验。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Intense aesthetic experiences are among the most complex responses arising from the interaction of mind, brain, and context. Observations from fMRI suggest that when viewers feel highly moved by artworks, the underlying neural states differ from those accompanying less intense responses, particularly through recruitment of the DMN. Using electroencephalography and Bayesian category-specific cumulative link mixed models, we investigated whether such putative peak aesthetic responses exhibit threshold-specific neurodynamics rather than linear scaling with intensity. Twenty-two participants viewed 113 diverse Chilean artworks whilst rating how moved they felt on a four-point scale. We analysed both canonical oscillatory power (theta - gamma) and aperiodic components (offset and exponent) during the contemplation window and the post-elicitor window. Threshold-specific effects were found: spectral features differentiated the highest rating category from moderate responses, rather than scaling uniformly across all intensity levels. During artwork visualisation, power in the beta-1 and beta-2 bands, as well as the interaction of beta-1 with the 1/f exponent, predicted the transition to the most intense response; during the post-elicitor window, the aperiodic 1/f exponent predicted the transition from very low to higher-intensity responses. Modelling individual differences in spectral signatures (in the alpha and gamma bands) credibly improved predictive performance (approximate leave-one-out cross-validation; elpd_loo), suggesting that neural variability reflects meaningful mechanistic heterogeneity in aesthetic processing rather than mere noise. These findings speak to a broader question, how the brain marks the intensity of conscious experience, and, more specifically, support the hypothesis that being intensely moved constitutes a qualitatively distinct neural state, characterised by specific configurations of oscillatory dynamics and cortical excitability that modulate the transition from low and moderate to peak engagement.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/23/2606.23382v1-energy-based-transformers-as-predictors-of-reading-difficulty",
+      "section": "quick",
+      "title_en": "Energy-Based Transformers as Predictors of Reading Difficulty",
+      "authors": "Jakub Dotlacil, Ece Takmaz",
+      "date": "2026-06-22",
+      "pdf": "https://arxiv.org/pdf/2606.23382v1",
+      "score": "7.0",
+      "evidence": "预测阅读难度，与阅读理解评估相关",
+      "tldr": "当前基于Transformer的阅读难度预测依赖surprisal和attention entropy等互补指标，缺乏与联想记忆理论的直接联系。本研究首次将能量基Transformer引入计算心理语言学，利用其与Hopfield网络的形式关联，提出统一预测度量。在多个阅读时间语料及关系从句实验中，能量度量稳健预测阅读时间，效果超越surprisal，并统一了注意力熵和surprisal的作用。该工作为句子加工提供了原则性联结，以单一能量度量简化了复杂性评估。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Transformer language models have become established tools for modeling human sentence processing, with measures such as surprisal and attention entropy serving as effective predictors of reading difficulty that together capture complementary aspects of processing load. Here, we explore a related class of transformer models: energy-based transformers, which provide a principled formal link to associative memory models, bringing processing research into direct contact with the broader literature on Hopfield networks and dense associative memory. To our knowledge, this is the first exploration of an energy-based transformer measure in computational psycholinguistics. Across reading-time corpora (Natural Stories, UCL eye-tracking, UCL self-paced reading), the energy measure is a robust predictor of reading times, providing significant fit beyond surprisal in all three. In a controlled experiment on relative clause processing, energy at a single layer captures the well-known object/subject asymmetry. We find evidence that it subsumes effects attributable to both attention entropy and surprisal, suggesting that energy may serve as a single unified predictor where multiple complementary measures have previously been required.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/23/2606.22925v1-eeg-benchmarking-needs-a-task-specification-layer-neurodoc-for-rulebook-guided-executable-benchmark-construction",
+      "section": "quick",
+      "title_en": "EEG Benchmarking Needs a Task Specification Layer: NeuroDoc for Rulebook-Guided, Executable Benchmark Construction",
+      "authors": "Chengxuan Qin, Zhige Chen, Shu Peng, Rui Yang, Jiping Cui, Yikai Dong, Jun Li, Liu Peng, Zhida Shang, Mingze Tang, Kay Chen Tan, Jibin Wu",
+      "date": "2026-06-22",
+      "pdf": "https://arxiv.org/pdf/2606.22925v1",
+      "score": "6.0",
+      "evidence": "提出一种标准化EEG数据集的任务规范语言，促进可重复的EEG分析。",
+      "tldr": "脑电图基准测试缺乏统一任务规范层，异构数据集难以系统重用。本文提出NeuroDoc规则手册引导的任务规范语言，将基准条目表示为同步可执行内核的结构化任务文档。最终发布包含53个条目、245个定义的社区审查语料库，并在四种基础模型上验证了基准的可重用性与可审计性，为EEG模型评估提供了标准化基础设施。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Electroencephalography (EEG) foundation models increasingly rely on multi-dataset training and evaluation, yet public EEG datasets still lack a shared task specification layer that can turn heterogeneous recordings into reusable benchmark units. Existing standards organize files, metadata, and provenance, but they do not specify EEG tasks under a common language and rulebook, leaving critical task semantics scattered across papers, code, and manual interpretation. We investigate whether heterogeneous public EEG datasets can be standardized through a structured task specification language paired with a shared rulebook. Our methodology represents each benchmark entry as a task document synchronized with an executable task kernel, with the rulebook defining task fields, evidence requirements, document-kernel alignment, review states, and machine-checkable constraints. Using this methodology, we release a community-reviewed EEG benchmark corpus centered on 53 completed and reviewed entries with 245 task definitions spanning diverse paradigms, and we introduce NeuroDoc and NeuroAudit as the operational support layer for rulebook-guided drafting, upgrading, review, amendment, and release management. We further examine whether the resulting benchmark units can be instantiated in a shared downstream setting across four EEG foundation model backbones, providing execution-based evidence for reusable, auditable, and executable EEG benchmarking infrastructure.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

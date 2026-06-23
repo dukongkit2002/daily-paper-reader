@@ -1,0 +1,173 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-23T21:24:04.848529+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2606.22695v1",
+      "source": "arxiv",
+      "title": "SPIDER -- Stitched Power-spectra for Inferring Directed information flow from incomplete and asynchronous Experimental Recordings",
+      "abstract": "Mapping the directed flow of information between brain regions -- their effective connectivity -- is central to understanding brain function, yet large-scale recordings sample only a fraction of the brain at a time: sessions, animals, and laboratories cover different, partially overlapping regions, usually without a shared temporal reference. Established directed-connectivity methods (Granger causality, dynamic causal modeling, partial directed coherence, PDC) require all regions to be recorded simultaneously and with a common clock. We introduce SPIDER, a non-parametric, frequency-domain framework that recovers directed information flow from such incomplete, asynchronous recordings: it stitches local power-spectral estimates from overlapping channel subsets into a global spectral matrix and obtains frequency-resolved directed interactions by canonical spectral factorization and PDC, without temporal alignment, while nuclear-norm completion fills in never-co-observed region pairs. With consistency guarantees, we validate SPIDER on simulations, two-photon calcium imaging, and the International Brain Laboratory Neuropixels dataset, recovering directed flow among 50 areas from 43 sessions in 12 laboratories never recorded together. Beyond validation, SPIDER reveals what no single recording can: brain-wide spontaneous flow is largely recurrent, but in the theta band it forms a significant feedforward hierarchy with the hippocampal formation at its source. Applied to resting human intracranial EEG (43 patients, non-overlapping coverage), it recovers the same theta-band hierarchy across species and modality. SPIDER makes whole-brain effective-connectivity analysis tractable for multi-session, multi-animal datasets previously incompatible with directed-flow inference.",
+      "authors": [
+        "Yisi S. Zhang",
+        "Daniel Y. Takahashi"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "stat.ME"
+      ],
+      "published": "2026-06-21T22:19:44+00:00",
+      "link": "https://arxiv.org/pdf/2606.22695v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "SPIDER is a frequency-domain framework using power spectra to infer directed information flow between brain regions, directly applicable to EEG spectral power analysis.",
+      "llm_evidence_cn": "SPIDER利用功率谱从碎片化、异步神经记录中推断脑区间定向信息流，直接适用于EEG频谱分析。",
+      "llm_evidence": "SPIDER利用功率谱从碎片化、异步神经记录中推断脑区间定向信息流，直接适用于EEG频谱分析。",
+      "canonical_evidence": "SPIDER利用功率谱从碎片化、异步神经记录中推断脑区间定向信息流，直接适用于EEG频谱分析。",
+      "llm_tldr_en": "SPIDER provides a non-parametric, frequency-domain method to stitch incomplete, asynchronous brain recordings and recover directed connectivity, enabling spectral power analysis in cognitive neuroscience studies.",
+      "llm_tldr_cn": "针对大型神经记录常因跨实验、跨实验室而碎片化且无共享时钟的问题，SPIDER提出一种非参数频域框架，通过拼接多个实验的功率谱来重建脑区间的定向信息流。该方法不要求同步记录，能从异步、部分重叠的数据中恢复有效的格兰杰因果等连接测度。实验验证其在仿真与真实数据上的可靠性，为认知任务下的脑网络频谱分析提供了新的工具。",
+      "llm_tldr": "针对大型神经记录常因跨实验、跨实验室而碎片化且无共享时钟的问题，SPIDER提出一种非参数频域框架，通过拼接多个实验的功率谱来重建脑区间的定向信息流。该方法不要求同步记录，能从异步、部分重叠的数据中恢复有效的格兰杰因果等连接测度。实验验证其在仿真与真实数据上的可靠性，为认知任务下的脑网络频谱分析提供了新的工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-18-732701-v1",
+      "source": "biorxiv",
+      "title": "PERIODIC AND APERIODIC SPECTRAL SIGNATURES OF BEING MOVED BY ART",
+      "abstract": "Intense aesthetic experiences are among the most complex responses arising from the interaction of mind, brain, and context. Observations from fMRI suggest that when viewers feel highly moved by artworks, the underlying neural states differ from those accompanying less intense responses, particularly through recruitment of the DMN. Using electroencephalography and Bayesian category-specific cumulative link mixed models, we investigated whether such putative peak aesthetic responses exhibit threshold-specific neurodynamics rather than linear scaling with intensity. Twenty-two participants viewed 113 diverse Chilean artworks whilst rating how moved they felt on a four-point scale. We analysed both canonical oscillatory power (theta - gamma) and aperiodic components (offset and exponent) during the contemplation window and the post-elicitor window. Threshold-specific effects were found: spectral features differentiated the highest rating category from moderate responses, rather than scaling uniformly across all intensity levels. During artwork visualisation, power in the beta-1 and beta-2 bands, as well as the interaction of beta-1 with the 1/f exponent, predicted the transition to the most intense response; during the post-elicitor window, the aperiodic 1/f exponent predicted the transition from very low to higher-intensity responses. Modelling individual differences in spectral signatures (in the alpha and gamma bands) credibly improved predictive performance (approximate leave-one-out cross-validation; elpd_loo), suggesting that neural variability reflects meaningful mechanistic heterogeneity in aesthetic processing rather than mere noise. These findings speak to a broader question, how the brain marks the intensity of conscious experience, and, more specifically, support the hypothesis that being intensely moved constitutes a qualitatively distinct neural state, characterised by specific configurations of oscillatory dynamics and cortical excitability that modulate the transition from low and moderate to peak engagement.",
+      "authors": [
+        "Poyser, D.",
+        "Rodriguez Balboa, E."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-23T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.18.732701v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Uses EEG to analyze periodic and aperiodic spectral components during aesthetic experience, directly matching EEG relative power spectrum analysis in cognition",
+      "llm_evidence_cn": "使用EEG分析审美体验中周期性与非周期性频谱成分，直接符合认知中的脑电图相对功率谱分析",
+      "llm_evidence": "使用EEG分析审美体验中周期性与非周期性频谱成分，直接符合认知中的脑电图相对功率谱分析",
+      "canonical_evidence": "使用EEG分析审美体验中周期性与非周期性频谱成分，直接符合认知中的脑电图相对功率谱分析",
+      "llm_tldr_en": "This study investigates spectral signatures of being moved by art using EEG, finding distinct periodic and aperiodic patterns during peak aesthetic responses.",
+      "llm_tldr_cn": "本研究利用脑电图频谱分析探讨艺术感动体验的神经相关性，发现审美高峰体验期间出现独特的周期性与非周期性频谱特征，为情感认知提供新神经指标。",
+      "llm_tldr": "本研究利用脑电图频谱分析探讨艺术感动体验的神经相关性，发现审美高峰体验期间出现独特的周期性与非周期性频谱特征，为情感认知提供新神经指标。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.23382v1",
+      "source": "arxiv",
+      "title": "Energy-Based Transformers as Predictors of Reading Difficulty",
+      "abstract": "Transformer language models have become established tools for modeling human sentence processing, with measures such as surprisal and attention entropy serving as effective predictors of reading difficulty that together capture complementary aspects of processing load. Here, we explore a related class of transformer models: energy-based transformers, which provide a principled formal link to associative memory models, bringing processing research into direct contact with the broader literature on Hopfield networks and dense associative memory. To our knowledge, this is the first exploration of an energy-based transformer measure in computational psycholinguistics. Across reading-time corpora (Natural Stories, UCL eye-tracking, UCL self-paced reading), the energy measure is a robust predictor of reading times, providing significant fit beyond surprisal in all three. In a controlled experiment on relative clause processing, energy at a single layer captures the well-known object/subject asymmetry. We find evidence that it subsumes effects attributable to both attention entropy and surprisal, suggesting that energy may serve as a single unified predictor where multiple complementary measures have previously been required.",
+      "authors": [
+        "Jakub Dotlacil",
+        "Ece Takmaz"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-06-22T14:11:29+00:00",
+      "link": "https://arxiv.org/pdf/2606.23382v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Predicts reading difficulty, relevant to reading comprehension assessment",
+      "llm_evidence_cn": "预测阅读难度，与阅读理解评估相关",
+      "llm_evidence": "预测阅读难度，与阅读理解评估相关",
+      "canonical_evidence": "预测阅读难度，与阅读理解评估相关",
+      "llm_tldr_en": "This paper shows that energy-based transformer models provide effective predictors of reading difficulty, surpassing standard surprisal measures, and linking sentence processing to associative memory theory.",
+      "llm_tldr_cn": "本文首次将基于能量的Transformer模型用于预测阅读难度，其能量函数在多项阅读时间语料库上超越传统surprisal指标，将句子加工研究与联想记忆理论联系起来。",
+      "llm_tldr": "本文首次将基于能量的Transformer模型用于预测阅读难度，其能量函数在多项阅读时间语料库上超越传统surprisal指标，将句子加工研究与联想记忆理论联系起来。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.22925v1",
+      "source": "arxiv",
+      "title": "EEG Benchmarking Needs a Task Specification Layer: NeuroDoc for Rulebook-Guided, Executable Benchmark Construction",
+      "abstract": "Electroencephalography (EEG) foundation models increasingly rely on multi-dataset training and evaluation, yet public EEG datasets still lack a shared task specification layer that can turn heterogeneous recordings into reusable benchmark units. Existing standards organize files, metadata, and provenance, but they do not specify EEG tasks under a common language and rulebook, leaving critical task semantics scattered across papers, code, and manual interpretation. We investigate whether heterogeneous public EEG datasets can be standardized through a structured task specification language paired with a shared rulebook. Our methodology represents each benchmark entry as a task document synchronized with an executable task kernel, with the rulebook defining task fields, evidence requirements, document-kernel alignment, review states, and machine-checkable constraints. Using this methodology, we release a community-reviewed EEG benchmark corpus centered on 53 completed and reviewed entries with 245 task definitions spanning diverse paradigms, and we introduce NeuroDoc and NeuroAudit as the operational support layer for rulebook-guided drafting, upgrading, review, amendment, and release management. We further examine whether the resulting benchmark units can be instantiated in a shared downstream setting across four EEG foundation model backbones, providing execution-based evidence for reusable, auditable, and executable EEG benchmarking infrastructure.",
+      "authors": [
+        "Chengxuan Qin",
+        "Zhige Chen",
+        "Shu Peng",
+        "Rui Yang",
+        "Jiping Cui",
+        "Yikai Dong",
+        "Jun Li",
+        "Liu Peng",
+        "Zhida Shang",
+        "Mingze Tang",
+        "Kay Chen Tan",
+        "Jibin Wu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.NE"
+      ],
+      "published": "2026-06-22T07:02:44+00:00",
+      "link": "https://arxiv.org/pdf/2606.22925v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Proposes a task specification language for standardizing EEG datasets, facilitating reproducible EEG analysis.",
+      "llm_evidence_cn": "提出一种标准化EEG数据集的任务规范语言，促进可重复的EEG分析。",
+      "llm_evidence": "提出一种标准化EEG数据集的任务规范语言，促进可重复的EEG分析。",
+      "canonical_evidence": "提出一种标准化EEG数据集的任务规范语言，促进可重复的EEG分析。",
+      "llm_tldr_en": "This paper introduces NeuroDoc, a structured task specification language for EEG datasets that enables executable benchmark construction, addressing the lack of shared task semantics in public EEG data and potentially streamlining EEG power spectrum analysis in cognitive studies.",
+      "llm_tldr_cn": "该文针对公共EEG数据集缺乏统一任务语义规范的问题，提出NeuroDoc任务文档规范，通过结构化任务描述语言与共享规则手册将异构EEG记录转化为可复用的基准单元。方法实现了任务语义的程序化表达与基准自动化构建，虽未直接分析功率谱，但为认知任务EEG研究提供了数据标准化基础，有助于提升EEG相对功率谱分析的可复现性与效率。",
+      "llm_tldr": "该文针对公共EEG数据集缺乏统一任务语义规范的问题，提出NeuroDoc任务文档规范，通过结构化任务描述语言与共享规则手册将异构EEG记录转化为可复用的基准单元。方法实现了任务语义的程序化表达与基准自动化构建，虽未直接分析功率谱，但为认知任务EEG研究提供了数据标准化基础，有助于提升EEG相对功率谱分析的可复现性与效率。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
