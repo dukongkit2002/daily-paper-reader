@@ -6,34 +6,30 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-23
-- 运行时间：2026-06-23 21:28:51 UTC
+- 最新运行日期：2026-06-24
+- 运行时间：2026-06-24 22:03:40 UTC
 - 运行状态：成功
-- 本次总论文数：4
-- 精读区：2
-- 速读区：2
+- 本次总论文数：3
+- 精读区：0
+- 速读区：3
 
 ### 今日简报（AI）
-今日精读两篇神经科学与艺术交叉论文，速读两篇关于脑电基准与阅读难度预测的工具性研究。  
-最值得关注：从残缺神经信号中推断有向信息流的 SPIDER 方法，以及艺术触动引发脑电节律与非周期成分协同变化的发现。  
-对脑电分析感兴趣的读者，不妨跟进 NeuroDoc 框架引发的基准测试设计讨论，并结合 SPIDER 评估自家时序建模流程。
-- 详情：[/202606/23/README](/202606/23/README)
+今日速读三篇神经信号分析新作，评分虽不高但探索方向鲜明。最值得关注脑电诵经实验的频谱与功能连接视角（7.0/10），以及用几何令牌+深度学习革新传递熵计算的有趣尝试。建议读者若对冥想神经机制或时序因果分析方法感兴趣，可先浏览这两篇的图表与开源代码。
+- 详情：[/202606/24/README](/202606/24/README)
 
 ### 精读区论文标签
-1. [SPIDER -- Stitched Power-spectra for Inferring Directed information flow from incomplete and asynchronous Experimental Recordings](/202606/23/2606.22695v1-spider----stitched-power-spectra-for-inferring-directed-information-flow-from-incomplete-and-asynchronous-experimental-recordings)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：SPIDER利用功率谱从碎片化、异步神经记录中推断脑区间定向信息流，直接适用于EEG频谱分析。
-2. [PERIODIC AND APERIODIC SPECTRAL SIGNATURES OF BEING MOVED BY ART](/202606/23/biorxiv-10-64898-2026-06-18-732701-v1-periodic-and-aperiodic-spectral-signatures-of-being-moved-by-art)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：使用EEG分析审美体验中周期性与非周期性频谱成分，直接符合认知中的脑电图相对功率谱分析
+- 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Energy-Based Transformers as Predictors of Reading Difficulty](/202606/23/2606.23382v1-energy-based-transformers-as-predictors-of-reading-difficulty)  
+1. [EEG Interpretation Across Chant Listening: A Single-Subject Pilot Investigation Using Spectral and Functional Connectivity Analysis](/202606/24/2606.24406v1-eeg-interpretation-across-chant-listening-a-single-subject-pilot-investigation-using-spectral-and-functional-connectivity-analysis)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：预测阅读难度，与阅读理解评估相关
-2. [EEG Benchmarking Needs a Task Specification Layer: NeuroDoc for Rulebook-Guided, Executable Benchmark Construction](/202606/23/2606.22925v1-eeg-benchmarking-needs-a-task-specification-layer-neurodoc-for-rulebook-guided-executable-benchmark-construction)  
+   evidence：使用EEG谱功率估计并考察吟诵聆听期间各频段的相对功率
+2. [B[FM]$^2$: Brain Foundation Model via Flow Matching with SplitUNet](/202606/24/2606.20812v1-bfm2-brain-foundation-model-via-flow-matching-with-splitunet)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：提出一种标准化EEG数据集的任务规范语言，促进可重复的EEG分析。
+   evidence：可从原始信号学习表示的脑电图基础模型，可能用于认知任务中的频谱功率分析
+3. [Embedded Polygon Symbolic Transfer Entropy (EPSTE): A Geometric Token and Deep Learning Approach to Estimating Transfer Entropy in Neuroimaging Time Series](/202606/24/2606.21754v1-embedded-polygon-symbolic-transfer-entropy-epste-a-geometric-token-and-deep-learning-approach-to-estimating-transfer-entropy-in-neuroimaging-time-series)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：用于估计脑电图/脑磁图传递熵的方法，可分析涉及mPFC的高级认知网络中的定向连接
 
 
 <div class="dpr-home-promo-card">

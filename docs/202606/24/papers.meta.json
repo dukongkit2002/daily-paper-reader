@@ -1,0 +1,54 @@
+{
+  "label": "2026-06-24",
+  "date": "2026-06-24",
+  "generated_at": "2026-06-24T22:03:51",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202606/24/2606.24406v1-eeg-interpretation-across-chant-listening-a-single-subject-pilot-investigation-using-spectral-and-functional-connectivity-analysis",
+      "section": "quick",
+      "title_en": "EEG Interpretation Across Chant Listening: A Single-Subject Pilot Investigation Using Spectral and Functional Connectivity Analysis",
+      "authors": "Prerna Singh, Aishwarya Ghosh, Neelam Sinha, Deepti Navaratna",
+      "date": "2026-06-23",
+      "pdf": "https://arxiv.org/pdf/2606.24406v1",
+      "score": "7.0",
+      "evidence": "使用EEG谱功率估计并考察吟诵聆听期间各频段的相对功率",
+      "tldr": "目前尚不清楚不同诵经听诵对儿童大脑活动的影响差异。本研究作为单被试预试验，通过EEG谱功率和wPLI功能连接，比较5岁儿童在静息态、STS、MM、Aum和Tanpura五种条件下的神经振荡与网络连接。结果显示，STS聆听增强了beta功率和广泛额、颞、顶、枕连接，Tanpura产生密集平衡网络，Aum表现中等分布式连接，而MM与静息态连接较弱且局部。该初步单被试研究为将文化相关听觉刺激融入儿童神经教育研究提供了可行范式参考。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "This technical report presents an EEG-based investigation of neural activity across five auditory conditions: Resting State (RS), Shiv Tandav Stotra (STS), Mahasudarshan Mantra (MM), Aum Chant, and Tanpura Listening. EEG recordings acquired from a healthy 5-year-old participant were analyzed using spectral power estimation and functional connectivity measures based on the weighted Phase Lag Index (wPLI). Spectral analysis revealed condition-specific modulation of neural oscillatory activity, with STS listening producing the highest relative power across multiple frequency bands, particularly within the beta range. Functional connectivity analysis demonstrated distinct network organizations across conditions. STS listening exhibited the strongest and most widespread connectivity pattern, characterized by prominent long-range interactions among frontal, temporal, parietal, and occipital regions. Tanpura listening generated a dense yet balanced connectivity network, while Aum listening showed moderate distributed connectivity. In contrast, MM and resting-state conditions displayed comparatively weaker and more localized network organization. These preliminary findings suggest that different chant-listening conditions engage distinct neural mechanisms involving both cortical activation and large-scale neural synchronization. The study establishes a methodological framework for future investigations examining the role of culturally relevant auditory interventions in cognitive development, neuroeducation, and child-centered neuroscience research.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/24/2606.20812v1-bfm2-brain-foundation-model-via-flow-matching-with-splitunet",
+      "section": "quick",
+      "title_en": "B[FM]$^2$: Brain Foundation Model via Flow Matching with SplitUNet",
+      "authors": "Jaedong Hwang, Kathleen Zhang, Wei Dai, Konstantinos Kontras, Maarten Vanmarcke, Maarten De Vos, Ila Fiete, Paul Pu Liang",
+      "date": "2026-06-18",
+      "pdf": "https://arxiv.org/pdf/2606.20812v1",
+      "score": "6.0",
+      "evidence": "可从原始信号学习表示的脑电图基础模型，可能用于认知任务中的频谱功率分析",
+      "tldr": "现有脑电图基础模型将连续信号离散化处理，破坏大脑节律的精细动态。BFM²直接对原始连续波形进行流匹配预训练，并设计SplitUNet解决时间-电极不对称问题。仅用307小时数据预训练，即在九项下游任务中七项取得最优并生成逼真脑电图，开销比其他模型低30倍。该工作为高效、通用的脑电图表征学习提供了新范式。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "EEG foundation models can learn generalizable representations from large-scale EEG corpora to enable single-backbone transfer across diverse clinical and brain-computer interface tasks. Existing models typically discretize the continuous multi-channel EEG waveform into patches or codebook tokens and train a transformer with masked self-supervision. Recognizing that this discretization fragments continuous brain rhythms and obscures fine-grained temporal dynamics, we present B[FM]$^2$(Brain Foundation Model via Flow Matching), whose inductive bias aligns with the data by pretraining directly on the raw signal using continuous-time flow matching without patches, tokenization, or masking. However, multi-channel EEG signals pose an architectural challenge for flow matching: time is densely sampled and highly autocorrelated (thousands of timepoints), while the electrode axis is short (tens of channels) at distinct scalp positions. To address this time-electrode asymmetry, we introduce SplitUNet, a velocity network that factorizes each block into separate 1D temporal and 1D electrode convolutions and downsamples only along time, preserving electrode topology throughout the hierarchy. B[FM]$^2$ sets a new state of the art on 7 of 9 standard downstream EEG classification tasks, using a pretraining budget of only 36,895 segments ($\\approx$ 307h), 1-2 orders of magnitude ($\\approx$ 30x) less than required by existing EEG foundation models. Further, it generates synthetic EEGs that two board-certified neurologists cannot distinguish from brain data (Cohen's $κ=$ -0.096). https://jd730.github.io/projects/BFM2",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/24/2606.21754v1-embedded-polygon-symbolic-transfer-entropy-epste-a-geometric-token-and-deep-learning-approach-to-estimating-transfer-entropy-in-neuroimaging-time-series",
+      "section": "quick",
+      "title_en": "Embedded Polygon Symbolic Transfer Entropy (EPSTE): A Geometric Token and Deep Learning Approach to Estimating Transfer Entropy in Neuroimaging Time Series",
+      "authors": "David Alexander Finnigan",
+      "date": "2026-06-19",
+      "pdf": "https://arxiv.org/pdf/2606.21754v1",
+      "score": "6.0",
+      "evidence": "用于估计脑电图/脑磁图传递熵的方法，可分析涉及mPFC的高级认知网络中的定向连接",
+      "tldr": "传递熵（TE）虽能无模型度量有向信息流，但其在有限样本下的估计易受噪声和非平稳性影响，尤其高嵌入维下极不稳定。本研究提出嵌入多边形符号传递熵（EPSTE），将时间序列编码为局部几何基元符号，利用循环注意力多实例学习从窗口袋中预测TE值。在源重建MEG数据上，EPSTE在成对层次近乎完美复原真实有向结构，绝对误差显著低于传统符号方法，表明表示几何是提升信息论依赖可学习性的关键，为神经时间序列有向连接推断提供了稳健新框架。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Inferring directed interactions between neural systems from EEG and MEG remains challenging due to noise, nonstationarity, and the high sample complexity of information-theoretic estimators. Transfer Entropy (TE) provides a principled and model-free measure of directed information flow; however, its practical estimation is not stable in finite data regimes (particularly as embedding dimension increases). This work introduces Embedded Polygon Symbolic Transfer Entropy (EPSTE), a framework that reframes TE estimation as a learnable problem operating on structured symbolic representations of local temporal morphology rather than raw signal amplitudes. Neural time series are decomposed into sequences of geometric primitives derived from local triplets of samples encoding complementary aspects of waveform structure such as magnitude, curvature and directional change. These primitives are discretised into symbolic tokens, yielding a compact but expressive state space over which symbolic TE is estimated. A recurrent neural network with attention-based multiple-instance learning is trained to predict surrogate-validated TE values from bags of symbolic temporal windows. The method is evaluated on source-reconstructed MEG data parcellated using the AAL90 atlas and compared against a standard symbolic baseline using identical architectures and supervision. The results demonstrate that while local window-level predictions are noisy, aggregation across trials and channel pairs yields stable directed dependencies. At the pair level, EPSTE achieves near-perfect recovery of ground-truth directed structure and significantly lower absolute error than the baseline, indicating that representational geometry plays a critical role in enabling practical learnability of information-theoretic dependencies.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

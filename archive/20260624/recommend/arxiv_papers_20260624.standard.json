@@ -1,0 +1,135 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-24T22:00:42.421219+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2606.24406v1",
+      "source": "arxiv",
+      "title": "EEG Interpretation Across Chant Listening: A Single-Subject Pilot Investigation Using Spectral and Functional Connectivity Analysis",
+      "abstract": "This technical report presents an EEG-based investigation of neural activity across five auditory conditions: Resting State (RS), Shiv Tandav Stotra (STS), Mahasudarshan Mantra (MM), Aum Chant, and Tanpura Listening. EEG recordings acquired from a healthy 5-year-old participant were analyzed using spectral power estimation and functional connectivity measures based on the weighted Phase Lag Index (wPLI). Spectral analysis revealed condition-specific modulation of neural oscillatory activity, with STS listening producing the highest relative power across multiple frequency bands, particularly within the beta range. Functional connectivity analysis demonstrated distinct network organizations across conditions. STS listening exhibited the strongest and most widespread connectivity pattern, characterized by prominent long-range interactions among frontal, temporal, parietal, and occipital regions. Tanpura listening generated a dense yet balanced connectivity network, while Aum listening showed moderate distributed connectivity. In contrast, MM and resting-state conditions displayed comparatively weaker and more localized network organization. These preliminary findings suggest that different chant-listening conditions engage distinct neural mechanisms involving both cortical activation and large-scale neural synchronization. The study establishes a methodological framework for future investigations examining the role of culturally relevant auditory interventions in cognitive development, neuroeducation, and child-centered neuroscience research.",
+      "authors": [
+        "Prerna Singh",
+        "Aishwarya Ghosh",
+        "Neelam Sinha",
+        "Deepti Navaratna"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "eess.SP"
+      ],
+      "published": "2026-06-23T10:44:35+00:00",
+      "link": "https://arxiv.org/pdf/2606.24406v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Uses EEG spectral power estimation and examines relative power across frequency bands during chant listening.",
+      "llm_evidence_cn": "使用EEG谱功率估计并考察吟诵聆听期间各频段的相对功率",
+      "llm_evidence": "使用EEG谱功率估计并考察吟诵聆听期间各频段的相对功率",
+      "canonical_evidence": "使用EEG谱功率估计并考察吟诵聆听期间各频段的相对功率",
+      "llm_tldr_en": "EEG spectral analysis of a single subject shows distinct relative power modulations during different chant conditions, particularly high beta power for STS listening.",
+      "llm_tldr_cn": "该研究对一名5岁健康被试在五种听觉条件下（静息态、吟诵等）进行EEG记录，采用谱功率和功能连接分析。结果发现不同吟诵条件特异性调制神经振荡，其中STS聆听在多个频段尤其是beta频段产生最高相对功率，表明特定听觉内容可引发独特的EEG功率谱变化。这为利用EEG相对功率谱研究认知过程中的神经活动提供了个案参考。",
+      "llm_tldr": "该研究对一名5岁健康被试在五种听觉条件下（静息态、吟诵等）进行EEG记录，采用谱功率和功能连接分析。结果发现不同吟诵条件特异性调制神经振荡，其中STS聆听在多个频段尤其是beta频段产生最高相对功率，表明特定听觉内容可引发独特的EEG功率谱变化。这为利用EEG相对功率谱研究认知过程中的神经活动提供了个案参考。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.20812v1",
+      "source": "arxiv",
+      "title": "B[FM]$^2$: Brain Foundation Model via Flow Matching with SplitUNet",
+      "abstract": "EEG foundation models can learn generalizable representations from large-scale EEG corpora to enable single-backbone transfer across diverse clinical and brain-computer interface tasks. Existing models typically discretize the continuous multi-channel EEG waveform into patches or codebook tokens and train a transformer with masked self-supervision. Recognizing that this discretization fragments continuous brain rhythms and obscures fine-grained temporal dynamics, we present B[FM]$^2$(Brain Foundation Model via Flow Matching), whose inductive bias aligns with the data by pretraining directly on the raw signal using continuous-time flow matching without patches, tokenization, or masking. However, multi-channel EEG signals pose an architectural challenge for flow matching: time is densely sampled and highly autocorrelated (thousands of timepoints), while the electrode axis is short (tens of channels) at distinct scalp positions. To address this time-electrode asymmetry, we introduce SplitUNet, a velocity network that factorizes each block into separate 1D temporal and 1D electrode convolutions and downsamples only along time, preserving electrode topology throughout the hierarchy. B[FM]$^2$ sets a new state of the art on 7 of 9 standard downstream EEG classification tasks, using a pretraining budget of only 36,895 segments ($\\approx$ 307h), 1-2 orders of magnitude ($\\approx$ 30x) less than required by existing EEG foundation models. Further, it generates synthetic EEGs that two board-certified neurologists cannot distinguish from brain data (Cohen's $κ=$ -0.096). https://jd730.github.io/projects/BFM2",
+      "authors": [
+        "Jaedong Hwang",
+        "Kathleen Zhang",
+        "Wei Dai",
+        "Konstantinos Kontras",
+        "Maarten Vanmarcke",
+        "Maarten De Vos",
+        "Ila Fiete",
+        "Paul Pu Liang"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-06-18T18:01:26+00:00",
+      "link": "https://arxiv.org/pdf/2606.20812v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "EEG foundation model that can learn representations from raw signals, potentially enabling spectral power analysis in cognitive tasks",
+      "llm_evidence_cn": "可从原始信号学习表示的脑电图基础模型，可能用于认知任务中的频谱功率分析",
+      "llm_evidence": "可从原始信号学习表示的脑电图基础模型，可能用于认知任务中的频谱功率分析",
+      "canonical_evidence": "可从原始信号学习表示的脑电图基础模型，可能用于认知任务中的频谱功率分析",
+      "llm_tldr_en": "Proposes B[FM]^2, an EEG foundation model pre-trained directly on raw multi-channel signals via continuous-time flow matching, avoiding discretization; it learns representations that could facilitate downstream spectral power analysis during cognitive tasks.",
+      "llm_tldr_cn": "针对现有脑电图基础模型因对连续信号进行离散化而破坏脑节律的问题，提出B[FM]^2，采用连续时间流匹配直接在原始脑电图信号上进行预训练，保持精细时间动态。该方法无需补丁或掩码，通过SplitUNet架构处理多通道信号，所学表示可望用于认知任务中的相对功率谱分析等下游应用。",
+      "llm_tldr": "针对现有脑电图基础模型因对连续信号进行离散化而破坏脑节律的问题，提出B[FM]^2，采用连续时间流匹配直接在原始脑电图信号上进行预训练，保持精细时间动态。该方法无需补丁或掩码，通过SplitUNet架构处理多通道信号，所学表示可望用于认知任务中的相对功率谱分析等下游应用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.21754v1",
+      "source": "arxiv",
+      "title": "Embedded Polygon Symbolic Transfer Entropy (EPSTE): A Geometric Token and Deep Learning Approach to Estimating Transfer Entropy in Neuroimaging Time Series",
+      "abstract": "Inferring directed interactions between neural systems from EEG and MEG remains challenging due to noise, nonstationarity, and the high sample complexity of information-theoretic estimators. Transfer Entropy (TE) provides a principled and model-free measure of directed information flow; however, its practical estimation is not stable in finite data regimes (particularly as embedding dimension increases). This work introduces Embedded Polygon Symbolic Transfer Entropy (EPSTE), a framework that reframes TE estimation as a learnable problem operating on structured symbolic representations of local temporal morphology rather than raw signal amplitudes. Neural time series are decomposed into sequences of geometric primitives derived from local triplets of samples encoding complementary aspects of waveform structure such as magnitude, curvature and directional change. These primitives are discretised into symbolic tokens, yielding a compact but expressive state space over which symbolic TE is estimated. A recurrent neural network with attention-based multiple-instance learning is trained to predict surrogate-validated TE values from bags of symbolic temporal windows. The method is evaluated on source-reconstructed MEG data parcellated using the AAL90 atlas and compared against a standard symbolic baseline using identical architectures and supervision. The results demonstrate that while local window-level predictions are noisy, aggregation across trials and channel pairs yields stable directed dependencies. At the pair level, EPSTE achieves near-perfect recovery of ground-truth directed structure and significantly lower absolute error than the baseline, indicating that representational geometry plays a critical role in enabling practical learnability of information-theoretic dependencies.",
+      "authors": [
+        "David Alexander Finnigan"
+      ],
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "stat.ML"
+      ],
+      "published": "2026-06-19T21:13:56+00:00",
+      "link": "https://arxiv.org/pdf/2606.21754v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Method for estimating transfer entropy from EEG/MEG, enabling analysis of directed connectivity in higher cognitive networks involving mPFC",
+      "llm_evidence_cn": "用于估计脑电图/脑磁图传递熵的方法，可分析涉及mPFC的高级认知网络中的定向连接",
+      "llm_evidence": "用于估计脑电图/脑磁图传递熵的方法，可分析涉及mPFC的高级认知网络中的定向连接",
+      "canonical_evidence": "用于估计脑电图/脑磁图传递熵的方法，可分析涉及mPFC的高级认知网络中的定向连接",
+      "llm_tldr_en": "EPSTE addresses unstable transfer entropy estimation from finite EEG data by converting time series into geometric tokens and learning directed information flow; it provides a robust tool for studying mPFC connectivity in executive control and higher cognitive networks.",
+      "llm_tldr_cn": "针对EEG/MEG中转移熵估计因噪声和高样本复杂度而不稳定的问题，提出EPSTE框架，将神经时间序列转化为嵌入多边形符号令牌，通过深度学习估计定向信息流。该方法在有限数据下更稳定，可应用于研究内侧前额叶皮层在执行控制网络中的连接作用。",
+      "llm_tldr": "针对EEG/MEG中转移熵估计因噪声和高样本复杂度而不稳定的问题，提出EPSTE框架，将神经时间序列转化为嵌入多边形符号令牌，通过深度学习估计定向信息流。该方法在有限数据下更稳定，可应用于研究内侧前额叶皮层在执行控制网络中的连接作用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
