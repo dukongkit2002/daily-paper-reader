@@ -1,0 +1,54 @@
+{
+  "label": "2026-06-25",
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T22:15:16",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202606/25/biorxiv-10-1101-2025-11-10-687610-v2-sample-size-critically-shapes-the-reliability-of-eeg-case-control-findings-in-psychiatry",
+      "section": "quick",
+      "title_en": "Sample size critically shapes the reliability of EEG case-control findings in psychiatry",
+      "authors": "Ebadi, A., Kaderi, S., Rodriguez-Herreros, B., Chabane, N., Allouch, S., Hassan, M.",
+      "date": "2026-06-25",
+      "pdf": "https://www.biorxiv.org/content/10.1101/2025.11.10.687610v2.full.pdf",
+      "score": "7.0",
+      "evidence": "量化EEG频谱特征的信度，直接为认知领域EEG相对功率谱分析提供方法学参考",
+      "tldr": "精神科脑电图病例对照研究结果常不一致，样本量不足可能是原因，但其对可靠性的影响尚缺乏系统量化。本研究基于大型多中心静息态脑电数据集，通过随机重复子抽样全面检验不同样本量下频谱、时域与复杂度特征比较的稳定性。结果显示小样本效应量膨胀且多变，而大样本产生稳健一致的小效应，统计功效显著提升且假阳性率稳定。该发现凸显样本量的决定性作用，挑战传统病例对照方法在生物标志物发现中的应用，并强调大样本研究设计的必要性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Electroencephalography (EEG) studies in psychiatry have produced highly inconsistent findings, particularly in case-control designs. Small sample sizes are widely assumed to contribute to this variability, yet their impact on the reliability of EEG group comparisons has not been systematically quantified at scale. Here, we address this key gap using a large multisite resting-state EEG dataset comprising 2,874 participants aged 5-18 years, including individuals with attention-deficit/hyperactivity disorder, autism spectrum disorder, anxiety, learning disorders, and healthy controls. We extracted a comprehensive set of spectral, temporal, and complexity EEG features and performed repeated case-control comparisons across a wide range of sample sizes using extensive random subsampling. Results from small samples were unstable, with inflated and highly variable effect sizes across iterations. By contrast, larger samples produced consistent and reproducible findings, converging on uniformly small but robust effects. Statistical power rose steeply with sample size, whereas false positive rates remained relatively stable. These results demonstrate the central role of sample size in shaping EEG study outcomes and challenge the utility of conventional case-control approaches for biomarker discovery in psychiatry.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/25/biorxiv-10-1101-2021-01-21-427334-v4-getting-blood-from-a-stone-improving-neural-inferences-without-additional-neural-data",
+      "section": "quick",
+      "title_en": "Getting Blood from a Stone: Improving Neural Inferences without Additional Neural Data",
+      "authors": "Halpern, D. J., Gureckis, T. M.",
+      "date": "2026-06-23",
+      "pdf": "https://www.biorxiv.org/content/10.1101/2021.01.21.427334v4.full.pdf",
+      "score": "6.0",
+      "evidence": "展示如何通过收集更多行为数据和使用替代估计器来改进神经影像推断，适用于EEG-认知关联研究",
+      "tldr": "认知神经科学中存在大量低统计功效研究，传统改进需追加神经数据。本文提出仅收集行为数据并采用替代估计量，即可提升神经推断精度。模拟与推导表明，行为数据能廉价等效增强统计效力，研究者可平衡扫描与行为被试量，以更低成本获得可靠结论。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "In recent years, the cognitive neuroscience literature has come under criticism for containing many low-powered studies, limiting the ability to make reliable statistical inferences. Typically, the suggestion for increasing power is to collect more data with neural signals. However, many studies in cognitive neuroscience use parameters estimated from behavioral data in order to make inferences about neural signals (such as fMRI BOLD signal). In this paper, we explore how cognitive neuroscientists can learn more about their neuroimaging signal by collecting data on \\textit{behavior alone} and using alternative estimators designed to leverage this information. We demonstrate through simulation and mathematical derivations that knowing more about the marginal distribution of behavior can improve inferences about the mapping between cognitive processes and neural data. We analyze the magnitude of this benefit, finding that it depends on the desired estimand and several underlying study parameters. While in many cases the absolute gains in precision can be modest, our results demonstrate that, in realistic settings, additional behavioral data can lead to the same improvement in the precision of inferences more cheaply and easily than collecting additional data from subjects in a neuroimaging study. This means that when conducting a neuroimaging study, researchers now have another knob to turn in a design analysis: the number of subjects collected in the scanner and the number of behavioral subjects collected outside the scanner (in the lab or online).",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/25/biorxiv-10-64898-2026-06-19-732815-v1-source-space-precision-charts-for-lifespan-eeg-connectomics",
+      "section": "quick",
+      "title_en": "Source-space precision charts for lifespan EEG connectomics",
+      "authors": "Jin, Y., Reyes, R. G., Wang, Y., Bringas Vega, M. L. L., Valdes-Sosa, P. A.",
+      "date": "2026-06-24",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.19.732815v1.full.pdf",
+      "score": "6.0",
+      "evidence": "JSPACE方法用于源空间EEG连接组学，从头皮交叉谱估计多频源精度矩阵",
+      "tldr": "源空间脑电图连接组学面临泄漏和间接中介的挑战，需要可靠的条件交互估计。本研究提出JSPACE框架，从头皮交叉谱联合估计多频率源精度矩阵，采用稀疏正则化与随机优化。模拟中JSPACE降低相干膨胀，提升支持恢复。应用于1935名参与者构建寿命图谱，揭示非对角线形态沿年龄、频率和强度连续轴变化，对角线保持alpha波谷形态，delta梯度与感觉运动关联组织对齐，并在最老群体出现偏差。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Source-space electroencephalography (EEG) connectomics aims to estimate interactions among cortical generators from sensor cross-spectra that are mixed by the head and lead field. This task is difficult because marginal source covariance or coherence can retain leakage, common drive and indirect mediation, whereas developmental mapping requires conditional interactions that can be estimated repeatedly across large cohorts. We developed JSPACE (Joint Source-space Precision And Cross-spectral Estimation), a frequency-domain inverse framework for estimating multi-frequency source precision matrices from scalp cross-spectra. JSPACE couples posterior source cross-spectral estimation with standardized precision fitting, sparse frequency-smooth anatomical regularization, stochastic active-set optimization and post-selection refitting. In simulations, its advantage was target-specific: JSPACE reduced coherence inflation and achieved the lowest imaginary-coherence and peak-frequency errors in a forward neural-mass benchmark. When the ground-truth precision matrix was known, it achieved the highest exact, edge-collapsed and leakage-aware support recovery. We applied JSPACE to HarMNqEEG cross-spectral data from 1,935 participants aged 5.17--97.00 years, spanning 47 frequency bins and 360 cortical parcels. Affine-invariant Karcher tangent harmonization reconstructed subject-level estimates into a lifespan atlas of 360 diagonal and 64,620 source-pair age-frequency surfaces. The atlas revealed a continuous off-diagonal morphology landscape, in which age direction, frequency preference and interaction strength varied as overlapping axes rather than discrete edge classes. In contrast, diagonal precision surfaces shared a conserved alpha-trough morphology across parcels. Representative real-precision pathways captured posterior parietal, sensorimotor-parietal, frontopolar and visual-parietal motifs. Delta-band gradients were moderately aligned with the sensorimotor-association (S-A) organization of cortex from childhood through late adulthood, with a candidate oldest-old deviation in the sparsest age range. JSPACE provides a scalable framework for frequency-resolved source-precision charting in lifespan EEG.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
