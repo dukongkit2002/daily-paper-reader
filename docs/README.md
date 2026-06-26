@@ -6,32 +6,35 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-25
-- 运行时间：2026-06-25 22:15:07 UTC
+- 最新运行日期：2026-06-26
+- 运行时间：2026-06-26 21:06:14 UTC
 - 运行状态：成功
-- 本次总论文数：3
-- 精读区：0
+- 本次总论文数：5
+- 精读区：2
 - 速读区：3
 
 ### 今日简报（AI）
-今日速读三篇聚焦脑电图（EEG）方法论的论文。
-核心发现指向：样本量大小会显著影响精神疾病病例对照EEG研究的可靠性，且新算法能从现有数据中“榨出”更精确的神经推断。
-建议关注研究设计中的样本量陷阱，以及不依赖新数据的数据增强计算方法。
-- 详情：[/202606/25/README](/202606/25/README)
+今日聚焦脑科学与AI交叉研究：用脑电图看清中学生如何与AI互动学习，并拆解大脑“多任务中枢”的任务特异性。最值得关注大脑-视觉对齐的多视图神经表征，以及质量把关的实时脑电开源工作流。建议从NeuraDock教程入手，上手低门槛脑机实验。
+- 详情：[/202606/26/README](/202606/26/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [An exploratory behavioral and electroencephalographic study of artificial intelligence-assisted learning modes in high school students](/202606/26/2606.26579v1-an-exploratory-behavioral-and-electroencephalographic-study-of-artificial-intelligence-assisted-learning-modes-in-high-school-students)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：在AI辅助认知任务中记录额叶EEG频谱活动
+2. [Decomposition of task-specific responses in the multiple demand network](/202606/26/biorxiv-10-64898-2026-06-21-732474-v1-decomposition-of-task-specific-responses-in-the-multiple-demand-network)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：刻画了支撑执行控制并包含内侧前额叶的多需求网络的功能细分
 
 ### 速读区论文标签
-1. [Sample size critically shapes the reliability of EEG case-control findings in psychiatry](/202606/25/biorxiv-10-1101-2025-11-10-687610-v2-sample-size-critically-shapes-the-reliability-of-eeg-case-control-findings-in-psychiatry)  
+1. [What Does the Brain See? Multiview Neural Representations to Demystify the Brain-Visual Alignment](/202606/26/2606.25718v1-what-does-the-brain-see-multiview-neural-representations-to-demystify-the-brain-visual-alignment)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：量化EEG频谱特征的信度，直接为认知领域EEG相对功率谱分析提供方法学参考
-2. [Getting Blood from a Stone: Improving Neural Inferences without Additional Neural Data](/202606/25/biorxiv-10-1101-2021-01-21-427334-v4-getting-blood-from-a-stone-improving-neural-inferences-without-additional-neural-data)  
+   evidence：提出含可学习小波频谱分解的多视图EEG框架用于视觉解码
+2. [NeuraDock Visual Cognitive Load Agent Tutorial: A Quality-Gated Open-Source EEG Workflow for Alpha Dynamics and Real-Time Applications](/202606/26/2606.26518v1-neuradock-visual-cognitive-load-agent-tutorial-a-quality-gated-open-source-eeg-workflow-for-alpha-dynamics-and-real-time-applications)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：面向Alpha动力学的开源EEG工作流，用于视觉认知负荷分析
+3. [Boundary-Aware Context Grounding for A Low-Channel EEG Agent](/202606/26/2606.26519v1-boundary-aware-context-grounding-for-a-low-channel-eeg-agent)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：展示如何通过收集更多行为数据和使用替代估计器来改进神经影像推断，适用于EEG-认知关联研究
-3. [Source-space precision charts for lifespan EEG connectomics](/202606/25/biorxiv-10-64898-2026-06-19-732815-v1-source-space-precision-charts-for-lifespan-eeg-connectomics)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：JSPACE方法用于源空间EEG连接组学，从头皮交叉谱估计多频源精度矩阵
+   evidence：NeuraDock智能体在EEG上执行复核的谱工作流，可实现相对功率谱分析
 
 
 <div class="dpr-home-promo-card">

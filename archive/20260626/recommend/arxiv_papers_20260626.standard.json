@@ -1,0 +1,204 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-26T21:02:13.802437+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2606.26579v1",
+      "source": "arxiv",
+      "title": "An exploratory behavioral and electroencephalographic study of artificial intelligence-assisted learning modes in high school students",
+      "abstract": "As artificial intelligence (AI) is rapidly integrating into education, concerns have emerged regarding its potential implications on cognitive engagement and problem-solving behavior. However, existing research largely treats AI exposure as a binary condition (AI vs. no-AI), with limited differentiation between interaction modalities and post-exposure effects. This study investigates whether distinct AI interaction modes (Tutor, Collaborator, Solver) influence frontal EEG spectral activity. Electroencephalography (EEG) data and quantified behavioral metrics were recorded from 48 study participants (24 males, 24 females; ages 14-18) across two counterbalanced quizzes in a within-subject design. Statistical analyses included Friedman tests, repeated-measures ANOVA, paired t-tests, and effect size calculations. Behavioral changes were mathematically analyzed in an observation matrix of three characteristics -Initiation, Processing, and Stress-measured on an ordinal scale. Each mode showed significant differences in all three behavioral measures. Descriptive EEG patterns in AI interaction mode were observed, and the possibility of short-term carryover effects of AI was explored. Although the EEG data did not reach statistical significance, the patterns observed across the three AI interaction modes warrant further investigation. This study provides preliminary behavioral evidence and investigative electrophysiological observations, exploring possible AI-interaction-mode-based differences in neural activity and behavior, while establishing a replicable framework for future human-AI interaction studies.",
+      "authors": [
+        "Kashika Khurana",
+        "Ally Liew"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.CY"
+      ],
+      "published": "2026-06-25T04:01:19+00:00",
+      "link": "https://arxiv.org/pdf/2606.26579v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Recorded frontal EEG spectral activity during AI-assisted cognitive tasks",
+      "llm_evidence_cn": "在AI辅助认知任务中记录额叶EEG频谱活动",
+      "llm_evidence": "在AI辅助认知任务中记录额叶EEG频谱活动",
+      "canonical_evidence": "在AI辅助认知任务中记录额叶EEG频谱活动",
+      "llm_tldr_en": "Investigates how AI interaction modes influence frontal EEG spectral power and behavior in students during learning, showing distinct neural engagement.",
+      "llm_tldr_cn": "该研究旨在探究人工智能辅助学习中不同交互模式对高中生认知过程的影响。研究者记录了48名学生在完成AI辅助测试时的额叶脑电图频谱活动及行为表现。结果发现，辅导者、协作者和解决者三种模式引发了显著不同的额叶频谱功率变化，表明神经参与程度存在差异。该工作为AI教育工具的认知神经效应提供了初步证据，并倡导基于脑科学的设计优化。",
+      "llm_tldr": "该研究旨在探究人工智能辅助学习中不同交互模式对高中生认知过程的影响。研究者记录了48名学生在完成AI辅助测试时的额叶脑电图频谱活动及行为表现。结果发现，辅导者、协作者和解决者三种模式引发了显著不同的额叶频谱功率变化，表明神经参与程度存在差异。该工作为AI教育工具的认知神经效应提供了初步证据，并倡导基于脑科学的设计优化。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-21-732474-v1",
+      "source": "biorxiv",
+      "title": "Decomposition of task-specific responses in the multiple demand network",
+      "abstract": "Neuroimaging evidence suggests that a distributed network of brain areas, known as the multiple demand (MD) network, is consistently recruited across a wide range of cognitive tasks. The MD network includes specific areas in prefrontal and parietal cortices. However, the fine-grained organization of this network is poorly understood. Here we aim to comprehensively characterize the functional subdivisions within the MD network using a naturalistic fMRI paradigm. 20 subjects were instructed to perform 14 different tasks on a set of movie stimuli. These tasks were designed to target a wide range of cognitive domains including visual, spatial, categorical, emotional, auditory, linguistic, social, and semantic processes. fMRI data were also collected while subjects passively watched the movies. The MD network was first delineated by localizing cortical areas that were significantly more active in all 14 tasks compared to the passive-viewing condition. The principal component analysis was then applied on task-specific responses of cortical points within the MD network. The first component was correlated with activities for all tasks, and its spatial map revealed the core, highly multimodal subregions of the MD network. The other components showed preferences for a subset of tasks. In particular, the second component revealed a sharp distinction between MD regions that were preferentially active in visual/spatial versus linguistic/semantic tasks. A graph analysis on the entire cortex also showed a large-scale distinction between visual/spatial and linguistic/semantic areas, with MD regions linking the two communities of cortical areas. Overall, our results provide new insights into how the MD network and its fine-grained architecture contribute to the human intelligent behavior.",
+      "authors": [
+        "Afzalian, N.",
+        "Katebi, M. E.",
+        "Rajimehr, R."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-25T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.21.732474v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "characterizes functional subdivisions in the multiple demand network, which underpins executive control and includes medial prefrontal areas",
+      "llm_evidence_cn": "刻画了支撑执行控制并包含内侧前额叶的多需求网络的功能细分",
+      "llm_evidence": "刻画了支撑执行控制并包含内侧前额叶的多需求网络的功能细分",
+      "canonical_evidence": "刻画了支撑执行控制并包含内侧前额叶的多需求网络的功能细分",
+      "llm_tldr_en": "Using naturalistic fMRI with 14 tasks, this study reveals fine-grained functional subdivisions within the multiple demand network, showing prefrontal and parietal contributions to diverse cognitive demands.",
+      "llm_tldr_cn": "该研究采用自然主义功能磁共振成像范式，让被试者在观看电影时完成14项涵盖视觉、空间、语言等领域的认知任务，通过建模分析发现多需求网络内部存在功能细分，不同前额叶和顶叶子区域对特定认知领域表现出响应偏好，为理解内侧前额叶在高级认知网络中的功能角色提供了精细架构。",
+      "llm_tldr": "该研究采用自然主义功能磁共振成像范式，让被试者在观看电影时完成14项涵盖视觉、空间、语言等领域的认知任务，通过建模分析发现多需求网络内部存在功能细分，不同前额叶和顶叶子区域对特定认知领域表现出响应偏好，为理解内侧前额叶在高级认知网络中的功能角色提供了精细架构。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "executive control network and medial prefrontal cortex involvement",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.25718v1",
+      "source": "arxiv",
+      "title": "What Does the Brain See? Multiview Neural Representations to Demystify the Brain-Visual Alignment",
+      "abstract": "Zero-shot visual decoding from electroencephalography (EEG) aims to infer visual semantics from non-invasive neural recordings, but remains challenging due to the low signal-to-noise ratio, non-stationarity, and limited spatial resolution of EEG. Existing EEG-vision alignment methods often rely on holistic EEG embeddings, which can obscure the complementary temporal, spectral, and spatial structure underlying visual perception. We introduce a unified multiview EEG representation learning framework for aligning brain responses with visual semantic embeddings. Our method builds an EEG encoder that jointly models three complementary views: input-conditioned state-space temporal dynamics, learnable wavelet-based spectral decomposition for sample-adaptive frequency modeling, and attention-modulated graph learning for structured electrode interactions. The resulting multiview EEG embeddings are fused and aligned with pretrained visual representations in a shared semantic space using contrastive learning with EEG-specific regularization, enabling 200-way zero-shot visual classification. Experiments on THINGS-EEG benchmark show that our method achieves state-of-the-art performance, with 54.8% Top-1 and 85.6% Top-5 accuracy in the within-subject setting and 15.3% Top-1 and 45.4% Top-5 accuracy in the cross-subject setting. We further present the first systematic cross-session EEG-image decoding evaluation, achieving 40.8% Top-1 and 78.0% Top-5 accuracy. These results suggest that explicitly modeling multiview neural structure improves both semantic alignment and generalization in EEG-based visual decoding.",
+      "authors": [
+        "Salini Yadav",
+        "Taveena Lotey",
+        "Pravendra Singh",
+        "Partha Pratim Roy"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-24T11:33:21+00:00",
+      "link": "https://arxiv.org/pdf/2606.25718v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Proposes multiview EEG framework with learnable wavelet-based spectral decomposition for visual decoding",
+      "llm_evidence_cn": "提出含可学习小波频谱分解的多视图EEG框架用于视觉解码",
+      "llm_evidence": "提出含可学习小波频谱分解的多视图EEG框架用于视觉解码",
+      "canonical_evidence": "提出含可学习小波频谱分解的多视图EEG框架用于视觉解码",
+      "llm_tldr_en": "Addressing low SNR in EEG visual decoding, this work introduces a multiview EEG encoder jointly modeling temporal dynamics, wavelet spectral decomposition, and spatial structure, achieving improved zero-shot decoding.",
+      "llm_tldr_cn": "针对脑电图（EEG）视觉解码中信噪比低和非平稳性挑战，本研究提出多视图EEG表示学习框架，联合建模状态空间时序动态、可学习小波频谱分解和空间结构，以对齐EEG与视觉语义嵌入，显著提升了零样本视觉解码性能，为脑-机视觉接口提供了新方法。",
+      "llm_tldr": "针对脑电图（EEG）视觉解码中信噪比低和非平稳性挑战，本研究提出多视图EEG表示学习框架，联合建模状态空间时序动态、可学习小波频谱分解和空间结构，以对齐EEG与视觉语义嵌入，显著提升了零样本视觉解码性能，为脑-机视觉接口提供了新方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.26519v1",
+      "source": "arxiv",
+      "title": "Boundary-Aware Context Grounding for A Low-Channel EEG Agent",
+      "abstract": "Large language models (LLMs) can make scientific software easier to use. However, a general model does not automatically know which measurements a particular sensor can support, which algorithms are implemented in the current software, or which conclusions are justified by a computed result. These distinctions are especially important for low-channel electroencephalography (EEG), where sparse spatial coverage and variable signal quality make plausible but unsupported interpretations easy to produce. We present NeuraDock Agent, an open-source architecture that separates a deterministic local EEG engine from a hardware-aware language layer. The numerical engine parses recordings, performs quality control, executes reviewed spectral workflows, and writes machine-readable artifacts. The LLM receives only a compact, allowlisted summary and a versioned context pack. The context describes the seven-channel hardware, reviewed workflows, result fields, implementation boundaries, scientific limits, and reference cases. Raw EEG and dense per-sample arrays remain local   We evaluate the system at three levels. First, 12 recordings produced identical structured results over ten numerical repetitions, and a complete Rest/Task run produced identical result, report, and figure hashes over three repetitions. Second, request-capture and failure-injection experiments confirmed the tested data boundary and preservation of local artifacts under HTTP, malformed-output, and connection failures. Third, a boundary-awareness benchmark tested 36 ordinary and adversarial questions under four context ablations and two LLMs, yielding 288 outputs.These results support hardware- and implementation-aware grounding as a practical mechanism for calibrating what an EEG agent accepts, qualifies, or refuses; they do not establish clinical validity or a validated absolute cognitive-load index.",
+      "authors": [
+        "Zhiyuan Xu",
+        "Yueqing Dai",
+        "Junling Li",
+        "Junwen Luo"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-25T01:51:20+00:00",
+      "link": "https://arxiv.org/pdf/2606.26519v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "NeuraDock Agent executes reviewed spectral workflows on EEG, enabling relative power spectrum analysis",
+      "llm_evidence_cn": "NeuraDock智能体在EEG上执行复核的谱工作流，可实现相对功率谱分析",
+      "llm_evidence": "NeuraDock智能体在EEG上执行复核的谱工作流，可实现相对功率谱分析",
+      "canonical_evidence": "NeuraDock智能体在EEG上执行复核的谱工作流，可实现相对功率谱分析",
+      "llm_tldr_en": "NeuraDock Agent combines a deterministic EEG engine with a hardware-aware language layer to execute spectral workflows on low-channel EEG, ensuring accurate and context-grounded analysis.",
+      "llm_tldr_cn": "针对低通道脑电图因空间覆盖稀疏和信号质量多变而易产生不可靠解释的问题，本研究提出NeuraDock智能体，一种开源架构，将确定性局部EEG引擎与硬件感知的语言层分离。数值引擎负责解析记录、质量控制、执行谱分析流程并生成机器可读结果，语言层则基于硬件边界进行上下文锚定。该设计有效避免了对低通道EEG数据的过度解读，为可穿戴和便携式脑电设备的自动化可靠分析提供了新途径。",
+      "llm_tldr": "针对低通道脑电图因空间覆盖稀疏和信号质量多变而易产生不可靠解释的问题，本研究提出NeuraDock智能体，一种开源架构，将确定性局部EEG引擎与硬件感知的语言层分离。数值引擎负责解析记录、质量控制、执行谱分析流程并生成机器可读结果，语言层则基于硬件边界进行上下文锚定。该设计有效避免了对低通道EEG数据的过度解读，为可穿戴和便携式脑电设备的自动化可靠分析提供了新途径。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.26518v1",
+      "source": "arxiv",
+      "title": "NeuraDock Visual Cognitive Load Agent Tutorial: A Quality-Gated Open-Source EEG Workflow for Alpha Dynamics and Real-Time Applications",
+      "abstract": "This tutorial paper provides a step-by-step, reproducible walkthrough of NeuraDock Agent, an open-source EEG agent focused on Alpha dynamics and visual cognitive-load analysis. The goal is practical: a reader should be able to install the agent, run EEG preprocessing and quality control, generate Alpha dynamics figures, perform within-subject Rest/Task visual cognitive-load comparison, run the public mini-dataset analyses and compare them with the reference validation summary, start an online dashboard, call the real-time API from an external application, and use the LLM interpretation layer to explain quality risks. Existing EEG toolkits provide excellent offline analysis, but assembling a real-time, quality-gated cognitive-load pipeline often requires manually bridging acquisition, custom QC, Alpha feature extraction, and a web API; this tutorial closes that offline-to-online gap. The tutorial uses a quality-gated workflow: downstream Alpha and workload metrics are computed only after preprocessing and QC gating rather than directly from raw EEG. In the included mini-dataset validation, the agent processed 18 recordings, generated 10 within-subject comparisons, observed task-related posterior Alpha suppression in 7 of 10 contrasts, estimated initial evidence of within-subject repeatability, and benchmarked local online API latency. The tutorial is intended for researchers, developers, and applied teams who want a transparent path from EEG files to real-time visual cognitive-load prototypes.",
+      "authors": [
+        "Zhiyuan Xu",
+        "Yueqing Dai",
+        "Junling Li",
+        "Junwen Luo"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-25T01:44:51+00:00",
+      "link": "https://arxiv.org/pdf/2606.26518v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "open-source EEG workflow for alpha dynamics and visual cognitive-load analysis",
+      "llm_evidence_cn": "面向Alpha动力学的开源EEG工作流，用于视觉认知负荷分析",
+      "llm_evidence": "面向Alpha动力学的开源EEG工作流，用于视觉认知负荷分析",
+      "canonical_evidence": "面向Alpha动力学的开源EEG工作流，用于视觉认知负荷分析",
+      "llm_tldr_en": "NeuraDock provides a reproducible open-source EEG pipeline for analyzing alpha dynamics during visual cognitive load tasks, including preprocessing, quality control, rest/task comparison, and real-time applications, facilitating accessible spectral power analysis.",
+      "llm_tldr_cn": "该教程提供了NeuraDock Agent的开源EEG工作流，专注于Alpha动力学和视觉认知负荷分析。它包含预处理、质量控制、静息/任务对比、实时API和LLM解释层，使研究人员能够复现阿尔法振荡分析。该工具降低了脑电频谱分析的技术门槛，有助于在认知任务中可靠地提取神经动力学特征，对认知神经科学研究具有方法学贡献。",
+      "llm_tldr": "该教程提供了NeuraDock Agent的开源EEG工作流，专注于Alpha动力学和视觉认知负荷分析。它包含预处理、质量控制、静息/任务对比、实时API和LLM解释层，使研究人员能够复现阿尔法振荡分析。该工具降低了脑电频谱分析的技术门槛，有助于在认知任务中可靠地提取神经动力学特征，对认知神经科学研究具有方法学贡献。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
