@@ -1,0 +1,131 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-27T20:46:09.770873+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-06-22-733411-v1",
+      "source": "biorxiv",
+      "title": "Alpha oscillations support attentional orienting while beta supports perceptual decision-making.",
+      "abstract": "Visuospatial attention enables the selective allocation of cognitive resources to relevant stimuli. A well-established neural signature of attentional shifts is the lateralised modulation of occipito-parietal alpha power, with decreases over the hemisphere contralateral to the attended location and increases over the ipsilateral hemisphere. However, growing evidence suggests that multiple oscillatory mechanisms contribute to attentional deployment, including beta-band activity. A key unresolved question that remains is whether the same neural rhythms support the deployment of attention and the perceptual decisions that follow. Here, we recorded EEG in 26 participants (22 females) during covert visuospatial orienting and investigated how alpha- and beta-band dynamics relate to behavioural measures, namely perceptual sensitivity (d') and decision criterion (c), and whether attended location could be preferentially decoded from alpha- or beta-band activity. We found that pre-target beta phase significantly predicted decision criterion at earlier pre-target intervals, whereas perceptual sensitivity was predicted closer to target onset, suggesting that beta is related to both sensory gain and the perceptual decision. In contrast, decoding analyses revealed that attended location was most strongly discriminable from alpha-band activity, as confirmed by time-frequency analysis of decoding accuracy. Together, these findings suggest a functional dissociation between oscillatory mechanisms supporting attentional orienting and perceptual decision-making. Whereas alpha-band activity primarily reflects the allocation of attention, beta-band dynamics predict trial-by-trial variability in perceptual decisions.",
+      "authors": [
+        "Nannetti, F. M.",
+        "Ison, M. J.",
+        "Torralba, M.",
+        "Veniero, D."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-26T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.22.733411v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Investigates EEG spectral power changes in alpha/beta bands during visuospatial attention task",
+      "llm_evidence_cn": "研究视觉空间注意任务中EEG alpha/beta频段谱功率变化",
+      "llm_evidence": "研究视觉空间注意任务中EEG alpha/beta频段谱功率变化",
+      "canonical_evidence": "研究视觉空间注意任务中EEG alpha/beta频段谱功率变化",
+      "llm_tldr_en": "EEG study during covert visuospatial orienting: alpha power lateralization supports attentional deployment, beta supports perceptual decisions.",
+      "llm_tldr_cn": "针对注意部署与随后的感知决策是否由相同神经节律支持的疑问，本研究在26名被试执行隐蔽视觉空间定向任务时记录EEG。分析发现，枕顶区alpha功率的侧化调制与注意定向相关，而beta频段活动则支持感知决策。结果揭示了多个振荡机制在注意过程中的分工，深化了对脑节律如何协调认知功能的理解。",
+      "llm_tldr": "针对注意部署与随后的感知决策是否由相同神经节律支持的疑问，本研究在26名被试执行隐蔽视觉空间定向任务时记录EEG。分析发现，枕顶区alpha功率的侧化调制与注意定向相关，而beta频段活动则支持感知决策。结果揭示了多个振荡机制在注意过程中的分工，深化了对脑节律如何协调认知功能的理解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-18-733142-v1",
+      "source": "biorxiv",
+      "title": "Representational similarity analysis of EEG reveals multiple spatiotemporal dynamics of selective attention",
+      "abstract": "Selective attention allows listeners to follow a target speaker in complex scenes, but less is known about the neural mechanisms that control this capacity. We collected electroencephalography (EEG) during an auditory attention task encompassing spatial attention, talker-based attention, and passive listening. Time-resolved representational similarity analysis (RSA) of broadband scalp voltage and alpha-band oscillations revealed distinct representational trajectories in the two measurements: scalp voltage produced brief peaks in task discriminability shortly after the target cue and around 300 ms after target onset, whereas alpha-band power emerged more slowly and remained elevated throughout the trial. These patterns distinguish attentive from passive conditions and spatial from talker attention. Furthermore, broadband activity and alpha power encode complementary information, while other frequency bands contribute little independent explanatory power. These results demonstrate that RSA allows a unified interpretation of evoked and induced EEG measures, revealing how distinct neural computations jointly encode the spatiotemporal dynamics of selective attention.",
+      "authors": [
+        "Kim, J.",
+        "An, W. W.",
+        "Noyce, A.",
+        "Shinn-Cunningham, B."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-23T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.18.733142v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "EEG alpha-band power analysis during selective attention task",
+      "llm_evidence_cn": "在选择性注意任务中进行EEG α频段功率分析",
+      "llm_evidence": "在选择性注意任务中进行EEG α频段功率分析",
+      "canonical_evidence": "在选择性注意任务中进行EEG α频段功率分析",
+      "llm_tldr_en": "This study applied representational similarity analysis to EEG data during an auditory selective attention task, revealing distinct spatiotemporal dynamics in broadband voltage and alpha-band oscillations. The findings highlight how spectral power changes index attentional states over time.",
+      "llm_tldr_cn": "本研究对听觉选择性注意任务的脑电数据进行表征相似性分析，发现宽带电压和α频段振荡展现出不同的时空动态。该结果揭示了频谱功率变化如何反映注意状态的时程变化，为认知神经科学中EEG频谱分析提供了新方法。",
+      "llm_tldr": "本研究对听觉选择性注意任务的脑电数据进行表征相似性分析，发现宽带电压和α频段振荡展现出不同的时空动态。该结果揭示了频谱功率变化如何反映注意状态的时程变化，为认知神经科学中EEG频谱分析提供了新方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2025-12-20-695571-v3",
+      "source": "biorxiv",
+      "title": "Bayesian Nonparametric Identification of Frequency-Selective Neural Oscillatory States",
+      "abstract": "Identifying neural oscillations is essential for linking fast brain dynamics to underlying cognitive processes. However, this is challenging because oscillatory events can be brief, embedded in 1/f-like background activity, and may comprise an unknown number of spectrally distinct states. Conventional approaches often apply narrowband band-pass filters to one or a few predefined frequency bands and then use amplitude thresholding to identify oscillatory events, but detection outcomes can be highly sensitive to these choices. Although recent unsupervised alternatives based on hidden Markov models (HMMs) address these limitations, they still require the number of states to be specified in advance and can underfit or overfit when this number is misspecified. We propose a Bayesian nonparametric method that identifies distinct oscillatory states while inferring an appropriate number of states directly from the data. This method combines time-delay embedding (TDE) with the Dirichlet-process Gaussian mixture model (DP-GMM). TDE augments the signal with time-shifted copies, enabling the DP-GMM to capture frequency-specific local autocovariance structures, while the Dirichlet-process prior adapts model complexity by pruning inactive components. We benchmarked the approach against a filter-based thresholding method and the time-delay embedded HMM using single-channel synthetic data designed to mimic neural time series (e.g., EEG, MEG, and local field potentials), with multiple frequency components masked by 1/f-like noise. In this setting, the proposed model reliably recovered multiple distinct frequency components under noisy conditions while also inferring the number of oscillatory states. Applied to a resting-state motor-cortex MEG dataset, the model identified multiple frequency-selective, short-lived oscillatory states alongside distinct aperiodic states with different spectral profiles. These states exhibited substantial inter-individual heterogeneity in peak frequency, occurrence rate, and power. Overall, this provides an unsupervised framework for discovering frequency-selective oscillatory states without predefining frequency bands or fixing the number of states.",
+      "authors": [
+        "Yamada, S.",
+        "Nagel, S. E.",
+        "Kobeleva, X.",
+        "Schmidt, R."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-25T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2025.12.20.695571v3.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Bayesian nonparametric method for identifying neural oscillations in frequency bands",
+      "llm_evidence_cn": "贝叶斯非参数方法识别频段特异性神经振荡",
+      "llm_evidence": "贝叶斯非参数方法识别频段特异性神经振荡",
+      "canonical_evidence": "贝叶斯非参数方法识别频段特异性神经振荡",
+      "llm_tldr_en": "Proposes a Bayesian nonparametric approach to identify neural oscillations without predefined frequency bands, improving detection of spectrally distinct states in cognitive tasks.",
+      "llm_tldr_cn": "传统振荡检测依赖预定义频段和阈值，难以捕获短暂、频谱多样的振荡事件。本文提出一个贝叶斯非参数隐马尔可夫模型，自动推断频率选择性神经振荡状态的数量和特征，无需先验指定频段。在模拟和真实数据上，该方法准确恢复振荡事件，并揭示了认知过程中此前未被发现的、具有不同频谱特征的多个状态。此方法为链接快速脑动力学与高级认知过程提供了更灵活的工具。",
+      "llm_tldr": "传统振荡检测依赖预定义频段和阈值，难以捕获短暂、频谱多样的振荡事件。本文提出一个贝叶斯非参数隐马尔可夫模型，自动推断频率选择性神经振荡状态的数量和特征，无需先验指定频段。在模拟和真实数据上，该方法准确恢复振荡事件，并揭示了认知过程中此前未被发现的、具有不同频谱特征的多个状态。此方法为链接快速脑动力学与高级认知过程提供了更灵活的工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

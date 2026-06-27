@@ -6,35 +6,31 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-26
-- 运行时间：2026-06-26 21:06:14 UTC
+- 最新运行日期：2026-06-27
+- 运行时间：2026-06-27 20:47:30 UTC
 - 运行状态：成功
-- 本次总论文数：5
-- 精读区：2
-- 速读区：3
+- 本次总论文数：3
+- 精读区：1
+- 速读区：2
 
 ### 今日简报（AI）
-今日聚焦脑科学与AI交叉研究：用脑电图看清中学生如何与AI互动学习，并拆解大脑“多任务中枢”的任务特异性。最值得关注大脑-视觉对齐的多视图神经表征，以及质量把关的实时脑电开源工作流。建议从NeuraDock教程入手，上手低门槛脑机实验。
-- 详情：[/202606/26/README](/202606/26/README)
+今日精读1篇、速读2篇，聚焦注意与决策背后的神经振荡分工。
+核心发现：Alpha振荡支撑注意定向，Beta振荡驱动知觉决策，选择性注意呈现多时空动态特征。
+建议关注如何将特定频段振荡特征转化为注意力训练或脑机接口的优化信号。
+- 详情：[/202606/27/README](/202606/27/README)
 
 ### 精读区论文标签
-1. [An exploratory behavioral and electroencephalographic study of artificial intelligence-assisted learning modes in high school students](/202606/26/2606.26579v1-an-exploratory-behavioral-and-electroencephalographic-study-of-artificial-intelligence-assisted-learning-modes-in-high-school-students)  
+1. [Alpha oscillations support attentional orienting while beta supports perceptual decision-making.](/202606/27/biorxiv-10-64898-2026-06-22-733411-v1-alpha-oscillations-support-attentional-orienting-while-beta-supports-perceptual-decision-making)  
    标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：在AI辅助认知任务中记录额叶EEG频谱活动
-2. [Decomposition of task-specific responses in the multiple demand network](/202606/26/biorxiv-10-64898-2026-06-21-732474-v1-decomposition-of-task-specific-responses-in-the-multiple-demand-network)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：刻画了支撑执行控制并包含内侧前额叶的多需求网络的功能细分
+   evidence：研究视觉空间注意任务中EEG alpha/beta频段谱功率变化
 
 ### 速读区论文标签
-1. [What Does the Brain See? Multiview Neural Representations to Demystify the Brain-Visual Alignment](/202606/26/2606.25718v1-what-does-the-brain-see-multiview-neural-representations-to-demystify-the-brain-visual-alignment)  
+1. [Representational similarity analysis of EEG reveals multiple spatiotemporal dynamics of selective attention](/202606/27/biorxiv-10-64898-2026-06-18-733142-v1-representational-similarity-analysis-of-eeg-reveals-multiple-spatiotemporal-dynamics-of-selective-attention)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：提出含可学习小波频谱分解的多视图EEG框架用于视觉解码
-2. [NeuraDock Visual Cognitive Load Agent Tutorial: A Quality-Gated Open-Source EEG Workflow for Alpha Dynamics and Real-Time Applications](/202606/26/2606.26518v1-neuradock-visual-cognitive-load-agent-tutorial-a-quality-gated-open-source-eeg-workflow-for-alpha-dynamics-and-real-time-applications)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：面向Alpha动力学的开源EEG工作流，用于视觉认知负荷分析
-3. [Boundary-Aware Context Grounding for A Low-Channel EEG Agent](/202606/26/2606.26519v1-boundary-aware-context-grounding-for-a-low-channel-eeg-agent)  
+   evidence：在选择性注意任务中进行EEG α频段功率分析
+2. [Bayesian Nonparametric Identification of Frequency-Selective Neural Oscillatory States](/202606/27/biorxiv-10-64898-2025-12-20-695571-v3-bayesian-nonparametric-identification-of-frequency-selective-neural-oscillatory-states)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：NeuraDock智能体在EEG上执行复核的谱工作流，可实现相对功率谱分析
+   evidence：贝叶斯非参数方法识别频段特异性神经振荡
 
 
 <div class="dpr-home-promo-card">
