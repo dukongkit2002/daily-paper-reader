@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-28",
+  "date": "2026-06-28",
+  "generated_at": "2026-06-28T21:22:46",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/28/biorxiv-10-64898-2026-06-19-733380-v1-characterizing-load-dependent-changes-in-whole-brain-activity-patterns-during-an-extended-n-back-task",
+      "section": "deep",
+      "title_en": "Characterizing load-dependent changes in whole-brain activity patterns during an extended N-back task",
+      "authors": "Chiyohara, S., Asai, T., Hiromitsu, K., Imamizu, H.",
+      "date": "2026-06-24",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.19.733380v1.full.pdf",
+      "score": "8.0",
+      "evidence": "fMRI研究，利用扩展N-back任务考察不同工作记忆负荷下的全脑活动，直接关联mPFC在执行功能中的作用。",
+      "tldr": "以往N-back任务研究多限于低负荷，全脑活动模式在更广负荷下如何重构不清楚。本研究采用扩展N-back任务（0至7-back），通过相对激活图与Yeo 7网络模板及Neurosynth语义图进行空间相似性分析。结果显示，低负荷与默认模式网络相似，中负荷与背侧注意/额顶网络相似最高，高负荷时默认网络部分重现并伴随显著性网络参与；行为上d'非线性下降，反应时倒U型。该发现揭示了负荷依赖的全脑网络非线性重构，并为评估认知负荷下脑状态提供新分析方法。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Working memory (WM) is a core cognitive function that supports goal-directed behavior by temporarily maintaining and manipulating information. One of the most widely used paradigms for investigating WM function is the N-back task, and numerous neuroimaging studies have examined load-dependent neural responses using a variety of analytical approaches. However, most previous studies have focused on low-to-moderate load ranges (primarily 0-3-back), and it remains unclear how whole-brain activity patterns reconfigure across a broader range of WM demands, including conditions approaching capacity limits. In the present study, we investigated behavioral performance and whole-brain activity patterns across an extended N-back task ranging from 0-back to 7-back. Behavioral analyses revealed that discrimination sensitivity (d') decreased nonlinearly with increasing WM load, whereas reaction time (RT) exhibited an inverted-U pattern, peaking at intermediate load conditions. To characterize load-dependent whole-brain activity patterns, we computed relative activation maps by subtracting the participant-wise mean activation map across all conditions from each condition-specific activation map. Spatial similarity analyses with the Yeo 7-network templates revealed that low-load conditions showed relatively high similarity to default mode network (DMN)-related patterns. Similarity to the dorsal attention network (DAN) and frontoparietal network (FPN) was maximal at intermediate load levels, indicating load-dependent changes in network similarity profiles. High-load conditions were characterized by partial re-emergence of DMN-related patterns, accompanied by reduced DAN/FPN similarity. In addition, semantic similarity analysis using Neurosynth-derived semantic maps revealed relatively high similarity to default mode-related and self-referential representations under low-load conditions. Intermediate-load conditions showed strong correspondence with working memory- and executive control-related representations, whereas high-load conditions exhibited increased similarity to salience-, aversive/interoceptive-, and inhibitory-control-related representations. Together, these findings suggest that increasing WM load is associated not merely with stronger activation, but with changes in whole-brain activity patterns accompanied by nonlinear changes in network similarity profiles across levels of cognitive demand. Furthermore, the relative activation map-based whole-brain pattern analysis used in this study may provide a useful approach for evaluating changes in whole-brain state representations associated with cognitive load.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
