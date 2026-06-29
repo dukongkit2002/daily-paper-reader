@@ -1,0 +1,54 @@
+{
+  "label": "2026-06-29",
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T21:22:56",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202606/29/biorxiv-10-64898-2026-06-25-734414-v1-frontotemporal-cortex-flexibly-adapts-latent-structural-representations",
+      "section": "deep",
+      "title_en": "Frontotemporal cortex flexibly adapts latent structural representations",
+      "authors": "Tertikas, G., Trudel, N., Klein-Flugge, M., Hauser, T. U.",
+      "date": "2026-06-28",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.25.734414v1.full.pdf",
+      "score": "9.0",
+      "evidence": "前内侧额叶皮层（amFC，属mPFC）编码新推断的关联，显示mPFC在灵活结构表征中的核心作用",
+      "tldr": "人类通过形成抽象结构表征灵活导航复杂环境，但大脑如何动态重构这些内部模型仍不清楚。本研究使用新型推理任务与fMRI重复抑制，发现内侧眶额皮层（mOFC）编码稳定关系，变化触发海马与前额叶暂态表征；新推断关联由前内侧额叶（amFC）编码并迁移至mOFC，过时关联则暂态激活额极皮层和海马，海马保留记忆痕迹。早期新异信号强度可预测个体行为适应差异，揭示了人脑自适应结构重构机制，对理解精神疾病认知僵化有重要意义。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Humans excel at navigating complex environments by forming abstract structural representations that can be flexibly updated when environments change. Here, we examine how the brain dynamically reconfigures these internal models in response to covert changes in latent hierarchies. Using a novel inference task and fMRI repetition suppression, we find that stable relational knowledge is encoded in medial orbitofrontal cortex (mOFC), while structural changes trigger transient representations across hippocampal and prefrontal regions. Newly inferred associations are first encoded in anterior medial frontal cortex (amFC) and migrate ventrally to mOFC when settling. In contrast, outdated associations transiently engage frontopolar cortex and hippocampus, with the hippocampus, but not frontal areas, retaining a residual memory trace. Notably, the strength of early novel signals in amFC and hippocampus tracks individual differences in behavioural adaptation. Together, these results characterise mechanisms supporting adaptive structural reconfiguration in the human brain, with implications for cognitive inflexibility in psychiatric disorders.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/29/biorxiv-10-64898-2026-06-24-734402-v1-hierarchical-predictive-processing-during-natural-reading",
+      "section": "quick",
+      "title_en": "Hierarchical Predictive Processing during Natural Reading",
+      "authors": "Chan, L., Dimigen, O., Gagl, B., Maurer, U.",
+      "date": "2026-06-28",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.24.734402v1.full.pdf",
+      "score": "7.0",
+      "evidence": "通过同步EEG和眼动追踪研究阅读理解的层级预测加工。",
+      "tldr": "阅读的神经机制，尤其在句子与文本层面，仍未阐明。层次预测理论提出大脑在语境、词汇、正字法等多层级主动生成预测，并通过预测误差更新内部模型。本研究通过自然阅读结合同步脑电图与眼动的记录，发现三种预测误差信号存在且时间分离，且高层语境预测能快速约束低层正字法预测。这为自然阅读中的层次预测编码提供了直接电生理证据，并揭示了预测加工在高效语言理解中的核心作用。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Key neural mechanisms underlying reading, especially in the context of sentences and texts, remain elusive. An influential theory states that the brain rapidly generates a hierarchy of probabilistic predictions about upcoming words at multiple levels of linguistic representation. When encountering a word, a reader integrates sensory input with the linguistic predictions, and rely on the resulting prediction error signals to achieve efficient comprehension. Here, we tested this hierarchical predictive account with a natural reading task while EEG and eye movements were simultaneously recorded. We find distinct prediction error signals attributable to word contextual, lexical, and orthographic levels of predictions. These prediction error signals exhibit a temporal order. Our results also indicate that context-based predictions rapidly constrain orthographic-level predictions. We thus provide evidence for a hierarchical predictive process central to efficient natural reading.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/29/biorxiv-10-1101-2025-10-23-684150-v2-dynamic-and-task-dependent-decoding-of-the-human-attentional-spotlight-from-meg",
+      "section": "quick",
+      "title_en": "Dynamic and task-dependent decoding of the human attentional spotlight from MEG",
+      "authors": "Mostafalu, M., Clausner, T., Ferez, M., Shelepenkov, D., Daligault, S., Schwartz, D., Mattout, J., Ben Hamed, S., Bonnefond, M.",
+      "date": "2026-06-24",
+      "pdf": "https://www.biorxiv.org/content/10.1101/2025.10.23.684150v2.full.pdf",
+      "score": "6.0",
+      "evidence": "使用MEG基于alpha/theta功率解码注意焦点，揭示任务依赖的频谱动态，与EEG认知任务频谱分析同类",
+      "tldr": "大脑通过注意力克服并行处理限制，但其空间焦点如何随任务需求动态变化且能否被非侵入解码尚不清楚。本研究采用高精度脑磁图(MEG)与机器学习，在三项不同有效性及切换规则的空间线索任务中解码隐蔽注意定位。解码性能显著，且随线索有效性降低而下降；注意呈现~8-12 Hz节律性采样，预目标期注意聚焦于提示侧，尤以100%有效条件为甚；个体解码强度与辨别正确率和反应时等行为表现相关。结果证实MEG可非侵入捕获任务依赖的动态注意波动，为注意机制研究及神经反馈等临床应用提供了新途径。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Attention is a fundamental mechanism enabling the brain to overcome its limited capacity for parallel processing. In non-human primates, invasive electrophysiology has shown that attentional selection operates rhythmically, primarily within the alpha ([~]8-12 Hz) and theta ([~]4-5 Hz) bands. Whether such finely resolved control signals can be captured non-invasively in humans, and how they adapt to changing task demands, remains unclear. Using high-precision magnetoencephalography (MEG) combined with machine learning, we decoded the spatial locus of covert attention in humans performing three variants of a spatial cueing task that manipulated cue validity as well invalid trial switching rules.\n\nSpatial attention could be decoded from whole-brain MEG activity at both static and time-resolved scales, with accuracies significantly above chance (N = 30). Decoding performance decreased as cue validity was reduced, indicating that task structure shapes attentional engagement. Analysis of decoding trajectories revealed rhythmic fluctuations at [~]8-12 Hz across all tasks, demonstrating alpha-band sampling of attention. Pre-target attention became increasingly focused on the cued side, especially in the 100% Valid condition, consistent with proactive orienting. Furthermore, individual and task-specific differences in decoding strength correlated with task-variations in behavioral performance, linking the accuracy of neural attention codes to both discrimination accuracy and reaction time.\n\nThese findings demonstrate that MEG can non-invasively capture dynamic, task-dependent fluctuations in spatial attention that parallel those observed in non-human primates. They reveal that attentional demands reshape the neural code for attention, modulate rhythmic sampling, and influence behavioral efficiency. This work bridges invasive primate and non-invasive human research and establishes MEG-based decoding of attention as a promising tool for mechanistic and clinical applications, including neurofeedback and attention-related interventions.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

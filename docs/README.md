@@ -6,26 +6,31 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-28
-- 运行时间：2026-06-28 21:22:31 UTC
+- 最新运行日期：2026-06-29
+- 运行时间：2026-06-29 21:22:47 UTC
 - 运行状态：成功
-- 本次总论文数：1
+- 本次总论文数：3
 - 精读区：1
-- 速读区：0
+- 速读区：2
 
 ### 今日简报（AI）
-今日精读：延长N-back任务如何重塑全脑活动模式？一篇8分研究揭示了认知负荷驱动的动态脑网络变化。
-最值得关注：全脑活动模式随记忆负荷增加呈现规律性重组，为理解工作记忆的神经资源调配提供了新视角。
-想挑战大脑？你可以从双任务N-back做起，这种训练或能帮你直观感受认知负荷对思维状态的影响。
-- 详情：[/202606/28/README](/202606/28/README)
+今日精读揭示额颞叶皮层如何灵活调整潜在结构表征，同时速览自然阅读中的预测加工与注意焦点解码。  
+最值得关注方向：大脑额颞区对隐藏结构的动态编码机制，以及自然阅读下预测加工的分层运作。  
+建议读者深入追踪“灵活表征”论文，并结合阅读实验理解脑如何实时构建意义。
+- 详情：[/202606/29/README](/202606/29/README)
 
 ### 精读区论文标签
-1. [Characterizing load-dependent changes in whole-brain activity patterns during an extended N-back task](/202606/28/biorxiv-10-64898-2026-06-19-733380-v1-characterizing-load-dependent-changes-in-whole-brain-activity-patterns-during-an-extended-n-back-task)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：fMRI研究，利用扩展N-back任务考察不同工作记忆负荷下的全脑活动，直接关联mPFC在执行功能中的作用。
+1. [Frontotemporal cortex flexibly adapts latent structural representations](/202606/29/biorxiv-10-64898-2026-06-25-734414-v1-frontotemporal-cortex-flexibly-adapts-latent-structural-representations)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：前内侧额叶皮层（amFC，属mPFC）编码新推断的关联，显示mPFC在灵活结构表征中的核心作用
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Hierarchical Predictive Processing during Natural Reading](/202606/29/biorxiv-10-64898-2026-06-24-734402-v1-hierarchical-predictive-processing-during-natural-reading)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：通过同步EEG和眼动追踪研究阅读理解的层级预测加工。
+2. [Dynamic and task-dependent decoding of the human attentional spotlight from MEG](/202606/29/biorxiv-10-1101-2025-10-23-684150-v2-dynamic-and-task-dependent-decoding-of-the-human-attentional-spotlight-from-meg)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：使用MEG基于alpha/theta功率解码注意焦点，揭示任务依赖的频谱动态，与EEG认知任务频谱分析同类
 
 
 <div class="dpr-home-promo-card">
