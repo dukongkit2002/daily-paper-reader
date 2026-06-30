@@ -1,0 +1,54 @@
+{
+  "label": "2026-06-30",
+  "date": "2026-06-30",
+  "generated_at": "2026-06-30T20:53:36",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202606/30/2606.27529v1-modelling-chronic-stress-as-an-excitatory-inhibitory-perturbation-in-recurrent-working-memory-networks",
+      "section": "deep",
+      "title_en": "Modelling chronic stress as an excitatory-inhibitory perturbation in recurrent working-memory networks",
+      "authors": "Mauricio A Diaz, Manuela A. Beyer, Janina Hesse",
+      "date": "2026-06-25",
+      "pdf": "https://arxiv.org/pdf/2606.27529v1",
+      "score": "8.0",
+      "evidence": "建模前额叶锥体神经元网络执行工作记忆任务，研究压力导致的兴奋-抑制失衡",
+      "tldr": "慢性压力导致前额叶皮层兴奋-抑制平衡偏向抑制优势，引发认知功能障碍，但其机制仍不清楚。本研究将慢性压力建模为循环工作记忆网络中突触强度或神经活动的扰动，系统比较八种候选操作。结果表明，增强抑制性至兴奋性突触强度是唯一重现抑制优势、兴奋低下和任务受损三种压力特征的操作。弹性训练能维持任务绩效与动态子空间，但丧失泛化能力，呈现专业化解决方案，类似动物慢性压力后僵化习惯行为。这一弹性-泛化权衡在压力强度和网络规模上均稳定存在，表明压力可能通过改变E/I突触可塑性驱动认知模式转变，为理解精神疾病风险提供了新视角。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Stress is an adaptive response coordinated by neural and physiological systems. While acute stress can enhance survival, chronic stress drives structural brain changes, cognitive dysfunction, and increased psychiatric risk. At the cellular level, chronic stress shifts the excitatory-inhibitory (E/I) balance of prefrontal pyramidal neurons toward inhibitory dominance, yet the mechanisms underlying these alterations are still unknown. We here investigate possible mechanisms causing inhibitory dominance using recurrent neuronal networks trained on a working memory task. Chronic stress is modelled as a modulation in synaptic strength or neuronal activity, systematically comparing eight candidate operators against three experimentally motivated signatures of stress-induced prefrontal dysfunction: inhibitory dominance, excitatory hypofunction, and impaired task performance. These signatures are all recovered by a single stress mechanism, stronger inhibitory-to-excitatory synapses. Contrasting naive networks with resilient networks trained under the stress mechanism, we find that resilience training not only preserves task performance under stress, but also confines the network to the same dynamical subspace and energetic regime with and without stress. This resilience comes at a cost: resilient networks generalise less well when the task requires longer memory than seen during training, indicating that resilient networks find a specialised solution tuned to the trained regime. This trade-off between resilience and generalization performance persists across stress magnitude and network size, offering a computational analogue of the shift toward rigid, habit-like behaviour reported in animal following chronic stress.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/30/biorxiv-10-64898-2026-06-22-733876-v1-rhythmic-replay-of-short-term-memory-neural-patterns-revealed-by-time-resolved-error-prediction",
+      "section": "quick",
+      "title_en": "Rhythmic replay of short-term memory neural patterns revealed by time-resolved error prediction",
+      "authors": "Syrov, N., Schmidt, S., Rademacher, R., Kobeleva, X.",
+      "date": "2026-06-28",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.22.733876v1.full.pdf",
+      "score": "7.0",
+      "evidence": "在记忆编码过程中，EEG theta节律的功率谱分析预测回忆错误",
+      "tldr": "短时记忆编码保真度是否受theta节律调控尚不清楚。本研究采用EEG与时间分辨多变量模式分析，通过工作记忆任务中编码期神经活动预测连续回忆误差，发现额顶叶theta和beta频段活动预测呈节律性波动，不受记忆负荷调节。跨时间泛化表明相同神经模式在编码与维持期周期重现，构成波动基础；且预测波动在空间位置和特征上存在时间偏移。结果揭示STM编码是一个节律性、循环的过程，为行为theta节律现象提供了分布式神经机制。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Theta oscillations are thought to provide a temporal scaffold for short-term memory (STM), organizing item encoding and maintenance into successive phases to reduce representational conflict. Whether this rhythm also determines encoding fidelity, that is, how precisely items are encoded in human cortical activity, remains unclear. Here, we show that STM encoding fidelity fluctuates rhythmically at theta frequency. EEG was recorded while participants encoded arrays of colored, oriented objects under two memory loads and, after a delay, reported the features of a retrospectively cued item on a continuous scale. Using time-resolved multivariate pattern analysis, we predicted subsequent recall error from encoding- and maintenance-period activity. Fronto-parietal theta- and beta-band activity predicted subsequent memory error. This prediction was not sustained but fluctuated at theta frequency and was not modulated by memory load. Cross-temporal generalization indicated that the same neural pattern recurred across encoding and maintenance, underlying the rhythmic fluctuations in memory-error prediction. Prediction fluctuations were temporally offset across spatial positions and object features. These findings characterize STM encoding as a rhythmic, recurrent process and link behavioral theta fluctuations to a distributed neural mechanism.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/30/2606.30104v1-temporal-feature-extractors-in-eeg-foundation-models-a-controlled-comparison-including-a-pretrained-time-series-model",
+      "section": "quick",
+      "title_en": "Temporal Feature Extractors in EEG Foundation Models: A Controlled Comparison Including a Pretrained Time-Series Model",
+      "authors": "Ayşe Betül Yüce, Chris Joey Leffler, Sarun Varghese, Myra Spiliopoulou, Sebastian Stober",
+      "date": "2026-06-29",
+      "pdf": "https://arxiv.org/pdf/2606.30104v1",
+      "score": "6.0",
+      "evidence": "比较针对认知任务EEG基础模型的时序特征提取策略",
+      "tldr": "EEG基础模型中的时间特征提取器选择缺乏系统比较，预训练时间序列模型(TSFM)的迁移效果尚未验证。本研究在统一框架下对比线性、卷积和冻结的MOMENT预训练模型。在运动想象和情绪识别两任务上，发现简单线性或卷积特征在运动想象中已具竞争力，而情绪识别从更丰富的时间建模中获益；冻结的MOMENT表现良好。这表明通用时序表示可迁移为冻结提取器，为EEG基础模型设计提供新方案。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Electroencephalography (EEG) foundation models aim to learn generalizable representations from large-scale brain recordings. However, the role of temporal feature extractors and whether pretrained time-series foundation models (TSFMs) can be effectively transferred to this setting remains underexplored. We conduct a controlled comparison of three temporal feature extraction strategies, including a linear baseline, a convolutional encoder, and a frozen pretrained TSFM (MOMENT), within a unified EEG foundation model. We evaluate their impact on representation quality using two downstream tasks: motor imagery and emotion recognition. Results reveal different trends across the evaluated benchmarks. On the motor imagery dataset, simple temporal representations perform competitively, whereas the emotion dataset benefits from richer temporal modeling. Although not specifically adapted to EEG, the pretrained TSFM serves as an effective temporal feature extractor, suggesting that general-purpose time-series representations can be transferred as frozen temporal feature extractors within EEG foundation models.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
