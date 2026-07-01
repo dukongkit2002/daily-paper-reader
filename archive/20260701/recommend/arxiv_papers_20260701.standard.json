@@ -1,0 +1,99 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-01T21:41:17.960832+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2606.30879v1",
+      "source": "arxiv",
+      "title": "Neural Signatures of Programming Expertise: Classifying Programmer Skill Levels Using EEG Data",
+      "abstract": "Accurately assessing a programmer's skill level is critical for hiring, team composition, and performance evaluation in the software industry. Conventional methods, such as coding tests or interviews, often fail to capture the full spectrum of cognitive abilities underlying programming expertise. This study explores using electroencephalography (EEG) and machine learning to investigate neural correlates of programming skill. We analyzed an existing EEG dataset recorded during code comprehension from 37 programmers with 1 to 30 years of experience (8.1 +/- 6.3 years) to examine relationships between neural activity and expertise. Additionally, we conducted classification experiments using Random Forest classifiers with diverse features for binary (experts vs. novices) and multi-class (experts, intermediates, novices) setups.We identified EEG features and brain regions associated with programming expertise. Specifically, EEG entropy showed the strongest correlation with skill level. Furthermore, experts' brains were characterized by highly localized centro-frontal activation, whereas frontal activation in other groups was part of a more distributed network. Regarding classification, our setup achieved an average accuracy of 91.83% (binary) and 78.15% (multi-class) in stratified 10-fold cross-validation, while leave-one-subject-out validation achieved 85.00% and 58.80%, respectively. Individual frequency bands outperformed full-spectrum analyses, and both program comprehension and resting-state data yielded strong results. These findings demonstrate that EEG features effectively capture neural correlates across different skill levels and highlight the potential of neural data to complement traditional methods of skill assessment.",
+      "authors": [
+        "Maurice Rekrut",
+        "Mahima Mahabaleshwar Acharya",
+        "Taisiia Ulianova",
+        "Norman Peitek",
+        "Annabelle Bergum",
+        "Mariya Toneva",
+        "Sven Apel",
+        "Antonio Krüger"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-06-29T20:10:54+00:00",
+      "link": "https://arxiv.org/pdf/2606.30879v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Uses EEG recordings during a cognitive task (code comprehension) to classify programmer skill levels, likely employing spectral power features.",
+      "llm_evidence_cn": "在认知任务（代码理解）中使用EEG记录对程序员技能水平进行分类，很可能利用了谱功率特征。",
+      "llm_evidence": "在认知任务（代码理解）中使用EEG记录对程序员技能水平进行分类，很可能利用了谱功率特征。",
+      "canonical_evidence": "在认知任务（代码理解）中使用EEG记录对程序员技能水平进行分类，很可能利用了谱功率特征。",
+      "llm_tldr_en": "This paper explores EEG-based classification of programming skill using data from 37 programmers during code comprehension, demonstrating that neural signatures can distinguish skill levels, offering an objective complement to traditional assessments.",
+      "llm_tldr_cn": "本研究利用37名程序员在代码理解任务中的EEG数据，结合随机森林分类器，探讨编程技能的神经关联。结果表明，EEG特征能够区分不同技能水平的程序员，为传统的编程能力评估提供了客观的神经科学补充方法，有望在招聘和培训中应用。",
+      "llm_tldr": "本研究利用37名程序员在代码理解任务中的EEG数据，结合随机森林分类器，探讨编程技能的神经关联。结果表明，EEG特征能够区分不同技能水平的程序员，为传统的编程能力评估提供了客观的神经科学补充方法，有望在招聘和培训中应用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.26485v1",
+      "source": "arxiv",
+      "title": "Utilizing Cognitive Signals Generated during Human Reading to Enhance Keyphrase Extraction from Microblogs",
+      "abstract": "Microblogging platforms generate massive amounts of short, noisy, and dispersed user content, making automatic keyphrase extraction (AKE) an important but challenging task. Prior studies have used eye-tracking signals to improve microblog-based AKE because such signals reflect readers' attention to salient words. However, eye tracking alone is limited by physiological, acquisition, and feature-decoding constraints. To address this issue, we investigate whether electroencephalogram (EEG) signals can complement eye-tracking signals for AKE. Using the ZuCo cognitive language processing corpus, we select 8 EEG features and 17 eye-tracking features and incorporate them into microblog-based AKE models. To reduce possible distortion of cognitive signals by model structures, we inject these features into the input of the soft-attention layer and the query vectors of the self-attention layer. We then evaluate different combinations of cognitive signals across AKE models. The results show that cognitive signals produced during reading consistently improve AKE performance, regardless of feature combinations and model architectures. EEG features bring the largest gains, while combining EEG and eye-tracking features yields performance between the two individual signal types, suggesting partial complementarity but also possible redundancy or noise. These findings indicate that EEG signals provide useful cognitive evidence for microblog-based AKE and that multimodal cognitive signals deserve further investigation.",
+      "authors": [
+        "Xinyi Yan",
+        "Yingyi Zhang",
+        "Chengzhi Zhang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.DL",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "published": "2026-06-25T00:43:12+00:00",
+      "link": "https://arxiv.org/pdf/2606.26485v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Incorporates EEG features during reading to improve text understanding, bridging reading comprehension and EEG.",
+      "llm_evidence_cn": "在阅读过程中融入EEG特征以提升文本理解，建立阅读理解与EEG的桥梁",
+      "llm_evidence": "在阅读过程中融入EEG特征以提升文本理解，建立阅读理解与EEG的桥梁",
+      "canonical_evidence": "在阅读过程中融入EEG特征以提升文本理解，建立阅读理解与EEG的桥梁",
+      "llm_tldr_en": "This paper investigates using EEG signals during reading to enhance automatic keyphrase extraction from microblogs, complementing eye-tracking with EEG features.",
+      "llm_tldr_cn": "针对微短文本关键词提取的挑战，本研究利用阅读过程中的EEG信号，结合眼动特征，改进微博内容的关键词自动提取模型。通过在ZuCo语料库上选取8个EEG特征和17个眼动特征，有效降低了模态间冗余并提升了提取性能，展示了认知神经信号在语言理解任务中的增强作用。",
+      "llm_tldr": "针对微短文本关键词提取的挑战，本研究利用阅读过程中的EEG信号，结合眼动特征，改进微博内容的关键词自动提取模型。通过在ZuCo语料库上选取8个EEG特征和17个眼动特征，有效降低了模态间冗余并提升了提取性能，展示了认知神经信号在语言理解任务中的增强作用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
