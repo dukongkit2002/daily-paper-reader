@@ -1,0 +1,3213 @@
+Title: Characterization of aperiodic and theta activity in preterm infants using EEG: Insights into cerebral maturation and inter-individual variability
+
+URL Source: https://www.biorxiv.org/content/10.64898/2025.12.26.696574v2.full.pdf
+
+Published Time: Thu, 02 Jul 2026 21:52:57 GMT
+
+Number of Pages: 49
+
+Markdown Content:
+1
+
+Characterization of aperiodic and theta activity in preterm infants using EEG: 
+
+Insights into cerebral maturation and inter -individual variability 
+
+Aline Gonzalez -Carpinteiro 1,2 , Hala Nasser 3, Amandine Pedoux 4, Laurie Devisscher 1,2 ,
+
+Kunyan Cai 1,2 , Nicolas Elbaz 5, Chloé Ghozland 6, Léa Guéret 7, Sara Neumane 1,2 , Yann 
+
+Leprince 1,2 , Aline Lefebvre 4, Lucie Hertz -Pannier 1,2 , Alice Heneau 6, Alice Frérot 6, Olivier 
+
+Sibony 8, Catherine Delanoë 3, Marianne Barbu -Roth 7, Marianne Alison 1,5 , Richard Delorme 4,
+
+Valérie Biran 1,6 , Jessica Dubois 1,2 *, Parvaneh Adibpour 1,2,9 * 
+
+> 1.
+
+Université Paris Cité, INSERM, NeuroDiderot, F -75019 Paris, France  
+
+> 2.
+
+Université Paris Saclay, CEA, NeuroSpin, UNIACT, F -91191 Gif -sur -Yvette, France  
+
+> 3.
+
+Robert -Debré Hospital, Assistance Publique -Hôpitaux de Paris - APHP, Department of 
+
+Functional Explorations, F -75019 Paris France  
+
+> 4.
+
+Robert -Debré Hospital, Assistance Publique -Hôpitaux de Paris - APHP, Department of Child 
+
+and Adolescent Psychiatry, F -75019 Paris, France  
+
+> 5.
+
+Robert -Debré Hospital, Assistance Publique -Hôpitaux de Paris - APHP, Department of 
+
+Pediatric Radiology, F -75019 Paris, France  
+
+> 6.
+
+Robert -Debré Hospital, Assistance Publique -Hôpitaux de Paris  - APHP, Neonatal Intensive 
+
+Care Unit, F -75019 Paris, France  
+
+> 7.
+
+University of Paris -Cité, CNRS, Integrative Neuroscience and Cognition Center, F -75005 Paris, 
+
+France  
+
+> 8.
+
+Robert -Debré Hospital, Assistance Publique -Hôpitaux de Paris - APHP, Department of 
+
+Gynecology -Obstetrics, F -75019 Paris, France  
+
+> 9.
+
+Centre for the Developing Brain, Department of Early Life Imaging, School of Biomedical 
+
+Engineering & Imaging Sciences, King’s College London, London, UK 
+
+* co -last author 
+
+Corresponding author: Jessica Dubois 
+
+Email: jessica.dubois@inserm.fr 
+
+June 1st, 202 6
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+2
+
+Abstract 
+
+Disrupting critical processes of brain development, preterm birth interferes with the maturation 
+
+of brain networks and functional activity, including theta oscillations that are thought to play a 
+
+key role in early network formation. Traditional EEG spectra l analyses have indicated marked 
+
+development of theta power in early infancy, but these approaches mix oscillatory and non -
+
+oscillatory activity, limiting insights into the mechanisms underlying the neural changes. Using 
+
+spectral parameterization, we aimed to evaluate developmental changes in aperiodic activity 
+
+and periodic theta power in infants born very preterm compared to full -terms, and to further 
+
+explore whether clinical factors and brain microstructure could explain the inter -individual 
+
+variability wi thin preterms. 
+
+High -density EEG was acquired during active/REM sleep at term -equivalent age (TEA) and 2 
+
+months corrected age (2mCA) in 41 very preterm infants (born <32 weeks gestational age 
+
+[GA]; mean ± standard deviation : 26.9±1.7 weeks) and 13 full -term controls (born ≥37 weeks 
+
+GA; 40.1±1 weeks) . Spectral parameterization was used to extract aperiodic components 
+
+(offset, exponent) and periodic theta power globally and across spatial clusters of electrodes 
+
+(anterior, central, posterior). From TEA to 2mCA, offset, exponent, and theta power increased 
+
+with no differences between preterm and full -term infants. At TEA, metrics of aperiodic activity 
+
+were stronger in anterior compared with posterior areas, but this regional landscape shifted 
+
+by 2mCA with pronounced increases in aperiodic offset and expone nt in posterior areas from 
+
+TEA to 2mCA . Within preterms, inter -individual variability in aperiodic and periodic activity at 
+
+TEA was partly explained by clinical risk factors : m ale sex, lower gestational -age at birth, small 
+
+weight at birth, and invasive ventilation were linked to alterations of aperiodic offset, exponent 
+
+and theta power. Additionally, higher theta power at TEA correlated with lower cortical 
+
+fractional anisotropy assessed with diffusion MRI at the same age , consistent ly with more 
+
+advanced mat uration of the brain . Collectively, these findings indicate that EEG spectral 
+
+parameterization combined with spatial analysis provides a sensitive framework for 
+
+characterizing the postnatal maturation of brain activity in infants, as well as early 
+
+vulnerabilities associated w ith prematurity and perinatal adversity. 
+
+Key words: Brain development, Prematurity, Electroencephalography, Spectral 
+
+parameterization, Diffusion MRI. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+3
+
+Introduction 
+
+Preterm birth affects 13.4 million infants (~10% of live birth) each year  (Ohuma et al., 2023) 
+
+and is associated with long -term neurodevelopmental atypicalities  (Bradley et al., 2025; World 
+
+Health Organization, 2023) . It occurs during a period (the last trimester of pregnancy) when 
+
+brain development follows a highly orchestrated sequence of neurobiological processes, 
+
+including neuronal migration, synaptogenesis, growth of connections and establishment of 
+
+cerebral netw orks  (Kostović & Judaš, 2015) . Premature birth interrupts these processes and 
+
+increases vulnerability to atypical neurodevelopmental trajectories, with consequent long term 
+
+difficulties in cognitive, sensory and motor domains  (Ancel et al., 2006; Johnson & Marlow, 
+
+2017; Ream & Lehwald, 2018) , particularly when the birth is very premature, i.e. before 32 
+
+weeks of gestational age (GA)  (Pierrat et al., 2021) . Studying the early trajectories of brain 
+
+development in preterm infants is therefore essential for understanding prematurity -related 
+
+alterations in cerebral functioning and for identifying early markers of atypical outcome. 
+
+Clinical evaluations of neonatal brain development often involve non -invasive 
+
+electroencephalography (EEG) recordings obtained during sleep. These recordings allow 
+
+clinicians to qualitatively assess how brain activity is organized across brain regions and over 
+
+time throughout sleep cycles, helping to detect markers of brain maturation or abnormal 
+
+functioning  (Wallois et al., 2021; Bourel -Ponchel et al., 2021; Iyer et al., 2015; André et al., 
+
+2010; Vanhatalo & Kaila, 2006; Mirmiran et al., 2003) . Such assessments have further helped 
+
+to identify the neonatal precursors of rapid eye movement (REM) sleep (~active sleep) and 
+
+non -REM sleep, which both exhibit characteristic oscillatory activity in particular within the 
+
+delta (1 -3 Hz) and theta (4 -7 Hz ) frequency bands  (Dereymaeker et al., 2017; Grigg -
+
+Damberger, 2016) . Animal models have suggested that these oscillatory activity patterns, and 
+
+in particular theta rhythm during REM sleep, play an important role in the development of 
+
+functional networks. Specifically, they are thought to promote long -range connectivity, 
+
+including connectivity between cortical and sub -cortical structures, contribute to plasticity 
+
+mechanisms, and coordinate activity within developing sensorimotor circuits, thereby 
+
+supporting the early integration of sensorimotor networks during REM sleep (Br ockmann et 
+
+al., 2011; Del Rio -Bermudez et al., 2017; Del Rio -Bermudez & Blumberg, 2018). 
+
+In human infants, several EEG studies have quantitatively investigated early sleep activity 
+
+through spectral analyses by extracting the power of the recorded signals within different 
+
+frequency bands  (e.g. Novelli et al., 2016; Sankupellay et al., 2011) . In particular, an increase 
+
+in theta band power during active/REM sleep has been described from the late preterm period 
+
+(i.e., ~34 weeks GA ) up to approximately 1 month after term -equivalent age (TEA)  (Corsi -
+
+Cabrera et al., 2020; Whitehead et al., 2018) . This developmental increase in theta power 
+
+appears to parallel the transition from early diffuse bursting activity towards more refined 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+4
+
+cortical functional dynamics  (Yrjölä et al., 2024) . Study of theta activity can be a particularly 
+
+informative framework for understanding vulnerable populations such as preterm infants, in 
+
+whom sensorimotor networks are known to be especially affected by early adversity 
+
+(Devisscher, 2026; Neumane, 2022) , and in light of the beforementioned relevance of theta 
+
+activity for the development of sensorimotor networks. Consistent with this, in very preterm 
+
+infants, an altered theta -band power and connectivity has been reported at TEA when 
+
+compared to full -term neonates  (Guyer et al., 2019; Tokariev et al., 2016; Yrjölä et al., 2022) ,
+
+with some alterations persisting up to 3 months of corrected ag e (mCA)  (Guyer et al., 2019) .
+
+At this age, preterms display more pronounced occipital than central distribution of theta 
+
+activity, indicating that prematurity exerts heterogeneous, region -specific effects on early brain 
+
+activity  (Guyer et al., 2019) 
+
+However, traditional spectral power measures (e.g., absolute power) mix oscillatory and non -
+
+oscillatory background neural activity  (Donoghue, Dominguez, et al., 2020) . Recent spectral 
+
+parameterization techniques address this limitation by decomposing the power spectrum into 
+
+two components: an aperiodic component, reflecting the non -oscillatory background neural 
+
+activity that follows a 1/f -like pattern, and periodic comp onents reflecting rhythmic oscillations 
+
+manifested as peaks rising above the 1/f distribution. The aperiodic component is described 
+
+by an offset, representing baseline power level, and an exponent, indicating the slope of power 
+
+decay across frequencies (Do noghue, Dominguez, et al., 2020; Donoghue, Haller, et al., 
+
+2020) . Absolute power reflects the contribution of both components, and a change in band 
+
+power can result from a true change in oscillatory activity (e.g., a stronger or more frequent 
+
+rhythm) , a ch ange in the underlying aperiodic background (e.g. a shift in the overall power 
+
+level or in the slope of spectral decay), or a combination of both (Donoghue, Haller, et al., 
+
+2020). Yet distinguishing aperiodic and oscillatory activity is particularly import ant in 
+
+developmental research, as underlying developmental mechanisms may differ (Donoghue et 
+
+al., 2020; Schaworonkow & Voytek, 2021). In addition, oscillatory frequencies can vary across 
+
+individuals and developmental stages  (Schaworonkow & Voytek, 2021; Wilkinson et al., 2024) .
+
+For example, a developmental increase in theta band power (quantified with traditional 
+
+spectral analysis) could reflect a genuine rise in oscillatory theta activity (indexing the 
+
+maturation of long -range network coordination) or a broadband increase in ap eriodic offset 
+
+(as a proxy of changes in baseline neuronal spiking), two distinct mechanisms that absolute 
+
+power could not dissociate . These different approaches may explain some inconsistencies in 
+
+the developmental literature when oscillatory frequencies are not determined per infant (e.g. 
+
+reports of both decreasing  (Whitehead et al., 2018)  and increasing  (Yrjölä et al., 2024)  low 
+
+delta band power from the late preterm period towards TEA in active sleep). Separating 
+
+oscillatory and non -oscillatory activity could therefore allow a more specific characterization of 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+5
+
+developmental changes by clarifying the respective contribution of background activity and 
+
+oscillations to the observed power changes throughout development. 
+
+A few recent studies using spectral parameterization have begun to examine developmental 
+
+changes in the provided spectral metrics. Aperiodic offset shows an increase from 2 months 
+
+to 1 year of age  (Wilkinson et al., 2024)  and similarly from 6 to 16 months  (Rico ‐Picó et al., 
+
+2023) . Aperiodic exponent decreases from childhood into adolescence/adulthood  (Favaro et 
+
+al., 2023; Hill et al., 2022) , but findings in infancy are scarce and indicate a less clear picture, 
+
+as noted in the systematic review of  Stanyard et al., (2024) . Within infancy, the exponent is 
+
+shown to increase between 2 and 8 months with slower changes thereafter  (Wilkinson et al., 
+
+2024) . A study even reported a decrease between 6 and 16 months of age ( Rico ‐Picó et al., 
+
+2023 ), when broad frequency ranges were analyzed (but see Schaworonkow et al., 2021 for 
+
+narrow -band characterization). Periodic activity also undergoes marked age -related changes, 
+
+indicating the gradual emergence and differential trajectories for distinct osci llations along 
+
+development  (Li, et al., 2025.; Wilkinson et al., 2024) . Among these, theta activity emerges 
+
+particularly early in brain development, and periodic theta power mostly increases from 2 
+
+months of age towards the end of the first postnatal year, before subsequently declining  (Rico ‐
+
+Picó et al., 2023; Wilkinson et al., 2024) . These findings in early development have also 
+
+underlined notable regional differences particularly along the posterior -anterior axis, with 
+
+posterior regions showing larger offset values in the first year as well as lower theta power 
+
+after 9 -12 months of age compared to anterior regions  (Rico ‐Picó et al., 2023; Wilkinson et 
+
+al., 2024) .
+
+Only a few studies have quantified the early developmental trajectory of parameterized 
+
+spectral metrics in the neonatal period. Existing evidence indicates an increase in aperiodic 
+
+exponent between 35 -45 post -conception weeks  (Chini et al., 2022; Luotonen et al., 2025) ,
+
+with single time -point assessments suggesting that aperiodic measures may serve as early 
+
+markers of risk for neurodevelopmental atypicalities such as autism spectrum disorders or 
+
+attention deficit and hyperactivity disorder  (Karalunas et al., 2022; Shuffrey et al., 2022) .
+
+However, to our knowledge, no work to date has tracked the early longitudinal developmental 
+
+evolution of these measures in preterm infants, in the early post -term period, and in 
+
+comparison with full -term neonates. This gap applies to both aperiodic and periodic metrics, 
+
+and addressing it would refine our understanding of traditional power spectral measures 
+
+through a better delineation of background neural activity and oscillations such as theta. 
+
+Characterizing the evolution of aperiodic and periodic brain activity during the post -term period 
+
+might further highlight some clinically -relevant variability across infants, which needs to be 
+
+investigated. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+6
+
+Moreover, the potential relationships between EEG aperiodic/periodic features and the brain 
+
+anatomical characteristics and maturation have never been explored in the early 
+
+developmental period. Multi -modal magnetic resonance imaging (MRI) can provide 
+
+compl ementary insights into neonatal and infant brain structure  (Dubois et al., 2021)  and it is 
+
+widely used to assess brain lesions, abnormalities and/or dysmaturation processes in preterm 
+
+infants. In particular, the microstructure of brain tissues can be assessed with diffusion MRI, 
+
+providing markers that are mostly sensitive to the cell and membrane density, the dendritic 
+
+arborization in the gray matter, and to the fiber organization and myelination in the white matter 
+
+(Ouyang et al., 2019) . Exploring whether aperiodic features and brain oscillations are 
+
+differently sensitive to these microstructural properties during early development might help 
+
+understand their ontogeny and their role in the setting up of cerebral networks. 
+
+In this study, we aimed to investigate the early maturation of the brain activity in infants born 
+
+very premature compared to full -terms, using high -density EEG recordings at TEA and 2 
+
+months later, and a spectral parameterization approach to dissociate bet ween aperiodic and 
+
+periodic activities. We focused on brain activity during active/REM sleep because it is the most 
+
+prevalent sleep state in neonates  (Grigg -Damberger, 2016) ; it plays a crucial role in supporting 
+
+the development of functional networks  (Del Rio ‐Bermudez & Blumberg, 2018) , and it allows 
+
+measuring robust oscillations such as theta, a rhythm sensitive to early vulnerability 
+
+associated with prematurity  (Tokariev et al., 2019) . In particular, we aimed to investigate how 
+
+prematurity impacts early brain functioning by: (i) examining how the spectral profiles evolve 
+
+from TEA to 2 months post term, (ii) comparing periodic and aperiodic profiles between 
+
+preterm and full -term infants , and (iii) exploring how clinical risk factors and the microstructural 
+
+maturation of brain tissues account for the inter -individual variability within the preterm group 
+
+at TEA. More specifically, we hypothesized that developmental changes between TEA and 2
+
+months would be reflected in an increase in aperiodic offset, given the substantial increase in 
+
+absolute power characterizing this developmental period, and in an increase in theta activity 
+
+power based on prior developmental observations. Besides, we hyp othesized that preterm 
+
+infants may show altered aperiodic and periodic features compared to full -term infants. Finally, 
+
+we anticipated that the variability observed across preterms at TEA might be partly explained 
+
+by differences in clinical characteristics and in the brain microstructural maturation. 
+
+2. Methods 
+
+2.1 Subjects and EEG recordings 
+
+This study included preterm infants who were admitted to Robert -Debré Children's Hospital 
+
+(Paris, France) in the Neonatal Intensive Care Unit (NICU) closely after birth and who 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+7
+
+benefitted from clinical MRI at TEA, as well as full -term neonates without any 
+
+neurodevelopmental risk factors  (Adibpour et al., 2025) . Infants were scheduled for high -
+
+density EEG recordings at two longitudinal timepoints: first, at TEA for preterms or close to 
+
+birth for full -terms, and secondly two months later (corresponding to 2mCA for preterms). The 
+
+study protocol was approved by the ethics committee (Comité de Protection des Personnes, 
+
+CPP Ile de France 3), and parents were informed about the procedure and gave written 
+
+informed consent. 
+
+2.1.1 Preterm group 
+
+From an initial group of 43 infants born before 32 weeks GA, without moderate -to -severe brain 
+
+anomaly confirmed on MRI at TEA with Kidokoro scoring  (Elbaz et al., 2026) , this study 
+
+considered 41 infants (mean and standard deviation in GA at birth: 26.9 ± 1.7 weeks, range: 
+
+[24.1;30.8] weeks; 22 males, 19 females) who had adequate EEG recordings in active/REM 
+
+sleep at least at one age (see criteria below). Data were obtained for 40 infants for the first 
+
+assessment at TEA (postmenstrual age (PMA): 40.9 ± 0.8 [38.4;42.1] weeks; postnatal age: 
+
+13.9 ± 2.0 [10.0;17.6] weeks; 22 males, 18 females), and for 16 infants for the second EEG 
+
+assessment at 2mCA (PMA: 50.2 ± 0.5 [49.1;51.0] weeks; postnatal age: 23.2 ± 1.7 [19.2;25.8] 
+
+weeks; 9 males, 7 females). The remaining 27 infants were not included in the analysis due 
+
+to attrition (n=13), participation in an intervention program between TEA and 2mCA (n=8), or 
+
+insufficient duration of high -quality recording in active/REM sleep (n=6). In total, 15 preterm 
+
+infants contributed with longitudinal EEG data at both TEA and 2mCA. 
+
+For preterm infants with EEG data at TEA, we considered some clinical characteristics that 
+
+are well established risk factors for adverse outcomes in preterm populations  (Pierrat et al., 
+
+2021; Sacchi et al., 2020; Vliegenthart et al., 2019) , and that we have shown to influence brain 
+
+measures derived from EEG  (Adibpour et al., 2025)  and MRI  (Elbaz et al., 2026)  in preterm 
+
+infants. Specifically, we considered male sex, GA at birth, being small for GA at birth (defined 
+
+as birth weight < 10th percentile for GA), and invasive mechanical ventilation lasting more 
+
+than 1 day. Consistent with our previous works  (Adibpour et al., 2025; Elbaz et al., 2026) , we 
+
+categorized GA at birth into three groups: Group I ( GI : 24 weeks ≤ GA ≤ 26 weeks), Group II 
+
+(GII: 26 weeks < GA ≤ 28 weeks), and Group III ( GIII: 28 weeks < GA ≤ 32 weeks). Table 1 
+
+summarizes clinical and demographic characteristics of preterm infants with EEG data at TEA ,
+
+as well as infants with longitudinal data at TEA and 2mCA . Clinical characteristics of infants 
+
+with and without longitudinal data were comparable (see Sup. Table 1). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+8
+
+Table 1. Demographic and clinical characteristics of the preterm cohort at TEA (N = 40) and longitudinal 
+
+subset (n = 15) 
+
+Parameter 
+
+Group I 
+
+(n = 13) 
+
+Group II 
+
+(n = 17) 
+
+Group III 
+
+(n = 10) 
+
+Sex Male/Female, n(%)  6/7 (46.2/53.8%)  11/6 (64.7/35.3%)  5/5 (50/50 %) 
+
+Small weight for GA at birth, n(%)  2 (15.4%)  1 (5.9%)  4 (40.0%) 
+
+Invasive ventilation >1 day, n(%)  7 (53.8%)  4 (23.5%)  5 (50.0%) 
+
+Longitudinal subset  n = 4  n = 8  n = 3 
+
+Sex Male/Female, n(%)  1/3 (25.0/75.0%)  6/2 (75.0/25.0%)  1/2 (33.3/66.7%) 
+
+Small weight for GA at birth, n(%)  1 (25.0%)  0 (0.0%)  1 (33.3%) 
+
+Invasive ventilation >1 day, n(%)  4 (100.0%)  1 (12.5%)  1 (33.3%)  
+
+> Abbreviations: GA, gestational age; TEA, term -equivalent age
+> Groups defined by GA at birth: Group I, 24+0 ≤ GA ≤ 26+0 weeks; Group II, 26+1 ≤ GA ≤ 28+0 weeks; Group III, 28+1 ≤ GA ≤
+> 32+0 weeks. The longitudinal subset comprises infants with EEG recordings at both time points. Percentages are computed
+> within each group relative to that group's own n.
+
+2.1.2 Full -term group 
+
+From an initial group of 16 neonates born at term and tested with EEG, this study considered 
+
+13 neonates (GA at birth: 40.1 ± 1 [37.6;41.6] weeks; 7 males, 6 females), with adequate EEG 
+
+recording in active/REM sleep at least at one age. Data were obtained for 11 infants at the 
+
+first assessment, a few days after birth so equivalent to TEA (PMA: 41.8 ± 1 [39.7;43.3] weeks; 
+
+postnatal age: 1.8 ± 0.7 [0.6;2.9] weeks; 6 males, 5 females), and for 10 infants 2 months later 
+
+(PMA: 50.3 ± 0.9 [49.3;51.7] weeks; postnatal age: 10.3 ± 1.6 [8.4;13.1] weeks; 5 males, 5 
+
+females). Among these, 8 infants had longitudinal data. 
+
+2.1.3 EEG Recordings 
+
+Brain activity was recorded with a 128 -channel high -density EEG system (HydroCel Geodesic 
+
+Sensor Net; Magstim EGI, USA), with net size adapted to the infant -head circumference. 
+
+Signal was digitalized at a sampling rate of 1000 Hz. Recordings were obtained while infants 
+
+were naturally sleeping in a cot or occasionally in parents’ arms when this facilitated calming 
+
+the baby. A synchronized camera recorded infant behavior to inform subsequent sleep -stage 
+
+classification. 
+
+2.2. EEG Processing 
+
+2.2.1 Sleep Scoring 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+9
+
+Infant vigilance states were classified through a two -step process that is detailed in  Adibpour 
+
+et al. (2025) . Initially, during the recording, the experimenter (P.A. or A.P.) marked the infant's 
+
+vigilance state based on behavior (eye opening and body movements). These annotations 
+
+were then refined offline by a neonatal neurophysiology expert (H.N). This study fo cused on 
+
+active sleep and its presumed developmental equivalent at 2mCA, REM sleep which is 
+
+characterized by low -amplitude irregular and mixed frequency EEG activity predominantly 
+
+within the theta and delta ranges  (AASM Sleep Scoring and Event Manual , 2023.; Grigg -
+
+Damberger, 2016) .
+
+2.2.2 Preprocessing 
+
+Preprocessing was performed in EEGLAB  (Delorme & Makeig, 2004) , as detailed in  Adibpour 
+
+et al., (2025) . In brief, data were initially filtered between (0.2 -45 Hz), down -sampled to 250 
+
+Hz and preprocessed using the Automated Pipeline for Infants Continuous EEG (APICE)  (Fló 
+
+et al., 2022) . Artifact detection and correction involved the identification and interpolation of 
+
+persistently noisy channels, transient artifacts, as well as removal of motion -related 
+
+contaminations. Following automated preprocessing, all recordings underwent visual 
+
+inspection to manually flag residual artifacted periods missed by the pipeline. Finally, data 
+
+were re -referenced to the common average reference. 
+
+Following sleep staging and EEG preprocessing, artifact -free segments were included. Only 
+
+infants with at least 1 minute of sufficient quality data were then included in the study. 
+
+2.2.3 Computation of EEG Power Spectrum 
+
+The power spectral density (PSD) was computed using Welch’s method implemented in 
+
+MATLAB, using the EEGLAB (Delorme & Makeig, 2004) and FieldTrip  (Oostenveld et al., 
+
+2011)  toolboxes. For each channel, the power spectrum was estimated using a window length 
+
+of 8 seconds with 50% overlap. Analyses focused on the [0.5 -30] Hz frequency range, which 
+
+is relevant for neonatal EEG and consistent with previous spectral analyses in ne wborns 
+
+(Fransson et al., 2013; Karalunas et al., 2022; O’Toole & Boylan, 2019) . We used frequency 
+
+bins of 0.125 Hz width. The absolute power values were converted to an equivalence of 
+
+decibel scale by taking the base -10 logarithm of the power. The PSD was averaged across all 
+
+EEG channels for each infant, to obtain a single whole -sca lp power spectrum per subject. 
+
+2.3 Analyses of aperiodic and periodic components 
+
+2.3.1 Parameterization of the power spectrum into Aperiodic and Periodic Components 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+10 
+
+Power spectral densities were decomposed into their aperiodic (1/f) and periodic (oscillatory) 
+
+components using the FOOOF (Fitting Oscillations & One Over F) algorithm implemented in 
+
+Python  (Donoghue, Haller, et al., 2020) , and ran from MATLAB via the py.fooof interface 
+
+(Figure 1). This algorithm models the log -transformed power spectrum P at each frequency f,
+
+as the sum of an aperiodic background component and a set of Gaussian -distributed periodic 
+
+peaks superimposed on that background. The model is described as: 
+
+𝑙𝑜𝑔 10 𝑃 (𝑓 ) = 𝑏 − 𝜒 𝑙𝑜𝑔 10 𝑓 + ∑ 𝐺 𝑛 (𝑓 )
+
+> 𝑛
+
+,
+
+where  𝑃 (𝑓 ) is the absolute power at frequency  𝑓 , 𝑏  is the offset of the aperiodic component, 
+
+corresponding to the intercept of the log transformed power spectrum, and  𝜒  is the exponent 
+
+of aperiodic component, reflecting the slope of spectral decay (Figure 1), with larger exponent 
+
+values indicating a steeper drop in power from low to high frequencies. The term 
+
+𝐺 𝑛 (𝑓 ) represents the Gaussian functions modeling the periodic components and is described 
+
+as: 
+
+𝐺 𝑛 (𝑓 ) = 𝑎 𝑛 𝑒𝑥𝑝 (−(𝑓 − 𝜇 𝑛 )2
+
+2𝜎 𝑛  
+
+> 2
+
+),
+
+where  𝑎 𝑛  is the peak amplitude,  𝜇 𝑛  is the center frequency, and  𝜎 𝑛  is the standard deviation, 
+
+corresponding to the bandwidth of the Gaussian  (Donoghue, Haller, et al., 2020) .
+
+Figure 1. Illustration of aperiodic and periodic components 
+
+> Two examples of the individual FOOOF model fit (red line) of the absolute power (black line) from (A) a preterm infant at TEA ,
+> and (B) a full -term infant at 2 months, respectively. Power spectrum is decomposed into aperiodic (dashed blue line) and
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+11 
+
+> periodic components, indicating the presence of a clear peak (solid green circle) in the theta range (4 -7 Hz) above the aperiodic
+> fit. Dotted blue lines represent aperiodic exponent and offset.
+
+2.3.2 Settings and extraction of metrics of interest 
+
+Spectral parameterization was first applied over the 0.5 -30 Hz frequency range (Model #1). 
+
+The aperiodic component was fitted and subtracted using the “fixed mode”, as infant spectra 
+
+typically lack the clear low -frequency inflection point (“knee”) observed in adults  (Cellier et al., 
+
+2021; Donoghue, Haller, et al., 2020; Wilkinson et al., 2024) . To estimate the periodic 
+
+components, a maximum of 7 peaks with width limits set to 0.5 -18 Hz were considered to 
+
+ensure better fitting performance for infant recordings, consistent with a prior developmental 
+
+EEG study (Wilkinson et al., 2024). For each infant, metrics of offset and exponent were 
+
+extracted for the aperiodic c omponent in the fitted 0.5 -30 Hz model (see goodness of fit in 
+
+Sup. Table 2). For the periodic component, theta power was extracted by focusing on the 4 -
+
+7Hz range, a range where rhythmi c oscillatory activity is observed at 0 -2 months of age (Grigg -
+
+Damberger, 2016; Wallois et al., 2021), and particularly dominate during active/REM sleep in 
+
+neonates and infants (GriggDamberger, 2016). The initial model fit (0.5 -30 Hz) for the periodic 
+
+comp onents failed to reliably capture a distinct theta peak for some infants (see Sup. Table 3,
+
+4), primarily due to increased spectral noise at higher frequencies, which can obscure 
+
+estimations of periodic components, an issue previously noted in infant EEG studies 
+
+(Schaworonkow & Voytek, 2021) . For the estimation of the periodic activity parameters, the 
+
+spectrum was therefore parameterized over a narrower frequency range of 0.5 -10 Hz (Model 
+
+#2), while retaining all other model settings. This narrower range improved the precision of 
+
+theta peak de tection by limiting the influence of high -frequency noise (Schaworonkow & 
+
+Voytek, 2021) and preserved data from infants whose theta peak were not reliably captured 
+
+under Model #1, thereby maximizing the usable sample size. Within the theta range, we 
+
+extracted the log -transformed power of the most prominent identified peak as the measure of 
+
+periodic power. 
+
+Note that Sup . Tables 2-4 present validation analyses on model fit and periodic theta 
+
+estimations extracted with Model #1 and Model #2 , for the subgroup of infants in whom theta 
+
+peak was reliably captured in Model #1 .
+
+2.3.3 Computation over spatial clusters 
+
+Because maturation proceeds differently across brain regions during early development 
+
+(Dubois et al., 2014) , averaging EEG metrics over all electrodes and thus over the whole brain 
+
+might obscure developmental effects. Thus, we examined whether extracting metrics over 
+
+more localized electrode clusters would reveal distinct maturational profiles across brain 
+
+regi ons, as suggested by previous developmental studies showing spatial differences in 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+12 
+
+absolute power and in aperiodic and periodic components particularly along the posterior -
+
+anterior axis  (Novelli et al., 2016; Rico ‐Picó et al., 2023; Schaworonkow & Voytek, 2021; 
+
+Stanyard et al., 2024) . To account for this spatial heterogeneity, we computed EEG metrics 
+
+separately for three bilateral clusters: frontal (36 electrodes), central (36 electrodes), and 
+
+posterior (37 electrodes), following the parcellation scheme used by  (Calbi et al., 2019)  for the 
+
+128 -channels Hydrocel Geodesic Sensor Net. 
+
+As for the global set of electrodes described in 2.3.2, spectral parameterization was performed 
+
+for each cluster of electrodes independently. Model #1 was used to extract the aperiodic 
+
+metrics (offset and exponent) and Model #2 to extract the periodic thet a metrics. 
+
+2.4 Collection and analyses of MRI data in preterm infants at TEA 
+
+In addition to EEG assessments, preterm infants had a clinical MRI at TEA either because 
+
+they were born extremely premature (before 28 weeks GA), or because of suspicion of 
+
+cerebral anomalies. TEA -MRI was performed on a 3T scanner on the same day as EEG fo r
+
+most infants (except for 3, for whom the two exams were separated by no more than 6 days). 
+
+A standardized protocol was used (see details in Elbaz et al, 2026, Devisscher et al, 2026), 
+
+including T2 -weighted sequences in axial, coronal and sagittal planes (echo time [TE] = 150 
+
+ms, repetition time [TR] = 5500 ms), 3D -T1 -weighted and susceptibility -weighted sequences. 
+
+A diffusion -weighted sequence with 42 directions at b=1000s/mm 2 (TE = 75 ms, TR = 5000 
+
+ms, 2mm -isotropic resolution) was also acquired. First, radiological examinations with scoring 
+
+adapted to the preterm population  (Kidokoro et al., 2013 ; Elbaz et al., 2026)  indicated that all 
+
+infants included in this EEG study had normal MRI or mild abnormalities (whole -brain Kidokoro 
+
+scores ≤ 7). Second, pre - and post -processing of images were performed. T2 -weighted 
+
+sequences of different planes were combined with a super -resolution algorithm to obtain a 0.8 
+
+mm -isotropic spatial resolution  (Ebner et al., 2020) . Brain tissues were segmented to provide 
+
+masks of the cortex and white matter  (Elbaz et al., 2026) . Diffusion -weighted images were 
+
+post -processed to correct for motion artefacts and susceptibility -induced distortions 
+
+(Devisscher et al, 2026). The model of diffusion tensor imaging (DTI) was estimated, and 
+
+quantitative maps of fractional anisotropy (FA) and mean diffusivity (MD) were g enerated. The 
+
+T2 -weighted and b=0 images were non -linearly registered (Devisscher et al, 2026), enabling 
+
+the projection of brain tissue masks on DTI maps (Figure 2). Averaged FA and MD metrics 
+
+were then computed over the masks of cortex and white matter. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+13 
+
+Figure 2. Multimodal MRI images of a preterm infant at term -equivalent age 
+
+T2 -weighted (T2w) images after super -resolution reconstruction are shown on sagittal, axial and coronal slices (a). These enabled 
+
+the segmentation of brain tissues (b) in particular the cortex (dark blue) and the white matter (pink). Maps derived from dif fusion 
+
+tensor imaging (DTI) are shown at similar levels of the brain: fractional anisotropy (FA) (c) and mean diffusivity (MD) (d), onto 
+
+which masks of the cortex (e) and white matter (f) have been superimposed following non -linear registration between T2w images 
+
+and b =0 images. 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 14 
+
+2.5 Statistical analyses 
+
+2.5.1 Analysis of maturation and prematurity effects 
+
+To investigate whether EEG -derived metrics evolve between TEA and 2mCA, and differ 
+
+between the preterm and full -term groups, we employed linear mixed -effects models (LMM) 
+
+on the entire dataset (both cross -sectional and longitudinal data of the two groups, n=54; 41 
+
+preterms + 13 full -terms). The dependent variable was either aperiodic offset, aperiodic 
+
+exponent, or theta power. Group (preterm vs. full -term), Session (TEA vs. 2mCA) and their 
+
+interaction were considered as fixed -effect predictors, and subjects as random -effect 
+
+predictors. When a significant main effect or interaction was observed, post -hoc tests were 
+
+conducted using pairwise comparisons of estimated marginal means. All models were fitted in 
+
+R using the lme4 package  (Bates et al., 2015) , with p -values for fixed effects obtained with 
+
+Satterthwaite’s approximation of degrees of freedom (lmerTest). 
+
+To isolate genuine developmental change, we further estimated an LMM model only on infants 
+
+with longitudinal data from both sessions (n = 23; 15 preterms + 8 full -terms). 
+
+2.5.2 Analysis of spatial -heterogeneity effects 
+
+In line with prior analyses, LMM models were fitted for metrics estimated over each spatial 
+
+cluster, in the entire dataset (n=54). In addition to the effects of Group (preterm vs. full -term) 
+
+and Session (TEA vs. 2mCA), the effect of Cluster (Anterior, Cent ral, Posterior) and their 
+
+interactions were included as fixed -effect predictors and subjects as random -effect predictors. 
+
+P-values for fixed -effects were extracted using Type III analysis of variance (ANOVA) F -tests 
+
+with Satterthwaite’s approximation of de grees of freedom. This approach allowed appropriate 
+
+estimation of predictors with more than two levels (i.e. three -level Cluster variable) and their 
+
+interactions with other predictors, after accounting for all other terms in the model. Post -hoc 
+
+comparisons of estimated marginal means were conducted for significant effects. 
+
+2.5.3 Analysis of the effects of clinical factors and brain microstructural maturation in preterms 
+
+at TEA 
+
+We further aimed to investigate the factors that might explain the inter -individual variability of 
+
+EEG metrics in preterm infants at TEA (n=40). For this, we focused on whole brain metrics, 
+
+and used ANOVA with aperiodic offset, exponent, and theta -band pow er included as 
+
+dependent variables. As independent variables, we considered the infant Sex (male/female), 
+
+the group of GA at birth (GI, GII, GIII), small weight for GA at birth (yes/no), and history of 
+
+invasive mechanical ventilation (yes/no)  (Adibpour et al., 2025; Elbaz et al., 2026) . Significant 
+
+main effects were followed up with post -hoc analyses using estimated marginal means. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+15 
+
+We also evaluated whether the whole brain EEG metrics were dependent on the 
+
+microstructural maturation of brain tissues at TEA. For each EEG metric (aperiodic offset, 
+
+aperiodic exponent, and theta power), we fitted linear regression models including a DTI metric 
+
+(either FA or MD) averaged either over the white matter or the cortex as covariate, while 
+
+adjusting for age at EEG/MRI acquisition. 
+
+Prior to statistical inference, we verified the standard assumptions of linear modeling through 
+
+visual inspection of residual plots. These included checks for linearity, homoscedasticity, and 
+
+normality of residuals. To assess multicollinearity among indepe ndent variables, we used the 
+
+Variance Inflation Factor (VIF), with all VIF values < 3, indicating acceptable levels of 
+
+collinearity. When multiple models were run, p -values were corrected for multiple comparisons 
+
+with false discovery rate approach (FDR) an d statistical significance was set at p < 0.05 after 
+
+correction. 
+
+In a set of validation analyses, we also re -estimated all statistical models for periodic theta 
+
+power in the subgroup of infants in whom theta peak was reliably captured in Model #1 (see 
+
+Sup. Table 5). 
+
+3. Results 
+
+On average, the mean usable duration of active sleep at TEA was 6.14 ± 2.52 minutes (1.04 -
+
+12.32 minutes) for preterm infants (n = 40), and 5.94 ± 2.26 minutes (2.52 -9.61 minutes) for 
+
+full -term neonates at birth (n = 11). At 2mCA, duration of usable REM data was 5. 65± 2.49 
+
+minutes (1.30 -10.43 minutes) for preterm infants (n = 16), and 6.74 ± 4.47 minutes (1.24 -14.39 
+
+minutes) for full -term infants (n = 10) . Because recording duration varied across infants and 
+
+sessions, we verified that it did not influence o ur spectral estimates. Bivariate correlations 
+
+between duration and each FOOOF -derived global metric were non -significant at both 
+
+timepoints (all |r| ≤ 0.17, all p ≥ 0.43; FDR -adjusted p ≥ 0.93). Recording duration was also 
+
+included as a covariate in all li near mixed -effects models reported below for global metrics, 
+
+and was a non -significant predictor in every case (all p ≥ 0.56). 
+
+3.1 Qualitative description of power spectrums and model fitting 
+
+The PSD estimates for preterm and full -term infants at TEA and 2mCA are presented in Figure 
+
+3. Power spectra showed the typical 1/f distribution (Figure 3A). Inspection of average PSD at 
+
+the global level revealed strong differences between TEA and 2mCA in both groups, with 
+
+higher power across all frequencies in infants at 2mCA than at TEA, particularly within the 2 -
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+16 
+
+7 Hz range. These differences in spectral profiles between TEA and 2mCA were also apparent 
+
+in each cluster but appeared less pronounced in the anterior cluster than in the central and 
+
+posterior ones (Figure 3A). Inspection of topographical distribution of PSD within theta band 
+
+(4 -7 Hz), indicated qualitative differences between the preterm and full -term groups in 
+
+particular for the contrast between 2mCA/2m and TEA/0m (Figure 3B -C). 
+
+Figure 3. Group -averaged power spectral density (PSD) and topographies across preterm and full -term 
+
+infants.   
+
+> (A) Group -averaged log -transformed PSD (μV²/Hz) computed across the 0.5 -30 Hz range for preterms at TEA (solid green),
+> preterms at 2mCA (dashed green), full -terms at 0 months (solid purple), and full -terms at 2 months (dashed purple), shown for
+> the global cluster and for the anterior, central, and posterior regional clusters. Shaded areas represent the standard error of the
+> mean. Electrodes in each cluster are represented on top. (B) Topographical distribution of log(PSD) averaged across the 4 -7 Hz
+> range (t heta activity) in preterm infants at TEA (left), at 2mCA (middle), and the difference map (2mCA -TEA, right). (C) Same
+> topographical representation for full -term infants at 0 months (left), 2 months (middle), and the difference map (2m -0m, right).
+
+For all infants, aperiodic metrics (offset and exponent) were extracted exclusively from Model 
+
+#1 , and theta power from Model #2 (see goodness of fit from both models in Sup. Table 2).
+
+Yet, w ith this latter model , n o theta peak was detected for a few infants: at the global level (1
+
+preterm at TEA, 2 preterms at 2mCA , 2 full -terms at 2m ) and at the cluster level (a nterior : 1
+
+preterm at TEA , 1 preterm at 2mCA ; c entral : 1 preterm at TEA , 2 preterms at 2mCA , p osterior :
+
+1 preterm at TEA , 2 preterms at 2mCA , 2 full -terms at 2m). Accordingly, analyses of periodic 
+
+theta power in preterm infants at TEA (reported in sections 3.4 and 3.5) are based on n = 39, 
+
+whereas analyses of aperiodic metrics use the full preterm sample (n = 40); analogous 
+
+adjustments apply at 2mCA and for cluster -level analyses. 
+
+3.2 Effects of maturation and prematurity on aperiodic and periodic metrics 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+17 
+
+Aperiodic metrics and theta power averaged over all electrodes are presented in Figure 4 for 
+
+preterm and full -term infants at TEA and 2mCA . Results of the LMM model performed on the 
+
+global PSD estimations (Sup. Table 6) are summarized below, with corresponding post -hoc 
+
+tests reported in Table 2. Analysis of aperiodic offset showed a significant main effect of 
+
+Session (t(73) = 3.60, p < .001), with post -hoc tests indicating higher offset values at 2mCA 
+
+compared to TEA. N o significant effect was found for aperiodic exponent. Periodic theta power 
+
+also showed a main effect of Session (t(34.07) = 6.91, p < .001), reflecting higher theta power 
+
+at 2mC A compared to TEA (see Table 2 for post -hoc tests of these effects). Effects of Group 
+
+or interactions were non -significant (all |t| < 1, p > .46 ). 
+
+As a sanity check, we repeated these analyses in the subset of infants with longitudinal data 
+
+(15 preterm and 8 full -term infants). The pattern of results remained consistent: i) aperiodic 
+
+offset showed a significant main effect of Session (t(42) = 4.08, p < .001), with higher values 
+
+at 2mCA compared to TEA, ii) no significant effect was found for aperiodic exponent, and iii) 
+
+theta power showed a significant main effect of Session (t(18) = 6.49, p < .001), with higher 
+
+power at 2mCA compared to TEA (see S up. Table 7 for results of main model and Sup. Table 
+
+8 for post -hoc tests of these effects).  
+
+> Figure 4. Group -averaged distribution of parameterized metrics across preterm and full -term infants. Violin
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+18 
+
+> plots show distributions of (A) aperiodic offset, (B) aperiodic exponent, and (C) theta power in preterms (green) and full -terms
+> (purple) at TEA)/ 0 months and at 2mCA/ 2 months. Darker points represent individual infants. Offset and theta power show an
+> ef fect of Session across all clusters, while exponent indicates a Session effect only in the posterior cluster, all highlightin g an
+> increase from TEA/0 months to 2months.
+
+Table 2. Summary of post -hoc tests for the significant effects of models on global measures (cross -
+
+sectional cohort) 
+
+Variable  Effect - Contrast  df  Estimate  SE  t ratio  p- value 
+
+confidence 
+
+interval  effect size 
+
+Offset  Effect of Session: 
+
+40  -0.41  0.06  -6.17  <0.001  [-0.54, -0.27]  -1.64 TEA - 2mCA 
+
+Theta power  Effect of Session: 
+
+31.5  -0.20  0.01  -11.39  <0.001  [-0.24, -0.17]  -3.36 
+
+TEA - 2mCA  
+
+> Sample size in cross -sectional model for aperiodic metrics (Model #1): n=40 in preterm group and n=11 in full -term group at
+> TEA; at 2mCA :n=16 in preterm group and n=10 in full -term group. For periodic theta power (Model #2) n=39 in the preterm
+> group and n=11 in the full -term group at TEA; at 2mCA: n=14 in the preterm group and n=8 in the full -term group.
+> P-values for significant effects are highlighted in bold.
+
+3.3 Effects of spatial localization on aperiodic and periodic metrics 
+
+For cluster -based PSD estimations, LMM results (Sup. Table 9) are summarized below, with 
+
+follow -up post -hoc tests reported in Table 3. No effects of Group or Group × Session × Cluster 
+
+interaction was observed for any metric (all F < 1.74, p > 0.18). 
+
+Analysis of aperiodic offset revealed a significant main effect of Session (F(1, 183.59) = 
+
+211.32, p < .0001), with post -hoc tests indicating higher offset values at 2mCA compared to 
+
+TEA. It further showed a main effect of Cluster (F(2, 164.5) = 8.37, p < .001), with higher 
+
+values in the anterior cluster compared to central and posterior clusters. A significant Session 
+
+× Cluster interaction was also found (F(2, 164.5) = 8.29, p < .001), with post -hoc tests showing 
+
+higher offset at 2mCA compared to TEA acros s all clusters, with the biggest effect size in the 
+
+posterior cluster. This interaction also highlighted larger offset values over the anterior cluster 
+
+compared to central and posterior cluster at TEA, but not at 2mCA. 
+
+Analysis of aperiodic exponent indicated a significant effect of Session (F(1, 192.3) = 10.64, p 
+
+= 0.001), with post -hoc comparisons showing larger exponent values at 2mCA compared to 
+
+TEA. A significant Session × Cluster interaction (F(2, 164.5) = 6.49 p < .001) further 
+
+demonstrated higher exponent at 2mCA compared to TEA, in the posterior but not in the 
+
+anterior or central clusters. This also highlighted larger exponent values at TEA over the 
+
+anterior compared to the posterior cluster, whereas this pattern was reversed at 2mCA. 
+
+Periodic theta power indicated a significant main effect of Session (F(1, 178.38) = 445.57, p 
+
+< .001), reflecting higher power at 2mCA compared to TEA. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+19 
+
+Analyses on infants with longitudinal data corroborated these observations (Sup. Table s 10 ,
+
+11 ). 
+
+Table 3. Summary of post -hoc tests for the significant effects of models on cluster measures 
+
+(cross -sectional cohort) 
+
+Variable  Effect - Contrast  df  Estimate  SE  t ratio  p- value 
+
+confidence 
+
+interval  effect size 
+
+Offset  Effect of Session: 
+
+185  -0.44  0.03  -14.49  <0.001  [-0.50, -0.38]  -2.52 TEA - 2mCA  All clusters 
+
+Effect of Cluster: 
+
+TEA and 2mCA  Anterior - Central  167  0.13  0.03  4.07  <0.001  [0.05, 0.21]  0.76 
+
+TEA and 2mCA  Anterior - Posterior  167  0.07  0.03  2.38  0.048  [0.00, 0.15]  0.44 
+
+TEA and 2mCA  Central - Posterior  167  -0.05  0.03  -1.69  0.211  [-0.13, 0.02]  -0.31 
+
+Effect of Session*Cluster: 
+
+TEA - 2mCA  Anterior Cluster  174  -0.30  0.04  -6.16  <0.001  [-0.39, -0.20]  -1.71 
+
+TEA - 2mCA  Central Cluster  174  -0.46  0.04  -9.57  <0.001  [-0.52, -0.37]  -2.65 
+
+TEA - 2mCA  Posterior Cluster  174  -0.56  0.04  -11.59  <0.001  [-0.66, -0.46]  -3.21 
+
+TEA  Anterior - Central  167  0.21  0.04  5.11  <0.001  [0.11, 0.31]  1.23 
+
+TEA  Anterior - Posterior  167  0.21  0.04  4.96  <0.001  [0.11, 0.31]  1.19 
+
+TEA  Central - Posterior  167  - 0.00  0.04  -0.15  0.987  [-0.10, 0.09]  -0.03 
+
+2mCA  Anterior - Central  167  0.05  0.05  1.00  0.573  [-0.06, 0.16]  0.28 
+
+2mCA  Anterior - Posterior  167  -0.05  0.05  -1.07  0.529  [-0.17, 0.06]  -0.30 
+
+2mCA  Central - Posterior  167  -0.10  0.05  -2.08  0.096  [-0.22, 0.01]  -0.59 
+
+Exponent  Effect of Session: 
+
+194  -0.07  0.02  -3.24  0.001  [-0.11, -0.02]  -0.55 TEA - 2mCA  All clusters 
+
+Effect of Session*Cluster: 
+
+TEA - 2mCA  Anterior Cluster  178  0.00  0.03  0.17  0.861  [-0.06, 0.07]  0.04 
+
+TEA - 2mCA  Central Cluster  178  -0.05  0.03  -1.59  0.112  [-0.13, 0.01]  -0.43 
+
+TEA - 2mCA  Posterior Cluster  178  -0.17  0.03  -4.65  <0.001  [-0.24, -0.09]  -1.28 
+
+TEA  Anterior - Central  167  0.01  0.03  0.37  0.924  [-0.06, 0.08]  0.09 
+
+TEA  Anterior - Posterior  167  0.08  0.03  2.63  0.024  [0.00, 0.16]  0.63 
+
+TEA  Central - Posterior  167  0.07  0.03  2.25  0.064  [-0.00, 0.14]  0.54 
+
+2m CA  Anterior - Central  167  -0.05  0.03  -1.39  0.347  [-0.14, 0.03]  -0.39 
+
+2m CA  Anterior - Posterior  167  -0.09  0.03  -2.43  0.041  [-0.18, -0.00]  -0.69 
+
+2m CA  Central - Posterior  167  -0.03  0.03  -1.04  0.549  [-0.12, 0.05]  -0.29 
+
+Theta power  Effect of Session: 
+
+178  -0.21  0.01  -21.04  <0.001  [-0.23, -0.19] TEA - 2mCA  All clusters  -3.76 
+
+Sample size in cross -sectional model for aperiodic metrics (Model #1): n=40 in preterm group and n=11 in full -term group at 
+
+TEA; at 2mCA: n=16 in preterm group and n=10 in full -term group. For periodic theta power (Model #2) n=39 in the preterm 
+
+group and n =11 in the full -term group at TEA; at 2mCA: n=14 in the preterm group and n=8 in the full -term group. 
+
+P-values for significant effects are highlighted in bold. 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 20 
+
+3.4 Effects of clinical factors on aperiodic metrics and theta power in preterms at TEA 
+
+We then focused on spectral metrics obtained in preterm infants at TEA. Results of the ANOVA 
+
+models incorporating various risk factors (Sup. Table 12 ) are summarized below with post -hoc 
+
+tests reported in Table 4. 
+
+Aperiodic offset revealed a significant effect of invasive ventilation (F(1, 34) = 6.95, p = .013), 
+
+and post -hoc analyses indicated that infants who received ventilation exhibited lower offset 
+
+values than those who had not been ventilated. 
+
+ANOVA for aperiodic exponent indicated a significant effect of GA at birth (F(2, 34) = 5.39, p 
+
+= .009) with GIII group (i.e. higher GA at birth) presenting significantly higher exponent values 
+
+compared to GII and GI. It also showed a significant effect of invasive ventilation (F(1, 34) = 
+
+6.38, p = .016), with post -hoc tests showing that infants who received ventilation had lower 
+
+exponents than those who did not. 
+
+Periodic theta power further showed a significant effect of Sex (F(1, 33) = 4.68, p = 0.03) with 
+
+lower theta power in males compared to females. It also showed a significant effect of being 
+
+Small for GA at birth (F(1, 33) = 5.34, p = 0.02), surprisingly indicating that infants with small 
+
+weight presented higher theta power compared to those without such risk factor. 
+
+Table 4. Summary of post -hoc tests for the significant effects of clinical risk factors on TEA measures 
+
+Variable  Effect - Contrast  df  Estimate  SE  t ratio  p- value 
+
+confidence 
+
+interval  effect size                                                              
+
+> Offset Effect of invasive ventilation
+> yes -no 34 -0.25 0.08 -2.83 0.007 [-0.43, -0.07] -0.97
+> Exponent Effect of GA at birth
+> Group II -Group III 34 -0.18 0.06 -2.86 0.013 [-0.33, -0.03] -0.98
+> Group I -Group III 34 -0.18 0.06 -2.89 0.012 [-0.33, -0.03] -0.99
+> Effect of invasive ventilation
+> 34 -0.13 0.05 -2.52 0.016 [-0.23, -0.02] -0.86 yes -no
+> Theta power Effect of sex
+> male -female 33 -0.05 0.01 -2.68 0.01 [-0.08, -0.01] -0.93
+> Effect of small weight for GA
+> yes -no 33 0.05 0.02 2.31 0.02 [0.00, 010] 0.80
+> Sample size of preterm group at TEA n= 40. P -values for significant effects are highlighted in bold.
+
+3.5 Associations between brain microstructural maturation and EEG metrics at TEA 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+21 
+
+Finally, we examined whether spectral parameterized metrics in preterms at TEA were related 
+
+to brain microstructure, indexed by FA or MD averaged over the cortex or the white matter. 
+
+Linear models revealed no significant association for aperiodic metrics (offset, exponent: all 
+
+|t| < 1.48, all p > 0.149). For theta power, no significant relationship was found with MD within 
+
+cortical gray matter or white matter (all |t| < 0.63, all p > 0 .53), nor with FA within white matter 
+
+(t(34) = 0.58, p = 0.56). In contrast, theta power was significantly related to FA within cortical 
+
+gray matter (t(34) = −3.11, p = 0.004), with higher theta power associated with lower cortical 
+
+FA (Figure 5). 
+
+> Figure 5. Associations between global EEG metrics and cortical fractional anisotropy (FA) at term -equivalent age in
+> preterm infants
+> Scatter plots showing the relationship between cortical FA and (A) aperiodic offset, (B) aperiodic exponent, and (C) theta po wer,
+> in preterm infants at TEA. Lines depict the predicted regression slope; shaded areas indicate 95% confidence intervals. Solid
+> lines indicate statistically significant associations (p < 0.05), while dashed lines indicate non -significant ones. The partial
+> correlation coefficients (r) and p -values displayed correspond to the effect of cortical FA in each model, with p -values FDR -
+> cor rected across the three outcomes.
+
+4. Discussion 
+
+This study used high -density EEG recordings and spectral parameterization to characterize 
+
+developmental changes in early brain activity from TEA to 2mCA in preterm and full -term 
+
+infants. This approach allowed us to disentangle the evolution of the aperiodi c background 
+
+activity and periodic theta activity during active/REM sleep, shedding light on their respective 
+
+contributions to the maturation of brain networks. Our analyses revealed robust age -related 
+
+changes in aperiodic metrics and periodic theta power across this developmental window. 
+
+Cluster -based analyses further uncovered region -specific developmental patterns that were 
+
+undetectable by global measures, indicating that the maturation of brain activity progresses 
+
+heterogeneously across different brain regions and networks. Although preterm and full -term 
+
+infants exhibited broadly similar trajectories, they also showed substantial inter -individual 
+
+variability. Within the preterm cohort, variability in spectral metrics at TEA was associated with 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+22 
+
+distinct clinical risk factors and, to a lesser extent, with MRI -derived indices of cortical 
+
+microstructural maturation. 
+
+4.1 Development of aperiodic and periodic activity during the early postnatal period 
+
+Age -related changes in aperiodic activity 
+
+Developmental trajectories of EEG aperiodic metrics have been documented in a few prior 
+
+longitudinal investigations, targeting developmental windows after 1 -2 months of age in 
+
+typically developing infants  (Rico ‐Picó et al., 2023; Schaworonkow & Voytek, 2021; Wilkinson 
+
+et al., 2024)  or the period between 35 and 46 weeks PMA  (Chini et al., 2022) . Our study 
+
+extends this literature by characterizing the developmental period between TEA -2mCA, and 
+
+by including insights from both preterm and full -term infants. Within this early window, we 
+
+observed an increase in aperiodic offset, which appears to be a n extension of previously 
+
+reported age -related increases starting from 2 months towards one year of age  (Rico ‐Picó et 
+
+al., 2023; Wilkinson et al., 2024) .
+
+For aperiodic exponent, we also observed an age -related increase over posterior areas. This 
+
+pattern aligns with previous reports of an increase between 35 and 46 weeks PMA (Chini et 
+
+al., 2022), and between 2 and 8 months ( Wilkinson et al., 2024 ), but contradicts a report of 
+
+decrease from 1 to 7 months ( Schaworonkow & Voytek, 2021 ). We suggest that this 
+
+discrepancy likely stems from methodological differences and in particular the use of a 
+
+restricted frequency range (1 -10Hz) in the latter study, which may insufficiently represent the 
+
+neural activity beyond the knee -point in the power spectra. This consideration applies 
+
+specifically to the aperiodic exponent, where estimations of the slope of spectral decay 
+
+benefits from a broader frequency range (Gerster et al., 2022). In the present study, all 
+
+aperiodic estimates were derived from the broader 0.5 -30 Hz fit (Model #1) . The increase in 
+
+aperiodic exponent is further supported by evidence from animal models within a broader 
+
+fitting range (5 -45 Hz), demonstrating a developmental increase across postnatal days 2 -12 
+
+in mice medial prefrontal cortex (Chini et al., 2022). 
+
+The observation of age -related increases in aperiodic offset and exponent during infancy might 
+
+appear counterintuitive given that these metrics show larger values in early infancy  (Chini et 
+
+al., 2022; Rico ‐Picó et al., 2023; Schaworonkow & Voytek, 2021)  than in childhood and 
+
+adolescence (up to 17 years old)  (Favaro et al., 2023; Karalunas et al., 2022; Stanyard et al., 
+
+2024) . But an integrated view rather suggests that the direction of changes in aperiodic metrics 
+
+might reverse during development, with an inverted U -shaped trajectory. In particular, the 
+
+exponent might decline after ~6 -8 months (Rico -Picó et al., 2023), while the offset might 
+
+stabilize after ~12 months  (Rico ‐Picó et al., 2023; Wilkinson et al., 2024) . Further longitudinal 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+23 
+
+studies across the first postnatal year are needed to determine the precise timing of such 
+
+inflection points. 
+
+The neurobiological mechanisms that drive the evolution of aperiodic activity in the early 
+
+developmental period are not yet fully understood. However, the aperiodic offset, reflecting 
+
+the overall EEG power, is thought to be a proxy for baseline neuronal sp iking activity 
+
+(Donoghue, Haller, et al., 2020; Manning et al., 2009) . During the early postnatal period, 
+
+dramatic increases in dendritic arborization and synaptogenesis occur  (Huttenlocher & 
+
+Dabholkar, 1997) , which might cause such elevation in baseline neural activity. Reflecting the 
+
+rate at which spectral power decays across frequencies, the aperiodic exponent has been 
+
+linked to the balance between synaptic excitation (E) and inhibition (I) within cortical circuits 
+
+(Donoghue, Haller, et al., 2020; Gao et al., 2017) , with higher exponent associated with lower 
+
+E/I ratio related to increased inhibitory activity ( Gao et al., 2017 ). The observed increase in 
+
+exponent from TEA to 2mCA therefore likely reflects ongoing maturation of excitatory and 
+
+inhibitory networks. In particular, inhibitory interneurons continue migrating and integrating into 
+
+cortical circuits, and GABAergic signal ing transitions from excitatory to inhibitory  (Kostović & 
+
+Judaš, 2015; Peerboom & Wierenga, 2021; Xu et al., 2011) . These processes enable the 
+
+formation and strengthening of excitatory and inhibitory synapses which could change the E/I 
+
+balance  (Chini et al., 2022; Wilkinson et al., 2024) , and contribute to the changes in aperiodic 
+
+activity observed during early infancy. 
+
+Age -related changes in periodic activity 
+
+We further observed an increase in theta power in infants from TEA to 2mCA, which is 
+
+consistent with previous studies showing an early modest increase from 2 months of age, 
+
+followed by a decrease from the end of the first postnatal year  (Rico ‐Picó et al., 2023; 
+
+Wilkinson et al., 2024) . Our findings highlighted that the increase in theta activity begins even 
+
+earlier, at least from TEA. 
+
+Theta rhythm constitutes one of the earliest and most fundamental neural rhythms that is 
+
+generated through interactions between glutamatergic and GABAergic neurons within basal 
+
+forebrain nuclei and hippocampus  (Buzsáki, 2002; Müller & Remy, 2018) . Translational work 
+
+has further demonstrated that theta activity mediates long -range connectivity, serving as a 
+
+fundamental mechanism for integrating activity from distributed brain regions early on 
+
+(Brockmann et al., 2011; Del Rio -Bermudez et al., 2017) . In human development, theta is also 
+
+suggested to play a crucial role in shaping large -scale networks, through a more precise 
+
+synchronization between distant regions  (Uhlhaas et al., 2010) .
+
+In keeping with this literature, the observed increase in theta power from TEA to 2mCA likely 
+
+reflects the maturation of long -range connectivity, which sustain excitatory and inhibitory 
+
+circuits and enable more precise rhythmic coordination across distribu ted cortical regions. This 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+24 
+
+interpretation might be supported by our observation that theta power in preterm infants at 
+
+TEA is partly related to the cortical maturation, as assessed with diffusion MRI. Cortical 
+
+fractional anisotropy is known to decline during last gestational trimest er in fetuses and 
+
+preterm neonates, reflecting increasing microstructural complexity of the cortical plate as its 
+
+initially radial organization, linked to apical dendrites and radial glia, is progressively reshaped 
+
+by dendritic arborization and synaptogene sis  (Ouyang et al., 2019) . The inverse association 
+
+we observed between theta power and cortical FA therefore suggests a parallel between 
+
+increased oscillatory activity and progressive cortical maturation. 
+
+While this work focused on active/REM sleep and theta activity, future studies could perform 
+
+a broader examination of oscillatory rhythms across sleep and wake states. In particular, delta 
+
+activity during quiet/non -REM sleep may also serve as a sensitive m arker of early maturation 
+
+in preterm infants. However, accurate estimation of periodic delta activity remains challenging, 
+
+as current spectral parameterization methods show limitations for model fitting at low 
+
+frequencies, highlighting the need for models adapted to neonatal populations. 
+
+4.2 Spatial heterogeneity in early brain activity maturation 
+
+Early brain maturation is highly heterogeneous across regions during infancy, and our cluster 
+
+level analyses were motivated by this in order to capture spatial differences in the development 
+
+of early brain activity. We observed robust regional differences in aperiodic metrics at each 
+
+age, as well as in the maturation rate of aperiodic metrics from TEA to 2 months, whereas 
+
+periodic theta power was more spatially uniform. At TEA, anterior regions exhibited higher 
+
+aperiodic offset and exponent values than post erior regions. By 2 months corrected age 
+
+(2mCA), this spatial pattern had partially reversed: anterior regions no longer showed higher 
+
+offset values, and the exponent was even greater in posterior than anterior areas. This 
+
+redistribution coincided with reg ional differences in maturation rates. Specifically, increases in 
+
+aperiodic offset were most pronounced in posterior areas relative to anterior and central areas, 
+
+while the aperiodic exponent increased only in posterior areas, remaining stable elsewhere. 
+
+In contrast, no significant regional differences were observed for periodic theta power, but 
+
+further work considering more comprehensive regional analyses (i.e. beyond posterior -
+
+anterior directions) is needed to confirm a relative homogeneity of theta acti vity development 
+
+across brain regions in this period. 
+
+The observation of higher aperiodic metrics in the anterior regions at TEA could appear 
+
+misaligned to the classical posterior -to -anterior maturational gradient described during 
+
+infancy. Yet, two considerations help reconcile our observations with this gradient. First, a 
+
+maturational interpretation can only be drawn from the change between TEA and 2mCA. From 
+
+this perspective, our findings align with the establishe d earlier maturation of posterior areas, 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+25 
+
+since the aperiodic exponent increased exclusively in posterior regions, and the offset likewise 
+
+showed its largest increase in posterior areas. Second, the cross -sectional pattern at TEA is 
+
+difficult to interpret, as this was the earliest measure in our c ohort and the direction of 
+
+preceding changes up to this time point was unknown. Higher offset and exponent values at 
+
+TEA in anterior than posterior clusters may indicate a regional configuration shaped by several 
+
+processes specific to this early postnatal window. Transient subplate neurons, for instance, 
+
+are most numerous and persist longest in associative and prefrontal areas during this period 
+
+(Kostović et al., 2015; Kostović & Judaš, 2010) , potentially sustaining the rich background 
+
+activity detected frontally at TEA. Another possibility is that immature GABAergic signaling 
+
+before a shift from excitatory to inhibitory neurotransmission  (Peerboom & Wierenga, 2021; 
+
+Xu et al., 2011)  may give rise to higher aperiodic activity due to the prevalence of excitatory 
+
+and less mature inhibitory circuitries (Gao et al., 2017). These observations align with recent 
+
+network modeling frameworks proposing that between 33 and 45 weeks of age, frontal regions 
+
+lead the emergence of a synergistic scaffold in the neonatal brain, while sensory areas mature 
+
+progressively from posterior to central regions  (Varley et al., 2024) .
+
+Nevertheless, we should note that interpretation of our scalp -level spatial patterns requires 
+
+caution. First, despite excellent goodness of fit in all clusters, we observed small but significant 
+
+cluster differences in fit quality (see Sup. Table s 13 , 14 ). These differences were not 
+
+consistent across timepoints and did not systematically align with regional findings, making it 
+
+unlikely that they fully account for the patterns reported. Moreover, the immature skull 
+
+properties at this age, particularly related to the fontanel, may infl uence amplitude -dependent 
+
+measures  (Flemming et al., 2005) , such as aperiodic offset. Future studies incorporating 
+
+realistic head models and source -level EEG analyses may help to better account for these 
+
+effects and refine regional interpretations. The anatomical basis of this apparent functional 
+
+precedence of fr ontal regions remains to be clarified, although the observed pronounced 
+
+maturational changes in posterior regions may reflect established anatomical gradients during 
+
+infancy. 
+
+Actually, a more rapid maturation of primary sensory and motor regions is generally described 
+
+centrally and posteriorly, in comparison with association regions more anteriorly  (Dubois et 
+
+al., 2015; Ouyang et al., 2019) . Consistent with this early regional heterogeneity, studies of 
+
+later infancy have reported larger posterior aperiodic offset (from 2 months to 4 years of age), 
+
+an earlier decline in posterior theta power after 9 -12 months of age, alongside less -regionally -
+
+uniform trajectories for aperiodic exponent (Rico -Pico et al., 2023; Wilkinson et al., 2024). 
+
+Collectively, these findings suggest that aperiodic and oscillatory activity follow different 
+
+developmental trajectories: aperiodic activity already displays reg ional heterogeneity between 
+
+TEA and 2mCA, whereas periodic theta power seems more spatially uniform at this stage, 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+26 
+
+probably differentiating only later in infancy. These observations highlight the value of regional 
+
+analyses for understanding early brain development. 
+
+4.3 Impact of early adversity on brain activity maturation 
+
+First, we did not detect any statistically significant differences in EEG metrics between preterm 
+
+and full -term infants at any age. This was unexpected, as extreme prematurity has previously 
+
+been associated with alterations in EEG spectral power and functional connectivity  (Guyer et 
+
+al., 2019; Tokariev et al., 2019; Yrjölä et al., 2022) . In the present study, we did not observe 
+
+such differences in either aperiodic or periodic metrics. The absence of a preterm vs full -term 
+
+group difference requires replication, particularly in light of the limited full -term sample (n = 13 
+
+vs n = 40 preterm). It should also be noted that this sample size did not permit a fully data -
+
+driven analysis (e.g., exploring effects beyond the predefined anterior/central/posterior 
+
+clusters). As a result, spatially localized effects that do not conform to this hypothes is -driven 
+
+regional analysis may have been overlooked, as suggested by the topographical distributions 
+
+(see Figure 3). It should nevertheless be noted that the full -term cohort showed more uniform 
+
+clinical characteristics than the preterm cohort (e.g. narrower range of gestational ages ). This 
+
+relative homogeneity may partially compensate for the smaller full -term sample size, although 
+
+replication in larger and equally well -characterized full -term cohorts will be needed. 
+
+Notably, our previous work in this same cohort identified differences in brain activity dynamics 
+
+between preterm and full -term infants (Adibpour et al., 2025). While this appears to contrast 
+
+with the present findings, it may reflect differences in the sens itivity of the metrics used to 
+
+capture early neural alterations, arising from distinct underlying mechanisms. It is also relevant 
+
+to consider that while prematurity did not impact our spectral measures at local -level, it might 
+
+still disrupt network -level c onnectivity and dynamics (Adibpour et al., 2025; Tokariev et al., 
+
+2019; Yrjölä et al., 2022). Given diffuse white matter alterations commonly reported in preterm 
+
+born infants  (Kline et al., 2021; Volpe, 2009) , it is possible that prematurity disrupts how 
+
+distributed regions coordinate their rhythmic activity (ie. inter -regional synchronization 
+
+patterns), even when each region individually generates comparable local amount of aperiodic 
+
+or periodic activity in p reterm and fullterm infants. Thus, our local spectral parameterization 
+
+metrics may not sufficiently capture broader network -level alterations reflected for example 
+
+through inter -regional connectivity measures. Extending the parameterization frameworks to 
+
+the network level analyses of brain activity may therefore help delineate inter -regional 
+
+synchrony driven by genuine oscillatory activity, once the variability in oscillatory frequencies 
+
+is identified across infants. 
+
+Importantly, between -group comparisons might also have been influenced by heterogeneity 
+
+within the preterm population. To address this, we examined variability in EEG metrics at TEA 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+27 
+
+in relation to key biological and perinatal risk factors. These analyses were exploratory, given 
+
+the modest size of our preterm cohort (n=40 at TEA) and the resulting subgroup imbalances 
+
+detailed below; the findings should therefore be interpreted as preliminary and will require 
+
+confirmation in larger samples. We first observed a sex effect on theta power (n=21 males vs 
+
+n=18 females), with males showing lower theta power than females. As theta power increased 
+
+with maturation in our cohort, this finding suggests lower or delayed maturation in males, 
+
+consistent with our prior observations of slower EEG dynamics (Adibpour et al., 2025) and 
+
+broader evidence of increased male vulnerability and poorer outcomes in infants born preterm 
+
+(Hintz et al., 2006) 
+
+Second, infants born at lower gestational ages (<28 weeks) exhibited lower aperiodic 
+
+exponents than those born later in our cohort (n=13, 17 and 10 across the 24 –26, 26 –28 and 
+
+28 –32 weeks subgroups, respectively). Given that the exponent increased with maturation, 
+
+this suggests that a delayed maturation associated with very early birth may persist until TEA. 
+
+Of note, this contrasted with prior work in lower -risk preterm infants, largely born after 32 
+
+weeks, which reported no impact of gestational age at bir th on exponent at TEA (Shuffrey et 
+
+al., 2022). 
+
+We also found higher theta power at TEA in infants with small weight at birth for gestational 
+
+age at birth. This result appeared counterintuitive and should therefore be interpreted 
+
+cautiously. In our cohort, only 7 of the 39 infants with an identifiable t heta peak had small 
+
+weight for gestational age at birth, which limited statistical power for testing potential 
+
+interactions between weight risk and other risk factors. This subgroup imbalance was more 
+
+pronounced than for the rest of the clinical factors ex amined here. Nonetheless, qualitative 
+
+inspection of these few infants indicated no specific effects of other clinical factors. While 
+
+altered spectral power has been reported in growth -restricted neonates  (Castro Conde et al., 
+
+2020; Cohen et al., 2018; Stevenson et al., 2022) , larger samples are needed to determine 
+
+whether our findings might be biased or reflect compensatory or atypical developmental 
+
+mechanisms. 
+
+Finally, infants with a history of invasive mechanical ventilation (n=16 with ventilation vs n=24 
+
+without ventilation ) showed reduced aperiodic exponent and offset at TEA, suggesting a 
+
+delayed maturation in brain functioning. The direction of this effect interpretable as relatively 
+
+delayed background -activity maturation, aligns well with the literature that has linked 
+
+prolonged ventilation and bronchopulmonary dysplasia with immature EEG background 
+
+activity, reduced spectral power  (Hahn & Tharp, 1990) , decreased cortical volumes and 
+
+compromised white matter integrity  (Elbaz et al., 2026; Kidokoro et al., 2013) . Altogether, this 
+
+highlights that infants with such respiratory complications are particularly sick and at risk of 
+
+impaired development of early brain activity. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+28 
+
+In conclusion, this study demonstrates that EEG spectral parameterization combined with 
+
+spatial analysis provides a sensitive framework for capturing the early postnatal maturation of 
+
+brain activity in preterm and full -term infants. By identifying preliminary associations with 
+
+clinical risk factors and cortical microstructure, our findings suggest that separating aperiodic 
+
+and periodic activity yields novel insights into functional brain development and alterations, 
+
+with specific neural vulnerabilities asso ciated with perinatal adv ersity. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+29 
+
+Acknowledgments 
+
+A.G.C. was supported by a DIM C -BRAINS PhD fellowship (2023 –2026), L.D. by an ED3C 
+
+PhD fellowship (2020 –2024), and L.G. by an ED3CH PhD fellowship (2023 –2026). S.N. 
+
+received a postdoctoral fellowship from the Bettencourt Schueller Foundation, and P.A. was 
+
+supported by the UK Government Horizon Europe funding guarantee scheme of MSCA (grant 
+
+EP/X021947/1).This work was further supported by the French National Agency for Research 
+
+(ANR grant ANR -20 -CE17 -0014 -03 PremaLocom), the Fondation Médisite (under the aeg is 
+
+of the Fondation de France, grant FdF -18 -00092867), the IdEx Université de Paris (ANR -18 -
+
+IDEX -0001) and the French government as part of the France 2030 program (grant ANR -23 -
+
+IAHU -0010, IHU Robert -Debré du Cerveau de l’Enfant). 
+
+The authors would like to thank Guillaume Dumas and the SoNeTAA platform team (funded 
+
+by Fondation de France), as well as clinical teams at Robert -Debré Hospital (in particular 
+
+Nathalie Medrano, Séverine Baron, Mireille Toquer and Magali Riche) and at 
+
+Neur oSpin/UNIACT (in particular Gaëlle Mediouni and Bernadette Martins) whose 
+
+collaboration made it possible to conduct this study in a clinical setting. We are also grateful 
+
+for helpful discussions with Catherine Chiron, Anna Kaminska, Claire Kabdebon, Fabric e
+
+Wallois and Nadège Roche -Labarbe. Last but not least, we would like to sincerely thank all 
+
+the infants and parents who participated in this study. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+30 
+
+References 
+
+American Academy of Sleep Medicine. (2023). The AASM manual for the scoring of sleep and associated 
+
+events: Rules, terminology and technical specifications (Version 3). American Academy of Sleep 
+
+Medicine. 
+
+Adibpour, P., Nasser, H., Pedoux, A., Devisscher, L., Elbaz, N., Ghozland, C., Hinnekens, E., Neumane, 
+
+S., Kabdebon, C., Lefebvre, A., Kaminska, A., Hertz -Pannier, L., Heneau, A., Sibony, O., Alison, M., 
+
+Delanoë, C., Delorme, R., Barbu -Roth, M., Biran, V., & Dubois, J. (2025). Characterizing the temporal 
+
+dynamics and maturation of brain activity during sleep: An EEG microstate study in preterm and full -term 
+
+infants.  Imaging Neuroscience , 3, imag_a_00450. https://doi.org/10.1162/imag_a_00450 
+
+Ancel, P. -Y., Livinec, F., Larroque, B., Marret, S., Arnaud, C., Pierrat, V., Dehan, M., N′Guyen, S., 
+
+Escande, B., Burguet, A., Thiriez, G., Picaud, J. -C., André, M., Bréart, G., Kaminski, M., & and the 
+
+EPIPAGE Study Group. (2006). Cerebral Palsy Among Ver y Preterm Children in Relation to Gestational 
+
+Age and Neonatal Ultrasound Abnormalities: The EPIPAGE Cohort Study.  Pediatrics , 117 (3), 828 –835. 
+
+https://doi.org/10.1542/peds.2005 -0091 
+
+André, M., Lamblin, M. -D., d’Allest, A. M., Curzi -Dascalova, L., Moussalli -Salefranque, F., Nguyen The 
+
+Tich, S., Vecchierini -Blineau, M. -F., Wallois, F., Walls -Esquivel, E., & Plouin, P. (2010). 
+
+Electroencephalography in premature and full -term infants. De velopmental features and glossary. 
+
+Neurophysiologie Clinique/Clinical Neurophysiology , 40 (2), 59 –124. 
+
+https://doi.org/10.1016/j.neucli.2010.02.002 
+
+Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting Linear Mixed -Effects Models Using lme4. 
+
+Journal of Statistical Software , 67 (1). https://doi.org/10.18637/jss.v067.i01 
+
+Bourel -Ponchel, E., Gueden, S., Hasaerts, D., Héberlé, C., Malfilâtre, G., Mony, L., Vignolo -Diard, P., & 
+
+Lamblin, M. -D. (2021). Normal EEG during the neonatal period: Maturational aspects from premature to 
+
+full -term newborns.  Neurophysiologie Clinique , 51 (1), 61 –88. https://doi.org/10.1016/j.neucli.2020.10.004 
+
+Bradley, E., Blencowe, H., Moller, A. -B., Okwaraji, Y. B., Sadler, F., Gruending, A., Moran, A. C., Requejo, 
+
+J., Ohuma, E. O., & Lawn, J. E. (2025). Born too soon: Global epidemiology of preterm birth and drivers 
+
+for change.  Reproductive Health , 22 (Suppl 2), 105. https://doi.org/10.1186/s12978 -025 -02033 -x
+
+Brockmann, M. D., Pöschel, B., Cichon, N., & Hanganu -Opatz, I. L. (2011). Coupled oscillations mediate 
+
+directed interactions between prefrontal cortex and hippocampus of the neonatal rat. Neuron, 71(2), 332 -
+
+347. 
+
+Buzsáki, G. (2002). Theta Oscillations in the Hippocampus.  Neuron , 33 (3), 325 –340. 
+
+https://doi.org/10.1016/S0896 -6273(02)00586 -X
+
+Calbi, M., Siri, F., Heimann, K., Barratt, D., Gallese, V., Kolesnikov, A., & Umiltà, M. A. (2019). How context 
+
+influences the interpretation of facial expressions: A source localization high -density EEG study on the 
+
+“Kuleshov effect.”  Scientific Reports , 9(1), 2107. https://doi.org/10.1038/s41598 -018 -37786 -y
+
+Castro Conde, J. R., González Campo, C., González González, N. L., Reyes Millán, B., González Barrios, 
+
+D., Jiménez Sosa, A., & Quintero Fuentes, I. (2020). Assessment of neonatal EEG background and 
+
+neurodevelopment in full -term small for their gestational age infants.  Pediatric Research , 88 (1), 91 –99. 
+
+https://doi.org/10.1038/s41390 -019 -0693 -0
+
+Cellier, D., Riddle, J., Petersen, I., & Hwang, K. (2021). The development of theta and alpha neural 
+
+oscillations from ages 3 to 24 years.  Developmental Cognitive Neuroscience , 50 , 100969. 
+
+https://doi.org/10.1016/j.dcn.2021.100969 
+
+Chini, M., Pfeffer, T., & Hanganu -Opatz, I. (2022). An increase of inhibition drives the developmental 
+
+decorrelation of neural activity.  eLife , 11 , e78811. https://doi.org/10.7554/eLife.78811 
+
+Cohen, E., Wong, F. Y., Wallace, E. M., Mockler, J. C., Odoi, A., Hollis, S., Horne, R. S. C., & Yiallourou, 
+
+S. R. (2018). EEG power spectrum maturation in preterm fetal growth restricted infants.  Brain Research ,
+
+1678 , 180 –186. https://doi.org/10.1016/j.brainres.2017.10.010 
+
+Corsi -Cabrera, M., Cubero -Rego, L., Ricardo -Garcell, J., & Harmony, T. (2020). Week -by -week changes 
+
+in sleep EEG in healthy full -term newborns.  Sleep , 43 (4), zsz261. https://doi.org/10.1093/sleep/zsz261 
+
+Del Rio ‐Bermudez, C., & Blumberg, M. S. (2018). Active Sleep Promotes Functional Connectivity in 
+
+Developing Sensorimotor Networks.  BioEssays , 40 (4), 1700234. https://doi.org/10.1002/bies.201700234 
+
+Del Rio -Bermudez, C., Kim, J., Sokoloff, G., & Blumberg, M. S. (2017). Theta oscillations during active 
+
+sleep synchronize the developing rubro -hippocampal sensorimotor network. Current Biology, 27(10), 
+
+1413 –1424.e4. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+31 
+
+Delorme, A., & Makeig, S. (2004). EEGLAB: An open source toolbox for analysis of single -trial EEG 
+
+dynamics including independent component analysis.  Journal of Neuroscience Methods , 134 (1), 9 –21. 
+
+https://doi.org/10.1016/j.jneumeth.2003.10.009 
+
+Dereymaeker, A., Pillay, K., Vervisch, J., De Vos, M., Van Huffel, S., Jansen, K., & Naulaers, G. (2017). 
+
+Review of sleep -EEG in preterm and term neonates.  Early Human Development , 113 , 87 –103. 
+
+https://doi.org/10.1016/j.earlhumdev.2017.07.003 
+
+Devisscher, L., Y. Leprince, V. Biran, N. Elbaz, C. Ghozland, P. Adibpour, C. Chiron et al.  Impact of clinical 
+
+risk factors on white matter microstructure in preterm -born infants: Investigation with diffusion MRI and 
+
+tractography at term -equivalent age. medRxiv (2026): 2026 -02. 
+
+Donoghue, T., Dominguez, J., & Voytek, B. (2020).  Electrophysiological Frequency Band Ratio Measures 
+
+Conflate Periodic and Aperiodic Neural Activity.  eNeuro , 7(6). https://doi.org/10.1523/ENEURO.0192 -
+
+20.2020 
+
+Donoghue, T., Haller, M., Peterson, E. J., Varma, P., Sebastian, P., Gao, R., Noto, T., Lara, A. H., Wallis, 
+
+J. D., Knight, R. T., Shestyuk, A., & Voytek, B. (2020). Parameterizing neural power spectra into periodic 
+
+and aperiodic components.  Nature Neuroscience , 23 (12), 1655 –1665. https://doi.org/10.1038/s41593 -
+
+020 -00744 -x
+
+Dubois, J., Alison, M., Counsell, S. J., Hertz ‐Pannier, L., Hüppi, P. S., & Benders, M. J. N. L. (2021).  MRI 
+
+of the Neonatal Brain: A Review of Methodological Challenges and Neuroscientific Advances.  Journal of 
+
+Magnetic Resonance Imaging , 53 (5), 1318 –1343. https://doi.org/10.1002/jmri.27192 
+
+Dubois, J., Dehaene -Lambertz, G., Kulikova, S., Poupon, C., Hüppi, P. S., & Hertz -Pannier, L. (2014). 
+
+The early development of brain white matter: A review of imaging studies in fetuses, newborns and infants. 
+
+Neuroscience , 276 , 48 –71. https://doi.org/10.1016/j.neuroscience.2013.12.044 
+
+Dubois, J., Kostovic, I., & Judas, M. (2015).  Development of Structural and Functional Connectivity. In 
+
+Brain Mapping  (pp. 423 –437). Elsevier. https://doi.org/10.1016/B978 -0-12 -397025 -1.00360 -2
+
+Ebner, M., Wang, G., Li, W., Aertsen, M., Patel, P. A., Aughwane, R., Melbourne, A., Doel, T., 
+
+Dymarkowski, S., De Coppi, P., David, A. L., Deprest, J., Ourselin, S., & Vercauteren, T. (2020). An 
+
+automated framework for localization, segmentation and super -resolution reconstruction of fetal brain 
+
+MRI.  NeuroImage , 206 , 116324. https://doi.org/10.1016/j.neuroimage.2019.116324 
+
+Elbaz, N., Biran, V., Ghozland, C., Devisscher, L., Carpinteiro, A. G., Bourmaud, A., Elmaleh -Bergès, M., 
+
+Hertz -Pannier, L., Leprince, Y., Frérot, A., Héneau, A., Dubois, J., & Alison, M. (2026).  Investigating 
+
+Cerebral Anomalies in Preterm Infants and Associated Risk Factors With Magnetic Resonance Imaging 
+
+at Term -Equivalent Age.  Pediatric Neurology , 175 , 156 –164. 
+
+https://doi.org/10.1016/j.pediatrneurol.2025.11.012 
+
+Favaro, J., Colombo, M. A., Mikulan, E., Sartori, S., Nosadini, M., Pelizza, M. F., Rosanova, M., Sarasso, 
+
+S., Massimini, M., & Toldo, I. (2023). The maturation of aperiodic EEG activity across development reveals 
+
+a progressive differentiation of wakefulne ss from sleep.  NeuroImage , 277 , 120264. 
+
+https://doi.org/10.1016/j.neuroimage.2023.120264 
+
+Flemming, L., Wang, Y., Caprihan, A., Eiselt, M., Haueisen, J., & Okada, Y. (2005).  Evaluation of the 
+
+distortion of EEG signals caused by a hole in the skull mimicking the fontanel in the skull of human 
+
+neonates.  Clinical Neurophysiology , 116 (5), 1141 –1152. https://doi.org/10.1016/j.clinph.2005.01.007 
+
+Fló, A., Gennari, G., Benjamin, L., & Dehaene -Lambertz, G. (2022). Automated Pipeline for Infants 
+
+Continuous EEG (APICE): A flexible pipeline for developmental cognitive studies.  Developmental 
+
+Cognitive Neuroscience , 54 , 101077. https://doi.org/10.1016/j.dcn.2022.101077 
+
+Fransson, P., Metsäranta, M., Blennow, M., Åden, U., Lagercrantz, H., & Vanhatalo, S. (2013). Early 
+
+Development of Spatial Patterns of Power -Law Frequency Scaling in fMRI Resting -State and EEG Data 
+
+in the Newborn Brain.  Cerebral Cortex , 23 (3), 638 –646. https://doi.org/10.1093/cercor/bhs047 
+
+Gao, R., Peterson, E. J., & Voytek, B. (2017). Inferring synaptic excitation/inhibition balance from field 
+
+potentials.  NeuroImage , 158 , 70 –78. https://doi.org/10.1016/j.neuroimage.2017.06.078 
+
+Gerster, M., Waterstraat, G., Litvak, V., Lehnertz, K., Schnitzler, A., Florin, E., Curio, G., & Nikulin, V. 
+
+(2022).  Separating Neural Oscillations from Aperiodic 1/f Activity: Challenges and Recommendations. 
+
+Neuroinformatics , 20 (4), 991 –1012. https://doi.org/10.1007/s12021 -022 -09581 -8
+
+Grigg -Damberger, M. M. (2016). The Visual Scoring of Sleep in Infants 0 to 2 Months of Age.  Journal of 
+
+Clinical Sleep Medicine , 12 (03), 429 –445. https://doi.org/10.5664/jcsm.5600 
+
+Guyer, C., Werner, H., Wehrle, F., Bölsterli, B. K., Hagmann, C., Jenni, O. G., & Huber, R. (2019). Brain 
+
+maturation in the first 3 months of life, measured by electroencephalogram: A comparison between 
+
+preterm and term -born infants.  Clinical Neurophysiology , 130 (10), 1859 –1868. 
+
+https://doi.org/10.1016/j.clinph.2019.06.230 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+32 
+
+Hahn, J. S., & Tharp, B. R. (1990). The dysmature EEG pattern in infants with bronchopulmonary 
+
+dysplasia and its prognostic implications.  Electroencephalography and Clinical Neurophysiology , 76 (2), 
+
+106 –113. https://doi.org/10.1016/0013 -4694(90)90208 -2
+
+Hill, A. T., Clark, G. M., Bigelow, F. J., Lum, J. A. G., & Enticott, P. G. (2022). Periodic and aperiodic 
+
+neural activity displays age -dependent changes across early -to -middle childhood.  Developmental 
+
+Cognitive Neuroscience , 54 , 101076. https://doi.org/10.1016/j.dcn.2022.101076 
+
+Hintz, S. R., Kendrick, D. E., Vohr, B. R., Poole, W. K., Higgins, R. D., & For The Nichd Neonatal Research 
+
+Network. (2006). Gender differences in neurodevelopmental outcomes among extremely preterm, 
+
+extremely ‐low ‐birthweight infants.  Acta Paediatrica , 95 (10), 1239 –1248. 
+
+https://doi.org/10.1080/08035250600599727 
+
+Huttenlocher, P. R., & Dabholkar, A. S. (1997).  Regional differences in synaptogenesis in human cerebral 
+
+cortex.  The Journal of Comparative Neurology , 387 (2), 167 –178. https://doi.org/10.1002/(SICI)1096 -
+
+9861(19971020)387:2<167::AID -CNE1>3.0.CO;2 -Z
+
+Iyer, K. K., Roberts, J. A., Hellström -Westas, L., Wikström, S., Hansen Pupp, I., Ley, D., Vanhatalo, S., & 
+
+Breakspear, M. (2015). Cortical burst dynamics predict clinical outcome early in extremely preterm infants. 
+
+Brain , 138 (8), 2206 –2218. https://doi.org/10.1093/brain/awv129 
+
+Johnson, S., & Marlow, N. (2017). Early and long -term outcome of infants born extremely preterm. 
+
+Archives of Disease in Childhood , 102 (1), 97 –102. https://doi.org/10.1136/archdischild -2015 -309581 
+
+Karalunas, S. L., Ostlund, B. D., Alperin, B. R., Figuracion, M., Gustafsson, H. C., Deming, E. M., Foti, D., 
+
+Antovich, D., Dude, J., Nigg, J., & Sullivan, E. (2022). Electroencephalogram aperiodic power spectral 
+
+slope can be reliably measured and predicts ADHD risk in early development.  Developmental 
+
+Psychobiology , 64 (3), e22228. https://doi.org/10.1002/dev.22228 
+
+Kidokoro, H., Neil, J. J., & Inder, T. E. (2013). New MR Imaging Assessment Tool to Define Brain 
+
+Abnormalities in Very Preterm Infants at Term.  American Journal of Neuroradiology , 34 (11), 2208 –2214. 
+
+https://doi.org/10.3174/ajnr.A3521 
+
+Kline, J. E., Illapani, V. S. P., Li, H., He, L., Yuan, W., & Parikh, N. A. (2021). Diffuse white matter 
+
+abnormality in very preterm infants at term reflects reduced brain network efficiency.  NeuroImage: Clinical ,
+
+31 , 102739. https://doi.org/10.1016/j.nicl.2021.102739 
+
+Kostović, I., & Judaš, M. (2010).  The development of the subplate and thalamocortical connections in the 
+
+human foetal brain.  Acta Paediatrica , 99 (8), 1119 –1127. https://doi.org/10.1111/j.1651 -
+
+2227.2010.01811.x 
+
+Kostović, I., & Judaš, M. (2015). Embryonic and Fetal Development of the Human Cerebral Cortex. In 
+
+Brain Mapping  (pp. 167 –175). Elsevier. https://doi.org/10.1016/B978 -0-12 -397025 -1.00193 -7
+
+Kostović, I., Sedmak, G., Vukšić, M., & Judaš, M. (2015). The Relevance of Human Fetal Subplate Zone 
+
+for Developmental Neuropathology of Neuronal Migration Disorders and Cortical Dysplasia.  CNS 
+
+Neuroscience & Therapeutics , 21 (2), 74 –82. https://doi.org/10.1111/cns.12333 
+
+Li, M., Wang, Y., Chen, Y., Dubois, A. E. E., Jia, G., Wu, Q., Bringas -Vega, M. L., Dumas, G., & Valdes -
+
+Sosa, P. A. (2025). Aperiodic and periodic EEG component lifespan trajectories: Monotonic decrease 
+
+versus growth -then -decline [Preprint]. bioRxiv. https ://doi.org/10.1101/2025.08.26.672407 
+
+Luotonen, S., Railo, H., Acosta, H., Huotilainen, M., Lavonius, M., Karlsson, L., Karlsson, H., & Tuulari, J. 
+
+J. (2025). Gestational Duration and Postnatal Age ‐Related Changes in Aperiodic and Periodic Parameters 
+
+in Neonatal and Toddler Electroencephalogra m (EEG ).  Human Brain Mapping , 46 (1), e70130. 
+
+https://doi.org/10.1002/hbm.70130 
+
+Manning, J. R., Jacobs, J., Fried, I., & Kahana, M. J. (2009). Broadband shifts in local field potential power 
+
+spectra are correlated with single -neuron spiking in humans. Journal of Neuroscience , 29(43), 13613 -
+
+13620. 
+
+Mirmiran, M., Maas, Y. G. H., & Ariagno, R. L. (2003).  Development of fetal and neonatal sleep and 
+
+circadian rhythms.  Sleep Medicine Reviews , 7(4), 321 –334. https://doi.org/10.1053/smrv.2002.0243 
+
+Müller, C., & Remy, S. (2018). Septo –hippocampal interaction.  Cell and Tissue Research , 373 (3), 565 –
+
+575. https://doi.org/10.1007/s00441 -017 -2745 -2
+
+Neumane, S., Gondova, A., Leprince, Y., Hertz -Pannier, L., Arichi, T., & Dubois, J. (2022).  Early structural 
+
+connectivity within the sensorimotor network: Deviations related to prematurity and association to 
+
+neurodevelopmental outcome.  Frontiers in Neuroscience , 16, 932386. 
+
+Novelli, L., D’atri, A., Marzano, C., Finotti, E., Ferrara, M., Bruni, O., & De Gennaro, L. (2016).  Mapping 
+
+changes in cortical activity during sleep in the first 4 years of life.  Journal of Sleep Research , 25 (4), 381 –
+
+389. https://doi.org/10.1111/jsr.12390 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+33 
+
+Ohuma, E. O., Moller, A. -B., Bradley, E., Chakwera, S., Hussain -Alkhateeb, L., Lewin, A., Okwaraji, Y. B., 
+
+Mahanani, W. R., Johansson, E. W., Lavin, T., Fernandez, D. E., Domínguez, G. G., De Costa, A., 
+
+Cresswell, J. A., Krasevec, J., Lawn, J. E., Blencowe , H., Requejo, J., & Moran, A. C. (2023). National, 
+
+regional, and global estimates of preterm birth in 2020, with trends from 2010: A systematic analysis.  The 
+
+Lancet , 402 (10409), 1261 –1271. https://doi.org/10.1016/S0140 -6736(23)00878 -4
+
+Oostenveld, R., Fries, P., Maris, E., & Schoffelen, J. -M. (2011). FieldTrip: Open Source Software for 
+
+Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data.  Computational Intelligence and 
+
+Neuroscience , 2011 , 1 –9. https://doi.org/10.1155/2011/156869 
+
+O’Toole, J. M., & Boylan, G. B. (2019). Quantitative Preterm EEG Analysis: The Need for Caution in Using 
+
+Modern Data Science Techniques.  Frontiers in Pediatrics , 7, 174. 
+
+https://doi.org/10.3389/fped.2019.00174 
+
+Ouyang, M., Dubois, J., Yu, Q., Mukherjee, P., & Huang, H. (2019). Delineation of early brain development 
+
+from fetuses to infants with diffusion MRI and beyond.  NeuroImage , 185 , 836 –850. 
+
+https://doi.org/10.1016/j.neuroimage.2018.04.017 
+
+Peerboom, C., & Wierenga, C. J. (2021).  The postnatal GABA shift: A developmental perspective. 
+
+Neuroscience & Biobehavioral Reviews , 124 , 179 –192. https://doi.org/10.1016/j.neubiorev.2021.01.024 
+
+Pierrat, V., Marchand -Martin, L., Marret, S., Arnaud, C., Benhammou, V., Cambonie, G., Debillon, T., 
+
+Dufourg, M. -N., Gire, C., Goffinet, F., Kaminski, M., Lapillonne, A., Morgan, A. S., Rozé, J. -C., Twilhaar, 
+
+S., Charles, M. -A., & Ancel, P. -Y. (2021).  Neurodevelopmental outcomes at age 5 among children born 
+
+preterm: EPIPAGE -2 cohort study . https://doi.org/10.1136/bmj.n741 
+
+Ream, M. A., & Lehwald, L. (2018).  Neurologic Consequences of Preterm Birth.  Current Neurology and 
+
+Neuroscience Reports , 18 (8), 48. https://doi.org/10.1007/s11910 -018 -0862 -2
+
+Rico ‐Picó, J., Moyano, S., Conejero, Á., Hoyo, Á., Ballesteros ‐Duperón, M. Á., & Rueda, M. R. (2023). 
+
+Early development of electrophysiological activity: Contribution of periodic and aperiodic components of 
+
+the  EEG  signal.  Psychophysiology , 60 (11), e14360. https://doi.org/10.1111/psyp.14360 
+
+Sacchi, C., Marino, C., Nosarti, C., Vieno, A., Visentin, S., & Simonelli, A. (2020).  Association of 
+
+intrauterine growth restriction and small for gestational age status with childhood cognitive outcomes: a 
+
+systematic review and meta -analysis. JAMA pediatrics, 174(8), 772 -781. 
+
+Sankupellay, M., Wilson, S., Heussler, H. S., Parsley, C., Yuill, M., & Dakin, C. (2011). Characteristics of 
+
+sleep EEG power spectra in healthy infants in the first two years of life.  Clinical Neurophysiology , 122 (2), 
+
+236 –243. https://doi.org/10.1016/j.clinph.2010.06.030 
+
+Schaworonkow, N., & Voytek, B. (2021). Longitudinal changes in aperiodic and periodic activity in 
+
+electrophysiological recordings in the first seven months of life.  Developmental Cognitive Neuroscience ,
+
+47 , 100895. https://doi.org/10.1016/j.dcn.2020.100895 
+
+Shuffrey, L. C., Pini, N., Potter, M., Springer, P., Lucchini, M., Rayport, Y., Sania, A., Firestein, M., Brink, 
+
+L., Isler, J. R., Odendaal, H., & Fifer, W. P. (2022). Aperiodic electrophysiological activity in preterm infants 
+
+is linked to subsequent autis m risk. Developmental Psychobiology, 64(3), e22271. 
+
+https://doi.org/10.1002/dev.22271 
+
+Stanyard, R. A., Mason, D., Ellis, C., Dickson, H., Short, R., Batalle, D., & Arichi, T. (2024). Aperiodic and 
+
+Hurst EEG exponents across early human brain development: A systematic review.  Developmental 
+
+Cognitive Neuroscience , 68 , 101402. https://doi.org/10.1016/j.dcn.2024.101402 
+
+Stevenson, N. J., Lai, M. M., Starkman, H. E., Colditz, P. B., & Wixey, J. A. (2022). 
+
+Electroencephalographic studies in growth -restricted and small -for -gestational -age neonates.  Pediatric 
+
+Research , 92 (6), 1527 –1534. https://doi.org/10.1038/s41390 -022 -01992 -2
+
+Tokariev, A., Roberts, J. A., Zalesky, A., Zhao, X., Vanhatalo, S., Breakspear, M., & Cocchi, L. (2019). 
+
+Large -scale brain modes reorganize between infant sleep states and carry prognostic information for 
+
+preterms.  Nature Communications , 10 (1), 2619. https://doi.org/10.1038/s41467 -019 -10467 -8
+
+Tokariev, A., Videman, M., Palva, J. M., & Vanhatalo, S. (2016).  Functional Brain Connectivity Develops 
+
+Rapidly Around Term Age and Changes Between Vigilance States in the Human Newborn.  Cerebral 
+
+Cortex , 26 (12), 4540 –4550. https://doi.org/10.1093/cercor/bhv219 
+
+Uhlhaas, P. J., Roux, F., Rodriguez, E., Rotarska -Jagiela, A., & Singer, W. (2010).  Neural synchrony and 
+
+the development of cortical networks.  Trends in Cognitive Sciences , 14 (2), 72 –80. 
+
+https://doi.org/10.1016/j.tics.2009.12.002 
+
+Vanhatalo, S., & Kaila, K. (2006). Development of neonatal EEG activity: From phenomenology to 
+
+physiology.  Seminars in Fetal and Neonatal Medicine , 11 (6), 471 –478. 
+
+https://doi.org/10.1016/j.siny.2006.07.008 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+34 
+
+Varley, T. F., Sporns, O., Stevenson, N. J., Welch, M. G., Myers, M. M., Vanhatalo, S., & Tokariev, A. 
+
+(2024).  Emergence of a synergistic scaffold in the brains of human infants .
+
+https://doi.org/10.1101/2024.02.23.581375 
+
+Vliegenthart, R. J. S., Van Kaam, A. H., Aarnoudse -Moens, C. S. H., Van Wassenaer, A. G., & Onland, 
+
+W. (2019).  Duration of mechanical ventilation and neurodevelopment in preterm infants.  Archives of 
+
+Disease in Childhood - Fetal and Neonatal Edition , 104 (6), F631 –F635. 
+
+https://doi.org/10.1136/archdischild -2018 -315993 
+
+Volpe, J. J. (2009). Brain injury in premature infants: A complex amalgam of destructive and 
+
+developmental disturbances. The Lancet Neurology, 8(1), 110 –124. https://doi.org/10.1016/S1474 -
+
+4422(08)70294 -1
+
+Wallois, F., Routier, L., Heberlé, C., Mahmoudzadeh, M., Bourel -Ponchel, E., & Moghimi, S. (2021). Back 
+
+to basics: The neuronal substrates and mechanisms that underlie the electroencephalogram in premature 
+
+neonates.  Neurophysiologie Clinique , 51 (1), 5 –33. https://doi.org/10.1016/j.neucli.2020.10.006 
+
+Whitehead, K., Laudiano -Dray, M. P., Meek, J., & Fabrizi, L. (2018). Emergence of mature cortical activity 
+
+in wakefulness and sleep in healthy preterm and full -term infants.  Sleep , 41 (8). 
+
+https://doi.org/10.1093/sleep/zsy096 
+
+Wilkinson, C. L., Yankowitz, L. D., Chao, J. Y., Gutiérrez, R., Rhoades, J. L., Shinnar, S., Purdon, P. L., 
+
+& Nelson, C. A. (2024). Developmental trajectories of EEG aperiodic and periodic components in children 
+
+2–44 months of age.  Nature Communications , 15 (1), 5788. https://doi.org/10.1038/s41467 -024 -50204 -4
+
+World Health Organization. (2023).  Preterm birth . https://www.who.int/news -room/fact -
+
+sheets/detail/preterm -birth 
+
+Xu, G., Broadbelt, K. G., Haynes, R. L., Folkerth, R. D., Borenstein, N. S., Belliveau, R. A., Trachtenberg, 
+
+F. L., Volpe, J. J., & Kinney, H. C. (2011).  Late Development of the GABAergic System in the Human 
+
+Cerebral Cortex and White Matter.  Journal of Neuropathology & Experimental Neurology , 70 (10), 841 –
+
+858. https://doi.org/10.1097/NEN.0b013e31822f471c 
+
+Yrjölä, P., Stjerna, S., Palva, J. M., Vanhatalo, S., & Tokariev, A. (2022). Phase -Based Cortical Synchrony 
+
+Is Affected by Prematurity.  Cerebral Cortex , 32 (10), 2265 –2276. https://doi.org/10.1093/cercor/bhab357 
+
+Yrjölä, P., Vanhatalo, S., & Tokariev, A. (2024). Neuronal Coupling Modes Show Differential Development 
+
+in the Early Cortical Activity Networks of Human Newborns.  The Journal of Neuroscience , 44 (26), 
+
+e1012232024. https://doi.org/10.1523/JNEUROSCI.1012 -23.2024 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+35 
+
+Supplementary material 
+
+Supplementary Table 1. Comparison of demographic and clinical characteristics between preterm infants 
+
+with recordings at Session 1 (TEA) only (attrition) and those with longitudinal data at both Sessions (TEA 
+
++ 2 mCA)    
+
+> Variable Session 1 only (N = 25) Session 1 and 2 (N = 15) p-value
+
+Sex 
+
+Male 
+
+Female 
+
+14 (56.0%) 
+
+11 (44.0%) 
+
+8 (53.3%) 
+
+7 (46.7%) 
+
+1.00 
+
+Low birth weight risk 
+
+Yes 
+
+No 
+
+5 (20.0%) 
+
+20 (80.0%) 
+
+2 (13.3%) 
+
+13 (86.7%) 
+
+0.69 
+
+Invasive ventilation 
+
+Yes 
+
+No 
+
+10 (40.0%) 
+
+15 (60.0%) 
+
+6 (40.0%) 
+
+9 (60.0%) 
+
+1.00 
+
+Age group at EEG 
+
+G1 
+
+G2 
+
+G3 
+
+9 (36.0%) 
+
+9 (36.0%) 
+
+7 (28.0%) 
+
+4 (26.7%) 
+
+8 (53.3%) 
+
+3 (20.0%) 
+
+0.60 
+
+Age at EEG (weeks) 
+
+Mean (SD) [Range]  40.89 (0.90) [38.40 - 42.00]  41.03 (0.77) [39.10 - 42.10]  0.65 
+
+Categorical clinical variables are reported as n (%) and compared using Fisher's exact tests. PMA at EEG is 
+
+reported as mean (SD) and range and compared using Mann -Whitney. No significant differences were observed 
+
+between groups on any variable (all p ≥ 0. 60). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+36 
+
+Supplementary Table 2. Goodness of fit (R²) and Error from Models #1 and #2 for global power spectrum 
+
+Group  Session  Model  R² (mean ± SD)  Absolute error (mean ± SD) 
+
+Preterms 
+
+TEA 
+
+Model #1  0.997 ± 0.003  0.030 ± 0.012 
+
+Model #2  0.998 ± 0.002  0.023 ± 0.007 
+
+2mCA 
+
+Model #1  0.993 ± 0.005  0.055 ± 0.018 
+
+Model #2  0.996 ± 0.002  0.032 ± 0.008 
+
+Fullterms 
+
+0m 
+
+Model #1  0.997 ± 0.003  0.032 ± 0.015 
+
+Model #2  0.998 ± 0.001  0.022 ± 0.003 
+
+2m 
+
+Model #1  0.992 ± 0.002  0.062 ± 0.010 
+
+Model #2  0.995 ± 0.002  0.035 ± 0.009 
+
+Model #1 was fitted on the 0.5 -30 Hz range and Model #2 was fitted on the 0.5 -10 Hz range. 
+
+Abbreviations: TEA = term -equivalent age; 0/ 2m (CA ) = 0/ 2 months (corrected age). 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 37 
+
+Supplementary Table 3. Theta peak center frequency from Model #1 (0.5 - 30 Hz) and Model #2 (0.5 -10 Hz) ,
+
+across age groups and clusters 
+
+Group  Session  Region  N
+
+Mean center 
+
+frequency 
+
+Model #1 
+
+Mean center 
+
+frequency 
+
+Model #2 
+
+Statistical Test  p-value 
+
+Preterms 
+
+TEA 
+
+Global  30  4,79  4,79  Wilcoxon  0,61 
+
+Anterior  31  4,68  4,70  Wilcoxon  0,25 
+
+Central  27  4,94  4,97  Wilcoxon  0,93 
+
+Posterior  28  4,75  4,78  Wilcoxon  0,08 
+
+2mCA 
+
+Global  14  4,54  4,51  Wilcoxon  1,00 
+
+Anterior  10  4,70  4,52  Wilcoxon  1,00 
+
+Central  11  4,66  4,68  Wilcoxon  1,00 
+
+Posterior  13  4,56  4,64  Wilcoxon  0,50 
+
+Fullterms 
+
+0mCA 
+
+Global  9 4,67  4,82  Wilcoxon  0,73 
+
+Anterior  9 4,87  4,83  Wilcoxon  0,65 
+
+Central  9 4,84  4,87  Paired t -test  0,65 
+
+Posterior  6 4,79  4,71  Paired t -test  0,32 
+
+2mCA 
+
+Global  8 4,70  4,84  Wilcoxon  0,95 
+
+Anterior  7 4,63  4,74  Paired t -test  0,11 
+
+Central  7 4,86  4,54  Wilcoxon  0,22 
+
+Posterior  6 5,05  4,88  Paired t -test  0,12 
+
+Model #1 was fitted on the 0.5 -30 Hz range and Model #2 was fitted on the 0.5 -10 Hz range .
+
+Abbreviations: TEA = term -equivalent age; 0/2m(CA) = 0/2 months (corrected age) .
+
+N = number of infants with a valid theta peak in both models for a given region. 
+
+The choice between paired t -test and Wilcoxon signed -rank test was determined by the Shapiro –Wilk normality 
+
+checks. 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 38 
+
+Supplementary Table 4. Paired comparisons of theta peak power estimates between Model #1 and Model 
+
+#2, across age groups and clusters 
+
+Group  Session  Region  N Mean theta peak power 
+
+Model #1 
+
+Mean theta peak 
+
+power Model #2  Statistical Test  p-value 
+
+TEA 
+
+Global  30  0,21  0,19  Wilcoxon  0,023 
+
+Preterms 
+
+Anterior  31  0,22  0,19  Wilcoxon  <0,001 
+
+Central  27  0,26  0,22  Wilcoxon  <0,001 
+
+Posterior  27  0,21  0,20  Wilcoxon  0,169 
+
+2mCA 
+
+Global  14  0,47  0,40  Paired t -test  0,000 
+
+Anterior  10  0,51  0,43  Paired t -test  0,007 
+
+Central  13  0,53  0,43  Paired t -test  <0.001 
+
+Posterior  11  0,42  0,37  Paired t -test  <0.001 
+
+Fullterms 
+
+0m 
+
+Global  9 0,22  0,19  Paired t -test  0,056 
+
+Anterior  9 0,23  0,19  Paired t -test  0,039 
+
+Central  9 0,22  0,18  Paired t -test  0,023 
+
+Posterior  6 0,23  0,20  Paired t -test  0,129 
+
+2m 
+
+Global  8 0,45  0,38  Paired t -test  0,001 
+
+Anterior  7 0,49  0,42  Paired t -test  0,004 
+
+Central  7 0,47  0,39  Paired t -test  0,019 
+
+Posterior  6 0,44  0,39  Wilcoxon  0,062 
+
+Model #1 was fitted on the 0.5 -30 Hz range and Model #2 was fitted on the 0.5 -10 Hz range. 
+
+Abbreviations: TEA = term -equivalent age; 0/ 2m (CA ) = 0/ 2 months (corrected age ).
+
+N = number of infants with a valid theta peak in both models for a given region. 
+
+The choice between paired t -test and Wilcoxon signed -rank test was determined by the Shapiro –Wilk normality 
+
+checks. 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 39 
+
+Supplementary Table 5. Summary of main effects and posthoc tests for theta power estimates obtained 
+
+from Model #1 (0.5 -30 Hz) for subjects with a valid theta peak in the broadband fit (0.5 -30 Hz) 
+
+Variable  Effect / Contrast  df  Estimate  SE  t / F  p-value  95% CI  effect size 
+
+Main effects from Global analysis: Linear mixed -effects model 
+
+Theta power 
+
+(M1) 
+
+Group  58,64  -0,00  0,03  -0,24  0.806  - -
+
+Session  32,86  0,24  0,03  6,66  <0.001  - -
+
+Group × Session  33,41  0,01  0,04  0,22  0.820  - -
+
+Post -hoc contrast: emmeans 
+
+Theta power 
+
+(M1)  Session: TEA - 2mCA  29,80  -0,24  0,02  -11,04  <0.001  [-0.29, -0.20]  d = -3.37 
+
+Main effects from Cluster analysis: Linear mixed -effects model Type III ANOVA (Satterthwaite's method) 
+
+Theta power 
+
+(M1) 
+
+Group  (1, 52.26)  - - 0,00  0.934  - -
+
+Session  (1, 130.47)  - - 292,41  <0.001  - -
+
+Cluster  (2, 117.57)  - - 6,80  0.002  - -
+
+Group × Session  (1, 130.47)  - - 0,44  0.507  - -
+
+Group × Cluster  (2, 117.57)  - - 0,34  0.710  - -
+
+Session × Cluster  (2, 117.94)  - - 0,69  0.502  - -
+
+Group × Session × Cluster  (2, 117.94)  - - 0,06  0.942  - -
+
+Post -hoc contrasts: emmeans 
+
+Theta power 
+
+(M1)  Session: TEA - 2mCA  128,00  -0,25  0,01  -17,02  <0.001  [-0.28, -0.22]  d = -3.47 
+
+Anterior - Central  113,00  -0,00  0,01  -0,09  0.995  [-0.04, 0.03]  d = -0.02 
+
+Anterior - Posterior  114,00  0,05  0,01  3,19  0.005  [0.01, 0.09]  d = 0.74 
+
+Central - Posterior  115,00  0,05  0,01  3,28  0.004  [0.01, 0.09]  d = 0.76 
+
+Main effects for the analysis of Clinical risk factors at TEA: ANOVA 
+
+Theta power 
+
+(M1) 
+
+Group Age  (2, 24)  - - 2,19  0.133  - -
+
+Sex  (1, 24)  - - 7,75  0.010  - -
+
+Invasive Ventilation  (1, 24)  - - 0,18  0.669  - -
+
+Weight Risk  (1, 24)  - - 4,99  0.035  - -
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 40 
+
+Post -hoc contrasts: emmeans 
+
+Theta power 
+
+(M1) 
+
+Sex: Male - Female  24  -0,07  0,02  -3,29  0.003  [-0.126, -0.029]  d = -1.34 
+
+Weight Risk: Yes -No  24  0,06  0,03  2,23  0.035  [ 0.005, 0.129]  d = 0.91 
+
+Associations between periodic theta power at TEA and diffusion MRI metrics controlling for age at EEG : Linear regression mod el 
+
+Theta power 
+
+(M1) and FA 
+
+FA_WM  25  0,82  2,05  0,40  0.692  - -
+
+FA_cortex  25  -4,13  3,73  -1,10  0.278  - -
+
+EEG1_Age  25  0,00  0,02  0,33  0.740  - -
+
+Theta power 
+
+(M1) and MD 
+
+MD_WM  25  -186,34  734,73  -0,25  0.802  - -
+
+MD_cortex  25  1182,87  1368,52  0,86  0.396  - -
+
+EEG1_Age  25  0,01  0,02  0,60  0.552  - -
+
+Theta power (M1): Theta power estimated from Model #1 (0.5 -30 Hz) range. 
+
+EEG1_Age corresponds to the PMA at the time of the EEG test at TEA. 
+
+FA (fractional Anisotropy) and MD (mean diffusivity) within the white matter (WM) and the cortex. 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 41 
+
+Supplementary Table 6. Summary of main effects from statistical models of global measures 
+
+(cross -sectional cohort) 
+
+Linear mixed model results for metrics obtained from global cluster. Sample size: at TEA: n=40 in preterm group; 
+
+n=11 in full -term group; at 2mCA: n=16 in preterm group and n=10 in full -term group. P -values for significant effects 
+
+are highlighted in bold. 
+
+Variable 
+
+Effect -
+
+Contrast  df  Estimate  SE  t-value  Pr(>|t|) 
+
+Aperiodic offset 
+
+Group  73  -0.01  0.08  -0.17  0.859 
+
+Session  73  0.39  0.10  3.59  <0.001 
+
+Group*Session  73  0.03  0.13  0.29  0.769 
+
+Aperiodic 
+
+exponent 
+
+Group  73  -0.01  0.05  -0.18  0.854 
+
+Session  73  0.05  0.07  0.73  0.465 
+
+Group*Session  73  0.03  0.08  0.37  0.713 
+
+Theta power 
+
+Group  68  0.00  0.02  0.21  0.827 
+
+Session  34  0.20  0.02  6.91  <0.001 
+
+Group*Session  35  0.01  0.03  0.35  0.722 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 42 
+
+Supplementary Table 7. Summary of main effects from statistical models of global measures 
+
+(longitudinal cohort) 
+
+Linear mixed effect results reported from ANOVA tables for spectral metrics obtained from global cluster. 
+
+Longitudinal sample size n=15 preterms; n=8 full -terms. P -values for significant effects are highlighted in bold. 
+
+Variable  Effect - Contrast  df  Estimate  SE  t-value  Pr(>|t|) 
+
+Aperiodic 
+
+offset 
+
+Group  42  0.05  0.10  0.58  0.559 
+
+Session  42  0.47  0.11  4.08  <0.001 
+
+Group*Session  42  -0.10  0.14  -0.70  0.482 
+
+Aperiodic 
+
+exponent 
+
+Group  42  0.03  0.07  0.47  0.638 
+
+Session  42  0.08  0.08  1.00  0.321 
+
+Group*Session  42  -0.04  0.10  -0.40  0.689 
+
+Theta power 
+
+Group  31  0.05  0.03  1.56  0.128 
+
+Session  18  0.22  0.03  6.49  <0.001 
+
+Group*Session  18  -0.03  0.04  -0.81  0.424 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 43 
+
+Supplementary Table 8. Summary of post -hoc tests for the significant effects of models on global 
+
+measures (longitudinal cohort) 
+
+Sample size in longitudinal model: n= 15 in preterm group and n= 8 in full -term group .
+
+P-values for significant effects are highlighted in bold. 
+
+Variable  Effect - Contrast  df  Estimate  SE  t ratio  p- value  confidence interval  effect size 
+
+Offset  Effect of Session: 
+
+21  -0.42  0.07  -5.88  <0.001  [-0.57, -0.27]  -1.82 TEA - 2mCA 
+
+Theta power 
+
+Effect of Session: 
+
+18  -0.20  0.02  -9.65  <0.001  [-0.25, -0.16]  -3.20 
+
+TEA - 2mCA 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 44 
+
+Supplementary Table 9. Summary of main effects from statistical models of cluster -based 
+
+measures (cross -sectional cohort) 
+
+Linear mixed model results reported from ANOVA tables for cluster -based measures. Sample size: at TEA: n=40 
+
+in preterm group; n=11 in full -term group at TEA; at 2mCA: n=16 in preterm group and n=10 in full -term group. P -
+
+values for significant effects are h ighlighted in bold 
+
+Variable  Effect - Contrast  df  F-value  Pr(>F) 
+
+Aperiodic offset 
+
+Group  49.55  0.16  0.684 
+
+Session  183.58  211.31  <0.001 
+
+Cluster  164.52  8.37  <0.001 
+
+Group*Session  183.58  1.73  0.188 
+
+Group*Cluster  164.52  1.10  0.334 
+
+Session*Cluster  164.52  8.29  <0.001 
+
+Group*Session*Cluster  164.52  0.31  0.732 
+
+Aperiodic 
+
+exponent 
+
+Group  49.23  0.21  0.642 
+
+Session  192.27  10.63  0.001 
+
+Cluster  164.76  0.37  0.685 
+
+Group*Session  192.27  0.55  0.457 
+
+Group*Cluster  164.79  0.78  0.459 
+
+Session*Cluster  164.79  6.49  0.001 
+
+Group*Session*Cluster  164.79  0.27  0.757 
+
+Theta power 
+
+Group  52.16  0.10  0.744 
+
+Session  178.38  445.57  <0.001 
+
+Cluster  157.93  0.96  0.381 
+
+Group*Session  178.38  1.60  0.206 
+
+Group*Cluster  157.93  1.25  0.287 
+
+Session*Cluster  157.93  0.21  0.803 
+
+Group*Session*Cluster  157.93  0.28  0.754 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 45 
+
+Supplementary Table 10 . Summary of main effects from statistical models of cluster -based measures 
+
+(longitudinal cohort) 
+
+Linear mixed model results reported from ANOVA tables for cluster -based measures. Sample size in longitudinal 
+
+model n=15 in preterm group; n=8 in full -term group. P -values for significant effects are highlighted in bold .
+
+Variable  Effect - Contrast  df  F-value  Pr(>F) 
+
+Aperiodic offset 
+
+Group  21  0.00  0.995 
+
+Session  105  140.65  <0.001 
+
+Cluster  105  4.21  0.017 
+
+Group*Session  105  2.04  0.155 
+
+Group*Cluster  105  1.51  0.225 
+
+Session*Cluster  105  3.45  0.035 
+
+Group*Session*Cluster  105  0.23  0.793 
+
+Aperiodic 
+
+exponent 
+
+Group  21  0.11  0.734 
+
+Session  105  5.87  0.017 
+
+Cluster  105  0.20  0.818 
+
+Group*Session  105  0.82  0.366 
+
+Group*Cluster  105  1.11  0.332 
+
+Session*Cluster  105  2.40  0.095 
+
+Group*Session*Cluster  105  0.33  0.715 
+
+Theta power 
+
+Group  20.33  0.57  0.456 
+
+Session  90.38  298.22  <0.001 
+
+Cluster  92.13  0.180  0.835 
+
+Group*Session  90.38  2.13  0.147 
+
+Group*Cluster  92.13  0.72  0.486 
+
+Session*Cluster  90.38  0.45  0.634 
+
+Group*Session*Cluster  90.38  0.26  0.770 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 46 
+
+Supplementary Table 11 . Summary of post -hoc tests for significant effects of models on cluster 
+
+measures (longitudinal data) 
+
+Variable  Effect - Contrast  df  Estimate  SE  t ratio  p- value 
+
+confidence 
+
+interval  effect size 
+
+Offset  Effect of Session:  105  -0.44  0.03  -11.86  <0.001  [-0.51, -0.36]  -2.12 
+
+TEA - 2mCA  All clusters 
+
+Effect of Cluster: 
+
+TEA and 2mCA  Anterior - Central  105  0.13  0.04  2.90  0.01  [0.02, 0.24]  0.63 
+
+TEA and 2mCA  Anterior - Posterior  105  0.06  0.04  1.44  0.32  [-0.04, 0.17]  0.31 
+
+TEA and 2mCA  Central - Posterior  105  -0.06  0.04  -1.46  0.31  [-0.17, 0.04]  -0.32 
+
+Effect of Session*Cluster: 
+
+TEA - 2mCA  Anterior Cluster  105  -0.31  0.06  -4.86  <0.001  [-0.44, -0.18]  -1.51 
+
+TEA - 2mCA  Central Cluster  105  -0.46  0.06  -7.13  <0.001  [-0.59, -0.33]  -2.21 
+
+TEA - 2mCA  Posterior Cluster  105  -0.55  0.06  -8.54  <0.001  [-0.68, -0.42]  -2.65 
+
+TEA  Anterior - Central  105  0.20  0.06  3.18  0.005  [0.05, 0.36]  0.98 
+
+TEA  Anterior - Posterior  105  0.18  0.06  2.86  0.013  [0.03, 0.33]  0.88 
+
+TEA  Central - Posterior  105  -0.02  0.06  -0.32  0.943  [-0.17, 0.13]  -0.10 
+
+2mCA  Anterior - Central  105  0.05  0.06  0.91  0.629  [-0.09, 0.21]  0.28 
+
+2mCA  Anterior - Posterior  105  -0.05  0.06  -0.82  0.690  [-0.20, 0.10]  -0.25 
+
+2mCA  Central - Posterior  105  -0.11  0.06  -1.74  0.195  [-0.26, 0.04]  -0.53 
+
+Exponent  Effect of Session: 
+
+105  -0.06  0.02  -2.42  0.017  [-0.12, -0.01]  -0.43 TEA - 2mCA  All clusters 
+
+Theta power  Effect of Session: 
+
+91  -0.21  0.01  <0.001  [-0.23, -0.18] TEA - 2mCA  All clusters  -17.26  -3.26 
+
+Sample size in longitudinal model: n= 15 in preterm group and n= 8 in full -term group. 
+
+P-values for significant effects are highlighted in bold 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 47 
+
+Supplementary Table 12 . Summary of main effects from statistical models of clinical risk factors in 
+
+preterm infants at TEA 
+
+Sample size of preterm group at TEA: n= 40. P -values for significant effects are highlighted in bold. 
+
+Variable  Effect - Contrast  df  F-value  Pr(>F) 
+
+Aperiodic offset 
+
+Sex  34  0.04  0.836 
+
+Group of GA at birth  34  1.00  0.375 
+
+Small weight for GA at birth  34  3.18  0.083 
+
+Invasive ventilation  34  6.95  0.012 
+
+Aperiodic exponent 
+
+Sex  34  0.54  0.466 
+
+Group of GA at birth  34  5.39  0.009 
+
+Small weight for GA at birth  34  0.02  0.871 
+
+Invasive ventilation  34  6.38  0.016 
+
+Theta power 
+
+Sex  33  4.68  0.037 
+
+Group of GA at birth  33  1.10  0.342 
+
+Small weight for GA at birth  33  5.34  0.027 
+
+Invasive ventilation  33  2.49  0.123 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint 48 
+
+Supplementary  Table 13 . Goodness -of -fit metrics for the spectral parameterization across sessions and 
+
+clusters 
+
+Group  Session  n (subjects)  Cluster  R² (mean ± SD)  Fit error (mean ± SD) 
+
+Preterms 
+
+TEA  40 
+
+Anterior  0.997 ± 0.002  0.028 ± 0.011 
+
+Central  0.997 ± 0.002  0.027 ± 0.009 
+
+Posterior  0.995 ± 0.004  0.035 ± 0.012 
+
+2mCA  16 
+
+Anterior  0.989 ± 0.008  0.066 ± 0.025 
+
+Central  0.994 ± 0.005  0.045 ± 0.018 
+
+Posterior  0.994 ± 0.003  0.050 ± 0.018 
+
+Fulterms 
+
+0m  11 
+
+Anterior  0.997 ± 0.001  0.027 ± 0.010 
+
+Central  0.996 ± 0.002  0.031 ± 0.012 
+
+Posterior  0.995 ± 0.002  0.037 ± 0.011 
+
+2m  10 
+
+Anterior  0.993 ± 0.004  0.051 ± 0.017 
+
+Central  0.993 ± 0.003  0.053 ± 0.010 
+
+Posterior  0.992 ± 0.002  0.058 ± 0.014 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint
+
+49 
+
+Supplementary Table 14. Pairwise post -hoc regional comparisons of fit quality 
+
+Pairwise comparisons performed following linear mixed -effects models with Cluster as fixed effect. Significant 
+
+contrasts (p < .05) are highlighted in bold. 
+
+Group  Session  Fitting 
+
+parameter  Contrast  df  t p Cohen's d 
+
+Preterms 
+
+TEA 
+
+R²  Anterior -Central  78  -0.123  1.000  -0.028 
+
+Anterior - Posterior  78  4.228  < .001  0.945 
+
+Central - Posterior  78  4.351  < .001  0.973 
+
+Fit error  Anterior -Central  78  0.583  1.000  0.130 
+
+Anterior - Posterior  78  -4.172  < .001  -0.933 
+
+Central - Posterior  78  -4.755  < .0001  -1.063 
+
+2mCA 
+
+R²  Anterior - Central  30  -2.764  0.029  -0.977 
+
+Anterior - Posterior  30  -2.612  0.041  -0.923 
+
+Central - Posterior  30  0.152  1.000  0.054 
+
+Fit error  Anterior - Central  30  3.171  0.010  1.121 
+
+Anterior - Posterior  30  2.382  0.071  0.842 
+
+Central - Posterior  30  -0.789  1.000  -0.279 
+
+Fullterms 
+
+0m 
+
+R²  Anterior - Central  20  1.634  0.354  0.697 
+
+Anterior - Posterior  20  3.441  0.007  1.467 
+
+Central - Posterior  20  1.807  0.257  0.771 
+
+Fit error  Anterior - Central  20  -1.277  0.649  -0.544 
+
+Anterior - Posterior  20  -2.983  0.022  -1.272 
+
+Central - Posterior  20  -1.707  0.310  -0.728 
+
+2m 
+
+R²  Anterior - Central  18  0.171  1.000  0.076 
+
+Anterior - Posterior  18  0.607  1.000  0.271 
+
+Central - Posterior  18  0.436  1.000  0.195 
+
+Fit error  Anterior - Central  18  -0.397  1.000  -0.178 
+
+Anterior - Posterior  18  -1.103  0.854  -0.493 
+
+Central - Posterior  18  -0.705  1.000  -0.315 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted June 25, 2026. ;https://doi.org/10.64898/2025.12.26.696574 doi: bioRxiv preprint

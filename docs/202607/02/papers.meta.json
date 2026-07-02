@@ -1,0 +1,69 @@
+{
+  "label": "2026-07-02",
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T21:53:54",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202607/02/biorxiv-10-64898-2026-06-29-735227-v1-a-dual-ensemble-model-of-infralimbic-cortex-function-in-behavioural-flexibility",
+      "section": "deep",
+      "title_en": "A Dual-Ensemble Model of Infralimbic Cortex Function in Behavioural Flexibility",
+      "authors": "Adlakha, A., Sonntag, I., Pfarr, S., Barroso-Flores, J., Sommer, W., Kuner, T.",
+      "date": "2026-07-02",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.29.735227v1.full.pdf",
+      "score": "9.0",
+      "evidence": "提出下边缘皮层（内侧前额叶皮层亚区）在行为灵活性中功能作用的双集合模型",
+      "tldr": "下边缘皮质(IL)在行为灵活性中的功能存在矛盾描述，既促进又终止奖励寻求。本研究提出双集成模型，分离行动-结果预测与预测修正功能。大鼠成像显示训练中预测集成抑制多数神经元以锐化活动，消退时修正集成响应奖励缺失。计算模型验证了框架，统一了冲突观点，揭示IL动态编码预测精度以引导行为灵活性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "The infralimbic cortex (IL) has been described as both facilitator and terminator of reward-seeking, yet both functions appear mutually exclusive. We reconcile this discrepancy by proposing a dual-ensemble model: one for action-outcome prediction and another for prediction correction. Using longitudinal miniscope imaging in rats, we show that during training, the action-outcome predictor ensemble sharpens its activity by suppressing the majority of the IL neuronal population. As contingencies stabilize, entropy decreases, reflecting a refined predictive model. During extinction, the prediction correction ensemble activates in response to reward omission. A computational simulation based on these two ensembles successfully recapitulated our experimental results. This framework reconciles conflicting models, where IL manipulation can either accelerate or abolish extinction by demonstrating that IL activity dynamically encodes predictive accuracy. Our findings indicate that IL functions as an action-outcome predictor that elegantly guides behavioural flexibility.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/02/biorxiv-10-64898-2025-12-26-696574-v2-characterization-of-aperiodic-and-theta-activity-in-preterm-infants-using-eeg-insights-into-cerebral-maturation-and-inter-individual-variability",
+      "section": "quick",
+      "title_en": "Characterization of aperiodic and theta activity in preterm infants using EEG: Insights into cerebral maturation and inter-individual variability",
+      "authors": "Gonzalez-Carpinteiro, A., Nasser, H., Pedoux, A., Devisscher, L., Cai, K., Elbaz, N., Ghozland, C., Gueret, L., Neumane, S., Leprince, Y., Lefebvre, A., Hertz-Pannier, L., Heneau, A., Frerot, A., Sibony, O., Delanoe, C., Barbu-Roth, M., Alison, M., Delorme, R., Biran, V., Dubois, J., Adibpour, P.",
+      "date": "2026-06-25",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2025.12.26.696574v2.full.pdf",
+      "score": "7.0",
+      "evidence": "使用频谱参数化评估脑电图中周期性theta功率和非周期性活动",
+      "tldr": "早产干扰脑网络成熟与theta振荡发育，传统EEG分析难以区分振荡与非周期活动。本研究采用频谱参数化分离早产儿与足月儿的非周期成分和theta功率，发现两者均随发育增强且无组别差异，但区域分布变化；早产儿个体差异与临床风险因素及脑微结构相关。该框架灵敏表征了早产儿脑活动成熟与早期脆弱性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Disrupting critical processes of brain development, preterm birth interferes with the maturation of brain networks and functional activity, including theta oscillations that are thought to play a key role in early network formation. Traditional EEG spectral analyses have indicated marked development of theta power in early infancy, but these approaches mix oscillatory and non-oscillatory activity, limiting insights into the mechanisms underlying the neural changes. Using spectral parameterization, we aimed to evaluate developmental changes in aperiodic activity and periodic theta power in infants born very preterm compared to full-terms, and to further explore whether clinical factors and brain microstructure could explain the inter-individual variability within preterms.\n\nHigh-density EEG was acquired during active/REM sleep at term-equivalent age (TEA) and 2 months corrected age (2mCA) in 41 very preterm infants (born <32 weeks gestational age [GA]; mean {+/-} standard deviation: 26.9{+/-}1.7 weeks) and 13 full-term controls (born [&ge;]37 weeks GA; 40.1{+/-}1 weeks). Spectral parameterization was used to extract aperiodic components (offset, exponent) and periodic theta power globally and across spatial clusters of electrodes (anterior, central, posterior). From TEA to 2mCA, offset, exponent, and theta power increased with no differences between preterm and full-term infants. At TEA, metrics of aperiodic activity were stronger in anterior compared with posterior areas, but this regional landscape shifted by 2mCA with pronounced increases in aperiodic offset and exponent in posterior areas from TEA to 2mCA. Within preterms, inter-individual variability in aperiodic and periodic activity at TEA was partly explained by clinical risk factors: male sex, lower gestational-age at birth, small weight at birth, and invasive ventilation were linked to alterations of aperiodic offset, exponent and theta power. Additionally, higher theta power at TEA correlated with lower cortical fractional anisotropy assessed with diffusion MRI at the same age, consistently with more advanced maturation of the brain. Collectively, these findings indicate that EEG spectral parameterization combined with spatial analysis provides a sensitive framework for characterizing the postnatal maturation of brain activity in infants, as well as early vulnerabilities associated with prematurity and perinatal adversity.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/02/biorxiv-10-64898-2026-05-26-725476-v2-early-loss-of-deep-restorative-sleep-and-auditory-stimulus-evoked-40-hz-activity-of-hippocampal-parvalbumin-neurons-in-the-appps1-mouse-model-of-alzheimers-disease",
+      "section": "quick",
+      "title_en": "Early Loss of Deep Restorative Sleep and Auditory Stimulus Evoked 40-Hz activity of Hippocampal Parvalbumin Neurons in the APP/PS1 Mouse Model of Alzheimer's Disease",
+      "authors": "Katsuki, F., McNally, J. M., Gerashchenko, D., Uygun, D. S., Tyler, A., McCoy, J. G., McKenna, J. T., Brown, R. E.",
+      "date": "2026-07-01",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.05.26.725476v2.full.pdf",
+      "score": "6.0",
+      "evidence": "内侧前额叶皮层慢波功率降低",
+      "tldr": "睡眠异常和gamma节律障碍是阿尔茨海默病（AD）早期特征，但其体内发展时序尚未明确。本研究对APP/PS1小鼠纵向记录，发现3月龄时海马和前额叶皮层慢波功率降低、beta功率升高，40-Hz听觉稳态反应及PV神经元钙活动受损，但行为学正常。结果表明深睡眠减少和40-Hz活动损害发生在认知缺陷之前，可作为早期干预靶点，并验证了该模型研究睡眠-AD病理因果关系的适用性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Sleep abnormalities and dysfunction of gamma band (30-80 Hz) activity generated by parvalbumin (PV) interneurons are early characteristics of Alzheimer's disease (AD) which correlate with the severity of amyloid-{beta} deposition (A{beta}) and cognitive impairment. However, the timing of these alterations in vivo with respect to disease progression is unclear. Here, in longitudinal recordings from APP/PS1/PV-cre (AD mice) from 3-6 months, we found reduced sleep slow-wave power (0.5-4 Hz) in hippocampus and medial prefrontal cortex in AD mice as young as 3 months old, compared to non-AD (PV-cre) mice, well before overt pathology. This finding was primarily due to reductions in the NREM delta range (1.5-4 Hz), a hallmark of restorative functions of sleep. In contrast, beta (15-30 Hz) power linked to insomnia was significantly higher across all sleep-wake states. Loss of deep NREM sleep was not compensated by an increase in NREM sleep time, instead NREM sleep during the dark (active) phase was slightly but significantly lower in AD mice. 40-Hz auditory steady-state responses and associated evoked calcium responses of hippocampal PV neurons recorded using fiber photometry were also impaired by 3 months old. However, Y-maze performance in 3- and 6-month-old AD mice was not significantly different from non-AD mice. These results reveal reduced deep sleep and PV-associated 40-Hz activity as very early changes amenable to early intervention occurring prior to cognitive deficits. Furthermore, they establish APP/PS1 mice as a good model to causally test the relationship between sleep, PV neuronal activity and amyloid-mediated pathology.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/02/biorxiv-10-64898-2026-06-27-734819-v1-closed-loop-optimization-of-a-high-dimensional-generative-latent-space-for-rhythmic-visual-response",
+      "section": "quick",
+      "title_en": "Closed-loop optimization of a high-dimensional generative latent space for rhythmic visual response",
+      "authors": "Livezey, J. A., Su, Y., Wolfer, S., Ingster, A., Klein, D. J., Hanina, A.",
+      "date": "2026-07-02",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.27.734819v1.full.pdf",
+      "score": "6.0",
+      "evidence": "使用EEG测量稳态视觉诱发电位的相对功率",
+      "tldr": "神经振荡伴随多种认知过程，对其进行调制具有重要研究和临床价值，但传统闭环方法通常依赖侵入式记录，且偏重放电率而非节律性调制。本研究提出闭环优化高维生成潜在空间，以非侵入脑电图(EEG)测量的稳态视觉诱发电位(SSVEP)相对功率为目标，实时调整图像刺激参数。在alpha和theta频段，10、20、40维潜在空间均成功实现了节律功率的增强，优化刺激可泛化至新被试，并揭示了低频空间功率特征以相反方向驱动theta和alpha节律。该工作证明了闭环刺激优化作为非侵入性节律神经调制方法的可行性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Neural oscillations accompany a wide range of cognitive states and behaviors including perception, memory, and movement, and modulating them is of growing interest for both basic neuroscience and clinical research. Previous demonstrations of closed-loop modulation of visual neural responses mainly relied on invasive recordings and focused on firing-rate maximization rather than rhythmic modulation. Here, we show that the relative power of steady-state visual evoked response (SSVEP), measured with readily-available, non-invasive electroencephalography, can be modulated in closed-loop as a function of image stimulus parameters for single participants within a single session. Stimulus optimization with flicker frequencies in the alpha and theta bands was successful in 10, 20, and 40 dimensional latent spaces. We also show that optimized stimuli generalize to new participants when shown in open-loop. Finally, we characterize the visual features that modulate relative SSVEP power and find that low-frequency spatial power in the image drives theta and alpha in opposite directions. Together, our results show that closed-loop stimulus optimization is a viable method for rhythmic neural modulation using noninvasive neuroimaging methods.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

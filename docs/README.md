@@ -6,28 +6,34 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-01
-- 运行时间：2026-07-01 21:46:25 UTC
+- 最新运行日期：2026-07-02
+- 运行时间：2026-07-02 21:53:36 UTC
 - 运行状态：成功
-- 本次总论文数：2
+- 本次总论文数：4
 - 精读区：1
-- 速读区：1
+- 速读区：3
 
 ### 今日简报（AI）
-今天用脑电图解码程序员的段位，并尝试验证阅读脑波能否帮你看懂微博。  
-最精彩的是：脑电信号真能识别编程新手与专家，且阅读时的认知反应还能提升关键短语抽取精准度。  
-如果想提升技能，不妨也留意一下自己的「大脑模式」变化。
-- 详情：[/202607/01/README](/202607/01/README)
+今日聚焦脑科学与行为灵活性，精读揭示边缘下皮层双集成模型如何调控策略维持与转换。  
+最值得关注的是该模型对认知灵活性的全新机制解释，以及阿尔茨海默病模型中深睡与40-Hz节律的早期丧失。  
+建议将认知训练与深睡节律监测结合，作为预警认知衰退的日常干预方向。
+- 详情：[/202607/02/README](/202607/02/README)
 
 ### 精读区论文标签
-1. [Neural Signatures of Programming Expertise: Classifying Programmer Skill Levels Using EEG Data](/202607/01/2606.30879v1-neural-signatures-of-programming-expertise-classifying-programmer-skill-levels-using-eeg-data)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：在认知任务（代码理解）中使用EEG记录对程序员技能水平进行分类，很可能利用了谱功率特征。
+1. [A Dual-Ensemble Model of Infralimbic Cortex Function in Behavioural Flexibility](/202607/02/biorxiv-10-64898-2026-06-29-735227-v1-a-dual-ensemble-model-of-infralimbic-cortex-function-in-behavioural-flexibility)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：提出下边缘皮层（内侧前额叶皮层亚区）在行为灵活性中功能作用的双集合模型
 
 ### 速读区论文标签
-1. [Utilizing Cognitive Signals Generated during Human Reading to Enhance Keyphrase Extraction from Microblogs](/202607/01/2606.26485v1-utilizing-cognitive-signals-generated-during-human-reading-to-enhance-keyphrase-extraction-from-microblogs)  
+1. [Characterization of aperiodic and theta activity in preterm infants using EEG: Insights into cerebral maturation and inter-individual variability](/202607/02/biorxiv-10-64898-2025-12-26-696574-v2-characterization-of-aperiodic-and-theta-activity-in-preterm-infants-using-eeg-insights-into-cerebral-maturation-and-inter-individual-variability)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：使用频谱参数化评估脑电图中周期性theta功率和非周期性活动
+2. [Early Loss of Deep Restorative Sleep and Auditory Stimulus Evoked 40-Hz activity of Hippocampal Parvalbumin Neurons in the APP/PS1 Mouse Model of Alzheimer's Disease](/202607/02/biorxiv-10-64898-2026-05-26-725476-v2-early-loss-of-deep-restorative-sleep-and-auditory-stimulus-evoked-40-hz-activity-of-hippocampal-parvalbumin-neurons-in-the-appps1-mouse-model-of-alzheimers-disease)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：在阅读过程中融入EEG特征以提升文本理解，建立阅读理解与EEG的桥梁
+   evidence：内侧前额叶皮层慢波功率降低
+3. [Closed-loop optimization of a high-dimensional generative latent space for rhythmic visual response](/202607/02/biorxiv-10-64898-2026-06-27-734819-v1-closed-loop-optimization-of-a-high-dimensional-generative-latent-space-for-rhythmic-visual-response)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：使用EEG测量稳态视觉诱发电位的相对功率
 
 
 <div class="dpr-home-promo-card">
