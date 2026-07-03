@@ -6,34 +6,38 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-02
-- 运行时间：2026-07-02 21:53:36 UTC
+- 最新运行日期：2026-07-03
+- 运行时间：2026-07-03 21:47:56 UTC
 - 运行状态：成功
-- 本次总论文数：4
-- 精读区：1
+- 本次总论文数：6
+- 精读区：3
 - 速读区：3
 
 ### 今日简报（AI）
-今日聚焦脑科学与行为灵活性，精读揭示边缘下皮层双集成模型如何调控策略维持与转换。  
-最值得关注的是该模型对认知灵活性的全新机制解释，以及阿尔茨海默病模型中深睡与40-Hz节律的早期丧失。  
-建议将认知训练与深睡节律监测结合，作为预警认知衰退的日常干预方向。
-- 详情：[/202607/02/README](/202607/02/README)
+今日精读两篇高分前额叶导航研究，发现经验可让前额叶表征变得更专精而非泛化，并揭示内侧前额叶存在一种通用的空间进展编码。建议关注：前额叶如何通过“专精化”和“通用编码”平衡导航的稳定性与灵活性，这是理解大脑智能地图的关键一步。
+- 详情：[/202607/03/README](/202607/03/README)
 
 ### 精读区论文标签
-1. [A Dual-Ensemble Model of Infralimbic Cortex Function in Behavioural Flexibility](/202607/02/biorxiv-10-64898-2026-06-29-735227-v1-a-dual-ensemble-model-of-infralimbic-cortex-function-in-behavioural-flexibility)  
+1. [Prefrontal representations can specialize rather thangeneralize with experience](/202607/03/biorxiv-10-64898-2026-03-27-714523-v2-prefrontal-representations-can-specialize-rather-thangeneralize-with-experience)  
    标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：提出下边缘皮层（内侧前额叶皮层亚区）在行为灵活性中功能作用的双集合模型
+   evidence：记录大鼠内侧前额叶皮层在空间记忆学习中的群体活动，显示表征特化
+2. [A Generalized Spatial Progress Code for Navigation in the Medial Prefrontal Cortex](/202607/03/biorxiv-10-64898-2026-07-02-735049-v1-a-generalized-spatial-progress-code-for-navigation-in-the-medial-prefrontal-cortex)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：在目标导向导航中对内侧前额叶皮层活动进行成像，揭示了泛化进度编码
+3. [Single-Channel EEG-Based Cognitive Load Assessment in Online Learning: A Hybrid Deep Learning Approach](/202607/03/2607.01795v1-single-channel-eeg-based-cognitive-load-assessment-in-online-learning-a-hybrid-deep-learning-approach)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：使用单通道脑电和频带功率特征评估在线学习中的认知负荷
 
 ### 速读区论文标签
-1. [Characterization of aperiodic and theta activity in preterm infants using EEG: Insights into cerebral maturation and inter-individual variability](/202607/02/biorxiv-10-64898-2025-12-26-696574-v2-characterization-of-aperiodic-and-theta-activity-in-preterm-infants-using-eeg-insights-into-cerebral-maturation-and-inter-individual-variability)  
+1. [EEG biomarkers of reinforcement learning and motivation: A multi-task battery](/202607/03/biorxiv-10-64898-2026-06-28-735051-v1-eeg-biomarkers-of-reinforcement-learning-and-motivation-a-multi-task-battery)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：使用频谱参数化评估脑电图中周期性theta功率和非周期性活动
-2. [Early Loss of Deep Restorative Sleep and Auditory Stimulus Evoked 40-Hz activity of Hippocampal Parvalbumin Neurons in the APP/PS1 Mouse Model of Alzheimer's Disease](/202607/02/biorxiv-10-64898-2026-05-26-725476-v2-early-loss-of-deep-restorative-sleep-and-auditory-stimulus-evoked-40-hz-activity-of-hippocampal-parvalbumin-neurons-in-the-appps1-mouse-model-of-alzheimers-disease)  
+   evidence：使用EEG频谱指标（beta抑制、额叶theta）来索引强化学习任务中的认知过程
+2. [I\textsuperscript{2}RiMA: Spectral Riemannian Representation with Temporal Attention for Mental Stress Detection based on EEG Signals](/202607/03/2607.01279v1-itextsuperscript2rima-spectral-riemannian-representation-with-temporal-attention-for-mental-stress-detection-based-on-eeg-signals)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：内侧前额叶皮层慢波功率降低
-3. [Closed-loop optimization of a high-dimensional generative latent space for rhythmic visual response](/202607/02/biorxiv-10-64898-2026-06-27-734819-v1-closed-loop-optimization-of-a-high-dimensional-generative-latent-space-for-rhythmic-visual-response)  
+   evidence：提出针对脑电压力检测的频域特异性黎曼表示，强调认知状态的频谱分析。
+3. [Distinct goal location beta frequency dynamics in hippocampus and prefrontal cortex across learning](/202607/03/biorxiv-10-1101-2025-08-11-669642-v2-distinct-goal-location-beta-frequency-dynamics-in-hippocampus-and-prefrontal-cortex-across-learning)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：使用EEG测量稳态视觉诱发电位的相对功率
+   evidence：目标导向学习中前额叶皮层的β频率动力学与mPFC在认知网络中的作用相关
 
 
 <div class="dpr-home-promo-card">

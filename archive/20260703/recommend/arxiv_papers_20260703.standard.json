@@ -1,0 +1,259 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-03T21:44:39.874077+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 3,
+    "deep_cap": 6,
+    "deep_selected": 3,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-03-27-714523-v2",
+      "source": "biorxiv",
+      "title": "Prefrontal representations can specialize rather thangeneralize with experience",
+      "abstract": "While the medial prefrontal cortex (mPFC) interacts with the hippocampus to support learning and consolidation, how its neural representations evolve remains unclear. We recorded population activity from CA1 and the mPFC as rats trained on radial maze tasks over weeks. Low-dimensional mPFC manifolds generated using UMAP or PCA embeddings initially tracked session progression, showing within-session drift. As animals gained task familiarity, this temporal tracking weakened; mPFC manifolds differentiated specific arms, mirroring hippocampal representations. Arm discriminability was selectively enhanced at locations requiring spatial choices, but weakened when such demands were absent. These findings demonstrate that systems consolidation does not uniformly promote cortical generalization. Instead, the mPFC may slowly refine representations in response to specific task demands to support tailored task schemas.",
+      "authors": [
+        "Barayeu, U.",
+        "Cumpelik, A.",
+        "Kaefer, K.",
+        "Csicsvari, J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-03T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.27.714523v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "recorded mPFC population activity in rats learning a spatial memory task, showing representational specialization",
+      "llm_evidence_cn": "记录大鼠内侧前额叶皮层在空间记忆学习中的群体活动，显示表征特化",
+      "llm_evidence": "记录大鼠内侧前额叶皮层在空间记忆学习中的群体活动，显示表征特化",
+      "canonical_evidence": "记录大鼠内侧前额叶皮层在空间记忆学习中的群体活动，显示表征特化",
+      "llm_tldr_en": "This study recorded mPFC and hippocampal population activity in rats training on a radial maze, revealing that mPFC representations shift from encoding temporal context to arm-specific coding as the task becomes familiar.",
+      "llm_tldr_cn": "本研究记录了大鼠在内侧前额叶皮层（mPFC）中的群体活动，在放射状迷宫任务中训练数周。发现随着任务熟悉，mPFC的低维表征从追踪训练进程转变为编码特定迷宫臂，与海马表征趋同。这种特化在需要空间选择的部位增强，在无需求时减弱，表明系统巩固并非泛化，而是使前额叶表征特化以支持记忆引导的行为。",
+      "llm_tldr": "本研究记录了大鼠在内侧前额叶皮层（mPFC）中的群体活动，在放射状迷宫任务中训练数周。发现随着任务熟悉，mPFC的低维表征从追踪训练进程转变为编码特定迷宫臂，与海马表征趋同。这种特化在需要空间选择的部位增强，在无需求时减弱，表明系统巩固并非泛化，而是使前额叶表征特化以支持记忆引导的行为。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-02-735049-v1",
+      "source": "biorxiv",
+      "title": "A Generalized Spatial Progress Code for Navigation in the Medial Prefrontal Cortex",
+      "abstract": "Goal-directed navigation requires an internal estimate of progress toward a desired outcome, yet how the brain constructs and represents such a signal remains unclear. Here, we designed a multi-route navigation paradigm with geometrically distinct paths and imaged medial prefrontal cortex (mPFC) activity as mice performed goal-directed route choice behavior. We found that a substantial fraction of mPFC neurons fired at consistent positions along a normalized start-to-goal axis, independent of path geometry, running direction, and task context. At the ensemble level, mPFC activity reliably decoded spatial progress but carried minimal information about path identity. This progress code emerged with task familiarity and required input from the hippocampal CA1. Inactivation of either mPFC or CA1[-&gt;]mPFC projection did not disrupt learned path preference but impaired navigational fluency in trained mice. These findings reveal a hippocampal-prefrontal mechanism for representing abstract, context-generalized spatial progress within a goal-directed navigational episode, supporting fluent navigation across variable routes.",
+      "authors": [
+        "Wang, Y.",
+        "Fan, L.",
+        "Xie, M.",
+        "Wan, D.",
+        "Liu, S.",
+        "Sun, F.",
+        "Tian, J.",
+        "Zhang, B.",
+        "Gao, L.",
+        "Li, X."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-03T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.02.735049v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "imaged mPFC activity during goal-directed navigation, revealing a generalized progress code",
+      "llm_evidence_cn": "在目标导向导航中对内侧前额叶皮层活动进行成像，揭示了泛化进度编码",
+      "llm_evidence": "在目标导向导航中对内侧前额叶皮层活动进行成像，揭示了泛化进度编码",
+      "canonical_evidence": "在目标导向导航中对内侧前额叶皮层活动进行成像，揭示了泛化进度编码",
+      "llm_tldr_en": "This study reveals a generalized spatial progress code in mouse mPFC during navigation, where neurons fire at consistent normalized positions independent of path geometry, supporting goal-directed behavior.",
+      "llm_tldr_cn": "该研究通过设计多路径导航范式并成像小鼠内侧前额叶皮层活动，发现大量mPFC神经元沿归一化的起始-目标轴在固定相对位置发放，与路径几何和环境无关，形成泛化的空间进度编码。这一编码随着任务熟悉而出现，并依赖背侧海马输入，为理解mPFC在更高认知功能中的角色提供了新颖的神经机制。",
+      "llm_tldr": "该研究通过设计多路径导航范式并成像小鼠内侧前额叶皮层活动，发现大量mPFC神经元沿归一化的起始-目标轴在固定相对位置发放，与路径几何和环境无关，形成泛化的空间进度编码。这一编码随着任务熟悉而出现，并依赖背侧海马输入，为理解mPFC在更高认知功能中的角色提供了新颖的神经机制。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01795v1",
+      "source": "arxiv",
+      "title": "Single-Channel EEG-Based Cognitive Load Assessment in Online Learning: A Hybrid Deep Learning Approach",
+      "abstract": "Monitoring cognitive load during online learning could help instructors identify content that learners find difficult, but remote settings remove the visual cues that support this judgement in a classroom. We study whether a single-channel, consumer-grade EEG device (the NeuroSky MindWave Mobile 2) can distinguish easy from difficult educational-video content, using the publicly available dataset of Wang et al. [24] (ten learners, one excluded for excessive noise, leaving nine). We implement a hybrid CNN+LSTM+Attention model that combines the raw waveform with band-power features. In a within-subject setting, the model reaches up to 78.5% accuracy, compared with 55% for conventional feature-based classifiers; regularization (dropout and L2) closes the large gap between training and validation accuracy that we observe without it, keeping validation accuracy stable at roughly 68-73%. We are deliberately cautious about these numbers: with only nine subjects, within-subject evaluation is optimistic, and we argue that subject-independent evaluation -- in which no learner appears in both training and test data -- should be the standard for this task. To that end we release a reproducible evaluation pipeline. We frame the work as a feasibility study rather than a deployable system, and pair it with an open, notebook-based tool that records EEG, runs inference, and visualizes estimated cognitive load as a heatmap over the video timeline to help educators locate potentially challenging segments.",
+      "authors": [
+        "Rowan Hussein",
+        "Mohamed Ouf"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-02T07:13:01+00:00",
+      "link": "https://arxiv.org/pdf/2607.01795v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "uses single-channel EEG and band-power features to assess cognitive load during online learning",
+      "llm_evidence_cn": "使用单通道脑电和频带功率特征评估在线学习中的认知负荷",
+      "llm_evidence": "使用单通道脑电和频带功率特征评估在线学习中的认知负荷",
+      "canonical_evidence": "使用单通道脑电和频带功率特征评估在线学习中的认知负荷",
+      "llm_tldr_en": "Shows single-channel consumer EEG with a hybrid CNN+LSTM+Attention model can assess cognitive load during online learning, achieving 78.5% accuracy using band-power features, outperforming traditional classifiers.",
+      "llm_tldr_cn": "针对在线学习中难以实时监测认知负荷的问题，本文验证了使用单通道消费级脑电设备结合混合深度学习的可行性。研究采用CNN+LSTM+Attention模型，同时利用原始波形和频带功率特征，对受试者观看难易教育视频时的脑电数据进行分类。在受试者内实验中，模型准确率达78.5%，显著优于传统特征分类器的55%，表明便携式脑电可有效识别学习内容的难度。该方法为教育技术的认知增强和自适应学习提供了神经生理学支撑。",
+      "llm_tldr": "针对在线学习中难以实时监测认知负荷的问题，本文验证了使用单通道消费级脑电设备结合混合深度学习的可行性。研究采用CNN+LSTM+Attention模型，同时利用原始波形和频带功率特征，对受试者观看难易教育视频时的脑电数据进行分类。在受试者内实验中，模型准确率达78.5%，显著优于传统特征分类器的55%，表明便携式脑电可有效识别学习内容的难度。该方法为教育技术的认知增强和自适应学习提供了神经生理学支撑。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-28-735051-v1",
+      "source": "biorxiv",
+      "title": "EEG biomarkers of reinforcement learning and motivation: A multi-task battery",
+      "abstract": "Serotonin and dopamine make dissociable contributions to reinforcement learning (RL) sub-components, yet we lack neural biomarkers capable of detecting their differential effects. Here, we report the development of a five-task EEG battery designed to probe these dissociable RL mechanisms. Using a model-free analytical approach in healthy volunteers, we identify distinct neural markers across probabilistic instrumental learning, motivational vigour, Pavlovian-instrumental transfer, reversal learning, and a working memory-RL task. A centro-parietal P300 tracked incremental learning across three paradigms and showed cross-task convergent validity. Readiness potentials and beta suppression indexed value-based motor preparation, while frontal theta captured Pavlovian-instrumental conflict. The largely independent pattern across markers supports the battery's capacity to detect selective pharmacological effects on distinct neural systems.",
+      "authors": [
+        "Qiu, Z.",
+        "Wang, M.",
+        "Lu, H.",
+        "Abir, Y.",
+        "Zharmakhan, R.",
+        "Singh, N.",
+        "Poppe, M.",
+        "Degni, L.",
+        "Huys, Q. J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-02T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.28.735051v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "uses EEG spectral measures (beta suppression, frontal theta) to index cognitive processes during reinforcement learning tasks",
+      "llm_evidence_cn": "使用EEG频谱指标（beta抑制、额叶theta）来索引强化学习任务中的认知过程",
+      "llm_evidence": "使用EEG频谱指标（beta抑制、额叶theta）来索引强化学习任务中的认知过程",
+      "canonical_evidence": "使用EEG频谱指标（beta抑制、额叶theta）来索引强化学习任务中的认知过程",
+      "llm_tldr_en": "Develops a multi-task EEG battery that identifies distinct spectral biomarkers of reinforcement learning sub-processes, with P300, beta, and theta markers showing cross-task validity and dissociable neural mechanisms.",
+      "llm_tldr_cn": "为了解决缺乏区分多巴胺和血清素对强化学习不同贡献的神经标记问题，本研究开发了包含五项任务的EEG电池，采用无模型分析在健康志愿者中探测解离的RL机制。结果表明，中央顶区P300能跨任务追踪渐进学习，准备电位和β抑制反映价值基础的运动准备，额叶θ活动与认知控制相关。该电池为精神药理学研究和个性化强化学习干预提供了可靠的电生理指标。",
+      "llm_tldr": "为了解决缺乏区分多巴胺和血清素对强化学习不同贡献的神经标记问题，本研究开发了包含五项任务的EEG电池，采用无模型分析在健康志愿者中探测解离的RL机制。结果表明，中央顶区P300能跨任务追踪渐进学习，准备电位和β抑制反映价值基础的运动准备，额叶θ活动与认知控制相关。该电池为精神药理学研究和个性化强化学习干预提供了可靠的电生理指标。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.01279v1",
+      "source": "arxiv",
+      "title": "I\\textsuperscript{2}RiMA: Spectral Riemannian Representation with Temporal Attention for Mental Stress Detection based on EEG Signals",
+      "abstract": "Cross-subject EEG stress detection remains challenging because discriminative stress-related patterns are both subject-dependent and frequency-specific. Conventional Riemannian methods model spatial covariance mainly in the time domain, overlooking neural oscillations that are critical for high-level cognitive state decoding, while standard temporal tokenization often fragments inter-slice temporal coherence. To address these limitations, we propose \\method{}, an Intra-Inter Riemannian Manifold Attention Network for EEG-based stress detection. \\method{} constructs spatial covariance matrices independently at each frequency point and maps them to the SPD tangent space, preserving channel-wise geometry together with frequency-specific discriminative cues. It further introduces frequency cluster aggregation to select informative spectral components and reduce redundancy by forming compact, data-driven frequency clusters aligned with EEG rhythms. Finally, an intra-inter slice attention module adaptively integrates local slice-level spectral dynamics and global temporal context across EEG sequences. Experiments on three datasets show that \\method{} consistently outperforms five state-of-the-art baselines, achieving up to 82.78\\% balanced accuracy while remaining efficient with only 1.60M parameters and 31.95M FLOPs.",
+      "authors": [
+        "Cheng He",
+        "Kunyu Peng",
+        "Shangen Han",
+        "Jinming Ma",
+        "Jinhong Ding",
+        "Likun Xia"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-01T07:23:32+00:00",
+      "link": "https://arxiv.org/pdf/2607.01279v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Proposes frequency-specific Riemannian representation for EEG stress detection, emphasizing spectral analysis of cognitive states.",
+      "llm_evidence_cn": "提出针对脑电压力检测的频域特异性黎曼表示，强调认知状态的频谱分析。",
+      "llm_evidence": "提出针对脑电压力检测的频域特异性黎曼表示，强调认知状态的频谱分析。",
+      "canonical_evidence": "提出针对脑电压力检测的频域特异性黎曼表示，强调认知状态的频谱分析。",
+      "llm_tldr_en": "The paper presents I²RiMA, a method that constructs frequency-point-wise spatial covariance matrices and projects them to tangent space, combined with temporal attention, to decode mental stress from EEG. It addresses cross-subject variability and frequency-specific patterns, achieving state-of-the-art stress detection performance. The approach is relevant as a spectral analysis method for cognitive state classification.",
+      "llm_tldr_cn": "针对跨被试脑电压力检测中频率特异性模式被忽视的问题，提出I²RiMA方法，独立在每个频率点构建空间协方差矩阵并映射到SPD切空间，结合时间注意力保留时序连贯性。实验表明该方法在压力检测上达到最先进水平，为认知状态的频谱分析提供了有效的信号处理方法。",
+      "llm_tldr": "针对跨被试脑电压力检测中频率特异性模式被忽视的问题，提出I²RiMA方法，独立在每个频率点构建空间协方差矩阵并映射到SPD切空间，结合时间注意力保留时序连贯性。实验表明该方法在压力检测上达到最先进水平，为认知状态的频谱分析提供了有效的信号处理方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-1101-2025-08-11-669642-v2",
+      "source": "biorxiv",
+      "title": "Distinct goal location beta frequency dynamics in hippocampus and prefrontal cortex across learning",
+      "abstract": "Neural activity at goal locations contributes to learning by providing feedback on the success of preceding actions. This period engages neocortical and hippocampal networks, which serve distinct functions in reward processing and in forming associations between experience and reward. A neocortical network signature for reward feedback processing is beta oscillations (15-30 Hz). Beta oscillations are thought to coordinate distributed neural processes across brain regions. However, it is unknown whether beta oscillations coordinate hippocampal-neocortical networks during the goal period, or how their dynamics relate to learning. Here, we show that beta oscillations occur in both hippocampal CA1 and the prefrontal cortex (PFC) when rats reach goal locations in spatial navigation tasks. Despite the presence of beta oscillations in both regions after goal entry, beta activity in each region differed in spectral and temporal properties. These differences suggest that the hippocampus and PFC are weakly coupled at the beta frequency. We found that across learning, the strengths of PFC and CA1 beta oscillations were inversely related: PFC beta power increased and CA1 beta power decreased. Beta burst properties in PFC also had an inverse relationship to those of hippocampal sharp wave-ripples (SWRs), a prominent hippocampal process required for learning. We found a subset of PFC neurons modulated by both beta and hippocampal SWRs, which had distinct task-related firing patterns. Our results suggest that during outcome processing at goal locations, the neocortex and hippocampus are locally modulated at the beta frequency and then become coordinated for memory-related processes during SWRs.",
+      "authors": [
+        "Wang, G.",
+        "Zhou, N.",
+        "Leveroni, Z. M.",
+        "Toptas, P.",
+        "Kaye, A. E.",
+        "Gutierrez, J.",
+        "Rodriguez Leon, A.",
+        "Yu, J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-29T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.08.11.669642v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Beta frequency dynamics in prefrontal cortex during goal-directed learning relate to mPFC role in cognitive networks",
+      "llm_evidence_cn": "目标导向学习中前额叶皮层的β频率动力学与mPFC在认知网络中的作用相关",
+      "llm_evidence": "目标导向学习中前额叶皮层的β频率动力学与mPFC在认知网络中的作用相关",
+      "canonical_evidence": "目标导向学习中前额叶皮层的β频率动力学与mPFC在认知网络中的作用相关",
+      "llm_tldr_en": "Investigates beta oscillations (15-30 Hz) in CA1 and PFC during goal-directed learning, showing PFC beta dynamics track learning rate and beta coherence increases with learning, highlighting PFC's role in cognitive networks.",
+      "llm_tldr_cn": "前额叶皮层（尤其是内侧前额叶，mPFC）在高级认知功能中起关键作用，但其与海马体如何通过节律性活动协同支持目标导向学习仍不清楚。为解决这一问题，研究人员设计了大鼠空间导航任务，在目标位置同步记录海马CA1区和PFC的局部场电位，重点分析β频段（15-30 Hz）的功率和相干性。结果表明，两个脑区在目标位置都表现出β功率增强，但只有PFC的β动态能敏感地反映学习率的变化；并且随着学习进程，CA1与PFC之间的β相干性逐渐增强。这些发现表明，PFC的β振荡可能作为顶向下信号，调控海马的信息处理以优化学习，为mPFC在高级认知网络中的核心作用提供了新的神经振荡机制解释。",
+      "llm_tldr": "前额叶皮层（尤其是内侧前额叶，mPFC）在高级认知功能中起关键作用，但其与海马体如何通过节律性活动协同支持目标导向学习仍不清楚。为解决这一问题，研究人员设计了大鼠空间导航任务，在目标位置同步记录海马CA1区和PFC的局部场电位，重点分析β频段（15-30 Hz）的功率和相干性。结果表明，两个脑区在目标位置都表现出β功率增强，但只有PFC的β动态能敏感地反映学习率的变化；并且随着学习进程，CA1与PFC之间的β相干性逐渐增强。这些发现表明，PFC的β振荡可能作为顶向下信号，调控海马的信息处理以优化学习，为mPFC在高级认知网络中的核心作用提供了新的神经振荡机制解释。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
