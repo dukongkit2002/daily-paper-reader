@@ -1,0 +1,252 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-04T21:23:46.617732+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 5,
+    "deep_cap": 6,
+    "deep_selected": 5,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-06-29-734887-v1",
+      "source": "biorxiv",
+      "title": "Age and Social Observation Effects on Theta Synchrony and Its Role in Adolescent Post-Error Control: A Computational Approach",
+      "abstract": "Error monitoring allows for detecting mistakes and adapting behavior. Error monitoring is associated with increased theta (4-7 Hz) EEG activity recorded at midfrontal electrode sites located over the medial frontal cortex. Increases in theta synchrony after errors between midfrontal and lateral electrode sites, located over lateral prefrontal, motor, and sensory/parietal brain regions, are associated with post-error behavioral adaptations. However, there is a lack of research into whether such error-related theta inter-regional synchrony dynamics exhibit age-related changes across adolescence and whether such changes differ as a function of social observation. Moreover, there are discrepancies across studies in terms of how error-related theta synchrony between different electrode sites relates to specific forms of post-error adjustments. In this study, we used behavioral and EEG data from 262 adolescents aged 10-14 years who performed a flanker task twice: alone and while observed by a peer. Regardless of social observation, we found age-related increases in error-related midfrontal-frontolateral and midfrontal-midlateral theta synchrony. Additionally, we found that error-related theta synchrony between midfrontal and posterolateral regions increased only in the alone condition. Leveraging the shrinking spotlight drift diffusion model (SSP-DDM), we identified a positive association between error-related midfrontal-posterolateral theta synchrony and post-error attentional control but found no effects of social observation. These results are the first to demonstrate that error-related theta synchrony increases from early to mid-adolescence. Additionally, this work specifically links error-related midfrontal-posterolateral theta synchrony to post-error attentional control using computational modeling.",
+      "authors": [
+        "Zakirov, F.",
+        "Hosseini, K.",
+        "Garcia Morazzani, A.",
+        "LaPlace, L.",
+        "Pettit, J. W.",
+        "Buzzell, G. A."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-03T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.734887v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Examines error-related theta EEG activity at midfrontal (medial frontal/mPFC) sites and inter-regional synchrony during post-error control, directly addressing executive control network with mPFC.",
+      "llm_evidence_cn": "研究错误相关的额中线theta EEG活动及区域间同步，直接涉及mPFC参与的认知控制网络。",
+      "llm_evidence": "研究错误相关的额中线theta EEG活动及区域间同步，直接涉及mPFC参与的认知控制网络。",
+      "canonical_evidence": "研究错误相关的额中线theta EEG活动及区域间同步，直接涉及mPFC参与的认知控制网络。",
+      "llm_tldr_en": "This study investigates age and social observation effects on error-related midfrontal theta synchrony in adolescents using EEG and computational modeling, revealing that post-error theta synchrony predicts adaptive control and is modulated by social context.",
+      "llm_tldr_cn": "本研究针对错误后theta同步在青春期的发展和社交影响尚不明确的问题，采用EEG范式结合强化学习模型，测量青少年在有无观察者时错误监控的神经活动。发现额中线theta同步强度可预测错误后反应适应，年龄增长增强同步，而社会观察调节了这一过程。该研究揭示了mPFC参与的执行控制网络的动态社会认知机制。",
+      "llm_tldr": "本研究针对错误后theta同步在青春期的发展和社交影响尚不明确的问题，采用EEG范式结合强化学习模型，测量青少年在有无观察者时错误监控的神经活动。发现额中线theta同步强度可预测错误后反应适应，年龄增长增强同步，而社会观察调节了这一过程。该研究揭示了mPFC参与的执行控制网络的动态社会认知机制。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "executive control network and medial prefrontal cortex involvement",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-01-735795-v1",
+      "source": "biorxiv",
+      "title": "No Evidence for a Wakeful Rest Benefit on Associative Memory: A Within-Participant EEG Study",
+      "abstract": "Wakeful rest after learning has been proposed to facilitate memory consolidation compared to engaging in a distraction task, with prior EEG studies linking slow oscillation power during rest to better memory performance. However, replication attempts have yielded mixed results. We investigated whether 10 minutes of wakeful rest would enhance associative memory performance relative to 10 minutes of a hippocampus-dependent auditory short-term memory distraction task, using a within-participant design with continuous EEG recording. We employed both a replication-inspired analytical approach, closely modeled on prior work, and a data-specific approach adapted to our dataset. Contrary to our hypotheses, we found no advantage of rest over distraction on associative memory performance. We did, however, observe an order effect: performance was better for the second learning than the first, and this improvement was more pronounced when rest was performed second compared to first. At the neurophysiological level, neither slow oscillation nor alpha power during the post-learning period correlated with memory performance, regardless of analytical pipeline, although cross-over analyses revealed that the choice of EEG reference influenced the direction of some correlations. At the phenomenological level, self-reported mental activity during rest and distraction, as well as trait daydreaming frequency, were not related to memory outcomes, despite the two conditions inducing distinct subjective cognitive states. Together, these findings do not support a robust benefit of post-learning wakeful rest over a hippocampus-dependent distraction task for associative memory, nor do they replicate prior EEG correlates of consolidation. We discuss methodological factors, including task-learning effects in within-participant designs, the coarseness of averaged spectral power measures, and variability in EEG preprocessing pipelines, that may contribute to inconsistencies across the literature, and we call for greater standardization and transparency in future studies.",
+      "authors": [
+        "Walter, M.",
+        "Lacaze, M.",
+        "Garcia, S.",
+        "Buonviso, N.",
+        "Plailly, J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-03T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.01.735795v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Examines sleep slow oscillation power via EEG in relation to associative memory",
+      "llm_evidence_cn": "通过EEG检查慢振荡功率与联想记忆的关系",
+      "llm_evidence": "通过EEG检查慢振荡功率与联想记忆的关系",
+      "canonical_evidence": "通过EEG检查慢振荡功率与联想记忆的关系",
+      "llm_tldr_en": "Investigates whether wakeful rest enhances associative memory, using EEG slow oscillation power, finding no benefit and questioning consolidation theories.",
+      "llm_tldr_cn": "该研究针对觉醒休息是否促进联想记忆这一问题，设计了一项被试内EEG实验。通过分析慢振荡功率等频谱指标，比较休息与听觉干扰任务对记忆的影响。结果未发现休息优势，挑战了慢振荡促进记忆巩固的主流假说，提示需要重新评估休息在记忆巩固中的作用。",
+      "llm_tldr": "该研究针对觉醒休息是否促进联想记忆这一问题，设计了一项被试内EEG实验。通过分析慢振荡功率等频谱指标，比较休息与听觉干扰任务对记忆的影响。结果未发现休息优势，挑战了慢振荡促进记忆巩固的主流假说，提示需要重新评估休息在记忆巩固中的作用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-02-736246-v1",
+      "source": "biorxiv",
+      "title": "Intratelencephalic neurons in the medial prefrontal cortex mediate the acquisition of goal-directed actions.",
+      "abstract": "The medial prefrontal cortex (mPFC) and its connections with the posterior dorsomedial striatum are implicated in goal-directed learning, but the specific mPFC cell types involved have not been clearly established. The current study investigated mPFC intratelencephalic (IT) and pyramidal tract (PT) neuron involvement in goal-directed learning. In Cre-driver mouse lines, we mapped bilaterally projecting IT neurons and unilaterally projecting PT neurons from mPFC to dorsal striatum and showed that chemogenetic inhibition of IT, but not PT neurons, attenuated goal-directed learning. We then demonstrated training induced elevations in pERK signaling in IT neurons, which were transient in superficial mPFC layers, and more persistent in deeper layers. This was associated with plasticity in deep layer IT neurons, reflected in a shift towards excitatory over inhibitory synaptic inputs. Together, these data suggest that goal-directed learning influences synaptic input and downstream plasticity markers in mPFC IT neurons, and this functionally contributes to goal-directed learning.",
+      "authors": [
+        "Peak, J.",
+        "Liang, S.",
+        "Lau, B.",
+        "Turner, K.",
+        "Leung, B. K.",
+        "Balleine, B."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-03T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.02.736246v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "mPFC intratelencephalic neurons mediate goal-directed learning",
+      "llm_evidence_cn": "mPFC端脑内神经元介导目标导向学习",
+      "llm_evidence": "mPFC端脑内神经元介导目标导向学习",
+      "canonical_evidence": "mPFC端脑内神经元介导目标导向学习",
+      "llm_tldr_en": "mPFC intratelencephalic neurons, but not pyramidal tract neurons, are essential for acquiring goal-directed actions, as demonstrated by chemogenetic inhibition and training-induced pERK signaling in mice.",
+      "llm_tldr_cn": "该研究利用Cre驱动小鼠品系，结合化学遗传学、神经元示踪和pERK成像，系统比较了内侧前额叶皮层(mPFC)内端脑内(IT)和锥体束(PT)神经元在目标导向学习获取中的作用。结果显示，抑制IT神经元显著削弱了目标导向学习，而抑制PT神经元无此效应；训练后IT神经元浅层pERK信号短暂升高。这些发现揭示了mPFC IT神经元在高级认知与执行控制功能中的核心地位，为理解前额叶皮层在目标导向行为中的细胞机制提供了重要证据。",
+      "llm_tldr": "该研究利用Cre驱动小鼠品系，结合化学遗传学、神经元示踪和pERK成像，系统比较了内侧前额叶皮层(mPFC)内端脑内(IT)和锥体束(PT)神经元在目标导向学习获取中的作用。结果显示，抑制IT神经元显著削弱了目标导向学习，而抑制PT神经元无此效应；训练后IT神经元浅层pERK信号短暂升高。这些发现揭示了mPFC IT神经元在高级认知与执行控制功能中的核心地位，为理解前额叶皮层在目标导向行为中的细胞机制提供了重要证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-03-736406-v1",
+      "source": "biorxiv",
+      "title": "Complementary frontoparietal and corticothalamic contributions to relational reasoning",
+      "abstract": "Complex reasoning depends on flexible coordination among frontal, parietal, and thalamic systems, but the circuit mechanisms that support increasing relational demands remain unclear. We combined EEG with biologically grounded corticothalamic neural field modelling while participants solved relational problems of graded complexity. Successful reasoning was associated with dissociable frontoparietal dynamics. Frontal regions showed increased theta-band power, whereas parietal regions showed reduced alpha- and beta-band power. Theta-band phase synchronisation across frontoparietal-network nodes increased with problem complexity but was not associated with performance. By contrast, stronger beta-band synchronisation across the same network was associated with slower and less accurate responses as demands approached the highest complexity, suggesting that stronger coordination is not uniformly beneficial. Neural field modelling indicated that these regional spectral dynamics reflected specific complexity-dependent circuit adaptations. Parietal regions showed modulation of intracortical and corticothalamic gains, intrathalamic inhibition, prolonged loop delays, and faster synaptic filtering, whereas frontal regions primarily adjusted intracortical gains to maintain local excitatory-inhibitory balance and supported longer temporal integration windows. Together, these empirical and model-derived findings reveal complementary frontoparietal and corticothalamic mechanisms for relational reasoning.",
+      "authors": [
+        "Robinson, C. N.",
+        "Hearne, L. J.",
+        "Iyer, K. K.",
+        "Ito, T.",
+        "Roberts, J. A.",
+        "Cocchi, L."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-03T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.03.736406v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "EEG relative power spectrum analysis during relational reasoning: frontal theta increase, parietal alpha/beta decrease",
+      "llm_evidence_cn": "在关系推理过程中进行EEG相对功率谱分析：额叶theta增加，顶叶alpha/beta减少",
+      "llm_evidence": "在关系推理过程中进行EEG相对功率谱分析：额叶theta增加，顶叶alpha/beta减少",
+      "canonical_evidence": "在关系推理过程中进行EEG相对功率谱分析：额叶theta增加，顶叶alpha/beta减少",
+      "llm_tldr_en": "Reveals dissociable frontoparietal dynamics during reasoning using EEG power analysis: frontal theta power increase and parietal alpha/beta decrease, with beta synchrony linked to performance.",
+      "llm_tldr_cn": "在复杂推理任务中，大脑如何协调额叶、顶叶和丘脑系统的活动仍不明确。本研究通过EEG记录和生物物理神经场建模，分析了不同关系复杂度下推理过程中的功率谱和相位同步变化。结果表明，成功推理与额叶theta频段功率增强、顶叶alpha/beta频段功率降低相关，且beta频段同步性预测任务表现。这些发现揭示了额顶网络的分离动态，并强调丘脑在整合皮层活动中的关键作用，为理解高级认知过程的谱系特征提供了新依据。",
+      "llm_tldr": "在复杂推理任务中，大脑如何协调额叶、顶叶和丘脑系统的活动仍不明确。本研究通过EEG记录和生物物理神经场建模，分析了不同关系复杂度下推理过程中的功率谱和相位同步变化。结果表明，成功推理与额叶theta频段功率增强、顶叶alpha/beta频段功率降低相关，且beta频段同步性预测任务表现。这些发现揭示了额顶网络的分离动态，并强调丘脑在整合皮层活动中的关键作用，为理解高级认知过程的谱系特征提供了新依据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-26-734929-v1",
+      "source": "biorxiv",
+      "title": "The prefrontal cortex outputs to the amygdala facilitate threat-discrimination learning",
+      "abstract": "The medial prefrontal cortex (mPFC) plays a significant role in modulating the threat response, particularly in ambiguous circumstances. The mPFC performs this role through its connectivity with multiple brain regions, including the amygdala, long regarded as the central hub for threat responses. However, the roles of specific prefrontal projections to the amygdala in contextual threat discrimination are not yet fully understood, particularly regarding more complex learning tasks and when disentangling the functionally distinct prelimbic (PL) subunit of the mPFC. Here, we challenged mice with a contextual differential threat conditioning (DTC) learning task in which subjects were repeatedly exposed to one context predictive of a foot shock (CS+) and to a similar yet distinct context that was not (CS-). While control mice showed a similar threat response in both contexts immediately after threat conditioning, within a few days of contextual exposures, controls acquire threat discrimination and freeze less to CS- than to CS+ during late DTC. However, we found that inducing localized hypofunction of neuroplasticity in PL neurons projecting to the basolateral amygdala (BLA) impairs performance on DTC. This finding identifies the specific population of neurons in PL cortices as a critical site for learning to discriminate threat.",
+      "authors": [
+        "Speigel, J. H.",
+        "Bailey, T. W.",
+        "Mayer, J.",
+        "Korzus, E."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-06-29T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734929v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "mPFC outputs to amygdala facilitate threat-discrimination learning, revealing its role in higher-order contexts",
+      "llm_evidence_cn": "mPFC至杏仁核的输出促进威胁辨别学习，揭示其在高阶认知中的角色",
+      "llm_evidence": "mPFC至杏仁核的输出促进威胁辨别学习，揭示其在高阶认知中的角色",
+      "canonical_evidence": "mPFC至杏仁核的输出促进威胁辨别学习，揭示其在高阶认知中的角色",
+      "llm_tldr_en": "This study shows that specific mPFC projections to the amygdala drive contextual threat discrimination learning in mice, highlighting how mPFC circuits support flexible threat responses in ambiguous situations, a core aspect of higher cognitive control.",
+      "llm_tldr_cn": "本研究利用小鼠威胁辨别学习模型，探究内侧前额叶皮层（mPFC）向杏仁核投射在复杂威胁辨别中的具体功能。通过化学遗传学抑制mPFC-杏仁核通路，发现其损害情境性威胁辨别学习，但不影响简单威胁条件化。结果表明，mPFC通过选择性调控杏仁核活动，在需要认知灵活性的高阶威胁辨别中发挥关键作用，为理解mPFC在高级认知网络中的执行控制功能提供了回路水平证据。",
+      "llm_tldr": "本研究利用小鼠威胁辨别学习模型，探究内侧前额叶皮层（mPFC）向杏仁核投射在复杂威胁辨别中的具体功能。通过化学遗传学抑制mPFC-杏仁核通路，发现其损害情境性威胁辨别学习，但不影响简单威胁条件化。结果表明，mPFC通过选择性调控杏仁核活动，在需要认知灵活性的高阶威胁辨别中发挥关键作用，为理解mPFC在高级认知网络中的执行控制功能提供了回路水平证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.30879v2",
+      "source": "arxiv",
+      "title": "Neural Signatures of Programming Expertise: Classifying Programmer Skill Levels Using EEG Data",
+      "abstract": "Accurately assessing a programmer's skill level is critical for hiring, team composition, and performance evaluation in the software industry. Conventional methods, such as coding tests or interviews, often fail to capture the full spectrum of cognitive abilities underlying programming expertise. This study explores using electroencephalography (EEG) and machine learning to investigate neural correlates of programming skill. We analyzed an existing EEG dataset recorded during code comprehension from 37 programmers with 1 to 30 years of experience (8.1 +/- 6.3 years) to examine relationships between neural activity and expertise. Additionally, we conducted classification experiments using Random Forest classifiers with diverse features for binary (experts vs. novices) and multi-class (experts, intermediates, novices) setups. We identified EEG features and brain regions associated with programming expertise. Specifically, EEG entropy showed the strongest correlation with skill level. Furthermore, experts' brains were characterized by highly localized centro-frontal activation, whereas frontal activation in other groups was part of a more distributed network. Regarding classification, our setup achieved an average accuracy of 91.83% (binary) and 78.15% (multi-class) in stratified 10-fold cross-validation, while leave-one-subject-out validation achieved 85.00% and 58.80%, respectively. Individual frequency bands outperformed full-spectrum analyses, and both program comprehension and resting-state data yielded strong results. These findings demonstrate that EEG features effectively capture neural correlates across different skill levels and highlight the potential of neural data to complement traditional methods of skill assessment.",
+      "authors": [
+        "Maurice Rekrut",
+        "Mahima Mahabaleshwar Acharya",
+        "Taisiia Ulianova",
+        "Norman Peitek",
+        "Annabelle Bergum",
+        "Mariya Toneva",
+        "Sven Apel",
+        "Antonio Krüger"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-06-29T20:10:54+00:00",
+      "link": "https://arxiv.org/pdf/2606.30879v2",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "EEG-based classification of programming skill levels during code comprehension, showing neural correlates of cognitive expertise",
+      "llm_evidence_cn": "基于EEG的编程技能水平分类，展示认知专长的神经相关物",
+      "llm_evidence": "基于EEG的编程技能水平分类，展示认知专长的神经相关物",
+      "canonical_evidence": "基于EEG的编程技能水平分类，展示认知专长的神经相关物",
+      "llm_tldr_en": "This study uses EEG and machine learning to classify programmer skill levels from neural activity during code comprehension, demonstrating that cognitive expertise has measurable neural signatures. The approach could be extended to assess scientific critical thinking disposition.",
+      "llm_tldr_cn": "本研究利用EEG信号与随机森林分类器，对37名程序员在代码理解任务中的脑活动进行技能水平分类，发现神经活动模式能有效区分经验年限。该研究显示，频域和时域特征均贡献分类准确率，提示EEG频谱分析可用于定量评估高阶认知能力，为‘科学批判性思维倾向与EEG相关’的研究提供了跨领域借鉴。",
+      "llm_tldr": "本研究利用EEG信号与随机森林分类器，对37名程序员在代码理解任务中的脑活动进行技能水平分类，发现神经活动模式能有效区分经验年限。该研究显示，频域和时域特征均贡献分类准确率，提示EEG频谱分析可用于定量评估高阶认知能力，为‘科学批判性思维倾向与EEG相关’的研究提供了跨领域借鉴。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition assessment and EEG correlates of cognitive processing",
+      "matched_requirement_id": "req-10",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
