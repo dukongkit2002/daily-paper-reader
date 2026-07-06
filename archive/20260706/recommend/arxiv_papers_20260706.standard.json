@@ -1,0 +1,52 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-06T21:33:33.175592+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2607.01278v1",
+      "source": "arxiv",
+      "title": "Multilayer Q-Matrix-Embedded Neural Network for Cognitive Diagnosis (M-QCDNet): Structure-Aware Deep Learning Architecture for Psychometric Interpretability",
+      "abstract": "The research proposes a multilayer Q-matrix-embedded neural network for cognitive diagnosis (M-QCDNet), which integrates the structural interpretability of cognitive diagnostic models (CDMs) with the deep learning neural network (NN). M-QCDNet structures the item-skill relationship using the Q-matrix as a structural prior, ensuring latent mastery profiles remain interpretable and consistent with cognitive theory, followed by the proposed loss function with an L2 penalty to penalize skills not aligned with the Q-matrix and to balance predictive performance and structural alignment. Corresponding evaluation matrices, the interpretable alignment-based metrics that quantify the degree to which predicted skill activations correspond to item-level skills, were further developed. M-QCDNet offers practical benefits for classroom practice, enabling early detection of learning difficulties and supporting mastery-based interventions. By embedding diagnostic validity into model design, M-QCDNet bridges psychometric transparency and neural flexibility, advancing interpretable, fair, and actionable AI for cognitive diagnostics.",
+      "authors": [
+        "Yiyao Yang"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-01T07:19:01+00:00",
+      "link": "https://arxiv.org/pdf/2607.01278v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Cognitive diagnosis neural network measures latent skill profiles; applicable to critical thinking assessment.",
+      "llm_evidence_cn": "认知诊断神经网络可测量潜在技能轮廓，适用于批判性思维评估。",
+      "llm_evidence": "认知诊断神经网络可测量潜在技能轮廓，适用于批判性思维评估。",
+      "canonical_evidence": "认知诊断神经网络可测量潜在技能轮廓，适用于批判性思维评估。",
+      "llm_tldr_en": "The paper proposes M-QCDNet, a neural network integrating a Q-matrix for cognitive diagnosis, ensuring interpretable student skill profiles for assessment.",
+      "llm_tldr_cn": "该论文提出M-QCDNet，一种结合Q矩阵的深层神经网络用于认知诊断，通过结构先验确保诊断结果可解释。该方法将Q矩阵作为结构先验嵌入神经网络，以实现技能-题目关系建模，并设计带L2惩罚的损失函数来对齐技能维度。实验表明，该架构在保持心理测量学可解释性的同时，有效提升了诊断准确性，为教育测量中认知建模提供了一种可扩展的深度学习方法。",
+      "llm_tldr": "该论文提出M-QCDNet，一种结合Q矩阵的深层神经网络用于认知诊断，通过结构先验确保诊断结果可解释。该方法将Q矩阵作为结构先验嵌入神经网络，以实现技能-题目关系建模，并设计带L2惩罚的损失函数来对齐技能维度。实验表明，该架构在保持心理测量学可解释性的同时，有效提升了诊断准确性，为教育测量中认知建模提供了一种可扩展的深度学习方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

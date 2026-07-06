@@ -1,0 +1,2184 @@
+Title: M-QCDNet Full Paper YIYAO YANG
+
+URL Source: https://arxiv.org/pdf/2607.01278v1
+
+Published Time: Fri, 03 Jul 2026 00:01:19 GMT
+
+Number of Pages: 15
+
+Markdown Content:
+Multilayer Q-Matrix-Embedded Neural Network for Cognitive Diagnosis (M-QCD Net): 
+
+Structure-Aware Deep Learning Architecture for Psychometric Interpretability 
+
+Yiyao Yang 
+
+yy3555@tc.columbia.edu 
+
+0009-0001-8693-4888 
+
+Columbia University, New York, NY, United States 
+
+Abstract 
+
+The research proposes a multilayer Q-matrix-embedded neural network for cognitive diagnosis (M-
+
+QCDNet), which integrates the structural interpretability of cognitive diagnostic models (CDMs) with the 
+
+deep learning neural network (NN). M-QCDNet structures the item-skill relationship using the Q-matrix 
+
+as a structural prior, ensuring latent mastery profiles remain interpretable and consistent with cognitive 
+
+theory, followed by the proposed loss function with an L2 penalty to penalize skills not aligned with the 
+
+Q-matrix and to balance predictive performance and structural alignment. Corresponding evaluation 
+
+matrices, the interpretable alignment-based metrics that quantify the degree to which predicted skill 
+
+activations correspond to item-level skills, were further developed. M-QCDNet offers practical benefits 
+
+for classroom practice, enabling early detection of learning difficulties and supporting mastery-based 
+
+interventions. By embedding diagnostic validity into model design, M-QCDNet bridges psychometric 
+
+transparency and neural flexibility, advancing interpretable, fair, and actionable AI for cognitive 
+
+diagnostics. 
+
+I. Research Purpose 
+
+M-QCDNet embeds the multilayer Q-matrix structure into an NN, enhancing both predictive accuracy 
+
+and structural interpretability in CDM simultaneously. While traditional metrics such as the Attribute 
+
+Accuracy Rate (AAR) and Pattern Accuracy Rate (PAR) are widely used to assess the classification 
+
+accuracy, these indices often underestimate model performance in complex model architectures or in 
+
+high-dimensional data (Cai et al., 2018; Chiu et al., 2009). To address this gap, a set of Q-matrix 
+
+structure-aligned interpretability metrics, including the Q-Matrix Consistency Ratio (QCR), Cross-
+
+Loading Ratio (CLR), and Off-Support Activation (OSA), was further proposed to evaluate how well the 
+
+learned representations conform to cognitive theory. M-QCDNet is thus not designed merely to maximize 
+
+attribute-profile accuracy. Instead, it embeds the multilayer Q-matrix structure within an NN and 
+
+enhances both predictive performance and interpretability. 
+
+II. Background & Difference from Prior Studies 
+
+Building on the foundational contributions of Chiu & Köhn (2019) in advancing nonparametric 
+
+approaches to cognitive diagnosis models (CDMs), M-QCDNet leverages neural network architectures 
+
+while explicitly retaining the tradition of flexible, nonparametric, and interpretable diagnostic modeling 
+
+(Chiu & Köhn, 2019). Unlike earlier artificial neural network (ANN)-based approaches, such as those 
+
+pioneered by Cui et al. (2015), which primarily focused on enhancing classification accuracy without 
+
+incorporating a Q-matrix or its underlying cognitive structure (Cui et al., 2015), M-QCDNet 
+
+fundamentally distinguishes itself by encoding the multilayer Q-matrix directly into the model design. 
+
+This deliberate architectural integration ensures that latent skill representations remain not only 
+
+computationally effective but also meaningfully interpretable at the granular skill level, a critical 
+
+requirement for educational and psychological assessment (von Davier, 2017). The substantive 
+
+differences between M-QCDNet and prior neural CDM frameworks are systematically delineated (Table 
+
+1), highlighting advancements in structural fidelity, parameter efficiency, and diagnostic clarity. 
+
+Furthermore, M-QCDNet demonstrates exceptional generality and theoretical coherence, enabling it to be 
+
+instantiated to recover the well-established Deterministic Input, Noisy “And” gate (DINA) model as a 
+
+special case  (Junker & Sijtsma, 2001), and it exhibits broad compatibility across a wide spectrum of 
+
+/1 15 CDM variants, including the Generalized DINA (GDINA) model framework (de la Torre, 2011) and the 
+
+Reduced RUM model, underscoring its versatility as a unified, next-generation diagnostic modeling 
+
+framework. 
+
+Comparison between M-QCD Net and Previous Neural CDMs 
+
+Previous neural cognitive diagnostic models have incorporated neural networks into cognitive diagnosis 
+
+in different ways, but they often face limitations in structural interpretability (Table 1). For example, 
+
+NeuralCD (Wang et al., 2022) and Dual Q-Net (Tao et al., 2024) primarily use neural networks to replace 
+
+traditional interaction functions, while the Q-matrix is only utilized within the interaction layer or in 
+
+automatically generated structures. Although the approaches improve predictive flexibility, they provide 
+
+limited transparency regarding how cognitive skills are represented throughout the network. In contrast, 
+
+M-QCDNet embeds the Q-matrix as a structural prior across multiple neural layers and introduces 
+
+regularization mechanisms that explicitly constrain latent representations to align with predefined skill 
+
+structures, thereby enhancing psychometric interpretability. 
+
+Several studies have focused on improving robustness under specific conditions rather than strengthening 
+
+interpretability. For instance, QNN/SOM-QNN (Tao et al., 2024) employs self-organizing maps to 
+
+enhance performance in small-sample settings, while BNN-Q (Li et al., 2022) utilizes binarized neural 
+
+networks to automatically generate Q- and A-matrices. Although these methods address data scarcity and 
+
+structure discovery challenges, they do not directly evaluate whether learned representations remain 
+
+consistent with the cognitive assumptions encoded in the Q-matrix. By comparison, M-QCDNet adopts a 
+
+multilayer Q-matrix embedding strategy and introduces embedding-alignment metrics to quantify the 
+
+consistency between latent representations and the underlying cognitive structure. Rather than 
+
+emphasizing automatic Q-matrix generation or small-sample adaptation, the proposed model focuses on 
+
+preserving psychometric meaning within deep neural architectures. 
+
+Other neural CDMs have explored alternative network structures. ICD (Qi et al., 2023) employs a fixed 
+
+three-layer architecture to model exercise–concept and concept–concept relationships. While effective for 
+
+capturing hierarchical dependencies, its predefined structure limits architectural flexibility and does not 
+
+provide embedding-level interpretability measures. Similarly, NeuralNCD (Li et al., 2022) integrates Item 
+
+Response Theory (IRT) with neural networks to incorporate multidimensional learner features, but its 
+
+performance often depends on large-scale response data and extensive feature information. In contrast, 
+
+M-QCDNet embeds the Q-matrix throughout multiple representation layers rather than relying on a fixed 
+
+network design and evaluates representation quality using alignment-based interpretability metrics. This 
+
+design enables the model to maintain cognitive interpretability while leveraging the representation-
+
+learning capability of a deep neural network. 
+
+Table 1 
+
+Differences of M-QCDNet with Prior Neural CDMs    
+
+> Model Characteristics Limitation M-QCDNet (Difference)
+> NeuralCD (Wang et
+> al., 2022)
+> Uses NNs to replace interaction
+> functions, with the Q-matrix only
+> in the interaction layer.
+> Limited structural
+> interpretability
+> M-QCDNet embeds the Q
+> matrix as a structural prior
+> across multiple layers and
+> adds regularization for
+> interpretability.
+
+/2 15 III. Research Question 
+
+# • Research Question 1: How can M-QCDNet be designed to model students’ skill mastery, ensuring 
+
+that latent representations align with the underlying cognitive structure specified by the Q-matrix? 
+
+# • Research Question 2: How effectively does M-QCDNet capture latent skill structures, and to what 
+
+extent do predicted skill profiles align with the predefined item-skill mappings as measured by the 
+
+proposed evaluation metrics? 
+
+IV. Methodology 
+
+Notation: student, ; item, ; skill, 
+
+# • Method of Research Question 1: 
+
+Theory-Guided Architecture Specification: The design of M-QCDNet begins with the principle that the 
+
+network’s representational capacity should be bounded by the cognitive theory encoded in the Q-matrix, 
+
+rather than learned arbitrarily from data. We specify a feedforward architecture where the dimensionality 
+
+of the latent space is fixed to , the number of skills defined by the Q-matrix, thereby imposing a hard 
+
+constraint on the network’s hypothesis space. This dimensional alignment ensures that the model cannot 
+
+learn skill representations beyond those theorized by domain experts. For each item , the Q-matrix row 
+
+defines which skills are measured. We encode this binary vector as a mask that is applied at 
+
+the projection layer. Specifically, we implement a multiplicative gating mechanism that selectively 
+
+Dual Q-Net (Tao et 
+
+al., 2024) 
+
+Uses auto-generated structure to 
+
+model main and interaction effects. 
+
+Shallow, focused on 
+
+structure automation 
+
+M-QCDNet is a multilayer 
+
+model that embeds the Q-
+
+matrix throughout 
+
+representations, utilizing 
+
+alignment metrics for 
+
+enhanced interpretability. 
+
+QNN / SOM-QNN 
+
+(Tao et al., 2024) 
+
+Uses a Q-matrix self-organizing 
+
+map (SOM) for small-sample 
+
+robustness. 
+
+Only focus on small-
+
+sample robustness 
+
+M-QCDNet targets 
+
+psychometric 
+
+interpretability with 
+
+multulayer embedding and 
+
+metrics, not only small-
+
+sample adaptation. 
+
+BNN-Q (Li et al., 
+
+2022) 
+
+Uses a binarized neural network to 
+
+extract Q- and A- matrices 
+
+automatically. 
+
+Sensitive to noise, 
+
+limited prediction, and 
+
+no interpretability 
+
+metrics 
+
+M-QCDNet leverages the 
+
+multulayer Q-matrix and 
+
+evaluates embedding 
+
+alignment instead of 
+
+automatic Q-matrix 
+
+generation. 
+
+ICD (Qi et al., 2023) 
+
+Uses a three-layer network to 
+
+model exercise-concept and 
+
+concept-concept relations. 
+
+Fixed three-layer 
+
+design, limited 
+
+flexibility, and no 
+
+embedding-level 
+
+interpretability 
+
+metrics 
+
+M-QCDNet embeds the Q-
+
+matrix across multilayers 
+
+with alignmnet metrics, not 
+
+a fixed three-layer 
+
+mapping. 
+
+NeuralNCD (Li et 
+
+al., 2022) 
+
+Uses an IRT-NN integration to 
+
+incorporate multi-dimensional 
+
+features. 
+
+Requires large 
+
+training data and 
+
+struggles with limited 
+
+feature inputs 
+
+M-QCDNet can be trained 
+
+on broader datasets, 
+
+mitigating overfitting and 
+
+reducing dependence on 
+
+extensive response logs. 
+
+s : s = {1,2, …, S} j : j = {1,2, …, J} k : k = {1,2, …, K}
+
+K
+
+j
+
+Qj ∈ {0,1 }K
+
+/3 15 activates or deactivates skill dimensions according to , where indicates that the item requires skill 
+
+, and otherwise. This gating is non-adaptive, such that the mask weights are fixed to the Q-
+
+matrix values and not updated during training, ensuring that the structural prior remains invariant and 
+
+cannot be overridden by data-driven adaptation. 
+
+Structural Constraint Formulation: Beyond architectural gating, we recognize that hard masking alone 
+
+does not guarantee that the model will respect the Q-matrix structure during optimization. Latent 
+
+representations could still develop spurious activations for irrelevant skills if no explicit regularization is 
+
+applied. Therefore, we formulate a structural constraint that penalizes the model for assigning non-zero 
+
+mastery values to skills not required by an item. We operationalize this constraint as a differentiable 
+
+penalty term ℒ(constraint) that computes the squared magnitude of latent skill components masked by the 
+
+complement of the Q -matrix. 
+
+# • Method of Research Question 2: 
+
+Three Proposed Evaluation Metrics: To address how effectively M-QCDNet captures latent skill 
+
+structures, and to what extent predicted skill profiles align with predefined item-skill mappings as 
+
+measured by the proposed evaluation metrics, including the Q-matrix Consistency Ratio (QCR), Cross-
+
+Loading Ratio (CLR), and Off-Support Activation (OSA). These metrics are designed to assess different 
+
+facets of structural alignment between the learned latent representations and the theoretically specified Q-
+
+matrix, providing both item-level and student-level diagnostic evaluations. 
+
+(1)  Q-matrix Consistency Ratio (QCR) (Higher Better): The QCR quantifies the degree of alignment 
+
+between a student’s latent skill activation pattern and the skills required by each item according to the 
+
+Q-matrix. Building on the Q-matrix validation framework of de la Torre and Chiu (2016), we 
+
+formulate QCR in a ratio-based form that measures, for each student-item pair, the proportion of 
+
+activated skills that are required. For a given student and item , we first compute the element-wise 
+
+sigmoid activation of the latent skill vector , yielding , which represents the 
+
+probability that each skill is activated for that student-item interaction.  The alignment score pair is 
+
+then calculated as the inner product between the activation vector and the Q-matrix row ,
+
+, divided by the L1 norm . This ratio normalizes the alignment score by the item's 
+
+skill count, ensuring that items with different numbers of required skills are evaluated on a 
+
+comparable scale. The student-level QCR( ) is obtained by averaging this ratio across all  J items, and 
+
+the overall QCR is the average across all  S students. The QCR ranges from 0 to 1, where higher 
+
+values indicate stronger consistency between student representations and the Q-matrix skill 
+
+requirements, and lower values suggest potential misalignment. 
+
+(2)  Cross-Loading Ratio (CLR) (Lower Better): The CLR measures the proportion of a student’s latent 
+
+embedding energy that is allocated to skills rarely or never required across all items, capturing the 
+
+extent of cross-loading onto irrelevant skill dimensions. For each skill , we compute the mean-
+
+squared latent activation , representing the total energy assigned to that skill across students. 
+
+We also compute the empirical item-skill requirement frequency for each skill as , which 
+
+indicates how often skill is required across all items. The cross-loading for skill is then defined as 
+
+the product of the mean squared activation and the component of the item-skill frequency, 
+
+, which weights the activation energy by the proportion of items that do not require 
+
+that skill. The CLR is computed as the sum of these weighted cross-loadings across all  skills, 
+
+Qjk Qjk j
+
+k Qjk = 0
+
+s j
+
+zsj σ (zsj) ∈ (0,1 )K
+
+Qj
+
+⟨σ (zsj), Qj⟩ ∥Qj∥1
+
+s
+
+k
+
+1
+
+S
+
+> S
+
+∑
+
+> s=1
+
+h2
+
+> sk
+
+1
+
+J
+
+> J
+
+∑
+
+> j=1
+
+Qjk
+
+k k
+
+(1 − 1
+
+J
+
+> J
+
+∑
+
+> j=1
+
+Qjk)
+
+K
+
+/4 15 normalized by the total activation energy across all skills, . This normalization ensures that 
+
+CLR represents a proportion, ranging from 0 to 1, where lower values indicate that embeddings are 
+
+more concentrated on frequently required skills, and higher values indicate strong cross-loading. 
+
+(3)  Off-Support Activation (OSA): The OSA measures the average activation of off-support skills, 
+
+those not required by a given item, by computing the mean squared latent activation for each skill-
+
+item pair where the Q-matrix entry equals zero. For each skill , the OSA score is calculated as the 
+
+average squared latent activation multiplied by the component of the item-skill requirement 
+
+indicator , summed across all items and skills. This sum is then divided by the total number 
+
+of off-support skill-item pairs, , to yield a normalized average activation. The resulting 
+
+OSA ranges from 0 to 1, where higher values indicate substantial spurious activation of skills that are 
+
+not supposed to be measured by an item, and lower values demonstrate that the embeddings remain 
+
+focused exclusively on the required skills as specified by the Q-matrix. 
+
+V. Result 
+
+(V.1) Result of Research Question 1 
+
+The proposed M-QCDNet is the neural network architecture that explicitly incorporates the Q-matrix as a 
+
+structural prior to ensure that the learned student latent representations remain interpretable and consistent 
+
+with cognitive theory. The architecture begins with an input layer that takes the student’s response vector 
+
+, where each element indicates the correctness of student on an item . This response 
+
+vector serves as the direct observation of the student’s performance across items. 
+
+The core of M-QCDNet lies in the latent skill layer, which learns a mastery profile for each 
+
+student, representing their proficiency across cognitive skills. Unlike conventional deep learning 
+
+models that produce opaque latent embeddings, M-QCDNet explicitly aligns these profiles with the 
+
+attributes defined in the Q-matrix. To achieve this, we introduce a Q-matrix-Embedded Projection 
+
+operation, where the student's mastery vector is element-wise masked by the Q-matrix entries for each 
+
+item: . This operation ensures that only the skills required by the item  contribute to its 
+
+diagnostic representation, effectively enforcing the cognitive structure specified by the Q-matrix. 
+
+Subsequently, a linear transformation computes the logit score , which is then passed 
+
+through a sigmoid activation function to produce the predicted probability . This 
+
+prediction can be compactly expressed as . The entire process guarantees that 
+
+the item-level prediction is grounded in the specific skills that the item is designed to measure, thereby 
+
+preserving interpretability and theoretical alignment. 
+
+In summary, the M-QCDNet architecture proceeds as follows. For each student-item pair, the model 
+
+computes a Q-matrix-masked representation , where indicates whether item requires 
+
+skill ( = 1, if item requires skill ; = 0, otherwise). This making ensures that only relevant skills 
+
+influence the prediction. The masked vector is then propagated through  two ReLU-activated hidden 
+
+layers: and . A linear output layer maps the second 
+
+hidden representation to a logit , which is finally transformed via a sigmoid function to 
+
+yield the predicted probability . This architecture preserves interpretability by 
+
+( 1
+
+S
+
+> S
+
+∑
+
+> s=1
+
+h2
+
+> sk
+
+)
+
+k
+
+1
+
+S
+
+> S
+
+∑
+
+> s=1
+
+h2
+
+> sk
+
+(1 − Qjk) K
+
+∑
+
+> k=1
+
+(1 − Qjk)
+
+xs ∈ ℝJ xsj ∈ {0,1 } s j
+
+J
+
+hs ∈ ℝK
+
+K
+
+zsj = Qjk ⊙ hsk j
+
+usj = w⊤zsj + bĵ
+
+ysj = σ (usj) ∈ [0,1 ]̂
+
+ysj = σ (wT (Qjk ⊙ hsk) + bj)
+
+zsj = Qjk ⊙ hsk Qjk j
+
+k Qjk j k Qjk
+
+h(1) 
+
+> sj
+
+= ReLU (W1zsj + b1) h(2) 
+
+> sj
+
+= ReLU (W2zsj + b2)
+
+usj = Woh(2) 
+
+> sj
+
++ bô
+
+ysj = σ (usj) ∈ [0,1 ]
+
+/5 15 enforcing the Q-matrix structural prior, while the hidden layers capture nonlinear skill interactions. 
+
+To train M-QCDNet, we define a composite loss function 
+
+, which balances predictive accuracy and structural 
+
+interpretability. The first term, , is the cross-entropy loss that measures the discrepancy between 
+
+the predicted probability and the true response :
+
+. This ensures that the model accurately predicts 
+
+student performance. 
+
+The second term, , is a regularization penalty that enforces Q-matrix alignment by penalizing 
+
+latent mastery components that correspond to skills not required by the Q-matrix: 
+
+. This L2 penalty encourages irrelevant skill components to shrink 
+
+toward zero, thereby preventing the latent skill vector from activating skills that are not supposed to 
+
+influence the response. 
+
+The hyperparameter , obtained via -fold cross-validation, controls the trade-off between predictive 
+
+fidelity and structural consistency. 
+
+Proposition 1 (Likelihood Equivalence). Minimizing the proposed M-QCDNet loss function 
+
+is equivalent to maximizing the joint likelihood of the observed responses and the residual 
+
+terms under Bernoulli and Gaussian observation models, respectively. Specifically, the total loss 
+
+corresponds to the negative log-posterior, and its minimization yields the maximum a posteriori (MAP) 
+
+estimation. 
+
+# • : whether the item measures skill 
+
+# • : the observed response of the student to the item , where 0 indicates an incorrect answer, 
+
+and 1 indicates a correct answer. 
+
+# • : the predicted probability 
+
+Let denote the response of the student to the item , .
+
+Part I: For the :
+
+Assume that given the student's latent trait vector , and the Q-matrix , the observed responses are 
+
+conditionally independent. The conditional probability of a single response is given by the Bernoulli 
+
+distribution: , where denotes the predicted 
+
+probability of a correct response, and represents all learnable parameters (including network weights 
+
+and the Q-matrix entries when optimized). 
+
+Under the conditional independence assumption, the joint likelihood over all students and items is 
+
+ζM−QCDNet = ζprediction(̂ y, y) + λ ζconstraint(h, Q)
+
+ζprediction̂
+
+ysj ysj
+
+ζprediction =
+
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+
+[ysj log (̂ ysj) + (1 − ysj)log (1 −̂ ysj)]
+
+ζconstraint
+
+hsk
+
+ζconstraint =
+
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+> K
+
+∑
+
+> k=1
+
+[(1 − Qjk)hsk]2                     
+
+> ζM−QCDNet=ζprediction(̂y,y)+λζconstraint(h,Q)=
+> S
+> ∑
+> s=1
+> J
+> ∑
+> j=1
+> [ysjlog (̂ysj)+(1−ysj)log (1−̂ysj)]+λ
+> S
+> ∑
+> s=1
+> J
+> ∑
+> j=1
+> K
+> ∑
+> k=1
+> [(1−Qjk)hsk]2
+
+λ k
+
+ζM−QCDNet
+
+qjk ∈ {0,1 } j k
+
+ysj ∈ {0,1 } s ĵ
+
+ysj = pθ(ysj = 1 | hs)
+
+ysj s j ysj ∼ Bernoulli (̂ ysj)
+
+ζprediction(̂ y, y) =
+
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+
+[ysj log (̂ ysj) + (1 − ysj)log (1 −̂ ysj)]
+
+hs Q ysj
+
+pθ(ysj | hs, Q) =̂ yysj 
+
+> sj
+
+(1 −̂ ysj)1−ysĵ ysj = pθ(ysj = 1 | hs)
+
+θ
+
+Qjk
+
+/6 15 . Taking the logarithm (a monotonically increasing function) yields the 
+
+log-likelihood: .
+
+Therefore, minimizing the negative log-likelihood (NLL) is equivalent to maximizing the likelihood: 
+
+Thus, the prediction loss in our framework is exactly defined as this NLL: 
+
+.
+
+Consequently, .
+
+Hence, minimizing the prediction loss is equivalent to maximum likelihood estimation (MLE) under the 
+
+Bernoulli observation model. 
+
+Part II: For the :
+
+To provide a probabilistic interpretation, we define . Then the constraint term can 
+
+be rewritten as . Treating this term analogously to a sum of squared 
+
+residuals,  we adopt the  least-squares criterion  (rather than invoking the Gauss-Markov theorem) to 
+
+optimize this penalty. Specifically, we assume that each is independently distributed according to a 
+
+zero-mean Gaussian distribution with common variance : Assume that , with probability 
+
+density function: .
+
+Under the independence assumption, the joint likelihood of all residual terms is: 
+
+{ } .
+
+Taking the logarithm yields: { } , where 
+
+.
+
+Since is a constant independent of and , the first term and the scaling factor 
+
+are constants with respect to the optimization variables. Therefore, maximizing the log-likelihood of the 
+
+residual is equivalent to minimizing the sum of squared residuals: 
+
+.
+
+Hence, minimizing the constraint term is equivalent to maximizing the Gaussian log-likelihood of the 
+
+residual terms, which provides a probabilistic justification for the squared penalty as a form of Gaussian 
+
+prior regularization. 
+
+L (θ ) =
+
+> S
+
+∏
+
+> s=1
+> J
+
+∏
+
+> j=1
+
+̂
+
+yysj 
+
+> sj
+
+(1 −̂ ysj)1−ysj
+
+log [L (θ )] =
+
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+
+[ysj log (̂ ysj + (1 − ysj log (1 −̂ ysj)]
+
+N L L (θ ) = − log [L (θ )] = −
+
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+
+[ysj log (̂ ysj) + (1 − ysj)log (1 −̂ ysj)] = ζprediction
+
+ζprediction
+
+ζprediction(̂ y, y) = N L L (θ )
+
+arg min 
+
+> θ
+
+ζprediction(̂ y, y) = arg min 
+
+> θ
+
+N L L (θ ) = arg max 
+
+> θ
+
+L (θ )
+
+ζconstraint(h, Q) =
+
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+> K
+
+∑
+
+> k=1
+
+[(1 − Qjk)hsk]2
+
+γsjk ≜ (1 − Qj,k)hs,k(t)
+
+ζconstraint(h, Q) =
+
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+> K
+
+∑
+
+> k=1
+
+γ2
+
+> sjk
+
+γsjk
+
+σ2 γsjk
+
+iid 
+
+∼ N(0, σ2)
+
+p(γsjk | σ2) = 1
+
+2π σ2
+
+ex p(− γ2
+
+> sjk
+
+2σ2 )
+
+p( γsjkt | σ2) =
+
+> S
+
+∏
+
+> s=1
+> J
+
+∏
+
+> j=1
+> K
+
+∏
+
+> k=1
+
+1
+
+2π σ2
+
+ex p(− γ2
+
+> sjtk
+
+2σ2 )
+
+log ( p γsjtk | σ2) = − N
+
+2 log (2π σ2) − 1
+
+2σ2
+
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+> K
+
+∑
+
+> k=1
+
+γ2
+
+> sjk
+
+N = S × J × K × T
+
+σ2 h Q − N
+
+2 log (2π σ2) − 1
+
+2σ2
+
+arg max 
+
+> h,Q
+
+log p({γsjk} ∣ σ2) = arg min 
+
+> h,Q
+> S
+
+∑
+
+> s=1
+> J
+
+∑
+
+> j=1
+> K
+
+∑
+
+> k=1
+
+γ2 
+
+> sjk
+
+= arg min 
+
+> h,Q
+
+ζconstraint(h, Q)
+
+/7 15 Thus, based on Part I and Part II, for the , we have proved that minimizing this composite loss 
+
+is equivalent to maximizing the posterior likelihood of the model parameters. 
+
+In summary, M-QCDNet generates skill-level output that aligns with the Q-matrix-defined latent 
+
+attributes, ensuring that the learned student profiles remain interpretable and consistent with cognitive 
+
+theory, mirroring the attribute-level mastery profiles produced by traditional CDMs, while leveraging the 
+
+representational power of deep learning. 
+
+From a Bayesian perspective, minimizing the total loss 
+
+is equivalent to finding the maximum a posteriori (MAP) estimate, where corresponds to the 
+
+negative Bernoulli log-likelihood, and corresponds to the negative Gaussian log-prior 
+
+(regularization term) with precision .
+
+Part III: Unified Bayesian Interpretation via Maximum A Posteriori (MAP) Estimation 
+
+Having established the probabilistic interpretations of both terms of our loss function, we now show that 
+
+the overall optimization objective of M-QCDNet can be naturally unified under the Bayesian framework 
+
+of maximum a posteriori (MAP) estimation. 
+
+Recall that the complete loss function is defined as: ,
+
+where denotes the set of all learnable parameters, and is a regularization coefficient that balances 
+
+the two terms. 
+
+From Part I, we have established that the prediction loss corresponds to the negative Bernoulli log-
+
+likelihood of the observed responses: , where 
+
+.
+
+From Part II, we have shown that the constraint term can be interpreted as the negative Gaussian log-
+
+likelihood of the residual terms : , where 
+
+.
+
+Equivalently, this constraint can be viewed as placing a zero-mean Gaussian prior on each residual term: 
+
+, or, from a regularization perspective, as imposing a Gaussian prior on the parameter 
+
+with precision parameter : , up to the Q-matrix modulation. 
+
+Now, substituting these probabilistic interpretations into the total loss, we obtain that 
+
+.
+
+By Bayes’ theorem, the posterior distribution of the parameters given the observed data is 
+
+, where is the likelihood and is the prior distribution over 
+
+parameters. In our framework, the prior is specifically imposed on the residual terms through the 
+
+Gaussian distribution, with the regularization parameter controlling the prior strength. 
+
+Therefore, minimizing the total loss is equivalent to maximizing the logarithm of the 
+
+posterior distribution: .
+
+ζM−QCDNet                     
+
+> ζM−QCDNet=ζprediction(̂y,y)+λζconstraint(h,Q)=
+> S
+> ∑
+> s=1
+> J
+> ∑
+> j=1
+> [ysjlog (̂ysj)+(1−ysj)log (1−̂ysj)]+λ
+> S
+> ∑
+> s=1
+> J
+> ∑
+> j=1
+> K
+> ∑
+> k=1
+> [(1−Qjk)hsk]2
+
+ζprediction
+
+ζconstraint
+
+λ−1
+
+ζM−QCDNet(θ ) = ζprediction(̂ y, y) + λ ζconstraint(h, Q)
+
+θ λ > 0
+
+ζprediction(̂ y, y) = − log p(y | h, Q, θ )
+
+p(y ∣ h, Q, θ ) =
+
+> S
+
+∏
+
+> s=1
+> J
+
+∏
+
+> j=1
+
+̂
+
+yysj 
+
+> sj
+
+(1 −̂ ysj)1−ysj
+
+γsjk = (1 − Qjk)hsk ζconstraint(h, Q) ∝ − log p({γsjk} ∣ σ2)
+
+p({γsjk} ∣ σ2) =
+
+> S
+
+∏
+
+> s=1
+> J
+
+∏
+
+> j=1
+> K
+
+∏
+
+> k=1
+
+1
+
+2π σ2
+
+exp (− γ2
+
+> sjk
+
+2σ2 )
+
+γsjk ∼ 𝒩 (0, σ2) hsk
+
+λ hsk ∼ 𝒩 (0, λ−1)
+
+ζM−QCDNet(θ ) = − log p(y ∣ h, Q, θ ) − λ log p({γsjk} ∣ σ2) + constant 
+
+p(θ ∣ y) ∝ p(y ∣ θ ) ⋅ p(θ ) p(y | θ ) p(θ )
+
+γsjk
+
+λ
+
+ζM-QCDNet 
+
+arg min 
+
+> θ
+
+ζM-QCDNet (θ ) = arg max 
+
+> θ
+
+log p(θ ∣ y)
+
+/8 15 Hence, the proposed M-QCDNet loss function admits a rigorous Bayesian interpretation as MAP 
+
+estimation, where: 
+
+# • The prediction loss corresponds to the negative log-likelihood of the observed binary 
+
+responses under a Bernoulli observation model. 
+
+# • The constraint loss corresponds to the negative log-prior (Gaussian regularization) imposed 
+
+on the residual terms to enforce the Q-matrix constraints. 
+
+The unified probabilistic perspective not only justifies the formulation of our loss function but also 
+
+provides theoretical grounding for the choice of the squared penalty, linking it to well-established 
+
+principles in statistical learning and Bayesian inference. 
+
+Proposition 2 (Generalization to DI NA). The proposed M-QCDNet loss function generalizes the 
+
+standard DINA model loss function in the sense that the constraint part of the loss function is recovered 
+
+as a limiting case under extreme regularization settings. Specifically, when the constraint weight 
+
+vanishes or dominates, or when the Q-matrix is fully observed, the M-QCDNet objective reduces 
+
+exactly or asymptotically to the loss function of DINA. This establishes that M-QCDNet is not an 
+
+alternative to DINA, but rather a strict extension that preserves the original model’s interpretability 
+
+while enabling more flexible modeling via learnable hidden representations. 
+
+Case I: When 
+
+Case II: When , then 
+
+Case III: When , the constraint term dominates the gradient dynamics. 
+
+Specifically, for each , .
+
+As , the gradient update under gradient descent becomes 
+
+.
+
+# - If , then exponentially as interaction proceeds, implying and hence 
+
+.
+
+# - If , then identically, and therefore exactly. 
+
+Thus, the proof demonstrates that M-QCDNet is a strict generalization of the DINA model, recovering it 
+
+at all extreme parameter regimes. 
+
+(V.2) Result of Research Question 2 
+
+To evaluate interpretability, three corresponding evaluation metrics are proposed (Table 2), including the 
+
+Q-Matrix Consistency Ratio (QCR), Cross-Loading Ratio (CLR), and Off-Support Activation (OSA). 
+
+ζprediction 
+
+ζconstraint 
+
+λ                     
+
+> ζM−QCDNet=ζprediction(̂y,y)+λζconstraint(h,Q)=
+> S
+> ∑
+> s=1
+> J
+> ∑
+> j=1
+> [ysjlog (̂ysj)+(1−ysj)log (1−̂ysj)]+λ
+> S
+> ∑
+> s=1
+> J
+> ∑
+> j=1
+> K
+> ∑
+> k=1
+> [(1−Qjk)hsk]2
+
+λ = 0 ⟹ ζM−QCDNet = ζprediction = ζDINA
+
+λ → 0+ ζM−QCDNet ⟶ ζprediction = ζDINA
+
+λ → ∞
+
+hsk
+
+∂ζM−QCDNet
+
+∂hsk
+
+= ∂ζprediction
+
+∂hsk
+
++ 2λ(1 − Qjk)2hsk
+
+λ → ∞
+
+hsk ← hsk − η ⋅ 2λ(1 − Qjk)2hsk = hsk [1 − 2λ η(1 − Qjk)2
+
+]
+
+Qjk = 0 hsk → 0 ζconstraint → 0
+
+ζM−QCDNet → ζDINA
+
+Qjk = 1 ζconstraint ≡ 0 ζM−QCDNet = ζDINA
+
+/9 15 Table 2 
+
+Evaluation Metrics of M-QCCDNet: Q-Matrix Consistency Ratio (QCR), Cross-Loading Ratio (CLR), 
+
+and Off-Support Activation (OSA) 
+
+# • Q-Matrix Consistency Ratio (QCR) 
+
+To quantitatively evaluate the alignment between the model’s latent skill activations and the Q-matrix 
+
+specifications, the corresponding evaluation metric, Q-matrix Consistency Ratio (QCR), is proposed. For 
+
+each student-item interaction, the QCR measures the extent to which the student’s activated skill pattern 
+
+matches the skills required by the item. The QCR builds on the Q-matrix validation framework of de la 
+
+Torre and Chiu (2016) in a ratio-based form. 
+
+Given a student and an item , let denote the sigmoid-transformed latent skill vector, 
+
+where each entry represents the estimated probability that the student has mastered the corresponding 
+
+skill. Let be the binary indicator vector of skills required for the item , as specified by the 
+
+Q-matrix. The QCR is then defined as the average alignment score between the predicted skill profile and 
+
+the required skill vector: , where denotes the inner product, and 
+
+is the L1 norm of , which counts the number of skills required by the item . The inner 
+
+product captures the cumulative probability mass on the skills that are actually required by the item, and 
+
+the normalization ensures that the QCR score is bounded within a fixed range of [0, 1]. A QCR 
+
+value close to 1 indicates that the student’s activated skill pattern is highly consistent with the item’s 
+
+required skills, such that the model assigns high probabilities to the relevant skills and low probabilities to 
+
+irrelevant ones. Conversely, a low QCR suggests a misalignment, which may indicate either inadequate 
+
+student mastery or an inappropriate Q-matrix specification for that item. Therefore, the QCR serves as a 
+
+useful diagnostic tool for evaluating both the learned representations and the structural validity of the Q-
+
+matrix 
+
+# • Cross-Loading Ratio (CLR) 
+
+To quantify the extent to which the learned skill embeddings capture irrelevant skills, we introduce the 
+
+Cross-Loading Ratio (CLR). The CLR measures the proportion of student embedding energy that is 
+
+allocated to skills that are seldom required by the items in the Q-matrix. In other words, it evaluates 
+
+whether the model is wasting capacity on skills that are not diagnostically relevant to the item response 
+
+data. 
+
+Evaluation Metrics  Measures  Range  Direction 
+
+[0, 1]  Higher better 
+
+Proportion of students 
+
+embedding irrelevant 
+
+skills 
+
+[0, 1]  Lower better 
+
+Average activation of 
+
+per-item irrelevant 
+
+skills 
+
+[0, 1]  Lower better                             
+
+> CLR =
+> ∑K
+> k=1[(1
+> S∑S
+> s=1h2
+> sk)(1−1
+> J∑J
+> j=1Qjk)]
+> ∑K
+> k=1(1
+> S∑S
+> s=1h2
+> sk)
+> OSA =1
+> J
+> J
+> ∑
+> j=1
+> ∑K
+> k=1[(1
+> S∑S
+> s=1h2
+> sk)(1−Qjk)]
+> ∑K
+> k=1(1−Qjk)
+
+Alignment between 
+
+student ’s activation 
+
+and item ’s required 
+
+skills 
+
+s
+
+j
+
+QCR = 1
+
+S
+
+> S
+
+∑
+
+> s=1
+
+1
+
+J
+
+> J
+
+∑
+
+> j=1
+
+⟨σ (z( j) 
+
+> s
+
+), Qj⟩
+
+| | Qj | |1
+
+s j σ (z( j) 
+
+> s
+
+) ∈ (0,1 )K
+
+Qj ∈ {0,1 }K j
+
+QCR = 1
+
+S
+
+> S
+
+∑
+
+> s=1
+
+1
+
+J
+
+> J
+
+∑
+
+> j=1
+
+⟨σ (z( j) 
+
+> s
+
+), Qj⟩
+
+| | Qj | |1
+
+⟨ ⋅ , ⋅ ⟩
+
+∥Qj∥1 =
+
+> K
+
+∑
+
+> k=1
+
+Qjk Qj j
+
+∥Qj∥1
+
+/10 15 Formally, let denote the latent mastery level of a student on a skill , and let 
+
+indicate whether the skill is required for the item . We first compute the average squared mastery 
+
+intensity of skill across all students as , which reflects how prominently skill is represented in 
+
+the learned embeddings. We also compute the empirical frequency of skill being required across items 
+
+as , which captures the diagnostic relevance of skill in the test design. The component 
+
+thus quantifies the degree of irrelevance eod skill to the items. 
+
+The CLR is then defined as the weighted average of these irrelevance degrees, where the weight for each 
+
+skill is proportional to its average squared mastery intensity: 
+
+.
+
+By construction, the CLR lies in the interval [0, 1]. A low CLR indicates that most of the embedding 
+
+energy is concentrated on skills that are frequently required by the items, suggesting that the learned 
+
+representations are well aligned with the test specifications. Conversely, a high CLR implies strong cross-
+
+loadings, where a substantial portion of the embedding capacity is wasted on skills that are rarely or never 
+
+required by the Q-matrix. Such a pattern may indicate over-parameterization or that the model is 
+
+capturing spurious correlations unrelated to the intended skill structure. Therefore, the CLR serves as a 
+
+useful diagnostic for evaluating the efficiency and interpretability of the learned skill embeddings. 
+
+# • Off-Support Activation (OSA): 
+
+While the CLR provides a global measure of embedding energy wasted on skills that are rarely required 
+
+across the entire test, it does not capture item-level irregularities. A skill may be rarely required overall, 
+
+but if it is consistently activated for items that do not require it, the model may still produce misleading 
+
+predictions on those specific items. To complement the CLR, we introduce the Off-Support Activation 
+
+(OSA) metrics, which evaluate, at the item level, the average activation of skills that are not required by 
+
+that item. 
+
+Formally, for each item , we consider the set of skills that are not required by the item, such that those 
+
+with . For each such off-support skill , we compute its average squared mastery intensity across 
+
+all students, , which reflects how strongly that skill is represented in the student embeddings 
+
+despite being irrelevant to the item. The OSA averages these off-support activations across all skills and 
+
+all items: .
+
+By construction, the OSA lies in the interval [0, 1]. A low OSA indicates that the model assigns negligible 
+
+activation to off-support skills, meaning that the embeddings remain focused on the skills that are actually 
+
+required for each item. Conversely, a high OSA suggests spurious activation of off-support skills, such 
+
+that the model is consistently activating skills that are not relevant to the item, which may lead to 
+
+incorrect predictions and undermine the interpretability of the learned representations. Unlike the CLR, 
+
+which captures global cross-loading across the entire test, the OSA provides a per-item perspective, 
+
+making it more sensitive to localized misalignment between the student embeddings and the Q-matrix 
+
+structure. 
+
+hsk ∈ ℝ s k Qj ∈ {0,1 }K
+
+k j
+
+k 1
+
+S
+
+> S
+
+∑
+
+> s=1
+
+h2 
+
+> sk
+
+k
+
+k
+
+1
+
+J
+
+> J
+
+∑
+
+> j=1
+
+Qjk k
+
+1 − 1
+
+J
+
+> J
+
+∑
+
+> j=1
+
+Qjk k
+
+CLR =
+
+∑K 
+
+> k=1
+
+[( 1 
+
+> S
+
+∑S 
+
+> s=1
+
+h2
+
+> sk
+
+)(1 − 1 
+
+> J
+
+∑J 
+
+> j=1
+
+Qjk)]
+
+∑K 
+
+> k=1
+
+( 1 
+
+> S
+
+∑S 
+
+> s=1
+
+h2
+
+> sk
+
+)
+
+j
+
+Qjk = 0 k
+
+1
+
+S
+
+> S
+
+∑
+
+> s=1
+
+h2
+
+> sk
+
+OSA = 1
+
+J
+
+> J
+
+∑
+
+> j=1
+
+∑K 
+
+> k=1
+
+[( 1 
+
+> S
+
+∑S 
+
+> s=1
+
+h2
+
+> sk
+
+)(1 − Qjk)]
+
+∑K 
+
+> k=1
+
+(1 − Qjk)
+
+/11 15 • Summary of Evaluation Metrics 
+
+In summary, the three proposed evaluation metrics, QCR, CLR, and OSA, provide complementary views 
+
+on the alignment between the learned student embeddings and the Q-matrix structure, each targeting a 
+
+different aspect of model behavior. 
+
+The QCR offers a direct, instance-level assessment of how well the activated skill profile of each student 
+
+matches the skills required by each item. It serves as the primary indicator of prediction interpretability, 
+
+with higher values reflecting stronger alignment between the model’s inferred mastery pattern and the test 
+
+design. 
+
+Complementing the QCR, the CLR takes a global perspective, measuring the proportion of total 
+
+embedding energy allocated to skills that are rarely required across the entire item set. A low CLR 
+
+indicates that the model efficiently concentrates its representational capacity on diagnostically relevant 
+
+skills, whereas a high CLR suggests the presence of global cross-loadings that may stem from over-
+
+parameterization or spurious correlations in the data. 
+
+The OSA further refines this analysis by shifting the focus to the item level. Unlike the CLR, which 
+
+aggregates across all items, the OSA evaluates the average activation of skills that are not required by 
+
+each specific item. This makes the OSA particularly sensitive to localized misalignments, such as cases 
+
+where a skill is rarely used overall but is consistently activated for items that do not require it, a pattern 
+
+that the CLR alone might overlook. 
+
+Together, these three metrics form a holistic evaluation framework. The QCR diagnoses the fidelity of 
+
+student-level predictions, the CLR quantifies global embedding efficiency, and the OSA detects item-level 
+
+irregularities. Their combined use enables a thorough assessment of both the interpretability and the 
+
+structural validity of the learned representations, offering valuable diagnostics for model development and 
+
+Q-matrix refinement. 
+
+VI. Conclusion 
+
+This paper introduces the M-QCDNet, a neural framework that integrates Q-matrix-constrained cognitive 
+
+priors into a deep learning architecture for interpretable and equitable student skill modeling. Motivated 
+
+by the need to move beyond the black-box nature of conventional neural networks, we addressed two 
+
+research questions: designing M-QCDNet for Q-matrix-aligned skill modelling and effectiveness 
+
+evaluation metric-based validation. 
+
+To address the research question focusing on designing M-QCDNet for Q-matrix-aligned skill modeling, 
+
+we formulate a composite loss function that combines a prediction term, based on Bernoulli likelihood, 
+
+with a constraint term that regularizes the learned hidden representation against the Q-matrix structure. 
+
+This design ensures that the latent mastery profiles remain interpretable and cognitively grounded, while 
+
+the sigmoid-activated output provides item-level mastery probabilities. We further demonstrated through 
+
+theoretical analysis that M-QCDNet generalizes the classical DINA model, recovering it as a special case 
+
+under extreme regularization regimes, thereby establishing a principled connection between deep learning 
+
+and established cognitive diagnostic models. 
+
+To address the research question focusing on effectiveness evaluation and metric-based validation, we 
+
+further develop a suite of corresponding evaluation metrics, including QCR, CLR, and OSA, to 
+
+quantitatively evaluate the alignment between the learned embeddings and the Q-matrix structure. These 
+
+metrics provide complementary diagnostics: QCR measures student-level alignment at the item level; 
+
+CLR quantifies global embedding efficiency; OSA detects localized off-support activations. 
+
+Beyond predictive performance, the M-QCDNet offers several practical implications for quantitative 
+
+psychology, cognitive diagnosis, and educational practice. It enables early diagnosis of learning 
+
+difficulties by generating interpretable mastery probabilities that identify at-risk students and facilitate 
+
+timely intervention. It supports mastery-based grouping and instruction through student-specific skill 
+
+/12 15 profiles that reveal individual cognitive strengths and weaknesses, allowing educators to design 
+
+differentiated instruction and adaptive practice tasks. It facilitates curriculum and assessment refinement 
+
+by aggregating Q-matrix-aligned mastery data to highlight misaligned or overly difficult items, guiding 
+
+data-driven curriculum revision. Finally, it promotes transparent and equitable AI-assisted cognitive 
+
+diagnostics through interpretability metrics, which ensure that model decisions remain grounded in 
+
+cognitive theory, foster instructor trust, and provide justifiable evidence for psychometrics and AI-guided 
+
+cognitive diagnostics decision-making. 
+
+VII. Practical Implications & Contributions 
+
+Aligning with leveraging AI to empower the development and application of diagnostic statistical models, 
+
+the M-QCDNet mitigates concerns around transparency, fairness, and interpretability in the educational 
+
+context (Table 3). 
+
+Table 3 
+
+Practical Implications of M-QCDNet for Educational Practice 
+
+The proposed M-QCDNet offers several practical implications for educational practice, spanning early 
+
+diagnosis, instructional grouping, curriculum refinement, and equitable AI-assisted assessment. 
+
+Practice Focus  M-QCDNet Implication  M-QCDNet Contribution 
+
+Early diagnosis of learning difficulties 
+
+• Identify students at risk of 
+
+misunderstanding core 
+
+skills. 
+
+• Provide immediate feedback 
+
+after assessments. 
+
+• Plan short-term remediation 
+
+before misconceptions 
+
+accumulate. 
+
+Mastery-based grouping and instruction 
+
+• Group students by similar 
+
+skill profiles for 
+
+differentiated teaching. 
+
+• Design mastery-based 
+
+practice tasks focusing on 
+
+under-mastered skills. 
+
+• Adjust pacing and difficulty 
+
+levels by skill clusters. 
+
+Curriculum and assessment refinement 
+
+Aggregating Q-matrix 
+
+alignwed mastery data 
+
+highlights items or skills with 
+
+consistently low activation 
+
+across students. 
+
+• Identify poorly aligned or 
+
+overly difficult test items. 
+
+• Revise curriculum areas 
+
+corresponding to low-
+
+mastery skills. 
+
+• Support data-driven 
+
+curricumlum improvements. 
+
+Transparent AI-assisted cognitive diagnostics 
+
+Uses proposed Q-matrix-
+
+embedded interpretability 
+
+metrics (QCR, CLR, and OSA) 
+
+to ensure model decisions 
+
+align with congnitive theory, 
+
+• Build instructor trust 
+
+through interpretable model 
+
+explainations. 
+
+• Ensure fair skill evaluation 
+
+across subgroups. 
+
+• Justify educational 
+
+decisions using transparent 
+
+evidence. 
+
+Generates interpretable, item-
+
+level mastery probabilities 
+
+that indicate which skills each 
+
+student has not yet mastered. ̂
+
+ysj = σ (wT (Qjk ⊙ hsk ) + bj)
+
+Learns student-specific 
+
+mastery profiles 
+
+sonsistent 
+
+with the Q-matrix, revealing 
+
+which congnitive attributes are 
+
+mastered or weak. 
+
+hs = [hs1, . . . , hsK ]
+
+/13 15 • Early diagnosis of learning difficulties: By generating interpretable, item-level mastery probabilities 
+
+, the model provides insights into which specific skills each student has 
+
+not yet mastered. This enables instructors to identify students at risk of misunderstanding core skills 
+
+early in the learning process, deliver immediate feedback after assessments, and plan short-term 
+
+remediation before misconceptions accumulate. 
+
+# • Mastery-based grouping and instruction: The model learns student-specific mastery profiles 
+
+that are consistent with the Q-matrix structure, revealing which cognitive attributes 
+
+are mastered or weak for each individual. These profiles allow educators to group students by similar 
+
+skill patterns for differentiated instruction, design mastery-based practice tasks that focus on under-
+
+mastered skills, and adjust pacing and difficulty levels according to skill clusters. 
+
+# • Curriculum and assessment refinement: Aggregating Q-matrix-aligned mastery data across students 
+
+highlights items or skills that consistently exhibit low activation, providing empirical evidence for 
+
+identifying poorly aligned or overly difficult test items. This supports data-driven curriculum 
+
+improvement by pinpointing specific content areas that require revision, thereby enabling more 
+
+effective instructional design and assessment calibration. 
+
+# • Transparent and equitable AI-assisted cognitive diagnostics : The model incorporates proposed Q-
+
+matrix-embedded interpretability metrics, namely QCR, CLR, and OSA, to ensure that its decisions 
+
+remain grounded in cognitive theory. This transparency helps build instructor trust through 
+
+interpretable model explanations, ensures fair skill evaluation across student subgroups, and provides 
+
+justifiable evidence for educational decisions. Consequently, the Static M-QCDNet not only enhances 
+
+predictive performance but also promotes responsible and equitable use of AI in educational settings. 
+
+By aligning latent representations with diagnostic structures and evaluating interpretability, the M-
+
+QCDNet provides a transparent and multilayer Q-matrix–embedded contrast to black-box NNs. M-
+
+QCDNet enhances fairness and explanatory power for learners and demonstrates that interpretability and 
+
+flexibility can coexist, moving beyond the dichotomy between measurement theory and deep learning. 
+
+Furthermore, a temporal M-QCDNet designed for time series analysis, capturing students’ evolving 
+
+mastery trajectories over time, was developed. Embedding cognitive structure into deep learning 
+
+architectures aspires towards more transparent, equitable, and actionable learning models to cultivate a 
+
+compassionate educational landscape that not only predicts outcomes but also walks alongside learners 
+
+and supports them on their unique academic journey. 
+
+VIII. Reference 
+
+Cai, Y ., Tu, D., & Ding, S. (2018). Theorems and Methods of a Complete Q Matrix With Attribute 
+
+Hierarchies Under Restricted Q-Matrix Design.  Frontiers in Psychology , 9. https://doi.org/10.3389/ 
+
+fpsyg.2018.01413 
+
+Chiu, C.-Y ., Douglas, J. A., & Li, X. (2009). Cluster Analysis for Cognitive Diagnosis: Theory and 
+
+Applications.  Psychometrika , 74 (4), 633–665.  https://doi.org/10.1007/s11336-009-9125-0 
+
+Chiu, C.-Y ., & Köhn, H.-F. (2019). Nonparametric Methods in Cognitively Diagnostic Assessment 
+
+[Review of Nonparametric Methods in Cognitively Diagnostic Assessment]. In M. von Davier & Y .-S. 
+
+Lee (Eds.), Handbook of Diagnostic Classification Models (pp. 107–132). Springer Cham.  doi.org/ 
+
+10.1007/978-3-030-05584-4_5 
+
+Cui, Y ., Gierl, M., & Guo, Q. (2015). Statistical classification for cognitive diagnostic assessment: an 
+
+artificial neural network approach.  Educational Psychology , 36 (6), 1065–1082.  https://doi.org/ 
+
+10.1080/01443410.2015.1062078  ̂ 
+
+ysj = σ (w⊤(Qjk ⊙ hsk) + bj)
+
+hs = [hs1, …, hsK ]
+
+/14 15 de la Torre, J., & Chiu, C.-Y . (2016). A General Method of Empirical Q-matrix Validation. 
+
+Psychometrika , 81 (2), 253–273.  https://doi.org/10.1007/s11336-015-9467-8 
+
+de la Torre, J. (2011). The Generalized DINA Model Framework.  Psychometrika , 76 (2), 179–199.  https:// 
+
+doi.org/10.1007/s11336-011-9207-7 
+
+Junker, B. W., & Sijtsma, K. (2001). Cognitive Assessment Models with Few Assumptions, and 
+
+Connections with Nonparametric Item Response Theory.  Applied Psychological Measurement , 25 (3), 
+
+258–272.  https://doi.org/10.1177/01466210122032064 
+
+Li, G., Hu, Y ., Junkai Shuai, Yang, T., Zhang, Y ., Dai, S., & Xiong, N. (2022). NeuralNCD: A Neural 
+
+Network Cognitive Diagnosis Model Based on Multi-Dimensional Features.  Applied Sciences , 12 (19), 
+
+9806–9806.  https://doi.org/10.3390/app12199806 
+
+Li, J., Jiang, C., & Ye, S. (2022). A Q-matrix Model Based on Binarized Neural Network.  Journal of 
+
+Physics: Conference Series , 2171 (1), 012037.  https://doi.org/10.1088/1742-6596/2171/1/012037 
+
+Qi, T., Ren, M., Guo, L., Li, X., Li, J., & Zhang, L. (2023). ICD: A new interpretable cognitive diagnosis 
+
+model for intelligent tutor systems.  Expert Systems with Applications , 215 , 119309.  https://doi.org/ 
+
+10.1016/j.eswa.2022.119309 
+
+Tao, J., Zhao, W., Liu, F., Guo, X., Cheng, N., Guo, Q., Xu, X., & Duan, H. (2024). Cognitive Diagnosis 
+
+Method via Q-Matrix-Embedded Neural Networks.  Applied Sciences , 14 (22), 10380–10380.  https:// 
+
+doi.org/10.3390/app142210380 
+
+Tao, J., Zhao, W., Zhang, Y., Guo, Q., Min, B., Xu, X., & Liu, F. (2024). Cognitive diagnostic assessment: 
+
+A Q-matrix constraint-based neural network method.  Behavior Research Methods , 56 (7), 6981–7004. 
+
+https://doi.org/10.3758/s13428-024-02404-5 
+
+von Davier, A. A. (2017). Computational Psychometrics in Support of Collaborative Educational 
+
+Assessments.  Journal of Educational Measurement , 54 (1), 3–11.  https://doi.org/10.1111/jedm.12129 
+
+Wang, F., Liu, Q., Chen, E., Huang, Z., Yin, Y ., Wang, S., & Su, Y . (2022). NeuralCD: A General 
+
+Framework for Cognitive Diagnosis.  IEEE Transactions on Knowledge and Data Engineering , 1–16. 
+
+https://doi.org/10.1109/tkde.2022.3201037 
+
+/15 15
