@@ -1,0 +1,217 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-07T21:37:19.740377+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-07-06-732916-v1",
+      "source": "biorxiv",
+      "title": "Hippocampal engrams configure prefrontal context representations to guide flexible decisions",
+      "abstract": "Flexible behavior requires using past experiences to configure cortical computations to suit current task demands. A central question in neuroscience is how memory representations control such reconfigurations. Although hippocampal (HPC) engrams can drive learned behaviors, prior studies have been largely limited to a fixed stimulus-response computation. Thus, whether engrams can drive retrieval of a set of stimulus-response mappings, rather than a specific response itself, remains unresolved. Moreover, how engrams affect cortical task representations and dynamics so as to produce engram-consistent behavior remains unstudied. Here, we address both questions by combining tagging and reactivation of HPC engrams with simultaneous large-scale recordings in medial prefrontal cortex (mPFC) during a context-dependent task-switching paradigm in mice. We report that HPC engram reactivation caused mice to apply engram-consistent decision-rules rather than a specific motor output. Simultaneous mPFC recordings revealed that reactivating the HPC engram for a given context reinstated the representation of that context in mPFC within hundreds of milliseconds, indicating that it was mediated by rapid network effects, leading to choice behavior consistent with the reactivated HPC engram. Other aspects of endogenous dynamics in mPFC were left remarkably intact. Together, our findings provide direct causal evidence that HPC engrams can configure task-relevant population states of downstream cortical circuits in real time, establishing a neural mechanism by which memory traces control flexible behavior.",
+      "authors": [
+        "Julian, J. B.",
+        "Kaminsky, J. C.",
+        "Tank, D. W.",
+        "Brody, C."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.06.732916v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Hippocampal engrams configure prefrontal context representations to guide flexible decisions, directly implicating prefrontal cortex in executive control.",
+      "llm_evidence_cn": "海马印记配置前额叶上下文表征以引导灵活决策，直接涉及前额叶在执行控制中的作用。",
+      "llm_evidence": "海马印记配置前额叶上下文表征以引导灵活决策，直接涉及前额叶在执行控制中的作用。",
+      "canonical_evidence": "海马印记配置前额叶上下文表征以引导灵活决策，直接涉及前额叶在执行控制中的作用。",
+      "llm_tldr_en": "This study shows that hippocampal memory engrams reconfigure prefrontal cortex representations to support flexible decision-making, providing insight into executive function mechanisms.",
+      "llm_tldr_cn": "该研究结合海马印记标记与再激活和大规模电生理记录，揭示海马记忆印记如何配置前额叶皮层表征以支持灵活决策，为理解前额叶在高级认知和执行功能中的作用提供机理证据。",
+      "llm_tldr": "该研究结合海马印记标记与再激活和大规模电生理记录，揭示海马记忆印记如何配置前额叶皮层表征以支持灵活决策，为理解前额叶在高级认知和执行功能中的作用提供机理证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-1101-2024-10-25-620227-v3",
+      "source": "biorxiv",
+      "title": "Overt visual attention modulates decision-related signals in the frontal cortex",
+      "abstract": "When indicating a preference between two options, decision makers are thought to compare and accumulate evidence in an attention-guided process. Little is known about this process's neural substrates or how visual attention affects the representations of accumulated evidence. We conducted a simultaneous eye-tracking and fMRI experiment in which human subjects gradually learned about the value of two food-lotteries. With this design we were able to extend decisions over a prolonged time-course, manipulate the temporal onset of evidence, and therefore dissociate sampled and accumulated evidence. We observed inconsistent correlations of both sampled and accumulated evidence with activity in the ventromedial prefrontal cortex (vmPFC), the ventral striatum, and the intraparietal sulcus (IPS), and more consistent correlations of accumulated evidence with activity in the dorsolateral prefrontal cortex (dlPFC) and pre-supplementary motor area (pre-SMA). We also found that more gaze on an option increased its choice probability and that gaze consistently amplified accumulated-value signals above and beyond the non-gaze-modulated signals in the pre-SMA and partially in the dlPFC, providing novel evidence that visual attention has lasting effects on decision variables and suggesting that activity in the pre-SMA and dlPFC reflect gaze-weighted accumulated evidence. These results shed new light on the neural mechanisms underlying gaze-driven decision processes.",
+      "authors": [
+        "Shevlin, B. R. K.",
+        "Gwinn, R. E.",
+        "Makwana, A.",
+        "Krajbich, I."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2024.10.25.620227v3.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "vmPFC activity during value-based decision-making modulated by visual attention",
+      "llm_evidence_cn": "视觉注意调节腹内侧前额叶皮层在基于价值的决策中的活动",
+      "llm_evidence": "视觉注意调节腹内侧前额叶皮层在基于价值的决策中的活动",
+      "canonical_evidence": "视觉注意调节腹内侧前额叶皮层在基于价值的决策中的活动",
+      "llm_tldr_en": "Combining eye-tracking and fMRI, this study shows that overt visual attention modulates decision-related signals in ventromedial prefrontal cortex during value-based choices, dissociating sampled and accumulated evidence.",
+      "llm_tldr_cn": "针对价值决策中视觉注意如何影响前额叶皮层的证据积累过程，该研究通过同时眼动追踪和fMRI实验，发现腹内侧前额叶皮层（vmPFC）的活动受视觉注意调节，且采样证据与累积证据在vmPFC中呈现分离模式，揭示了注意引导决策的神经机制。",
+      "llm_tldr": "针对价值决策中视觉注意如何影响前额叶皮层的证据积累过程，该研究通过同时眼动追踪和fMRI实验，发现腹内侧前额叶皮层（vmPFC）的活动受视觉注意调节，且采样证据与累积证据在vmPFC中呈现分离模式，揭示了注意引导决策的神经机制。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.05282v1",
+      "source": "arxiv",
+      "title": "Wavelet Scattering Transform for Interpretable Schizophrenia Biomarker Discovery and Classification from Resting-State EEG",
+      "abstract": "Schizophrenia is a debilitating neuropsychiatric disorder characterized by profound cortical network dysregulation, for which objective, clinically translatable EEG based biomarkers remain underdeveloped. Existing automated classification pipelines rely predominantly on static power spectral density features inherently blind to amplitude modulation dynamics and cross-frequency coupling, phenomena central to schizophrenia pathophysiology, while adopting epoch level cross validation strategies that introduce temporal data leakage, artificially inflate reported performance. This study introduces a mathematically principled diagnostic framework integrating the multi-order Wavelet Scattering Transform(WST), strict Leave One Subject Out (LOSO) cross-validation, and SHAP explainability for simultaneous EEG classification and biomarker discovery. Hierarchical WST coefficients capturing multi-scale amplitude modulation structure were extracted from resting state multichannel EEG. Subject-level ANOVA with Benjamini Hochberg false discovery rate correction identified significant biomarkers, with Random Forest and SVM classifiers evaluated under strict LOSO cross validation and subject-level majority voting. Second-order scattering coefficients encoding cross frequency coupling dominated the discriminative biomarker set, with gamma-band features most prevalent, demonstrating that temporal amplitude modulation constitutes the primary electrophysiological signature of schizophrenia. Electrode P3 was identified as the single most discriminative site. Under rigorous subject independent evaluation, the Random Forest achieved 90.48% accuracy (AUC = 0.9339; sensitivity = 95.56%). The proposed WST framework establishes a rigorous, interpretable standard for EEG-driven psychiatric biomarker discovery that can also be applicable in the detection of schizophrenia subtypes in the future.",
+      "authors": [
+        "Md. Taksimul Ahsan Tawhid",
+        "Nasif Ahmed Rafe",
+        "Alif Tahmid Priyom",
+        "K. M. Mustafizur Rahman"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "cs.AI",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "published": "2026-07-06T16:27:26+00:00",
+      "link": "https://arxiv.org/pdf/2607.05282v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Wavelet scattering for EEG power spectrum analysis in schizophrenia",
+      "llm_evidence_cn": "小波散射变换用于精神分裂症EEG功率谱分析",
+      "llm_evidence": "小波散射变换用于精神分裂症EEG功率谱分析",
+      "canonical_evidence": "小波散射变换用于精神分裂症EEG功率谱分析",
+      "llm_tldr_en": "This paper introduces a wavelet scattering transform framework for diagnosing schizophrenia from resting-state EEG, capturing spectral dynamics beyond static power spectral density, providing a novel method for EEG relative power analysis.",
+      "llm_tldr_cn": "本文提出基于小波散射变换的EEG分析框架，用于精神分裂症诊断，能够捕捉静态功率谱密度之外的频谱动态特征，为EEG相对功率分析提供了一种新方法。",
+      "llm_tldr": "本文提出基于小波散射变换的EEG分析框架，用于精神分裂症诊断，能够捕捉静态功率谱密度之外的频谱动态特征，为EEG相对功率分析提供了一种新方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.02670v1",
+      "source": "arxiv",
+      "title": "A Granularity-Aware EEG Feature Framework for Psychopathology Dimension Prediction",
+      "abstract": "Electroencephalography (EEG) offers a noninvasive approach for examining neurophysiological correlates of dimensional psychopathology, yet systematic evidence across EEG paradigms and feature granularities remains limited. Here, we develop a granularity-aware EEG feature pipeline that organizes multi-scale descriptors into global, regional, and channel levels. Using the Healthy Brain Network (HBN) cohort, we evaluate the prediction of four psychopathology dimensions: p-factor, internalizing, externalizing, and attention problems, across four EEG paradigms. Given the heterogeneity of pediatric psychopathology and the moderate reliability of questionnaire-derived scores, this setting represents a challenging feasibility test rather than a clinical screening scenario. Tree-based models and granularity-balanced feature selection showed promising improvements over conventional approaches in selected conditions, although effect sizes remained modest. Visualization of selected markers revealed dimension-specific spatial and spectral patterns that were broadly aligned with existing neurophysiological knowledge. An exploratory cross-dataset sanity check on the independent PEARL cohort suggested that the proposed selection principle remains technically feasible under protocol shifts, without claiming cross-dataset generalizability. Overall, multi-scale EEG features contain weak but detectable signals related to dimensional psychopathology, and granularity-aware selection may serve as a useful feature-reduction strategy for future EEG-based phenotyping studies.",
+      "authors": [
+        "Haofan Cheng",
+        "Jingjing Hu",
+        "Jingrong Pei",
+        "Shuaiqi Fu",
+        "Meilun Shen",
+        "Shuai Fang",
+        "Meng Wang",
+        "Dan Guo",
+        "Jie Zhang"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-02T18:04:53+00:00",
+      "link": "https://arxiv.org/pdf/2607.02670v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "develops a granularity-aware EEG feature pipeline that could include relative power spectrum analysis for cognitive assessment",
+      "llm_evidence_cn": "开发了粒度感知的EEG特征管道，可涵盖相对功率谱分析，适用于认知评估",
+      "llm_evidence": "开发了粒度感知的EEG特征管道，可涵盖相对功率谱分析，适用于认知评估",
+      "canonical_evidence": "开发了粒度感知的EEG特征管道，可涵盖相对功率谱分析，适用于认知评估",
+      "llm_tldr_en": "Proposes a multi-level EEG feature extraction framework that, while applied to psychopathology, may serve as a methodological bridge for relative power analysis in cognitive tasks.",
+      "llm_tldr_cn": "该研究提出了一种多粒度层级的EEG特征提取框架，尽管用于精神病理学维度预测，但其方法可直接迁移至认知任务的相对功率谱分析，为EEG在高级认知功能研究中的应用提供了系统化工具。",
+      "llm_tldr": "该研究提出了一种多粒度层级的EEG特征提取框架，尽管用于精神病理学维度预测，但其方法可直接迁移至认知任务的相对功率谱分析，为EEG在高级认知功能研究中的应用提供了系统化工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-03-736027-v1",
+      "source": "biorxiv",
+      "title": "Rapid value learning reveals generalized and context-dependent codes in frontal cortex",
+      "abstract": "Studying how the brain represents value spans distinct methods and training histories, from neuroimaging in task-naive humans to single-neuron recordings in extensively trained non-human primates. Similar findings across fields have encouraged the untested assumption that rapidly emerging and overtrained value representations are equivalent. Here we recorded single-neuron activity in anterior cingulate cortex (ACC) and orbitofrontal cortex (OFC) as macaques learned novel cue values and chose between novel and overtrained cues. Value responses emerged within 4-7 cue presentations, matching behavioural adaptation. Yet ACC and OFC used distinct codes. ACC encoded value in a common format that generalised across training history. OFC coding was more context-dependent, with distinct subpopulations recruited by choice experience. Choice novelty was also encoded independently of value before chosen value signals emerged. During learning, ACC responses shifted from overtrained secondary reinforcers to newly predictive cues. These findings establish the necessary (rapid acquisition) and sufficient (generalised format) conditions for comparing value representations across methods, species, and training histories.",
+      "authors": [
+        "Gutierrez, E.",
+        "Muller, T. H.",
+        "Butler, J. L.",
+        "Malalasekera, W. M. N.",
+        "Hunt, L. T.",
+        "Veselic, S.",
+        "Kennerley, S. W."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-03T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.03.736027v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "ACC and OFC (mPFC) single-neuron activity during rapid value learning",
+      "llm_evidence_cn": "前扣带和眶额皮层（内侧前额叶）单神经元活动在快速价值学习中",
+      "llm_evidence": "前扣带和眶额皮层（内侧前额叶）单神经元活动在快速价值学习中",
+      "canonical_evidence": "前扣带和眶额皮层（内侧前额叶）单神经元活动在快速价值学习中",
+      "llm_tldr_en": "Single-neuron recordings in macaque ACC and OFC reveal that value representations emerge rapidly within 4-7 trials, with ACC encoding value in a generalized format while OFC shows context-dependent coding.",
+      "llm_tldr_cn": "该研究针对猕猴前扣带皮层（ACC）和眶额皮层（OFC）中价值学习神经表征的快速性与泛化性问题，通过单神经元记录发现，价值响应在4-7次试验内出现，ACC采用泛化编码而OFC为上下文依赖编码，揭示了mPFC亚区在快速价值学习中的差异化功能分工，为理解高级认知网络中价值信息处理的灵活性与特异性提供了新证据。",
+      "llm_tldr": "该研究针对猕猴前扣带皮层（ACC）和眶额皮层（OFC）中价值学习神经表征的快速性与泛化性问题，通过单神经元记录发现，价值响应在4-7次试验内出现，ACC采用泛化编码而OFC为上下文依赖编码，揭示了mPFC亚区在快速价值学习中的差异化功能分工，为理解高级认知网络中价值信息处理的灵活性与特异性提供了新证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "functional role of mPFC in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
