@@ -1,0 +1,53 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-09T22:01:10.630852+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2607.04107v2",
+      "source": "arxiv",
+      "title": "Contextual Semantic Relevance and Word Surprisal Predict N400 and P600 Dynamics During Naturalistic Reading",
+      "abstract": "Word surprisal is a well-established computational predictor of human neural responses during language comprehension, but it remains less clear whether local semantic fit explains neural response variation beyond lexical expectation during naturalistic reading. Using the Dublin EEG-based Reading Experiment Corpus (DERCo), this study examined whether contextual semantic relevance predicts word-locked EEG activity in the N400 and P600 windows. Contextual semantic relevance was computed as an attention-aware measure of how strongly a target word is semantically connected to its recent discourse context, and it was compared with GPT-based word surprisal. Across 22 participants and 32 EEG channels, we tested both predictors using regression-based ERP analyses and generalized additive mixed models while controlling for lexical variables and repeated observations. Both predictors were reliably associated with EEG responses, but they showed partly different temporal and scalp-level patterns. Surprisal captured expectancy-related variation, whereas contextual semantic relevance showed robust effects across N400- and P600-window mean voltages, with particularly strong explanatory support in the P600 window. Model comparisons indicated that contextual semantic relevance contributed explanatory value beyond lexical controls and surprisal. These findings suggest that naturalistic reading depends on both lexical expectation and local semantic integration, and that contextual semantic relevance offers an interpretable computational link between discourse semantic fit and ERP dynamics.",
+      "authors": [
+        "Kun Sun",
+        "Rong Wang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-05T04:07:36+00:00",
+      "link": "https://arxiv.org/pdf/2607.04107v2",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Examines EEG correlates of semantic processing during reading",
+      "llm_evidence_cn": "考察阅读中语义加工的EEG相关性",
+      "llm_evidence": "考察阅读中语义加工的EEG相关性",
+      "canonical_evidence": "考察阅读中语义加工的EEG相关性",
+      "llm_tldr_en": "This study uses EEG to show that contextual semantic relevance predicts N400 and P600 during naturalistic reading beyond word surprisal, advancing reading comprehension research.",
+      "llm_tldr_cn": "针对词语意外性虽能预测语言理解神经反应但局部语义匹配的作用尚不明确的问题，本研究利用都柏林EEG阅读实验语料库，计算基于注意力的上下文语义相关度，并与GPT词语意外性比较，发现语义相关度显著预测N400和P600窗口的活动且效应独立于词语意外性，为阅读中的语义整合提供了新证据，展示了EEG在阅读理解研究中的方法价值。",
+      "llm_tldr": "针对词语意外性虽能预测语言理解神经反应但局部语义匹配的作用尚不明确的问题，本研究利用都柏林EEG阅读实验语料库，计算基于注意力的上下文语义相关度，并与GPT词语意外性比较，发现语义相关度显著预测N400和P600窗口的活动且效应独立于词语意外性，为阅读中的语义整合提供了新证据，展示了EEG在阅读理解研究中的方法价值。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
