@@ -1,0 +1,248 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-10T21:39:25.279831+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 3,
+    "deep_cap": 6,
+    "deep_selected": 3,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-06-27-734813-v1",
+      "source": "biorxiv",
+      "title": "Prenatal Cannabidiol and Δ9-Tetrahydrocannabinol exposure lead to sex-specific disruptions in risk assessment and behavioral switching via divergent rewiring of the adult mPFC",
+      "abstract": "BackgroundPrenatal cannabidiol (CBD) consumption is increasing, driven by a perception of safety relative to {Delta}9-tetrahydrocannabinol (THC). However, the neurodevelopmental risks of gestational CBD remain largely uncharacterized.\n\nMethodsUsing a sex-disaggregated framework, we investigated adult (P100-140) mouse offspring following in utero exposure (GD5-18; 3 mg/kg) to THC or CBD. Behavioral strategies were evaluated through risk-assessment and repetitive behavior tasks, coupled with targeted electrophysiological mapping of medial prefrontal cortex Layer 5 neurons, the primary hub for approach-avoidance arbitration.\n\nResultsWe found that increased repetitive behavior was a universal feature of prenatal cannabinoids exposure. Alterations in risk appraisal emerged uniquely in CBD-exposed females and appeared dissociated from classical anxiety metrics. At the circuit level, THC and CBD were linked to an absence of endocannabinoid long-term depression (eCB-LTD). In males, CBD exposure coincided with a bidirectional plasticity collapse characterized by functional saturation, elevated AMPA/NMDA ratios, and slowed NMDAR activation kinetics. This ceiling effect may represent a top-down constraint on the prefrontal output circuit, potentially limiting the synaptic flexibility typically associated with adaptive behavioral transitions. In contrast, females exhibited compound-specific reorganizations of E/I balance. CBD-exposed females displayed a scaled-up architecture that preserved net E/I balance, whereas THC was associated with a pro-excitatory phenotype through the collapse of inhibitory control.\n\nConclusionsDespite a shared loss of eCB-LTD, distinct synaptic remodeling might underlie divergent alterations in risk assessment and behavioral flexibility. This sex-specific circuit rewiring provides a neurobiological framework for the long-term behavioral risks associated with gestational cannabinoid exposure.",
+      "authors": [
+        "CACERES-RODRIGUEZ, A.",
+        "IEZZI, D.",
+        "LASSALLE, O.",
+        "DUDEK, A. E.",
+        "WANG, S.",
+        "CHAVIS, P.",
+        "MANZONI, O. J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-02T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734813v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "targeted electrophysiological mapping of medial prefrontal cortex Layer 5 neurons in risk-assessment tasks",
+      "llm_evidence_cn": "对内侧前额叶皮层第5层神经元进行靶向电生理映射以研究风险评估任务",
+      "llm_evidence": "对内侧前额叶皮层第5层神经元进行靶向电生理映射以研究风险评估任务",
+      "canonical_evidence": "对内侧前额叶皮层第5层神经元进行靶向电生理映射以研究风险评估任务",
+      "llm_tldr_en": "Prenatal CBD and THC alter adult mPFC Layer 5 neurons, causing sex-specific deficits in risk assessment and behavioral flexibility, highlighting mPFC's role in executive function disruption.",
+      "llm_tldr_cn": "研究探讨了产前CBD和THC暴露对成年小鼠风险规避和行为切换的性别特异性影响，通过靶向电生理映射内侧前额叶皮层（mPFC）第5层神经元发现暴露导致该区域重新连接，进而损害了接近-回避仲裁功能，揭示了mPFC在风险决策和执行功能中的关键作用。",
+      "llm_tldr": "研究探讨了产前CBD和THC暴露对成年小鼠风险规避和行为切换的性别特异性影响，通过靶向电生理映射内侧前额叶皮层（mPFC）第5层神经元发现暴露导致该区域重新连接，进而损害了接近-回避仲裁功能，揭示了mPFC在风险决策和执行功能中的关键作用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.07961v1",
+      "source": "arxiv",
+      "title": "The Behavioural Reflection Test: A time-efficient measure of reflective reasoning in morally and epistemically charged decisions",
+      "abstract": "How readily people override intuitive conclusions through reflection shapes how they navigate dense information environments with reliable and misleading sources; yet the effectiveness of a prominent measure, the Cognitive Reflection Test (CRT), is eroded by widespread exposure to classic items and leaves open how such tendencies manifest more generally in decision style and linguistic expression. The Behavioural Reflection Test (BRT) addresses these issues with a brief open-ended measure of reasoning in morally and epistemically charged scenarios, alongside a four-item bespoke CRT (bCRT) as a low-exposure anchor. Among 473 online adults, higher bCRT predicted more evidence-sensitive, ethically driven decisions and reliance on high-quality sources, marked by more emotionally engaged, risk-attentive, economical language; associations the familiarity-adjusted CRT did not recover. The bCRT showed convergent validity, added item information above mean ability. Though open-ended, the BRT remained a time-efficient (median 11.8 minutes) behavioural assay of reflection with scope to extend across domains.",
+      "authors": [
+        "Sion Weatherhead",
+        "Flora Salim",
+        "Aaron Belbasis",
+        "Ben R. Newell"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "stat.OT"
+      ],
+      "published": "2026-07-08T22:31:33+00:00",
+      "link": "https://arxiv.org/pdf/2607.07961v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "proposes a new measure of reflective reasoning, directly relevant to scientific critical thinking disposition assessment",
+      "llm_evidence_cn": "提出一种新的反思推理测量工具，与科学批判性思维倾向评估直接相关",
+      "llm_evidence": "提出一种新的反思推理测量工具，与科学批判性思维倾向评估直接相关",
+      "canonical_evidence": "提出一种新的反思推理测量工具，与科学批判性思维倾向评估直接相关",
+      "llm_tldr_en": "Introduces the Behavioural Reflection Test (BRT), a time-efficient measure of reflective reasoning in morally and epistemically charged decisions, addressing limitations of existing cognitive reflection tests and providing a tool for measuring critical thinking disposition.",
+      "llm_tldr_cn": "针对传统认知反射测验易受练习效应影响且无法体现推理倾向在决策风格及语言表达中的广泛展现等问题，本文开发了行为反射测验（BRT），通过道德与认识论场景的开放式问题测量反思推理倾向。在473名成人样本中，BRT与简版认知反射测验（bCRT）均有效预测了证据敏感性和符合伦理的决策风格，为科学批判性思维倾向的测量提供了新范式。",
+      "llm_tldr": "针对传统认知反射测验易受练习效应影响且无法体现推理倾向在决策风格及语言表达中的广泛展现等问题，本文开发了行为反射测验（BRT），通过道德与认识论场景的开放式问题测量反思推理倾向。在473名成人样本中，BRT与简版认知反射测验（bCRT）均有效预测了证据敏感性和符合伦理的决策风格，为科学批判性思维倾向的测量提供了新范式。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-03-736278-v1",
+      "source": "biorxiv",
+      "title": "The impact of behavioural activity on the EEG power spectrum, its source localisation, and global functional connectivity in rats",
+      "abstract": "The behavioural activity of freely moving animals is a confounding factor that affects the recording, analysis, and final results of animal EEG experiments. Along with the lack of standardisation in animal in vivo electrophysiology experiments, this could lead to huge inconsistencies, especially in the analysis of centrally acting drugs. Therefore, the main aim of this paper is to investigate the effects of behavioural activity versus inactivity on the multichannel EEG in freely moving rats. In a large sample (n = 116) of waking recordings from 12 cortical electrodes (ECoG) in Wistar rats, we evaluated behavioural activity-related changes in the power spectrum, current source density, and power-based global functional connectivity (GFC) in a 3D rat brain model, according to the TOHOKU Rat Brain Atlas. The main findings were that behavioural activity induced 1) a robust power increase in 6-8 Hz, peaking at 7 Hz with maximum changes over the parietal and temporal cortex, 2) an increase in gamma power (30-80 Hz) across the whole brain, 3) a decrease in delta (1-4 Hz) and beta (12-30 Hz) power across the whole cortex. Changes were also localised in subcortical regions, particularly in the diencephalon/thalamus. The GFC analysis showed a similar pattern of power changes across the 6-8 Hz, delta, and beta bands; however, GFC in the gamma band decreased. Again, the GFC analysis revealed changes in connectivity within subcortical structures, primarily in the thalamus. None of the measures was affected in the alpha band (8-12 Hz). These findings emphasise behavioural state as a critical factor influencing EEG outcomes, with important implications for the standardisation and translational validity of preclinical neurophysiological studies.",
+      "authors": [
+        "Vejmola, C.",
+        "Jiricek, S.",
+        "Bochin, M.",
+        "Koudelka, V.",
+        "Palenicek, T."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-08T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.03.736278v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Investigation of behavioural activity effects on EEG power spectrum and connectivity in rats; directly relevant to spectral power analysis methodology.",
+      "llm_evidence_cn": "研究行为活动对大鼠脑电图功率谱和连接性的影响，直接关联频谱功率分析方法学。",
+      "llm_evidence": "研究行为活动对大鼠脑电图功率谱和连接性的影响，直接关联频谱功率分析方法学。",
+      "canonical_evidence": "研究行为活动对大鼠脑电图功率谱和连接性的影响，直接关联频谱功率分析方法学。",
+      "llm_tldr_en": "This large-scale rat study systematically evaluates how behavioural activity versus inactivity affects EEG power spectrum, source localisation, and functional connectivity, revealing significant confounding effects.",
+      "llm_tldr_cn": "该研究针对动物脑电实验中行为活动对记录和分析的混淆问题，在116只清醒大鼠中采集12导皮层脑电图（ECoG），评估了活跃与静息状态下功率谱、电流源密度和功率包络连接性的变化。结果发现行为活动显著改变各频段功率和功能连接模式，强调动物脑电实验中需标准化行为状态。该工作为脑电频谱分析方法的可靠性提供了重要基准。",
+      "llm_tldr": "该研究针对动物脑电实验中行为活动对记录和分析的混淆问题，在116只清醒大鼠中采集12导皮层脑电图（ECoG），评估了活跃与静息状态下功率谱、电流源密度和功率包络连接性的变化。结果发现行为活动显著改变各频段功率和功能连接模式，强调动物脑电实验中需标准化行为状态。该工作为脑电频谱分析方法的可靠性提供了重要基准。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-07-05-736621-v1",
+      "source": "biorxiv",
+      "title": "BCCWJ-Brain: A Multi-Modal fMRI, MEG, and EEG Dataset of Naturalistic Japanese Reading",
+      "abstract": "We present the BCCWJ-Brain dataset, a multi-modal neuroimaging resource comprising functional magnetic resonance imaging (fMRI), magnetoencephalography (MEG), and electroencephalography (EEG) data recorded from native Japanese speakers reading newspaper articles from the Balanced Corpus of Contemporary Written Japanese (BCCWJ). Neural data were collected from 112 participants (36 fMRI, 35 MEG, and 41 EEG) as they read twenty newspaper articles presented in a Rapid Serial Visual Presentation (RSVP) paradigm. By providing three complementary neuroimaging modalities collected under identical naturalistic reading stimuli, this dataset provides a cognitive benchmark for computational models such as large language models. The dataset is publicly available on the OpenNeuro platform, offering a valuable resource for neuroscience, natural language processing, and related research fields.",
+      "authors": [
+        "Sugimoto, Y.",
+        "Asahara, M.",
+        "Jeong, H.",
+        "Kanno, A.",
+        "Koizumi, M.",
+        "Oseki, Y."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-09T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.05.736621v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "provides an EEG dataset of naturalistic reading, enabling relative power spectrum analysis during cognitive tasks",
+      "llm_evidence_cn": "提供自然阅读任务的EEG数据集，可用于认知任务中的相对功率谱分析",
+      "llm_evidence": "提供自然阅读任务的EEG数据集，可用于认知任务中的相对功率谱分析",
+      "canonical_evidence": "提供自然阅读任务的EEG数据集，可用于认知任务中的相对功率谱分析",
+      "llm_tldr_en": "This multi-modal neuroimaging dataset includes EEG from 41 participants reading newspaper articles, offering a resource for studying EEG correlates of naturalistic reading and language processing.",
+      "llm_tldr_cn": "该数据集通过快速序列视觉呈现范式记录了41名日语母语者阅读报纸文章时的EEG、fMRI和MEG数据，旨在为自然阅读的认知神经研究提供多模态基准，尤其适用于分析阅读过程中的脑电相对功率谱变化，并可用于验证语言计算模型。",
+      "llm_tldr": "该数据集通过快速序列视觉呈现范式记录了41名日语母语者阅读报纸文章时的EEG、fMRI和MEG数据，旨在为自然阅读的认知神经研究提供多模态基准，尤其适用于分析阅读过程中的脑电相对功率谱变化，并可用于验证语言计算模型。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.04107v1",
+      "source": "arxiv",
+      "title": "Semantic Integration and Lexical Expectation Shape N400 and P600 Dynamics During Naturalistic Reading",
+      "abstract": "Word surprisal is a well-established computational predictor of human neural responses during language comprehension, but it remains less clear whether local semantic fit explains neural response variation beyond lexical expectation during naturalistic reading. Using the Dublin EEG-based Reading Experiment Corpus (DERCo), this study examined whether contextual semantic relevance predicts word-locked EEG activity in the N400 and P600 windows. Contextual semantic relevance was computed as an attention-aware measure of how strongly a target word is semantically connected to its recent discourse context, and it was compared with GPT-based word surprisal. Across 22 participants and 32 EEG channels, we tested both predictors using regression-based ERP analyses and generalized additive mixed models while controlling for lexical variables and repeated observations. Both predictors were reliably associated with EEG responses, but they showed partly different temporal and scalp-level patterns. Surprisal captured expectancy-related variation, whereas contextual semantic relevance showed robust effects across N400- and P600-window mean voltages, with particularly strong explanatory support in the P600 window. Model comparisons indicated that contextual semantic relevance contributed explanatory value beyond lexical controls and surprisal. These findings suggest that naturalistic reading depends on both lexical expectation and local semantic integration, and that contextual semantic relevance offers an interpretable computational link between discourse semantic fit and ERP dynamics.",
+      "authors": [
+        "Kun Sun",
+        "Rong Wang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-05T04:07:36+00:00",
+      "link": "https://arxiv.org/pdf/2607.04107v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "EEG study of word-locked N400/P600 responses during naturalistic reading, linking to reading comprehension research.",
+      "llm_evidence_cn": "自然阅读中词锁定的脑电图N400/P600响应研究，与阅读理解研究相关。",
+      "llm_evidence": "自然阅读中词锁定的脑电图N400/P600响应研究，与阅读理解研究相关。",
+      "canonical_evidence": "自然阅读中词锁定的脑电图N400/P600响应研究，与阅读理解研究相关。",
+      "llm_tldr_en": "Using a naturalistic reading EEG corpus, this study shows that contextual semantic relevance, beyond word surprisal, significantly predicts N400 and P600 amplitudes during reading, offering insights into real-time language comprehension.",
+      "llm_tldr_cn": "该研究利用都柏林脑电图阅读实验语料库（DERCo），探究自然阅读中词汇语义相关度是否在词汇期望外独立预测脑电图N400和P600成分。通过注意力感知的语义相关度指标与GPT计算的词惊奇度比较，发现语义整合在N400窗口预测脑活动，而词汇期望在P600窗口更显著。结果为实时语言理解中语义与预期的协同作用提供了新工具，可拓展至科学文本阅读研究。",
+      "llm_tldr": "该研究利用都柏林脑电图阅读实验语料库（DERCo），探究自然阅读中词汇语义相关度是否在词汇期望外独立预测脑电图N400和P600成分。通过注意力感知的语义相关度指标与GPT计算的词惊奇度比较，发现语义整合在N400窗口预测脑活动，而词汇期望在P600窗口更显著。结果为实时语言理解中语义与预期的协同作用提供了新工具，可拓展至科学文本阅读研究。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.05222v1",
+      "source": "arxiv",
+      "title": "A Multimodal Reasoning Typology for Grounding Chart-Image Coherence in Science Communication",
+      "abstract": "Charts and images appear together throughout scientific publications, yet most computational work does not characterize their coherence. We argue that a chart, its accompanying image, and the caption that links them form a multimodal unit, and that the inferential work required to read it varies systematically. To capture this variation, we develop a typology of reasoning gaps, R1 through R5, that characterizes how chart, image, and text jointly convey a scientific claim, and the interpretive work this demands of the reader. Some pairs restate the same data, while in other pairs, charts are used to quantify a structure the image localizes, project image content onto an external variable, audit an image-based claim, or jointly construct a frame that neither panel can establish alone. The typology is anchored in the grounding theory of communication and was derived bottom-up, with a neuroscience expert, from a corpus of 79 traumatic brain injury papers and 32 chart-image pairs. Crucially, the levels provide a systematic mechanism for identifying where grounding succeeds or breaks down, rather than leaving it to subjective inference. We show this in a study in which a domain expert and three non-experts judge vision-language model (VLM) descriptions of 25 pairs: the level predicts where their judgments align and where they diverge, isolating the points at which contextual knowledge, not the figure, carries coherence. This typology thus offers figure designers a systematic way to balance text against chart-image pairs, bridging the expert-to-non-expert divide in reading a scientific takeaway.",
+      "authors": [
+        "Avina Nakarmi",
+        "Sohom Sen",
+        "Xun Song",
+        "Sreyashi Samaddar",
+        "Aritra Dasgupta"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-06T15:37:23+00:00",
+      "link": "https://arxiv.org/pdf/2607.05222v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "typology of reasoning gaps for interpreting scientific charts and images in publications",
+      "llm_evidence_cn": "用于解释科学出版物中图表和图像的推理鸿沟类型学",
+      "llm_evidence": "用于解释科学出版物中图表和图像的推理鸿沟类型学",
+      "canonical_evidence": "用于解释科学出版物中图表和图像的推理鸿沟类型学",
+      "llm_tldr_en": "The paper proposes a five-level typology (R1-R5) of reasoning gaps to categorize the inferential work required when reading charts and images together in scientific communication, highlighting the cognitive demands of science literacy.",
+      "llm_tldr_cn": "针对科学出版物中图表与图像协同传达科学主张的现象，本文提出了一种包含五个层次（R1-R5）的推理鸿沟类型学，系统刻画读者在解读此类多模态信息时所需的推理工作量，为科学阅读理解和教育中的图文教学提供了分析框架。",
+      "llm_tldr": "针对科学出版物中图表与图像协同传达科学主张的现象，本文提出了一种包含五个层次（R1-R5）的推理鸿沟类型学，系统刻画读者在解读此类多模态信息时所需的推理工作量，为科学阅读理解和教育中的图文教学提供了分析框架。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
