@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-07-13 <!--dpr-date:20260713-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202607/13/2607.09543v1-cocot-eeg-contrastive-pretrained-multiscale-convolutional-transformer-for-eeg-decoding" data-sidebar-item="{&quot;title&quot;: &quot;CoCoT-EEG: Contrastive-Pretrained Multiscale Convolutional Transformer for EEG Decoding&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2607.09543v1-cocot-eeg-contrastive-pretrained-multiscale-convolutional-transformer-for-eeg-decoding&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;对比预训练的EEG解码模型，捕捉频带信息，支持功率谱分析&quot;}">CoCoT-EEG: Contrastive-Pretrained Multiscale Convolutional Transformer for EEG Decoding</a>
   * 2026-07-12 <!--dpr-date:20260712-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202607/12/2607.06629v2-stst-jepa-shallow-target-spatio-temporal-joint-embedding-prediction-architecture-for-eeg-self-supervised-learning" data-sidebar-item="{&quot;title&quot;: &quot;STST-JEPA: Shallow-Target Spatio-Temporal Joint Embedding Prediction Architecture For EEG Self-Supervised Learning&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2607.06629v2-stst-jepa-shallow-target-spatio-temporal-joint-embedding-prediction-architecture-for-eeg-self-supervised-learning&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;面向认知任务分析的EEG自监督Transformer&quot;}">STST-JEPA: Shallow-Target Spatio-Temporal Joint Embedding Prediction Architecture For EEG Self-Supervised Learning</a>

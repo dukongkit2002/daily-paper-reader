@@ -1,0 +1,57 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-13T21:30:37.078509+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2607.09543v1",
+      "source": "arxiv",
+      "title": "CoCoT-EEG: Contrastive-Pretrained Multiscale Convolutional Transformer for EEG Decoding",
+      "abstract": "Self-supervised pretrained foundation models (FM) have shown early promise for non-invasive electroencephalogram (EEG) decoding applications. Many recent large-scale models converged on the approach of tokenizing raw EEG followed by masked reconstruction pretraining. However, this recipe has been shown to be suboptimal for data, like EEG, with high noise amplitude and information confined to limited dimensions such as narrow frequency bands. Building on this insight, we develop a novel contrastive-pretrained EEG model with multiscale temporal convolution input layers and Transformer encoder blocks (CoCoT). CoCoT matches or beats state-of-the-art reconstruction-pretrained EEG models on extensive benchmark decoding tasks with heterogeneous electrode configurations. Furthermore, CoCoT trained from scratch outperforms previous single-task decoding models and even rivals pretrained models, showcasing the architecture's flexibility and data efficiency. Through systematic ablations, including model architecture and pretraining objective, we demonstrate the viability of contrastive learning for building EEG FMs while suggesting key architectural design considerations, prompting further investigations in alternative large-scale pretraining strategies.",
+      "authors": [
+        "Gabriel Mahuas",
+        "Victoria Shevchenko",
+        "Ugo Tanielian",
+        "Yassir Bendou",
+        "Richard Gao"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "q-bio.NC"
+      ],
+      "published": "2026-07-10T15:48:15+00:00",
+      "link": "https://arxiv.org/pdf/2607.09543v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "contrastive-pretrained model for EEG decoding, captures frequency band information, supporting power spectrum analysis",
+      "llm_evidence_cn": "对比预训练的EEG解码模型，捕捉频带信息，支持功率谱分析",
+      "llm_evidence": "对比预训练的EEG解码模型，捕捉频带信息，支持功率谱分析",
+      "canonical_evidence": "对比预训练的EEG解码模型，捕捉频带信息，支持功率谱分析",
+      "llm_tldr_en": "This paper proposes CoCoT-EEG, a contrastive-pretrained foundation model for EEG that uses multiscale temporal convolutions and Transformer blocks, outperforming reconstruction-pretrained models on various decoding tasks by better capturing information in narrow frequency bands.",
+      "llm_tldr_cn": "针对现有基于重建预训练的EEG模型在处理高噪声、信息集中于窄频带等EEG特性时的不足，本文提出了一种新型对比预训练多尺度卷积Transformer模型（CoCoT-EEG）。该模型利用多尺度时域卷积和Transformer编码器，通过对比学习从原始EEG中提取区分性特征。在包含异构任务的广泛基准解码任务上，CoCoT-EEG匹配或超越了最先进的重建预训练模型，证明了对比预训练在EEG解码中的有效性，为开发更强大的EEG基础模型铺平了道路。",
+      "llm_tldr": "针对现有基于重建预训练的EEG模型在处理高噪声、信息集中于窄频带等EEG特性时的不足，本文提出了一种新型对比预训练多尺度卷积Transformer模型（CoCoT-EEG）。该模型利用多尺度时域卷积和Transformer编码器，通过对比学习从原始EEG中提取区分性特征。在包含异构任务的广泛基准解码任务上，CoCoT-EEG匹配或超越了最先进的重建预训练模型，证明了对比预训练在EEG解码中的有效性，为开发更强大的EEG基础模型铺平了道路。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
