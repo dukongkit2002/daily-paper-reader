@@ -1,0 +1,175 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-14T21:41:03.200165+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-07-10-737714-v1",
+      "source": "biorxiv",
+      "title": "Top-down influences on neural music processing: preference, enjoyment and familiarity influence neural tracking and brain rhythms differently",
+      "abstract": "Music enjoyment and familiarity are closely related but often confounded in studies of neural music processing. Here, we investigated their distinct contributions to cortical oscillatory activity and neural tracking of music using electroencephalography (EEG). Thirty-two participants listened to self-selected all-time favourite songs, recent favourite songs, and tempo-matched songs from disliked genres. This novel paradigm dissociated familiarity from enjoyment by including highly enjoyed songs that differed in familiarity. Spectral power and cortical tracking (using Mutual Information) were analysed using linear mixed-effects models with enjoyment and familiarity ratings. Familiarity was associated with increased left-frontal alpha power, whereas enjoyment predicted increased theta and beta power, demonstrating distinct oscillatory signatures for these dimensions. An interaction revealed that the positive relationship between enjoyment and theta power was strongest for highly familiar music. Cortical tracking analyses showed that greater enjoyment was associated with reduced delta-band tracking, with a significant interaction indicating that this negative relationship was present for highly familiar songs but not for less familiar songs. These findings indicate that enjoyment and familiarity differentially shape neural responses to music and highlight the importance of modelling both factors to disentangle their distinct effects on neural activity during music listening.",
+      "authors": [
+        "Varjopuro, S. M.",
+        "Timmerman, R. H.",
+        "Atanasova, T.",
+        "Allen, S. C.",
+        "Koukouvinis, S.",
+        "Keitel, A."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-11T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.10.737714v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "analyzes spectral power in EEG during music listening, a cognitive task",
+      "llm_evidence_cn": "在音乐聆听这种认知任务中分析频谱功率",
+      "llm_evidence": "在音乐聆听这种认知任务中分析频谱功率",
+      "canonical_evidence": "在音乐聆听这种认知任务中分析频谱功率",
+      "llm_tldr_en": "This EEG study dissociates the effects of music preference, enjoyment, and familiarity on spectral power and neural tracking, revealing distinct top-down influences on brain rhythms during naturalistic listening.",
+      "llm_tldr_cn": "该研究针对音乐加工中偏好、愉悦度与熟悉度常被混淆的问题，采用EEG比较自选最爱歌曲、近期喜爱歌曲与不喜爱类型歌曲的神经响应。通过分析频谱功率和基于互信息的神经跟踪，发现熟悉度与愉悦度对脑节律的影响不同。结果表明，熟悉度而非愉悦度主要调节频谱功率，这细化了自上而下因素对音乐认知的神经机制理解。",
+      "llm_tldr": "该研究针对音乐加工中偏好、愉悦度与熟悉度常被混淆的问题，采用EEG比较自选最爱歌曲、近期喜爱歌曲与不喜爱类型歌曲的神经响应。通过分析频谱功率和基于互信息的神经跟踪，发现熟悉度与愉悦度对脑节律的影响不同。结果表明，熟悉度而非愉悦度主要调节频谱功率，这细化了自上而下因素对音乐认知的神经机制理解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-13-738178-v1",
+      "source": "biorxiv",
+      "title": "The brain prioritizes information that strengthens the structure of knowledge",
+      "abstract": "Humans learn surprisingly well from remarkably little. One way by which such feat may be accomplished is strategic information processing. In particular, the brain may prioritize new inputs that are likely to support efficient mental models. Here we show that people prefer semantic information that strengthens the small-world configuration of a knowledge system, a topology previously associated with creativity and comprehension. Such information is prioritized by the brain's language network and elicits enhanced activation in the ventromedial prefrontal cortex, which is central to the brain's valuation system. These findings (replicated across studies) reveal a principle of information prioritization: the brain assigns value and resources to knowledge according to its capacity to improve the structure of what we know.",
+      "authors": [
+        "Tikochinski, R.",
+        "Pinhorn, I.",
+        "Nahari, T.",
+        "Duettmann, A.",
+        "Sharot, T."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-13T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.13.738178v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "vmPFC activation when processing information that strengthens knowledge structure supports role in higher cognition",
+      "llm_evidence_cn": "腹内侧前额叶皮层在加工强化知识结构的信息时激活，支持其在高级认知中的作用",
+      "llm_evidence": "腹内侧前额叶皮层在加工强化知识结构的信息时激活，支持其在高级认知中的作用",
+      "canonical_evidence": "腹内侧前额叶皮层在加工强化知识结构的信息时激活，支持其在高级认知中的作用",
+      "llm_tldr_en": "This study shows that the brain preferentially processes semantic information that enhances small-world knowledge organization, recruiting the ventromedial prefrontal cortex (vmPFC), thereby elucidating a neural basis for information valuation in comprehension and creativity.",
+      "llm_tldr_cn": "该研究探究大脑如何高效学习，发现人们偏好能强化知识系统小世界拓扑的语义信息，此类信息不仅被语言网络优先处理，还引发腹内侧前额叶皮层（vmPFC）的增强激活，这一价值评估机制揭示了vmPFC在支持理解与创造力等高级认知中的关键作用。",
+      "llm_tldr": "该研究探究大脑如何高效学习，发现人们偏好能强化知识系统小世界拓扑的语义信息，此类信息不仅被语言网络优先处理，还引发腹内侧前额叶皮层（vmPFC）的增强激活，这一价值评估机制揭示了vmPFC在支持理解与创造力等高级认知中的关键作用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.08855v1",
+      "source": "arxiv",
+      "title": "Spatial Neighboring Scattering Transform: A Cross-Channel Amplitude Coupling Measure for EEG Connectivity",
+      "abstract": "The functional organization of the brain relies on coordinated activity across spatially distributed regions, making the analysis of inter-regional dependencies fundamental. Existing connectivity measures address this predominantly through phase synchronization, which is vulnerable to volume conduction artifacts and discards amplitude-domain coupling. This study introduces the Spatial Neighboring Scattering Transform, which extends the wavelet scattering transform to the multichannel setting, yielding two descriptors that jointly capture amplitude-envelope coupling between channels and its modulation across frequency scales. SNST was evaluated on the BCI Competition IV-2a motor imagery dataset using a bias-corrected, false-discovery-rate-controlled statistical pipeline, with the validation criterion defined as spatial consistency of significant coupling across subjects. The first-order descriptor identified statistically significant amplitude coupling within a central-parietal electrode neighborhood, reproduced consistently across all subjects and both imagery conditions. The second-order descriptor revealed that this coupling is periodically gated by slow rhythms, indicating a cross-frequency amplitude-modulation structure absent from single-frequency connectivity measures. Phase lag index and weighted phase lag index, computed under an identical correction procedure and verified robust to volume conduction, identified negligible significant coupling with zero overlap with SNST findings, demonstrating that amplitude envelope coupling constitutes a largely distinct connectivity signal. These results establish SNST as a cross-channel scattering-based connectivity descriptor that recovers amplitude-envelope and cross-frequency coupling structure systematically, applicable to any multichannel EEG analysis where amplitude-domain inter-regional dependence is of interest.",
+      "authors": [
+        "Md. Taksimul Ahsan Tawhid",
+        "Nasif Ahmed Rafe",
+        "Alif Tahmid Priyom",
+        "K. M. Mustafizur Rahman"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "eess.SP",
+        "stat.AP"
+      ],
+      "published": "2026-07-09T18:24:52+00:00",
+      "link": "https://arxiv.org/pdf/2607.08855v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "novel EEG connectivity measure capturing amplitude coupling across frequency scales",
+      "llm_evidence_cn": "新型脑电连接度量，捕获跨频率尺度幅值耦合",
+      "llm_evidence": "新型脑电连接度量，捕获跨频率尺度幅值耦合",
+      "canonical_evidence": "新型脑电连接度量，捕获跨频率尺度幅值耦合",
+      "llm_tldr_en": "This paper introduces the Spatial Neighboring Scattering Transform (SNST) for EEG, measuring cross-channel amplitude-envelope coupling and its frequency modulation. It provides a robust method for studying brain connectivity during cognitive tasks, evaluated on motor imagery data.",
+      "llm_tldr_cn": "本文提出空间邻域散射变换（SNST）用于脑电信号，通过统计量捕获通道间幅值包络耦合及其跨频率尺度调制，为认知任务下脑连接分析提供了一种稳健的新方法。在运动想象数据集上验证了其有效性。",
+      "llm_tldr": "本文提出空间邻域散射变换（SNST）用于脑电信号，通过统计量捕获通道间幅值包络耦合及其跨频率尺度调制，为认知任务下脑连接分析提供了一种稳健的新方法。在运动想象数据集上验证了其有效性。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-04-736504-v1",
+      "source": "biorxiv",
+      "title": "Individualized parcellation reveals functional boundaries in human prefrontal cortex",
+      "abstract": "Human prefrontal cortex (PFC) supports diverse higher-order cognitive functions during task execution. Increasing evidence suggests that these functions are organized along large-scale gradients, such as a rostro-caudal axis supporting progressively abstract-to-concrete information processing. At the same time, regional specialization within PFC, including focal patches selective for specific stimulus categories, suggests the presence of discrete functional boundaries. Whether PFC organization is best characterized by continuous gradients or discrete subdivisions remains unresolved. Here we show that task-evoked functional organization in PFC exhibits substantial inter-individual variability, limiting the usefulness of conventional group atlases in testing for functional boundaries. To address this challenge, we estimated individualized functional parcellations by combining a group atlas with task-evoked fMRI data spanning diverse cognitive tasks. The group atlas revealed large-scale functional gradients across PFC, whereas individualized parcellations additionally uncovered sharp functional boundaries obscured by group averaging. Moreover, functional organization in PFC was substantially more fine-grained than in other association cortices, consistent with its integrative role in cognitive control. Together, these findings suggest that PFC organization reflects an individualized mosaic of fine-grained functional subdivisions embedded within broader large-scale gradients, with important implications for defining core constructs such as the multiple-demand system.",
+      "authors": [
+        "Xiang, J. D.",
+        "Zhi, D.",
+        "Arafat, B.",
+        "Nettekoven, C.",
+        "Diedrichsen, J.",
+        "Mur, M."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-06T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.04.736504v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Probes functional boundaries in PFC during higher-order cognitive tasks, relevant to mPFC organization",
+      "llm_evidence_cn": "在高级认知任务中探测前额叶功能边界，与mPFC组织相关",
+      "llm_evidence": "在高级认知任务中探测前额叶功能边界，与mPFC组织相关",
+      "canonical_evidence": "在高级认知任务中探测前额叶功能边界，与mPFC组织相关",
+      "llm_tldr_en": "Uses individualized parcellation of task-fMRI data to reveal functional boundaries in human prefrontal cortex, showing substantial inter-individual variability and questioning continuous gradient vs. discrete subdivision models of PFC organization, with implications for understanding mPFC's role in higher cognition.",
+      "llm_tldr_cn": "该论文采用个体化脑功能分区方法，基于任务态fMRI数据揭示人类前额叶皮层（PFC）的功能边界，发现任务诱发的功能组织存在显著的个体间变异，这对传统组平均分区方法构成挑战。研究进一步探讨了PFC组织模式是遵循连续梯度还是离散亚区，结果显示个体化边界模式对理解mPFC等在高级认知中的特异性功能具有重要意义。该成果为精准描绘前额叶功能架构、尤其是内侧前额叶在高级认知网络中的角色提供了新视角。",
+      "llm_tldr": "该论文采用个体化脑功能分区方法，基于任务态fMRI数据揭示人类前额叶皮层（PFC）的功能边界，发现任务诱发的功能组织存在显著的个体间变异，这对传统组平均分区方法构成挑战。研究进一步探讨了PFC组织模式是遵循连续梯度还是离散亚区，结果显示个体化边界模式对理解mPFC等在高级认知中的特异性功能具有重要意义。该成果为精准描绘前额叶功能架构、尤其是内侧前额叶在高级认知网络中的角色提供了新视角。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
