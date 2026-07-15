@@ -1,0 +1,25 @@
+---
+title: Mapping the neural circuitry of cognitive restructuring in depressive and anxiety disorders
+title_zh: 绘制抑郁和焦虑障碍中认知重构的神经回路图谱
+authors: "Jamieson, A. J., Steward, T., Felmingham, K., Davey, C., Ince, S., Agathos, J., Moffat, B., Glarin, R., Harrison, B. J."
+date: 2026-07-14
+pdf: "https://www.biorxiv.org/content/10.64898/2026.07.12.738091v1.full.pdf"
+tags: ["query:cog-eeg-mpfc"]
+score: 6.0
+evidence: 研究认知重构的神经回路，这是一个可能涉及mPFC的高级认知执行过程
+tldr: 认知重构是治疗抑郁和焦虑的关键心理技术，但其神经基础在患者中如何改变尚不清楚。本研究招募73名患者和70名健康对照，在7T fMRI下完成认知重构任务，分析症状严重度与脑活动的关系。结果发现，抑郁症状与dlPFC激活降低相关，而焦虑症状与dlPFC激活增强相关，且两者有效连接模式存在分离。该发现提示，认知行为疗法可能通过不同神经通路改善不同症状，为精准治疗提供新视角。
+source: biorxiv
+selection_source: fresh_fetch
+figures_json: "[{\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-07-12-738091-v1/fig-001.webp\", \"caption\": \"\", \"page\": 0, \"index\": 1, \"width\": 1703, \"height\": 777, \"label\": \"Figure\"}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-07-12-738091-v1/fig-002.webp\", \"caption\": \"\", \"page\": 0, \"index\": 2, \"width\": 1628, \"height\": 810, \"label\": \"Figure\"}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-07-12-738091-v1/fig-003.webp\", \"caption\": \"\", \"page\": 0, \"index\": 3, \"width\": 1638, \"height\": 1067, \"label\": \"Figure\"}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-07-12-738091-v1/fig-004.webp\", \"caption\": \"\", \"page\": 0, \"index\": 4, \"width\": 1645, \"height\": 884, \"label\": \"Figure\"}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-07-12-738091-v1/fig-005.webp\", \"caption\": \"\", \"page\": 0, \"index\": 5, \"width\": 1651, \"height\": 989, \"label\": \"Figure\"}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-07-12-738091-v1/fig-006.webp\", \"caption\": \"\", \"page\": 0, \"index\": 6, \"width\": 1641, \"height\": 1320, \"label\": \"Figure\"}]"
+tables_json: "[{\"url\": \"assets/tables/biorxiv/biorxiv-10-64898-2026-07-12-738091-v1/table-001.webp\", \"caption\": \"\", \"page\": 0, \"index\": 1, \"width\": 1659, \"height\": 2371, \"label\": \"Table\"}, {\"url\": \"assets/tables/biorxiv/biorxiv-10-64898-2026-07-12-738091-v1/table-002.webp\", \"caption\": \"\", \"page\": 0, \"index\": 2, \"width\": 1545, \"height\": 171, \"label\": \"Table\"}]"
+motivation: 尚不清楚抑郁和焦虑障碍中认知重构的神经基础如何改变及是否不同。
+method: 73名患者与70名对照完成7T fMRI认知重构任务，分析症状严重度与脑激活及有效连接的关系。
+result: "抑郁症状：dlPFC↓, vlPFC-vmPFC抑制↑；焦虑症状：dlPFC↑, dlPFC-杏仁核兴奋↑, vlPFC-杏仁核抑制↑。"
+conclusion: 抑郁和焦虑在认知重构时表现出可分离的神经特征，提示CBT机制可能因症状谱而异。
+---
+
+## 摘要
+背景：认知重构，即识别和挑战消极思维的过程，是治疗抑郁和焦虑障碍的关键技术。尽管神经影像学研究已经描述了支持健康个体认知重构的大脑系统，但这些系统在抑郁和焦虑中如何改变，或者每种障碍是否与独特的神经功能障碍相关，仍不清楚。方法：73名患有抑郁或焦虑障碍的临床参与者和70名健康对照者在7特斯拉功能磁共振成像（fMRI）期间完成了一项认知重构范式。该任务要求参与者要么重复一系列消极陈述，要么使用苏格拉底式提问对其进行挑战。组水平fMRI分析考察了抑郁和焦虑症状严重程度对脑激活的影响，而动态因果建模则刻画了相关脑区之间的方向性神经影响。结果：在挑战与重复陈述的对比中，更严重的抑郁症状与背外侧前额叶皮层（dlPFC）激活降低相关。相反，更严重的焦虑症状与dlPFC激活增强相关。有效连接结果显示，抑郁症状与腹外侧前额叶皮层（vlPFC）到腹内侧前额叶皮层的抑制增强相关，而焦虑症状与dlPFC到杏仁核的兴奋增强以及vlPFC到杏仁核的抑制增强相关。结论：尽管临床参与者与健康对照者一样有效地修正了消极信念，但抑郁和焦虑症状在重构过程中与可分离的神经特征相关。这表明认知行为疗法可能根据症状特征调动部分不同的机制，这一可能性值得对治疗反应进行纵向研究。
+
+## Abstract
+Background: Cognitive restructuring, the process of identifying and challenging negative thoughts, is a key technique for treating depressive and anxiety disorders. Although neuroimaging studies have characterised the brain systems supporting cognitive restructuring in healthy individuals, it remains unclear how these systems are altered in depression and anxiety, or whether each disorder is associated with distinct neural dysfunction. Methods: Seventy-three clinical participants with depressive or anxiety disorders and 70 healthy controls completed a cognitive restructuring paradigm during 7 Tesla functional magnetic resonance imaging (fMRI). The task required participants to either repeat a series of negative statements or challenge them using Socratic questioning. Group-level fMRI analyses examined the effects of depressive and anxiety symptom severity on brain activation, while dynamic causal modelling characterized the directional neural influences between implicated regions. Results: During challenging compared to repeating statements, greater depressive symptoms were associated with reduced dorsolateral prefrontal cortex (dlPFC) activation. Conversely, greater anxiety symptoms were associated with greater dlPFC activation. Effective connectivity results revealed that depressive symptoms were associated with greater inhibition from the ventrolateral prefrontal cortex (vlPFC) to the ventromedial prefrontal cortex, whereas anxiety symptoms were associated with greater excitation from the dlPFC to amygdala and greater inhibition from the vlPFC to amygdala. Conclusions: While clinical participants modified negative beliefs as effectively as healthy controls, depressive and anxiety symptoms were associated with dissociable neural signatures during restructuring. This suggests that cognitive behavioral therapy may engage partially distinct mechanisms depending on symptom profile, a possibility that warrants longitudinal investigation of treatment response.

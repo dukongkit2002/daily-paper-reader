@@ -1,0 +1,96 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-15T21:24:43.404936+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2607.10439v1",
+      "source": "arxiv",
+      "title": "Learning the Brain's Dynamics as a Port-Hamiltonian System",
+      "abstract": "We model human motor cortex during a wrist-extension BCI task as a port-Hamiltonian system (pHS): a conservative interconnection (gyroscopic coupling between neural phasors) plus a dissipative port (power-law energy decay driven by a GNN surrogate). A metriplectic integrator evolves the phasor state; a Fluctuation--Dissipation-consistent noise channel produces stochastic trajectories at body temperature. Training on \\FitTrainN\\ real EEG cycles (PhysioNet EEGMMIDB, 3 held-out subjects) reaches a test MSE of \\FitTestMSE\\ and passes three scale-free criticality rungs: near-critical branching ratio ($σ\\approx1$), $1/f$ power-law spectrum, and long-range DFA correlations. The model generates closed-loop neuromodulation signals that restore phase-locking in silico when applied to de-synchronised inputs, suggesting a path toward structure-preserving BCI decoders.",
+      "authors": [
+        "Dibakar Sigdel"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "cs.AI"
+      ],
+      "published": "2026-07-11T18:44:54+00:00",
+      "link": "https://arxiv.org/pdf/2607.10439v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "models EEG power-law spectrum and scale-free criticality during a wrist-extension BCI task",
+      "llm_evidence_cn": "在手腕伸展BCI任务中建模EEG幂律功率谱与无标度临界性",
+      "llm_evidence": "在手腕伸展BCI任务中建模EEG幂律功率谱与无标度临界性",
+      "canonical_evidence": "在手腕伸展BCI任务中建模EEG幂律功率谱与无标度临界性",
+      "llm_tldr_en": "A port-Hamiltonian model of motor cortex EEG during a wrist-extension task captures 1/f power-law spectrum and generates closed-loop neuromodulation signals, demonstrating spectral analysis during a cognitive-motor task.",
+      "llm_tldr_cn": "该论文将手腕伸展BCI任务中的运动皮层EEG建模为端口哈密顿系统，利用测地积分器与耗散端口捕捉1/f功率谱等无标度临界特征。模型成功复现了接近临界的分支比、1/f谱和长程相关性，并能生成闭环神经调控信号以恢复相位锁定。研究为认知任务期间的EEG功率谱分析提供了动力学建模新途径。",
+      "llm_tldr": "该论文将手腕伸展BCI任务中的运动皮层EEG建模为端口哈密顿系统，利用测地积分器与耗散端口捕捉1/f功率谱等无标度临界特征。模型成功复现了接近临界的分支比、1/f谱和长程相关性，并能生成闭环神经调控信号以恢复相位锁定。研究为认知任务期间的EEG功率谱分析提供了动力学建模新途径。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-07-12-738091-v1",
+      "source": "biorxiv",
+      "title": "Mapping the neural circuitry of cognitive restructuring in depressive and anxiety disorders",
+      "abstract": "Background: Cognitive restructuring, the process of identifying and challenging negative thoughts, is a key technique for treating depressive and anxiety disorders. Although neuroimaging studies have characterised the brain systems supporting cognitive restructuring in healthy individuals, it remains unclear how these systems are altered in depression and anxiety, or whether each disorder is associated with distinct neural dysfunction. Methods: Seventy-three clinical participants with depressive or anxiety disorders and 70 healthy controls completed a cognitive restructuring paradigm during 7 Tesla functional magnetic resonance imaging (fMRI). The task required participants to either repeat a series of negative statements or challenge them using Socratic questioning. Group-level fMRI analyses examined the effects of depressive and anxiety symptom severity on brain activation, while dynamic causal modelling characterized the directional neural influences between implicated regions. Results: During challenging compared to repeating statements, greater depressive symptoms were associated with reduced dorsolateral prefrontal cortex (dlPFC) activation. Conversely, greater anxiety symptoms were associated with greater dlPFC activation. Effective connectivity results revealed that depressive symptoms were associated with greater inhibition from the ventrolateral prefrontal cortex (vlPFC) to the ventromedial prefrontal cortex, whereas anxiety symptoms were associated with greater excitation from the dlPFC to amygdala and greater inhibition from the vlPFC to amygdala. Conclusions: While clinical participants modified negative beliefs as effectively as healthy controls, depressive and anxiety symptoms were associated with dissociable neural signatures during restructuring. This suggests that cognitive behavioral therapy may engage partially distinct mechanisms depending on symptom profile, a possibility that warrants longitudinal investigation of treatment response.",
+      "authors": [
+        "Jamieson, A. J.",
+        "Steward, T.",
+        "Felmingham, K.",
+        "Davey, C.",
+        "Ince, S.",
+        "Agathos, J.",
+        "Moffat, B.",
+        "Glarin, R.",
+        "Harrison, B. J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-14T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.12.738091v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "investigates neural circuitry of cognitive restructuring, a higher cognitive executive process, likely involving mPFC",
+      "llm_evidence_cn": "研究认知重构的神经回路，这是一个可能涉及mPFC的高级认知执行过程",
+      "llm_evidence": "研究认知重构的神经回路，这是一个可能涉及mPFC的高级认知执行过程",
+      "canonical_evidence": "研究认知重构的神经回路，这是一个可能涉及mPFC的高级认知执行过程",
+      "llm_tldr_en": "This fMRI study maps brain systems for cognitive restructuring in depression and anxiety, revealing disorder-specific prefrontal dysfunction, thus informing the role of mPFC in executive control networks.",
+      "llm_tldr_cn": "该研究利用7T fMRI考察抑郁症和焦虑症患者在认知重构任务中的脑活动，比较其与健康对照的差异，揭示前额叶功能失调的疾病特异性。结果有助于阐明mPFC在高级认知重构及执行控制网络中的作用。",
+      "llm_tldr": "该研究利用7T fMRI考察抑郁症和焦虑症患者在认知重构任务中的脑活动，比较其与健康对照的差异，揭示前额叶功能失调的疾病特异性。结果有助于阐明mPFC在高级认知重构及执行控制网络中的作用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

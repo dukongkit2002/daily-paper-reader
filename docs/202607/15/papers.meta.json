@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-15",
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T21:29:29",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/15/2607.10439v1-learning-the-brains-dynamics-as-a-port-hamiltonian-system",
+      "section": "deep",
+      "title_en": "Learning the Brain's Dynamics as a Port-Hamiltonian System",
+      "authors": "Dibakar Sigdel",
+      "date": "2026-07-11",
+      "pdf": "https://arxiv.org/pdf/2607.10439v1",
+      "score": "8.0",
+      "evidence": "在手腕伸展BCI任务中建模EEG幂律功率谱与无标度临界性",
+      "tldr": "为在脑机接口任务中准确捕捉大脑运动皮层的节律动力学，研究将其建模为端口哈密顿系统，融合保守的陀螺耦合与图神经网络驱动的耗散端口，并引入波动-耗散噪声通道。模型在真实EEG数据上训练后，不仅获得低测试误差，还成功复现了分支比近临界、1/f谱和长程DFA相关三种尺度自由特性，并能生成闭环神经调节信号以恢复相位同步，为结构保持的脑机接口解码器提供了新路径。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "We model human motor cortex during a wrist-extension BCI task as a port-Hamiltonian system (pHS): a conservative interconnection (gyroscopic coupling between neural phasors) plus a dissipative port (power-law energy decay driven by a GNN surrogate). A metriplectic integrator evolves the phasor state; a Fluctuation--Dissipation-consistent noise channel produces stochastic trajectories at body temperature. Training on \\FitTrainN\\ real EEG cycles (PhysioNet EEGMMIDB, 3 held-out subjects) reaches a test MSE of \\FitTestMSE\\ and passes three scale-free criticality rungs: near-critical branching ratio ($σ\\approx1$), $1/f$ power-law spectrum, and long-range DFA correlations. The model generates closed-loop neuromodulation signals that restore phase-locking in silico when applied to de-synchronised inputs, suggesting a path toward structure-preserving BCI decoders.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/15/biorxiv-10-64898-2026-07-12-738091-v1-mapping-the-neural-circuitry-of-cognitive-restructuring-in-depressive-and-anxiety-disorders",
+      "section": "quick",
+      "title_en": "Mapping the neural circuitry of cognitive restructuring in depressive and anxiety disorders",
+      "authors": "Jamieson, A. J., Steward, T., Felmingham, K., Davey, C., Ince, S., Agathos, J., Moffat, B., Glarin, R., Harrison, B. J.",
+      "date": "2026-07-14",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.12.738091v1.full.pdf",
+      "score": "6.0",
+      "evidence": "研究认知重构的神经回路，这是一个可能涉及mPFC的高级认知执行过程",
+      "tldr": "认知重构是治疗抑郁和焦虑的关键心理技术，但其神经基础在患者中如何改变尚不清楚。本研究招募73名患者和70名健康对照，在7T fMRI下完成认知重构任务，分析症状严重度与脑活动的关系。结果发现，抑郁症状与dlPFC激活降低相关，而焦虑症状与dlPFC激活增强相关，且两者有效连接模式存在分离。该发现提示，认知行为疗法可能通过不同神经通路改善不同症状，为精准治疗提供新视角。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Background: Cognitive restructuring, the process of identifying and challenging negative thoughts, is a key technique for treating depressive and anxiety disorders. Although neuroimaging studies have characterised the brain systems supporting cognitive restructuring in healthy individuals, it remains unclear how these systems are altered in depression and anxiety, or whether each disorder is associated with distinct neural dysfunction. Methods: Seventy-three clinical participants with depressive or anxiety disorders and 70 healthy controls completed a cognitive restructuring paradigm during 7 Tesla functional magnetic resonance imaging (fMRI). The task required participants to either repeat a series of negative statements or challenge them using Socratic questioning. Group-level fMRI analyses examined the effects of depressive and anxiety symptom severity on brain activation, while dynamic causal modelling characterized the directional neural influences between implicated regions. Results: During challenging compared to repeating statements, greater depressive symptoms were associated with reduced dorsolateral prefrontal cortex (dlPFC) activation. Conversely, greater anxiety symptoms were associated with greater dlPFC activation. Effective connectivity results revealed that depressive symptoms were associated with greater inhibition from the ventrolateral prefrontal cortex (vlPFC) to the ventromedial prefrontal cortex, whereas anxiety symptoms were associated with greater excitation from the dlPFC to amygdala and greater inhibition from the vlPFC to amygdala. Conclusions: While clinical participants modified negative beliefs as effectively as healthy controls, depressive and anxiety symptoms were associated with dissociable neural signatures during restructuring. This suggests that cognitive behavioral therapy may engage partially distinct mechanisms depending on symptom profile, a possibility that warrants longitudinal investigation of treatment response.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
