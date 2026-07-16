@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-16",
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16T21:31:59",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/16/2607.13433v1-when-rubrics-change-cross-rubric-generalization-for-critical-thinking-essay-scoring",
+      "section": "deep",
+      "title_en": "When Rubrics Change: Cross-Rubric Generalization for Critical Thinking Essay Scoring",
+      "authors": "Nischal Ashok Kumar, Payu Wittawatolarn, Sana Kang, Marisa C. Peczuh, Blair Lehman, Ryan Baker, Caitlin Mills, Sherry Lachman, Ruochen Sun, Andrew Lan",
+      "date": "2026-07-15",
+      "pdf": "https://arxiv.org/pdf/2607.13433v1",
+      "score": "9.0",
+      "evidence": "批判性思维论文自动评分直接衡量批判性思维能力",
+      "tldr": "自动化作文评分常假设评分标准不变，但教育实践中标准可能调整以评估不同能力。本文研究跨评分标准泛化，采用LLM微调框架，引入评分标准无关的中间表示“特质”与训练监督。在批判性思维作文数据上，特质方法在未见标准与作文时宏F1提升5.0%；增加监督后，最佳Llama模型超越GPT-5-mini 2.1%，逼近GPT-5。该工作揭示了中间结构和受控监督对跨标准泛化的价值。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Automated essay scoring (AES) research has largely focused on cross-prompt generalization, where essays from unseen prompts are scored while the scoring criteria are typically held constant. In practice, however, educators may revise or even introduce new rubrics in their scoring task, to evaluate different aspects of essays. We study cross-rubric generalization: training on essays labeled under one set of rubrics and evaluating on previously unseen rubrics, which target different aspects of the essay. We use a Large Language Model (LLM) fine-tuning framework with two components: rubric-agnostic intermediate representations, called traits, and target-essay supervision under seen rubrics during training. On an AES dataset augmented with multiple rubric-defined labels of student critical thinking skills, we find that traits improve macro F1 by 5.0% over a baseline without traits in the hardest setting, where both target rubrics and target essays are unseen during training. We further find that increasing target-essay supervision improves performance, with our best fine-tuned open-source Llama-based model outperforming GPT-5-mini prompting by 2.1% macro F1 and trailing GPT-5 by 1.9%. These results show that trait-based intermediate structure and controlled supervision improve generalization to unseen rubrics.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/16/biorxiv-10-64898-2026-07-07-736457-v1-protracted-maturation-of-proactive-and-reactive-systems-predicts-cognitive-stability-and-psychopathology--a-longitudinal-multi-cohort-study",
+      "section": "quick",
+      "title_en": "Protracted Maturation of Proactive and Reactive Systems Predicts Cognitive Stability and Psychopathology : A longitudinal multi-cohort study",
+      "authors": "Gao, Z., Zheng, L., Banaschewski, T., Barker, G. J., Bokde, A. L. W., Bruehl, R., Desrivieres, S., Gowland, P., Grigis, A., Heinz, A., Nees, F., Papadopoulos Orfanos, D., Poustka, L., Smolka, M. N., Hohmann, S., Holz, N., Vaidya, N., Walter, H., Whelan, R., Wirsching, P., Schumann, G., Garavan, H., Menon, V., Cai, W., IMAGEN Consortium",
+      "date": "2026-07-10",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.07.736457v1.full.pdf",
+      "score": "6.0",
+      "evidence": "抑制控制中的主动与反应性控制网络，核心执行功能",
+      "tldr": "抑制控制的渐进成熟从儿童期持续到成年早期，但其神经机制及与精神病理风险的关系一直不明。本研究基于双重认知控制模型，利用ABCD和IMAGEN两个纵向队列的fMRI数据，通过新颖的单次试验建模和表征相似性分析，揭示了反应性与主动性控制的时空动态。发现相关停止网络在青春期中后段趋于稳定，且大脑与主动“安全状态”的行为耦合随年龄增强。该安全状态的网络表征连贯性可作为扫描仪无关的特质样生物标志物，预测抑制控制、行为稳定性和跨诊断精神病理，为精准精神病学提供了经验证的神经表型。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Inhibitory control matures progressively from childhood to early adulthood, yet the neural mechanisms driving this development and their relevance to psychiatric risk remain poorly understood. Guided by the Dual Cognitive Control model, we leveraged longitudinal fMRI from two independent cohorts in the US (ABCD, ages 9-12) and Europe (IMAGEN, ages 14-22) to map the spatiotemporal dynamics of reactive and proactive control using novel single-trial modeling and representational similarity analysis. We found both reactive and proactive stopping networks stabilize after mid-adolescence, tracking the developmental patterns of inhibitory control and behavioral stability. By decoding trial-by-trial fluctuations along a speed-caution continuum, we demonstrate that brain-behavior coupling to a proactive \"Safe state\" tightens progressively with age. Furthermore, network-level representational coherence of this Safe state emerged as a scanner-invariant, trait-like biomarker that robustly predicted inhibitory control, behavioral stability, and transdiagnostic psychopathology across multiple developmental windows, providing a validated neural phenotype for precision psychiatry.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

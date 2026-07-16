@@ -1,0 +1,121 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-16T21:27:46.733581+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2607.13433v1",
+      "source": "arxiv",
+      "title": "When Rubrics Change: Cross-Rubric Generalization for Critical Thinking Essay Scoring",
+      "abstract": "Automated essay scoring (AES) research has largely focused on cross-prompt generalization, where essays from unseen prompts are scored while the scoring criteria are typically held constant. In practice, however, educators may revise or even introduce new rubrics in their scoring task, to evaluate different aspects of essays. We study cross-rubric generalization: training on essays labeled under one set of rubrics and evaluating on previously unseen rubrics, which target different aspects of the essay. We use a Large Language Model (LLM) fine-tuning framework with two components: rubric-agnostic intermediate representations, called traits, and target-essay supervision under seen rubrics during training. On an AES dataset augmented with multiple rubric-defined labels of student critical thinking skills, we find that traits improve macro F1 by 5.0% over a baseline without traits in the hardest setting, where both target rubrics and target essays are unseen during training. We further find that increasing target-essay supervision improves performance, with our best fine-tuned open-source Llama-based model outperforming GPT-5-mini prompting by 2.1% macro F1 and trailing GPT-5 by 1.9%. These results show that trait-based intermediate structure and controlled supervision improve generalization to unseen rubrics.",
+      "authors": [
+        "Nischal Ashok Kumar",
+        "Payu Wittawatolarn",
+        "Sana Kang",
+        "Marisa C. Peczuh",
+        "Blair Lehman",
+        "Ryan Baker",
+        "Caitlin Mills",
+        "Sherry Lachman",
+        "Ruochen Sun",
+        "Andrew Lan"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "published": "2026-07-15T04:34:14+00:00",
+      "link": "https://arxiv.org/pdf/2607.13433v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "automated essay scoring for critical thinking directly measures critical thinking skills",
+      "llm_evidence_cn": "批判性思维论文自动评分直接衡量批判性思维能力",
+      "llm_evidence": "批判性思维论文自动评分直接衡量批判性思维能力",
+      "canonical_evidence": "批判性思维论文自动评分直接衡量批判性思维能力",
+      "llm_tldr_en": "Studies cross-rubric generalization for critical thinking essay scoring using an LLM with rubric-agnostic traits, showing robust performance on unseen rubrics.",
+      "llm_tldr_cn": "针对教育者可能修改评分标准的情况，研究批判性思维论文评分的跨评分标准泛化，提出使用大语言模型和评分标准无关的中间表征方法，在未见过的评分标准上取得良好泛化效果。",
+      "llm_tldr": "针对教育者可能修改评分标准的情况，研究批判性思维论文评分的跨评分标准泛化，提出使用大语言模型和评分标准无关的中间表征方法，在未见过的评分标准上取得良好泛化效果。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-07-07-736457-v1",
+      "source": "biorxiv",
+      "title": "Protracted Maturation of Proactive and Reactive Systems Predicts Cognitive Stability and Psychopathology : A longitudinal multi-cohort study",
+      "abstract": "Inhibitory control matures progressively from childhood to early adulthood, yet the neural mechanisms driving this development and their relevance to psychiatric risk remain poorly understood. Guided by the Dual Cognitive Control model, we leveraged longitudinal fMRI from two independent cohorts in the US (ABCD, ages 9-12) and Europe (IMAGEN, ages 14-22) to map the spatiotemporal dynamics of reactive and proactive control using novel single-trial modeling and representational similarity analysis. We found both reactive and proactive stopping networks stabilize after mid-adolescence, tracking the developmental patterns of inhibitory control and behavioral stability. By decoding trial-by-trial fluctuations along a speed-caution continuum, we demonstrate that brain-behavior coupling to a proactive \"Safe state\" tightens progressively with age. Furthermore, network-level representational coherence of this Safe state emerged as a scanner-invariant, trait-like biomarker that robustly predicted inhibitory control, behavioral stability, and transdiagnostic psychopathology across multiple developmental windows, providing a validated neural phenotype for precision psychiatry.",
+      "authors": [
+        "Gao, Z.",
+        "Zheng, L.",
+        "Banaschewski, T.",
+        "Barker, G. J.",
+        "Bokde, A. L. W.",
+        "Bruehl, R.",
+        "Desrivieres, S.",
+        "Gowland, P.",
+        "Grigis, A.",
+        "Heinz, A.",
+        "Nees, F.",
+        "Papadopoulos Orfanos, D.",
+        "Poustka, L.",
+        "Smolka, M. N.",
+        "Hohmann, S.",
+        "Holz, N.",
+        "Vaidya, N.",
+        "Walter, H.",
+        "Whelan, R.",
+        "Wirsching, P.",
+        "Schumann, G.",
+        "Garavan, H.",
+        "Menon, V.",
+        "Cai, W.",
+        "IMAGEN Consortium,"
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-10T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.07.736457v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "proactive and reactive control networks in inhibitory control, a core executive function",
+      "llm_evidence_cn": "抑制控制中的主动与反应性控制网络，核心执行功能",
+      "llm_evidence": "抑制控制中的主动与反应性控制网络，核心执行功能",
+      "canonical_evidence": "抑制控制中的主动与反应性控制网络，核心执行功能",
+      "llm_tldr_en": "Longitudinal fMRI study maps development of proactive/reactive stopping networks, revealing their maturation and links to cognitive stability and psychopathology, relevant to understanding executive control network involving mPFC.",
+      "llm_tldr_cn": "这项纵向fMRI研究利用双重认知控制模型，首次刻画了从童年到成年早期主动性和反应性抑制控制网络的发育轨迹，发现这些网络在青春期中后期趋于稳定，并与行为稳定性和精神病理风险相关联。研究虽未直接报告内侧前额叶皮层，但抑制控制网络通常包括该区域，为理解mPFC在高级执行功能网络中的发育作用提供了重要启示。",
+      "llm_tldr": "这项纵向fMRI研究利用双重认知控制模型，首次刻画了从童年到成年早期主动性和反应性抑制控制网络的发育轨迹，发现这些网络在青春期中后期趋于稳定，并与行为稳定性和精神病理风险相关联。研究虽未直接报告内侧前额叶皮层，但抑制控制网络通常包括该区域，为理解mPFC在高级执行功能网络中的发育作用提供了重要启示。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "executive control network and medial prefrontal cortex involvement",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
