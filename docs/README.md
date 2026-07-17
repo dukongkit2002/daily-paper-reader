@@ -6,28 +6,28 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-16
-- 运行时间：2026-07-16 21:31:51 UTC
+- 最新运行日期：2026-07-17
+- 运行时间：2026-07-17 21:02:50 UTC
 - 运行状态：成功
 - 本次总论文数：2
 - 精读区：1
 - 速读区：1
 
 ### 今日简报（AI）
-今日精读了批判性思维作文评分的跨评分标准泛化研究，速读了一篇关于认知发展成熟度与精神病理学的追踪研究。  
-最值得关注的是，即使在评分规则改变时，AI也能实现高度泛化，为自动化写作评估提供了新思路。  
-如果你关心教育评测，不妨关注如何让模型适应动态变化的标准，这比死记硬背的评分更接近真实场景。
-- 详情：[/202607/16/README](/202607/16/README)
+今日精读一篇脑电新作，速读一篇神经信号分析研究，聚焦脑数据的稀缺性建模与兴奋/抑制平衡量化。  
+最具突破的方向在于用重正化群流Transformer捕捉稀缺EEG中的无标度动力学，另一篇则展示了从场电位测量兴奋/抑制平衡的新方法。  
+读者不妨深入了解Transformer如何编码物理规律，并关注平衡测量对临床诊断的潜在启发。
+- 详情：[/202607/17/README](/202607/17/README)
 
 ### 精读区论文标签
-1. [When Rubrics Change: Cross-Rubric Generalization for Critical Thinking Essay Scoring](/202607/16/2607.13433v1-when-rubrics-change-cross-rubric-generalization-for-critical-thinking-essay-scoring)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：批判性思维论文自动评分直接衡量批判性思维能力
+1. [The RG-Flow Transformer: Encoding Scale-Free Dynamics in Scarce EEG](/202607/17/2607.11950v2-the-rg-flow-transformer-encoding-scale-free-dynamics-in-scarce-eeg)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：在EEG中编码无标度动力学和1/f^β功率谱用于睡眠分期。
 
 ### 速读区论文标签
-1. [Protracted Maturation of Proactive and Reactive Systems Predicts Cognitive Stability and Psychopathology : A longitudinal multi-cohort study](/202607/16/biorxiv-10-64898-2026-07-07-736457-v1-protracted-maturation-of-proactive-and-reactive-systems-predicts-cognitive-stability-and-psychopathology--a-longitudinal-multi-cohort-study)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：抑制控制中的主动与反应性控制网络，核心执行功能
+1. [Measuring excitation/inhibition balance through field potentials](/202607/17/biorxiv-10-64898-2026-07-16-738654-v1-measuring-excitationinhibition-balance-through-field-potentials)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：使用内侧前额叶场电位验证宽带/高伽马功率作为E/I代理
 
 
 <div class="dpr-home-promo-card">

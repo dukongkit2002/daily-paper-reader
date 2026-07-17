@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-17",
+  "date": "2026-07-17",
+  "generated_at": "2026-07-17T21:03:00",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/17/2607.11950v2-the-rg-flow-transformer-encoding-scale-free-dynamics-in-scarce-eeg",
+      "section": "deep",
+      "title_en": "The RG-Flow Transformer: Encoding Scale-Free Dynamics in Scarce EEG",
+      "authors": "Dibakar Sigdel",
+      "date": "2026-07-11",
+      "pdf": "https://arxiv.org/pdf/2607.11950v2",
+      "score": "8.0",
+      "evidence": "在EEG中编码无标度动力学和1/f^β功率谱用于睡眠分期。",
+      "tldr": "脑电信号具有无标度谱，频谱指数β反映皮层状态。本文提出RG-Flow Transformer，通过可学习异常维度和粗粒化操作编码重整化群流，以捕捉无标度动力学。在睡眠EEG分期任务上，RG-Flow与普通Transformer性能相当，未在数据稀缺时展现优势。但该模型可样本外恢复连续频谱指数β，提供普通架构不具备的可解释性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Brain field potentials are scale-free: their power spectra follow a $1/f^β$ law whose aperiodic exponent $β$ tracks cortical state, and sleep depth in particular is a shift in $β$. We ask whether a transformer endowed with an explicit renormalization-group (RG) inductive bias the RG-Flow Transformer, which couples ordinary self-attention to a scale-aware stream with a learnable anomalous dimension $γ$, block-spin coarse-graining, and an entropy-gated synchronization bridge has an advantage over a parameter-matched vanilla transformer on \\emph{real, scarce} EEG. Using the PhysioNet Sleep-EDF corpus with a strict leakage-free by-subject hold-out, we (i) benchmark RG-Flow against a param-matched vanilla transformer and a hierarchy-only ablation on 5-class AASM sleep staging, (ii) sweep the per-subject data budget to look for the inductive-bias crossover predicted when data are scarce, and (iii) test whether RG-Flow's learned $γ$ tracks the measured spectral exponent $β$ out-of-sample a quantity the vanilla model does not possess. Across $5$ subjects and $5$ seeds under leave-one-subject-out cross-validation, RG-Flow and the vanilla transformer are statistically indistinguishable on 5-class staging (77.3\\% vs 77.0\\% accuracy; paired $p=0.294$), and the predicted scarce-data crossover does not appear: vanilla is numerically ahead at every data-limited budget. What does separate the models is interpretability RG-Flow recovers the continuous spectral exponent out-of-sample ($β$-recovery $R^2 = 0.416$), a capability the vanilla architecture has no analogue for.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/17/biorxiv-10-64898-2026-07-16-738654-v1-measuring-excitationinhibition-balance-through-field-potentials",
+      "section": "quick",
+      "title_en": "Measuring excitation/inhibition balance through field potentials",
+      "authors": "Rodriguez-Sanchez, J., Diehl, G. W., Cunningham, P. J., Pinotsis, D., Adams, R. A., Redish, A. D.",
+      "date": "2026-07-17",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.16.738654v1.full.pdf",
+      "score": "7.0",
+      "evidence": "使用内侧前额叶场电位验证宽带/高伽马功率作为E/I代理",
+      "tldr": "兴奋/抑制平衡(E/I)的脑电图指标缺乏系统验证。本研究利用大鼠和小鼠多脑区的单单元与局部场电位记录，评估了四种候选指标与实证E/I的一致性。发现宽带(6-80 Hz)和高伽马(80-150 Hz)功率始终与E/I相关，而1/f斜率及伽马振荡受区域和情境影响。这些结果支持宽带和高伽马功率作为可靠的E/I代理指标。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Several electroencephalography-based metrics have been proposed to index excitation/inhibition balance (E/I). We used single-unit and local field potential recordings from rat medial prefrontal and orbitofrontal cortex and mouse visual cortex and hippocampus to evaluate four candidate metrics against empirically-measured E/I. While 1/f slope and gamma oscillations showed region and context dependencies, broadband (6-80 Hz) and high gamma (80-150 Hz) power consistently correlated with E/I, supporting their use as proxy measures.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

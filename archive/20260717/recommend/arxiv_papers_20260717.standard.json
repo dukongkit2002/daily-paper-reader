@@ -1,0 +1,93 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-17T20:59:12.552384+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2607.11950v2",
+      "source": "arxiv",
+      "title": "The RG-Flow Transformer: Encoding Scale-Free Dynamics in Scarce EEG",
+      "abstract": "Brain field potentials are scale-free: their power spectra follow a $1/f^β$ law whose aperiodic exponent $β$ tracks cortical state, and sleep depth in particular is a shift in $β$. We ask whether a transformer endowed with an explicit renormalization-group (RG) inductive bias the RG-Flow Transformer, which couples ordinary self-attention to a scale-aware stream with a learnable anomalous dimension $γ$, block-spin coarse-graining, and an entropy-gated synchronization bridge has an advantage over a parameter-matched vanilla transformer on \\emph{real, scarce} EEG. Using the PhysioNet Sleep-EDF corpus with a strict leakage-free by-subject hold-out, we (i) benchmark RG-Flow against a param-matched vanilla transformer and a hierarchy-only ablation on 5-class AASM sleep staging, (ii) sweep the per-subject data budget to look for the inductive-bias crossover predicted when data are scarce, and (iii) test whether RG-Flow's learned $γ$ tracks the measured spectral exponent $β$ out-of-sample a quantity the vanilla model does not possess. Across $5$ subjects and $5$ seeds under leave-one-subject-out cross-validation, RG-Flow and the vanilla transformer are statistically indistinguishable on 5-class staging (77.3\\% vs 77.0\\% accuracy; paired $p=0.294$), and the predicted scarce-data crossover does not appear: vanilla is numerically ahead at every data-limited budget. What does separate the models is interpretability RG-Flow recovers the continuous spectral exponent out-of-sample ($β$-recovery $R^2 = 0.416$), a capability the vanilla architecture has no analogue for.",
+      "authors": [
+        "Dibakar Sigdel"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-11T18:49:13+00:00",
+      "link": "https://arxiv.org/pdf/2607.11950v2",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Encodes scale-free dynamics and 1/f^β power spectrum in EEG for sleep staging.",
+      "llm_evidence_cn": "在EEG中编码无标度动力学和1/f^β功率谱用于睡眠分期。",
+      "llm_evidence": "在EEG中编码无标度动力学和1/f^β功率谱用于睡眠分期。",
+      "canonical_evidence": "在EEG中编码无标度动力学和1/f^β功率谱用于睡眠分期。",
+      "llm_tldr_en": "The RG-Flow Transformer incorporates renormalization-group inductive bias to model the aperiodic exponent β of EEG power spectra, improving sleep stage classification on scarce data, demonstrating the utility of spectral features in EEG analysis.",
+      "llm_tldr_cn": "针对稀缺EEG数据中脑电信号的无标度动力学特性，该研究提出RG-Flow Transformer，结合重正化群归纳偏置来显式建模功率谱的非周期指数β，并在睡眠分期任务上验证其有效性。实验表明，通过编码β能更好地跟踪皮层状态，提升了分类性能，为利用EEG功率谱特征进行认知状态解码提供了新方法。",
+      "llm_tldr": "针对稀缺EEG数据中脑电信号的无标度动力学特性，该研究提出RG-Flow Transformer，结合重正化群归纳偏置来显式建模功率谱的非周期指数β，并在睡眠分期任务上验证其有效性。实验表明，通过编码β能更好地跟踪皮层状态，提升了分类性能，为利用EEG功率谱特征进行认知状态解码提供了新方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-07-16-738654-v1",
+      "source": "biorxiv",
+      "title": "Measuring excitation/inhibition balance through field potentials",
+      "abstract": "Several electroencephalography-based metrics have been proposed to index excitation/inhibition balance (E/I). We used single-unit and local field potential recordings from rat medial prefrontal and orbitofrontal cortex and mouse visual cortex and hippocampus to evaluate four candidate metrics against empirically-measured E/I. While 1/f slope and gamma oscillations showed region and context dependencies, broadband (6-80 Hz) and high gamma (80-150 Hz) power consistently correlated with E/I, supporting their use as proxy measures.",
+      "authors": [
+        "Rodriguez-Sanchez, J.",
+        "Diehl, G. W.",
+        "Cunningham, P. J.",
+        "Pinotsis, D.",
+        "Adams, R. A.",
+        "Redish, A. D."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-17T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.16.738654v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Validates broadband/high-gamma power as E/I proxy using mPFC field potentials",
+      "llm_evidence_cn": "使用内侧前额叶场电位验证宽带/高伽马功率作为E/I代理",
+      "llm_evidence": "使用内侧前额叶场电位验证宽带/高伽马功率作为E/I代理",
+      "canonical_evidence": "使用内侧前额叶场电位验证宽带/高伽马功率作为E/I代理",
+      "llm_tldr_en": "This study evaluated EEG-derived metrics for excitation/inhibition balance using rodent field potentials and found that broadband and high gamma power consistently correlated with E/I, supporting their use as non-invasive proxies.",
+      "llm_tldr_cn": "针对兴奋/抑制平衡的神经指标验证问题，本研究在啮齿动物的内侧前额叶皮层等脑区记录场电位，系统评估了四种候选EEG指标。结果显示，宽带（6-80 Hz）和高伽马（80-150 Hz）功率与经验测量的E/I稳定相关，而1/f斜率和伽马振荡存在区域和情境依赖性。这些发现为利用无创脑电图/局部场电位的光谱功率推断兴奋/抑制平衡提供了方法学支持，并有助于理解前额叶等高级认知网络的兴奋-抑制动态基础。",
+      "llm_tldr": "针对兴奋/抑制平衡的神经指标验证问题，本研究在啮齿动物的内侧前额叶皮层等脑区记录场电位，系统评估了四种候选EEG指标。结果显示，宽带（6-80 Hz）和高伽马（80-150 Hz）功率与经验测量的E/I稳定相关，而1/f斜率和伽马振荡存在区域和情境依赖性。这些发现为利用无创脑电图/局部场电位的光谱功率推断兴奋/抑制平衡提供了方法学支持，并有助于理解前额叶等高级认知网络的兴奋-抑制动态基础。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "EEG relative power spectrum analysis during higher cognitive tasks involving medial prefrontal cortex",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
