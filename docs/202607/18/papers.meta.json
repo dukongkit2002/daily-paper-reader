@@ -1,0 +1,54 @@
+{
+  "label": "2026-07-18",
+  "date": "2026-07-18",
+  "generated_at": "2026-07-18T21:28:10",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202607/18/biorxiv-10-64898-2026-07-12-738085-v1-an-integrated-eeg-tms-eeg-and-behavioural-dataset-for-investigating-the-neural-correlates-of-working-memory",
+      "section": "deep",
+      "title_en": "An Integrated EEG, TMS-EEG and Behavioural Dataset for Investigating the Neural Correlates of Working Memory",
+      "authors": "Biabani, M., Fornito, A., Thompson, S., Hawi, Z., Yucel, M., Bellgrove, M. A., Rogasch, N. C.",
+      "date": "2026-07-17",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.12.738085v1.full.pdf",
+      "score": "9.0",
+      "evidence": "提供工作记忆任务期间的公开EEG数据集，可用于认知任务中的功率谱分析",
+      "tldr": "工作记忆是认知功能的核心，但其神经机制研究受限于多模态开放数据的匮乏。为此，我们构建了包含123名健康成人的综合数据集，记录静息态EEG、视觉工作记忆任务EEG和单脉冲TMS诱发电位，并配套认知行为测评。该数据集提供了行为指标、脑电振荡和TMS诱发的动态脑反应等多维度信息，有助于揭示工作记忆的神经基础，并推动认知神经科学领域的开放科学实践。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Working memory is a fundamental process that underlies cognition. Accordingly, the neural mechanisms that support working memory performance are of great interest in cognitive neuroscience. We present a publicly accessible dataset comprising 123 healthy adults (mean age = 28.58 years, SD = 7.56; age range = 18-46 years; 75 females) to facilitate investigation of the neural mechanisms underlying working memory performance in humans. Across two days of assessment, participants underwent a battery of cognitive tasks assessing working memory and other cognitive domains (day 1), followed by 62-channel EEG recordings (day 2). EEG data were acquired at rest, during a visual working memory task, and following single-pulse transcranial magnetic stimulation (TMS-EEG) targeting key brain regions involved in working memory. This article provides a detailed overview of the study design, methodology, and data characteristics.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/18/2607.09662v1-phinn-eeg-topological-time-series-analysis-of-dream-state-eeg----dynamic-betti-curves-for-dream-content-classification-and-topology-conditioned-neural-signal-synthesis",
+      "section": "quick",
+      "title_en": "PHINN-EEG: Topological Time-Series Analysis of Dream-State EEG -- Dynamic Betti Curves for Dream Content Classification and Topology-Conditioned Neural Signal Synthesis",
+      "authors": "Ren Takahashi, Emre Yusuf, Jayabrata Bhaduri",
+      "date": "2026-07-10",
+      "pdf": "https://arxiv.org/pdf/2607.09662v1",
+      "score": "6.0",
+      "evidence": "引入基于动态Betti曲线的拓扑EEG分析，整合功率谱密度用于梦境脑电，与认知中的EEG频谱分析相关",
+      "tldr": "当前EEG梦境检测主要依赖功率谱密度等谱特征，难以捕捉神经活动的瞬态和非线性动态，在DREAM数据库上AUC仅约0.70。为此，PHINN-EEG首次将拓扑时间序列分析引入梦境EEG，利用滑动窗口Takens延迟嵌入和Vietoris-Rips滤流提取动态Betti曲线，表征相空间几何结构，并设计拓扑条件流匹配进行信号合成。预期在1462次唤醒开放子集上AUC提升至0.82-0.90，显著超越现有基准。此方法可能推动神经稀有事件检测从能量分析转向相空间几何，为可穿戴脑机接口梦境监测奠定基础。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Current electroencephalography (EEG)-based dream detection relies on power spectral density (PSD) and statistical moment features, achieving a state-of-the-art area under the receiver operating characteristic curve (AUC) of approximately 0.70 on the DREAM database (Wong et al., 2025, Nature Communications). We introduce PHINN-EEG (Persistent Homology Inspired Neural Network for EEG), the first topological time-series framework for dream mentation analysis. Using sliding-window Takens delay embeddings and Vietoris-Rips filtrations on multichannel pre-awakening EEG epochs, we extract Dynamic Betti Curves that characterize the geometric architecture of neural activity, not merely its energy. These topological invariants, combined with topology-conditioned flow matching, are analytically projected to outperform existing PSD and catch22 benchmarks, targeting AUC = 0.82-0.90 on the 1,462-awakening open-access subset of the DREAM database (drawn from a full registry of 3,191 total awakenings from 263 participants across 20 independent laboratories). We further introduce a topology-conditioned rectified flow model for dream-state EEG synthesis-with a spectral-conditioned flow model of comparable feature dimensionality as an additional ablation baseline to isolate the value of topological conditioning specifically-and propose a set of candidate Betti transition archetypes linking topology to phenomenological dream report categories, presented as an exploratory hypothesis space pending empirical validation. If validated, this work represents a paradigm shift from spectral energy to phase-space geometry in neural rare-event detection, with potential future implications for wearable BCI dream monitoring.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/18/biorxiv-10-64898-2026-07-13-738249-v1-decoding-and-characterizing-the-intracranial-representation-of-semantic-information",
+      "section": "quick",
+      "title_en": "Decoding and Characterizing the Intracranial Representation of Semantic Information",
+      "authors": "Smith, C., Inchyna, S., Barrentine, B., Nelson, M. J.",
+      "date": "2026-07-15",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.13.738249v1.full.pdf",
+      "score": "6.0",
+      "evidence": "从经历语义加工任务的sEEG局部场电位中提取高伽马功率",
+      "tldr": "脑机接口在解码运动/发音信号上进步显著，但高层语义信息能否从皮层活动中解码尚不清楚。本研究利用sEEG记录患者执行语义任务时的颅内神经活动，从局部场电位提取高gamma功率作为特征，通过监督机器学习进行单试次分类。结果显示，15个语义类别的平均分类准确率达29.8%，远超随机水平。该发现证明了颅内群体记录中可获取语义信息，为概念驱动的语言脑机接口和分布式语言网络机制研究提供了新方向。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Brain-computer interfaces (BCIs) have achieved impressive performance by decoding motor and articulatory signals associated with speech production. However, considerably less is known about whether higher-level semantic representations can be decoded from human cortical activity. Demonstrating semantic decoding would advance both our understanding of language organization and the development of BCIs that rely on conceptual rather than purely articulatory information. We recorded intracranial neural activity from patients undergoing stereotactic electroencephalography (sEEG) for clinical epilepsy monitoring while they performed language tasks requiring semantic processing. High-gamma power was extracted from local field potentials and used to generate trial-level features for supervised machine-learning classification. Classification performance was evaluated using cross-validation. Semantic category information was decoded significantly above chance, with mean classification accuracy reaching 29.8% across 15 semantic categories (chance = 6.7%). These findings demonstrate that high-gamma activity contains information about conceptual category membership that can be extracted on individual trials. These results provide evidence that semantic information is accessible from intracranial population recordings and support the feasibility of semantic decoding as a complementary direction for future language BCIs. Beyond neuroprosthetic applications, this work contributes to understanding how conceptual knowledge is represented in the distributed human language network.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
