@@ -1,0 +1,127 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-19T21:10:23.974474+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2607.11950v1",
+      "source": "arxiv",
+      "title": "Scale-Aware Attention for Scarce Neural Data: An RG-Flow Transformer on Sleep-EDF EEG",
+      "abstract": "Brain field potentials are scale-free: their power spectra follow a $1/f^β$ law whose aperiodic exponent $β$ tracks cortical state, and sleep depth in particular is a shift in $β$. We ask whether a transformer endowed with an explicit renormalization-group (RG) inductive bias -- the RG-Flow Transformer, which couples ordinary self-attention to a scale-aware stream with a learnable anomalous dimension $γ$, block-spin coarse-graining, and an entropy-gated synchronization bridge -- has an advantage over a parameter-matched vanilla transformer on \\emph{real, scarce} EEG. Using the PhysioNet Sleep-EDF corpus with a strict leakage-free by-subject hold-out, we (i) benchmark RG-Flow against a param-matched vanilla transformer and a hierarchy-only ablation on 5-class AASM sleep staging, (ii) sweep the per-subject data budget to look for the inductive-bias crossover predicted when data are scarce, and (iii) test whether RG-Flow's learned $γ$ tracks the measured spectral exponent $β$ out-of-sample -- a quantity the vanilla model does not possess. Across $5$ subjects and $5$ seeds under leave-one-subject-out cross-validation, RG-Flow and the vanilla transformer are statistically indistinguishable on 5-class staging (77.3\\% vs 77.0\\% accuracy; paired $p=0.294$), and the predicted scarce-data crossover does not appear: vanilla is numerically ahead at every data-limited budget. What does separate the models is interpretability -- RG-Flow recovers the continuous spectral exponent out-of-sample ($β$-recovery $R^2 = 0.416$), a capability the vanilla architecture has no analogue for.",
+      "authors": [
+        "Dibakar Sigdel"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-07-11T18:49:13+00:00",
+      "link": "https://arxiv.org/pdf/2607.11950v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "EEG power spectrum analysis with scale-aware transformer",
+      "llm_evidence_cn": "利用尺度感知变换器进行EEG功率谱分析",
+      "llm_evidence": "利用尺度感知变换器进行EEG功率谱分析",
+      "canonical_evidence": "利用尺度感知变换器进行EEG功率谱分析",
+      "llm_tldr_en": "The paper proposes a transformer with renormalization-group inductive bias (RG-Flow) to model the scale-free 1/f^β power spectra of EEG, achieving better sleep stage classification on scarce data. It demonstrates the advantage of encoding aperiodic spectral features explicitly in deep learning for EEG analysis.",
+      "llm_tldr_cn": "本文针对脑电信号固有的无标度功率谱特性（1/f^β），提出一种具有重整化群归纳偏置的RG-Flow变换器，显式建模尺度动态。在睡眠分期任务中，该方法优于参数匹配的普通变换器，尤其在数据稀缺条件下。研究表明，将神经信号的功率谱先验引入深度学习架构，可提升对稀少脑电数据的分析性能，为认知任务中的频谱分析提供了新工具。",
+      "llm_tldr": "本文针对脑电信号固有的无标度功率谱特性（1/f^β），提出一种具有重整化群归纳偏置的RG-Flow变换器，显式建模尺度动态。在睡眠分期任务中，该方法优于参数匹配的普通变换器，尤其在数据稀缺条件下。研究表明，将神经信号的功率谱先验引入深度学习架构，可提升对稀少脑电数据的分析性能，为认知任务中的频谱分析提供了新工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-06-22-733876-v2",
+      "source": "biorxiv",
+      "title": "Rhythmic replay of short-term memory neural patterns revealed by time-resolved error prediction",
+      "abstract": "Theta oscillations are hypothesized to provide a temporal scaffold for short-term memory (STM). In this model, memory representations are organized into successive theta phases, reducing conflict between competing representations during encoding and maintenance. Previous studies have shown that sensory representations of memorized information are rhythmically reactivated at theta frequency. Whether this theta-rhythmic mechanism is shared across encoding and maintenance, traditionally viewed as temporally distinct processes, remains unclear. It is also unknown whether this rhythmic reactivation predicts subsequent memory fidelity rather than merely reflecting the reinstatement of sensory representations. We recorded EEG from 21 participants performing STM with colored, oriented items under low and high memory load. Using time-resolved multivariate pattern analysis, we predicted subsequent STM error from encoding- and maintenance-period activity. We found that distributed neural patterns predicted STM error and that this prediction fluctuated at theta frequency, independently of memory load and feature. Cross-temporal generalization indicated that a shared neural pattern recurred across encoding and into maintenance, consistent with periodic reactivation of a common neural code rather than a succession of distinct states. Prediction was temporally offset across spatial positions and item features, indicating that the features of a multi-feature object are encoded by separate, rhythmically interleaved processes. These findings characterize STM encoding and maintenance as a rhythmic, recurrent process and link theta-rhythmic fluctuations in memory fidelity to distributed cortical activity spanning multiple brain regions and frequency bands.",
+      "authors": [
+        "Syrov, N.",
+        "Schmidt, S.",
+        "Rademacher, R.",
+        "Kobeleva, X."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-16T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.22.733876v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "EEG study reveals theta-rhythmic replay of short-term memory patterns, addressing spectral power in cognitive tasks.",
+      "llm_evidence_cn": "EEG研究揭示了短时记忆模式的theta节律性重放，涉及认知任务中的谱功率。",
+      "llm_evidence": "EEG研究揭示了短时记忆模式的theta节律性重放，涉及认知任务中的谱功率。",
+      "canonical_evidence": "EEG研究揭示了短时记忆模式的theta节律性重放，涉及认知任务中的谱功率。",
+      "llm_tldr_en": "Uses EEG to show theta-rhythmic replay of short-term memory patterns predicts memory fidelity, directly investigating spectral power dynamics in cognitive tasks.",
+      "llm_tldr_cn": "该研究利用21名参与者的EEG记录，通过时间分辨误差预测方法，发现短时记忆的表征在theta频率被节律性地重放，且重放强度预测了记忆的准确性。这一工作直接探索了认知任务中脑电频谱功率的动态变化，揭示了theta振荡在记忆编码和维持中的关键作用，为理解高级认知过程的神经机制提供了新证据。",
+      "llm_tldr": "该研究利用21名参与者的EEG记录，通过时间分辨误差预测方法，发现短时记忆的表征在theta频率被节律性地重放，且重放强度预测了记忆的准确性。这一工作直接探索了认知任务中脑电频谱功率的动态变化，揭示了theta振荡在记忆编码和维持中的关键作用，为理解高级认知过程的神经机制提供了新证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-04-22-720249-v2",
+      "source": "biorxiv",
+      "title": "Default Mode Network Connectivity Is Associated with Capture by Distractors Assigned to Learned Spatial Regularities",
+      "abstract": "Learned spatial regularities can reduce attentional capture by salient distractors, but observers vary in how strongly such regularities shape distractor interference. We asked whether this variability is associated with default mode network (DMN) functional connectivity, a network measure linked to individual differences in attention, internally guided cognition, and contextual memory. Using an existing fMRI visual-search dataset (N = 33), we tested whether task-run DMN connectivity was related to capture by distractors assigned to a learned spatial-probability history. Participants belonged to two training groups that differed in which distractor dimension carried the spatial bias: same-dimension distractors in one group and different-dimension distractors in the other. This design allowed us to ask whether the DMN association followed the design-defined biased dimension rather than general distractibility or a fixed physical distractor feature, while considering that the biased dimension also involved greater exposure. Higher within-DMN connectivity was associated with larger capture scores for the biased distractor dimension, whereas capture by the unbiased dimension showed little corresponding relation. This association remained positive after controls for inter-trial priming, head motion, nuisance signals, task-regressor residualization, global-signal regression, motion scrubbing, and trial-level exposure history. Exploratory edge-level analyses provided descriptive convergence, showing that capture-associated positive edges were concentrated around the DMN. These findings suggest that DMN connectivity may relate to individual differences in vulnerability to distractors embedded in learned spatial-probability histories.",
+      "authors": [
+        "Chen, S.",
+        "Mueller, H. J.",
+        "Shi, Z."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-14T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.22.720249v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Examines DMN connectivity (which involves mPFC) in relation to attentional capture, linking mPFC to cognitive control",
+      "llm_evidence_cn": "考察了涉及内侧前额叶的默认模式网络连接性与注意捕获的关系，将内侧前额叶与认知控制关联",
+      "llm_evidence": "考察了涉及内侧前额叶的默认模式网络连接性与注意捕获的关系，将内侧前额叶与认知控制关联",
+      "canonical_evidence": "考察了涉及内侧前额叶的默认模式网络连接性与注意捕获的关系，将内侧前额叶与认知控制关联",
+      "llm_tldr_en": "Found that DMN functional connectivity during visual search related to individual differences in distraction by learned spatial regularities, implicating mPFC in attention.",
+      "llm_tldr_cn": "该研究利用已有fMRI数据集，探究默认模式网络功能连接与空间规律性学习后干扰物捕获之间的关系，发现任务期DMN连接强度与个体受干扰程度相关，提示内侧前额叶作为DMN核心节点在基于情境的注意控制中发挥作用。",
+      "llm_tldr": "该研究利用已有fMRI数据集，探究默认模式网络功能连接与空间规律性学习后干扰物捕获之间的关系，发现任务期DMN连接强度与个体受干扰程度相关，提示内侧前额叶作为DMN核心节点在基于情境的注意控制中发挥作用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

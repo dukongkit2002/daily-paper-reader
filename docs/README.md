@@ -6,31 +6,31 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-18
-- 运行时间：2026-07-18 21:27:55 UTC
+- 最新运行日期：2026-07-19
+- 运行时间：2026-07-19 21:15:34 UTC
 - 运行状态：成功
 - 本次总论文数：3
-- 精读区：1
-- 速读区：2
+- 精读区：2
+- 速读区：1
 
 ### 今日简报（AI）
-今日聚焦工作记忆的神经机制，从高质量脑电与行为数据集到梦境与语义解码，探索大脑信息处理的多维图谱。  
-值得一看的是那套整合EEG、TMS-EEG与行为数据的综合数据集（9分），它为研究记忆负荷的神经环路提供了精细素材。  
-想快速入门，可先看语义表征的颅内解码，了解大脑如何编码概念，再挑梦境脑电的拓扑分析，感受前沿方法的有趣应用。
-- 详情：[/202607/18/README](/202607/18/README)
+今日深度聚焦两篇突破性研究，解锁脑信号与记忆的新玩法。  
+核心发现：新模型用尺度感知注意力让小样本脑电图也能精准解析睡眠阶段；短时记忆竟以特定脑节律不断“重播”，可被实时误差预测揭晓。  
+脑科学爱好者不妨从记忆重放机制切入，理解AI如何从大脑节律中汲取高效学习策略。
+- 详情：[/202607/19/README](/202607/19/README)
 
 ### 精读区论文标签
-1. [An Integrated EEG, TMS-EEG and Behavioural Dataset for Investigating the Neural Correlates of Working Memory](/202607/18/biorxiv-10-64898-2026-07-12-738085-v1-an-integrated-eeg-tms-eeg-and-behavioural-dataset-for-investigating-the-neural-correlates-of-working-memory)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：提供工作记忆任务期间的公开EEG数据集，可用于认知任务中的功率谱分析
+1. [Scale-Aware Attention for Scarce Neural Data: An RG-Flow Transformer on Sleep-EDF EEG](/202607/19/2607.11950v1-scale-aware-attention-for-scarce-neural-data-an-rg-flow-transformer-on-sleep-edf-eeg)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：利用尺度感知变换器进行EEG功率谱分析
+2. [Rhythmic replay of short-term memory neural patterns revealed by time-resolved error prediction](/202607/19/biorxiv-10-64898-2026-06-22-733876-v2-rhythmic-replay-of-short-term-memory-neural-patterns-revealed-by-time-resolved-error-prediction)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：EEG研究揭示了短时记忆模式的theta节律性重放，涉及认知任务中的谱功率。
 
 ### 速读区论文标签
-1. [PHINN-EEG: Topological Time-Series Analysis of Dream-State EEG -- Dynamic Betti Curves for Dream Content Classification and Topology-Conditioned Neural Signal Synthesis](/202607/18/2607.09662v1-phinn-eeg-topological-time-series-analysis-of-dream-state-eeg----dynamic-betti-curves-for-dream-content-classification-and-topology-conditioned-neural-signal-synthesis)  
+1. [Default Mode Network Connectivity Is Associated with Capture by Distractors Assigned to Learned Spatial Regularities](/202607/19/biorxiv-10-64898-2026-04-22-720249-v2-default-mode-network-connectivity-is-associated-with-capture-by-distractors-assigned-to-learned-spatial-regularities)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：引入基于动态Betti曲线的拓扑EEG分析，整合功率谱密度用于梦境脑电，与认知中的EEG频谱分析相关
-2. [Decoding and Characterizing the Intracranial Representation of Semantic Information](/202607/18/biorxiv-10-64898-2026-07-13-738249-v1-decoding-and-characterizing-the-intracranial-representation-of-semantic-information)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：从经历语义加工任务的sEEG局部场电位中提取高伽马功率
+   evidence：考察了涉及内侧前额叶的默认模式网络连接性与注意捕获的关系，将内侧前额叶与认知控制关联
 
 
 <div class="dpr-home-promo-card">
