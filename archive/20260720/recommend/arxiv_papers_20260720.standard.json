@@ -1,0 +1,100 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-20T20:22:06.516714+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-07-14-738386-v1",
+      "source": "biorxiv",
+      "title": "Region-Specific Delta and Alpha2 Relative Power Alterations in Male Adolescent Schizophrenia: Occipital Predominance in Resting-State EEG",
+      "abstract": "Resting-state electroencephalography (EEG) studies consistently report increased slow-wave activity and reduced alpha power in schizophrenia. However, the regional distribution of EEG relative power (RP) across finer frequency bands, particularly in adolescent schizophrenia, remains poorly characterized. We analyzed a publicly available resting-state EEG dataset comprising 45 male adolescents with schizophrenia (SCZ; mean age: 12.3 +/- 1.2 years) and 39 age- and sex-matched healthy controls (CON; mean age: 12.3 +/- 1.3 years), recorded using 16 scalp electrodes (10-20 system). Following band-pass filtering, artefact subspace reconstruction, spline interpolation, average re-referencing and independent component analysis, RP was computed for nine frequency bands across five cortical regions (frontal, central, parietal, temporal, and occipital). Group differences were assessed using three-way repeated-measures analysis of variance (ANOVA), followed by Bonferroni false discovery rate (FDR)-corrected post-hoc pairwise comparisons using estimated marginal means (emmeans). Compared to controls, the SCZ group showed significantly higher delta RP in the frontal, parietal, and occipital regions and significantly lower alpha2 RP, dissociable from alpha1, in the central, parietal, temporal, and occipital regions (all FDR < 0.001). The occipital cortex showed the greatest increase in delta RP (|Cohen's d|=0.82) and the greatest reduction in alpha2 RP (|d|=0.73), with moderate-to-large effect sizes. Topographic maps demonstrated widespread delta enhancement and attenuated occipito-parietal alpha2 activity in the SCZ group. These findings demonstrate region-specific alterations in resting-state EEG relative power in adolescent schizophrenia, particularly within the occipital cortex, and suggest that regional RP may serve as a promising neurophysiological feature for early-onset schizophrenia.",
+      "authors": [
+        "Hazra, S.",
+        "Chakrabarti, N."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-20T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.14.738386v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "EEG relative power analysis in delta and alpha2 bands during resting-state",
+      "llm_evidence_cn": "静息态EEG中δ和α2频段相对功率分析",
+      "llm_evidence": "静息态EEG中δ和α2频段相对功率分析",
+      "canonical_evidence": "静息态EEG中δ和α2频段相对功率分析",
+      "llm_tldr_en": "This study characterizes region-specific alterations of EEG relative power in adolescent schizophrenia. Resting-state EEG from 45 patients and 39 controls was analyzed. Delta and alpha2 relative power changes were found predominantly in occipital regions. These findings suggest distinct regional EEG signatures in early schizophrenia.",
+      "llm_tldr_cn": "本研究刻画了青少年精神分裂症脑电图相对功率的区域特异性改变。分析45名患者和39名对照的静息态EEG，发现δ和α2相对功率改变主要位于枕区。结果表明早期精神分裂症具有独特的区域性EEG特征。",
+      "llm_tldr": "本研究刻画了青少年精神分裂症脑电图相对功率的区域特异性改变。分析45名患者和39名对照的静息态EEG，发现δ和α2相对功率改变主要位于枕区。结果表明早期精神分裂症具有独特的区域性EEG特征。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-07-17-738592-v1",
+      "source": "biorxiv",
+      "title": "Expectation Shapes Neural Preparation for AI-generated and Real Image Processing: Evidence from EEG",
+      "abstract": "Abstract: AI-generated images, videos, and news have become an inseparable part of daily life, leading to increasing skepticism toward online information. Understanding how expectations about the presence of AI-generated content influence perception is crucial for elucidating the underlying neural mechanisms and facilitating the generation of naturalistic avatars. In this study, we analyzed an existing EEG dataset (N = 29) in which participants viewed emotional facial photographs of only real individuals while being informed that upcoming faces were either real ('REAL') or AI-generated ('FAKE'). We examined pre-stimulus oscillatory activities in the one-second EEG interval before stimulus onset and found significantly lower alpha power when participants expected 'FAKE' compared to 'REAL' faces. This effect was region-specific, particularly in right occipito-parietal and temporo-parietal regions, as identified by both sensor- and source-level analyses. In addition, the modulation effect between pre-stimulus alpha activity and post-stimulus event-related potentials (ERPs) was measured. A significant correlation between changes in late positive potential (LPP) amplitudes and pre-stimulus alpha power was observed exclusively for 'FAKE' smiling faces, consistent with our previous findings. These results suggest that AI-related expectations modulate neural preparatory states, with lower alpha activity presumably reflecting increased attentional demands for stimuli believed to be artificially generated. This study demonstrates that top-down beliefs systematically shape both pre- and post-stimulus neural dynamics, providing new insights into how cognitive expectations bias perceptual processing, with implications for understanding human-AI interaction and improving the design and evaluation of AI-generated content in real-world contexts.",
+      "authors": [
+        "Chen, Y.",
+        "Eiserbeck, A.",
+        "Maier, M.",
+        "Klotzsche, F.",
+        "Hofmann, S. M.",
+        "Baum, J.",
+        "Nierula, B.",
+        "Hilsmann, A.",
+        "Bosse, S.",
+        "Villringer, A.",
+        "Rahman, R. A.",
+        "Gaebler, M.",
+        "Nikulin, V."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-17T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.17.738592v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "pre-stimulus EEG oscillatory activities analysis in cognitive task",
+      "llm_evidence_cn": "认知任务中刺激前EEG振荡活动分析",
+      "llm_evidence": "认知任务中刺激前EEG振荡活动分析",
+      "canonical_evidence": "认知任务中刺激前EEG振荡活动分析",
+      "llm_tldr_en": "This study examines how expectations about AI-generated vs real faces shape neural preparation using pre-stimulus EEG. Lower alpha/beta power was found when expecting AI-generated images, suggesting altered preparatory states. These findings reveal top-down expectation effects on visual processing.",
+      "llm_tldr_cn": "该研究利用刺激前脑电图探究对AI生成与真实图像预期如何影响神经准备。结果发现，预期AI生成图像时α/β频段功率降低，提示预备状态改变。这些发现揭示了自上而下预期对视觉加工的影响。",
+      "llm_tldr": "该研究利用刺激前脑电图探究对AI生成与真实图像预期如何影响神经准备。结果发现，预期AI生成图像时α/β频段功率降低，提示预备状态改变。这些发现揭示了自上而下预期对视觉加工的影响。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

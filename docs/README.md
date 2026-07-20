@@ -6,31 +6,28 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-19
-- 运行时间：2026-07-19 21:15:34 UTC
+- 最新运行日期：2026-07-20
+- 运行时间：2026-07-20 20:25:46 UTC
 - 运行状态：成功
-- 本次总论文数：3
-- 精读区：2
+- 本次总论文数：2
+- 精读区：1
 - 速读区：1
 
 ### 今日简报（AI）
-今日深度聚焦两篇突破性研究，解锁脑信号与记忆的新玩法。  
-核心发现：新模型用尺度感知注意力让小样本脑电图也能精准解析睡眠阶段；短时记忆竟以特定脑节律不断“重播”，可被实时误差预测揭晓。  
-脑科学爱好者不妨从记忆重放机制切入，理解AI如何从大脑节律中汲取高效学习策略。
-- 详情：[/202607/19/README](/202607/19/README)
+今日精读青少年精神分裂症的静息态脑电研究，并速览了期待如何塑造人脑处理AI图像的神经准备机制。
+最值得关注：青少年精神分裂症患者后枕叶出现特异性的Delta与Alpha2相对功率改变，以及预期会显著调制我们对AI生成图像与真实图像的早期神经反应。
+想追踪大脑与AI的碰撞？可以比对这两项研究，观察静息态异常是否会影响后续的任务态认知加工。
+- 详情：[/202607/20/README](/202607/20/README)
 
 ### 精读区论文标签
-1. [Scale-Aware Attention for Scarce Neural Data: An RG-Flow Transformer on Sleep-EDF EEG](/202607/19/2607.11950v1-scale-aware-attention-for-scarce-neural-data-an-rg-flow-transformer-on-sleep-edf-eeg)  
+1. [Region-Specific Delta and Alpha2 Relative Power Alterations in Male Adolescent Schizophrenia: Occipital Predominance in Resting-State EEG](/202607/20/biorxiv-10-64898-2026-07-14-738386-v1-region-specific-delta-and-alpha2-relative-power-alterations-in-male-adolescent-schizophrenia-occipital-predominance-in-resting-state-eeg)  
    标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：利用尺度感知变换器进行EEG功率谱分析
-2. [Rhythmic replay of short-term memory neural patterns revealed by time-resolved error prediction](/202607/19/biorxiv-10-64898-2026-06-22-733876-v2-rhythmic-replay-of-short-term-memory-neural-patterns-revealed-by-time-resolved-error-prediction)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：EEG研究揭示了短时记忆模式的theta节律性重放，涉及认知任务中的谱功率。
+   evidence：静息态EEG中δ和α2频段相对功率分析
 
 ### 速读区论文标签
-1. [Default Mode Network Connectivity Is Associated with Capture by Distractors Assigned to Learned Spatial Regularities](/202607/19/biorxiv-10-64898-2026-04-22-720249-v2-default-mode-network-connectivity-is-associated-with-capture-by-distractors-assigned-to-learned-spatial-regularities)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：考察了涉及内侧前额叶的默认模式网络连接性与注意捕获的关系，将内侧前额叶与认知控制关联
+1. [Expectation Shapes Neural Preparation for AI-generated and Real Image Processing: Evidence from EEG](/202607/20/biorxiv-10-64898-2026-07-17-738592-v1-expectation-shapes-neural-preparation-for-ai-generated-and-real-image-processing-evidence-from-eeg)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：认知任务中刺激前EEG振荡活动分析
 
 
 <div class="dpr-home-promo-card">
