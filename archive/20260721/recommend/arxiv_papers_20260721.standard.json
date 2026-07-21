@@ -1,0 +1,92 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-21T20:49:35.851071+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2607.17602v1",
+      "source": "arxiv",
+      "title": "Exploring Brain Networks Using Noninvasive Electrophysiological Measurements: Methods and Applications",
+      "abstract": "Electroencephalography (EEG) and magnetoencephalography (MEG) provide noninvasive measurements of brain activity with millisecond temporal resolution, enabling the investigation of functional and effective interactions within large-scale brain networks. This chapter presents a comprehensive overview of the methodological foundations and practical workflows for EEG/MEG-based brain network analysis. We first review the physical principles underlying EEG and MEG, emphasizing their complementary strengths and limitations. We then describe the forward and inverse problems, including subject-specific head modeling, source reconstruction techniques, and the importance of accurate anatomical modeling for reliable source localization. Strategies for mitigating volume conduction and signal leakage are discussed, together with best practices for source-space connectivity analysis. The chapter reviews widely used functional and effective connectivity measures, including coherence, phase synchronization metrics, amplitude envelope correlation, Granger causality, dynamic causal modeling, and transfer entropy, highlighting their assumptions, advantages, and limitations. Modern end-to-end analysis pipelines are presented, with particular emphasis on Brainstorm and complementary open-source software for reproducible EEG/MEG research. Finally, we discuss emerging approaches, including time-varying connectivity, cross-frequency interactions, and network-based analyses, illustrating how noninvasive electrophysiology contributes to understanding brain organization in health and disease. The chapter provides both conceptual foundations and practical guidance for researchers and advanced students seeking to map and interpret human brain networks using EEG and MEG.",
+      "authors": [
+        "Richard Leahy",
+        "Takfarinas Medani"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "math-ph"
+      ],
+      "published": "2026-07-20T06:42:51+00:00",
+      "link": "https://arxiv.org/pdf/2607.17602v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "comprehensive overview of EEG/MEG-based brain network analysis methods",
+      "llm_evidence_cn": "全面介绍基于EEG/MEG的脑网络分析方法",
+      "llm_evidence": "全面介绍基于EEG/MEG的脑网络分析方法",
+      "canonical_evidence": "全面介绍基于EEG/MEG的脑网络分析方法",
+      "llm_tldr_en": "This chapter reviews EEG/MEG methods for brain network analysis, covering source reconstruction, connectivity, and graph analysis, providing a foundational framework for studying power spectrum and cognitive tasks.",
+      "llm_tldr_cn": "该章节系统回顾了基于脑电图和脑磁图的脑网络分析方法，包括源重建、连接性和图分析，为研究认知任务中的频谱功率和高级网络功能提供了方法论基础。",
+      "llm_tldr": "该章节系统回顾了基于脑电图和脑磁图的脑网络分析方法，包括源重建、连接性和图分析，为研究认知任务中的频谱功率和高级网络功能提供了方法论基础。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.16549v1",
+      "source": "arxiv",
+      "title": "Encoding EEG Signals to Examine Human-Like Next-Word Prediction Behaviour in Language Models",
+      "abstract": "Language models (LMs) are trained to excel at predicting the next word in the sequence given prior context, and humans also share this predictability in reading comprehension. Neuroscience research reveals that next-word predictability influences brain response, as recorded at millisecond resolution using electroencephalography (EEG). While our evidence indicates that advanced LMs achieve accuracies closely aligned with human performance at the next-word prediction task, this raises the question: Does higher prediction accuracy necessarily mean that these models adequately capture the cognitive signals associated with human reading comprehension? Here, we generate regressors for both humans and LMs based on two information measures, including top-1 prediction and surprisal, to predict event-related potential (ERP) elicited from EEG recordings which reflect different stages of cognitive processing during reading. We argue that modelling ERP patterns offers fine-grained analysis of the cognitive plausibility of various LMs during reading. Our results indicate that only surprisal potentially correlates with language-processing ERPs, especially for open-class words with high semantic content. Moreover, our findings challenge the assumption that scaling LMs with increased parameters and computational budgets will consistently lead to improved convergence with human-like linguistic processing.",
+      "authors": [
+        "Boi Mai Quach",
+        "Binh T. Nguyen",
+        "Cathal Gurrin",
+        "Graham Healy"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-17T23:11:16+00:00",
+      "link": "https://arxiv.org/pdf/2607.16549v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "EEG encoding of next-word prediction during reading comprehension",
+      "llm_evidence_cn": "使用EEG编码阅读过程中的下一词预测行为",
+      "llm_evidence": "使用EEG编码阅读过程中的下一词预测行为",
+      "canonical_evidence": "使用EEG编码阅读过程中的下一词预测行为",
+      "llm_tldr_en": "This study examines whether language models capture human-like neural signals during reading by encoding EEG responses to next-word predictability, bridging NLP and cognitive neuroscience.",
+      "llm_tldr_cn": "针对大型语言模型虽在下一词预测任务上接近人类表现，但其是否真正捕捉到人类阅读理解的神经认知信号这一问题，本研究利用脑电图（EEG）记录人类阅读时的脑电活动，并基于信息度量生成回归量来编码EEG信号，与语言模型的预测行为进行比较。结果表明，尽管模型预测准确度与人相似，但神经编码层面可能存在差异，强调仅靠行为准确度不足以评估模型对认知过程的模拟能力，为弥合计算语言学与认知神经科学提供了新途径。",
+      "llm_tldr": "针对大型语言模型虽在下一词预测任务上接近人类表现，但其是否真正捕捉到人类阅读理解的神经认知信号这一问题，本研究利用脑电图（EEG）记录人类阅读时的脑电活动，并基于信息度量生成回归量来编码EEG信号，与语言模型的预测行为进行比较。结果表明，尽管模型预测准确度与人相似，但神经编码层面可能存在差异，强调仅靠行为准确度不足以评估模型对认知过程的模拟能力，为弥合计算语言学与认知神经科学提供了新途径。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
