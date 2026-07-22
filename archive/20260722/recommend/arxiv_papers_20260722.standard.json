@@ -1,0 +1,205 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-22T20:34:32.875463+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 5,
+    "quick_skim_target": 11,
+    "quick_selected": 5
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-03-08-710406-v2",
+      "source": "biorxiv",
+      "title": "Complementary stable and dynamic prelimbic ensembles encode learned threat value underlying generalization and discrimination",
+      "abstract": "Adaptive behavior requires assigning emotional value to sensory cues and generalizing to similar stimuli. The prelimbic cortex (PL) is critical for threat expression and discrimination, yet its neuronal ensembles undergo substantial turnover over time. How stable population codes emerge despite this reorganization remains unknown. Using longitudinal calcium imaging in freely moving mice, we tracked PL activity for 30 days during auditory discriminative fear learning and retrieval. Despite substantial ensemble turnover, stable graded representations persisted in PL populations. A generalized linear model showed that learned threat value explained graded PL activity better than freezing, indicating that PL primarily encodes stimulus significance. Population similarity across stimulus presentations was highest for shock-associated and highly generalized tones, suggesting a stable population code underlying threat generalization. Stable graded neurons preserved learned threat value across sessions, whereas learning modulated the activity of dynamic frequency-selective neurons. Together, these populations enabled stable threat-value coding despite ongoing ensemble reorganization.",
+      "authors": [
+        "Normandin, M. E.",
+        "Ogallar, P. M.",
+        "Lopez, M. R.",
+        "Ramos-Alvarez, M. M.",
+        "Muzzio, I. A."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-21T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.08.710406v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "prelimbic cortex (medial prefrontal) encodes threat value critical for discrimination and generalization",
+      "llm_evidence_cn": "前边缘皮层（内侧前额叶）编码威胁价值，对辨别和泛化至关重要",
+      "llm_evidence": "前边缘皮层（内侧前额叶）编码威胁价值，对辨别和泛化至关重要",
+      "canonical_evidence": "前边缘皮层（内侧前额叶）编码威胁价值，对辨别和泛化至关重要",
+      "llm_tldr_en": "Using longitudinal calcium imaging in mice, this study shows stable population codes in prelimbic cortex represent learned threat value, enabling discriminative fear learning despite neuronal turnover.",
+      "llm_tldr_cn": "该研究针对前边缘皮层（PL，内侧前额叶的一部分）神经元集群随时间动态变化但威胁表达稳定的问题，通过小鼠纵向钙成像记录30天听觉恐惧学习过程。发现尽管集群成分更替，PL群体保持稳定的分级威胁价值表征，且能更好预测行为。这揭示了mPFC在情感价值编码和泛化辨别中的关键作用，为理解高级认知网络功能提供神经机制。",
+      "llm_tldr": "该研究针对前边缘皮层（PL，内侧前额叶的一部分）神经元集群随时间动态变化但威胁表达稳定的问题，通过小鼠纵向钙成像记录30天听觉恐惧学习过程。发现尽管集群成分更替，PL群体保持稳定的分级威胁价值表征，且能更好预测行为。这揭示了mPFC在情感价值编码和泛化辨别中的关键作用，为理解高级认知网络功能提供神经机制。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.13901v1",
+      "source": "arxiv",
+      "title": "High-Order Question Generation in a Multilingual Educational Context",
+      "abstract": "Critical thinking is a fundamental skill that helps learners move beyond simple memorization. One way to develop this skill is through high-order questioning. However, crafting such questions remains a challenge for educators, and classroom practices tend to rely on low-order questions. Large Language Models have demonstrated strong capabilities in generating high-order questions, especially when guided by prompts based on Bloom's Taxonomy. Yet, existing research has largely centered on this framework and focused only on English. This study addresses these gaps by introducing prompts grounded in two alternative frameworks: Claim-Evidence-Reasoning and Divergent Questioning within a multilingual context using Basque, Spanish, and English. Results indicate that while both an open-source and a proprietary model rather effectively generate questions in all three languages, only about half of the answerable questions are recognized by teachers as high-order. A positive finding is that the alternative frameworks produce structurally and conceptually varied questions, suggesting they could complement each other and provide viable alternatives to Bloom's Taxonomy.",
+      "authors": [
+        "Suna-Şeyma Uçar",
+        "Itziar Aldabe",
+        "Nora Aranberri",
+        "Orphée De Clercq"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-15T14:42:08+00:00",
+      "link": "https://arxiv.org/pdf/2607.13901v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Focuses on generating high-order questions to promote critical thinking, relevant to educational interventions for critical thinking skills",
+      "llm_evidence_cn": "聚焦于通过高阶问题生成促进批判性思维，与教育中培养批判性思维技能相关",
+      "llm_evidence": "聚焦于通过高阶问题生成促进批判性思维，与教育中培养批判性思维技能相关",
+      "canonical_evidence": "聚焦于通过高阶问题生成促进批判性思维，与教育中培养批判性思维技能相关",
+      "llm_tldr_en": "This study uses LLMs with prompts based on Claim-Evidence-Reasoning and Divergent Questioning frameworks to generate high-order questions in Basque, Spanish, and English, aiming to overcome the reliance on low-order questions and foster critical thinking in multilingual classrooms.",
+      "llm_tldr_cn": "该论文针对教育者难以设计高阶思维问题、课堂多停留于低阶提问的现状，探索利用大语言模型在多语言情境下生成促进批判性思维的高阶问题。研究引入基于“主张-证据-推理”和“发散性提问”框架的提示词，在巴斯克语、西班牙语和英语中测试，并对比仅用布鲁姆分类法的效果。结果表明新框架能有效生成高质量问题，为多语言教育环境下批判性思维培养提供了新途径，对科学阅读和批判性思维评估材料开发具有借鉴意义。",
+      "llm_tldr": "该论文针对教育者难以设计高阶思维问题、课堂多停留于低阶提问的现状，探索利用大语言模型在多语言情境下生成促进批判性思维的高阶问题。研究引入基于“主张-证据-推理”和“发散性提问”框架的提示词，在巴斯克语、西班牙语和英语中测试，并对比仅用布鲁姆分类法的效果。结果表明新框架能有效生成高质量问题，为多语言教育环境下批判性思维培养提供了新途径，对科学阅读和批判性思维评估材料开发具有借鉴意义。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "studies examining critical thinking disposition in the context of socio scientific issues and scientific reading",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-14-738386-v2",
+      "source": "biorxiv",
+      "title": "Region-Specific Delta and Alpha2 Relative Power Alterations in Male Adolescent Schizophrenia: Occipital Predominance in Resting-State EEG",
+      "abstract": "Resting-state electroencephalography (EEG) studies consistently report increased slow-wave activity and reduced alpha power in schizophrenia. However, the regional distribution of EEG relative power (RP) across finer frequency bands, particularly in adolescent schizophrenia, remains poorly characterized. We analyzed a publicly available resting-state EEG dataset comprising 45 male adolescents with schizophrenia (SCZ; mean age: 12.3 {+/-} 1.2 years) and 39 age- and sex-matched healthy controls (CON; mean age: 12.3 {+/-} 1.3years), recorded using 16 scalp electrodes (10-20 system). Following band-pass filtering, artefact subspace reconstruction, spline interpolation, average re-referencing and independent component analysis, RP was computed for nine frequency bands across five cortical regions (frontal, central, parietal, temporal, and occipital). Group differences were assessed using three-way repeated-measures analysis of variance (ANOVA), followed by Bonferroni false discovery rate (FDR)-corrected post-hoc pairwise comparisons using estimated marginal means (emmeans). Compared to controls, the SCZ group showed significantly higher delta RP in the frontal, parietal, and occipital regions and significantly lower alpha2 RP, dissociable from alpha1, in the central, parietal, temporal, and occipital regions (all FDR < 0.001). The occipital cortex showed the greatest increase in delta RP (|Cohens d|=0.82) and the greatest reduction in alpha2 RP (|d|=0.73), with moderate-to-large effect sizes. Topographic maps demonstrated widespread delta enhancement and attenuated occipito-parietal alpha2 activity in the SCZ group. These findings demonstrate region-specific alterations in resting-state EEG relative power in adolescent schizophrenia, particularly within the occipital cortex, and suggest that regional RP may serve as a promising neurophysiological feature for early-onset schizophrenia.\n\nHighlightsO_LIResting-state EEG relative power was analyzed in adolescent schizophrenia.\nC_LIO_LIDelta relative power increased (occipital > parietal > frontal).\nC_LIO_LIAlpha2, but not alpha1, relative power decreased (occipital > parietal > temporal > central).\nC_LIO_LIOccipital cortex showed the largest EEG spectral abnormalities.\nC_LIO_LINine-band analysis improved regional spectral characterization.\nC_LI",
+      "authors": [
+        "Hazra, S.",
+        "Chakrabarti, N."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-22T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.14.738386v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Region-specific EEG relative power analysis in delta and alpha2 bands",
+      "llm_evidence_cn": "区域特异性脑电图相对功率分析，涉及delta和alpha2频段",
+      "llm_evidence": "区域特异性脑电图相对功率分析，涉及delta和alpha2频段",
+      "canonical_evidence": "区域特异性脑电图相对功率分析，涉及delta和alpha2频段",
+      "llm_tldr_en": "This study analyzed resting-state EEG relative power in male adolescent schizophrenia, finding occipital predominance of delta and alpha2 alterations, demonstrating EEG relative power methodology for cognitive contexts.",
+      "llm_tldr_cn": "本研究针对青少年精神分裂症脑电图相对功率（RP）区域分布特征不清的问题，分析了45名患者和39名对照的静息态EEG。通过计算各频段相对功率并比较组间差异，发现患者枕区delta RP升高、alpha2 RP降低，区域特异性显著。该研究展示了EEG相对功率谱分析在认知相关疾病中的应用价值，为未来认知任务研究提供了方法参考。",
+      "llm_tldr": "本研究针对青少年精神分裂症脑电图相对功率（RP）区域分布特征不清的问题，分析了45名患者和39名对照的静息态EEG。通过计算各频段相对功率并比较组间差异，发现患者枕区delta RP升高、alpha2 RP降低，区域特异性显著。该研究展示了EEG相对功率谱分析在认知相关疾病中的应用价值，为未来认知任务研究提供了方法参考。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-20-739696-v1",
+      "source": "biorxiv",
+      "title": "Hippocampal theta distinguishes between memory-guided and exploratory saccades in humans",
+      "abstract": "Memory shapes how we explore the visual world, but the neural mechanisms linking mnemonic processes to eye movements during naturalistic viewing are not well understood. Theta-band oscillatory activity in the hippocampus is time-locked with eye movements in primates, suggesting a putative mechanism for coordinating mnemonic processing and oculomotor behaviour. Yet, it remains unknown whether this coupling generalises to episodic memory-guided viewing in humans, whether slow (3 to 6 Hz) and fast (6 to 10 Hz) theta bands play dissociable functions, and whether this coupling is sensitive to the direction of upcoming eye movements. Here, we used intracranial EEG and eye-tracking data from 11 neurosurgical patients of either sex (Keles et al., 2024) to address these questions. Using fixation-locked analyses, we found that hippocampal theta dynamics differentiate memory-guided from memory-independent fixations of episodically encoded naturalistic scenes (i.e., movies) through power and coherence mechanisms that are both temporally and spectrally dissociable. First, immediately after fixations (~0 to 250 ms), slow-theta power was more strongly suppressed during memory-guided trials (i.e., true positive, TP) than correct memory-independent trials (i.e., true negative, TN). Second, in the period around fixations (-80 to 60 ms), theta phase coherence increased independent of power during TP vs TN trials. This increase in coherence was most pronounced for contraversive relative to ipsiversive fixations, consistent with direction-sensitive hippocampal oculomotor coordination during memory-guided viewing. Together, these findings suggest that hippocampal theta plays dissociable, time-locked roles in memory-guided fixations during naturalistic visual retrieval, supporting an ecologically relevant role for the hippocampus in coordinating memory and active visual behaviour.",
+      "authors": [
+        "Castelblanco Riveros, C. A.",
+        "Angeli, P. A.",
+        "van der Meer, M. A.",
+        "Bujarski, K.",
+        "Robertson, C. E."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-21T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.20.739696v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Examines theta-band oscillatory activity during memory-guided saccades using intracranial EEG, relevant to spectral power in cognitive tasks",
+      "llm_evidence_cn": "通过颅内脑电图研究记忆引导眼跳中的θ频段振荡活动，与认知任务中脑电图谱功率相关",
+      "llm_evidence": "通过颅内脑电图研究记忆引导眼跳中的θ频段振荡活动，与认知任务中脑电图谱功率相关",
+      "canonical_evidence": "通过颅内脑电图研究记忆引导眼跳中的θ频段振荡活动，与认知任务中脑电图谱功率相关",
+      "llm_tldr_en": "This study uses intracranial EEG to show that hippocampal theta power differentiates memory-guided from exploratory saccades, implicating theta oscillations in mnemonic-oculomotor coupling. It contributes to understanding spectral EEG markers of cognitive processes.",
+      "llm_tldr_cn": "该研究针对记忆引导眼跳与探索性眼跳的神经机制差异，利用颅内脑电图记录11名神经外科患者的海马神经活动，分析θ频段（慢θ与快θ）的振荡功率变化。结果发现海马θ功率能够区分两种眼跳类型，揭示了记忆与眼球运动协调的神经振荡机制。该成果为理解认知任务中EEG谱功率的功能意义提供了新证据，拓展了EEG谱分析在认知神经科学中的应用。",
+      "llm_tldr": "该研究针对记忆引导眼跳与探索性眼跳的神经机制差异，利用颅内脑电图记录11名神经外科患者的海马神经活动，分析θ频段（慢θ与快θ）的振荡功率变化。结果发现海马θ功率能够区分两种眼跳类型，揭示了记忆与眼球运动协调的神经振荡机制。该成果为理解认知任务中EEG谱功率的功能意义提供了新证据，拓展了EEG谱分析在认知神经科学中的应用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-21-739808-v1",
+      "source": "biorxiv",
+      "title": "Linguistic structure and probability are jointly encoded in high gamma power",
+      "abstract": "During speech comprehension, the brain dynamically infers a hierarchy of increasingly abstract representations from the sensory input. An important step in the inferential hierarchy is the combination of words to form phrases and sentences. Whether this process is driven primarily by statistical patterns in the linguistic input, or by a mechanism that combines words into hierarchical representations, is a subject of considerable debate that has regained importance with the arrival of large language models. This study investigates whether local cortical activity (high gamma power; 70-150 Hz) from intracranial recordings is jointly modulated by lexical probability and syntactic structure; and whether lexical probability affects the inference of syntactic structure. To this end, an open dataset of electrocorticography recordings is analyzed with multivariate temporal response functions and a model comparison approach. The results indicate that high gamma power is sensitive to multi-word estimates of constituency structure and lexical probability estimates, both in isolation and jointly. The temporal response functions suggest that syntactic structure building depends on interregional communication between regions connected through dorsal- and ventral streams. Furthermore, the study provides evidence that bottom-up syntactic information is less likely to be encoded by neural populations that strongly code for lexical probability measures, while top-down syntactic information shares neural resources with lexical uncertainty. We suggest that lexical uncertainty modulates the weighting of anticipatory structural information. With this, the current study supports models that suggest that cues are leveraged flexibly in a feed-forward and feed-back fashion during speech comprehension.",
+      "authors": [
+        "Slaats, S.",
+        "Hervais-Adelman, A."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-22T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.21.739808v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Uses high gamma power (spectral power) analysis during speech comprehension cognitive task",
+      "llm_evidence_cn": "使用高伽马功率(频谱功率)分析言语理解认知任务",
+      "llm_evidence": "使用高伽马功率(频谱功率)分析言语理解认知任务",
+      "canonical_evidence": "使用高伽马功率(频谱功率)分析言语理解认知任务",
+      "llm_tldr_en": "Investigates whether intracranial high gamma power is modulated by lexical probability and syntactic structure during speech comprehension, finding joint encoding.",
+      "llm_tldr_cn": "针对大脑如何在言语理解中整合统计与结构信息这一争论，本文利用颅内记录的高伽马功率（70-150 Hz）作为神经活动指标，考察词汇概率与句法结构的联合效应。研究显示，语言概率和句法结构共同调制高伽马活动，表明大脑在词语组合时同时依赖统计学习和层级构建，为语言认知的神经编码机制提供新见解。",
+      "llm_tldr": "针对大脑如何在言语理解中整合统计与结构信息这一争论，本文利用颅内记录的高伽马功率（70-150 Hz）作为神经活动指标，考察词汇概率与句法结构的联合效应。研究显示，语言概率和句法结构共同调制高伽马活动，表明大脑在词语组合时同时依赖统计学习和层级构建，为语言认知的神经编码机制提供新见解。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

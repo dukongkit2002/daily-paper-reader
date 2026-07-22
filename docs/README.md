@@ -6,28 +6,38 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-21
-- 运行时间：2026-07-21 20:53:00 UTC
+- 最新运行日期：2026-07-22
+- 运行时间：2026-07-22 20:39:07 UTC
 - 运行状态：成功
-- 本次总论文数：2
-- 精读区：1
-- 速读区：1
+- 本次总论文数：5
+- 精读区：0
+- 速读区：5
 
 ### 今日简报（AI）
-今天精读了一篇关于非侵入电生理技术探测脑网络的方法综述，并速览了用EEG信号检验大语言模型类人预测能力的研究。
-最值得关注的是高精度脑网络连接分析方法及其临床转化前景，以及语言模型在神经信号编码中展现出的脑式预测模式。
-普通读者可从这篇综述了解脑网络研究全貌，再结合EEG-LLM的跨界实验，寻找认知科学与AI的融合灵感。
-- 详情：[/202607/21/README](/202607/21/README)
+今日涉猎神经机制与教育AI，速读威胁学习的皮层双编码、多语言高阶问题生成及青少年精神分裂脑电标记三篇研究。  
+最值得关注：前边缘皮层稳定/动态集群分工编码威胁值的分化策略（7.0分），为恐惧泛化与辨别提供了具体环路解释；另见精神分裂枕叶δ与α2相对功率异常。  
+建议普通读者聚焦“动态编码如何驱动安全感缺失”，可延伸阅读威胁学习模型在焦虑自助工具中的应用进展。
+- 详情：[/202607/22/README](/202607/22/README)
 
 ### 精读区论文标签
-1. [Exploring Brain Networks Using Noninvasive Electrophysiological Measurements: Methods and Applications](/202607/21/2607.17602v1-exploring-brain-networks-using-noninvasive-electrophysiological-measurements-methods-and-applications)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：全面介绍基于EEG/MEG的脑网络分析方法
+- 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Encoding EEG Signals to Examine Human-Like Next-Word Prediction Behaviour in Language Models](/202607/21/2607.16549v1-encoding-eeg-signals-to-examine-human-like-next-word-prediction-behaviour-in-language-models)  
+1. [Complementary stable and dynamic prelimbic ensembles encode learned threat value underlying generalization and discrimination](/202607/22/biorxiv-10-64898-2026-03-08-710406-v2-complementary-stable-and-dynamic-prelimbic-ensembles-encode-learned-threat-value-underlying-generalization-and-discrimination)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：前边缘皮层（内侧前额叶）编码威胁价值，对辨别和泛化至关重要
+2. [High-Order Question Generation in a Multilingual Educational Context](/202607/22/2607.13901v1-high-order-question-generation-in-a-multilingual-educational-context)  
    标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：使用EEG编码阅读过程中的下一词预测行为
+   evidence：聚焦于通过高阶问题生成促进批判性思维，与教育中培养批判性思维技能相关
+3. [Region-Specific Delta and Alpha2 Relative Power Alterations in Male Adolescent Schizophrenia: Occipital Predominance in Resting-State EEG](/202607/22/biorxiv-10-64898-2026-07-14-738386-v2-region-specific-delta-and-alpha2-relative-power-alterations-in-male-adolescent-schizophrenia-occipital-predominance-in-resting-state-eeg)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：区域特异性脑电图相对功率分析，涉及delta和alpha2频段
+4. [Hippocampal theta distinguishes between memory-guided and exploratory saccades in humans](/202607/22/biorxiv-10-64898-2026-07-20-739696-v1-hippocampal-theta-distinguishes-between-memory-guided-and-exploratory-saccades-in-humans)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：通过颅内脑电图研究记忆引导眼跳中的θ频段振荡活动，与认知任务中脑电图谱功率相关
+5. [Linguistic structure and probability are jointly encoded in high gamma power](/202607/22/biorxiv-10-64898-2026-07-21-739808-v1-linguistic-structure-and-probability-are-jointly-encoded-in-high-gamma-power)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：使用高伽马功率(频谱功率)分析言语理解认知任务
 
 
 <div class="dpr-home-promo-card">

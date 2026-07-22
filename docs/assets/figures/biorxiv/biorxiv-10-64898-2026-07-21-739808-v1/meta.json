@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "extractor": "papercropper",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-001.webp",
+      "caption": "",
+      "page": 0,
+      "index": 1,
+      "width": 959,
+      "height": 375,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-002.webp",
+      "caption": "",
+      "page": 0,
+      "index": 2,
+      "width": 1188,
+      "height": 2031,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-003.webp",
+      "caption": "",
+      "page": 0,
+      "index": 3,
+      "width": 1699,
+      "height": 869,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-004.webp",
+      "caption": "",
+      "page": 0,
+      "index": 4,
+      "width": 1681,
+      "height": 829,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-005.webp",
+      "caption": "",
+      "page": 0,
+      "index": 5,
+      "width": 1677,
+      "height": 802,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-006.webp",
+      "caption": "",
+      "page": 0,
+      "index": 6,
+      "width": 1364,
+      "height": 2105,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-007.webp",
+      "caption": "",
+      "page": 0,
+      "index": 7,
+      "width": 1225,
+      "height": 675,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-008.webp",
+      "caption": "",
+      "page": 0,
+      "index": 8,
+      "width": 1665,
+      "height": 544,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-009.webp",
+      "caption": "",
+      "page": 0,
+      "index": 9,
+      "width": 1222,
+      "height": 2645,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-010.webp",
+      "caption": "",
+      "page": 0,
+      "index": 10,
+      "width": 1620,
+      "height": 812,
+      "label": "Figure"
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-07-21-739808-v1/fig-011.webp",
+      "caption": "",
+      "page": 0,
+      "index": 11,
+      "width": 1676,
+      "height": 1772,
+      "label": "Figure"
+    }
+  ]
+}
