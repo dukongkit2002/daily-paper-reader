@@ -6,22 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-23
-- 运行时间：2026-07-23 21:17:49 UTC
+- 最新运行日期：2026-07-24
+- 运行时间：2026-07-24 21:45:46 UTC
 - 运行状态：成功
-- 本次总论文数：0
+- 本次总论文数：1
 - 精读区：0
-- 速读区：0
+- 速读区：1
 
 ### 今日简报（AI）
-> 今日无新推荐，系统未产出可展示论文。
-- 详情：[/202607/23/README](/202607/23/README)
+今天速读了一篇关于脑电与叙事理解的研究。
+研究发现，转换相关电位可作为连续脑电中叙事理解的可靠标志。
+对认知神经与语言交叉领域感兴趣的读者，可以跟进这种基于自然刺激的连续EEG分析新方法。
+- 详情：[/202607/24/README](/202607/24/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Transition-Related Potentials as Markers of Narrative Comprehension in Continuous EEG](/202607/24/2607.20720v1-transition-related-potentials-as-markers-of-narrative-comprehension-in-continuous-eeg)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：EEG叙事理解标记，可用于研究科学文本的阅读理解
 
 
 <div class="dpr-home-promo-card">

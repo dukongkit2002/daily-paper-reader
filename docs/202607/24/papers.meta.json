@@ -1,0 +1,24 @@
+{
+  "label": "2026-07-24",
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T21:45:54",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202607/24/2607.20720v1-transition-related-potentials-as-markers-of-narrative-comprehension-in-continuous-eeg",
+      "section": "quick",
+      "title_en": "Transition-Related Potentials as Markers of Narrative Comprehension in Continuous EEG",
+      "authors": "Bálint Csanády, Péter Vedres, Kristóf Zsolt Makó, Orsolya Papp-Zipernovszky, Márta Volosin, Dávid Apagyi, András Lukács, András Bálint Kovács, Zoltan Nadasdy",
+      "date": "2026-07-22",
+      "pdf": "https://arxiv.org/pdf/2607.20720v1",
+      "score": "6.0",
+      "evidence": "EEG叙事理解标记，可用于研究科学文本的阅读理解",
+      "tldr": "传统EEG研究使用事件相关电位需重复试验，难以探究自然叙事理解。本研究提出从连续EEG中提取电影剪切产生的过渡相关电位（TRPs），比较连贯与打乱影片发现叙事上下文系统调节TRPs，并训练深度网络直接从连续记录检测剪切特征，该网络泛化且重现上下文效应。结果证实叙事理解在EEG中留有标记，为自然刺激下脑响应分析提供半自动化框架，可拓展至其他连续刺激。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Harnessing the potential of electroencephalography (EEG) for brain research is fundamentally limited by intrinsic noise and the diffuse projection of brain-generated activity over the scalp. The standard event-related potential (ERP) paradigm addresses this limitation by relying on repeated independent trials, albeit at the cost of moving away from naturalistic experimental conditions. As a more naturalistic alternative, we collected continuous EEG while participants watched short films and extracted potentials aligned to sharp cinematic transitions (cuts). We demonstrate that such transition-related potentials (TRPs) exhibit canonical ERP-like temporal structure associated with significant information processing. By comparing coherent films with scene-scrambled versions containing matched post-cut sensory input, we find that these responses are systematically shaped by narrative context. We then show that the cut-related EEG signature can be recovered directly from group-averaged continuous recordings with a compact deep neural network (DNN). The detector generalized across films and subject groups, and the resulting TRPs reproduced the main context-dependent effects observed for manually annotated cuts. These results indicate that narrative context leaves a measurable signature in EEG responses, that this signature can be detected directly in continuous recordings, and that such detections provide a semi-automated framework for analyzing how viewers process and understand film narratives. We propose that the method outlined here can be adapted to parse EEG responses to other forms of continuous stimulation, providing a general tool for probing experimental conditions that are closer to natural human experience.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
