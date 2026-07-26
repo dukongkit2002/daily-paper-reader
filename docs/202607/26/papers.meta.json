@@ -1,0 +1,69 @@
+{
+  "label": "2026-07-26",
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T21:12:11",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202607/26/biorxiv-10-64898-2026-07-16-739039-v1-brain-structure-function-association-as-a-compensatory-factor-in-cognitive-aging",
+      "section": "deep",
+      "title_en": "Brain Structure-Function Association as a Compensatory Factor in Cognitive Aging",
+      "authors": "Lung, T.-C., Hoagey, D., Rodrigue, K., Rugg, M., Kennedy, K. M.",
+      "date": "2026-07-21",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.16.739039v1.full.pdf",
+      "score": "9.0",
+      "evidence": "默认网络（含mPFC）变化补偿多需求网络衰退以维持老年执行功能",
+      "tldr": "随着年龄增长，多需求网络（MDN）的白质结构连接和默认模式网络（DMN）的任务相关功能活动出现衰退，但大脑可能通过功能补偿机制维持认知表现。本研究假设DMN的BOLD调制是对MDN结构损伤的代偿反应。对160名20-94岁成年人的功能引导纤维追踪分析显示，MDN的U形束FA随年龄下降，而额枕下束（IFOF）的FA与BOLD调制显著相关，且额岛束的FA、年龄和正/负BOLD调制交互影响抑制能力。这一结果表明，DMN的功能活动增强可能是对MDN微结构下降的适应性反应，为延缓认知衰退提供了潜在干预靶点。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Functional activity in response to increasing task difficulty (BOLD-modulation) in regions of the default mode network (DMN/task-negative) and multiple demand network (MDN/task-positive) shows age-related decline, which is associated with reduced cognitive performance. While BOLD-modulation in the DMN begins to decline in middle-age, white matter structural connectivity declines earlier in MDN regions. We conjecture that to maintain executive function (EF) performance with aging, altered BOLD-modulation in DMN during task engagement serves as a compensatory reaction to structural decline in MDN. To test this possibility, functionally-guided tractography was applied in 160 healthy adults aged 20-94 to locate white matter connecting MDN and/or DMN regions that were active during a distance judgement paradigm. Specifically, analyses examined the effects of 1) age on white matter tracts (fractional anisotropy; FA); 2) structure-function association between FA and BOLD-modulation; and 3) age, positive/negative BOLD-modulation, and quadratic FA on EF. Age-related decline was found in one MDN tract (U-shaped tract) and a significant structure-function association was found in inferior fronto-occipital fasciculus (IFOF). Additionally, an interaction effect between quadratic frontal-insular (U-shaped) tract FA, age, and positive/negative BOLD-modulation was found for inhibition performance, supporting the hypothesis of compensatory functional activity effects on executive function for older adults with altered white matter microstructure.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/26/2607.21402v1-msbram-a-multi-scale-self-supervised-brain-foundation-model-for-hierarchical-eeg-dynamics-learning",
+      "section": "quick",
+      "title_en": "MSBraM: A Multi-scale Self-supervised Brain Foundation Model for Hierarchical EEG Dynamics Learning",
+      "authors": "Tao Zhou, Jing Han, Lingyu Shu, Zixing Zhang",
+      "date": "2026-07-23",
+      "pdf": "https://arxiv.org/pdf/2607.21402v1",
+      "score": "7.0",
+      "evidence": "用于EEG动态学习的自监督大脑基础模型，适用于认知EEG分析",
+      "tldr": "脑电图分析中，现有自监督基础模型难以同时捕获局部神经模式和长程依赖，制约了跨尺度表示学习和泛化能力。MSBraM提出一种多尺度自监督脑基础模型，通过两阶段预训练：先由多尺度神经分词器将原始信号离散化为不同时间分辨率的语义码，再采用课程式多尺度掩码预测逐步整合细粒度局部信息与全局上下文。在超2400小时EEG数据上预训练，并在12个数据集10个下游任务中取得最优性能，超越现有先进模型。该工作表明，显式建模多尺度时间动态是构建强泛化EEG基础模型的关键。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Self-supervised foundation models have recently shown strong potential for electroencephalogram (EEG)-based analysis. However, existing approaches struggle to capture the inherently multi-scale temporal structure of EEG signals, where local neural patterns and long-range dependencies jointly encode task-relevant information. This limitation hampers cross-scale representation learning and generalization across diverse downstream tasks. To address this challenge, we propose MSBraM, a Multi-Scale self-supervised Brain foundation Model designed to learn hierarchical EEG representations. MSBraM follows a two-stage pretraining framework. First, a multi-scale neural tokenizer discretizes raw EEG signals into semantic codes at different temporal resolutions via vector-quantized reconstruction. Second, the model is pretrained to predict masked codes using a curriculum multi-scale masking strategy, progressively integrating fine-grained local patterns with global temporal context. We pretrain MSBraM on over 2,400 hours of EEG data and evaluate it across 10 downstream tasks on 12 public datasets. Extensive experiments show that MSBraM achieves superior performance on other state-of-the-art pretrained models, demonstrating strong generalization and transferability. These results indicate that explicitly modeling multi-scale temporal dynamics is critical for effective EEG foundation models.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/26/biorxiv-10-64898-2026-07-15-738746-v1-estimating-trial-wise-modulation-of-functional-connectivity-using-event-related-fmri",
+      "section": "quick",
+      "title_en": "Estimating trial-wise modulation of functional connectivity using event-related fMRI",
+      "authors": "Hwang, K., Stokes, S. E., Leach, S. C., Jiang, J.",
+      "date": "2026-07-21",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.15.738746v1.full.pdf",
+      "score": "7.0",
+      "evidence": "研究认知任务期间功能连接变化的方法",
+      "tldr": "事件相关fMRI常用于将试次行为变量与脑活动相联系，但缺少类似方法研究其如何调制功能连接。本文提出beta-PPI（beta-series psychophysiological interaction）方法，利用单试次响应估计量化试次变量对功能连接的调制，适用于事件相关设计。模拟评估显示，beta-PPI能敏感检测真实效应且参数恢复良好，在低信噪比下统计效力优于广义PPI；实证数据进一步验证了其时间特异性，不同认知变量在对应试次时期选择性调制功能连接。该方法为基于模型的fMRI功能连接分析提供了灵活框架，并可能促进连接、激活与表征分析的整合。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Understanding the neural basis of human cognition requires measuring not only localized brain activity but also how functional interactions between brain regions change in response to different cognitive demands. Event-related fMRI is an efficient design for linking trial-wise behavioral and computational variables to brain activity, but comparable methods for examining their effects on functional connectivity remain limited. Here, we develop beta-PPI (beta-series psychophysiological interaction), a method that leverages single-trial response estimates from even-related fMRI to quantify how trial-wise variables modulate functional connectivity. This task-based functional connectivity method provides a flexible approach for studying functional connectivity for event-related fMRI designs. We evaluated beta-PPI using comprehensive simulations across several experimental conditions and signal qualities. Beta-PPI can sensitively detect ground-truth effects and exhibited good parameter recovery. Compared with generalized psychophysiological interaction, beta-PPI achieved comparable performance across most conditions while demonstrating improved statistical power under lower signal-to-noise conditions. We further validated beta-PPI using empirical event-related fMRI data. Distinct trial-wise cognitive variables selectively modulated functional connectivity during their corresponding trial epochs, demonstrating the temporal specificity and flexibility of the approach. By testing how trial-wise variables modulate functional connectivity, beta-PPI extends task-based connectivity analysis to model-based fMRI and provides a common single-trial framework that could facilitate the integration of connectivity, activation, and representational analyses in event38 related fMRI.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/26/2607.18321v1-decoding-eeg-signals-to-explore-next-word-predictability-in-the-human-brain",
+      "section": "quick",
+      "title_en": "Decoding EEG Signals to Explore Next-Word Predictability in the Human Brain",
+      "authors": "Boi Mai Quach, Binh T. Nguyen, Cathal Gurrin, Graham Healy",
+      "date": "2026-07-17",
+      "pdf": "https://arxiv.org/pdf/2607.18321v1",
+      "score": "6.0",
+      "evidence": "阅读理解中下一个词可预测性的脑电解码",
+      "tldr": "阅读过程中，大脑如何整合自上而下的预测与自下而上的语言结构尚不完全清楚，尤其是不同词汇类别对预测性神经反应的影响。本研究利用EEG记录N400成分，结合解码技术考察高、低可预测性在不同词类上的效应。结果显示，内容词的N400预测效应显著大于功能词，其中动词的效应强于名词，但名词携带更独特的预测信息。研究证明解码技术比传统ERP能更精细地表征认知过程动态，为语言理解神经机制提供了新见解。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Humans invented reading and have passed down this complex skill across generations through language. This study provides empirical evidence of the neural mechanisms underlying bottom-up (related to high-order linguistic structure) and top-down (related to next-word predictability) processes, which interact to guide comprehension during reading. While previous studies have focused on either the N400 effects of predictability or lexical categories, research on how predictability influences N400 responses across different lexical categories is limited, mainly due to constraints in publicly available datasets. Here, we examine how predictability influences brain responses, recorded at millisecond resolution using electroencephalography (EEG), with a focus on the N400 time window (300-500 ms post-stimulus) across different lexical and grammatical categories. Our results indicate that significant differences in N400 responses between high and low cloze probability levels were more pronounced for content words than function words. Among the two primary content categories, verbs exhibited greater N400 differences than nouns, while nouns carried more distinct information about their predictability than verbs. Moreover, we demonstrate that the decoding technique is more effective than the event-related potential (ERP) traditional analysis in capturing more detailed and distinct representations of cognitive processes over time.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

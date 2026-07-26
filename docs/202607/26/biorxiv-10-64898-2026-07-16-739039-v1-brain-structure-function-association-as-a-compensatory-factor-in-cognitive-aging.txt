@@ -1,0 +1,1634 @@
+Title: Brain Structure-Function Association as a Compensatory Factor in Cognitive Aging
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.16.739039v1.full.pdf
+
+Number of Pages: 41
+
+Markdown Content:
+1
+
+Running title: Age-related Structure-function Compensation 1
+
+2
+
+# Brain Structure-Function Association as a Compensatory Factor in Cognitive 3
+
+# Aging 4
+
+5
+
+Tzu-Chen Lung a, David A. Hoagey b, Karen M. Rodrigue a, Michael D. Rugg b, *Kristen M. Kennedy a
+
+6
+
+> a
+
+Center for Vital Longevity; Department of Psychology, School of Behavioral and Brain Sciences, The 7
+
+University of Texas at Dallas, Dallas, TX, 75235 USA 8
+
+> b
+
+Mallinckrodt Institute of Radiology, Washington University in St. Louis, St. Louis, MO 63110 USA 9
+
+*Corresponding author: Kristen.kennedy1@utdallas.edu; Telephone: 972-883-3743 10 
+
+11 
+
+ABSTRACT 12 
+
+Functional activity in response to increasing task difficulty (BOLD-modulation) in regions of the default mode 13 
+
+network (DMN/task-negative) and multiple demand network (MDN/task-positive) shows age-related decline, 14 
+
+which is associated with reduced cognitive performance. While BOLD-modulation in the DMN begins to decline 15 
+
+in middle-age, white matter structural connectivity declines earlier in MDN regions. We conjecture that to 16 
+
+maintain executive function (EF) performance with aging, altered BOLD-modulation in DMN during task 17 
+
+engagement serves as a compensatory reaction to structural decline in MDN. To test this possibility, 18 
+
+functionally-guided tractography was applied in 160 healthy adults aged 20-94 to locate white matter 19 
+
+connecting MDN and/or DMN regions that were active during a distance judgement paradigm. Specifically, 20 
+
+analyses examined the effects of 1) age on white matter tracts (fractional anisotropy; FA); 2) structure-function 21 
+
+association between FA and BOLD-modulation; and 3) age, positive/negative BOLD-modulation, and quadratic 22 
+
+FA on EF. Age-related decline was found in one MDN tract (U-shaped tract) and a significant structure-function 23 
+
+association was found in inferior fronto-occipital fasciculus (IFOF). Additionally, an interaction effect between 24 
+
+quadratic frontal-insular (U-shaped) tract FA, age, and positive/negative BOLD-modulation was found for 25 
+
+inhibition performance, supporting the hypothesis of compensatory functional activity effects on executive 26 
+
+function for older adults with altered white matter microstructure. 27 
+
+28 
+
+Keywords : aging, BOLD modulation, compensation, diffusion tractography, executive function 29 
+
+30 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+2
+
+1. INTRODUCTION 31 
+
+Age-related decline of structural integrity and functional activity in the brain contributes to declines in 32 
+
+working memory and executive functions (Brown et al., 2019; Hakun et al., 2015; Webb et al., 2019, 2020; Zhu 33 
+
+et al., 2015). Functional neuroimaging studies have established that two opposing largescale, intrinsic brain 34 
+
+networks contribute to higher-order cognitive functions such as executive functions and working memory. The 35 
+
+multiple demand network (MDN) comprises brain regions that demonstrate task-related positive blood 36 
+
+oxygenation-level dependent (BOLD) activity, which increases as task difficulty increases. In contrast, the 37 
+
+default mode network (DMN) demonstrates task-related negative BOLD activity, which becomes more 38 
+
+negative-going as task difficulty increases (Grady et al., 2010). Across the adult lifespan, BOLD modulation to 39 
+
+task difficulty weakens with older age in both networks and has been associated with decreased working 40 
+
+memory (Kennedy et al., 2017; Rieck et al., 2017). The joint contribution (or coupling) of positive BOLD 41 
+
+modulation (PosMod) and negative BOLD modulation (NegMod) has been linked to better cognitive control 42 
+
+(Spreng et al., 2010; Spreng et al., 2016; Turner & Spreng, 2015), and higher fluid intelligence (Rieck et al., 43 
+
+2017). 44 
+
+Although age-related decreases in PosMod and NegMod have been well studied, albeit mainly 45 
+
+independently, the mechanism underlying the linkage of functional dynamics in DMN and MDN with advanced 46 
+
+aging is still unclear, as are its effects on cognition across the adult lifespan. One crucial factor affecting 47 
+
+functional dynamics is structural integrity of the brain (Warbrick et al., 2017). Accumulating evidence has linked 48 
+
+age-related decline of white matter (WM) structural connectivity (fractional anisotropy, FA) to task-related 49 
+
+BOLD activity (Brown et al., 2019; Hakun et al., 2015; Webb et al., 2019, 2020; Zhu et al., 2015). In regions of 50 
+
+the MDN, some studies have reported that age-related decline in FA is accompanied by “over-recruitment” of 51 
+
+BOLD activity in older relative to younger adults during task performance (Burzynska, Garrett, Preuschhof, 52 
+
+Nagel, Li, Backman, et al., 2013; Zhu et al., 2015). Longitudinal findings confirm this pattern, in that reduction 53 
+
+of FA in the anterior corpus callosum over three years was associated with increased BOLD activity in the 54 
+
+ventral lateral prefrontal cortex (Hakun et al., 2015). These results suggest a close association between 55 
+
+regions of functional activation and the integrity of the WM fibers connecting them. Likewise, age-related 56 
+
+reductions in FA of tracts inter-connecting DMN regions were associated with less DMN deactivation. Yet, 57 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+3
+
+most findings demonstrating a relationship between “functional over-recruitment” and WM decline link it to 58 
+
+worse behavioral performance (Brown et al., 2015; Brown et al., 2019; Hakun et al., 2015; Zhu et al., 2015). 59 
+
+Whether this cross-modality structure-function association is merely a result of structural degeneration or a 60 
+
+compensatory mechanism to offset declining cognition is therefore unclear. 61 
+
+Considering that brain activation is more dynamic than brain structure, it is appealing to hypothesize that 62 
+
+activation might dynamically change to compensate for degraded brain structure (Dasalaar et al., 2013; Davis 63 
+
+et al., 2008). The notion of compensatory activation is not new (Cabeza, 2002; Grady, 2012; Reuter-Lorenz et 64 
+
+al., 2000); rather, it is an influential theoretical concept in the cognitive neuroscience of aging, despite arguably 65 
+
+insufficient direct empirical validation. To clarify the definition of “compensation” and distinguish it from 66 
+
+previous conceptualizations, here we consider “structure-function compensation”, a process that, compared to 67 
+
+its absence, results in significantly better cognitive outcomes in older adults. For example, increasing BOLD 68 
+
+modulation would be associated with better cognitive scores for those with age-related degenerated WM tracts 69 
+
+should that modulation be compensatory in nature. 70 
+
+One factor must be considered before further interpretation of the effect of structure-function compensation 71 
+
+on cognition: degradation of the structure (e.g., white matter) and the function (e.g., BOLD) of the same brain 72 
+
+network does not necessarily occur simultaneously. Notably, structural connectivity between DMN areas 73 
+
+evidences age-related declines at a slower (cross-sectional) pace than does structural connectivity in the 74 
+
+multiple-demand network (Figley et al., 2015; Hoagey et al., 2019), whereas age-related decline in functional 75 
+
+activity occurs earlier in the lifespan in the DMN than the MDN (Park et al., 2010; Park & Friston, 2013; Rieck 76 
+
+et al., 2017). These findings are seemingly inconsistent with the previous directional assumption of “ loss of 77 
+
+structural integrity, loss of function” in the DMN (Andrews-Hanna et al., 2019). Therefore, it is worth exploring 78 
+
+whether the decline of functional activity in DMN in middle-aged adults is associated with degeneration of WM 79 
+
+in the MDN. In other words, exploring the structure-function association between NegMod and FA of MDN-80 
+
+related WM tracts. 81 
+
+To better examine a compensation effect within and across networks, structural and functional data must 82 
+
+be acquired separately from each network. While separating BOLD signals according to different brain 83 
+
+networks is common, locating white matter tracts that connect the regions belonging to a specific brain network 84 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+4
+
+is not. Studies using functionally-guided tractography (which locates WM tracts based on functional regions of 85 
+
+interest (ROIs), nodes in functional networks, or clusters demonstrating BOLD activation maxima) have the 86 
+
+advantage of focusing on tracts relevant to a “single network,” obviating potential overlap with other networks. 87 
+
+Using this method, robust within-network structure-function associations have been reported in DMN and MDN 88 
+
+(Brown et al., 2015; Brown et al., 2018; Brown et al., 2019), while studies applying anatomical atlases in 89 
+
+tractography have reported inconsistent results (Webb et al., 2019, 2020). The integrity of the tracts connecting 90 
+
+functional ROIs of interest might, therefore, be more sensitive to the functional activity adjacent to them (Gazes 91 
+
+et al., 2020; Preti et al., 2014; Reid et al., 2017; Staempfli et al., 2008). 92 
+
+Thus far, no study has examined structure-function compensation effects between the DMN and MDN and 93 
+
+cognitive function. Therefore, the current study aims to test this account of compensation. We hypothesize that 94 
+
+increased greater BOLD signal in response to increases in task difficulty is associated with degraded white 95 
+
+matter integrity within the MDN, but is age-dependent (e.g., for middle-aged and older adults) and associated 96 
+
+with better cognitive performance. To test these predictions, functionally-guided tractography was employed to 97 
+
+locate structural connections between regions showing age-related BOLD modulation (see Rieck et al., 2017). 98 
+
+We tested our hypotheses by (1) locating WM tracts connecting to a major hub in each network (insula for 99 
+
+PosMod and precuneus for NegMod) and examining the tracts for age-related differences in microstructure; (2) 100 
+
+for the tracts identified, testing whether there are age-related structure-function associations within and across 101 
+
+the two networks; (3) examining whether and how age-related structure-function associations are associated 102 
+
+with a measure of executive function. Three possible associations would qualify as a compensatory effect: 103 
+
+within-network across modality compensation (MDN-sourced BOLD and FA; DMN BOLD and FA), between-104 
+
+network across modality compensation (MDN BOLD and DMN FA; DMN BOLD and MDN FA), and/or coupled 105 
+
+BOLD network modulation and tract FA from either network (MDN x DMN BOLD and FA from MDN or DMN 106 
+
+tracts). 107 
+
+The present study aims to test the cross-network structure-function associations and the dynamic alteration 108 
+
+of BOLD modulation between the MDN and DMN in offsetting degenerated WM microstructure in the MDN. We 109 
+
+hypothesized that WM tracts in the MDN would show significant negative age effects and, according to current 110 
+
+evidence on structure, this degraded WM would be associated with weakened BOLD modulation in DMN for 111 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+5
+
+middle-aged and older adults. Conceptually (see Figure 1), previous findings support a “non-compensatory” 112 
+
+effect of functional activity on cognition, where age-related decreases in BOLD modulation to task are 113 
+
+associated with worse cognition in older age (Kennedy et al., 2017; Rieck et al., 2017). The current study 114 
+
+posits a “compensatory” effect of functional activity coupled between the two networks in response to 115 
+
+degenerated WM in MDN. Specifically, BOLD modulation of the MDN is expected to increase, to be coupled 116 
+
+with decreased BOLD modulation of the DMN, and to predict better cognitive performance in middle-aged and 117 
+
+older adults. 118 
+
+=============================== 119 
+
+Figure 1. Conceptual hypothesis of structure-function association compensatory effect on cognitive 120 
+
+performance 121 
+
+=============================== 122 
+
+123 
+
+124 
+
+2. METHODS 125 
+
+2.1. Participants 126 
+
+This cross-sectional study utilized a lifespan sample of 161 healthy adults from the first wave of our 127 
+
+Dallas Area Lifespan Longitudinal Aging Study (D.A.L.L.A.S), the same sample of participants as described in 128 
+
+Rieck et al. (2017). Participant ages ranged from 20-94 years (mean age = 51.93 ± 18.9 yrs; 59% women) and 129 
+
+they were recruited from the Dallas-Fort Worth metroplex. Participants were screened to be right-handed with 130 
+
+normal or corrected-to-normal vision and hearing. To screen against signs of dementia and depression, all 131 
+
+participants underwent a Mini Mental Status Exam (MMSE) (Folstein et al., 1975) and obtained a score of at 132 
+
+least 26 (mean MMSE = 29, range 26 - 30); they also completed the Center for Epidemiologic Study 133 
+
+Depression Scale (CESD; Radloff (1977)) and were required to score less than or equal to 16 on the scale 134 
+
+(mean CESD = 4.29, range 0 - 16). Participants were further screened against a history of neurological, 135 
+
+cardiac, metabolic or psychiatric conditions, head injury with loss of consciousness > 10 min, or current 136 
+
+psychotropic medication use. Participants completed two visits for neuropsychological and cognitive tests at 137 
+
+the University of Texas at Dallas' (UTD) Center for Vital Longevity and an MRI session at the Advanced 138 
+
+Imaging Research Center at the University of Texas Southwestern Medical Center (UTSW). The study was 139 
+
+approved by the UTD and the UTSW Institutional Review Boards. Participants provided written informed 140 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+6
+
+consent before entering the study and they were compensated for their time. See Table 1 for participant 141 
+
+demographics. 142 
+
+=============================== 143 
+
+Table 1 . Participant demographics 144 
+
+=============================== 145 
+
+2.2. Cognitive Measures 146 
+
+For the current study, three metrics of cognitive performance were selected as outcome measures. 147 
+
+From the fMRI task (see section 2.3.2), mean accuracy of the distance judgments (averaged across conditions 148 
+
+and across runs) was computed as an index of in-scanner task performance. As measures of executive 149 
+
+function, switching and inhibition composites were computed from two subtests of the Delis-Kaplan Executive 150 
+
+Function System (Delis et al., 2001) (D-KEFS): Verbal Fluency and Stroop Color-Word Interference tasks. 151 
+
+Scores from the "Culture Fair Intelligence Test" (2007) (CFIT) served as an index of fluid intelligence. Total 152 
+
+time taken for each task was about 10 – 12 minutes. Individual cognitive test details are described below. 153 
+
+2.2.1. D-KEFS Verbal Fluency Category Switching task . This task contained three conditions: Letter 154 
+
+Fluency, where participants generated as many words as possible in 60 seconds that begin with a specific 155 
+
+letter; Category Fluency, which required participants to generate as many words as possible in 60 seconds 156 
+
+belonging to a specified category (e.g. Animals). To suppress retrieving repeated and/or irrelevant responses, 157 
+
+inhibition may be involved in these two conditions (Shao et al., 2014); and Category Switching, which required 158 
+
+participants to switch back and forth between naming words belonging to one of two different specified 159 
+
+categories (e.g., apple, chair, banana, desk, …etc) for 60 seconds. As an index of Inhibition, the mean number 160 
+
+of correct responses for letter fluency and category fluency (3 letter trials, 2 category trials) was calculated. The 161 
+
+index of Switching was the total correct score for the Category Switching condition. 162 
+
+2.2.2. D-KEFS Color-Word Interference (Stroop) task . The Stroop task contained four conditions: 163 
+
+Two control conditions included Color Naming speed and Word Reading speed, where participants either 164 
+
+named the color of the patches or read the words printed in black. In the Inhibition condition, they were asked 165 
+
+to name the color of the ink, regardless of the actual word. In the Inhibition/Switching condition, participants 166 
+
+had to switch between naming the ink color or reading the word. Response time (seconds) to complete was 167 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+7
+
+recorded in each condition. The control condition score was calculated as the mean completion time of color 168 
+
+and word naming. The “inhibition score” or “switching score” for this task was calculated by subtracting the 169 
+
+control condition score from either Inhibition or Inhibition/Switching condition RT. All three scores were 170 
+
+multiplied by -1 before further processing. 171 
+
+To create general composite scores of switching and inhibition performance, the switching and 172 
+
+inhibition condition scores from the two tasks were first transformed to z scores, and then averaged across-173 
+
+task, within-domain (i.e., switching composite = [z fluency switching score + z stroop switching score] / 2). 174 
+
+2.2.3. Fluid Reasoning: CFIT . The Cattell Culture Fair Intelligence Test (CFIT) is designed to evaluate 175 
+
+fluid intelligence, particularly reasoning. The test utilizes matrix reasoning problems and consists of four 176 
+
+subtests each targeting different aspects of fluid intelligence. Scale 3 and Form B were used in the current 177 
+
+study, containing a total of 50 items across four subtests: 1) Series subtest (13 items) assesses the ability to 178 
+
+recognize and extend patterns in a sequential manner; 2) Classification subtest (14 items) measures 179 
+
+individual’s capacity to discern subtle differences and categorize objects. 3) Matrices subtest (13 items) 180 
+
+evaluates the ability to identify missing elements; 4) Topology subtest (10 items) measures participants’ 181 
+
+analogous and spatial abilities. Correct responses within the time limit were recorded across the four subtests 182 
+
+and averaged to create a composite fluid intelligence score (CFIT score). 183 
+
+2.3 MRI Protocol 184 
+
+2.3.1. Sequence Acquisition . All participants were scanned on a single Philips Achieva 3T scanner 185 
+
+equipped with a 32-channel SENSE head coil. BOLD data were collected using a T2*-weighted echo-planar 186 
+
+imaging sequence (EPI) with 29 interleaved axial slices parallel to AC-PC line. Matrix size = 64 × 64 × 29, 187 
+
+voxel size = 3.4 × 3.4 × 5 mm 3, field of view (FOV) = 220 mm, TE = 30 ms, and TR = 1500 ms. High resolution 188 
+
+anatomical T1-weighted images were collected with an MP-RAGE sequence with the following parameters: 1 × 189 
+
+1 × 1 mm 3, FOV = 256 mm, TE = 3.8 ms, TR = 8.3 ms, flip angle = 12°. DTI data were collected using a single 190 
+
+shot EPI sequence with 65 axial slices, voxel size 2 × 2 × 2.2 mm 3 (reconstructed to 0.88 × 0.88 × 2.2 mm 3), 191 
+
+30 diffusion-weighted directions, b-value = 1000 s/mm 2, 1 non-diffusion weighted image (b = 0 s/mm 2); TR/TE 192 
+
+= 5608/51 ms, FOV = 224 ×224 ×143 mm 3, matrix = 112 × 112 mm 2.193 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+8
+
+2.3.2. fMRI distance judgment task procedure . Participants performed in the scanner a spatial 194 
+
+distance judgment task (Baciu et al., 1999; Park et al., 2010). In a blocked design, participants performed two 195 
+
+types of judgments: (1) in the control condition, a horizontal bar appeared in the middle of the screen, 196 
+
+accompanied with a dot on either the left or right side of the bar, and participants indicated whether the dot was 197 
+
+on the left or right with a button press; (2) At the beginning of each task block, participants were cued with a 198 
+
+vertical bar in the middle of the screen, which served as a reference of distance, for three seconds, then 199 
+
+disappeared and was replaced by a horizontal bar and a dot either above or below it. Their task is to judge 200 
+
+whether the dot was “nearer” or “farther” from the bar relative to the reference bar length. This judgment 201 
+
+involved three levels of difficulty: easy, medium and hard, parametrically varying the distance between the dot 202 
+
+and bar. The reference cue was only displayed before each block of trials and did not vary. Participants 203 
+
+responded with their index or middle finger whether the dot was “farther”/ “nearer” or “left”/ “right” relative to the 204 
+
+bar. Stimulus presentation time was 2500 ms with a 500 ms interstimulus interval. There were three runs with 205 
+
+20 blocks in each run, and four conditions were presented in a pseudo-random order in each run. The total 206 
+
+functional scan time was about 15 min. Mean accuracy and median response time (RT) for each task condition 207 
+
+(easy, medium, hard) were reported in our previous publication (Rieck et al., 2017). For the present study, 208 
+
+mean accuracy across task difficulty (easy, medium, hard conditions) was the index of performance. 209 
+
+2.3.2.1. fMRI analysis . The current structure-function study used the previously processed, analyzed, 210 
+
+and published functional clusters from the age-related BOLD modulation to difficulty effect reported in Rieck et 211 
+
+al., (2017). Detailed image processing steps are included in our previous study and here we only include 212 
+
+details pertinent to the current study. Increased and decreased activation in the Hard relative to the Easy 213 
+
+distance judgment conditions was the contrast of interest. That contrast isolated voxels that increased or 214 
+
+decreased their activation with increasing task difficulty, a process henceforth referred to as “BOLD 215 
+
+modulation”. Increased activation to greater difficulty is referred throughout as “Positive BOLD Modulation”; 216 
+
+decreased activation to greater difficulty is referred to as “Negative BOLD Modulation”. fMRI data were all 217 
+
+transformed to MNI space (unlike the diffusion data described below, which were kept in native space). The 218 
+
+second-level model included age as a mean-centered continuous predictor to isolate age effects on positive 219 
+
+and negative BOLD modulation in a whole brain voxel-wise manner with a conservative height threshold p 220 
+
+< .0001, and clusters accepted as reliable at an extent threshold of p < .05 FWE. Those resulting clusters that 221 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+9
+
+demonstrated reliable age differences on BOLD modulation to difficulty were taken directly from (Rieck et al., 222 
+
+2017) and re-shown here in Table 2 . There were 5 clusters where activity increased with greater difficulty 223 
+
+(“positive modulation”, all were MDN regions) and 4 clusters that decreased in activation with greater difficulty 224 
+
+(“negative modulation”, all were DMN regions). Perusal of Table 2 suggests a lateralization such that the 225 
+
+positive modulation (MDN) regions were right-lateralized while the negative modulation (DMN) regions were 226 
+
+mostly left-lateralized or on the midline. Thus, these within-network clusters are also mainly within-hemisphere, 227 
+
+whereas interactions between-networks to be tested in this study are cross-hemispheric. Mean BOLD 228 
+
+parameter estimates were extracted from each cluster listed in Table 2 using the MarsBaR toolkit (Brett et al., 229 
+
+2002) and used for all subsequent analyses. 230 
+
+=============================== 231 
+
+Table 2 . Cluster peaks from the regression of age on modulation of BOLD to difficulty (re-presented 232 
+
+from Rieck et al., 2017) 233 
+
+=============================== 234 
+
+2.3.3 DTI Preprocessing and Analysis. DTI data were preprocessed using the DTIPrep v1.2.4 quality 235 
+
+control package. Diffusion tensors were computed using DSI Studio (Yeh et al., 2013). The nine grey matter 236 
+
+functional clusters in Table 2 served as our functionally-informed ROIs for deterministic tractography 237 
+
+(implemented in DSI Studio) to build WM tracts of interest traversing among these functional regions. To allow 238 
+
+tractography to be performed in native diffusion space the fMRI clusters were non-linearly registered to each 239 
+
+participant’s b0 diffusion image with the Advanced Normalization Tools package (Avants et al., 2009) using a 240 
+
+registration of the MNI 1mm 3 template to each participant’s T1-w MPRAGE, followed by a non-linear 241 
+
+registration between the T1-w MPRAGE and the b0 diffusion image using linear interpolation. Each functional 242 
+
+cluster was warped from MNI template space to the participant’s diffusion space simultaneously using the 243 
+
+linear and non-linear warps with nearest neighbor interpolation. These warped ROIs were then dilated to aid in 244 
+
+tractography. The mean number of white matter voxels within these raw clusters was 1284 voxels. Each ROI 245 
+
+was then dilated with a kernel size of 0–3, so that they all covered at least 1284 white matter voxels. 246 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+10 
+
+2.3.3.1. Deterministic tractography . To build white matter connections that were the most related to 247 
+
+the positive BOLD modulation in MDN and negative BOLD modulation in DMN, we focused on the connections 248 
+
+linked to the hub of the respective network: either the insula (cluster #2 from Table 2 ) or cuneus/precuneus 249 
+
+(cluster # 8 from Table 2 ) for MDN and DMN, respectively (Bullmore & Sporns, 2009). All 15 possible cluster 250 
+
+combinations were submitted to fiber-tracking in each participant. Deterministic tractography was performed for 251 
+
+each participant; each tract generated was carefully visually inspected, and any grossly atypically appearing 252 
+
+tracts were excluded from analysis. The DSI Studio tractography fitting parameters for each tract can be found 253 
+
+in Supplemental Table 1 . To ensure a multivariate normal distribution of number of streamlines among all 254 
+
+tracts, the Mahalanobis distance was calculated using the number of streamlines for each tract for each 255 
+
+participant using R v4.1.0. Participants with extreme Mahalanobis distance on their streamlines (using pchisq 256 
+
+in R, p < .001), indicating that the number of streamlines of one or more tracts was either extremely low or 257 
+
+high, were categorized as outliers and removed from further analysis. In total, nine participants were removed 258 
+
+for low streamline counts. 259 
+
+Tract Visualization and Identification . Of the possible 15 combinations of functional ROI pairs, 5 robust 260 
+
+functionally-guided tracts were identified and are illustrated in Figure 2 . Two of these tracts resided within the 261 
+
+PosMod-related network, identified in red in the figure. The first tract connected right posterior parietal cortex 262 
+
+with right anterior insula (i.e., ROI #s 1 and 2 in Table 2), and because it most closely overlaps anatomically 263 
+
+with the inferior frontal occipital fasciculus (IFOF), which is a deep white matter long-range association tract, 264 
+
+we refer to it as “IFOF” in the current study. The second within-PosMod tract identified was a small U-fiber tract 265 
+
+(which is a short-range superficial white matter tract) connecting the right anterior insula with the right inferior 266 
+
+frontal gyrus (IFG) pars opercularis (i.e., ROI #s 2 and 4), which we named fronto-insular “U-fiber” (Catani & 267 
+
+Thiebaut de Schotten, 2008). 268 
+
+For the within-NegMod-related network one tract was identified (blue box in Figure 2 ), connecting left 269 
+
+midline/bilateral cuneus/precuneus with left midline/bilateral ventromedial prefrontal cortices (i.e., ROIs # 8 and 270 
+
+9). This tract overlaps most closely anatomically with the long-range association cingulum bundle and was 271 
+
+named “Cingulum”. 272 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+11 
+
+Finally, two of the generated tracts interconnected a PosMod region to a NegMod region, i.e., between-273 
+
+network (green box in Figure 2 ). The first tract connected right posterior parietal cortex with left 274 
+
+precuneus/posterior cingulate (thus traversing the corpus callosum, CC) and largely overlapped with CC 275 
+
+splenium inter-hemispheric fibers, hence it was named “CCsplenium”. The second tract was largely redundant 276 
+
+with the “Cingulum” tract described above, as it connected the right anterior cingulate and the left 277 
+
+precuneus/posterior cingulate (ROIs #5 and 8) and is labelled “Cingulum-c” (cross-networks) in Figure 2 .278 
+
+However, due to the anatomical overlap between the “Cingulum-c” and “Cingulum”, the shorter Cingulum-c 279 
+
+tract was excluded from further analysis. 280 
+
+To statistically control for the effects of global white matter FA, a mean whole brain FA (WBFA) metric 281 
+
+was additionally created for each participant as follows. Whole brain white matter streamlines were generated 282 
+
+using DSI Studio with the following tractography fitting parameters: no regional restrictions were applied, tract 283 
+
+lengths between 20 to 500 mm, turning angle = 60; all other parameters were set as specified for the previous 284 
+
+tracts. From the resulting whole brain streamlines, FA was extracted and averaged across all voxels. This 285 
+
+WBFA metric was entered into statistical models as a covariate of no interest. 286 
+
+=============================== 287 
+
+Figure 2 . Overview of tracts obtained using functionally-defined ROIs 288 
+
+=============================== 289 
+
+2.4. Statistical approach 290 
+
+To test the three study aims (detailed in each corresponding results section) General Linear Models 291 
+
+(GLM) were specified and computed using R v4.1.0 (R core team, 2021). Quadratic age and FA terms were 292 
+
+examined based on previous studies that reported quadratic effects of age on white matter microstructure 293 
+
+(Slater et al., 2019). WBFA served as a covariate in all models. The two BOLD modulation variables were the 294 
+
+mean of the contrast parameter estimates of the five PosMod-related clusters or the mean estimates of the 295 
+
+four NegMod-related clusters. To examine the structure-function compensation effects on executive function 296 
+
+and fluid intelligence (aim 3), we ran separate models employing age, FA, FA 2, positive/negative BOLD 297 
+
+modulations, and their interactions as predictors of task accuracy, executive function, or fluid intelligence as 298 
+
+the three dependent variables, respectively. 299 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+12 
+
+Significant interaction terms involving continuous variables were decomposed using simple slopes and 300 
+
+the Johnson-Neyman procedure (Neyman & Pearson, 1936). False discovery rate (FDR) was used to correct 301 
+
+for multiple comparisons of each common term across models (e.g., p-values of the main effects of age of all 302 
+
+models were grouped together and corrected) using the R function “p.adjust” (Benjamini & Hochberg, 1995). 303 
+
+All significant effects described in the results section survived correction unless otherwise specified, and all p 304 
+
+values are given prior to correction. 305 
+
+3. RESULTS 306 
+
+3.1). Age Effects on White Matter Tract FA, Controlling for Whole Brain FA 307 
+
+To examine the cross-sectional age effect on WM microstructure within/between networks, GLMs were 308 
+
+specified with each tract FA as its dependent variable, linear and quadratic age as the simultaneous 309 
+
+continuous predictors, and WBFA 1 as covariate of no interest (formula a). 310 
+
+(𝑎) 𝐹𝐴 = 𝛽 ଴ + 𝛽 ଵ × 𝐴𝑔𝑒 + 𝛽 ଶ × 𝐴𝑔𝑒 ଶ + 𝛽 ଷ × 𝑊𝐵𝐹𝐴 + 𝜀 311 
+
+The frontal-insular U-fiber tract uniquely demonstrated a significant negative linear age effect (t(128) = -312 
+
+3.65, p <.001, η 2 = 0.09), indicating that increasing age was associated with decreasing FA. The other three 313 
+
+tracts did not evidence significant age effects after controlling for WBFA ( Figure 3 ). WBFA was significantly 314 
+
+associated with tract FA (after accounting for age) for all but CCsplenium. However, the linear age effect on FA 315 
+
+of the four tracts were all significant before controlling for WBFA (t(113) = -2.7, p < .001; t(129) = -5.87, p 316 
+
+< .001; t(101) = -2.76, p < .001; and t(94) = -4.07, p < .001, for IFOF, U-fiber, CCsplenium, and Cingulum, 317 
+
+respectively). No significant quadratic age effects were observed for any tract. See Table 3 for summary 318 
+
+statistics for the four models and Figure 3 for age-FA scatterplots (adjusted for WBFA). 319 
+
+================================ 320 
+
+Table 3 . Summary of effects in the age-FA regression models 321  
+
+> 1
+
+Because our WBFA variable included voxels from the tracts of interest we tested the models after masking out each tract. Results showed no differences across all the models before or after masking out each tract: Masked WBFA vs WBFA r = .999. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+13 
+
+================================ 322 
+
+Figure 3 . Effects of age on each white matter tract FA (whole-brain FA adjusted) 323 
+
+=============================== 324 
+
+325 
+
+3.2). Brain Structure-Function Association: Relation between Age-related White Matter Tract FA 326 
+
+and BOLD Modulation to Difficulty 327 
+
+To examine structure-function associations, i.e., how WM microstructure relates to BOLD modulation, 328 
+
+GLMs were specified with positive or negative BOLD modulation as the dependent variable, and age, FA, FA 2,329 
+
+and WBFA entered as predictors as well as the interaction of age × FA and age × FA 2. Formula b provides an 330 
+
+example of a model for positive BOLD modulation. Separate models were constructed for each of the 4 WM 331 
+
+tracts, for each of the 2 types of BOLD modulation (negative and positive) for a total of 8 models. 332 
+
+(𝑏) 𝑃𝑜𝑠𝑀𝑜𝑑 = 𝛽 ଴ + 𝛽 ଵ × 𝐴𝑔𝑒 × 𝐹𝐴 + 𝛽 ଶ × 𝐴𝑔𝑒 × 𝐹𝐴 ଶ + 𝛽 ଷ × 𝑊𝐵𝐹𝐴 + 𝜀 333 
+
+Positive BOLD Modulation and White Matter . As reported in Rieck et al., 2017, there was a negative 334 
+
+effect of age on positive BOLD modulation (all p’s < .01). None of the four WM tract FA terms was significantly 335 
+
+related to positive BOLD modulation after FDR correction, although there were trends for a quadratic effect of 336 
+
+IFOF FA on PosMod and the age x IFOF FA interaction. See Supplemental Table 2a for detailed model 337 
+
+statistics. These results suggest that the microstructural organization of these functionally-informed WM tracts 338 
+
+may not play a significant role in task-positive network modulation to difficulty. 339 
+
+Negative BOLD Modulation and White Matter . Again, there was a detrimental effect of age on 340 
+
+negative BOLD modulation (reported in Rieck et al., 2017, and see Supplemental Table 2b for all model 341 
+
+statistics). Of the four models, there was one tract, IFOF, that evidenced a significant FA-BOLD association, 342 
+
+and this association was age dependent (age x IFOF FA interaction: b = 0.28, t(120) = 3.32, p = .001, η 2 =343 
+
+0.08). None of the other tracts showed FA-NegMod associations. To determine the nature of the IFOF FA x 344 
+
+age interaction, simple slopes and the Johnson-Neyman procedure were used (see Figure 4). For younger 345 
+
+individuals (1 SD below the mean age), FA of the IFOF tract was inversely related to NegMod, where higher 346 
+
+FA was associated with weaker negative modulation to difficulty (and less so as FA increased). For middle-347 
+
+aged adults (at the mean age), IFOF FA was not associated with BOLD modulation. Strikingly, for older 348 
+
+individuals (1 SD above the mean age), a positive association was observed such that lower IFOF FA was 349 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+14 
+
+associated with relatively stronger negative modulation to difficulty ( Figure 4a ). This moderation effect is 350 
+
+evident for younger adults up until approximately age 34, and for older individuals beginning around age 62. In 351 
+
+other words, older adults who demonstrated degraded white matter in a tract interconnecting PosMod-related 352 
+
+activation clusters (IFOF) demonstrated strengthened negative modulation, whereas there was no such 353 
+
+association for middle-aged adults, and the opposite pattern was seen in younger adults. 354 
+
+=============================== 355 
+
+Figure 4. Simple slopes plot and Johnson-Neyman plot illustrating significant interaction of age by 356 
+
+IFOF FA on negative BOLD modulation 357 
+
+=============================== 358 
+
+3.3). Effects of Age, WM Tract FA, and BOLD Modulation on Cognitive Performance 359 
+
+The third, and final goal of the study was to examine whether age-related structure-function effects 360 
+
+were positively associated with cognitive performance, i.e., whether there is support for structure-function 361 
+
+compensation, a compensatory role of functional activity with white matter degradation. Models were tested 362 
+
+with either fMRI task accuracy, switching, inhibition, or fluid intelligence as the dependent variable, and with 363 
+
+age, positive/negative BOLD modulation, and FA/quadratic FA and their interactions as independent variables, 364 
+
+while controlling for WBFA (see formula c for an example of model predicting CFIT performance). 365 
+
+(𝑐) 𝐶𝐹𝐼𝑇 𝑠𝑐𝑜𝑟𝑒 = 𝛽 ଴ + 𝛽 ଵ × 𝐴𝑔𝑒 × 𝐹𝐴 × 𝑃𝑜𝑠𝑀𝑜𝑑 × 𝑁𝑒𝑔𝑀𝑜𝑑 + 𝛽 ଶ × 𝐴𝑔𝑒 × 𝐹𝐴 ଶ × 𝑃𝑜𝑠𝑀𝑜𝑑 × 𝑁𝑒𝑔𝑀𝑜𝑑 + 366 
+
+𝛽 ଷ × 𝑊𝐵𝐹𝐴 + 𝜀 367 
+
+Regression models were specified for each of the four WM tracts for each of the four cognitive scores, for a 368 
+
+total of 16 models. Detailed model result parameters/statistics are provided in Supplemental Table 3a-3d , and 369 
+
+a conceptual summary of all significant results is presented in Table 4. 370 
+
+=============================== 371 
+
+Table 4. Summary of significant GLM results. Effects of age, PosMod, NegMod, linear and quadratic 372 
+
+FA on cognitive scores after controlling for WBFA 373 
+
+=============================== 374 
+
+In-scanner Task Accuracy. In the models predicting accuracy on the distance judgment task, equivalent 375 
+
+performance across the lifespan was observed ( p > .01). Whereas magnitude of positive BOLD modulation 376 
+
+was unrelated to accuracy, amount of negative modulation was significantly related to accuracy across all four 377 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+15 
+
+models ( p’s < .03). Additionally, an effect of quadratic FA on task accuracy was found for the IFOF model 378 
+
+(IFOF FA 2; b = 15.47, t(102) = 2.83, p < .006, η 2 = 0.06; see Supplemental Figure 1). This finding suggests that 379 
+
+while FA has a positive effect on accuracy at higher levels of FA, the effect diminished at low to moderate 380 
+
+levels of FA and became a negative effect at the lowest level of FA. This effect at lowest levels of FA might be 381 
+
+due to a compensatory role of BOLD (low FA-high accuracy in high BOLD individuals), although IFOF FA’s 382 
+
+interaction with PosMod and NegMod became non-significant after multiple comparisons correction, see 383 
+
+Supplemental Table 3a. The same interactions (in these cases remaining significant after correction) were also 384 
+
+identified for out-of-scanner cognitive performance, as detailed in the following section. 385 
+
+Out-of-scanner Cognitive Performance. To streamline the presentation of the results, we report findings 386 
+
+across cognitive and WM tract models by main effect terms, and then by lower-order interaction terms, 387 
+
+followed by the structure-function interaction terms (i.e., the hypothesized compensatory effects). 388 
+
+Age main effects. As would be expected, significant main effects of age were observed across all three 389 
+
+out-of-scanner cognitive tests, with increasing age associated with decreased performance in switching, 390 
+
+inhibition, and fluid intelligence (all p’s < .02). 391 
+
+BOLD modulation effects. There was a significant main effect of positive BOLD modulation on CFIT for 392 
+
+the model testing the U-fiber frontal-insular tract (b = 0.62, t(116) = 2.81, p = .006, η 2 = 0.06), indicating that 393 
+
+lower positive modulation to task difficulty was associated with poorer CFIT performance. For negative BOLD 394 
+
+modulation to task difficulty, age  negative BOLD modulation interactions on switching performance were 395 
+
+significant for the IFOF (b = -0.02, t(102) = -2.37, p = .020, η 2 = 0.04) and CCsplenium models (b = -0.02, t(88) 396 
+
+= -2.46, p = .016, η 2 = 0.05). For the IFOF model, weaker negative BOLD modulation was associated with 397 
+
+poorer switching performance for individuals above ~59 years of age (via Johnson-Neyman interval analysis). 398 
+
+For the CCsplenium model, older adults also showed weaker negative BOLD and poorer switching 399 
+
+performance. In contrast, younger adults showed the opposite trend, with strengthened negative BOLD 400 
+
+modulation associated with poorer switching performance. 401 
+
+Structure  Function interaction effects. The structure-function association results detailed below, and 402 
+
+summarized in Table 4, can be further categorized into three types of structure-function effects: 1) when FA 403 
+
+moderates the BOLD modulation in the same network ( within-network effect ; e.g., MDN tract and MDN BOLD), 404 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+16 
+
+2) in a different network ( between-network effect ; e.g., MDN tract and DMN BOLD), 3) or when there is a 405 
+
+coupling of both positive and negative BOLD modulation ( coupling effect ; PosMod  NegMod interaction) on 406 
+
+cognitive scores. 407 
+
+Within MDN. For within-network structure-function effect in MDN, there was a significant interaction of 408 
+
+PosMod × U-fiber tract FA on CFIT (b = -25.69, t(116) = -2.59, p = .011, η 2 = 0.05), as well as a PosMod × U-409 
+
+fiber tract FA 2 interaction (b = -80.22, t(117) = -2.73, p = .01, η 2 = 0.05; see Figure 5a ). These interactions 410 
+
+were qualified, however, by a significant age × PosMod × U-fiber FA interaction (b = -1.47, t(116) = -2.61, p411 
+
+= .01, η 2 = 0.05), which suggests that the structure-function association was age-dependent. The 412 
+
+decomposition of this interaction revealed a cross-modality interaction ( Figure 5b ), where age and FA 413 
+
+modulate the effect of PosMod on the CFIT score. A positive effect was observed for middle-aged participants 414 
+
+with lower levels of FA, where greater positive BOLD modulation was associated with better reasoning 415 
+
+performance. However, an adverse effect was observed for middle-aged adults with higher levels of FA. 416 
+
+Strengthening positive BOLD modulation was associated with worse performance for participants maintaining 417 
+
+relatively high white matter connectivity. 418 
+
+=============================== 419 
+
+Figure 5. Breakdown of the interactions of the U-fiber tract FA and other independent variables on 420 
+
+cognition using Johnson-Neyman plot 421 
+
+=============================== 422 
+
+Within DMN. One within-network structure-function effect in the DMN was observed: a significant age × 423 
+
+NegMod × Cingulum FA interaction for switching performance (b = 0.66, t(81) = 2.83, p = .006, η 2 = 0.08). 424 
+
+Here, age and Cingulum FA modulated the effect of NegMod on switching score. This effect was negative for 425 
+
+older adults (> ~68 years of age) with lower levels of FA, where strengthened NegMod was associated with 426 
+
+better switching performance. Nevertheless, a positive effect of NegMod was found for middle-aged and older 427 
+
+adults (between ~55 and 75 years) maintaining relatively high FA. Their strengthened negative BOLD 428 
+
+modulation was associated with worse switching performance. See Supplemental Figure 2 and Supplemental 429 
+
+Table 3b for detailed statistics. 430 
+
+Between MDN and DMN. We observed a significant 3-way interaction of age × NegMod × U-fiber tract 431 
+
+FA 2 on switching performance (b = -28.68, t(117) = -2.59, p = .01, η 2 = 0.05). This revealed that the relationship 432 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+17 
+
+between NegMod and switching performance diverged by age, positive for older adults but negative for 433 
+
+younger adults. Furthermore, the quadratic interaction indicates that this relationship varied non-linearly across 434 
+
+levels of FA within the older adults (+ 1 SD; Figure 5c solid line). Specifically, for older adults with higher U-435 
+
+fiber FA, a significant positive association emerged where less negative NegMod was associated with higher 436 
+
+switching performance (b = 3.49, t(117) = 2.04, p = .04, η 2 = 0.03). This association was non-significant for 437 
+
+older adults at medium levels of FA, but significant for older adults with lower levels of FA (b = 1.12, t(117) = 438 
+
+2.51, p = .01, η 2 = 0.04). 439 
+
+For younger adults (-1SD; Figure 5c dotted line), the negative association between NegMod and 440 
+
+switching score indicated that strengthened NegMod was associated with better performance. This association 441 
+
+was significantly moderated by tract structure, becoming more pronounced at lower levels of FA (b = -0.58, 442 
+
+t(117) = -2.26, p = .03, η 2 = 0.03). In other words, for younger adults with lower white matter microstructural 443 
+
+integrity in this U-fiber tract, switching performance was more strongly coupled with bold change in DMN 444 
+
+regions (NegMod ). Meanwhile, there was a non-significant trend for a stronger structure-function association 445 
+
+at higher levels of FA for younger adults (b = -2.41, t(117) = -1.29, p = .20). The association between Negmod 446 
+
+and switching performance was not evident for middle-aged adults ( Figure 5c dashed line) across any FA 447 
+
+level. 448 
+
+Coupled network modulation (PosMod  Negmod) and FA. We observed two significant structure-449 
+
+function effects involving coupling of PosMod and NegMod within the U-fiber tract. The first effect was a 3-way 450 
+
+interaction of PosMod × NegMod × U-fiber FA on CFIT score (b = 53.22, t(116) = 3.53, p < .001, η 2 = 0.09). 451 
+
+The interaction decomposition (via Johnson-Neyman interval analysis; Figure 5d ) revealed that for participants 452 
+
+with relatively low levels of FA, coupling of the PosMod and NegMod was associated with CFIT score. Two 453 
+
+types of BOLD modulation coupling were observed: 1) at higher levels of PosMod, the higher the PosMod, the 454 
+
+more negative association between NegMod and CFIT score. This aligns with our previous finding (Rieck et 455 
+
+al., 2017); 2) At lower levels of PosMod, the association between Negmod and CFIT score shifts, less negative 456 
+
+NegMod was associated with higher CFIT scores. This suggests that functional activity in MDN and DMN 457 
+
+shifted together when structural integrity is low. Interestingly, these coupling effects were not observed in 458 
+
+participants at average or higher levels of U-fiber FA. 459 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+18 
+
+We also observed an interaction of age × PosMod × NegMod × U-fiber FA 2 on inhibition performance (b 460 
+
+= 63.68, t(117) = 2.81, p = .01, η 2 = 0.06). This indicates that the joint relationship of PosMod and NegMod with 461 
+
+inhibition performance varies as a function of age and FA. (see Supplemental Table 3c). As shown in Figure 6, 462 
+
+the interactive patterns across FA levels were relatively comparable between middle-aged and older adults, 463 
+
+whereas younger adults exhibited a distinct pattern. For older adults (approximately > 69 years old), the 464 
+
+association between NegMod and inhibition score depended on both structural integrity and PosMod. 465 
+
+Specifically, at high levels of U-fiber FA (FA > 0.27), paired with high PosMod, less negative NegMod was 466 
+
+associated with better inhibition score (b = 2.44, t(117) = 2.07, p = .04, η 2 = 0.03). Within the low-FA subgroup 467 
+
+(FA < ~ 0.18; Figure 6c), a similar pattern was observed where high Posmod is linked with less negative 468 
+
+NegMod and better performance (b = 3.37, t(117) = 2.09, p = .04, η 2 = 0.03). 469 
+
+Middle-aged adults (around 51 years of age) with high positive BOLD modulation ( Figure 6b ) showed 470 
+
+the same coupling effect as older adults at higher levels of FA (b = 1.07, t(117) = 2.09, p = .04, η 2 = 0.03). Still, 471 
+
+this coupling effect diminished when FA was relatively average or lower. Younger adults showed a trend for a 472 
+
+quadratic effect (inverted U-shape) compared to middle-aged and older adults (U-shape), see Figure 6a . In 473 
+
+summary, the coupling effect at the heart of the 4-way interaction only appeared in adults middle-aged or older 474 
+
+and when frontal-insular U-fiber FA and positive BOLD modulation were relatively high. For older adults with 475 
+
+extremely low FA, the coupling effect may have offset the low white matter integrity, as it associated with better 476 
+
+inhibition scores. This quadratic effect became weaker with weakened level of PosMod across age groups. 477 
+
+=============================== 478 
+
+Figure 6. Interaction of age, PosMod, NegMod, and quadratic frontal-insular U-fiber tract FA on 479 
+
+inhibition 480 
+
+=============================== 481 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+19 
+
+4. DISCUSSION 482 
+
+The current study examined the hypothesis that structure-function associations can serve a 483 
+
+compensatory role in cognitive aging. To explore these associations, both within- and between networks, 484 
+
+we first located four white matter tracts connecting the hub of areas of the multiple demand network 485 
+
+(MDN) and, separately, the default mode network (DMN). By incorporating structural and functional brain 486 
+
+measures within the same model as predictors of cognitive performance, we were able to observe coupling of 487 
+
+positive and negative BOLD modulation as compensatory support of executive function. In accordance with our 488 
+
+hypotheses, this coupling effect was observed in middle-aged and older adults, when the white matter in the 489 
+
+MDN began to decline. Most importantly, this coupling effect varied dynamically with the microstructural 490 
+
+integrity of white matter as indexed by FA. 491 
+
+These significant effects of structure-function association on executive function were most frequently 492 
+
+observed for the frontal-insular U-fiber tract, a short-range superficial white matter bundle. Among the four 493 
+
+white matter tracts generated by our functionally-guided tractography, the fronto-insular tract was the most 494 
+
+vulnerable to age after controlling for the whole brain fractional anisotropy. Additionally, an age-dependent 495 
+
+brain structure-function association was observed on another MDN tract (IFOF) and negative BOLD 496 
+
+modulation. In contrast to our expectation, older adults with lower MDN FA demonstrated enhanced BOLD 497 
+
+modulation in the DMN. Below, we discuss potential mechanisms of structure-function compensation across-498 
+
+and within-networks as related to age-related decline, focusing on the U-fiber tract. 499 
+
+4.1. Coupling of positive and negative BOLD modulation in compensating for cognitive aging 500 
+
+The motivation for the present study was to explore whether the differential effects of age on 501 
+
+structural connectivity and functional activity across the lifespan (i.e., white matter MDN decline occurs 502 
+
+before functional changes in that network, but vice versa in the DMN, cross-sectionally) were related to 503 
+
+cognitive performance. We hypothesized that weakened negative BOLD modulation might compensate 504 
+
+for declined white matter connectivity in the multiple demand network to maintain performance. If the 505 
+
+increased BOLD activity is associated with better executive function scores in people with lower white 506 
+
+matter connectivity, then we defined it as a compensation effect. The results revealed that weakened 507 
+
+negative BOLD modulation compensates for declined white matter in the frontal lobe and reveals a potential 508 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+20 
+
+reason for “overactivation” in the DMN with increased age. Age-related weakening of negative BOLD 509 
+
+modulation or over-activation in DMN regions during task performance has been linked to poorer performance 510 
+
+on switching (Basak et al., 2018; Nashiro et al., 2018), n-back (Prakash et al., 2012; Qin & Basak, 2020) or 511 
+
+executive function tasks (Park et al., 2010; Persson et al., 2007). The weakened negative BOLD activity in 512 
+
+response to increasing demand has been considered an example of inefficient deployment of neural resources 513 
+
+in adults, associated with reduced cognitive control, and inhibitory deficits (Gazzaley et al., 2005). By contrast, 514 
+
+weakened DMN during task performance has also been attributed to greater reliance on prior knowledge in 515 
+
+support of goal-directed behavior (Turner & Spreng, 2015). This overactivation in DMN regions across all task 516 
+
+difficulty levels would then reflect weakened negative BOLD modulation(Spreng et al., 2014), and could be an 517 
+
+indication of a compensatory effect (Duda et al., 2019), or reduced dynamic range of network modulation to 518 
+
+increasing task demand (Spreng & Schacter, 2012). The present results partially align with the default-519 
+
+executive coupling hypothesis of aging (DECHA model) (Spreng & Turner, 2019; Turner & Spreng, 2015), 520 
+
+which posits that older adults rely on stored existing knowledge or long-term memory representations during 521 
+
+task performance. The current findings extend the DECHA model by providing evidence that engagement of 522 
+
+default regions can benefit older adults’ cognitive performance. 523 
+
+Previous research demonstrated that coupling of greater BOLD modulation in the MDN and DMN is 524 
+
+linked to higher fluid intelligence in the same lifespan sample as that investigated in the present study (Rieck et 525 
+
+al., 2017). The present findings extend those prior results by demonstrating that the coupling effect is mainly 526 
+
+driven by participants with lower frontal-insular U-fiber tract FA (Figure 5d). For people with lower U-fiber tract 527 
+
+FA, better reasoning performance is linked not only to stronger coupling of the two networks but also to the 528 
+
+lower BOLD modulation in both networks. Moreover, the combination of MDN engagement and reduced DMN 529 
+
+suppression has been linked to older age (Spreng & Turner, 2019; Turner & Spreng, 2015). While functional 530 
+
+antagonism between the two networks is associated with cognitive control in healthy adults, age-related 531 
+
+decrease in structural connectivity might result in weakened functional activity that lead to either worse 532 
+
+behavioral performance or a (compensatory) better performance (Xia et al., 2022). Prior multimodal studies of 533 
+
+structural and functional brain aging reported that associations between age and BOLD activation in the DMN 534 
+
+were mediated by white matter integrity (Brown et al., 2015; Brown et al., 2018). Further, the same group 535 
+
+postulated that age-related decline of white matter might create a noisy environment for functional activation, 536 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+21 
+
+which decreases the suppression of DMN activity and results in poorer cognitive performance. Similarly, 537 
+
+increased functional activity in MDN-related regions may indicate reduced efficiency or failed compensation for 538 
+
+structural decline (Brown et al., 2019; Zhu et al., 2015). 539 
+
+In contrast to the previous studies that link functional coupling of the MDN and DMN to poor cognition 540 
+
+or decreased behavioral performance, by examining BOLD activity from both networks in the same model (i.e., 541 
+
+examining independent and synergistic effects) we were able to show negative coupling of BOLD modulation 542 
+
+between the DMN and MDN networks is associated with better executive function in older adults with degraded 543 
+
+frontal white matter. One major difference between the current and previous studies is that the current study 544 
+
+tested the quadratic effect of white matter integrity in association with these networks, while most studies 545 
+
+examined only linear effects. It has consistently been reported that the effects of age on white matter integrity 546 
+
+follow a quadratic or cubic function (Lebel et al., 2012; Slater et al., 2019). This nonlinear effect suggests that 547 
+
+structural connectivity in MDN might play different roles in modulating the functional activity of the two networks 548 
+
+with regard to cognitive performance for older adults. Depending on whether participants possess “high” or 549 
+
+“low” FA, the dynamic of this coupling effect changes. 550 
+
+While it is not completely understood how the short-range U-fiber tract connecting inferior frontal 551 
+
+regions and insula affects functional activation in MDN and DMN, previous studies have demonstrated the 552 
+
+causal influence of the right anterior insula on functional activity in the DMN (Chiong et al., 2013; Sridharan et 553 
+
+al., 2008). Similarly, the integrity of the tract connecting the right insula and presupplementary motor 554 
+
+area/dorsal anterior cingulate cortex is associated with functional connectivity between right insula and DMN 555 
+
+(Jilka et al., 2014). In relation to the present quadratic effect (Figure 9), we propose that age-related decline in 556 
+
+frontal U-fiber microstructure is accompanied by alteration in the dynamic coupling of BOLD modulation 557 
+
+between the MDN and the DMN. Nevertheless, higher positive and lower negative BOLD modulation were 558 
+
+associated with better executive function, and this negative coupling was especially evident in those with 559 
+
+relatively high or low FA levels. It is possible that, among middle-aged adults in the early phase of U-fiber 560 
+
+degradation, higher FA was associated with an increased capability of utilizing the DMN (increased activation) 561 
+
+to compensate for behavioral performance. For older adults in a later phase of U-fiber degradation, those with 562 
+
+relatively poor FA also demonstrated the same negative coupling effect, which was not observed among 563 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+22 
+
+middle-aged adults with poor FA. That being said, the effect of structural integrity on functional activity in aging 564 
+
+is not unidimensional, and it may be the case that the involvement of positive and negative BOLD modulation 565 
+
+in the early stage of structural decline might act in a compensatory manner, but then later in the aging process 566 
+
+show alignment with the notion of “loss of integrity, loss of function” (Andrews-Hanna et al., 2019). 567 
+
+4.2. Age-related decrease of white matter microstructure in the multiple demand network 568 
+
+Of the four white matter tracts generated by functionally-guided tractography in the current study, two 569 
+
+were MDN-related, one was DMN-related, and one connected both networks (cross-network). Consistent with 570 
+
+our hypothesis that white matter connecting regions of the multiple demand system is more vulnerable to 571 
+
+increasing age than white matter connecting regions of the default mode system, an age-related reduction in 572 
+
+FA of the frontal-insular U-fibers was identified. It is important to note that this effect was above and beyond 573 
+
+the general effects of age on global white matter FA. If whole brain FA was not modeled as a covariate of no 574 
+
+interest, linear effects of age were observed across all tracts. Contrary to most studies showing a quadratic 575 
+
+effect of age on white matter integrity (Lebel et al., 2012), a linear age effect was observed in the current 576 
+
+study. One possible explanation is that these tracts are only partial streamlines connecting targeted regions 577 
+
+rather than full tracts, and the linear age effect indicates that the streamlines relevant to executive function are 578 
+
+susceptible to age as early as their 20s. 579 
+
+However, including whole brain FA in the models is necessary to establish the specificity of the effects 580 
+
+to the tracts of interest. The current finding supports previous longitudinal work demonstrating robust aging 581 
+
+effects on FA in these short-range white matter tracts (Schilling et al., 2023) and is consistent with our prior 582 
+
+finding (Hoagey et al., 2019). In light of the “first in last out” principle (Raz, 2000), it is not surprising to observe 583 
+
+age effects on these small tracts, which have a protracted development and reach peak FA later in the lifespan 584 
+
+than the longer-range association tracts (Wu et al., 2014). Furthermore, short-range fibers tend to be less 585 
+
+myelinated than long-range fibers and hence may be more vulnerable to the deleterious effects of age (Gao et 586 
+
+al., 2014). 587 
+
+The structure-function compensation effect within MDN took the form of “over-recruitment” of functional 588 
+
+activation in older adults with relatively low white matter FA, where greater BOLD modulation correlated with 589 
+
+better performance on inhibition (Figure 6). Reduced white matter integrity in frontal-parietal regions in older 590 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+23 
+
+adults has been reported to be accompanied by increased BOLD activation or “over-recruitment” during task 591 
+
+performance (Burzynska, Garrett, Preuschhof, Nagel, Li, Bäckman, et al., 2013; Daselaar et al., 2015; Zhu et 592 
+
+al., 2015), especially in prefrontal cortex. Over-recruitment in older adults, however, has been linked to both 593 
+
+better (Burzynska, Garrett, Preuschhof, Nagel, Li, Backman, et al., 2013; Suzuki et al., 2018) or worse 594 
+
+(Daselaar et al., 2015; Zhu et al., 2015) executive function. The current results partially account for the 595 
+
+previous mixed findings by differentiating MDN- and DMN-related tracts; it appears that the over recruitment -596 
+
+performance association might be dependent on white matter integrity in the MDN. Similarly, the structure-597 
+
+function compensation effect observed in DMN manifested itself as a strengthened BOLD modulation effect 598 
+
+(decreasing BOLD signal), which we argue is in compensation for lower white matter integrity (Supplemental 599 
+
+Figure 2). Notably, in older adults with degraded cingulum white matter there was a significant inverse 600 
+
+association between negative BOLD modulation and switching performance, whereas in adults with higher FA, 601 
+
+attenuated BOLD modulation was linked with higher switching scores from middle-age onward. Together, 602 
+
+these findings suggest that within-network BOLD modulation might compensate for age-related reductions in 603 
+
+white matter integrity. 604 
+
+4.3. Cross-network structure-function association 605 
+
+When considering structure-function associations alone, we found that the association between FA and 606 
+
+negative BOLD modulation was modulated by age (Figure 4). For younger adults, higher IFOF FA was 607 
+
+associated with greater negative BOLD modulation to task difficulty, while older adults demonstrated the 608 
+
+opposite association (higher FA correlating inversely with negative modulation). The structure-function 609 
+
+association finding in younger adults is consistent with previous studies exploring such associations within the 610 
+
+DMN (Brown et al., 2015; Brown et al., 2018; Brown et al., 2019). Additionally, the between-network structure-611 
+
+function association identified here might be explained by the aforementioned “inhibitory” effect of the MDN on 612 
+
+the DMN (Chen et al., 2013; Chiong et al., 2013; Sridharan et al., 2008), such that higher structural integrity of 613 
+
+the MDN amplified its inhibitory effect on the DMN and, as a consequence, the MDN demonstrated greater 614 
+
+negative BOLD modulation with task difficulty. In older adults, however, we observed an opposite structure-615 
+
+function association. Since there was no age-related decline in the integrity of the IFOF tract (after accounting 616 
+
+for WBFA), the association identified in older adults might involve modulating factor(s) beyond white matter 617 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+24 
+
+microstructure, for example, beta-amyloid burden (Foster et al., 2018). Of note, the IFOF tract generated by 618 
+
+functionally-guided tractography in the current study connected regions of the MDN (right insula and right 619 
+
+posterior parietal), whereas in Brown et al. (2018) the tract was included in an aggregate white matter mask 620 
+
+that connected multiple regions of the DMN. Based on its role in deactivation, the IFOF might indirectly 621 
+
+interconnect DMN regions, and this indirect connection may contribute to modulation of older adults’ negative 622 
+
+BOLD response. 623 
+
+4.4 Limitations 624 
+
+The current study was limited, by design, to WM tracts with “direct” connections between two functional 625 
+
+clusters, but there might be functionally correlated regions that interact closely without structural connections 626 
+
+between them (Hermundstad et al., 2013; Park & Friston, 2013). For example, indirect tracts such as the 627 
+
+corpus callosum could be responsible for the interaction of BOLD modulation effects in different brain networks 628 
+
+(or hemispheres). Relatedly, the current study focused on the contribution of each of the four white matter 629 
+
+tracts connecting BOLD regions within- or across-networks on cognitive aging independently. However, 630 
+
+additive or interactive effects in these tracts could impact cognition and will need future studies to explore. The 631 
+
+current study is also limited by its cross-sectional design, which only permits identification of age effects on 632 
+
+structure-function associations, rather than the effects of aging. The temporal ordering of these hypothesized 633 
+
+associations can only be established through the analysis of within-person longitudinal data. 634 
+
+5. CONCLUSIONS 635 
+
+The current study utilized functionally-guided tractography derived from task-related functional 636 
+
+activations in the multiple demand and default mode networks to examine whether white matter structure – 637 
+
+function associations demonstrate compensatory aging effects on cognition, that is, an over recruitment might 638 
+
+be linked to better cognitive performance. The results indicated that a single superficial white matter tract 639 
+
+(fronto-insular U-fiber tract) in the multiple demand network demonstrated a significant age effect on its 640 
+
+microstructure. By examining the quadratic effect of white matter FA, we found evidence that functional effects 641 
+
+on executive function and fluid intelligence compensated for low integrity of the U-fiber tract. Consistent with 642 
+
+our hypothesis, weakened functional activity in the DMN early in middle age coupled with increased activity in 643 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+25 
+
+the MDN might represent a compensatory neural response to declining structural connectivity between 644 
+
+different regions of the prefrontal cortex. 645 
+
+DATA AND CODE AVAILABILITY 646 
+
+The data used in the analyses for this paper as well as the R code will be made publicly available on our OSF 647 
+
+project page upon publication. 648 
+
+AUTHOR CONTRIBUTIONS 649 
+
+T-C.L. contributed to data acquisition, project administration, methodology, conceptualization, formal analysis, 650 
+
+and manuscript writing, review and editing; D.A.H. contributed to data acquisition, project administration, 651 
+
+methodology, and manuscript review and editing; K.M.R. contributed to funding acquisition, supervision, 652 
+
+manuscript review and editing; M.D.R. contributed to manuscript review and editing; K.M.K. contributed to 653 
+
+funding acquisition, supervision, conceptualization, manuscript review and editing. 654 
+
+ETHICS 655 
+
+Procedures involving human participants were conducted in accordance with the ethical standards of the 1964 656 
+
+Helsinki Declaration and its later amendments or comparable ethical standards. The study was approved by 657 
+
+Institutional Review Boards and all participants provided written informed consent before entering the study. 658 
+
+ACKNOWLEDGEMENTS 659 
+
+The authors thank Ekarin Pongpipat for assistance with statistical analysis and the research participants for 660 
+
+volunteering their time to science. 661 
+
+FUNDING 662 
+
+This study was supported in part by the National Institutes of Health (grant number 5R01 AG-056535). The 663 
+
+content is solely the responsibility of the authors and does not necessarily represent the official views of the 664 
+
+National Institutes of Health. 665 
+
+DECLARATION OF COMPETING INTEREST 666 
+
+The authors have no conflicts of interest to report. 667 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+26 
+
+REFERENCES 668 
+
+669 Andrews-Hanna, J. R., Grilli, M. D., & Irish, M. (2019). A Review and Reappraisal of the Default Network in Normal Aging 670 and Dementia. In: Oxford University Press. 671 Avants, B., Tustison, N. J., & Song, G. (2009). Advanced Normalization Tools: V1.0. The Insight Journal (2), 1–35. 672 https://doi.org/https://doi.org/10.54294/uvnhin 673 Baciu, M., Koenig, O., Vernier, M. P., Bedoin, N., Rubin, C., & Segebarth, C. (1999). Categorical and coordinate spatial 674 relations: fMRI evidence for hemispheric specialization. Neuroreport , 10 (6), 1373–1378. 675 https://doi.org/10.1097/00001756-199904260-00040 676 Basak, C., Qin, S., Nashiro, K., & O'Connell, M. A. (2018). Functional magnetic neuroimaging data on age-related 677 differences in task switching accuracy and reverse brain-behavior relationships. Data Brief , 19 , 997–1007. 678 https://doi.org/10.1016/j.dib.2018.05.059 679 Benjamini, Y., & Hochberg, Y. (1995). CONTROLLING THE FALSE DISCOVERY RATE - A PRACTICAL AND POWERFUL 680 APPROACH TO MULTIPLE TESTING. Journal of the Royal Statistical Society Series B-Statistical Methodology ,681 
+
+57 (1), 289–300. https://doi.org/10.1111/j.2517-6161.1995.tb02031.x 682 Brett, M., Anton, J. L., Valabregue, R., & Poline, J.-B. (2002). Region of interest analysis using the MarsBar toolbox for 683 SPM 99. Neuroimage , 16 .684 Brown, C. A., Hakun, J. G., Zhu, Z. D., Johnson, N. F., & Gold, B. T. (2015). White matter microstructure contributes to 685 age-related declines in task-induced deactivation of the default mode network [Article]. Frontiers in Aging 686 
+
+Neuroscience , 7, 10, Article 194. https://doi.org/10.3389/fnagi.2015.00194 687 Brown, C. A., Jiang, Y., Smith, C. D., & Gold, B. T. (2018). Age and Alzheimer's pathology disrupt default mode network 688 functioning via alterations in white matter microstructure but not hyperintensities [Article]. Cortex , 104 , 58–74. 689 https://doi.org/10.1016/j.cortex.2018.04.006 690 Brown, C. A., Schmitt, F. A., Smith, C. D., & Gold, B. T. (2019). Distinct patterns of default mode and executive control 691 network circuitry contribute to present and future executive function in older adults [Article]. Neuroimage , 195 ,692 320–332. https://doi.org/10.1016/j.neuroimage.2019.03.073 693 Bullmore, E. T., & Sporns, O. (2009). Complex brain networks: graph theoretical analysis of structural and functional 694 systems. Nature Reviews Neuroscience , 10 (3), 186–198. https://doi.org/10.1038/nrn2575 695 Burzynska, A. Z., Garrett, D. D., Preuschhof, C., Nagel, I. E., Li, S. C., Backman, L., Heekeren, H. R., & Lindenberger, U. 696 (2013). A Scaffold for Efficiency in the Human Brain [Article]. Journal of Neuroscience , 33 (43), 17150–17159. 697 https://doi.org/10.1523/jneurosci.1426-13.2013 698 Burzynska, A. Z., Garrett, D. D., Preuschhof, C., Nagel, I. E., Li, S. C., Bäckman, L., Heekeren, H. R., & Lindenberger, U. 699 (2013). A scaffold for efficiency in the human brain. J Neurosci , 33 (43), 17150–17159. 700 https://doi.org/10.1523/jneurosci.1426-13.2013 701 Catani, M., & Thiebaut de Schotten, M. (2008). A diffusion tensor imaging tractography atlas for virtual in vivo 702 dissections. Cortex , 44 (8), 1105–1132. https://doi.org/10.1016/j.cortex.2008.05.004 703 Chen, A. C., Oathes, D. J., Chang, C., Bradley, T., Zhou, Z. W., Williams, L. M., Glover, G. H., Deisseroth, K., & Etkin, A. 704 (2013). Causal interactions between fronto-parietal central executive and default-mode networks in humans. 705 
+
+Proceedings of the National Academy of Sciences of the United States of America , 110 (49), 19944–19949. 706 https://doi.org/10.1073/pnas.1311772110 707 Chiong, W., Wilson, S. M., D'Esposito, M., Kayser, A. S., Grossman, S. N., Poorzand, P., Seeley, W. W., Miller, B. L., & 708 Rankin, K. P. (2013). The salience network causally influences default mode network activity during moral 709 reasoning. Brain , 136 , 1929–1941. https://doi.org/10.1093/brain/awt066 710 Culture Fair Intelligence Test. (2007). In N. J. Salkind (Ed.), Encyclopedia of Measurement and Statistics (Vol. 3, pp. 205). 711 SAGE Publications, Inc. https://doi.org/https://doi.org/10.4135/9781412952644.n116 712 Daselaar, S. M., Iyengar, V., Davis, S. W., Eklund, K., Hayes, S. M., & Cabeza, R. E. (2015). Less wiring, more firing: low-713 performing older adults compensate for impaired white matter with greater neural activity. Cereb Cortex , 25 (4), 714 983–990. https://doi.org/10.1093/cercor/bht289 715 Delis, D. C., Kaplan, E., & Kramer, J. H. (2001). Delis-Kaplan executive function system (D-KEFS) [[Database record]]. APA 716 
+
+PsycTests . https://doi.org/https://psycnet.apa.org/doi/10.1037/t15082-000 717 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+27 Duda, B. M., Owens, M. M., Hallowell, E. S., & Sweet, L. H. (2019). Neurocompensatory Effects of the Default Network in 718 Older Adults [Original Research]. Frontiers in Aging Neuroscience , 11 . https://doi.org/10.3389/fnagi.2019.00111 719 Figley, T. D., Bhullar, N., Courtney, S. M., & Figley, C. R. (2015). Probabilistic atlases of default mode, executive control 720 and salience network white matter tracts: an fMRI-guided diffusion tensor imaging and tractography study 721 [Article]. Frontiers in Human Neuroscience , 9, 20, Article 585. https://doi.org/10.3389/fnhum.2015.00585 722 Folstein, M. F., Folstein, S. E., & McHugh, P. R. (1975). "Mini-mental state". A practical method for grading the cognitive 723 state of patients for the clinician. J Psychiatr Res , 12 (3), 189–198. https://doi.org/10.1016/0022-3956(75)90026-724 6725 Foster, C. M., Kennedy, K. M., Horn, M. M., Hoagey, D. A., & Rodrigue, K. M. (2018). Both hyper- and hypo-activation to 726 cognitive challenge are associated with increased beta-amyloid deposition in healthy aging: A nonlinear effect. 727 
+
+Neuroimage , 166 , 285–292. https://doi.org/10.1016/j.neuroimage.2017.10.068 728 Gao, J., Cheung, R. T., Chan, Y. S., Chu, L. W., Mak, H. K., & Lee, T. M. (2014). The relevance of short-range fibers to 729 cognitive efficiency and brain activation in aging and dementia. Plos One , 9(4), e90307. 730 https://doi.org/10.1371/journal.pone.0090307 731 Gazes, Y., Lee, S., Sakhardande, J., Mensing, A., Razlighi, Q., Ohkawa, A., Pleshkevich, M., Luo, L. G., & Habeck, C. (2020). 732 fMRI-guided white matter connectivity in fluid and crystallized cognitive abilities in healthy adults. Neuroimage ,733 
+
+215 , Article 116809. https://doi.org/10.1016/j.neuroimage.2020.116809 734 Gazzaley, A., Cooney, J. W., Rissman, J., & D'Esposito, M. (2005). Top-down suppression deficit underlies working 735 memory impairment in normal aging (vol 8, pg 1298, 2005). Nature Neuroscience , 8(12), 1791–1791. 736 https://doi.org/10.1038/nn1205-1791c 737 Grady, C. L., Protzner, A. B., Kovacevic, N., Strother, S. C., Afshin-Pour, B., Wojtowicz, M., Anderson, J. A. E., Churchill, N., 738 & McIntosh, A. R. (2010). A Multivariate Analysis of Age-Related Differences in Default Mode and Task-Positive 739 Networks across Multiple Cognitive Domains. Cerebral Cortex , 20 (6), 1432–1447. 740 https://doi.org/10.1093/cercor/bhp207 741 Hakun, J. G., Zhu, Z. D., Brown, C. A., Johnson, N. F., & Gold, B. T. (2015). Longitudinal alterations to brain function, 742 structure, and cognitive performance in healthy older adults: A fMRI-DTI study [Article]. Neuropsychologia , 71 ,743 225–235. https://doi.org/10.1016/j.neuropsychologia.2015.04.008 744 Hermundstad, A. M., Bassett, D. S., Brown, K. S., Aminoff, E. M., Clewett, D., Freeman, S., Frithsen, A., Johnson, A., 745 Tipper, C. M., Miller, M. B., Grafton, S. T., & Carlson, J. M. (2013). Structural foundations of resting-state and 746 task-based functional connectivity in the human brain. Proceedings of the National Academy of Sciences of the 747 
+
+United States of America , 110 (15), 6169–6174. https://doi.org/10.1073/pnas.1219562110 748 Hoagey, D. A., Rieck, J. R., Rodrigue, K. M., & Kennedy, K. M. (2019). Joint contributions of cortical morphometry and 749 white matter microstructure in healthy brain aging: A partial least squares correlation analysis [Article]. Human 750 
+
+Brain Mapping , 40 (18), 5315–5329. https://doi.org/10.1002/hbm.24774 751 Jilka, S. R., Scott, G., Ham, T., Pickering, A., Bonnelle, V., Braga, R. M., Leech, R., & Sharp, D. J. (2014). Damage to the 752 Salience Network and Interactions with the Default Mode Network. Journal of Neuroscience , 34 (33), 10798– 753 10807. https://doi.org/10.1523/jneurosci.0518-14.2014 754 Kennedy, K. M., Boylan, M. A., Rieck, J. R., Foster, C. M., & Rodrigue, K. M. (2017). Dynamic range in BOLD modulation: 755 lifespan aging trajectories and association with performance [Article]. Neurobiology of Aging , 60 , 153–163. 756 https://doi.org/10.1016/j.neurobiolaging.2017.08.027 757 Lebel, C., Gee, M., Camicioli, R., Wieler, M., Martin, W., & Beaulieu, C. (2012). Diffusion tensor imaging of white matter 758 tract evolution over the lifespan. Neuroimage , 60 (1), 340–352. 759 https://doi.org/10.1016/j.neuroimage.2011.11.094 760 Nashiro, K., Qin, S., O'Connell, M. A., & Basak, C. (2018). Age-related differences in BOLD modulation to cognitive control 761 costs in a multitasking paradigm: Global switch, local switch, and compatibility-switch costs. Neuroimage , 172 ,762 146–161. https://doi.org/10.1016/j.neuroimage.2018.01.030 763 Neyman, J., & Pearson, E. S. (1936). Contributions to the theory of testing statistical hypotheses. Statistical Research 764 
+
+Memoirs , 1, 1–37. 765 Park, D. C., Polk, T. A., Hebrank, A. C., & Jenkins, L. J. (2010). Age differences in default mode activity on easy and difficult 766 spatial judgment tasks [Article]. Frontiers in Human Neuroscience , 3, 12, Article 75. 767 https://doi.org/10.3389/neuro.09.075.2009 768 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+28 Park, H. J., & Friston, K. J. (2013). Structural and Functional Brain Networks: From Connections to Cognition. Science ,769 
+
+342 (6158), 579–+. https://doi.org/10.1126/science.1238411 770 Persson, J., Lustig, C., Nelson, J. K., & Reuter-Lorenz, P. A. (2007). Age Differences in Deactivation: A Link to Cognitive 771 Control? Journal of Cognitive Neuroscience , 19 (6), 1021–1032. https://doi.org/10.1162/jocn.2007.19.6.1021 772 Prakash, R. S., Heo, S., Voss, M. W., Patterson, B., & Kramer, A. F. (2012). Age-related differences in cortical recruitment 773 and suppression: Implications for cognitive performance. Behavioural Brain Research , 230 (1), 192–200. 774 https://doi.org/10.1016/j.bbr.2012.01.058 775 Preti, M. G., Makris, N., Papadimitriou, G., Lagana, M. M., Griffanti, L., Clerici, M., Nemni, R., Westin, C. F., Baselli, G., & 776 Baglio, F. (2014). A Novel Approach of Groupwise fMRI-Guided Tractography Allowing to Characterize the 777 Clinical Evolution of Alzheimer's Disease. Plos One , 9(3), Article e92026. 778 https://doi.org/10.1371/journal.pone.0092026 779 Qin, S., & Basak, C. (2020). Age-related differences in brain activation during working memory updating: An fMRI study. 780 
+
+Neuropsychologia , 138 , Article 107335. https://doi.org/10.1016/j.neuropsychologia.2020.107335 781 Radloff, L. S. (1977). The CES-D Scale:A Self-Report Depression Scale for Research in the General Population. Applied 782 
+
+Psychological Measurement , 1(3), 385–401. https://doi.org/10.1177/014662167700100306 783 Raz, N. (2000). Aging of the brain and its impact on cognitive performance: Integration of structural and functional 784 findings. In F. I. M. Craik & T. A. Salthouse (Eds.), The handbook of aging and cognition (pp. 1–90). Lawrence 785 Erlbaum Associates. 786 Reid, L. B., Sale, M. V., Cunnington, R., Mattingley, J. B., & Rose, S. E. (2017). Brain Changes Following Four Weeks of 787 Unimanual Motor Training: Evidence From fMRI-Guided Diffusion MRI Tractography. Human Brain Mapping ,788 
+
+38 (9), 4302–4312. https://doi.org/10.1002/hbm.23514 789 Rieck, J. R., Rodrigue, K. M., Boylan, M. A., & Kennedy, K. M. (2017). Age-related reduction of BOLD modulation to 790 cognitive difficulty predicts poorer task accuracy and poorer fluid reasoning ability [Article]. Neuroimage , 147 ,791 262–271. https://doi.org/10.1016/j.neuroimage.2016.12.022 792 Schilling, K. G., Archer, D., Yeh, F. C., Rheault, F., Cai, L. Y., Shafer, A., Resnick, S. M., Hohman, T., Jefferson, A., Anderson, 793 A. W., Kang, H., & Landman, B. A. (2023). Short superficial white matter and aging: a longitudinal multi-site study 794 of 1293 subjects and 2711 sessions. Aging Brain , 3. https://doi.org/10.1016/j.nbas.2023.100067 795 Shao, Z., Janse, E., Visser, K., & Meyer, A. S. (2014). What do verbal fluency tasks measure? Predictors of verbal fluency 796 performance in older adults. Front Psychol , 5, 772. https://doi.org/10.3389/fpsyg.2014.00772 797 Slater, D. A., Melie-Garcia, L., Preisig, M., Kherif, F., Lutti, A., & Draganski, B. (2019). Evolution of white matter tract 798 microstructure across the life span. Hum Brain Mapp , 40 (7), 2252–2268. https://doi.org/10.1002/hbm.24522 799 Spreng, R. N., DuPre, E., Selarka, D., Garcia, J., Gojkovic, S., Mildner, J., Luh, W. M., & Turner, G. R. (2014). Goal-800 Congruent Default Network Activity Facilitates Cognitive Control. Journal of Neuroscience , 34 (42), 14108–14114. 801 https://doi.org/10.1523/jneurosci.2815-14.2014 802 Spreng, R. N., & Schacter, D. L. (2012). Default network modulation and large-scale network interactivity in healthy 803 young and old adults. Cereb Cortex , 22 (11), 2610–2621. https://doi.org/10.1093/cercor/bhr339 804 Spreng, R. N., Stevens, W. D., Chamberlain, J. P., Gilmore, A. W., & Schacter, D. L. (2010). Default network activity, 805 coupled with the frontoparietal control network, supports goal-directed cognition [Article]. Neuroimage , 53 (1), 806 303–317. https://doi.org/10.1016/j.neuroimage.2010.06.016 807 Spreng, R. N., Stevens, W. D., Viviano, J. D., & Schacter, D. L. (2016). Attenuated anticorrelation between the default and 808 dorsal attention networks with aging: evidence from task and rest. Neurobiology of Aging , 45 , 149–160. 809 https://doi.org/10.1016/j.neurobiolaging.2016.05.020 810 Spreng, R. N., & Turner, G. R. (2019). The Shifting Architecture of Cognition and Brain Function in Older Adulthood. 811 
+
+Perspect Psychol Sci , 14 (4), 523–542. https://doi.org/10.1177/1745691619827511 812 Sridharan, D., Levitin, D. J., & Menon, V. (2008). A critical role for the right fronto-insular cortex in switching between 813 central-executive and default-mode networks. Proc Natl Acad Sci U S A , 105 (34), 12569–12574. 814 https://doi.org/10.1073/pnas.0800005105 815 Staempfli, P., Reischauer, C., Jaermann, T., Valavanis, A., Kollias, S., & Boesiger, P. (2008). Combining fMRI and DTI: A 816 framework for exploring the limits of fMRI-guide DTI fiber tracking and for verifying DTI-based fiber tractography 817 results. Neuroimage , 39 (1), 119–126. https://doi.org/10.1016/j.neuroimage.2007.08.025 818 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+29 Suzuki, M., Kawagoe, T., Nishiguchi, S., Abe, N., Otsuka, Y., Nakai, R., Asano, K., Yamada, M., Yoshikawa, S., & Sekiyama, 819 K. (2018). Neural Correlates of Working Memory Maintenance in Advanced Aging: Evidence From fMRI. Front 820 
+
+Aging Neurosci , 10 , 358. https://doi.org/10.3389/fnagi.2018.00358 821 Turner, G. R., & Spreng, R. N. (2015). Prefrontal Engagement and Reduced Default Network Suppression Co-occur and 822 Are Dynamically Coupled in Older Adults: The Default-Executive Coupling Hypothesis of Aging. Journal of 823 
+
+Cognitive Neuroscience , 27 (12), 2462–2476. https://doi.org/10.1162/jocn_a_00869 824 Warbrick, T., Rosenberg, J., & Shah, N. J. (2017). The relationship between BOLD fMRI response and the underlying white 825 matter as measured by fractional anisotropy (FA): A systematic review [Review]. Neuroimage , 153 , 369–381. 826 https://doi.org/10.1016/j.neuroimage.2016.12.075 827 Webb, C. E., Rodrigue, K. M., Hoagey, D. A., Foster, C. M., & Kennedy, K. M. (2019). Contributions of White Matter 828 Connectivity and BOLD Modulation to Cognitive Aging: A Lifespan Structure-Function Association Study. Cereb 829 
+
+Cortex . https://doi.org/10.1093/cercor/bhz193 830 Webb, C. E., Rodrigue, K. M., Hoagey, D. A., Foster, C. M., & Kennedy, K. M. (2020). Contributions of White Matter 831 Connectivity and BOLD Modulation to Cognitive Aging: A Lifespan Structure-Function Association Study [Article]. 832 
+
+Cerebral Cortex , 30 (3), 1649–1661. https://doi.org/10.1093/cercor/bhz193 833 Wu, M., Lu, L. H., Lowes, A., Yang, S., Passarotti, A. M., Zhou, X. J., & Pavuluri, M. N. (2014). Development of superficial 834 white matter and its structural interplay with cortical gray matter in children and adolescents. Hum Brain Mapp ,835 
+
+35 (6), 2806–2816. https://doi.org/10.1002/hbm.22368 836 Xia, H., He, Q., & Chen, A. (2022). Understanding cognitive control in aging: A brain network perspective [Review]. 837 
+
+Frontiers in Aging Neuroscience , 14 . https://doi.org/10.3389/fnagi.2022.1038756 838 Yeh, F. C., Verstynen, T. D., Wang, Y. B., Fernandez-Miranda, J. C., & Tseng, W. Y. I. (2013). Deterministic Diffusion Fiber 839 Tracking Improved by Quantitative Anisotropy. Plos One , 8(11), Article e80713. 840 https://doi.org/10.1371/journal.pone.0080713 841 Zhu, Z., Johnson, N. F., Kim, C., & Gold, B. T. (2015). Reduced Frontal Cortex Efficiency is Associated with Lower White 842 Matter Integrity in Aging [Article]. Cerebral Cortex , 25 (1), 138–146. https://doi.org/10.1093/cercor/bht212 843 
+
+844 
+
+845 
+
+846 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+30 
+
+Tables 847 
+
+Table 1. Participant demographics 848 
+
+Younger Middle-Aged Older Oldest Whole Sample Age range 20–35 36–54 55–69 70–94 20-94 N (% female) 42 (54.8%) 41 (56.1%) 40 (62.5%) 38 (63.2%) 161 (59.0%) Age Mean (  sd) 27.45 (4.4) 45.24 (5.4) 61.05 (3.7) 76.58 (6.1) 51.93 (18.92) Education Mean (  sd) 15.57 (2.1) 15.12 (2.5) 15.65 (2.4) 15.71 (2.7) 15.51 (2.4) MMSE Mean (  sd) 29.14 (.95) 29.32 (.79) 28.95 (.72) 28.87 (.84) 29.07 (.84) CESD Mean (  sd) 4.60 (3.66) 4.80 (4.13) 4.20 (3.64) 3.50 (3.69) 4.29 (3.78) 
+
+Note . Participants were separated into age groups for illustration purposes; age was treated as continuous variable in all 849 
+
+statistical models. sd: standard deviation; MMSE: Mini Mental Status Examination; CESD: Center for Epidemiologic 850 
+
+Study Depression Scale. 851 
+
+852 
+
+853 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+31 
+
+Table 2. Cluster peaks for the regression of age on modulation of BOLD activation to difficulty (from Rieck et al., 2017) 854 
+
+ROI# Cluster label BA k x y z t pFWE 
+
+Positive modulation (hard > easy) 
+
+1 R intraparietal sulcus, inferior & superior parietal lobules 40 603 45 -39 54 5.70 < .001 2 R insula 13 176 42 21 -6 5.35 < .001 3 R middle frontal 6 86 33 0 57 5.13 0.003 4 R inferior frontal 44 94 51 9 24 5.03 0.002 5 R anterior cingulate 32 65 6 18 48 4.64 0.007 
+
+Negative modulation (easy > hard) 
+
+6 L middle frontal 9 69 -27 33 42 5.41 0.006 7 L angular gyrus 39 91 -45 -75 33 5.35 0.002 8 L/R cuneus, precuneus & posterior cingulate 18 241 -3 -87 24 5.20 <.001 9 L/R ventromedial prefrontal 10 135 0 51 -6 4.76 <.001 
+
+Note . Height threshold of p < .0001 and cluster correction at p < .05, family-wise error corrected. BA – Brodmann area; k 855 
+
+- # voxels in cluster; R - Right; L - left 856 
+
+857 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+32 
+
+Table 3. Summary of effects in the regression models. Fractional anisotropy (FA) is estimated with Age, quadratic effect of Age, and Whole brain FA for each functionally-guided white matter tract 
+
+Age Age 2 WBFA b SE t p b SE t p b SE t p
+
+IFOF -0.00004 0.00019 -0.19 0.848 -6.31e-06 9.76e-06 -0.65 0.520 1.87 0.34 5.52 < .001 
+
+U-fiber -0.00048 0.00013 -3.65 < .001 -1.20e-05 6.79e-06 -1.77 0.079 0.81 0.24 3.38 < .001 
+
+CCsplenium -0.00041 0.00032 -1.27 0.206 7.64e-07 1.53e-05 0.05 0.960 1.07 0.60 1.78 0.079 Cingulum -0.00050 0.00023 -2.20 0.030 8.43e-06 1.19e-05 0.71 0.481 1.21 0.40 3.03 0.003 
+
+Note. p values surviving multiple comparison correction (FDR) are marked in bold. WBFA: Whole Brain FA, SE: standard error of the mean, b: unstandardized beta weight 33 
+
+Table 4 . Summary of significant results: Effects of Age, PosMod, NegMod, linear and quadratic FA and their interactions on four cognitive constructs after controlling for WBFA . Significant results surviving multiple comparison correction using FDR are labelled with asterisks. Cells marked with vertical stripes are interaction effects representing “ within-network structure-function compensation ”, where both FA and BOLD were retrieved/generated from the same functional network; cells filled with horizontal stripes represent “ cross-network structure-function compensation ”, where FA and BOLD were retrieved from different functional networks; grid patterns show “ coupling effects” , where FA modulates both BOLDpos and BOLDneg on cognitive scores. BOLDpos: positive BOLD modulation to task difficulty, or PosMod; BOLDneg: negative BOLD modulation to task difficulty, or NegMod. Detailed model parameters of the results can be found in supplemental Table 3a-3d.                                                  
+
+> Task fMRI Distance Judgement Composite Switching Score of Composite Inhibition Score of CFIT Task Accuracy Stroop & Verbal Fluency Stroop & Verbal Fluency Cognition Spatial Judgement Switching Inhibition Fluid Intelligence Tract IFOF U-fiber Cingulum CC splenium IFOF U-fiber Cingulum CC splenium IFOF U-fiber Cingulum CC splenium IFOF U-fiber Cingulum CC splenium Age **********BOLDpos *
+> BOLDneg ****
+> FA 2*
+> Age × BOLDneg **
+> Age × FA *
+> BOLDpos × FA *
+> BOLDpos × FA 2
+> *Age × BOLDpos × FA *Age × BOLDneg × FA *
+> BOLDpos × BOLDneg × FA *
+> Age × BOLDneg × FA 2*
+> Age × BOLDpos × BOLDneg × FA 2*
+
+34 
+
+Figure List 
+
+Figure 1 . Conceptual hypothesis of structure-function association compensatory effect on cognitive performance . The nine ROIs in each brain are the functional clusters showing the effect of age-related BOLD modulation on task difficulty; the BOLD modulation legend illustrates the direction and strength of the effect where dark red/blue color indicates strengthened positive/negative BOLD modulation, respectively, while the lighter color represents weakened BOLD modulation effect as a result of brain aging. The four solid/dashed lines in each brain represent relative intact/degraded white matter connections from the hub of the multiple demand network (MDN), the insula, to the other four clusters in the MDN. The brain on the left represents the state of a healthy, younger brain, with relatively high white matter connectivity and high positive/negative BOLD modulation to task difficulty, both of which are linked to better performance. As the brain ages, white matter in the MDN degrades first (solid lines connecting red ROIs in younger adults become dashed lines with aging, on the brains on the right side). In response to this structural impairment in frontal-parietal regions, the functional activity could demonstrate either a “Non-compensatory” relation to cognition, where declines in BOLD modulation in both networks are associated with worse cognition, as the top right brain shows, or a “Compensatory” effect, where strengthened local activity (increased PosMod) coupled with weakened NegMod is linked to better cognition (bottom right brain). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+35 
+
+Figure 2 . Overview of tracts obtained using functionally-defined ROIs. Tracts resulting from functionally-guided tractography were named by the anatomical tract with which they most overlapped. Tracts residing between functional clusters within the positive network are boxed in red, tracts between negative network clusters are boxed in blue, and the tract resulting from cross-hemispheric connection between networks is boxed in green. All tracts are projected on the isosurface of the brain for presentation purposes, which is registered using participant’s T1-weighted image in DSI-studio. CC – corpus callosum, Cingulum-c – tract from between network, cross-modulation. 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+36 
+
+Figure 3 . Correlation of Age and FA after controlling for whole brain FA . Significant age-related decline of FA after controlling for whole brain FA in the frontal-insular U-fiber tract is observed, but not for the remaining three functionally-guided tracts: the inferior frontal-occipital fasciculus, the splenium of the corpus callosum, and the cingulum bundle (see also Table 3). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+37 
+
+Figure 4 . The nature of the white matter structure – BOLD function association depends upon age. 
+
+Breakdown of the significant Age x IFOF FA interaction on negative BOLD modulation to difficulty. (a) Simple slopes plot illustrating that the BOLD-FA association is positive in older adults (1 SD > mean age), with higher anisotropy associated with higher negative BOLD modulation (a weakened dampening of cortical activation); nonsignificant for middle-aged adults (mean age), and negative for younger adults (1 SD < mean age), with higher anisotropy associated with weaker negative BOLD modulation (stronger 
+
+(a) 
+
+(b)
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint
+
+38 
+
+dampening of cortical activation) to difficulty. (b) Johnson-Neyman plot indicates that this association is significant in younger adults until ~age 34 and in individuals above ~age 64. 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint 39 
+
+Figure 5 . Breakdown of the interactions of the fronto-insular U-fiber tract FA and other independent variables with cognition using Johnson-Neyman plots . (a) Interaction of PosMod and quadratic FA on CFIT score (b) Interaction of Age, PosMod, and FA on CFIT score, displayed at FA = -1 SD, mean level, 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint 40 
+
+and at FA = +1 SD (c) Interaction of age, NegMod, and quadratic FA on switching scores (d) Interaction of PosMod, NegMod and FA on CFIT scores. FA – fractional anisotropy, CFIT – Culture Fair Intelligence Test; PosMod – positive BOLD modulation to task difficulty, NegMod – negative BOLD modulation to task difficulty. 
+
+.CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted July 21, 2026. ;https://doi.org/10.64898/2026.07.16.739039 doi: bioRxiv preprint 41 
+
+Figure 6 . Four-way Interaction of age, PosMod, NegMod, and quadratic FA of the fronto-insular U-fiber tract on Inhibition . Johnson-Neyman plots illustrate the effect of PosMod (at -1, mean and +1 SD), and FA on the slope of NegMod on Inhibition scores at three levels of age (-1, mean, and +1 SD). For older adults, high PosMod (long-dashed line in the right panel c) coupled with low NegMod predicted better Inhibition score when FA is high/low (outside of the range [0.18-0.27]). For middle-aged adults (b), the same coupling effect appeared in higher FA. Quadratic effect of FA in older adults (c) indicates a further weakened NegMod/PosMod coupling effect on inhibiton as FA increases.
