@@ -1,0 +1,135 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-27T20:26:33.872088+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2607.21119v1",
+      "source": "arxiv",
+      "title": "Quantifying Event-Related (De)Synchronization Variability for Brain-Computer Interface: A Unified and Interpretable Framework",
+      "abstract": "Objective: Brain-Computer Interfaces (BCIs) enable the control of external devices by decoding user intentions from electroencephalography (EEG). However, substantial EEG variability within and between users remains a major challenge. To better understand this variability, we propose interpretable metrics that independently quantify temporal, spatial, and frequency variability in BCI related brain activity within and between users. Methods: We propose a framework to quantify variability by extracting EEG features and defining variability as their dispersion around their centroid using appropriate distance functions. Using two motor imagery BCI datasets (N = 133 users), we investigated the relationship between BCI performance and the variability metrics through within-user and cross-user classification experiments. Results: Negative correlations of -0.2 to -0.4 were observed across most conditions, suggesting that lower variability is associated with higher BCI performance. Moreover, the metrics revealed differences in robustness to variability between the deep learning and Riemannian-based classifiers, with the former showing weaker correlations. Conclusion: The results demonstrate the effectiveness of the proposed variability metrics and suggest that reducing variability may improve BCI performance while revealing differences in the sensitivity of classification models to different types of variability. Significance: The framework quantifies temporal, spatial, and frequency variability at multiple hierarchical levels (within-trial, between-trial, and between-trial-group), providing interpretable measures to better understand EEG variability and support more robust BCIs. It could also be used to characterize dataset variability, evaluate classifier sensitivity, incorporate variability into objective functions, and provide variability-based user feedback.",
+      "authors": [
+        "Simon Kojima",
+        "Fabien Lotte"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP"
+      ],
+      "published": "2026-07-23T09:55:43+00:00",
+      "link": "https://arxiv.org/pdf/2607.21119v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "proposes metrics to quantify variability in ERD/ERS, a spectral power measure in EEG cognitive tasks",
+      "llm_evidence_cn": "提出量化ERD/ERS变异性的指标，ERD/ERS是EEG认知任务中的频谱功率度量",
+      "llm_evidence": "提出量化ERD/ERS变异性的指标，ERD/ERS是EEG认知任务中的频谱功率度量",
+      "canonical_evidence": "提出量化ERD/ERS变异性的指标，ERD/ERS是EEG认知任务中的频谱功率度量",
+      "llm_tldr_en": "This paper proposes a framework to quantify temporal, spatial, and frequency variability in ERD/ERS for motor imagery BCI, finding that these interpretable metrics can characterize within- and between-user variability in EEG activity.",
+      "llm_tldr_cn": "该文针对脑机接口中EEG信号的高变异性问题，提出了一套可解释的指标，从时间、空间和频率三个维度独立量化事件相关（去）同步（ERD/ERS）的变异性。利用两个运动想象BCI数据集（133名用户）验证，框架能有效刻画用户内和用户间的脑活动变异模式，为提升BCI稳健性提供了新的分析工具。",
+      "llm_tldr": "该文针对脑机接口中EEG信号的高变异性问题，提出了一套可解释的指标，从时间、空间和频率三个维度独立量化事件相关（去）同步（ERD/ERS）的变异性。利用两个运动想象BCI数据集（133名用户）验证，框架能有效刻画用户内和用户间的脑活动变异模式，为提升BCI稳健性提供了新的分析工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.21654v1",
+      "source": "arxiv",
+      "title": "Computer Vision Based Neurology Brain Activity Rejection Architecture and Implementation",
+      "abstract": "The electroencephalogram (EEG) is a valuable and widely applied tool for investigating brain disorders and behavioral changes. It offers a minimally restrictive and non-invasive method. However, challenges in using EEG for cognitive development studies include temporal resolution, signal source localization, and EEG artifacts. Careful consideration of these factors is essential for informed application of EEG technology. Independent component analysis (ICA) effectively isolates source generator processes from signals recorded by multiple, adjacent EEG scalp electrodes. Although ICA decomposition requires manual inspection, selection, and interpretation of independent components (ICs), this process is time consuming and demands expertise. Automated IC classification can achieve sufficient accuracy, expediting large scale EEG research and enabling near real time applications in conjunction with brain activity rejection tasks, which are crucial for medical specialists. This study introduces an automated computer vision based ICA rejection labeling tool compatible with widely used software interfaces like ICLabel and EEGLab. By automating the manual task, the proposed system reduces processing time by 7200 fold and achieves an accuracy of 89.45%.",
+      "authors": [
+        "Zag ElSayed",
+        "Nathan Suer",
+        "Grace Westerkamp",
+        "Jack Yanchen Liu",
+        "Makoto Miyakoshi",
+        "Craig Erickson",
+        "Ernest Pedapati"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "cs.LG",
+        "physics.data-an",
+        "q-bio.QM"
+      ],
+      "published": "2026-07-22T18:30:41+00:00",
+      "link": "https://arxiv.org/pdf/2607.21654v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "proposes computer vision based method for EEG artifact rejection, enabling clean signals for spectral analysis in cognitive studies",
+      "llm_evidence_cn": "提出基于计算机视觉的脑电图伪迹去除方法，有助于认知研究中频谱分析的信号清洁",
+      "llm_evidence": "提出基于计算机视觉的脑电图伪迹去除方法，有助于认知研究中频谱分析的信号清洁",
+      "canonical_evidence": "提出基于计算机视觉的脑电图伪迹去除方法，有助于认知研究中频谱分析的信号清洁",
+      "llm_tldr_en": "Introduces a computer vision approach to automate EEG artifact rejection, reducing manual inspection and supporting reliable spectral power analysis in cognitive neuroscience.",
+      "llm_tldr_cn": "针对脑电图伪迹去除耗时且依赖专家的问题，提出基于计算机视觉的自动化伪迹拒绝架构。该方法利用视频监控与深度学习技术快速识别并去除眼动等伪迹，提高了EEG数据质量。实验表明该方法可有效辅助认知发展研究中的脑电信号预处理，为后续频谱分析提供更干净的数据基础。",
+      "llm_tldr": "针对脑电图伪迹去除耗时且依赖专家的问题，提出基于计算机视觉的自动化伪迹拒绝架构。该方法利用视频监控与深度学习技术快速识别并去除眼动等伪迹，提高了EEG数据质量。实验表明该方法可有效辅助认知发展研究中的脑电信号预处理，为后续频谱分析提供更干净的数据基础。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-17-739148-v2",
+      "source": "biorxiv",
+      "title": "Excitatory delay-coupling explains in-phase and antiphase functional connectivity",
+      "abstract": "Coordinated oscillatory activity between brain regions underpins cognition, yet the phase relationships governing this coordination remain poorly understood. Using scalp EEG from 31 participants performing a motor learning task, we show that inter-site phase clustering occurs predominantly at in-phase or antiphase relationships, with the transition between them governed by conduction delay. Homologous interhemispheric pairs remain in-phase despite long distances, consistent with faster callosal conduction. A minimal model of two delay-coupled excitatory populations reproduces these features without parameter tuning; stability analysis shows that in-phase and antiphase oscillations arise from competing instabilities, with delay determining which dominates. Task performance shifts a frontoparietal network toward in-phase connectivity, a modulation captured by the Phase Relationship Index (PRI) but missed by conventional clustering metrics. Preliminary evidence from independent datasets suggests these patterns generalise. These findings challenge the assumption that zero-lag connectivity reflects volume conduction, offer a mechanistic account linking conduction delay to phase organisation, and introduce PRI as a metric sensitive to functionally relevant connectivity changes invisible to existing measures.",
+      "authors": [
+        "Omurtag, A.",
+        "Dragomir, A.",
+        "Crofts, J.",
+        "Lytton, W. W."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-19T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.17.739148v2.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Uses scalp EEG during a motor learning task to study oscillatory phase clustering, related to spectral analysis during cognitive tasks",
+      "llm_evidence_cn": "在运动学习任务中使用头皮EEG研究振荡相位聚类，与认知任务中的频谱分析相关",
+      "llm_evidence": "在运动学习任务中使用头皮EEG研究振荡相位聚类，与认知任务中的频谱分析相关",
+      "canonical_evidence": "在运动学习任务中使用头皮EEG研究振荡相位聚类，与认知任务中的频谱分析相关",
+      "llm_tldr_en": "This EEG study shows that in-phase and antiphase functional connectivity emerges from delay coupling, offering a methodological bridge for EEG spectral analysis during cognitive tasks.",
+      "llm_tldr_cn": "该EEG研究表明，脑区间协调振荡主要呈现同相或反相关系，且由传导延迟决定过渡，为认知任务中的EEG频谱分析提供了方法论桥梁。",
+      "llm_tldr": "该EEG研究表明，脑区间协调振荡主要呈现同相或反相关系，且由传导延迟决定过渡，为认知任务中的EEG频谱分析提供了方法论桥梁。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
