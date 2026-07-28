@@ -1,0 +1,177 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-28T21:01:28.602252+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-07-16-733837-v1",
+      "source": "biorxiv",
+      "title": "Psilocybin asymmetrically modulates outcome-based choice and cortical processing under uncertainty",
+      "abstract": "Emerging clinical research with psilocybin highlights the value of the psychedelic experience on successful treatment of a multitude of psychiatric disorders. While the psychedelic trip or clinical support procedures cannot be modeled in rodents, neural processes critical to meta-learning and flexible modification of previously learned strategies can be quantified during psilocybin exposure. Here we applied computational modeling and single unit recordings from medial prefrontal cortex to characterize the effect of psilocybin using a value-based probabilistic choice task. Psilocybin improved choice selection in uncertain contexts and shifted reinforcement learning rate bidirectionally, enhancing updating from rewarded, while reducing updating from unrewarded, actions. These behavioral changes coincided with selective shifts in the neural encoding of task features including enhanced neural representation of rewarded, and diminished representation of unrewarded, outcomes. Collectively these data indicate that psilocybin improves choice selection in uncertain contexts by reweighing cortical coding in a way that favors learning from positive new information over prospective actions.",
+      "authors": [
+        "Jacobs, D. S.",
+        "Pacheco, A. T.",
+        "Olson, R.",
+        "Langdon, A. J.",
+        "Moghaddam, B."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-07-21T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.16.733837v1.full.pdf",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "single unit recordings from medial prefrontal cortex during a value-based probabilistic choice task",
+      "llm_evidence_cn": "在基于价值的概率选择任务中进行内侧前额叶皮层单细胞记录",
+      "llm_evidence": "在基于价值的概率选择任务中进行内侧前额叶皮层单细胞记录",
+      "canonical_evidence": "在基于价值的概率选择任务中进行内侧前额叶皮层单细胞记录",
+      "llm_tldr_en": "Psilocybin enhanced choice performance in uncertain conditions and bidirectionally modulated reinforcement learning, with neural correlates in mPFC single-unit activity.",
+      "llm_tldr_cn": "该研究通过基于价值的概率选择任务，结合内侧前额叶皮层单细胞记录，发现赛洛西宾改善了不确定条件下的决策表现，并双向调节强化学习率，揭示了mPFC在决策灵活性中的关键作用，为理解致幻剂对高级认知功能的影响提供了神经机制层面的证据。",
+      "llm_tldr": "该研究通过基于价值的概率选择任务，结合内侧前额叶皮层单细胞记录，发现赛洛西宾改善了不确定条件下的决策表现，并双向调节强化学习率，揭示了mPFC在决策灵活性中的关键作用，为理解致幻剂对高级认知功能的影响提供了神经机制层面的证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "role of medial prefrontal cortex in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.22508v1",
+      "source": "arxiv",
+      "title": "Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes",
+      "abstract": "Electroencephalography (EEG) is widely used to diagnose neurological conditions, but its analysis usually relies on either predefined spectral features or deep neural networks. Predefined features carry a strong bias, since they fix in advance what counts as informative, while deep neural networks and foundation models are hard to interpret and need large amounts of data and compute. We present bag-of-waves, an interpretable framework that learns a small dictionary of recurring EEG waveform templates, called atoms, using shift-invariant k-means without labels. The continuous EEG is then turned into a sequence of atom tokens, whose counts feed a simple downstream classifier or clustering step. We extend this representation in two ways: we add atom-to-atom transitions, which we call n- grams, to capture temporal structure, and we move from single-channel atoms to regional and cross-channel spatial atoms for the multichannel case. We test the method on three complementary datasets, each probing a different aspect: single-channel mouse genotype clustering with only sixteen animals (the low-data and temporal case), resting-state dementia classification (the spatial case), and the TUEV benchmark, a six-way classification of clinical EEG events (a high-data comparison against strong deep and foundation baselines). Across all three datasets, bag-of-waves achieves performance competitive with state-of-the-art deep and foundation models. Yet, it operates with a fraction of the parameter count and provides full interpretability: because every atom corresponds to an inspectable waveform, the method explicitly recovers known clinical morphologies that a neurophysiologist can directly validate. Its main advantage is that it works in the low-data regime where heavier models are a poor fit.",
+      "authors": [
+        "Athanasios Papastathopoulos-Katsaros",
+        "Steven T. Lee",
+        "Lin Yao",
+        "Ajay Thomas",
+        "Junseok Park",
+        "Matthew J. McGinley",
+        "Zhandong Liu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "published": "2026-07-24T17:27:43+00:00",
+      "link": "https://arxiv.org/pdf/2607.22508v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Interpretable EEG analysis framework learning waveform templates applicable to cognitive tasks",
+      "llm_evidence_cn": "可解释的EEG分析框架，学习波形模板，适用于认知任务",
+      "llm_evidence": "可解释的EEG分析框架，学习波形模板，适用于认知任务",
+      "canonical_evidence": "可解释的EEG分析框架，学习波形模板，适用于认知任务",
+      "llm_tldr_en": "Proposes bag-of-waves, an interpretable EEG method that learns a dictionary of waveform atoms without labels, converts EEG to token sequences, and enables simple classifiers, offering an alternative to spectral features for cognitive studies.",
+      "llm_tldr_cn": "针对EEG分析中预定义频谱特征偏差和深度学习难解释问题，提出bag-of-waves：通过平移不变k-means无监督学习波形原子字典，将EEG转换为原子标记序列并用于分类；在低数据量下提取可解释生物标志物，为认知任务的EEG分析提供透明高效的方案。",
+      "llm_tldr": "针对EEG分析中预定义频谱特征偏差和深度学习难解释问题，提出bag-of-waves：通过平移不变k-means无监督学习波形原子字典，将EEG转换为原子标记序列并用于分类；在低数据量下提取可解释生物标志物，为认知任务的EEG分析提供透明高效的方案。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.22778v1",
+      "source": "arxiv",
+      "title": "Subject-Level Heterogeneity in EEG Motor Imagery Decoding: A Large-Scale Benchmark and Portfolio-Based Reduction of the Search Space",
+      "abstract": "Robust EEG motor imagery decoding remains limited by strong inter-individual variability, making it difficult to identify pipelines that generalize across users. We present a large-scale, standardized within-session benchmark of decoding pipelines across three public datasets: Cho2017 (52 subjects), PhysionetMI (109 subjects), and Zhou2016 (4 subjects). Using a common MOABB LeftRightImagery setting, two frequency bands (8-15 Hz and 8-30 Hz), and a broad combination of feature extraction, preprocessing, and classification steps, we analyzed 216,714 raw evaluation rows, which after structured aggregation yielded 44,928, 109,000, and 4,192 subject-level observations respectively.   Covariance tangent-space projection (cov-tgsp) and Common Spatial Patterns (CSP) consistently defined the strongest methodological families, though their relative ordering was dataset-dependent. On Cho2017, the best family-level mean accuracy came from cov-tgsp in 8-30 Hz (0.712 +/- 0.140), whereas Zhou2016 favored CSP (0.832 +/- 0.121 in 8-15 Hz). These aggregate rankings concealed substantial subject-level heterogeneity: 42 distinct winning pipelines across 52 Cho2017 subjects, and 93 across 109 PhysionetMI subjects.   We then used the benchmark as an empirical performance landscape for building compact portfolios of pipelines of size K. Several construction procedures were compared, including a ranking-based Top-K Mean heuristic and search-based strategies. Results were broadly consistent, with Top-K Mean giving the best trade-off. A single best global pipeline already retained 94.2% of the oracle in Cho2017 and 81.8% in PhysionetMI; at K = 12, oracle retention rose to 96.5% and 90.0%. The landscape is therefore subject-dependent, and this heterogeneity can be exploited through compact portfolios that make personalization more feasible.",
+      "authors": [
+        "Paul Barbaste",
+        "Olivier Oullier",
+        "Xavier Vasques"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "cs.LG"
+      ],
+      "published": "2026-07-24T08:55:28+00:00",
+      "link": "https://arxiv.org/pdf/2607.22778v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Large-scale EEG motor imagery benchmark using spectral features.",
+      "llm_evidence_cn": "使用频谱特征的大规模EEG运动想象基准",
+      "llm_evidence": "使用频谱特征的大规模EEG运动想象基准",
+      "canonical_evidence": "使用频谱特征的大规模EEG运动想象基准",
+      "llm_tldr_en": "A large-scale benchmark of EEG motor imagery decoding pipelines across three datasets revealed strong inter-individual variability and proposed a portfolio-based method to reduce the search space, offering a transferable methodology for EEG cognitive task analysis.",
+      "llm_tldr_cn": "本研究针对EEG运动想象解码中个体差异大的难题，使用三个公开数据集构建大规模基准，评估数十万次预处理、特征提取和分类组合，并提出组合策略缩减搜索空间。结果识别出泛化性较强的解码管道，并提供了处理异质性的通用方法。该方法可迁移至涉及mPFC等高级认知任务的EEG频谱分析，为稳健解码流程的确定提供参考。",
+      "llm_tldr": "本研究针对EEG运动想象解码中个体差异大的难题，使用三个公开数据集构建大规模基准，评估数十万次预处理、特征提取和分类组合，并提出组合策略缩减搜索空间。结果识别出泛化性较强的解码管道，并提供了处理异质性的通用方法。该方法可迁移至涉及mPFC等高级认知任务的EEG频谱分析，为稳健解码流程的确定提供参考。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.24378v1",
+      "source": "arxiv",
+      "title": "Bayesian Feature Extraction using Gaussian and Diffused-gamma Priors for High Dimensional Spatio-Temporal Data",
+      "abstract": "High-dimensional data with sparse structure and spatio-temporal dependence arise in many scientific domains. We develop a Bayesian feature-extraction framework for spatio-temporal settings that employs Gaussian and Diffused-gamma priors to induce structured sparsity. The modeling framework specifies a general likelihood via Bregman divergence, enabling compatibility with a range of loss functions and measurement models. Posterior computation is carried out via Markov chain Monte Carlo (MCMC), and we introduce a two-stage feature-extraction procedure based on posterior samples to stabilize selection across space and time. We illustrate the method with a multi-subject electroencephalography (EEG) case study examining the relationship between chronic alcohol exposure and activity in different brain regions. We first fit binary classification models at each time point, then use false discovery rate-controlled screening and subsequent clustering in a two-stage feature-extraction pipeline to identify active brain regions. The analysis demonstrates that our proposed priors improve recovery of sparse features and enhance interpretability in the presence of spatio-temporal dependence. The framework is broadly applicable to high-dimensional, structured problems where accurate feature selection and inference are required. The code to implement the model is publicly available via GitHub.",
+      "authors": [
+        "Garrett Frady",
+        "Dipak K. Dey",
+        "Shariq Mohammed"
+      ],
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "q-bio.QM",
+        "stat.AP",
+        "stat.CO",
+        "stat.ML"
+      ],
+      "published": "2026-07-27T12:54:59+00:00",
+      "link": "https://arxiv.org/pdf/2607.24378v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Bayesian spatio-temporal feature extraction demonstrated on EEG data",
+      "llm_evidence_cn": "提出贝叶斯时空特征提取框架，并在多被试脑电图案例中验证",
+      "llm_evidence": "提出贝叶斯时空特征提取框架，并在多被试脑电图案例中验证",
+      "canonical_evidence": "提出贝叶斯时空特征提取框架，并在多被试脑电图案例中验证",
+      "llm_tldr_en": "Proposes a Bayesian feature-extraction framework with Gaussian and Diffused-gamma priors for high-dimensional spatio-temporal data, illustrated with an EEG case study, enabling robust selection of sparse features across space and time.",
+      "llm_tldr_cn": "针对高维时空数据中的稀疏特征提取问题，提出了一种使用高斯和扩散伽马先验的贝叶斯框架。通过马尔可夫链蒙特卡洛采样和两阶段特征选择程序，实现了跨时空的稳定特征选择。在多被试脑电图案例研究中验证了方法的有效性，为EEG数据分析提供了强大的特征提取工具。",
+      "llm_tldr": "针对高维时空数据中的稀疏特征提取问题，提出了一种使用高斯和扩散伽马先验的贝叶斯框架。通过马尔可夫链蒙特卡洛采样和两阶段特征选择程序，实现了跨时空的稳定特征选择。在多被试脑电图案例研究中验证了方法的有效性，为EEG数据分析提供了强大的特征提取工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

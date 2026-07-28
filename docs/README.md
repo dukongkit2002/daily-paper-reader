@@ -6,32 +6,36 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-27
-- 运行时间：2026-07-27 20:29:57 UTC
+- 最新运行日期：2026-07-28
+- 运行时间：2026-07-28 21:07:10 UTC
 - 运行状态：成功
-- 本次总论文数：3
-- 精读区：0
+- 本次总论文数：4
+- 精读区：1
 - 速读区：3
 
 ### 今日简报（AI）
-今日速览3篇新研究，聚焦脑机接口变异性量化与神经功能连接机制。  
-得分最高的论文提出统一框架，可解释地量化脑电事件相关同步/去同步的个体差异。  
-若想提升脑机接口的稳定性，推荐从这篇量化框架入手；对大脑网络协同感兴趣的读者，也可关注兴奋性延迟耦合如何解释同相与反相的连接模式。
-- 详情：[/202607/27/README](/202607/27/README)
+今日神经科学日报聚焦迷幻药与脑电解码的前沿探索，共精选4项研究，其中1篇高分精读揭示裸盖菇素在不确定性下如何不对称调节决策与皮层处理。
+
+最值得关注的方向是：迷幻药对价值决策的偏侧化调制机制，以及基于波形字典的脑电解码新方法在低数据场景下的潜力。
+
+建议读者优先阅读精读论文，并结合速读中关于运动想象异质性的大规模基准研究，思考药物与个体差异对脑信号解码的共同影响。
+- 详情：[/202607/28/README](/202607/28/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Psilocybin asymmetrically modulates outcome-based choice and cortical processing under uncertainty](/202607/28/biorxiv-10-64898-2026-07-16-733837-v1-psilocybin-asymmetrically-modulates-outcome-based-choice-and-cortical-processing-under-uncertainty)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：在基于价值的概率选择任务中进行内侧前额叶皮层单细胞记录
 
 ### 速读区论文标签
-1. [Quantifying Event-Related (De)Synchronization Variability for Brain-Computer Interface: A Unified and Interpretable Framework](/202607/27/2607.21119v1-quantifying-event-related-desynchronization-variability-for-brain-computer-interface-a-unified-and-interpretable-framework)  
+1. [Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes](/202607/28/2607.22508v1-interpretable-eeg-biomarkers-with-bag-of-waves-spatial-and-temporal-waveform-dictionaries-for-low-data-regimes)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：提出量化ERD/ERS变异性的指标，ERD/ERS是EEG认知任务中的频谱功率度量
-2. [Computer Vision Based Neurology Brain Activity Rejection Architecture and Implementation](/202607/27/2607.21654v1-computer-vision-based-neurology-brain-activity-rejection-architecture-and-implementation)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：提出基于计算机视觉的脑电图伪迹去除方法，有助于认知研究中频谱分析的信号清洁
-3. [Excitatory delay-coupling explains in-phase and antiphase functional connectivity](/202607/27/biorxiv-10-64898-2026-07-17-739148-v2-excitatory-delay-coupling-explains-in-phase-and-antiphase-functional-connectivity)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：在运动学习任务中使用头皮EEG研究振荡相位聚类，与认知任务中的频谱分析相关
+   evidence：可解释的EEG分析框架，学习波形模板，适用于认知任务
+2. [Subject-Level Heterogeneity in EEG Motor Imagery Decoding: A Large-Scale Benchmark and Portfolio-Based Reduction of the Search Space](/202607/28/2607.22778v1-subject-level-heterogeneity-in-eeg-motor-imagery-decoding-a-large-scale-benchmark-and-portfolio-based-reduction-of-the-search-space)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：使用频谱特征的大规模EEG运动想象基准
+3. [Bayesian Feature Extraction using Gaussian and Diffused-gamma Priors for High Dimensional Spatio-Temporal Data](/202607/28/2607.24378v1-bayesian-feature-extraction-using-gaussian-and-diffused-gamma-priors-for-high-dimensional-spatio-temporal-data)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：提出贝叶斯时空特征提取框架，并在多被试脑电图案例中验证
 
 
 <div class="dpr-home-promo-card">
