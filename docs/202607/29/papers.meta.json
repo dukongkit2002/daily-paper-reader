@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-29",
+  "date": "2026-07-29",
+  "generated_at": "2026-07-29T21:38:39",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/29/2607.25045v1-cogeegagent-toward-autonomous-cognitive-eeg-analysis-with-grounded-execution-and-selection-aware-verification",
+      "section": "quick",
+      "title_en": "CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification",
+      "authors": "Dengzhe Hou, Lingyu Jiang, Fangzhou Lin, Kazunori D Yamada",
+      "date": "2026-07-27",
+      "pdf": "https://arxiv.org/pdf/2607.25045v1",
+      "score": "7.0",
+      "evidence": "CogEEGAgent利用MNE-Python自动化认知EEG分析，可涉及相对功率谱等分析",
+      "tldr": "认知脑电图分析高度专业化，涉及众多合理但不同的分析选择，LLM代理虽能灵活翻译自然语言问题，但仅凭流畅报告无法保证分析选择的正确性与独立性。CogEEGAgent通过将语义理解与科学执行权威分离，让LLM解释意图并提出注册分析，由确定性组件严格验证类型契约与确认访问，实现了有界自主控制。在预设路由基准上，其语言到注册分析的映射准确率优于匹配的确定性路由器，且预飞行检查有效实现安全弃权；在外部盲测试中，系统安全释放支持性分析并成功阻断了预设能力危害与生命周期复用请求。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Electroencephalography (EEG) analysis in cognitive studies requires specialized expertise and involves many defensible choices over contrasts, channels, time windows, and statistical tests. LLM agents can translate varied natural-language questions into analysis choices, offering a flexible interface for automation. Yet fluent reports alone cannot establish that an agent selected the requested analysis or evaluated a confirmatory claim independently of adaptive search. We present CogEEGAgent, a cognitive-EEG analysis agent grounded in MNE-Python. Its EEG-specific scientific harness separates semantic from scientific authority. The LLM interprets intent and proposes registered analyses, while deterministic components validate typed contracts, control confirmation access, and authorize evidence-bound release. On a prespecified routing benchmark, CogEEGAgent maps language to registered analyses more accurately than a matched deterministic router, while matched preflight makes both systems abstain whenever required. In an externally model-authored, outcome-blind campaign, the complete system releases supported analyses with participant-disjoint confirmation and blocks prespecified capability hazards and lifecycle-reuse requests. Policy stress testing shows that held-out confirmation curbs false positives from uncorrected adaptive search. Together, these studies establish bounded autonomy and an auditable automation framework for cognitive-EEG workflows. More broadly, they show how scientific agents can combine flexible language understanding with fail-closed control over inference and release.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/29/2607.20149v1-data-annotations-as-pedagogical-hints-from-subjective-labels-to-critical-thinking",
+      "section": "quick",
+      "title_en": "Data Annotations as Pedagogical Hints: From Subjective Labels to Critical Thinking",
+      "authors": "Ralf Raumanns, Theresa Elstner, Louis Ferger-Andrews, Louise M. Carlsen, Martin Potthast, Gerard Schouten, Josien P. W. Pluim, Veronika Cheplygina",
+      "date": "2026-07-22",
+      "pdf": "https://arxiv.org/pdf/2607.20149v1",
+      "score": "6.0",
+      "evidence": "通过数据标注直接探究批判性思维，与科学批判性思维倾向相关。",
+      "tldr": "机器学习课程中预标注数据集掩盖了标注主观性，导致学生盲目信任AI数据。本研究在荷兰和丹麦两所大学实施皮肤病变图像毛发覆盖等级手工标注活动，收集43份问卷。结果显示，学生对标注歧义、数据质量和偏见的理解显著提升，且认为该活动比讲座更有效。这表明手工标注能有效培养批判性思维，让学习者认识到标注分歧体现领域复杂性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Machine learning courses often use pre-labeled datasets, hiding the subjectivity of human annotation. This creates students with an overly trusting view of AI data and models, undervaluing interpretive diversity. We investigated whether manual data annotation tasks teach students about subjective labeling.   Study Design: An annotation activity was implemented at two universities: Fontys (Netherlands) and IT University Copenhagen (Denmark). Students annotated skin lesion images for hair coverage on a 3-point scale. Surveys were collected from 43 participants measuring their understanding of annotation ambiguity, data quality, bias, fairness, implementation barriers, and pedagogical effectiveness.   Key Findings: Self-reported familiarity with course content increased substantially across all concepts. Most students recognised that personal interpretation affects annotations. Students rated the activity as more effective than traditional lectures for understanding bias. Participants were motivated to learn more.   Main Drawbacks: Emotional unease from viewing medical images was the primary issue. Many students still requested clearer guidelines to reduce disagreement, suggesting they hadn't internalised that disagreement from different perspectives is a learning feature, not a bug.   Recommendations for Future Iterations: Ensure sufficient interpretive ambiguity in materials. Reduce repetitive annotation workload. Mitigate emotional unease from sensitive content. Explicitly frame disagreement as a learning opportunity rather than a problem to solve.   Manual data annotations effectively teach students that human judgment shapes model behavior and that disagreement reflects domain complexity, not just noise.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,584 @@
+Title: Data Annotations as Pedagogical Hints: From Subjective Labels to Critical Thinking
+
+URL Source: https://arxiv.org/pdf/2607.20149v1
+
+Published Time: Thu, 23 Jul 2026 01:10:50 GMT
+
+Number of Pages: 24
+
+Markdown Content:
+# Data Annotations as Pedagogical Hints: 
+
+## From Subjective Labels to Critical Thinking Ralf Raumanns 1,2 , Theresa Elstner 3, Louis Ferger-Andrews 1, Louise M. Carlsen 4,Martin Potthast 3, Gerard Schouten 1, Josien P. W. Pluim 2, and Veronika Cheplygina 41Fontys University of Applied Science, Eindhoven, The Netherlands 
+
+2Eindhoven University of Technology, Eindhoven, The Netherlands 
+
+3Kassel University, Kassel, Germany 
+
+4IT University of Copenhagen, Denmark 
+
+Abstract 
+
+Machine learning courses often rely on pre-labeled datasets. Yet the subjectivity inherent in human annotation remains invisible to students. At worst, this teaching approach produces learners with an overly trusting and potentially harmful perspective. They develop a false sense of objectivity in data and AI models. This comes at the expense of valuing interpretive diversity and contestability of algorithmic outputs. In this paper, we show that assigning learners a manual data annotation task leads to an understanding of the subjective nature of human-given labels. More precisely, we explore the extent to which manual annotation of images teaches students how human judgement shapes AI training. We investigate (1) How does group annotation affect perceptions of data quality, bias, and fairness? (2) What are the strengths and limitations of this teaching concept? We implemented an annotation activity at two universities: Fontys (NL, bachelor’s) and IT Univer-sity Copenhagen (DK, master’s). Students annotated skin lesion images for hair coverage on a 3-point scale. We then collected surveys from 43 students. These measure students’ understandings of anno-tation ambiguity, data quality, bias and fairness, map out students’ implementation barriers, and the pedagogical effectiveness of manual data annotation as a teaching concept that highlights subjectivity of data annotation. Self-reported familiarity with the course content increased substantially across all concepts. Most of the students recognised that personal interpretation affects annotations. The students rated the activity as more effective than traditional lectures in understanding bias. They were also motivated to learn more. However, emotional discomfort from viewing medical images was the main drawback. Many students still requested clearer guidelines to reduce disagreement. This suggests that they had not yet internalised that disagreement grounded in different perspectives is a feature, not a bug. Manual data annotations serve as effective pedagogical hints, teaching students that human judge-ment influences model behaviour. It also shows that disagreement reflects domain complexity, not just noise. Our main take-aways for future iterations of this or similar courses are: ensure sufficient interpretive ambiguity, reduce repetitive workload, mitigate emotional discomfort, and explicitly frame disagreement as a learning opportunity rather than a problem to solve. 
+
+Keywords: AI education, bias and fairness, problem-based learning, data quality, medical image anno-tation, manual labeling, hints  
+
+> Disclaimer: This is a working paper, and represents research in progress. We welcome contributions from the community. For comments or questions please email us at ralf.raumanns@fontys.nl or theresa.elstner@uni-kassel.de.
+
+# 1 Introduction 
+
+Machine learning and deep learning are growing rapidly, thus becoming a core element of the ed-ucational curriculum of universities. A core task of universities is to bring together research and education. Findings and insights from science are translated into concrete educational experi-ences, giving students access to current knowl-edge while learning how research is conducted. In a traditional approach, converting machine learn-ing and deep learning research into a curriculum involves lectures and practical exercises that focus on the technical implementation of models using pre-labeled datasets, rather than on the process of generating and curating them. One of the as-pects that is lost in this approach is that stu-dents develop a feel for the data: because they do 1arXiv:2607.20149v1 [cs.CY] 22 Jul 2026 Raumanns et al. Data Annotations as Pedagogical Hints   
+
+> (a) (b)
+> (c) (d)
+
+Figure 1: Demonstrating the impact of task de-sign on annotation consistency. The same four images are subjected to two different tasks: Task 1 is an objective classification (’Cat’ vs. ’Dog’) that typically yields unanimous agreement. In contrast, Task 2 asks for a subjective assess-ment of activity level (’Calm’, ’Neutral’, ’Play-ful’), which naturally introduces interpretive am-biguity and disagreement among annotators. not go through the often non-trivial annotation process themselves, they miss its inherent subjec-tivity and complexity. By subjectivity, we mean that annotation choices depend on personal inter-pretation, not just on an single objective ground truth. In many machine learning tasks the label is not uniquely determined but influenced by hu-man judgement, where (even expert) annotators may legitimately disagree. Figure 1 shows this: Task 1 (Cat vs. Dog) yields clear agreement, while Task 2 (Calm, Neu-tral, Playful) creates natural disagreement. By complexity, we mean the challenges during an-notation: such as dealing with ambiguous cases, handling different opinions, and understanding how personal bias affects training data. This paper focuses on data and annotation be-cause the process of gathering training data is an important source of bias, separate from model ar-chitecture or algorithmic choices. While models can introduce bias through their design, our work addresses the earlier stage where human judge-ment shapes what the model learns. We propose a pedagogical shift: students cre-ate hints themselves instead of using pre-labeled a dataset. By hints , we refer to annotations of visual features in an image, such as the border irregularity or colour variation of a skin lesion, that serve as interpretable signals for a model rather than as definitive ground truth. Pre-labeled datasets offer practical advantages such as time efficiency and reduced workload, but they hide the annotation process from students. Cre-ating hints serves two goals: it teaches students about the relation between human judgement and model behaviour, while generating training data. Secondly, it engages students directly with re-search and the nuances of labelling, thus deep-ening their understanding of how human judge-ment shapes the data underlying model perfor-mance and interpretability. When we subsequently integrated a compara-ble annotation task into our data science courses, we observed an unintended pedagogical effect: students began to critically question annotation protocols, discuss disagreements with peers, and recognise how their interpretive choices could propagate into model training. This observation suggests that data annotation may serve not only as a data collection mechanism but also as a vehi-cle for developing students’ awareness of subjec-tivity, bias, and fairness in AI. The present study investigates this potential in a systematic way. We have developed an educational activity and implemented it as a case study at two universi-ties. In both institutions, students were given a real-life dataset with a diverse collection of skin lesions. Students actively annotated these images for visual features such as hair coverage. Work-ing in groups, they applied a 3-point scale (none, some, a lot) to hundreds of images, documented their annotation decisions, and compared their labels with peers to analyse disagreement. The activity emphasises critical reflection on the col-lected data, combining elements of active learn-ing, problem-based learning, and shared tasks. We surveyed the students who took the data science course that contained the annotation task. Through this case study, we explore the an-swers to two research questions. 1. To what extent does annotating data in groups affect students’ perception of data quality and its effect on bias and fairness in AI models? (RQ1) 2. From the perspective of students and edu-cators, what are the perceived pedagogical strengths and limitations of using data an-notation as an educational task? (RQ2) Drawing on the insights from the survey, we propose recommendations for designing annota-tion assignments that involve students directly in the research process. Our primary audience is data science and machine learning educators. Our contributions are: • A practical educational intervention using 2Raumanns et al. Data Annotations as Pedagogical Hints skin lesion annotation to teach responsible AI concepts • Exploratory insights (from surveys and re-flections) on the pedagogical value of this ap-proach across two institutions • Practical takeaways for designing annotation-based assignments that con-nect human judgement to model behaviour 
+
+# 2 Related work 
+
+In this section, we review (i) classical agree-ment metrics that assume ground truth consen-sus, (ii) emerging approaches that model annota-tor subjectivity, and (iii) the gap between these methodological developments and their treatment in computer science education. 
+
+## 2.1 Data Annotation as a Research Problem: From Ground Truth to Subjectivity 
+
+Understanding how data labels are created is im-portant to understanding what machine learning models learn. The nature of annotation itself has undergone a quiet transition: disagreement is no longer treated as noise but as meaningful infor-mation. This section reviews this shift, from the agreement paradigm to recent approaches that ac-cept subjectivity, and discusses how these insights have yet to enter education. 
+
+Traditional View on Data Annotation: The Agreement Paradigm Data annotation has traditionally been grounded in the assumption of a single latent ground truth. Under this view, dis-agreement between annotators is treated as noise, and annotation quality is commonly evaluated us-ing inter-annotator agreement measures such as Krippendorff’s alpha [29], Fleiss’ kappa [17], Co-hen’s kappa [12], and Kendall’s tau [28]. These measures remain widely used in machine learn-ing research, particularly in supervised learning settings where human annotations serve as gold-standard labels. 
+
+Shift to Subjectivity of Data Annotation: The Disagreement Paradigm More recently, this assumption has been challenged. A grow-ing body of work argues that disagreement be-tween annotators can reflect a meaningful vari-ation in interpretation rather than measurement error. In this view, multiple perspectives may co-exist for inherently subjective tasks, and annota-tion should not necessarily be reduced to a single aggregated label. Röttger et al. [44] formalise this distinction through descriptive versus prescriptive annota-tion paradigms. The prescriptive view assumes a single correct label, while the descriptive view allows multiple valid interpretations of the same data. Similarly, Uma et al. [50] show that preserv-ing disagreement can even improve downstream performance compared to relying solely on aggre-gated gold labels. Several works further investigate the structure and usefulness of disagreement. Sandri et al. [45] provide a taxonomy of the causes of disagree-ment among annotators, distinguishing between noise-driven sources (sloppy annotation, ambigu-ity, and missing information) and genuinely sub-jective sources. Aroyo and Welty [2] argue that disagreement itself can be informative and pro-pose the Crowd Truth framework, which models labels as distributions over interpretations rather than as single ground truth values. Building on this idea, Dumitrache et al. [14] develop metrics to quantify ambiguity across annotators, data, and annotations. Empirical evidence in specific domains sup-ports this perspective. Cheplygina and Pluim [8] show that disagreement in medical image anno-tation can carry informative signals towards clas-sification. More recently, the Preference-involved Annotation Distribution Learning (PADL) frame-work [32] has expanded this direction by train-ing annotator-specific image segmentation models based on annotations by multiple medical pro-fessionals. Calling out to the research commu-nity, Plank [38] argues for publishing and leverag-ing non-aggregated annotations in order to devise new directions for machine learning. Together, these works reflect a shift in the field: from treating annotation disagreement as a prob-lem to be eliminated, toward treating it as a sig-nal that may encode meaningful structure about subjective tasks. If research sees disagreement as meaningful, why does education still treat it as an error? Our study bridges this gap by investigating whether engaging students in annotation can connect modern theory to classroom practice. 
+
+## 2.2 Data Annotation in Teaching: Persistence of the Agreement Paradigm 
+
+In many educational settings, annotation exer-cises are followed by the computation of inter-annotator agreement measures such as Cohen’s kappa or Krippendorff’s alpha, reinforcing the idea that annotation quality is defined by con-sensus. For example, Fröbe et al. [18] describe an information retrieval course in which students 3Raumanns et al. Data Annotations as Pedagogical Hints construct test collections and evaluate annotation quality using agreement metrics, implicitly treat-ing disagreement as reduced reliability. Similarly, even recent NLP teaching ma-terials often rely on pre-labelled datasets and focus on model building and evaluation rather than on the annotation process it-self ([36],[35],[3],[5],[23],[30],[1],[20],[39],[33]). Al-though some courses incorporate manual annota-tion tasks, these are typically designed for unam-biguous labelling problems such as part-of-speech tagging [4][26], where subjectivity is limited. Even when subjective tasks are included, educational framing often remains consensus-orientated, following the traditional agreement paradigm. Cignarella et al. [9] and Hou [24] de-scribe annotation exercises in which student dis-agreement is addressed through discussion aimed at resolving differences and reaching agreement, rather than exploring disagreement as a meaning-ful signal. Beyond computer science, educational ap-proaches similarly emphasise annotation as ameans of supporting domain learning or critical engagement with subject matter rather than as a site of epistemic reflection on label subjectiv-ity [19] [7]. Overall, while annotation is increasingly used as a pedagogical tool, its epistemological frame-work in education largely reflects the traditional agreement paradigm identified in research. In this study we explore this gap by examin-ing whether engaging students in manual labeling helps them recognise disagreement as meaningful rather than as error. 
+
+## 2.3 Linking Research and Teaching 
+
+Didactics of research-oriented teaching In a conventional curriculum, theoretical concepts are presented and then reinforced through prac-tical assignments. This approach to theory can-not respond quickly to the constantly evolving re-search landscape. Consequently, there is a grow-ing demand for curricula that integrate current research more directly, allowing students to en-gage with contemporary findings and emerging challenges. Elstner et al. [15] propose the integra-tion of research to teaching through shared task 
+
+activities. In these tasks, students collaborate in groups to tackle a scientific problem, with the em-phasis on the research content rather than com-petition. The authors ground their instructional design in active‑learning theory [16], positioning shared tasks as a specialised form of project-based learning (PBL). Raschka [41] further illustrates the efficacy of PBL in machine‑learning educa-tion. Students formed teams, developed indepen-dent project proposals, and spent the semester iteratively building and evaluating their models. At the end of the semester, each group presented its work to peers. An anonymous post‑course sur-vey indicated high levels of student satisfaction, and the author reported that PBL also fostered increased interaction and cooperation among par-ticipants. PBL increases learners’ interest in the mate-rial [37]. Our work brings together two related ideas: (1) linking current research more closely to coursework, and (2) using active‑learning meth-ods, like shared task activities and PBL, to pro-vide students with hands-on experience in applied data science. Schiendorfer et al. [46] observe that computer science and software engineering students tend to jump straight to building a solution rather than conducting empirical investigations first. To foster a more empirical mindset, they emphasise proper experimental work when teaching machine learning to these students. By placing real research problems in the class-room, we combine the motivation that PBL pro-vides with the benefit of exposing students to up‑to‑date scientific work, thereby positioning our study in the field of research‑driven, student-centred education. 
+
+Modern Annotation Theory and Educa-tion Taken together, machine learning research has increasingly emphasised that annotation dis-agreement can encode meaningful structured vari-ation rather than noise. In contrast, educa-tional practice continues to rely predominantly on agreement-based evaluation frameworks, im-plicitly reinforcing a single-ground-truth view of annotation. Prior work has demonstrated that annotations collected from non-experts, including students, can serve as effective training signals for machine learning models ([43], [42]). The authors trained a multi-task deep learning model on student-generated ABC annotations [48] of skin lesions, showing that crowdsourced features can improve both diagnostic performance and interpretability. However, in these studies, students were treated only as a source of data, and the instructional value of the annotation activity itself was not taken into account. To our knowledge, no prior work in data science or computer science education has systematically investigated how students conceptualise annota-tion subjectivity when not explicitly guided to-ward either the traditional or modern perspec-tive. In particular, it remains unclear whether students naturally adopt an agreement-orientated interpretation of the annotation or whether they 4Raumanns et al. Data Annotations as Pedagogical Hints independently recognise disagreement as poten-tially informative. This gap motivates our exploratory study, which examines student perceptions of annotation subjectivity as a first step toward addressing these questions (see contributions in the Introduction). 
+
+# 3 Methods 
+
+## 3.1 Educational context 
+
+Two educational courses formed the basis of this study, each representing a distinct approach to teaching data science, delivered by several of the authors. The first course, Data Mining , was offered during the fourth semester at Fontys Uni-versity of Applied Sciences in Venlo. In this 5-ECTS course, we introduced the core concepts of machine learning and data-driven decision-making, structured around IBM’s data science methodology. The second course, Projects in Data Science , took place at the IT University of Copenhagen. In this 7.5-ECTS course, we used a project-based learning approach to guide stu-dents through the entire data science pipeline, from problem identification to solution implemen-tation and communication. In addition, an anno-tation task was designed and implemented in both courses. In this activity, participants worked in groups over a two-week period to annotate skin lesion data. We chose medical image annotation because it is naturally subjective while still being connected to real clinical decisions. Connecting the annota-tion task to real clinical decisions helps students understand that their choices matter. The AI model trained on their annotations could even-tually affect medical diagnoses. This makes the lesson about subjectivity and bias concrete rather than abstract. Recent work in medical imag-ing [32] states that “medical image annotation is highly subjective, leading to inevitable annota-tion biases.” Scoring hair coverage in skin lesion images works especially well for our purpose. Un-like objective tasks such as distinguishing cats and dogs, judging how much hair is visible requires in-terpreting features such as thickness and density in different areas of the same lesion. The same image can reasonably be judged as having “some hair” by one person and as having “a lot” by an-other. Medical images can also trigger emotions, making the task feel more real, but can also cause discomfort. Together, these factors create a task in which students naturally disagree, letting them see for themselves how human judgement shapes training data. Table 1 provides a comparative overview of the key characteristics of both courses, including their institutional context, curriculum focus, pedagog-ical strategies, assessment methods and required tools. 
+
+## 3.2 Intervention design 
+
+We integrated case-based learning activities into each participating course. These courses already existed in the regular curriculum and focused on practical skills in machine learning and data sci-ence. We used these existing activities to investi-gate the pedagogical impact of data annotation, with an emphasis on ambiguity, subjectivity, and bias in data interpretation. The annotation task was divided into two parts: an individual assign-ment and a group assignment. 
+
+3.2.1 Individual assignment: Introduction to Data Annotation 
+
+In the first assignment, students worked with an existing dataset of skin lesion image annota-tions from the ISIC archive ([21, 11, 10, 49, 13, 51]). The students explored this dataset using a Jupyter notebook, which guided them through exercises involving data exploration, agreement between the annotators, and critical reflection on annotation variability. This activity emphasised the complexity of subjective data annotation and the importance of consistency and transparency in annotation practices. 
+
+3.2.2 Group assignment: Hands-on Data Annotation 
+
+The second assignment was a collaborative group task in which each group was assigned a unique set of 200 skin lesion images. Using the open-source tool Label Studio [25], the students annotated the amount of visible hair in each image on a 3-point ordinal scale (0 = none, 1 = some, 2 = a lot). Each group was required to annotate at least 100 images, with all members annotating the same subset to enable comparison and analysis of inter-annotator agreement. An-notations were submitted in CSV format using a standardised template. Students were encour-aged to document their annotation decisions and reasoning, fostering reflection on subjectivity and potential biases in visual interpretation. Both assignments were integrated into the stan-dard course design at each University and were consistent with the corresponding course’s learn-ing objectives. Depending on the course format, students carried out the tasks either individually or in small groups. Instructors and teaching assis-tants provided formative feedback during practi-cal sessions, and students were encouraged to re-5Raumanns et al. Data Annotations as Pedagogical Hints Table 1: Overview of the two courses in which the annotation activity was implemented 
+
+Characteristic Data Mining (DM) Projects in Data Science (PDS) 
+
+Institution Fontys University of Applied Sciences, Venlo (The Netherlands) IT University of Copenhagen (Den-mark) Period Fourth semester, 2024-2026 Second semester, 2025-2026 Credits 5 ECTS 7.5 ECTS Focus Core concepts of machine learning and data-driven decision making Complete data science project pipeline, from problem identification to commu-nication of results Key topics Data exploration, dimensionality re-duction, supervised learning, and re-inforcement learning, all organized ac-cording to IBM’s data science method-ology Domain-specific problem identification, technical implementation, result com-munication Pedagogy Regular weekly theory lectures and hands-on sessions, supported by short assessments, incorporating both indi-vidual and group activities Project-oriented instruction combining weekly lectures (2×45 min) and hands-on sessions (2×45 min), featuring un-graded practice tasks with published solutions; includes collaborative group work Assessment Written exam and practical assign-ments (both mandatory) Project-oriented format; assessment through a group submission and an oral examination (team presentation followed by individual questioning) Prerequisites Prior knowledge of Python and data analysis Background coursework in data sci-ence, linear algebra, and probabil-ity, with simultaneous enrollment in second-semester classes Tools & platforms Python, Scikit-Learn, TensorFlow, TestVision Python, Scikit-Learn, GitHub, Over-leaf Learning materials Hands-On Machine Learning with Scikit-Learn and TensorFlow [22] Optional background reading from re-search papers 
+
+6Raumanns et al. Data Annotations as Pedagogical Hints   
+
+> (a) (b)
+> (c) (d)
+
+Figure 2: Examples of four distinct skin lesions demonstrating varying degrees of hair coverage. For an immersive experience subjectivity, we in-vite readers to evaluate the hair density for each lesion: 0 no visible hair, 1 some hair presence, and 2 a lot of hair. flect on their annotation strategies and challenges. These activities aimed to develop students’ criti-cal thinking, data literacy, and ethical awareness in the context of machine learning. 
+
+## 3.3 Survey instrument 
+
+We implemented a single online survey after the students completed the annotation task. The sur-vey consisted of three sections: (1) a retrospective pre- / post-assessment, (2) closed-ended, and (3) open-ended questions inviting students to elabo-rate on their experiences. We hosted the survey on SoSci Survey [31] and collected responses be-tween 27 May 2026 and 24 June 2026. 
+
+3.3.1 Survey design 
+
+The first section of the survey focused on retro-spective pre-task and post-task familiarity mea-sures. We asked participants to reflect on their understanding prior to starting the annotation task across four core concepts: subjectivity in data annotation, inter-annotator agreement mea-sures, bias in machine learning models, and data quality assessment. This allowed us to compare self-reported knowledge before and after the in-tervention on a 5-point scale ranging from ’never heard of it’ to ’fully understood it’. The second section aimed to assess construct-related percep-tions regarding the annotation task experience. Following an iterative development process, we translated five constructs into measurable survey items covering annotation ambiguity, data qual-ity, bias and fairness, implementation barriers, and pedagogical effectiveness (See Table 2). All items used a 7-point scale ranging from ’strongly disagree’ to ’strongly agree’, enabling systematic measurement of student opinions. We developed multiple items per construct to minimise mea-surement error. The third section captured qual-itative reflections through open-ended questions. We gave respondents the opportunity to elaborate on their views in their own words, including what they found most significant about the annotation process, suggestions for improving the task, least enjoyable parts of the task, most enjoyable parts, and what they found interesting about skin le-sions as a topic. Participants were informed of the purpose of the study and that participation in the survey was voluntary. At Fontys, where the annota-tion task was a mandatory course component, students were informed that completing the an-notation task was required for their coursework, but that participating in the research survey was not. At ITU, where the annotation task was an optional component, both the task and the sur-vey were voluntary. We stored all anonymous re-sponses on the SoSci Survey platform, which is GDPR-compliant. Data were not linked to stu-dent names or student numbers, and participation in the survey did not affect course grades. The complete version of the survey is included in Appendix A .
+
+3.3.2 Survey rollout and response collec-tion 
+
+After the annotation task was completed, we send the survey in different ways for each university. At Fontys, we asked the 2025–2026 students to do the survey during class. We emailed the 2024– 2025 students at Fontys after their course ended. At ITU, we posted flyers on campus. We retained only fully completed responses for analysis. 
+
+## 3.4 Data analysis 
+
+3.4.1 Quantitative analysis 
+
+We analysed post-survey data using descriptive statistics (frequencies, percentages, and Likert-scale distributions) to summarise responses and calculate proportions for each construct. These variables addressed our core constructs: annota-tion ambiguity, data quality, bias and fairness, implementation barriers, and pedagogical effec-tiveness. These constructs were selected to align with both our research questions (RQ1 and RQ2) and the learning persona trajectory. Together, they trace the cognitive and learning path we ex-pect students to follow: from encountering am-biguity during the annotation activity, to recog-nising its implications for data quality, to con-necting it to AI bias. Annotation ambiguity 7Raumanns et al. Data Annotations as Pedagogical Hints Table 2: Overview of the five constructs, definitions, and sample items 
+
+Construct Operational Definition # Items Sample Items 
+
+Annotation ambi-guity The systematic disagree-ment among annotators regarding the annotation of the same instance, aris-ing from inherent ambigu-ity, complexity, or subjec-tivity in the data rather than from annotation er-rors. 4 “The annotations produced by my group were consistent with each other” Data quality The understanding how subjective interpretation and annotation challenges influence training data. 3 “Doing the annotation task made me more aware of the challenges in creating training data.” Bias and fairness The understanding how subjective disagreements and confounding visual cues in data lead to unre-liable AI predictions 5 “The annotation task gave me insight into why AI models can produce unreliable classifica-tions.” Implementation barriers The obstacles related to instructions, tools, emo-tional comfort, or self-confidence that impede ef-fective participation in the annotation task 6 “I felt confident in my ability to accurately label the skin lesion images” Pedagocical effec-tiviness The extent to which the annotation task increases student motivation, inter-est, and understanding of key concepts such as sub-jectivity, disagreement, and how human judg-ment influences model behaviour. 6 “What is the most enjoyable part of the task?” 8Raumanns et al. Data Annotations as Pedagogical Hints and data quality capture the immediate anno-tation experience. Annotation ambiguity mea-sures whether students perceive disagreement as a natural consequence of subjective interpreta-tion, while the data quality assesses whether they transfer this realisation to a broader understand-ing of how training data is constructed. These constructs directly address RQ1, which asks how group annotation affects perceptions of data qual-ity. Bias and fairness extends this by measuring whether students connect their annotation experi-ence to the downstream consequences for AI mod-els, which is central to RQ1. Implementation bar-riers and pedagogical effectiveness address RQ2 by capturing the practical and educational sides of the intervention. Additionally, we evaluated agreement among annotators within each student group using Fleiss’s κ. This allowed us to examine whether participants’ subjective impressions of within-group agreement aligned with the objectively cal-culated statistics. For Fontys groups, we ex-tracted κ results from the Jupyter Notebook files submitted by each group via the Canvas learning management system. For ITU groups, we down-loaded the annotation files [47] and calculated κ
+
+ourselves. 
+
+3.4.2 Qualitative analysis 
+
+We followed the six-step thematic analysis frame-work of Braun and Clarke [6]: familiarisation with the data, generating initial codes, searching for themes, reviewing themes, defining and naming themes, and producing the report. As an adap-tation, we merged the searching and reviewing of themes into a single collaborative consensus step, in which two researchers independently coded the responses and subsequently reconciled their codes through discussion. We exported all data from open-ended ques-tions in Appendix A (AF1, IB5, IB6, PE5, PE6). We (authors TE and RR) proceeded as follows: First, we familiarised ourselves with the data by reading all responses repeatedly. Next, we inde-pendently performed theme modelling for each question. This allowed us to generate initial themes that captured meaningful patterns. We then discussed these results to reach a consensus on the final list of themes aiming at full coverage of individual answers under unified level abstrac-tion of themes. Next, both authors independently annotated each response with its corresponding themes using Doccano [34]. We calculated the agreement between the two authors, achieving a relaxed version of the F1 score of 0.71 , that re-quires equal labels for overlapping text segments. Based on the final annotations, we counted theme frequencies per open-ended question to quantify their prevalence across the constructs. We report the average frequency per theme ( ¯n), calculated as the total count divided by the number of an-notators (two). 
+
+## 3.5 Analytical framework: the learning persona 
+
+To systematically evaluate student responses, we used an analytical framework centered on the learning persona, a theoretical construct derived from user‑centred design principles [40]. The per-sona represents what students should ideally un-derstand after completing the annotation task. The framework rests on three interconnected assumptions about how learners process subjec-tive information. First, students typically ap-proach annotation tasks with a traditional mind-set that assumes a single objective ground truth, treating disagreement as error. The educational goal is to shift them toward a subjectivity-aware mindset, where variation is recognised as mean-ingful signal rather than noise. Second, disagree-ment among annotators reflects the inherent com-plexity of the domain and exposes the limits of any single perspective. Third, students must recognise their own role in constructing datasets, acknowledging that data gathering is inherently subjective and carries biases that propagate into downstream model outcomes. The framework directly maps to our two re-search questions. Importantly, the learning per-sona is a theoretical ideal and serves as an analyt-ical guide rather than a grading rubric. Figure 3 summarises the learning trajectory. Students should ideally develop or deepen a subjectivity-aware mindset, regardless of their prior assump-tions about annotation. The framework operationalizes the three as-sumptions through five key concepts: 1. Annotation ambiguity: The persona un-derstands that his individual interpretation directly influences annotations (AA2) and realises that discussing disagreements with peers clarifies why different people assign dif-ferent labels to the same image (AA3). The persona accepts that group consensus on the annotation results is not always a possibil-ity. For a specific skin lesions, there may ex-ist multiple valid annotations. The student shifts from a single truth to multiple valid ones. 2. Data quality: The persona acknowledges the link between personal interpretation and data labeling (DQ1) and becomes aware of the challenges involved in creating training 9Raumanns et al. Data Annotations as Pedagogical Hints 
+
+Before annotation 
+
+Traditional mindset 
+
+• Single ground truth • Disagreement = error • Labels are objective 
+
+After annotation 
+
+Subjectivity-aware 
+
+• Multiple valid labels • Disagreement = signal • Labels are subjective  
+
+> Annotation ambiguity
+> Data quality Bias and fairness
+> Implementation barriers
+> Pedagogical effectiveness
+
+Figure 3: The learning persona trajectory. Students ideally move from a traditional mindset (left) to a subjectivity-aware mindset (right). data (DQ2). The student questions the con-cept of “Ground Truth”. The persona realises that datasets are constructed aggregations of human biases and not objective realities. 3. Bias and fairness: The student connects spe-cific visual features (such as hair) to possi-ble misclassifications by the AI model (BF1 and BF2) and understands that analysing disagreements helps identify cues difficult for models to learn (BF3). The persona un-derstands that AI bias often starts during the data collection phase (not solely because of the algorithm) and that a model trained on “consensus” labels may reinforce the ma-jority’s biases, overlooking minority perspec-tives, or ambiguous edge cases. 4. Implementation barriers: The activity pro-vides clear annotation instructions (IB1) and an accessible labelling tool (IB2). In this con-text, the persona feels confident in his ability to label skin lesions (IB4), although he occa-sionally experiences discomfort when viewing medical images (IB3). The student develops confidence in his own interpretive judgement, even in the absence of expert calibration. 5. Pedagogical effectiveness: The student rates the activity as more effective than tradi-tional lectures in understanding bias (PE2) and would recommend it to others (PE3). The student was also more motivated to un-derstand AI concepts after finishing the task (PE4). The persona sees the link between the creation of data and the real-world impact of AI. We use the persona as an analytical perspec-tive against which to evaluate both quantitative survey data and qualitative feedback. 
+
+# 4 Results 
+
+In total, 43 students completed the complete sur-vey: 30 from Fontys University of Applied Sci-ences and 13 from IT University of Copenhagen. 
+
+## 4.1 Substantial familiarity gains across key concepts 
+
+Table 3 presents the familiarity of participants with our four core concepts prior to and after the annotation task. 
+
+Subjectivity in Data Annotation Before the annotation task, approximately one-quarter of the students reported little or no prior exposure to the concept of subjectivity in data annotation. After the intervention, no student remained at the lowest levels. The majority of the students became aware of it, and almost everyone moved to the highest scale levels. 
+
+Inter-annotator Agreement Measures Asubstantial group of students reported little or no prior familiarity with inter-annotator agreement measures. After completion of the task, most stu-dents report an improved knowledge of these mea-surement techniques. 
+
+Bias in Machine Learning models Students report some awareness of bias in machine learn-ing models before the annotation task has started. After the task, we see that no student remained completely unfamiliar with the concept, and those reporting good or full understanding increased from 45.2% to 78.6%. Nevertheless, approxi-mately one-fifth still indicated only partial un-derstanding. 
+
+Data Quality Assessment The students en-tered with limited background knowledge on data quality, yet after the intervention, nearly all re-ported a greater understanding. 
+
+## 4.2 Quantitative findings on survey constructs 
+
+Students acknowledged that annotations are in-fluenced by personal interpretation and appreci-ated opportunities to talk about differing views. 10 Raumanns et al. Data Annotations as Pedagogical Hints Table 3: Pre- and post-task familiarity with key concepts. Scale: 0 = Never heard of it, 1 = Heard of it but did not understand it, 2 = Basic familiarity, 3 = Good understanding, 4 = Fully understood it. Values represent pre/post percentages. Bold post values indicate an increase over the corresponding pre value. Concept 0 1 2 3 4Subjectivity in data annotation 9.5/0.0 16.7/0.0 23.8/23.8 31.0/ 40.5 19.0/ 35.7 
+
+Inter-annotator agreement measures 26.2/2.4 14.3/0.0 26.2/ 28.6 26.2/ 45.2 7.1/ 23.8 
+
+Bias in machine learning mod-els 11.9/0.0 14.3/7.1 28.6/14.3 33.3/ 47.6 11.9/ 31.0 
+
+Data quality assessment 7.1/0.0 19.0/2.4 35.7/16.7 23.8/ 45.2 14.3/ 35.7 
+
+Nonetheless, most described their own group’s an-notations as largely aligned, so they did not en-counter the kind of disagreement that is essential to the learning objective. Most students recognised that individual judge-ment influences how data are labeled and that producing training datasets is difficult. They were able to link differences in annotations to unreliable model behaviour and noticed that vi-sual attributes such as hair can lead to incorrect classifications. The activity provided them with a tangible understanding of why AI systems can generate untrustworthy predictions. Most students considered the instructions and tools sufficient and felt self-assured when assign-ing labels, although a small subset reported dis-comfort when looking at the skin lesion images. They rated the annotation activity as more ef-fective than standard lectures for learning about bias, and the majority supported integrating sim-ilar exercises into other courses. Motivation and intrinsic interest also rose, but roughly one-quarter of students remained neutral, indicating that the activity does not appeal to everyone equally. Table 4 presents the Likert-scale response dis-tributions in all five constructs evaluated in our survey. These constructs were designed to mea-sure student perceptions about annotation ambi-guity, data quality, bias and fairness, implemen-tation barriers, and pedagogical effectiveness. In the following subsections, we analyse the quanti-tative findings for each construct. 
+
+4.2.1 Annotation ambiguity 
+
+We found that while most students reported con-sensus within their groups, a substantial minor-ity noted limited consistency among annotators (AA1). The majority indicated that discussing these disagreements helped them understand why different individuals assign varying labels to the same image (AA3). Furthermore, most of the students acknowledged that personal interpreta-tion plays a role in annotating skin lesions (AA2). In their open-ended responses, several students reflected on the thoroughness of their own an-notation process, requesting calibration methods and clearer guidelines to improve consistency (See AF1 and IB5 in Fig. 5). In other words, students treated inconsistency as a solvable problem rather than recognising it as an inherent feature of the task. This contrasts with our learning persona, who accepts that consensus is not always achiev-able and treats multiple valid annotations as nor-mal. Although most of the students reported group consensus (AA1), this does not imply that they considered consensus universally possible or desirable. Qualitative findings (Section 4.5) show mixed opinions: some treated disagreement as a problem to fix, others as an inherent feature of the task. 
+
+4.2.2 Data quality 
+
+We observed that most of the students recognised the link between their personal interpretations and their data annotations (DQ1). Additionally, the task made them realise that creating training data can be challenging (DQ2). 
+
+4.2.3 Bias and Fairness 
+
+We found that most of the students understood why AI models produce uncertain predictions af-ter comparing their annotations with those of their peers (BF1). A strong majority recognised that visual features such as hair contribute to classification errors (BF2), and many agreed that analysing disagreements helped them identify vi-sual cues that are difficult for models to learn (BF3). In general, the annotation task provided meaningful insight into why AI systems can yield unreliable classifications (BF4). 
+
+4.2.4 Implementation Barriers 
+
+We observed that the activity provided clear in-structions (IB1) and an easy-to-use labelling tool 11 Raumanns et al. Data Annotations as Pedagogical Hints (IB2), both of which most students rated posi-tively. We found that most students felt confi-dent in their ability to label skin lesions (IB4), and while some reported mild discomfort when viewing medical images (IB3), this did not ap-pear to hinder their engagement with the task. his broadly aligns with our learning persona, who likewise finds the instructions clear, the tool in-tuitive, and feels confident in labelling. We also found that several students suggested improve-ments such as providing example annotations or calibration exercises (IB5). These suggestions show that students identified practical challenges in the annotation process, but attributed them to a lack of guidance or tooling rather than to inherent subjectivity of the task. 
+
+4.2.5 Pedagogical Effectiveness 
+
+We found that the majority of the students were motivated by an interest in data annotation that extends beyond the basic course requirements (PE1). This positive sentiment carried over to comparisons with traditional lectures, and most of the participants agreed that the labelling activ-ity was more effective in helping them understand bias in AI (PE2). Consistent with this, most participants suggested embedding a data anno-tation assignment within other AI or data science courses to help students grasp the roles of subjec-tivity and bias (PE3). In addition, the labeling activity increased the motivation of most partici-pants to understand the concepts of AI (PE4). 
+
+## 4.3 Quantitative finding on inter-annotator agreement metrics 
+
+Although the students computed Fleiss’ κ them-selves and the results indicated disagreement within the group, they did not reflect this in their survey responses, where they reported hav-ing reached consensus. Across both institutions, we computed Fleiss’ 
+
+κ for each annotation group (See Figure 4, Ap-pendix B). In Fontys, the nine groups yielded a mean κ of 0.60, ranging from 0.27 (Fair) to 0.78 (Good). At ITU, the fourteen groups produced a mean κ of 0.64, ranging from 0.42 (Moderate) to 0.82 (Very good). In general, the combined mean 
+
+κ in all 23 groups was 0.62, indicating moderate agreement. The moderate level of agreement in-dicates that the intended degree of subjectivity is indeed present in the dataset. To contextualise these metrics, we compared them with students’ self-reported consensus. Although most of the students indicated that their group had reached consensus, the values of κ suggest that this agree-ment was only moderate in practice. At Fontys, two groups scored in the Fair range ( κ < 0.40 ), but neither group appears to have reported no-table disagreement in the survey. This gap be-tween perceived and measured agreement is note-worthy: it suggests that students may define con-sensus more loosely than the metric does. This re-sult relates to the wider issue of what is addressed within the AA construct (Section 4.2.1). Students who reported group consensus despite moderate agreement may treat any convergence as success, failing to recognise that the remaining disagree-ment reflects the task’s subjectivity. Even when the Fontys students calculated κ themselves, the issue remained, showing that computing the met-ric alone does not change their conceptual frame-work. 2        
+
+>  
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>    κ
+> F
+> 
+> 
+>  
+>  
+> 
+
+Figure 4: Inter-annotator agreement (Fleiss’ κ)by group size for Fontys and Copenhagen ITU. Shaded bands represent κ interpretation cate-gories. 
+
+## 4.4 Qualitative findings from open-ended items 
+
+In our thematic analysis of the open-ended re-sponses, we found that students recognised the significant role of personal interpretation in an-notation, but rather than engaging with it, they attempted to eliminate it. They found the ac-tivity itself repetitive, but enjoyed discussing re-sults and sharing ideas afterwards. What kept them engaged was not the activity itself, but see-ing how it connects to real-world. Overall, a con-sistent pattern emerged: students recognized the ambiguity, explicitly pointed it out, and then re-quested that it be removed. In the subsections that follow, we examine these findings in more depth. 12 Raumanns et al. Data Annotations as Pedagogical Hints Table 4: Likert-scale responses for all constructs. SD = Strongly Disagree (1), D = Disagree (2), MD = Mildly Disagree (3), N = Neutral (4), MA = Mildly Agree (5), A = Agree (6), SA = Strongly Agree (7). Values are percentages. 
+
+Question SD D MD N MA A SA 
+
+Annotation Ambiguity (AA) 
+
+1. The annotations produced by my group were con-sistent with each other. 7.1 0.0 14.3 9.5 23.8 40.5 4.8 2. My individual interpretation played a role in how I labeled the skin lesions. 2.4 0.0 0.0 9.5 23.8 38.1 26.2 3. Discussing annotation disagreements with my peers helped me understand why different people can assign different labels to the same image. 0.0 4.8 0.0 21.4 23.8 21.4 28.6 
+
+Data Quality (DQ) 
+
+1. The annotation task helped me understand how personal interpretation affects data labeling. 0.0 0.0 0.0 4.8 19.0 50.0 26.2 2. Doing the annotation task made me more aware of the challenges in creating training data. 0.0 0.0 2.4 2.4 14.3 47.6 33.3 
+
+Bias and Fairness (BF) 
+
+1. Reviewing disagreements between my labels and my peers’ labels helped me understand why AI mod-els might produce uncertain or conflicting predic-tions. 0.0 2.4 2.4 14.3 28.6 26.2 26.2 2. The presence of hair in training images con-tributes to misclassifications by the AI model. 0.0 0.0 2.4 9.5 21.4 35.7 31.0 3. Reflecting on why I disagreed with others helped me identify visual cues in skin lesions that may be difficult for an AI model to learn. 2.4 4.8 4.8 16.7 26.2 26.2 19.0 4. The annotation task gave me insight into why AI models can produce unreliable classifications. 0.0 0.0 0.0 4.8 19.0 40.5 35.7 
+
+Implementation Barriers (IB) 
+
+1. The instructions for the annotation task were clear and easy to follow. 0.0 0.0 19.0 11.9 19.0 21.4 28.6 
+
+2. The annotation tool was easy to use and did not interfere with my ability to complete the task. 0.0 4.8 11.9 19.0 19.0 26.2 19.0 3. Viewing the skin lesion images caused me emo-tional discomfort or distress. 14.3 21.4 7.1 9.5 7.1 19.0 21.4 
+
+4. I felt confident in my ability to accurately label the skin lesion images. 0.0 0.0 21.4 11.9 31.0 19.0 16.7 
+
+Pedagogical Effectiveness (PE) 
+
+1. I was interested in learning about data annotation beyond just completing the course requirement. 0.0 2.4 11.9 21.4 31.0 19.0 14.3 2. Compared to traditional lectures, the labeling activity was more effective in helping me understand bias in AI. 0.0 2.4 9.5 19.0 28.6 16.7 23.8 3. I would recommend incorporating a data anno-tation task into other AI or data science courses to help students understand subjectivity and bias. 2.4 4.8 7.1 11.9 31.0 19.0 23.8 4. The labeling activity increased my motivation to understand AI concepts. 2.4 2.4 11.9 19.0 23.8 28.6 11.9 
+
+13 Raumanns et al. Data Annotations as Pedagogical Hints 
+
+4.4.1 Most significant insights during an-notation 
+
+We found that subjectiveness was the most fre-quent theme ( ¯n = 22 .5), as the students saw how personal interpretation shapes labelling. We also noted mentions of calibration methods ( ¯n = 13 )and agreement issues ( ¯n = 12 .5). This shows that the students recognised the challenges of keep-ing annotations consistent between groups. Asmaller group linked their insights to AI models (¯n = 3 .5). They saw how annotation subjectiv-ity affects model training. The students identified subjectivity as the main theme, and their reaction to it is to seek calibration and agreement. 
+
+4.4.2 Suggestions for improving the task 
+
+The most frequent suggestion was to make an-notations more consistent, for example through clearer guidelines, calibration exercises, or refer-ence images ( ¯n = 20 ). This response reveals a central pedagogical tension: students who had just experienced annotation subjectivity firsthand sought to eliminate it rather than learn from it. One student noted, clearer criteria could help make annotations “more consistent” , yet also acknowledged, “I understand also that this was probably the learning journey.” This remark sug-gests that at least some students grasped the paradox, even if most did not. A second clus-ter of responses concerned practical implementa-tion: students requested simpler tooling ( ¯n = 10 ), such as pre-configured notebooks or alternatives to Label Studio, and additional teaching sup-port ( ¯n = 7 ), such as more coding walkthroughs. While these suggestions are actionable, they do not address the conceptual core of the exercise. A smaller subset of students explicitly called for greater transparency about the role of subjectiv-ity in the task ( ¯n = 3 .5), and a few reported that the task required no improvement ( ¯n = 2 ). 
+
+4.4.3 Least enjoyable part of the task 
+
+We identified personal discomfort as the domi-nant complaint ( ¯n = 23 .5). This occurred when viewing images of skin lesions. We found that this confirmed quantitative findings on emotional distress (IB3). We saw that the second drawback was repetitiveness ( ¯n = 12 ). Students found la-beling large image sets monotonous. We noted that smaller clusters refer to the annotation tool (¯n = 4 .5), the task being time consuming ( ¯n =2.5), and problems with group work ( ¯n = 2 ). 
+
+4.4.4 Most enjoyable part of the task 
+
+We found that analysing the results was most appreciated ( ¯n = 21 ). We noted that the sec-ond enjoyable element was the group exchange (¯n = 14 .5). We also saw that learning progress was valued ( ¯n = 8 .5). 
+
+4.4.5 What students found interesting about skin lesions 
+
+We found that the most frequent theme was use-fulness in real life ( ¯n = 11 .5). We also saw that the data ( ¯n = 7 ) and the annotation task itself (¯n = 6 ) were considered interesting. Machine learning ( ¯n = 5 .5) and trustworthy AI ( ¯n = 5 )received similar interest. 
+
+## 4.5 Did students take on the tradi-tional or modern view of sub-jectivity of human annotations? 
+
+To understand the conceptual takeaways of the students in light of recent research on subjective annotation, we analysed their responses to implic-itly adopted views on subjectivity aggregated over all open-ended questions as presented in Figure 6. Specifically, we examined whether students recog-nised the subjective nature of data annotation or instead focused on agreement. Of the responses, 
+
+¯n = 22 .5 referred to the subjectivity of annota-tions, while ¯n = 12 .5 focused on agreement. This suggests that a substantial proportion of students reflected on the role of subjectivity in the annota-tion process rather than viewing the annotation solely through the lens of consensus. We further analysed how students framed an-notator agreement. The responses were cate-gorised according to whether they reflected the traditional agreement paradigm, which empha-sises maximising agreement and treats disagree-ment primarily as annotation noise, or the more recent disagreement paradigm, which recognises that differences between annotators can arise from legitimate variation in interpretation and therefore carry valuable information (cf. Sec-tion 2). Among the responses discussing agree-ment, ¯n = 8 .5 explicitly characterised agreement as desirable (“agreement good”), whereas only 
+
+¯n = 1 .5 framed disagreement negatively (“agree-ment bad”). In contrast, among the responses discussing subjectivity, ¯n = 2 explicitly described subjectivity as beneficial (“subjectiveness good”), while ¯n = 4 .5 viewed it negatively (“subjective-ness bad”). The remaining responses acknowl-edged subjectivity or agreement without express-ing a clear stance. Overall, these findings indicate that while many students recognised the subjec-tive nature of annotation, only a smaller subset explicitly adopted the perspective that subjectiv-ity and disagreement between annotators can be valuable rather than merely sources of error. 14 Raumanns et al. Data Annotations as Pedagogical Hints A 
+
+   
+
+  
+
+ 
+
+   
+
+A 
+
+A  
+
+A   
+
+A    
+
+A    
+
+!  "   
+
+ 
+
+# $ 
+
+ % 
+
+&%  $    
+
+' $ 
+
+  
+
+    
+
+(%  
+
+(    %  
+
+( !)%  "      
+
+( % 
+
+(  " % 
+
+*$ 
+
+%" 
+
++   
+
++ 
+
+,!)%  
+
+-%    "!% 
+
+-% %  
+
+- %% !  
+
+-% 
+
+- $ A 
+
+." " 
+
+/0 101 101 101 101 
+
+20 101 101 101 101 101 101 101 20 1 10 /0 /01 101 10 01 101 101 30 101 101 
+
+/0 1 101 101 101 101 101 101 101 101 401 
+
+0 1 301 101 101 10 
+
+0 1 101 101 101 101 101 101 101 30 101 101 101 201 10 101 101 101 0 1 101 101 101 101 101 50  101 101 101 101 101 0 101 2101 101 101 101 101 /0 101 101 101 /01 0 30 1 201 20 101 101 101 301 101 101 201 10 101 301 101 101 2/0 101 101 101 101 20 1 101 101 101 101 101 101 0 1
+
+220 101 101 101 101 101 401 101 101 101 101 101 101 101 101 101 201 101 101 101 101 101 20 101 101 101 101 101 101 01 101 101 101 101 0 1
+
+
+
+1 
+
+ 
+
+21 
+
+Figure 5: Heatmap of average annotation label frequencies ( ¯n = average across two annotators) across coded themes (rows) and open-ended survey questions (columns: AF1, IB5, IB6, PE5, PE6). Darker cells indicate higher average. 
+
+# 5 Discussion and conclusions 
+
+Across the two institutions, our results show a productive pedagogical tension. On the one hand, students who annotated skin lesion images re-ported substantial gains in their understanding of subjectivity, bias, and data quality (RQ1). On the other hand, when asked how the task could be improved, the most frequent suggestion was to reduce the very disagreement that drove this learning (RQ2). This paradox is, we argue, not a failure of the intervention but it is a actionable pedagogical finding. It shows that students have begun to notice the subjectivity of data but have not yet internalised that disagreement is a signal of domain complexity rather than a defect to be corrected. 15 Raumanns et al. Data Annotations as Pedagogical Hints A   A 
+
+>    
+
+Figure 6: Average annotation label frequencies (¯n = average across two annotators) across ag-gregated subjectivity vs. agreement views. 
+
+## 5.1 Successes and challenges 
+
+5.1.1 Deeper understanding of bias and Fairness 
+
+Our findings suggest that the annotation task fa-cilitates a deeper understanding of bias and fair-ness. The survey result suggests that this ap-proach appears to be more effective than tradi-tional lectures. Quantitatively, we observed clear increases in self-reported familiarity. Students reported greater knowledge of subjectivity and agreement between annotators (Table 3). Sub-jectiveness was the main insight (See AF1 in Fig-ure 5, n=22.5). The students also placed a high value on the analysis of the results and the group exchange (See PE5 in Figure 5). 
+
+5.1.2 Subjectivity is a feature and not a bug 
+
+Students recognise that subjectivity impacts the performance of the AI model. They no longer view disagreement between annotators as merely noise or an error. This insight is crucial to under-standing responsible AI. Furthermore, some stu-dents highlighted the need to express confidence levels alongside scores. They asked for a way to indicate certainty rather than just recording a la-bel. This desire also demonstrates their deepened understanding of subjectivity. 
+
+5.1.3 Student discomfort 
+
+A substantial proportion of the students noted feeling uneasy about the medical imagery ( ¯n =23 .5), see IB6 in Figure 5. This approach can enhance educational value, but only if it is framed appropriately (see Section 5.2). Otherwise, the experience risks overshadowing the learning. 
+
+5.1.4 Technical friction 
+
+Students frequently noted technical and proce-dural barriers. The students reported that the annotation tool setup was cumbersome and the manual labelling process was “boring” and “slow”. These frustrations often overshadowed the learn-ing potential for some participants, who sug-gested simpler tools (e.g., “a python script”) or pre-built notebooks to focus purely on the decision-making logic. 
+
+5.1.5 Data annotations as pedagogical hints 
+
+There is a meaningful gap between what stu-dents understand and how they frame their re-sults. While survey data (Section 4.1) shows high familiarity gains on subjectivity concepts, and qualitative findings confirm that “subjectiveness” was the top insight (AF1 in Fig. 5) Yet, stu-dents requested ways to eliminate it. When asked how to improve the task, most suggested “mak-ing annotations more consistent” through clearer guidelines, calibration phases, or example images (IB5 in Fig. 5). This request is in contrast to the learning persona. The learning persona un-derstands that consensus is often impossible and accepts that multiple valid labels can exist for a single image. In contrast, the participants still search for the one correct answer. They treat dis-agreement as a problem to be solved rather than information to be learned from. This presents us with a pedagogical challenge. Providing the asked requested calibration would ironically undermine the very goal of the exercise: allowing students to experience annotation ambiguity directly. The struggle with inconsistency is the lesson itself. Interestingly, some students demonstrated meta-cognitive awareness of this dynamic, noting that the ambiguity was likely the core of the learning journey. This insight validates the task design but highlights that many learners have not yet fully internalised the principle that “subjectivity is a feature, not a bug”. Consequently, educators may need to explicitly emphasise the value of dis-agreement, ensuring students do not view the lack of consensus as a failure of the task or their skills. 
+
+## 5.2 Pedagogical takeaways 
+
+5.2.1 Ensuring sufficient interpretive am-biguity 
+
+The annotation task should have sufficient in-terpretive ambiguity so that disagreement natu-rally arises among students within a group (la-beling cats and dogs is a counter-example). This confronts students with conflicting human judg-ments, transforming the labeling process from a mechanical exercise into a pedagogical means. The developer of the annotation task has to en-sure that the label score is in a grey area. How-ever, it must be ensured that students do not mistake misunderstandings resulting from miss-16 Raumanns et al. Data Annotations as Pedagogical Hints ing annotation guidelines or task descriptions for subjectivity. 
+
+5.2.2 Balancing repetitiveness and reflec-tion 
+
+We observed a notable tension in the results between repetitiveness and analysis of results. Repetitiveness appeared as a key drawback (IB6, 
+
+¯n = 12 ). However, analysing the results was the most pleasant element (PE5, ¯n = 21 ). This sug-gests that students value reflection rather than mechanical labelling. This finding is of impor-tance for the design of annotation tasks. We pro-pose optimising the workflow to ease annotation. Reducing the total image count could also help. Consider lowering the minimum requirement from 100 to 50 images. Flexibility remains essential. Students who wish to annotate more should be allowed to do so. 
+
+5.2.3 Mitigating discomfort 
+
+The learning persona trajectory assumes that stu-dents will encounter only occasional discomfort and normalise it quickly. Feedback indicates that unease with medical imagery was the most fre-quent concern. Educators should anticipate vary-ing reactions when working with medical data. We suggest considering medical framing before use. For example, explain the relevance of im-ages to melanoma detection. Converting images to grayscale before annotation may also help re-duce visual intensity [27]. Structured preparation and brief debriefing sessions could also be consid-ered to help students process these experiences. 
+
+5.2.4 Closing the loop between annota-tions and model output 
+
+We showed that students recognise the link be-tween annotation data and model performance. At ITU, students already implement this loop: they train a simple model on their aggregated an-notation data and subsequently analyse the pre-dictions. We recommend adopting this approach more systematically. We invite students to an-swer specific questions. For instance, “Where did the model fail?” “was it due to ambiguous data or annotator disagreement?” This approach requires that annotations influence the model output. We demonstrated this in our earlier paper, in which we showed that annotations from various sources affected performance [43]. 
+
+## 5.3 Limitations 
+
+The study has some limitations. First, the modest sample size (N=43) limits generalisability. Sec-ond, pre-task familiarity was measured retrospec-tively after activity completion, relying on stu-dents’ reconstructed memory rather than base-line assessment. Third, while the task design remained consistent, the annotation tools var-ied across institutions: Fontys students used La-bel Studio or custom Jupyter notebooks, whereas ITU students were free to choose their preferred tool, with many opting for Excel. This tool het-erogeneity may affect reproducibility in other in-stitutional contexts. Finally, our study spans two institutions, with different pedagogical de-signs. These contextual differences, as well as variations in group composition, were not system-atically analysed and may influence the results. 
+
+## 5.4 Future work 
+
+An important direction for future research is to explore how students might rely on large language models (LLMs) to carry out annotation tasks, rather than performing these tasks by hand. This raises two key questions: First, does relying on LLM-generated annotations hurt students’ learn-ing? Manual annotation helps students develop close reading and critical thinking skills, so by-passing it could reduce the educational value of the task. Second, how can course design respond? Future versions of the course could encourage gen-uine engagement through task design or reflection exercises. At the same time, LLM-based annota-tion is an emerging research field in itself, so it could be introduced as an explicit learning goal rather than treated only as a problem to pre-vent. Examining these questions will help keep annotation-based teaching effective as automated tools continue to become more widely available. Another valuable direction is investigating the gap between students’ perceived agreement and actual statistical agreement. Our findings sug-gest a “consensus illusion”: students reported agreement despite only moderate Fleiss’ κ val-ues. Follow-up studies could, for example, use recorded group discussions to determine whether this gap originates from metric confusion, social dynamics, or beliefs about ground truth. Under-standing this “consensus illusion” would help edu-cators design annotation activities that frame dis-agreement as informative rather than erroneous. 17 Raumanns et al. Data Annotations as Pedagogical Hints 
+
+## Acknowledgments 
+
+This work was supported by the Netherlands Organisation for Scientific Research, grant no. 023.014.010. VC is supported by Novo Nordisk, grant number NNF24OC0092612. We sincerely thank the students from Fontys University of Ap-plied Sciences Venlo and the IT University of Copenhagen for their participation. Their en-gagement in annotating skin lesion images pro-vided essential data for our research. We are par-ticularly grateful to those who shared their in-sights through the post-task survey. We also ac-knowledge the teaching staff at both institutions for integrating the annotation task into the regu-lar curriculum. Special thanks go to our dogs Max Moritz and Beau Jeanne d’Arc, and cats Pixel and Dot, for graciously agreeing to pose for the camera. 
+
+## Ethical Standards 
+
+The work follows appropriate ethical standards in conducting research and writing the manuscript, following all applicable laws and regulations re-garding treatment of animals or human subjects. 
+
+## Conflicts of Interest 
+
+The authors declare that they have no known competing financial interests or personal relation-ships that could have influenced the work re-ported in this paper. The software and survey server for conducting the online survey were pro-vided free of charge by the SoSci Survey GmbH. The SoSci Survey GmbH had no influence on the content of the study. 
+
+## Data availability 
+
+The data and code are publicly available through 
+
+https://github.com/raumannsr/DAPH 
+
+# References 
+
+[1] Carolyn Jane Anderson. Exploring lan-guage representation through a resource in-ventory project. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Margot Mieskes, and Leonie Weissweiler, editors, Proceedings of the Sixth Workshop on Teaching NLP , pages 91–93, Bangkok, Thailand, August 2024. Associa-tion for Computational Linguistics. [2] Lora Aroyo and Chris Welty. Truth is a lie: Crowd truth and the seven myths of human annotation. AI Mag. , 36(1):15–24, March 2015. [3] Matthias Aßenmacher, Andreas Stephan, Leonie Weissweiler, Erion Çano, Ingo Ziegler, Marwin Härttrich, Bernd Bischl, Benjamin Roth, Christian Heumann, and Hinrich Schütze. Collaborative development of modular open source educational resources for natural language processing. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Margot Mieskes, and Leonie Weissweiler, editors, Proceedings of the Sixth Workshop on Teaching NLP ,pages 43–53, Bangkok, Thailand, August 2024. Association for Computational Lin-guistics. [4] Fabian Barteld and Johanna Flick. LEA – Linguistic Exercises with Annotation Tools. In Peggy Bockwinkel, Thierry Declerck, San-dra Kübler, and Heike Zinsmeister, edi-tors, Proceedings of the Workshop on Teach-ing NLP for Digital Humanities (Teach4DH 2017) , volume 1918 of CEUR Workshop Pro-ceedings , pages 11–16. CEUR-WS.org, 2017. [5] Laura Biester and Winston Wu. Tightly coupled worksheets and homework assign-ments for NLP. In Sana Al-azzawi, Laura Bi-ester, György Kovács, Ana Marasović, Leena Mathur, Margot Mieskes, and Leonie Weis-sweiler, editors, Proceedings of the Sixth Workshop on Teaching NLP , pages 66–68, Bangkok, Thailand, August 2024. Associa-tion for Computational Linguistics. [6] Virginia Braun and Victoria Clarke. Using thematic analysis in psychology. Qual. Res. Psychol. , 3(2):77–101, January 2006. [7] Larissa Braz Sousa, Ciara Kenneally, Yaela Golumbic, John M. Martin, Christine Pre-ston, Peter Rutledge, and Alice Motion. Teacher experiences and understanding of citizen science in australian classrooms. 
+
+PLOS ONE , 19(11):1–22, 11 2024. 18 Raumanns et al. Data Annotations as Pedagogical Hints [8] Veronika Cheplygina and Josien P. W. Pluim. Crowd disagreement about medi-cal images is informative. In Danail Stoy-anov, Zeike Taylor, Simone Balocco, Raphael Sznitman, Anne Martel, Lena Maier-Hein, Luc Duong, Guillaume Zahnd, Stefanie Demirci, Shadi Albarqouni, Su-Lin Lee, Ste-fano Moriconi, Veronika Cheplygina, Diana Mateus, Emanuele Trucco, Eric Granger, and Pierre Jannin, editors, Intravascular Imaging and Computer Assisted Stenting and Large-Scale Annotation of Biomedical Data and Expert Label Synthesis , pages 105–111, Cham, 2018. Springer International Publish-ing. [9] Alessandra Teresa Cignarella, Elisa Chier-chiello, Chiara Ferrando, Simona Frenda, Soda Marem Lo, and Andrea Marra. From hate speech to societal empowerment: Apedagogical journey through computational thinking and NLP for high school students. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Mar-got Mieskes, and Leonie Weissweiler, editors, 
+
+Proceedings of the Sixth Workshop on Teach-ing NLP , pages 54–65, Bangkok, Thailand, August 2024. Association for Computational Linguistics. [10] Noel Codella, Veronica Rotemberg, Philipp Tschandl, M. Emre Celebi, Stephen Dusza, David Gutman, Brian Helba, Aadi Kalloo, Konstantinos Liopyris, Michael Marchetti, Harald Kittler, and Allan Halpern. Skin lesion analysis toward melanoma detection 2018: A challenge hosted by the interna-tional skin imaging collaboration (isic), 2019. [11] Noel C. F. Codella, David Gutman, M. Emre Celebi, Brian Helba, Michael A. Marchetti, Stephen W. Dusza, Aadi Kalloo, Konstanti-nos Liopyris, Nabin Mishra, Harald Kit-tler, and Allan Halpern. Skin lesion analy-sis toward melanoma detection: A challenge at the 2017 international symposium on biomedical imaging (isbi), hosted by the in-ternational skin imaging collaboration (isic), 2018. [12] Jacob Cohen. A coefficient of agreement for nominal scales. Educational and Psychologi-cal Measurement , 20:37 – 46, 1960. [13] Marc Combalia, Noel C. F. Codella, Veron-ica Rotemberg, Brian Helba, Veronica Vi-laplana, Ofer Reiter, Cristina Carrera, Ali-cia Barreiro, Allan C. Halpern, Susana Puig, and Josep Malvehy. Bcn20000: Dermoscopic lesions in the wild, 2019. [14] Anca Dumitrache, Oana Inel, Lora Aroyo, Benjamin Timmermans, and Chris Welty. Crowdtruth 2.0: Quality metrics for crowd-sourcing with disagreement. In Proceedings of the 1st Workshop on Subjectivity, Ambigu-ity and Disagreement in Crowdsourcing and the 1st Workshop on Disentangling the Rela-tion Between Crowdsourcing and Bias Man-agement (SAD 2018 and CrowdBias 2018) ,volume 2276 of CEUR Workshop Proceed-ings , pages 11–18. CEUR-WS.org, 2018. [15] Theresa Elstner, Bärbel Hanle, Frank Loebe, Maik Fröbe, Nikolay Kolyada, Janis Mohr, Jörg Frochte, Sven Hofmann, Benno Stein, and Martin Potthast. Classification of shared tasks used in teaching. In Proceedings of the 2024 on Innovation and Technology in Com-puter Science Education V. 1 , pages 164–170, New York, NY, USA, July 2024. ACM. [16] Richard Felder and Rebecca Brent. Active learning: An introduction. ASQ Higher Ed-ucation Brief , 2, 01 2009. [17] Joseph Fleiss. Measuring nominal scale agreement among many raters. Psycholog-ical Bulletin , 76:378–382, 11 1971. [18] Maik Fröbe, Harrisen Scells, Theresa Elst-ner, Christopher Akiki, Lukas Gienapp, Jan Heinrich Reimer, Sean MacAvaney, Benno Stein, Matthias Hagen, and Martin Potthast. Resources for Combining Teaching and Re-search in Information Retrieval Coursework. In Grace Hui Yang, Hongning Wang, Sam Han, Claudia Hauff, Guido Zuccon, and Yi Zhang, editors, 47th International ACM SIGIR Conference on Research and Develop-ment in Information Retrieval (SIGIR 2024) ,pages 1115–1125. ACM, July 2024. [19] Sassan Gholiagha, Jürgen Neyer, Mitja Sienknecht, Magdalena Anna Wolska, Dora Kiesel, Patrick Riehmann, Julius Voigt, Matti Wiegmann, Irene López García, Ka-trin Girgensohn, Benno Stein, and Bernd Fröhlich. From Annotation to Reflection: How Participatory AI Training Enhances Critical Thinking. AI & SOCIETY , August 2025. [20] Michael Ginn, David Saavedra-Beltrán, Camilo Robayo, and Alexis Palmer. BELT: Building endangered language technology. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Mar-got Mieskes, and Leonie Weissweiler, editors, 
+
+Proceedings of the Sixth Workshop on Teach-ing NLP , pages 94–104, Bangkok, Thailand, 19 Raumanns et al. Data Annotations as Pedagogical Hints August 2024. Association for Computational Linguistics. [21] David Gutman, Noel C F Codella, Emre Celebi, Brian Helba, Michael Marchetti, Nabin Mishra, and Allan Halpern. Skin le-sion analysis toward melanoma detection: A challenge at the international symposium on biomedical imaging (ISBI) 2016, hosted by the international skin imaging collaboration (ISIC). In IEEE International Symposium on Biomedical Imaging (ISBI) , pages 168– 172, 2016. [22] Aurélien Géron. Hands-on machine learn-ing with scikit-learn, keras, and tensorflow .O’Reilly Media, 3 edition, October 2022. [23] Jindřich Helcl, Zdeněk Kasner, Ondřej Dušek, Tomasz Limisiewicz, Dominik Macháček, Tomáš Musil, and Jindřich Libovický. Teaching LLMs at Charles University: Assignments and activities. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Margot Mieskes, and Leonie Weissweiler, editors, Proceedings of the Sixth Workshop on Teaching NLP , pages 69–72, Bangkok, Thailand, August 2024. Association for Computational Linguistics. [24] Yufang Hou, Thy Thy Tran, Doan Nam Long Vu, Yiwen Cao, Kai Li, Lukas Rohde, and Iryna Gurevych. A course shared task on evaluating LLM output for clinical questions. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Mar-got Mieskes, and Leonie Weissweiler, editors, 
+
+Proceedings of the Sixth Workshop on Teach-ing NLP , pages 77–80, Bangkok, Thailand, August 2024. Association for Computational Linguistics. [25] HumanSignal. Open source data labeling and AI evaluation. https://labelstud.io .Accessed: 2026-6-4. [26] Aditya Joshi, Jake Renzella, Pushpak Bhat-tacharyya, Saurav Jha, and Xiangyu Zhang. Striking a balance between classical and deep learning approaches in natural language pro-cessing pedagogy. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Margot Mieskes, and Leonie Weissweiler, editors, Proceedings of the Sixth Workshop on Teaching NLP , pages 23–32, Bangkok, Thailand, August 2024. Associa-tion for Computational Linguistics. [27] Sowmya Karunakaran and Rashmi Ramakr-ishan. Testing stylistic interventions to re-duce emotional impact of content modera-tion workers. Proceedings of the AAAI Con-ference on Human Computation and Crowd-sourcing , 7:50–58, October 2019. [28] Maurice G. Kendall. A new measure of rank correlation. Biometrika , 30(1–2):81–93, June 1938. [29] Klaus Krippendorff. Estimating the reliabil-ity, systematic error and random error of in-terval data. Educational and Psychological Measurement , 30(1):61–70, 1970. [30] En-Shiun Annie Lee, Kosei Uemura, Syed Mekael Wasti, and Mason Shipton. Empowering the future with multilinguality and language diversity. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Maraso-vić, Leena Mathur, Margot Mieskes, and Leonie Weissweiler, editors, Proceedings of the Sixth Workshop on Teaching NLP , pages 73–76, Bangkok, Thailand, August 2024. Association for Computational Linguistics. [31] D. J. Leiner. SoSci survey: professional online surveys, european product, GDPR compliant. https://www.soscisurvey.de. Ac-cessed: 2026-5-24. [32] Zehui Liao, Shishuai Hu, Yutong Xie, and Yong Xia. Modeling annotator preference and stochastic annotation error for medical image segmentation. Medical Image Analy-sis , 92:103028, 2024. [33] Marius Micluța-Câmpeanu. Novel or drivel? variants of invariants for teaching NLP in the LLM era. In Matthias Aßenmacher, Laura Biester, Claudia Borg, György Kovács, Margot Mieskes, and Sofia Serrano, edi-tors, Proceedings of the Seventh Workshop on Teaching Natural Language Processing (TeachNLP 2026) , pages 129–133, Rabat, Morocco, March 2026. Association for Com-putational Linguistics. [34] Hiroki Nakayama, Takahiro Kubo, Junya Kamura, Yasufumi Taniguchi, and Xu Liang. doccano: Text annotation tool for hu-man, 2018. Software available from https://github.com/doccano/doccano. [35] Irina Nikishina, Maria Tikhonova, Viktoriia Chekalina, Alexey Zaytsev, Artem Vazhent-sev, and Alexander Panchenko. Industry vs academia: Running a course on trans-formers in two setups. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Maraso-vić, Leena Mathur, Margot Mieskes, and Leonie Weissweiler, editors, Proceedings of 
+
+20 Raumanns et al. Data Annotations as Pedagogical Hints 
+
+the Sixth Workshop on Teaching NLP , pages 7–22, Bangkok, Thailand, August 2024. As-sociation for Computational Linguistics. [36] Natalie Parde. Example-driven course slides on natural language processing concepts. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Mar-got Mieskes, and Leonie Weissweiler, edi-tors, Proceedings of the Sixth Workshop on Teaching NLP , pages 4–6, Bangkok, Thai-land, August 2024. Association for Compu-tational Linguistics. [37] María A Pease and Deanna Kuhn. Ex-perimental analysis of the effective compo-nents of problem‐based learning. Sci. Educ. ,95(1):57–86, January 2011. [38] Barbara Plank. The “problem” of human la-bel variation: On ground truth in data, mod-eling and evaluation. In Yoav Goldberg, Zor-nitsa Kozareva, and Yue Zhang, editors, Pro-ceedings of the 2022 Conference on Empir-ical Methods in Natural Language Process-ing , pages 10671–10682, Abu Dhabi, United Arab Emirates, December 2022. Association for Computational Linguistics. [39] Grusha Prasad and Forrest Davis. Training an NLP scholar at a small liberal arts col-lege: A backwards designed course proposal. In Sana Al-azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Mar-got Mieskes, and Leonie Weissweiler, editors, 
+
+Proceedings of the Sixth Workshop on Teach-ing NLP , pages 105–118, Bangkok, Thailand, August 2024. Association for Computational Linguistics. [40] John Pruitt. The Persona Lifecycle . Elsevier S & T, August 2010. [41] Sebastian Raschka. Deeper learning by do-ing: Integrating hands-on research projects into a machine learning course. arXiv [cs.CY] , July 2021. [42] Ralf Raumanns, Elif K Contar, Gerard Schouten, and Veronika Cheplygina. Multi-task learning with crowdsourced features im-proves skin lesion diagnosis. arXiv preprint arXiv:2004.14745 , 2020. [43] Ralf Raumanns, Gerard Schouten, Max Joosten, Josien P. W. Pluim, and Veronika Cheplygina. Enhance (enriching health data by annotations of crowd and experts): Acase study for skin lesion classification. Ma-chine Learning for Biomedical Imaging , 1:1– 26, 2021. [44] Paul Röttger, Bertie Vidgen, Dirk Hovy, and Janet Pierrehumbert. Two contrasting data annotation paradigms for subjective NLP tasks. In Marine Carpuat, Marie-Catherine de Marneffe, and Ivan Vladimir Meza Ruiz, editors, Proceedings of the 2022 Conference of the North American Chapter of the Associ-ation for Computational Linguistics: Human Language Technologies , pages 175–190, Seat-tle, United States, July 2022. Association for Computational Linguistics. [45] Marta Sandri, Elisa Leonardelli, Sara Tonelli, and Elisabetta Jezek. Why don’t you do it right? analysing annotators’ disagree-ment in subjective tasks. In Andreas Vlachos and Isabelle Augenstein, editors, Proceedings of the 17th Conference of the European Chap-ter of the Association for Computational Lin-guistics , pages 2428–2441, Dubrovnik, Croa-tia, May 2023. Association for Computa-tional Linguistics. [46] Alexander Schiendorfer, Carola Gajek, and W Reif. Turning software engineers into machine learning engineers. In Bernd Bis-chl, Oliver Guhr, Heidi Seibold, and Peter Steinbach, editors, Proceedings of Machine Learning Research , volume 141 of Proceed-ings of Machine Learning Research , pages 36–41. PMLR, September 2020. [47] Project In Data Science. Projectindata-science2026_examtemplate (data folder), 2026. Accessed: 2026-06-28. [48] STOLZ and W. ABCD rule of dermatoscopy : a new practical method for early recogni-tion of malignant melanoma. Eur. J. Der-matol. , 4:521–527, 1994. [49] Philipp Tschandl, Cliff Rosendahl, and Har-ald Kittler. The HAM10000 dataset, a large collection of multi-source dermatoscopic im-ages of common pigmented skin lesions, 2018. [50] Alexandra N. Uma, Tommaso Fornaciari, Dirk Hovy, Silviu Paun, Barbara Plank, and Massimo Poesio. Learning from disagree-ment: A survey. J. Artif. Int. Res. , 72:1385– 1470, January 2022. [51] Rotemberg Veronica, Kurtansky Nicholas, Betz-Stablein Brigid, Caffery Liam, Chousakos Emmanouil, Codella Noel, Combalia Marc, Stephen Dusza, Guitera Pascale, David Gutman, Allan Halpern, Helba Brian, Kittler Harald, Kose Ki-vanc, Steve Langer, Lioprys Konstantinos, Malvehy Josep, Musthaq Shenara, Nanda 21 Raumanns et al. Data Annotations as Pedagogical Hints Jabpani, Reiter Ofer, George Shih, Stratigos Alexander, Tschandl Philipp, Jochen Weber, Soyer H Peter, University of Athens Medical School, Athens, Greece (GRID:grid. 5216. 0) (ISNI:0000 0001 2155 0800), SUNY Downstate Medical School, New York, USA (GRID:grid. 262863. b) (ISNI:0000 0001 0693 2202), Stony Brook Medical School, Stony Brook, USA (GRID:grid. 51462. 34), and Rabin Medical Center, Tel Aviv, Israel (GRID:grid. 413156. 4) (ISNI:0000 0004 0575 344X). A patient-centric dataset of images and metadata for identifying melanomas using clinical context. Scientific Data; London , 8(1):s41597–021, 2021. 
+
+# A Post-test DAPH 
+
+A.0.1 Annotation ambiguity (AA) 
+
+AA1 RQ1 
+
+The annotations produced by my group were consistent with each other. 
+
+Strongly Disagree → Strongly Agree AA2 RQ1 
+
+My individual interpretation played a role in how I labeled the skin lesions during the assignment. 
+
+Strongly Disagree → Strongly Agree AA3 RQ1 
+
+Discussing annotation disagreements with my peers helped me understand why different people can assign differ-ent labels to the same image. 
+
+Strongly Disagree → Strongly Agree 
+
+A.0.2 Data quality (DQ) 
+
+DQ1 RQ1 
+
+The annotation task helped me under-stand how personal interpretation af-fects data labeling. 
+
+Strongly Disagree → Strongly Agree DQ2 RQ1 
+
+Doing the annotation task made me more aware of the challenges in creat-ing training data. 
+
+Strongly Disagree → Strongly Agree 
+
+A.0.3 Bias and fairness (BF) 
+
+BF1 RQ1 
+
+Reviewing disagreements between my labels and my peers’ labels helped me understand why AI models might pro-duce uncertain or conflicting predic-tions. 
+
+Strongly Disagree → Strongly Agree BF2 RQ1 
+
+The presence of hair in training images contributes to misclassifications by the AI model. 
+
+Strongly Disagree → Strongly Agree BF3 RQ1 
+
+Reflecting on why I disagreed with others helped me identify visual cues in skin lesions that may be difficult for an AI model to learn. 
+
+Strongly Disagree → Strongly Agree 22 Raumanns et al. Data Annotations as Pedagogical Hints BF4 RQ1 
+
+The annotation task gave me insight into why AI models can produce un-reliable classifications. 
+
+Strongly Disagree → Strongly Agree 
+
+A.0.4 Covering AA, DQ and BF 
+
+AF1 RQ1 
+
+What were the most significant in-sights or findings your group discov-ered during the annotation process? 
+
+Free text. 
+
+A.0.5 Implementation barriers (IB) 
+
+IB1 RQ2 
+
+The instructions for the annotation task were clear and easy to follow. 
+
+Strongly Disagree → Strongly Agree IB2 RQ2 
+
+The annotation tool was easy to use and did not interfere with my ability to complete the task. 
+
+Strongly Disagree → Strongly Agree IB3 RQ2 
+
+Viewing the skin lesion images caused me emotional discomfort or distress. 
+
+Strongly Disagree → Strongly Agree IB4 RQ2 
+
+I felt confident in my ability to accu-rately label the skin lesion images. 
+
+Strongly Disagree → Strongly Agree IB5 RQ2 
+
+How would you improve the task? 
+
+Free text. IB6 RQ2 
+
+What is the least enjoyable part of the task? 
+
+Free text. 
+
+A.0.6 Pedagogical effectiviness (PE) 
+
+PE1 RQ2 
+
+I was interested in learning about data annotation beyond just complet-ing the course requirement. 
+
+Strongly Disagree → Strongly Agree PE2 RQ2 
+
+Compared to traditional lectures, the labeling activity was more effective in helping me understand bias in AI. 
+
+Strongly Disagree → Strongly Agree PE3 RQ2 
+
+I would recommend incorporating adata annotation task into other AI or data science courses to help students understand subjectivity and bias. 
+
+Strongly Disagree → Strongly Agree PE4 RQ2 
+
+The labeling activity increased my motivation to understand AI concepts. 
+
+Strongly Disagree → Strongly Agree PE5 RQ2 
+
+What is the most enjoyable part of the task? 
+
+Free text. PE6 RQ2 
+
+What, if anything, did you find inter-esting about the topic of skin lesions? 
+
+Free text. 
+
+# B Inter-annotator agreement Fontys and ITU 
+
+Table 5: Available Fleiss’ κ results reported by Venlo students ( n = groupsize ), with κ: < 0.20 =Poor, 0.21 − 0.40 = Fair, 0.41 − 0.60 = Moderate, 
+
+0.61 − 0.80 = Good and 0.81 − 1.00 = Very good. 
+
+Group n Fleiss’ κ Interpretation 
+
+1 2 0.58 Moderate 2 3 0.60 Moderate 3 3 0.67 Good 4 3 0.69 Good 5 2 0.78 Good 6 4 0.27 Fair 7 4 0.72 Good 8 4 0.40 Fair 9 4 0.65 Good 23 Raumanns et al. Data Annotations as Pedagogical Hints Table 6: Fleiss’ κ results for Copenhagen student groups, computed from their annotations. 
+
+Group n Fleiss’ κ Interpretation 
+
+1 4 0.60 Moderate 2 5 0.82 Very good 3 5 0.71 Good 4 5 0.45 Moderate 5 5 0.64 Good 6 5 0.42 Moderate 7 5 0.53 Moderate 8 5 0.69 Good 9 5 0.77 Good 10 5 0.57 Moderate 11 5 0.59 Moderate 12 5 0.72 Good 13 5 0.75 Good 14 5 0.63 Good 24

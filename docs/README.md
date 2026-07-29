@@ -6,36 +6,29 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-28
-- 运行时间：2026-07-28 21:07:10 UTC
+- 最新运行日期：2026-07-29
+- 运行时间：2026-07-29 21:38:26 UTC
 - 运行状态：成功
-- 本次总论文数：4
-- 精读区：1
-- 速读区：3
+- 本次总论文数：2
+- 精读区：0
+- 速读区：2
 
 ### 今日简报（AI）
-今日神经科学日报聚焦迷幻药与脑电解码的前沿探索，共精选4项研究，其中1篇高分精读揭示裸盖菇素在不确定性下如何不对称调节决策与皮层处理。
-
-最值得关注的方向是：迷幻药对价值决策的偏侧化调制机制，以及基于波形字典的脑电解码新方法在低数据场景下的潜力。
-
-建议读者优先阅读精读论文，并结合速读中关于运动想象异质性的大规模基准研究，思考药物与个体差异对脑信号解码的共同影响。
-- 详情：[/202607/28/README](/202607/28/README)
+今日速读两篇前沿论文，聚焦于AI代理驱动脑电分析自动化与数据标注的思维训练新视角。  
+值得关注的是，CogEEGAgent 用选择感知验证实现自主认知分析，而另一篇将主观标签重铸为批判性思维的教学提示。  
+建议密切追踪领域交互型AI在专业认知任务中的落地潜力。
+- 详情：[/202607/29/README](/202607/29/README)
 
 ### 精读区论文标签
-1. [Psilocybin asymmetrically modulates outcome-based choice and cortical processing under uncertainty](/202607/28/biorxiv-10-64898-2026-07-16-733837-v1-psilocybin-asymmetrically-modulates-outcome-based-choice-and-cortical-processing-under-uncertainty)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：在基于价值的概率选择任务中进行内侧前额叶皮层单细胞记录
+- 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes](/202607/28/2607.22508v1-interpretable-eeg-biomarkers-with-bag-of-waves-spatial-and-temporal-waveform-dictionaries-for-low-data-regimes)  
+1. [CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification](/202607/29/2607.25045v1-cogeegagent-toward-autonomous-cognitive-eeg-analysis-with-grounded-execution-and-selection-aware-verification)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：可解释的EEG分析框架，学习波形模板，适用于认知任务
-2. [Subject-Level Heterogeneity in EEG Motor Imagery Decoding: A Large-Scale Benchmark and Portfolio-Based Reduction of the Search Space](/202607/28/2607.22778v1-subject-level-heterogeneity-in-eeg-motor-imagery-decoding-a-large-scale-benchmark-and-portfolio-based-reduction-of-the-search-space)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：使用频谱特征的大规模EEG运动想象基准
-3. [Bayesian Feature Extraction using Gaussian and Diffused-gamma Priors for High Dimensional Spatio-Temporal Data](/202607/28/2607.24378v1-bayesian-feature-extraction-using-gaussian-and-diffused-gamma-priors-for-high-dimensional-spatio-temporal-data)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：提出贝叶斯时空特征提取框架，并在多被试脑电图案例中验证
+   evidence：CogEEGAgent利用MNE-Python自动化认知EEG分析，可涉及相对功率谱等分析
+2. [Data Annotations as Pedagogical Hints: From Subjective Labels to Critical Thinking](/202607/29/2607.20149v1-data-annotations-as-pedagogical-hints-from-subjective-labels-to-critical-thinking)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：通过数据标注直接探究批判性思维，与科学批判性思维倾向相关。
 
 
 <div class="dpr-home-promo-card">

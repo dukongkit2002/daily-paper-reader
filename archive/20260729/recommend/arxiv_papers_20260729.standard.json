@@ -1,0 +1,99 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-29T21:36:51.795064+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2607.25045v1",
+      "source": "arxiv",
+      "title": "CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification",
+      "abstract": "Electroencephalography (EEG) analysis in cognitive studies requires specialized expertise and involves many defensible choices over contrasts, channels, time windows, and statistical tests. LLM agents can translate varied natural-language questions into analysis choices, offering a flexible interface for automation. Yet fluent reports alone cannot establish that an agent selected the requested analysis or evaluated a confirmatory claim independently of adaptive search. We present CogEEGAgent, a cognitive-EEG analysis agent grounded in MNE-Python. Its EEG-specific scientific harness separates semantic from scientific authority. The LLM interprets intent and proposes registered analyses, while deterministic components validate typed contracts, control confirmation access, and authorize evidence-bound release. On a prespecified routing benchmark, CogEEGAgent maps language to registered analyses more accurately than a matched deterministic router, while matched preflight makes both systems abstain whenever required. In an externally model-authored, outcome-blind campaign, the complete system releases supported analyses with participant-disjoint confirmation and blocks prespecified capability hazards and lifecycle-reuse requests. Policy stress testing shows that held-out confirmation curbs false positives from uncorrected adaptive search. Together, these studies establish bounded autonomy and an auditable automation framework for cognitive-EEG workflows. More broadly, they show how scientific agents can combine flexible language understanding with fail-closed control over inference and release.",
+      "authors": [
+        "Dengzhe Hou",
+        "Lingyu Jiang",
+        "Fangzhou Lin",
+        "Kazunori D Yamada"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "eess.SP",
+        "q-bio.NC"
+      ],
+      "published": "2026-07-27T20:09:05+00:00",
+      "link": "https://arxiv.org/pdf/2607.25045v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "CogEEGAgent automates cognitive EEG analysis with MNE-Python, capable of spectral power analysis",
+      "llm_evidence_cn": "CogEEGAgent利用MNE-Python自动化认知EEG分析，可涉及相对功率谱等分析",
+      "llm_evidence": "CogEEGAgent利用MNE-Python自动化认知EEG分析，可涉及相对功率谱等分析",
+      "canonical_evidence": "CogEEGAgent利用MNE-Python自动化认知EEG分析，可涉及相对功率谱等分析",
+      "llm_tldr_en": "CogEEGAgent is an LLM-based agent that grounds cognitive EEG analysis in MNE-Python, enabling flexible automation of common analyses like spectral power computations, thus lowering expertise barriers and improving reproducibility.",
+      "llm_tldr_cn": "针对认知脑电图分析专业性强、分析选择多且易出错的问题，本文提出CogEEGAgent。该智能体将LLM的自然语言意图解释与MNE-Python的确定性计算分离，通过注册分析和选择感知验证确保分析正确性。实验表明其能可靠自动执行常见频谱和事件相关电位分析，为研究人员提供灵活工具并提升可重复性。",
+      "llm_tldr": "针对认知脑电图分析专业性强、分析选择多且易出错的问题，本文提出CogEEGAgent。该智能体将LLM的自然语言意图解释与MNE-Python的确定性计算分离，通过注册分析和选择感知验证确保分析正确性。实验表明其能可靠自动执行常见频谱和事件相关电位分析，为研究人员提供灵活工具并提升可重复性。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.20149v1",
+      "source": "arxiv",
+      "title": "Data Annotations as Pedagogical Hints: From Subjective Labels to Critical Thinking",
+      "abstract": "Machine learning courses often use pre-labeled datasets, hiding the subjectivity of human annotation. This creates students with an overly trusting view of AI data and models, undervaluing interpretive diversity. We investigated whether manual data annotation tasks teach students about subjective labeling.   Study Design: An annotation activity was implemented at two universities: Fontys (Netherlands) and IT University Copenhagen (Denmark). Students annotated skin lesion images for hair coverage on a 3-point scale. Surveys were collected from 43 participants measuring their understanding of annotation ambiguity, data quality, bias, fairness, implementation barriers, and pedagogical effectiveness.   Key Findings: Self-reported familiarity with course content increased substantially across all concepts. Most students recognised that personal interpretation affects annotations. Students rated the activity as more effective than traditional lectures for understanding bias. Participants were motivated to learn more.   Main Drawbacks: Emotional unease from viewing medical images was the primary issue. Many students still requested clearer guidelines to reduce disagreement, suggesting they hadn't internalised that disagreement from different perspectives is a learning feature, not a bug.   Recommendations for Future Iterations: Ensure sufficient interpretive ambiguity in materials. Reduce repetitive annotation workload. Mitigate emotional unease from sensitive content. Explicitly frame disagreement as a learning opportunity rather than a problem to solve.   Manual data annotations effectively teach students that human judgment shapes model behavior and that disagreement reflects domain complexity, not just noise.",
+      "authors": [
+        "Ralf Raumanns",
+        "Theresa Elstner",
+        "Louis Ferger-Andrews",
+        "Louise M. Carlsen",
+        "Martin Potthast",
+        "Gerard Schouten",
+        "Josien P. W. Pluim",
+        "Veronika Cheplygina"
+      ],
+      "primary_category": "cs.CY",
+      "categories": [
+        "cs.CY"
+      ],
+      "published": "2026-07-22T13:51:56+00:00",
+      "link": "https://arxiv.org/pdf/2607.20149v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Directly investigates critical thinking through data annotation, relevant to scientific critical thinking disposition.",
+      "llm_evidence_cn": "通过数据标注直接探究批判性思维，与科学批判性思维倾向相关。",
+      "llm_evidence": "通过数据标注直接探究批判性思维，与科学批判性思维倾向相关。",
+      "canonical_evidence": "通过数据标注直接探究批判性思维，与科学批判性思维倾向相关。",
+      "llm_tldr_en": "Studies whether manual data annotation tasks teach students about subjectivity and foster critical thinking in machine learning contexts.",
+      "llm_tldr_cn": "本文探讨了在机器学习课程中，手动数据标注任务是否能帮助学生理解标注的主观性并培养批判性思维。研究在两所大学进行，43名学生参与了皮肤病变图像毛发覆盖的标注活动。调查结果显示，学生对标注模糊性、数据质量和偏见的认知得到提升。该研究强调将标注任务转化为教育契机的重要性，为在数据科学教育中融入批判性思维提供了实证支持。",
+      "llm_tldr": "本文探讨了在机器学习课程中，手动数据标注任务是否能帮助学生理解标注的主观性并培养批判性思维。研究在两所大学进行，43名学生参与了皮肤病变图像毛发覆盖的标注活动。调查结果显示，学生对标注模糊性、数据质量和偏见的认知得到提升。该研究强调将标注任务转化为教育契机的重要性，为在数据科学教育中融入批判性思维提供了实证支持。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
