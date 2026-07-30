@@ -6,29 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-29
-- 运行时间：2026-07-29 21:38:26 UTC
+- 最新运行日期：2026-07-30
+- 运行时间：2026-07-30 21:46:56 UTC
 - 运行状态：成功
-- 本次总论文数：2
+- 本次总论文数：1
 - 精读区：0
-- 速读区：2
+- 速读区：1
 
 ### 今日简报（AI）
-今日速读两篇前沿论文，聚焦于AI代理驱动脑电分析自动化与数据标注的思维训练新视角。  
-值得关注的是，CogEEGAgent 用选择感知验证实现自主认知分析，而另一篇将主观标签重铸为批判性思维的教学提示。  
-建议密切追踪领域交互型AI在专业认知任务中的落地潜力。
-- 详情：[/202607/29/README](/202607/29/README)
+速读一篇脑电基础模型研究，揭示其泛化脆弱根因。  
+核心发现：现有EEG基础模型对长程时间相关性“失明”，频谱与时间特征解离导致跨人群性能崩溃。  
+想提升脑电AI泛化能力，请优先关注增强长程依赖建模的预训练方案。
+- 详情：[/202607/30/README](/202607/30/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification](/202607/29/2607.25045v1-cogeegagent-toward-autonomous-cognitive-eeg-analysis-with-grounded-execution-and-selection-aware-verification)  
+1. [Foundation Models for EEG Are Blind to Long-Range Temporal Correlations: A Spectral-Temporal Dissociation Behind Their Cross-Population Fragility](/202607/30/2607.24834v1-foundation-models-for-eeg-are-blind-to-long-range-temporal-correlations-a-spectral-temporal-dissociation-behind-their-cross-population-fragility)  
    标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：CogEEGAgent利用MNE-Python自动化认知EEG分析，可涉及相对功率谱等分析
-2. [Data Annotations as Pedagogical Hints: From Subjective Labels to Critical Thinking](/202607/29/2607.20149v1-data-annotations-as-pedagogical-hints-from-subjective-labels-to-critical-thinking)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：通过数据标注直接探究批判性思维，与科学批判性思维倾向相关。
+   evidence：EEG基础模型无法保留长程时间相关性（α带DFA指数），呈现谱-时间解离。
 
 
 <div class="dpr-home-promo-card">
