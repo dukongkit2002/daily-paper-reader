@@ -1,0 +1,24 @@
+{
+  "label": "2026-07-31",
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T21:58:47",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202607/31/2607.27308v1-zuna11-a-more-flexible-eeg-foundation-model-for-denoising-and-super-resolution",
+      "section": "quick",
+      "title_en": "ZUNA1.1: A more flexible EEG foundation model for Denoising and Super-resolution",
+      "authors": "Christopher Warner, Jonas Mago, JR Huml, Beren Millidge",
+      "date": "2026-07-29",
+      "pdf": "https://arxiv.org/pdf/2607.27308v1",
+      "score": "7.0",
+      "evidence": "灵活的脑电去噪基础模型，为频谱分析提供清洁信号",
+      "tldr": "EEG信号常因电极移动或噪声导致通道缺失或信号质量下降，传统插值方法灵活性不足。ZUNA1.1是一个380M参数的扩散自编码器模型，能够处理可变长度序列、任意数量通道及任意头皮位置，甚至重建通道内任意时间片段。实验表明，该模型去噪和超分辨性能与ZUNA1持平，远优于MNE的球面样条插值。它以Apache 2.0许可证开源，为EEG重建提供了高度灵活的基础模型。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "We introduce ZUNA1.1, a 380M-parameter diffusion autoencoder for flexible EEG signal reconstruction. ZUNA1.1 is capable of reconstructing variable length sequences of up to 30s, with an arbitrary number of EEG channels at arbitrary scalp locations, and can reconstruct arbitrary temporal intervals within channels in addition to reconstructing entire channels. We demonstrate that ZUNA1.1 performs at least on par with our earlier ZUNA1 model, while being far more flexible and capable of handling a wide range of reconstruction tasks. ZUNA1.1 continues to substantially outperform standard EEG denoising and reconstruction methods such as spherical spline interpolation, which is ubiquitously deployed in the MNE package. The ZUNA1.1 model is released open source under the permissive Apache 2.0 license.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
