@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-08-02 <!--dpr-date:20260802-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/02/2607.23889v1-evaluating-closed-loop-eeg-feedback-for-simulated-prosthetic-vision-in-immersive-vr-a-sham-controlled-feasibility-study" data-sidebar-item="{&quot;title&quot;: &quot;Evaluating Closed-Loop EEG Feedback for Simulated Prosthetic Vision in Immersive VR: A Sham-Controlled Feasibility Study&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2607.23889v1-evaluating-closed-loop-eeg-feedback-for-simulated-prosthetic-vision-in-immersive-vr-a-sham-controlled-feasibility-study&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;使用脑电投入指数β/(α+θ)，即相对功率比&quot;}">Evaluating Closed-Loop EEG Feedback for Simulated Prosthetic Vision in Immersive VR: A Sham-Controlled Feasibility Study</a>
   * 2026-07-31 <!--dpr-date:20260731-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202607/31/2607.27308v1-zuna11-a-more-flexible-eeg-foundation-model-for-denoising-and-super-resolution" data-sidebar-item="{&quot;title&quot;: &quot;ZUNA1.1: A more flexible EEG foundation model for Denoising and Super-resolution&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2607.27308v1-zuna11-a-more-flexible-eeg-foundation-model-for-denoising-and-super-resolution&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;灵活的脑电去噪基础模型，为频谱分析提供清洁信号&quot;}">ZUNA1.1: A more flexible EEG foundation model for Denoising and Super-resolution</a>

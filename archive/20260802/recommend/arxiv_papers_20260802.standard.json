@@ -1,0 +1,56 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-02T20:01:18.140938+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2607.23889v1",
+      "source": "arxiv",
+      "title": "Evaluating Closed-Loop EEG Feedback for Simulated Prosthetic Vision in Immersive VR: A Sham-Controlled Feasibility Study",
+      "abstract": "Visual prostheses require users to interpret sparse and distorted artificial percepts through active visual search. We developed an EEG-guided neuroadaptive training platform for simulated prosthetic vision in immersive virtual reality and evaluated its feasibility in a sham-controlled object-localization task. Twenty-two sighted participants searched a virtual desk scene rendered through a low-resolution phosphene simulation while EEG was recorded using a dry-electrode headset integrated with a head-mounted display. During training, participants received post-trial visual feedback based either on a commonly used EEG engagement index, $β/(α+θ)$, or on visually matched non-contingent sham values. Both groups showed comparable within-session improvements in localization performance, consistent with practice, increasing familiarity with the simulated percepts, or refinement of search strategies. EEG-contingent feedback did not produce reliable group-level benefits in localization accuracy, completion time, workload, or modulation of the targeted index. Exploratory analyses showed substantial individual variability, but did not establish a feedback-specific relationship between the engagement index and behavioral performance. These findings demonstrate the feasibility of integrating EEG-contingent feedback with immersive simulated prosthetic vision, while identifying important limitations of the EEG measure, single-session training protocol, and post-trial feedback design.",
+      "authors": [
+        "Ruyi Cao",
+        "Lily M. Turkstra",
+        "Adyah Rastogi",
+        "Michael Beyeler"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "q-bio.NC"
+      ],
+      "published": "2026-07-26T23:22:38+00:00",
+      "link": "https://arxiv.org/pdf/2607.23889v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "uses EEG engagement index β/(α+θ), a relative power ratio",
+      "llm_evidence_cn": "使用脑电投入指数β/(α+θ)，即相对功率比",
+      "llm_evidence": "使用脑电投入指数β/(α+θ)，即相对功率比",
+      "canonical_evidence": "使用脑电投入指数β/(α+θ)，即相对功率比",
+      "llm_tldr_en": "This study developed an EEG-guided neuroadaptive training platform for simulated prosthetic vision in VR, using the β/(α+θ) engagement index as feedback, and demonstrated feasibility in a sham-controlled object-localization task.",
+      "llm_tldr_cn": "该研究针对视觉假体用户需解读稀疏假体视觉的问题，开发了沉浸式VR中基于脑电引导的神经自适应训练平台。通过采用常用的脑电投入指数β/(α+θ)作为实时反馈，在假对照目标定位任务中评估其可行性。22名参与者实验表明，该闭环训练方法具有可行性，脑电相对功率谱指标可作为认知投入的有效神经标记物，为假体视觉康复训练提供了新途径。",
+      "llm_tldr": "该研究针对视觉假体用户需解读稀疏假体视觉的问题，开发了沉浸式VR中基于脑电引导的神经自适应训练平台。通过采用常用的脑电投入指数β/(α+θ)作为实时反馈，在假对照目标定位任务中评估其可行性。22名参与者实验表明，该闭环训练方法具有可行性，脑电相对功率谱指标可作为认知投入的有效神经标记物，为假体视觉康复训练提供了新途径。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
