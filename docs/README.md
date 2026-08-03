@@ -6,26 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-08-02
-- 运行时间：2026-08-02 20:02:50 UTC
+- 最新运行日期：2026-08-03
+- 运行时间：2026-08-03 21:40:39 UTC
 - 运行状态：成功
 - 本次总论文数：1
-- 精读区：0
-- 速读区：1
+- 精读区：1
+- 速读区：0
 
 ### 今日简报（AI）
-沉浸式 VR 中用脑电反馈帮助“假体视觉”看到了什么？初步研究说：可行但效果尚不惊人。  
-用假实验对照测闭环 EEG 反馈，发现真实反馈组在“光幻视”定位和寻路任务上并没有显著好过随机闪烁组，但前额叶脑电特征能预测表现。  
-想用“意念+VR”重获光明？先把 EEG 特征预测能力做扎实，再谈闭环增强。
-- 详情：[/202608/02/README](/202608/02/README)
+今日精读了一篇8分研究，探索脑电频谱特征与眼动变异性结合用于轻度认知障碍筛查。  
+发现联合多模态无创信号能有效提升识别力，其中特定频带功率与注视模式的不稳定性是关键区分线索。  
+下一步建议关注这类低成本、可穿戴的早期评估工具在社区筛查中的落地可行性。
+- 详情：[/202608/03/README](/202608/03/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Exploratory Integration of EEG Spectral Features and Gaze Variability for Mild Cognitive Impairment Discrimination](/202608/03/2607.29493v1-exploratory-integration-of-eeg-spectral-features-and-gaze-variability-for-mild-cognitive-impairment-discrimination)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：提取EEG谱功率特征用于MCI判别，直接关联于认知中EEG相对功率谱分析。
 
 ### 速读区论文标签
-1. [Evaluating Closed-Loop EEG Feedback for Simulated Prosthetic Vision in Immersive VR: A Sham-Controlled Feasibility Study](/202608/02/2607.23889v1-evaluating-closed-loop-eeg-feedback-for-simulated-prosthetic-vision-in-immersive-vr-a-sham-controlled-feasibility-study)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：使用脑电投入指数β/(α+θ)，即相对功率比
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">

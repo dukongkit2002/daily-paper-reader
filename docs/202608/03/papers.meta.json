@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-03",
+  "date": "2026-08-03",
+  "generated_at": "2026-08-03T21:40:50",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/03/2607.29493v1-exploratory-integration-of-eeg-spectral-features-and-gaze-variability-for-mild-cognitive-impairment-discrimination",
+      "section": "deep",
+      "title_en": "Exploratory Integration of EEG Spectral Features and Gaze Variability for Mild Cognitive Impairment Discrimination",
+      "authors": "Takeru Mukunoki, Mamoru Hiroe, Minoru Nakayama, Yujia Zheng, Yuma Sonoda, Hisatomo Kowa, Takashi Nagamatsu",
+      "date": "2026-07-31",
+      "pdf": "https://arxiv.org/pdf/2607.29493v1",
+      "score": "8.0",
+      "evidence": "提取EEG谱功率特征用于MCI判别，直接关联于认知中EEG相对功率谱分析。",
+      "tldr": "早期发现轻度认知障碍是老龄化社会的重要挑战。该探索性研究整合脑电图频谱特征与注视变异性，比较三种模型：仅用高维脑电图特征、L1正则化特征选择、以及将选定特征与注视变异性结合。整合模型AUC达0.78，明显优于单独使用脑电图特征的0.52和特征选择后的0.64。结果表明神经与行为变异性可能互补，为轻度认知障碍检测提供了多模态融合新思路。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Early detection of mild cognitive impairment (MCI) is an important challenge in aging societies. Electroencephalography (EEG) and eye-tracking have independently been explored as potential biomarkers; however, their integrative effects remain insufficiently examined. This exploratory study investigated whether combining EEG spectral features with gaze variability may provide complementary information for MCI discrimination. EEG signals were recorded using the 10--20 system, and spectral power features were extracted. We compared three models: (a) high-dimensional EEG features, (b) L1-regularized feature selection (LASSO), and (c) integration of the selected EEG features with gaze variability. Performance was evaluated using leave-one-out cross-validation and area under the ROC curve (AUC). Model (a) yielded limited discrimination (AUC = 0.52). Feature selection increased AUC (0.64), and additional integration of gaze variability further increased AUC (0.78). These preliminary findings suggest potential complementarity between neural and behavioral variability measures.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
