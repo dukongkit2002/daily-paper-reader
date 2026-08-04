@@ -6,23 +6,23 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-08-03
-- 运行时间：2026-08-03 21:40:39 UTC
+- 最新运行日期：2026-08-04
+- 运行时间：2026-08-04 21:17:03 UTC
 - 运行状态：成功
 - 本次总论文数：1
 - 精读区：1
 - 速读区：0
 
 ### 今日简报（AI）
-今日精读了一篇8分研究，探索脑电频谱特征与眼动变异性结合用于轻度认知障碍筛查。  
-发现联合多模态无创信号能有效提升识别力，其中特定频带功率与注视模式的不稳定性是关键区分线索。  
-下一步建议关注这类低成本、可穿戴的早期评估工具在社区筛查中的落地可行性。
-- 详情：[/202608/03/README](/202608/03/README)
+今日精读《Understanding and Correcting Low-Frequency Bias in EEG Foundation Model》，系统揭示了 EEG 基础模型因训练数据与评测时频分布差异导致的低频偏好，并提出偏差校正方法。  
+最值得关注的是该工作首次量化并修复了 EEG 大模型的频率偏移缺陷，直接提升跨任务泛化鲁棒性。  
+建议读者尝试将此类偏差诊断引入自己的时序模型构建流程，尤其注意分布外频段数据的校准。
+- 详情：[/202608/04/README](/202608/04/README)
 
 ### 精读区论文标签
-1. [Exploratory Integration of EEG Spectral Features and Gaze Variability for Mild Cognitive Impairment Discrimination](/202608/03/2607.29493v1-exploratory-integration-of-eeg-spectral-features-and-gaze-variability-for-mild-cognitive-impairment-discrimination)  
+1. [Understanding and Correcting Low-Frequency Bias in EEG Foundation Model](/202608/04/2608.01898v1-understanding-and-correcting-low-frequency-bias-in-eeg-foundation-model)  
    标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：提取EEG谱功率特征用于MCI判别，直接关联于认知中EEG相对功率谱分析。
+   evidence：通过频率平衡掩码自编码器识别并校正脑电模型中的低频偏差
 
 ### 速读区论文标签
 - 本次无速读推荐。

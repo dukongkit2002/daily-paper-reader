@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-04",
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04T21:17:16",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/04/2608.01898v1-understanding-and-correcting-low-frequency-bias-in-eeg-foundation-model",
+      "section": "deep",
+      "title_en": "Understanding and Correcting Low-Frequency Bias in EEG Foundation Model",
+      "authors": "Junjie Yu, Zihan Deng, Jianyu Zhang, Junrong Mu, Jiahui An, Wenxiao Ma, Ziling Lu, Yue Wang, Yan Zhu, Kexin Lou, Quanying Liu",
+      "date": "2026-08-03",
+      "pdf": "https://arxiv.org/pdf/2608.01898v1",
+      "score": "8.0",
+      "evidence": "通过频率平衡掩码自编码器识别并校正脑电模型中的低频偏差",
+      "tldr": "扩大EEG预训练规模未能稳定提升下游性能，我们发现模型学到的表征存在低频偏差，源于EEG的1/f^α谱结构及网络偏好，且掩码自编码的ℓ₂损失进一步放大了该偏差。为此我们提出频率平衡掩码自编码框架FAME，在预定义频带上重建时频活动，对各频带独立标准化并等权损失，实现频谱监督均衡。在OmniEEG-Bench的41项下游任务中，FAME学到更频谱均衡的表示，取得24项最优性能。这表明平衡的频谱监督对于学习可迁移EEG表征至关重要。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Increasing EEG pretraining data scale or model capacity does not consistently improve downstream performance. We identify a persistent low-frequency bias in representations learned by diverse EEG foundation models, which remains across dataset scales, model capacities, and pretraining objectives. Our analysis links this bias to the interaction between EEG's $1/f^α$-like spectral structure and neural networks' tendency to preferentially learn low-frequency components. In masked autoencoders, the $\\ell_2$ reconstruction objective further amplifies this imbalance: under comparable relative reconstruction errors, high-power low-frequency components contribute disproportionately to the loss. To address this issue, we introduce FAME, a frequency-balanced masked autoencoding framework that reconstructs time--frequency activity in predefined EEG bands from masked EEG inputs. FAME independently standardizes the reconstruction targets within each band and assigns equal weight to all band-specific losses, thereby balancing supervision across the EEG spectrum. Evaluated on 41 downstream tasks in OmniEEG-Bench, FAME learns more spectrally balanced representations and achieves state-of-the-art performance on 24 of them. These results underscore the importance of balanced spectral supervision for learning transferable EEG representations.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
