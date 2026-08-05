@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-08-05 <!--dpr-date:20260805-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/05/2608.00114v1-eeg-jepa-structured-latent-prediction-for-eeg-foundation-models" data-sidebar-item="{&quot;title&quot;: &quot;EEG-JEPA: Structured Latent Prediction for EEG Foundation Models&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.00114v1-eeg-jepa-structured-latent-prediction-for-eeg-foundation-models&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;EEG结构化潜在预测框架&quot;}">EEG-JEPA: Structured Latent Prediction for EEG Foundation Models</a>
   * 2026-08-04 <!--dpr-date:20260804-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/04/2608.01898v1-understanding-and-correcting-low-frequency-bias-in-eeg-foundation-model" data-sidebar-item="{&quot;title&quot;: &quot;Understanding and Correcting Low-Frequency Bias in EEG Foundation Model&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.01898v1-understanding-and-correcting-low-frequency-bias-in-eeg-foundation-model&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;通过频率平衡掩码自编码器识别并校正脑电模型中的低频偏差&quot;}">Understanding and Correcting Low-Frequency Bias in EEG Foundation Model</a>

@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-05",
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T21:01:22",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/05/2608.00114v1-eeg-jepa-structured-latent-prediction-for-eeg-foundation-models",
+      "section": "quick",
+      "title_en": "EEG-JEPA: Structured Latent Prediction for EEG Foundation Models",
+      "authors": "Jinhao Li, Zhiyuan Ma, Xueqiao Han, Zhongye Xia, Xinche Zhang, Shanghong Xie, Yixuan Liu, Yongjian Li, Runmin Gan, Tianlin Huo, Sen Song",
+      "date": "2026-07-31",
+      "pdf": "https://arxiv.org/pdf/2608.00114v1",
+      "score": "7.0",
+      "evidence": "EEG结构化潜在预测框架",
+      "tldr": "脑电图预训练常用掩码重建，但易导致模型关注背景噪声和伪影而非可迁移的神经结构。为此提出EEG-JEPA，利用掩码上下文编码器预测目标编码器的潜在状态，并通过神经拓扑感知多尺度电极-时间掩码（N-MET）等三维度设计引导预测。在14个任务冻结评估中，准确率从40.49%提升至50.42%，多源继续学习更达52.94%，全微调亦从68.98%提高到70.65%。该框架为脑电基础模型学习可迁移表征提供了有效新范式。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Electroencephalography (EEG) foundation models aim to learn reusable representations from large-scale unlabeled recordings. A common pretraining strategy is masked waveform reconstruction, but applying supervision directly to noisy EEG may encourage models to recover predictable background activity, acquisition effects, and artifacts rather than neural structure that transfers across tasks. This raises a central question: what should an EEG foundation model predict to learn transferable representations? We introduce EEG-JEPA a structured latent-prediction framework for EEG foundation modeling. Rather than reconstructing masked voltage samples, a masked context encoder and predictor infer contextual latent states produced by an exponential-moving-average target encoder that observes the complete input. EEG-JEPA organizes target design along three complementary dimensions: target content specifies what representation is predicted, target support specifies where prediction occurs over structured electrode--time regions through Neurotopology-Aware Multi-scale Electrode-Temporal Masking (N-MET), and target depth specifies at which encoder layers supervision is applied. Together, these designs shift EEG pretraining from recovering missing measurements to inferring latent states from structured electrode--time context. We evaluate EEG-JEPA through controlled objective comparisons, frozen multitask transfer, and full fine-tuning. Under the same backbone, pretraining corpus, and training duration, EEG-JEPA improves the 14-task frozen macro balanced accuracy from 40.49% to 50.42% over CBraMod-style masked waveform reconstruction. Multi-source continuation further raises this result to 52.94%, the highest average among the EEG foundation models evaluated on EEG-FM-Bench. Under protocol-matched full fine-tuning, EEG-JEPA also improves the nine-task average balanced accuracy from 68.98% to 70.65%.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
