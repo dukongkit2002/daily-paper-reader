@@ -1,16 +1,209 @@
 {
   "mode": "standard",
-  "generated_at": "2026-08-07T02:18:28.909281+00:00",
+  "generated_at": "2026-08-07T20:39:35.033183+00:00",
   "stats": {
     "mode": "standard",
     "tag_count": 1,
-    "deep_divecandidates": 0,
+    "deep_divecandidates": 1,
     "deep_cap": 6,
-    "deep_selected": 0,
-    "quick_candidates": 0,
+    "deep_selected": 1,
+    "quick_candidates": 4,
     "quick_skim_target": 11,
-    "quick_selected": 0
+    "quick_selected": 4
   },
-  "deep_dive": [],
-  "quick_skim": []
+  "deep_dive": [
+    {
+      "id": "2608.05942v1",
+      "source": "arxiv",
+      "title": "Topic Matters: How Linguistic Properties can Shape Reading Behaviour in Selective Exposure Studies",
+      "abstract": "Research on selective exposure frequently relies on eye tracking to study reading behaviour, often assuming that texts across different controversial topics are comparable once basic controls are applied. This assumption is problematic if topic-dependent linguistic properties systematically shape how users read and allocate attention. We therefore examine whether such properties relate to differences in reading behaviour in selective exposure contexts. We analyse linguistic features and eye-tracking data from a laboratory study in which 68 participants searched for and read news articles on climate change and migration policy. Our results reveal systematic differences in both textual characteristics and reading behaviour across topics. These findings identify an important methodological confound in selective exposure research and highlight the need to account for topic-specific linguistic properties when interpreting eye-tracking measures and designing systems intended to mitigate biased information consumption.",
+      "authors": [
+        "Thomas Krämer",
+        "Dagmar Kern",
+        "Thomas Kosch",
+        "Daniel Hienert"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-08-06T12:09:50+00:00",
+      "link": "https://arxiv.org/pdf/2608.05942v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "studies reading behaviour on socio-scientific issues (climate change, migration) via eye tracking",
+      "llm_evidence_cn": "通过眼动追踪研究气候变迁、移民等社会性科学议题的阅读行为",
+      "llm_evidence": "通过眼动追踪研究气候变迁、移民等社会性科学议题的阅读行为",
+      "canonical_evidence": "通过眼动追踪研究气候变迁、移民等社会性科学议题的阅读行为",
+      "llm_tldr_en": "Examines how linguistic properties of texts on controversial socio-scientific topics influence reading behaviour in selective exposure contexts, finding systematic differences that affect attention allocation.",
+      "llm_tldr_cn": "针对选择性接触研究中文本可比性假设，分析气候变迁和移民政策新闻文本的语言特征与眼动阅读行为，发现话题依赖性语言属性系统地影响阅读注意分配，对理解社会性科学议题阅读有重要意义。",
+      "llm_tldr": "针对选择性接触研究中文本可比性假设，分析气候变迁和移民政策新闻文本的语言特征与眼动阅读行为，发现话题依赖性语言属性系统地影响阅读注意分配，对理解社会性科学议题阅读有重要意义。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2608.02070v2",
+      "source": "arxiv",
+      "title": "STEAM: A Spatio-TEmporal Alignment Mixture-of-Experts Model with Hierarchical Pre-training for EEG Decoding",
+      "abstract": "Brain-computer interfaces (BCIs) have been widely used in motor rehabilitation, disease diagnosis, and other neural engineering scenarios. However, conventional neural signal decoding algorithms often suffer from limited generalizability and high adaptation costs, motivating recent interest in BCI foundation models. Existing approaches still struggle to jointly achieve general transferability, accurate decoding, and efficient downstream adaptation. We present STEAM, a hierarchical transfer framework that reconciles general-purpose representation learning with paradigm-specific specialization in EEG foundation models. The framework is instantiated as a dual-branch spatio-temporal encoder in which a shared soft mixture-of-experts (SSMoE) module aligns the spatial and temporal branches, allowing complementary representations to exchange information through a compact set of soft slots. Across seven downstream datasets and fourteen evaluation settings, STEAM attains the best average rank among the compared methods at a competitive inference cost measured in FLOPs. Building upon the Stage-I general initialization, the hierarchical pre-training strategy further specializes the model to a target paradigm without retraining from scratch, yielding consistent gains in paradigm-specific decoding accuracy.",
+      "authors": [
+        "Zhu Chen",
+        "Dingkun Liu",
+        "Yuheng Chen",
+        "Dongrui Wu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-08-03T11:15:22+00:00",
+      "link": "https://arxiv.org/pdf/2608.02070v2",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "EEG decoding model for cognitive tasks",
+      "llm_evidence_cn": "用于认知任务的EEG解码模型",
+      "llm_evidence": "用于认知任务的EEG解码模型",
+      "canonical_evidence": "用于认知任务的EEG解码模型",
+      "llm_tldr_en": "Presents STEAM, a hierarchical transfer framework for EEG decoding that combines general-purpose representation learning with paradigm-specific specialization via a spatio-temporal mixture-of-experts model, enabling efficient adaptation to downstream cognitive tasks.",
+      "llm_tldr_cn": "针对现有EEG解码方法泛化性差、适应成本高的问题，提出一种分层迁移框架STEAM，通过时空混合专家模型统一通用表征学习与范式特异化，实现跨任务高效解码；实验表明，该方法在多个数据集上取得优异性能，为脑机接口和认知神经科学研究提供了可复用的基础模型。",
+      "llm_tldr": "针对现有EEG解码方法泛化性差、适应成本高的问题，提出一种分层迁移框架STEAM，通过时空混合专家模型统一通用表征学习与范式特异化，实现跨任务高效解码；实验表明，该方法在多个数据集上取得优异性能，为脑机接口和认知神经科学研究提供了可复用的基础模型。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2608.03176v1",
+      "source": "arxiv",
+      "title": "Frequency-Decorrelated Temporal Ensembles for EEG--fNIRS Imagined-Handwriting Decoding",
+      "abstract": "Imagined handwriting offers a temporally rich paradigm for non-invasive neural decoding, yet reliable recognition across unseen participants remains difficult because scalp EEG is noisy and internally generated stroke sequences vary across individuals. The Multimodal Brain-Computer Interface Grand Challenge provides synchronized EEG and fNIRS for four-class subject-independent handwriting-trajectory classification. We propose FRED, a task-adapted system that models imagined handwriting as a multi-second motor sequence and trains a compact multi-scale temporal network on three complementary EEG frequency views. With three seeds per view, cross-band members produce substantially less-correlated errors than same-band replicas, yielding a clean nine-member ensemble accuracy of 0.8076/0.7242/0.7492 on the public/private/overall test partitions without test-set adaptation or output constraints. The submitted pipeline further incorporates transductive pseudo-label training, three EEG-Conformer members, posterior aggregation, and a paradigm-aware decoder. Because every 12-trial randomization block contains three instances of each class, the final predictions are obtained by Hungarian assignment under the known block quota. On one fixed posterior pool, independent, session-constrained, and block-constrained decoding achieve 0.7600, 0.7758, and 0.7952 overall accuracy, respectively. The complete system reaches 0.8498/0.7718/0.7952, ranking fourth on the private split. A modality audit finds fNIRS-only decoding at chance (0.2511 overall), while adding fNIRS to EEG changes accuracy by only +0.0025. These results identify frequency-diverse temporal EEG modeling and protocol-matched structured inference as the principal sources of performance in this sparse-montage EEG--fNIRS setting. The source code is available at https://github.com/XiuFan719/EEG-fNIRS-fuse-method-for-MM-challenge.",
+      "authors": [
+        "Xiao Fan",
+        "Hongbin Guo",
+        "Yubo Han",
+        "Yi Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.HC"
+      ],
+      "published": "2026-08-04T06:08:11+00:00",
+      "link": "https://arxiv.org/pdf/2608.03176v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "uses multiple EEG frequency bands for decoding imagined handwriting, a cognitive task involving spectral power",
+      "llm_evidence_cn": "利用多个EEG频带解码想象手写这一认知任务，涉及谱功率分析",
+      "llm_evidence": "利用多个EEG频带解码想象手写这一认知任务，涉及谱功率分析",
+      "canonical_evidence": "利用多个EEG频带解码想象手写这一认知任务，涉及谱功率分析",
+      "llm_tldr_en": "Proposes a system that decodes imagined handwriting from EEG and fNIRS by training a multi-scale temporal network on three complementary EEG frequency views, improving cross-subject classification.",
+      "llm_tldr_cn": "针对想象手写解码中个体差异大和噪声问题，提出频率去相关时序集成方法，利用多个EEG频带训练多尺度网络，在跨受试者分类中取得改进，为认知任务EEG解码提供了有效策略。",
+      "llm_tldr": "针对想象手写解码中个体差异大和噪声问题，提出频率去相关时序集成方法，利用多个EEG频带训练多尺度网络，在跨受试者分类中取得改进，为认知任务EEG解码提供了有效策略。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2608.05966v1",
+      "source": "arxiv",
+      "title": "A Modular Workflow for Multimodal Reading Experiments",
+      "abstract": "We introduce a web-based modular workflow for real-time multimodal experiments in naturalistic online reading. The workflow integrates eye tracking, EEG, and interaction data from mouse and keyboard, synchronizes them via Lab Streaming Layer, and links gaze to browser-based text at the word, sentence, and AOI levels. It is designed as a reusable experimental procedure that can be adapted to different sensors, tasks, and analysis goals. As a use case, we apply the workflow to a study of selective exposure in online news search and reading. During the experiment, gaze-derived measures are computed online, while EEG and other synchronized streams are processed immediately after task sessions based on fixation-triggered segmentation. The resulting behavioral, neural, and linguistic metrics support selecting text passages for targeted post-task rating or labelling within the same lab session. The workflow thus provides a general basis for multimodal research on reading and related cognitive processes, and supports the empirical validation, in ecological contexts, of constructs that are typically operationalised through self-report measures.",
+      "authors": [
+        "Thomas Krämer",
+        "Thomas Kosch",
+        "Dagmar Kern",
+        "Daniel Hienert"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-08-06T12:41:18+00:00",
+      "link": "https://arxiv.org/pdf/2608.05966v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "integrates eye tracking and EEG in reading experiments",
+      "llm_evidence_cn": "整合眼动追踪与脑电图于阅读实验",
+      "llm_evidence": "整合眼动追踪与脑电图于阅读实验",
+      "canonical_evidence": "整合眼动追踪与脑电图于阅读实验",
+      "llm_tldr_en": "Proposes a modular workflow integrating eye tracking, EEG, and interaction data for naturalistic online reading experiments, enabling multimodal analysis of reading behavior.",
+      "llm_tldr_cn": "提出一个模块化工作流，整合眼动追踪、脑电图及交互数据，用于自然在线阅读实验，实现阅读行为的多模态分析。针对阅读实验缺乏标准化多模态数据采集流程的问题，该方法基于Lab Streaming Layer同步信号，将注视点链接到文本层级。工作流已在选择性曝光新闻阅读中应用，可在线计算眼动指标并分割EEG信号。此工具为在线自然阅读的行为与神经研究提供了灵活可复用的流程，有助于推动阅读认知机制研究。",
+      "llm_tldr": "提出一个模块化工作流，整合眼动追踪、脑电图及交互数据，用于自然在线阅读实验，实现阅读行为的多模态分析。针对阅读实验缺乏标准化多模态数据采集流程的问题，该方法基于Lab Streaming Layer同步信号，将注视点链接到文本层级。工作流已在选择性曝光新闻阅读中应用，可在线计算眼动指标并分割EEG信号。此工具为在线自然阅读的行为与神经研究提供了灵活可复用的流程，有助于推动阅读认知机制研究。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "reading comprehension of socio-scientific issues in education",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2608.06200v1",
+      "source": "arxiv",
+      "title": "Using LLMs to Detect Growth in Computational Thinking in Introductory Physics",
+      "abstract": "As computation becomes more central to physics education, creating scalable methods to assess authentic computational thinking (CT) in students remains a critical challenge. While student-written responses capture nuanced reasoning, they are difficult to evaluate at scale. In this study, we investigated the use of Large Language Models (LLMs) to analyze students' written explanations of computational physics problems on a pre- and post- semester survey. By first establishing a human-coded baseline, grounded in CT literature, we identified significant growth in Data Practices and Computational Problem-Solving Practices. When given the same responses, an LLM successfully mirrored the human evaluations and scaled up the detection of these key trends across a large dataset. Notably, both human raters and the LLM struggled to reliably evaluate more complex constructs such as Systems Thinking. Overall, this study demonstrates that LLMs offer a viable method to scale the evaluation of students' CT in large-enrollment physics courses",
+      "authors": [
+        "Sean Savage",
+        "Anand Shanker",
+        "Grace Michlitsch",
+        "N. Sanjay Rebello"
+      ],
+      "primary_category": "physics.ed-ph",
+      "categories": [
+        "physics.ed-ph"
+      ],
+      "published": "2026-08-06T15:57:49+00:00",
+      "link": "https://arxiv.org/pdf/2608.06200v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Uses LLMs to detect growth in computational thinking, a transferable method for measuring thinking dispositions in education.",
+      "llm_evidence_cn": "利用大语言模型检测计算思维成长，该方法可迁移用于教育中思维倾向的测量。",
+      "llm_evidence": "利用大语言模型检测计算思维成长，该方法可迁移用于教育中思维倾向的测量。",
+      "canonical_evidence": "利用大语言模型检测计算思维成长，该方法可迁移用于教育中思维倾向的测量。",
+      "llm_tldr_en": "Investigates LLMs for analyzing student explanations to detect computational thinking growth, offering a scalable approach potentially adaptable for scientific critical thinking measurement.",
+      "llm_tldr_cn": "针对教育领域计算思维评估可扩展性不足的问题，该研究利用大语言模型分析学生对计算物理问题的书面解释，检测计算思维的成长。研究先建立人类编码基准，发现数据实践和问题解决实践显著增长；LLM成功复现了人类评估结果，并能大规模追踪这些关键趋势。该方法为教育中思维倾向的自动化评估提供了可扩展途径，并可迁移至科学批判性思维测量等其他领域。",
+      "llm_tldr": "针对教育领域计算思维评估可扩展性不足的问题，该研究利用大语言模型分析学生对计算物理问题的书面解释，检测计算思维的成长。研究先建立人类编码基准，发现数据实践和问题解决实践显著增长；LLM成功复现了人类评估结果，并能大规模追踪这些关键趋势。该方法为教育中思维倾向的自动化评估提供了可扩展途径，并可迁移至科学批判性思维测量等其他领域。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
 }
