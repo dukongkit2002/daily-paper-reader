@@ -6,26 +6,22 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-08-05
-- 运行时间：2026-08-05 21:01:13 UTC
+- 最新运行日期：2026-08-07
+- 运行时间：2026-08-07 02:18:29 UTC
 - 运行状态：成功
-- 本次总论文数：1
+- 本次总论文数：0
 - 精读区：0
-- 速读区：1
+- 速读区：0
 
 ### 今日简报（AI）
-今日速读了一篇脑电基础模型新作，探索用结构化潜在预测提升预训练效果。  
-核心看点是 EEG-JEPA 通过掩码建模在潜在空间对齐脑电片段，增强了跨任务泛化能力。  
-建议关注该方向对脑机接口下游任务的改进潜力，等待代码与更多实验验证。
-- 详情：[/202608/05/README](/202608/05/README)
+> 今日无新推荐，系统未产出可展示论文。
+- 详情：[/202608/07/README](/202608/07/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [EEG-JEPA: Structured Latent Prediction for EEG Foundation Models](/202608/05/2608.00114v1-eeg-jepa-structured-latent-prediction-for-eeg-foundation-models)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：EEG结构化潜在预测框架
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">
