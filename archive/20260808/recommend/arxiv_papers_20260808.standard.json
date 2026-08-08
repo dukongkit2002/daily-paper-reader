@@ -1,0 +1,59 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-08T20:46:04.213922+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2608.00835v1",
+      "source": "arxiv",
+      "title": "Deep Learning CNN and Recurrence Analysis for Alpha Gamma EEG Biomarkers in Fragile X Syndrome",
+      "abstract": "Fragile X Syndrome (FXS) is a neurodevelopmental disorder caused by reduced expression of fragile X mental retardation protein (FMRP), leading to disrupted synaptic plasticity, cortical hyperexcitability, and impaired network synchronization. Electroencephalography (EEG) provides a noninvasive window into these mechanisms and consistently reveals abnormalities in alpha (8 to 12 Hz) and gamma (30 to 100 Hz) oscillations that relate to inhibitory control, sensory processing, and cognition. This paper proposes a multi representation deep learning framework for automated characterization of FXS EEG phenotypes by integrating convolutional neural networks (CNNs), long short-term memory (LSTM) networks, and recurrence plot (RP) analysis. Band limited EEG signals are decomposed into alpha and gamma components and transformed into complementary representations, including temporal feature sequences, time frequency maps, and RP images encoding the nonlinear recurrence structure. CNN modules learn discriminative spatial-spectral and dynamical textures from image based representations, while LSTM modules model temporal modulation of oscillatory activity; a hybrid CNN LSTM architecture jointly captures spatial, temporal, and nonlinear dependencies. Subject-independent evaluation demonstrates that the hybrid model outperforms single modality baselines, with gamma features providing strong discriminative power and alpha gamma integration yielding the best overall performance. These findings support deep learning with nonlinear representations as a scalable approach for EEG biomarker development in FXS, with potential utility for diagnosis, stratification, and treatment monitoring in translational settings.",
+      "authors": [
+        "Zag ElSayed",
+        "Payton Siekierski",
+        "Jack Yanchen Liu",
+        "Ernest Pedapati"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV",
+        "physics.data-an",
+        "q-bio.NC"
+      ],
+      "published": "2026-08-01T19:27:41+00:00",
+      "link": "https://arxiv.org/pdf/2608.00835v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Deep learning framework for EEG-based alpha/gamma oscillation biomarker detection in a cognitive disorder",
+      "llm_evidence_cn": "基于EEG的α/γ振荡生物标志物深度学习检测，适用于认知障碍",
+      "llm_evidence": "基于EEG的α/γ振荡生物标志物深度学习检测，适用于认知障碍",
+      "canonical_evidence": "基于EEG的α/γ振荡生物标志物深度学习检测，适用于认知障碍",
+      "llm_tldr_en": "Proposes a multi-representation deep learning framework combining CNN, LSTM, and recurrence plots to classify EEG phenotypes in Fragile X Syndrome, leveraging alpha and gamma spectral features.",
+      "llm_tldr_cn": "脆性X综合征（FXS）导致突触可塑性异常和网络同步障碍，EEG的α和γ波段提供了认知相关生物标志物。本文提出多表征深度学习框架，融合CNN、LSTM和递归图分析，从EEG中自动提取α/γ节律特征以分类FXS表型。该方法展示了利用频谱信息进行认知障碍诊断的潜力，为EEG频谱分析在认知疾病中的应用提供了新工具。",
+      "llm_tldr": "脆性X综合征（FXS）导致突触可塑性异常和网络同步障碍，EEG的α和γ波段提供了认知相关生物标志物。本文提出多表征深度学习框架，融合CNN、LSTM和递归图分析，从EEG中自动提取α/γ节律特征以分类FXS表型。该方法展示了利用频谱信息进行认知障碍诊断的潜力，为EEG频谱分析在认知疾病中的应用提供了新工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

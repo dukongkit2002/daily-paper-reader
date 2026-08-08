@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-08-08 <!--dpr-date:20260808-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/08/2608.00835v1-deep-learning-cnn-and-recurrence-analysis-for-alpha-gamma-eeg-biomarkers-in-fragile-x-syndrome" data-sidebar-item="{&quot;title&quot;: &quot;Deep Learning CNN and Recurrence Analysis for Alpha Gamma EEG Biomarkers in Fragile X Syndrome&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.00835v1-deep-learning-cnn-and-recurrence-analysis-for-alpha-gamma-eeg-biomarkers-in-fragile-x-syndrome&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;基于EEG的α/γ振荡生物标志物深度学习检测，适用于认知障碍&quot;}">Deep Learning CNN and Recurrence Analysis for Alpha Gamma EEG Biomarkers in Fragile X Syndrome</a>
   * 2026-08-07 <!--dpr-date:20260807-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/07/2608.05942v1-topic-matters-how-linguistic-properties-can-shape-reading-behaviour-in-selective-exposure-studies" data-sidebar-item="{&quot;title&quot;: &quot;Topic Matters: How Linguistic Properties can Shape Reading Behaviour in Selective Exposure Studies&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.05942v1-topic-matters-how-linguistic-properties-can-shape-reading-behaviour-in-selective-exposure-studies&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;通过眼动追踪研究气候变迁、移民等社会性科学议题的阅读行为&quot;}">Topic Matters: How Linguistic Properties can Shape Reading Behaviour in Selective Exposure Studies</a>

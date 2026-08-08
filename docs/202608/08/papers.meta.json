@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-08",
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T20:48:07",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/08/2608.00835v1-deep-learning-cnn-and-recurrence-analysis-for-alpha-gamma-eeg-biomarkers-in-fragile-x-syndrome",
+      "section": "quick",
+      "title_en": "Deep Learning CNN and Recurrence Analysis for Alpha Gamma EEG Biomarkers in Fragile X Syndrome",
+      "authors": "Zag ElSayed, Payton Siekierski, Jack Yanchen Liu, Ernest Pedapati",
+      "date": "2026-08-01",
+      "pdf": "https://arxiv.org/pdf/2608.00835v1",
+      "score": "6.0",
+      "evidence": "基于EEG的α/γ振荡生物标志物深度学习检测，适用于认知障碍",
+      "tldr": "Fragile X综合征(FXS)是一种与α和γ脑电振荡异常相关的神经发育障碍。本文提出结合CNN、LSTM和递归图分析的多表示深度学习框架，将EEG信号分解为α/γ成分并转换为时频图和递归图等互补表示。混合CNN-LSTM模型在独立被试评估中优于单模态基线，集成α-γ特征达到最佳分类性能。该方法为FXS的EEG生物标志物开发提供了可扩展的深度学习方案，有望用于诊断、分层和治疗监测。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Fragile X Syndrome (FXS) is a neurodevelopmental disorder caused by reduced expression of fragile X mental retardation protein (FMRP), leading to disrupted synaptic plasticity, cortical hyperexcitability, and impaired network synchronization. Electroencephalography (EEG) provides a noninvasive window into these mechanisms and consistently reveals abnormalities in alpha (8 to 12 Hz) and gamma (30 to 100 Hz) oscillations that relate to inhibitory control, sensory processing, and cognition. This paper proposes a multi representation deep learning framework for automated characterization of FXS EEG phenotypes by integrating convolutional neural networks (CNNs), long short-term memory (LSTM) networks, and recurrence plot (RP) analysis. Band limited EEG signals are decomposed into alpha and gamma components and transformed into complementary representations, including temporal feature sequences, time frequency maps, and RP images encoding the nonlinear recurrence structure. CNN modules learn discriminative spatial-spectral and dynamical textures from image based representations, while LSTM modules model temporal modulation of oscillatory activity; a hybrid CNN LSTM architecture jointly captures spatial, temporal, and nonlinear dependencies. Subject-independent evaluation demonstrates that the hybrid model outperforms single modality baselines, with gamma features providing strong discriminative power and alpha gamma integration yielding the best overall performance. These findings support deep learning with nonlinear representations as a scalable approach for EEG biomarker development in FXS, with potential utility for diagnosis, stratification, and treatment monitoring in translational settings.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
