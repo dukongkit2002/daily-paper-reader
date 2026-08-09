@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-09",
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T19:47:50",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/09/2608.02070v1-steamaspatio-temporal-alignment-mixture-of-experts-model-with-hierarchical-pre-training-for-eeg-decoding",
+      "section": "deep",
+      "title_en": "STEAM:ASpatio-TEmporal Alignment Mixture-of-Experts Model with Hierarchical Pre-training for EEG Decoding",
+      "authors": "Zhu Chen, Dingkun Liu, Yuheng Chen, Dongrui Wu",
+      "date": "2026-08-03",
+      "pdf": "https://arxiv.org/pdf/2608.02070v1",
+      "score": "8.0",
+      "evidence": "用于认知任务的通用脑电解码基础模型，采用分层迁移学习",
+      "tldr": "脑机接口中现有EEG解码模型难以兼顾通用迁移、准确解码和高效适应。STEAM提出分层迁移框架，采用双分支时空编码器与共享软混合专家模块对齐时空信息，并通过分层预训练实现范式特化。在7个数据集14项评估中取得最佳平均排名且推理成本有竞争力，分层预训练一致提升解码精度。该框架平衡了通用表征学习与任务特化需求，推动EEG基础模型发展。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Brain-computer interfaces (BCIs) have been widely used in motor rehabilitation, disease diagnosis, and other neural engineering scenarios. However, conventional neural signal decoding algorithms often suffer from limited generalizability and high adaptation costs, motivating recent interest in BCI foundation models. Existing approaches still struggle to jointly achieve general transferability, accurate decoding, and efficient downstream adaptation. We present STEAM, a hierarchical transfer framework that reconciles general-purpose representation learning with paradigm-specific specialization in EEG foundation models. The framework is instantiated as a dual-branch spatio-temporal encoder in which a shared soft mixture-of-experts (SSMoE) module aligns the spatial and temporal branches, allowing complementary representations to exchange information through a compact set of soft slots. Across seven downstream datasets and fourteen evaluation settings, STEAM attains the best average rank among the compared methods at a competitive inference cost measured in FLOPs. Building upon the Stage-I general initialization, the hierarchical pre-training strategy further specializes the model to a target paradigm without retraining from scratch, yielding consistent gains in paradigm-specific decoding accuracy.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

@@ -6,26 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-08-08
-- 运行时间：2026-08-08 20:47:57 UTC
+- 最新运行日期：2026-08-09
+- 运行时间：2026-08-09 19:47:40 UTC
 - 运行状态：成功
 - 本次总论文数：1
-- 精读区：0
-- 速读区：1
+- 精读区：1
+- 速读区：0
 
 ### 今日简报（AI）
-今日速览一篇关于深度学习结合脑电信号检测脆性X综合征生物标志物的研究。
-核心结论是CNN与递归分析能从Alpha和Gamma波中挖掘潜在标记，但论文评分一般。
-关注该方向可延伸阅读多模态神经解码或异常检测在自闭谱系中的近期进展。
-- 详情：[/202608/08/README](/202608/08/README)
+今日精读一篇顶会论文，探索如何用时空对齐混合专家模型提升脑电信号解码精度  
+核心亮点是分层预训练与MoE架构的结合，显著增强了跨被试的泛化能力  
+若你关注脑机接口，值得跟进该方法在实时闭环系统中的应用潜力
+- 详情：[/202608/09/README](/202608/09/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [STEAM:ASpatio-TEmporal Alignment Mixture-of-Experts Model with Hierarchical Pre-training for EEG Decoding](/202608/09/2608.02070v1-steamaspatio-temporal-alignment-mixture-of-experts-model-with-hierarchical-pre-training-for-eeg-decoding)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：用于认知任务的通用脑电解码基础模型，采用分层迁移学习
 
 ### 速读区论文标签
-1. [Deep Learning CNN and Recurrence Analysis for Alpha Gamma EEG Biomarkers in Fragile X Syndrome](/202608/08/2608.00835v1-deep-learning-cnn-and-recurrence-analysis-for-alpha-gamma-eeg-biomarkers-in-fragile-x-syndrome)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：基于EEG的α/γ振荡生物标志物深度学习检测，适用于认知障碍
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">
