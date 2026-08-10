@@ -1,0 +1,132 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-10T20:29:29.486569+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2608.04156v1",
+      "source": "arxiv",
+      "title": "BrainBench: Benchmarking Large Language Models for Comprehensive EEG Understanding",
+      "abstract": "Electroencephalography (EEG) analysis extends beyond assigning predefined labels to recordings; it requires workflows connecting natural-language instructions, signal processing, quantitative evidence, and scientific interpretation. We term this capability \\emph{comprehensive EEG understanding}. Existing evaluations, however, primarily target isolated decoding tasks or system-specific demonstrations, leaving the competence of large language models (LLMs) insufficiently quantified. We introduce \\benchmarkname{}, a unified benchmark for comprehensive, instruction-conditioned EEG understanding. It comprises four subsets---Foundational Analysis, Sleep Assessment, Neurocognitive Assessment, and Physiological Integration---covering 17 datasets, \\numcases{} tasks, and over \\numinstances{} real-data instances. Given an instruction and EEG recordings with optional physiological signals, a system must perform the analysis and produce a scientifically grounded report and, when required, artifacts. Outputs are assessed through numerical, categorical, set, sequence, semantic, and artifact validation. We evaluate \\nummodels{} representative LLMs across more than 100K executions under two paradigms: autonomous code execution with CodeAct and structured agentic analysis with BrainAgent. Results vary substantially across models, subsets, difficulty levels, and execution paradigms, showing that EEG competence depends on the model and its operationalization. \\benchmarkname{} provides a reproducible testbed for advancing LLM-based EEG understanding. The code and benchmark will be released soon, with evaluation results continuously updated.",
+      "authors": [
+        "Yangxuan Zhou",
+        "Sha Zhao",
+        "Yuning Chen",
+        "Chen Wu",
+        "Jiquan Wang",
+        "Shijian Li",
+        "Gang Pan"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-08-04T19:07:09+00:00",
+      "link": "https://arxiv.org/pdf/2608.04156v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Benchmark for comprehensive EEG understanding including neurocognitive assessment",
+      "llm_evidence_cn": "包含神经认知评估子集的统一脑电图理解基准",
+      "llm_evidence": "包含神经认知评估子集的统一脑电图理解基准",
+      "canonical_evidence": "包含神经认知评估子集的统一脑电图理解基准",
+      "llm_tldr_en": "Introduces BrainBench, a unified benchmark for LLMs on comprehensive EEG understanding tasks including neurocognitive assessment.",
+      "llm_tldr_cn": "针对现有EEG评估多局限于孤立解码任务的问题，提出BrainBench基准，涵盖基础分析、睡眠评估、神经认知评估和生理整合四个子集，覆盖17个数据集，旨在全面评测大语言模型的EEG理解能力。该基准为EEG分析提供了一种可量化、指令条件化的评估框架，推动了LLM在神经科学中的应用。",
+      "llm_tldr": "针对现有EEG评估多局限于孤立解码任务的问题，提出BrainBench基准，涵盖基础分析、睡眠评估、神经认知评估和生理整合四个子集，覆盖17个数据集，旨在全面评测大语言模型的EEG理解能力。该基准为EEG分析提供了一种可量化、指令条件化的评估框架，推动了LLM在神经科学中的应用。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2608.02804v1",
+      "source": "arxiv",
+      "title": "Detecting high-frequency brain disorder signals using dynamic mode decomposition from EEG",
+      "abstract": "Recent studies have reported clearly identifiable dynamical changes in the high-frequency range of EEG signals recorded during specific stimuli, such as visual or auditory inputs, or in cases of brain disorders like epileptic seizures. In this study, we utilized Dynamic Mode Decomposition (DMD) to extract consistent and persistent dynamical changes in the high-frequency band from the signals of neurologically relevant EEG channels. High-frequency DMD modes were employed as features, composing a feature table. Through post-processing, a random distribution test was performed, revealing that approximately 70% of the samples exhibited consistent high-frequency dynamics within the signal of a specific channel. Furthermore, classification experiments confirmed that the PCA components of the feature table that passed the test formed a consistent pattern that distinguished the alcohol-dependent group from the control group.",
+      "authors": [
+        "Jacob Kang",
+        "Jong-Hyeon Seo"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "published": "2026-08-03T18:59:49+00:00",
+      "link": "https://arxiv.org/pdf/2608.02804v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Applies Dynamic Mode Decomposition to EEG for high-frequency signal analysis, a method that could be adapted for spectral power studies.",
+      "llm_evidence_cn": "利用动态模态分解分析EEG高频动态，为认知信号分类提供特征，可迁移至功率谱分析。",
+      "llm_evidence": "利用动态模态分解分析EEG高频动态，为认知信号分类提供特征，可迁移至功率谱分析。",
+      "canonical_evidence": "利用动态模态分解分析EEG高频动态，为认知信号分类提供特征，可迁移至功率谱分析。",
+      "llm_tldr_en": "This paper applies Dynamic Mode Decomposition to EEG to extract consistent high-frequency dynamics, showing that 70% of samples have such dynamics in a specific channel, enabling feature-based classification for brain disorders.",
+      "llm_tldr_cn": "针对脑电图高频信号动态特征难以提取的问题，本文提出利用动态模态分解（DMD）从相关通道信号中提取一致且持久的高频DMD模式作为特征。分析显示约70%的样本在特定通道存在一致高频动态，该特征可用于分类。该方法为EEG高频分析提供了新工具，未来可扩展至认知任务相关脑电研究。",
+      "llm_tldr": "针对脑电图高频信号动态特征难以提取的问题，本文提出利用动态模态分解（DMD）从相关通道信号中提取一致且持久的高频DMD模式作为特征。分析显示约70%的样本在特定通道存在一致高频动态，该特征可用于分类。该方法为EEG高频分析提供了新工具，未来可扩展至认知任务相关脑电研究。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2608.05820v1",
+      "source": "arxiv",
+      "title": "A multi-agent AI classroom based on dual-process reasoning hazards: a pilot with prospective physics teachers",
+      "abstract": "Responding productively, in real time, to the reasoning students actually produce is among the most difficult and slowest to acquire of the skills physics teachers develop, and prospective teachers get few opportunities to practise it before entering a classroom. In this pilot study, we describe a simulated class of five AI students, each consistently enacting a distinct reasoning pattern drawn from the dual-process theory (DPT) \"hazards\" framework of physics education research, and report on its first use in a university course for prospective physics teachers. Fifteen graduate students worked through an instructional sequence on DPT and questioning strategies. They then diagnosed two parallel sets of written vignettes, in a crossover arrangement, before and after interacting in pairs with the simulated class on a static-friction problem. The data set is completed by individual written hypotheses and reflections, the session logs and a short feedback questionnaire. Diagnostic scores improved significantly from PRE to POST (n = 11 paired, Wilcoxon p = 0.014, r = 0.79; on a 0-18 scale). During the simulation itself, however, participants asked predominantly uniform guiding questions, and the DPT vocabulary they had been taught appeared in only 2 of 71 substantive teacher turns, while seven of thirteen POST sheets used it readily. We read this knowing-doing gap not as a failure but as a snapshot of where each participant stands on the developmental trajectory of responsiveness to student ideas, a trajectory the simulation makes visible with transcript-level granularity. We discuss design, findings and implications for physics teacher preparation.",
+      "authors": [
+        "Eugenio Tufino"
+      ],
+      "primary_category": "physics.ed-ph",
+      "categories": [
+        "physics.ed-ph"
+      ],
+      "published": "2026-08-06T09:50:19+00:00",
+      "link": "https://arxiv.org/pdf/2608.05820v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Applies dual-process theory to simulate student reasoning patterns, relevant to critical thinking disposition",
+      "llm_evidence_cn": "应用双过程理论模拟学生推理模式，与批判性思维倾向相关",
+      "llm_evidence": "应用双过程理论模拟学生推理模式，与批判性思维倾向相关",
+      "canonical_evidence": "应用双过程理论模拟学生推理模式，与批判性思维倾向相关",
+      "llm_tldr_en": "Presents a multi-agent AI classroom simulating distinct reasoning patterns from dual-process theory for training prospective physics teachers in diagnosing student reasoning.",
+      "llm_tldr_cn": "针对物理教师难以培养实时应对真实学生推理技能的问题，设计了一个由五个AI学生组成的模拟课堂，每个学生持续展现基于双过程理论“陷阱”框架的特定推理模式。该试点研究在15名研究生中开展，他们学习了双过程理论和提问策略，并诊断了模拟学生的书面反思，结果显示该模拟课堂为职前教师提供了宝贵的实践机会，有助于提升其应答真实推理的能力，为批判性思维教学提供了新工具。",
+      "llm_tldr": "针对物理教师难以培养实时应对真实学生推理技能的问题，设计了一个由五个AI学生组成的模拟课堂，每个学生持续展现基于双过程理论“陷阱”框架的特定推理模式。该试点研究在15名研究生中开展，他们学习了双过程理论和提问策略，并诊断了模拟学生的书面反思，结果显示该模拟课堂为职前教师提供了宝贵的实践机会，有助于提升其应答真实推理的能力，为批判性思维教学提供了新工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
