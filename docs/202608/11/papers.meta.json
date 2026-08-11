@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-11",
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T20:57:50",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/11/2608.09784v1-eeg-based-characterization-of-samatha-and-vipassana-meditation-states",
+      "section": "deep",
+      "title_en": "EEG-Based Characterization of Samatha and Vipassana Meditation States",
+      "authors": "M. A. B. C. A. Bandaranayake, K. P. U. Chandrathilake, J. L. S. Jayasekara, S. T. Piyasena, A. T. L. K. Samrasinghe, Wageesha N. Manamperi",
+      "date": "2026-08-10",
+      "pdf": "https://arxiv.org/pdf/2608.09784v1",
+      "score": "9.0",
+      "evidence": "从冥想状态的EEG信号中提取频带功率和小波熵",
+      "tldr": "冥想实践具有认知益处但神经机制未明，本研究采用EEG信号分析两种主流冥想技术——强调专注的Samatha与强调正念观察的Vipassana。通过提取频带功率、相干性及小波熵等特征，评估不同状态下的频谱、复杂度和连接性差异。基于12名经验冥想者的初步结果显示，delta频带差异最为显著，证实EEG指标可客观刻画冥想状态。该工作推进了对不同禅修实践神经过程的理解，并为冥想的科学评估提供了有效方法。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Meditation has been associated with a range of cognitive and physiological benefits. However, the underlying neural mechanisms of different meditation practices are not yet fully understood. This study investigates whether electroencephalogram (EEG) signals can be used to characterize and distinguish two commonly practiced meditation techniques, namely Samatha and Vipassana, which involve distinct cognitive processes, with Samatha emphasizing sustained concentration and Vipassana emphasizing mindful observation and insight. By extracting features such as band power, coherence and wavelet entropy from EEG signals recorded during pre-meditation resting, Samatha, and Vipassana states, we provide an assessment of how spectral power, signal complexity, and functional connectivity differentiate these practices. Preliminary results from $12$ experienced meditators indicate condition-dependent EEG differences, with the most pronounced effects observed in the delta frequency band. These results demonstrate the utility of EEG-based metrics for the objective characterization of meditation and advance our comprehension of the neural processes underlying different contemplative practices.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

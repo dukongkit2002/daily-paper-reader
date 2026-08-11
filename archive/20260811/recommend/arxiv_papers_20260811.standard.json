@@ -1,0 +1,56 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-11T20:56:17.688062+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2608.09784v1",
+      "source": "arxiv",
+      "title": "EEG-Based Characterization of Samatha and Vipassana Meditation States",
+      "abstract": "Meditation has been associated with a range of cognitive and physiological benefits. However, the underlying neural mechanisms of different meditation practices are not yet fully understood. This study investigates whether electroencephalogram (EEG) signals can be used to characterize and distinguish two commonly practiced meditation techniques, namely Samatha and Vipassana, which involve distinct cognitive processes, with Samatha emphasizing sustained concentration and Vipassana emphasizing mindful observation and insight. By extracting features such as band power, coherence and wavelet entropy from EEG signals recorded during pre-meditation resting, Samatha, and Vipassana states, we provide an assessment of how spectral power, signal complexity, and functional connectivity differentiate these practices. Preliminary results from $12$ experienced meditators indicate condition-dependent EEG differences, with the most pronounced effects observed in the delta frequency band. These results demonstrate the utility of EEG-based metrics for the objective characterization of meditation and advance our comprehension of the neural processes underlying different contemplative practices.",
+      "authors": [
+        "M. A. B. C. A. Bandaranayake",
+        "K. P. U. Chandrathilake",
+        "J. L. S. Jayasekara",
+        "S. T. Piyasena",
+        "A. T. L. K. Samrasinghe",
+        "Wageesha N. Manamperi"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP"
+      ],
+      "published": "2026-08-10T16:07:24+00:00",
+      "link": "https://arxiv.org/pdf/2608.09784v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "extracting band power and wavelet entropy from EEG signals during meditation states",
+      "llm_evidence_cn": "从冥想状态的EEG信号中提取频带功率和小波熵",
+      "llm_evidence": "从冥想状态的EEG信号中提取频带功率和小波熵",
+      "canonical_evidence": "从冥想状态的EEG信号中提取频带功率和小波熵",
+      "llm_tldr_en": "This study characterizes two meditation states (Samatha and Vipassana) using EEG band power, coherence, and wavelet entropy, revealing distinct spectral signatures for sustained concentration vs. mindful observation.",
+      "llm_tldr_cn": "该研究利用EEG频带功率、相干性和小波熵表征止禅与观禅两种冥想状态。通过提取静息、专注和观察状态下的频谱特征，发现不同认知过程对应不同的频谱功率和复杂度模式，为冥想神经机制提供客观区分。",
+      "llm_tldr": "该研究利用EEG频带功率、相干性和小波熵表征止禅与观禅两种冥想状态。通过提取静息、专注和观察状态下的频谱特征，发现不同认知过程对应不同的频谱功率和复杂度模式，为冥想神经机制提供客观区分。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}
