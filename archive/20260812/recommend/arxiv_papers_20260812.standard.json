@@ -1,0 +1,54 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-12T21:03:50.959160+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2608.10913v1",
+      "source": "arxiv",
+      "title": "Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments",
+      "abstract": "Multidomain assessment batteries generate ordinal item responses that are often summarized through latent attribute profiles. Conventional cognitive diagnostic models (CDMs) provide interpretable measurement models for such profiles, but they typically do not represent directed dependence among latent attributes from distinct domains. We propose an endogeneity-aware cognitive diagnostic model (EACDM) for multivariate ordinal assessments. The model combines a block-structured diagnostic measurement component, in which item groups are linked to domain-specific binary attributes through a block-diagonal Q-matrix, with a logistic structural component, in which one attribute block is regressed on another block and subject-level covariates while accounting for latent classification uncertainty. This formulation yields a parsimonious framework for studying endogenous relationships among diagnostic attributes without collapsing domain-specific measurement structure. We establish identifiability conditions for the Q-matrix, effective loadings, latent-profile probabilities, and structural coefficients, and develop a Markov chain Monte Carlo algorithm for joint estimation of the measurement and structural components. Simulation studies demonstrate accurate recovery of item parameters, latent structures, and structural coefficients for the proposed EACDM, whereas conventional CDMs can fail to recover the ground truth when endogeneity is present. We apply the proposed method to Parkinson's disease data to examine how non-motor latent traits relate to motor impairment profiles.",
+      "authors": [
+        "Zhiyu Huang",
+        "Jing Ouyang",
+        "Kai Kang"
+      ],
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME"
+      ],
+      "published": "2026-08-11T13:34:12+00:00",
+      "link": "https://arxiv.org/pdf/2608.10913v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Proposes endogeneity-aware cognitive diagnostic model for latent attribute measurement, applicable to critical thinking disposition assessment.",
+      "llm_evidence_cn": "提出内生性感知认知诊断模型，用于潜在特质测量，可应用于批判性思维倾向评估。",
+      "llm_evidence": "提出内生性感知认知诊断模型，用于潜在特质测量，可应用于批判性思维倾向评估。",
+      "canonical_evidence": "提出内生性感知认知诊断模型，用于潜在特质测量，可应用于批判性思维倾向评估。",
+      "llm_tldr_en": "The paper introduces an endogeneity-aware cognitive diagnostic model that measures latent attributes from multidomain ordinal assessments; it handles directed dependence among attributes, offering a promising tool for measuring scientific critical thinking disposition.",
+      "llm_tldr_cn": "针对多领域有序评估中潜在特质测量的内生性问题，本文提出内生性感知认知诊断模型（EACDM），结合块结构诊断测量与逻辑结构方程，刻画跨领域潜在属性间的定向依赖。该方法可推广用于科学批判性思维倾向等复杂认知特质的测量，为教育评估提供更准确的诊断工具。",
+      "llm_tldr": "针对多领域有序评估中潜在特质测量的内生性问题，本文提出内生性感知认知诊断模型（EACDM），结合块结构诊断测量与逻辑结构方程，刻画跨领域潜在属性间的定向依赖。该方法可推广用于科学批判性思维倾向等复杂认知特质的测量，为教育评估提供更准确的诊断工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

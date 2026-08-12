@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-08-12 <!--dpr-date:20260812-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/12/2608.10913v1-endogeneity-aware-cognitive-diagnostic-model-for-multidomain-ordinal-assessments" data-sidebar-item="{&quot;title&quot;: &quot;Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.10913v1-endogeneity-aware-cognitive-diagnostic-model-for-multidomain-ordinal-assessments&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;提出内生性感知认知诊断模型，用于潜在特质测量，可应用于批判性思维倾向评估。&quot;}">Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments</a>
   * 2026-08-11 <!--dpr-date:20260811-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/11/2608.09784v1-eeg-based-characterization-of-samatha-and-vipassana-meditation-states" data-sidebar-item="{&quot;title&quot;: &quot;EEG-Based Characterization of Samatha and Vipassana Meditation States&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.09784v1-eeg-based-characterization-of-samatha-and-vipassana-meditation-states&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;从冥想状态的EEG信号中提取频带功率和小波熵&quot;}">EEG-Based Characterization of Samatha and Vipassana Meditation States</a>

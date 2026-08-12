@@ -1,0 +1,1369 @@
+Title: Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments
+
+URL Source: https://arxiv.org/pdf/2608.10913v1
+
+Published Time: Wed, 12 Aug 2026 01:24:43 GMT
+
+Number of Pages: 32
+
+Markdown Content:
+# Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments 
+
+Zhiyu Huang 1, Jing Ouyang ∗2, and Kai Kang †11Department of Statistics, Sun Yat-sen University, Guangzhou, Guangdong, China 
+
+> 2
+
+Faculty of Business and Economics, University of Hong Kong, Hong Kong, P. R. China 
+
+Abstract 
+
+Multidomain assessment batteries generate ordinal item responses that are often summa-rized through latent attribute profiles. Conventional cognitive diagnostic models (CDMs) provide interpretable measurement models for such profiles, but they typically do not repre-sent directed dependence among latent attributes from distinct domains. We propose an endogeneity-aware cognitive diagnostic model (EACDM) for multivariate ordinal assessments. The model combines a block-structured diagnostic measurement component, in which item groups are linked to domain-specific binary attributes through a block-diagonal Q-matrix, with a logistic structural component, in which one attribute block is regressed on another block and subject-level covariates while accounting for latent classification uncertainty. This formulation yields a parsimonious framework for studying endogenous relationships among diagnostic attributes without collapsing domain-specific measurement structure. We establish identifiability conditions for the Q-matrix, effective loadings, latent-profile probabilities, and structural coefficients, and develop a Markov chain Monte Carlo algorithm for joint estimation of the measurement and structural components. Simulation studies demonstrate accurate recovery of item parameters, latent structures, and structural coefficients for the proposed EACDM, whereas conventional CDMs can fail to recover the ground truth when endogeneity is present. We apply the proposed method to Parkinson’s disease data to examine how non-motor latent traits relate to motor impairment profiles. 
+
+Keywords: Cognitive diagnostic model; Endogeneity; Multivariate ordinal data; Identifiability; Latent variable model. 
+
+# 1 Introduction 
+
+Clinical assessment batteries are extensively used in medicine to measure multiple symptom domains simultaneously. In Parkinson’s disease (PD), for example, the Movement Disorder Society–Unified Parkinson’s Disease Rating Scale (MDS–UPDRS) evaluates both motor and non-motor manifestations (Goetz et al., 2008), while Scales for Outcomes in Parkinson’s Disease (SCOPA) and Montreal Cognitive Assessment (MoCA) provide complementary information on autonomic and cognitive functioning (Visser et al., 2004; Nasreddine et al., 2005), respectively. Large cohort studies such as the Parkinson’s Progression Markers Initiative (PPMI) routinely collect these item-level ordinal measurements together with neuroimaging and demographic variables, creating an opportunity to study not only overall disease severity but also the domain-specific latent traits and their interrelationship underlying heterogeneous symptom 
+
+> ∗Corresponding author: jingoy@hku.hk
+> †Corresponding author: kangk5@mail.sysu.edu.cn
+
+1arXiv:2608.10913v1 [stat.ME] 11 Aug 2026 patterns (Marek et al., 2011). In such settings, reliance on total scores of these assessments can obscure clinically meaningful differences among symptom dimensions and can mask how impairments in one domain relate to impairments in another. Cognitive diagnostic models (CDMs), also referred to as diagnostic classification models, provide a natural framework for extracting fine-grained latent profiles from multivariate item responses (e.g., Tatsuoka, 1983; Junker and Sijtsma, 2001; Templin et al., 2010; De La Torre, 2009). A central component of a CDM is the Q-matrix, which specifies the attributes measured by each assessment item and thereby translates complex response patterns into interpretable profiles of strengths, weaknesses, or symptom dimensions. Different CDM families have different response mechanisms for how attributes indicated by the Q-matrix contribute to item responses. Classical CDMs include the DINA (Haertel, 1989) and DINO models (Templin and Henson, 2006), which represent conjunctive and disjunctive response mechanisms through two item-specific parameters: slipping and guessing probabilities. Related restricted latent class models, including the NIDA model and the reduced reparameterized unified model (DiBello et al., 2012), impose alternative assumptions about how required attributes affect item responses. More flexible frameworks, including the general diagnostic model (von Davier, 2019), the log-linear cognitive diagnostic model (Henson et al., 2009), and the generalized DINA model (de la Torre, 2011), unify many existing CDMs and allow richer main effects and interaction effects among attributes. Although much of the foundational CDM literature was developed for dichotomous item responses, many psychological and clinical assessments use ordered response categories, which has motivated extensions of CDMs to ordinal and polytomous data (Von Davier, 2008; Templin et al., 2010; Culpepper, 2019). In addition, substantial work has studied Q-matrix specification, validation, exploratory estimation, and identifiability, since reliable recovery of latent profiles depends critically on the item–attribute structure (Chen et al., 2015; Xu, 2017; Xu and Shang, 2018; Culpepper, 2019). These developments provide the measurement foundation for using CDMs to recover interpretable latent attribute profiles from complex item response data, which is especially useful in PD research, where patients may share similar total scores while differing substantially in the composition of their motor, autonomic, and cognitive difficulties. Despite these advances in diagnostic measurement, the primary inferential target in most CDM literature lies in the recovery of latent attribute profiles, item parameters, and item–attribute structures, rather than the structural relationships among the latent attributes themselves. In standard restricted latent class formulations, dependence among attributes can be represented through the joint distribution of latent attribute profiles, but this representation becomes high-dimensional as the number of attributes increases and does not directly yield parsimonious or directed scientific interpretations. Several important extensions have introduced more structured forms of attribute dependence. Higher-order diagnostic models use one or more continuous higher-order latent traits to induce association among binary or polytomous attributes (de la Torre and Douglas, 2004; Culpepper and Balamuta, 2023). Hierarchical diagnostic classification models and related Bayesian-network approaches encode prerequisite or directed relations among attributes and allow formal evaluation of candidate attribute structures (Templin and Bradshaw, 2014; Hu and Templin, 2020). Explanatory CDMs incorporate respondent-level covariates to explain latent attribute mastery or item responses (Park et al., 2018; Tan et al., 2024). More recently, Wayman et al. (2025) developed a restricted latent class model for polytomous attributes with correlated attribute distributions via multivariate probit formulations and respondent-specific covariates. However, these approaches do not directly address a common clinical setting in which investigators prespecify two substantively distinct measurement domains, recover discrete latent attributes within each domain, and estimate a directed association from one attribute block to the other while accounting for measurement uncertainty. To address this gap, we develop a novel endogeneity-aware cognitive diagnostic model (EACDM). In particular, motivated by multidomain PD assessment, the model partitions the items into instrument-informed domains and uses a block-diagonal Q-matrix to connect each 2domain to its own set of binary latent attributes. One attribute block is modeled through logistic regressions on the other attribute block and subject-level covariates. The resulting joint formulation integrates a domain-specific diagnostic measurement model with a directed structural model, enabling cross-domain relationships among latent attributes to be estimated while explicitly accounting for their dependence and latent classification uncertainty. The proposed framework is applicable to ordinal responses and naturally accommodates a mixture of binary and ordinal items. The central methodological novelty of this work is the joint estimation of domain-specific dis-crete latent profiles and directed cross-domain relationships while explicitly accounting for latent classification uncertainty. Our contributions are threefold. First, our work extends conventional CDMs by moving beyond latent classification and offering a clinically interpretable framework for characterizing relationships among latent attributes. Second, we establish conditions for the strict and generic identifiability of the Q-matrix, measurement parameters, latent-profile distribution, and structural parameters, up to blockwise permutations of the attribute labels. Third, under the proposed identifiability conditions, we develop an efficient Markov chain Monte Carlo algorithm for joint posterior inference on the item parameters, latent attributes, Q-matrix, and structural coefficients. Furthermore, through extensive simulation studies and an application to PPMI data, the proposed model demonstrates clear advantages over conventional CDMs when latent attributes arise from two distinct domains and exhibit structural dependence. The remainder of the paper is organized as follows. Section 2 introduces the EACDM and establishes its identifiability conditions. Section 3 presents the Bayesian formulation and MCMC algorithm. Section 4 evaluates the finite-sample performance of the proposed method and compares it with conventional CDMs. Section 5 applies the method to the PPMI data. Section 6 concludes with a discussion. 
+
+# 2 Model Setup 
+
+2.1 Cognitive Diagnostic Measurement Model for Ordinal Responses 
+
+Consider a PD assessment with J items designed to measure K binary latent attributes. For a random subject in the population, denote the observed ordinal responses to J items by Y =(Y1, . . . , Y J )⊤, where Yj ∈ { 0, . . . , M j − 1} is the response to item j, and Mj ≥ 2 is the number of ordered response categories. The response pattern space is Y = ×Jj=1 {0, . . . , M j −1}. The subject is associated with a K-dimensional binary latent attribute profile α = ( α1, . . . , α K )⊤ ∈ { 0, 1}K ,where αk = 1 indicates the presence of the kth latent attribute and αk = 0 indicates its absence. In the PD application, these latent attributes may represent domain-specific impairment statuses related to motor, autonomic, and cognitive functioning. We index the 2 K possible attribute profiles by latent classes: with v = (2 K−1, 2K−2, . . . , 1) ⊤, the map c = α⊤v assigns each 
+
+α ∈ { 0, 1}K to a unique class label c ∈ { 0, . . . , 2K − 1}.The ordinal response is driven by the latent attributes through the following formulation. For a subject in latent class c, we introduce a latent continuous response Y ∗ 
+
+> j
+
+such that for 
+
+m = 0 , . . . , M j − 1, 
+
+Yj = m ⇐⇒ τjc,m ≤ Y ∗ 
+
+> j
+
+< τ jc,m +1 ,
+
+where −∞ = τjc, 0 < τ jc, 1 < . . . < τ jc,M j −1 < τ jc,M j = ∞. Following Culpepper (2019), we fix 
+
+τjc,m = m − 1, m = 1 , . . . , M j − 1, to avoid weak threshold identification and costly Metropolis– Hastings updates in ordinal mixture models (Cowles, 1996). Let αc denote the binary attribute profile indexed by class c, and let Q = ( qjk )J×K ∈ { 0, 1}J×K denote the item–attribute incidence matrix. Its jth row is qj = ( qj1, . . . , q jK )⊤. Under the main-effects parameterization, define the effective loading δjk = qjk βjk , where βjk > 0 is estimated only when qjk = 1 and δjk = 0 when qjk = 0. Let δj = ( δj1, . . . , δ jK )⊤, ∆ = ( δjk )J×K , and β0 = ( β10 , . . . , β J0)⊤. Conditional 3on α⊤v = c, the augmented response is modeled as 
+
+Y ∗ 
+
+> j
+
+= μjc + ϵj , μjc = βj0 +
+
+> K
+
+X
+
+> k=1
+
+qjk βjk αck = βj0 + δ⊤ 
+
+> j
+
+αc, ϵj ∼ N (0 , 1) .
+
+Here, βj0 is the item-specific intercept. If qjk = 1, then βjk > 0 is the active main effect of attribute k on item j; if qjk = 0, then δjk = 0 exactly and an inactive auxiliary βjk is not a likelihood parameter. Thus, the measurement object of interest is the intercept vector together with ( Q, ∆), or equivalently Q and the active coefficients. Therefore, for m = 0 , . . . , M j − 1, the class-specific response probability is 
+
+θjcm = P (Yj = m | α⊤v = c) = Φ( τjc,m +1 − μjc ) − Φ( τjc,m − μjc ) ,
+
+where Φ( ·) is the cumulative distribution function of the standard normal distribution. Let 
+
+θjc = ( θjc 0, . . . , θ jc,M j −1)⊤ denote the conditional response probability vector for item j in class 
+
+c.
+
+2.2 Structural Model for Endogenous Latent Attributes 
+
+When one latent attribute is associated with one or more latent attributes, we need to further establish models to account for dependence among the latent attributes α. Without loss of generality, we assume the first K1 latent attributes are endogenous whereas the remaining 
+
+K2 latent attributes are exogenous and K1 + K2 = K. Denote α(1) and α(2) as endogenous and exogenous latent attributes, respectively, and α = (( α(1) )⊤, (α(2) )⊤)⊤. To assess the interrelationship between latent attributes, we propose logistic models as follows: for k =1, . . . , K 1,logit 
+
+n
+
+Pr  α(1)  
+
+> k
+
+= 1 | α(2) , Zo
+
+= λ⊤ 
+
+> k
+
+Z + γ⊤ 
+
+> k
+
+α(2) , (1) where logit( p) = log( p/ (1 − p)) is the logit link function, γk is a K2-dimensional vector of unknown parameters capturing how exogenous latent attributes affect the endogenous attribute 
+
+α(1)  
+
+> k
+
+, Z is an R-dimensional covariate vector, including an intercept, and λk is the corresponding 
+
+R-dimensional coefficient vector. We assume that the components of α(1) are conditionally independent given ( α(2) , Z), so that Equation (1), together with a marginal distribution for 
+
+α(2) , induces the joint distribution of the complete latent profile α. We assume a saturated population distribution over profiles for exogenous latent attributes. For each a ∈ { 0, 1}K2 ,let π(2)  
+
+> a
+
+= Pr( α(2) = a) be the population prevalence of exogenous latent profile a. We collect these probabilities in π(2) = ( π(2)  
+
+> a
+
+: a ∈ { 0, 1}K2 )⊤. For notational convenience, we combine the covariate coefficients and the exogenous-attribute coefficients into ηk =  λ⊤ 
+
+> k
+
+, γ⊤
+
+> k
+
+⊤.These structural coefficients are collected as λ = ( λ1, . . . , λK1 ), γ = ( γ1, . . . , γK1 ) and η =(η1, . . . , ηK1 ). To encode the nonoverlapping domain structure, we partition the previously defined matrices 
+
+Q and ∆ conformably as 
+
+Q =
+
+Q1 00 Q2
+
+
+
+, ∆ =
+
+∆1 00 ∆2
+
+
+
+.
+
+Here, Q1 and Q2 are J1 × K1 and J2 × K2 matrices, respectively. The first J1 items therefore measure only the K1 endogenous attributes, whereas the remaining J2 items measure only the 
+
+K2 exogenous attributes. This structural specification is motivated by settings where latent traits naturally fall into two related domains. In the PPMI study, for example, latent motor symptoms may depend on latent non-motor symptoms. Under this interpretation, items from the MDS-UPDRS primarily measure the motor domain, whereas items from the SCOPA-AUT and MoCA primarily measure 4non-motor domains. The block-diagonal Q-matrix encodes this domain-specific measurement structure, while the logistic model in (1) captures directed dependence from the exogenous latent attributes to the endogenous ones. 
+
+2.3 Identifiability Conditions 
+
+Because identifiability is required for valid estimation and inference, we first formalize its strict and generic forms for the EACDM. 
+
+Definition 1. The EACDM parameter (β0, Q, ∆, π(2) , γ, λ) is strictly identifiable if any two sets of parameter values induce the same observed-response distribution for all covariate values if and only if they are identical up to simultaneous permutations of the latent-attribute labels within each block 1. Generic identifiability means that this property holds except for a set of parameter values of Lebesgue measure zero. 
+
+Model identifiability is nontrivial in the proposed EACDM because both the latent attributes and their structural dependence are unobserved. Without additional constraints, distinct mea-surement structures, effective loadings, exogenous-profile probabilities, and structural coefficients may induce the same distribution of the observed ordinal responses. We therefore impose conditions on both the measurement and structural components. (A1) QJj=1 Mj − 1 ≥ 2K (PJj=1 Mj − J) + 2 K − 1; (A2) The parameters γ and λ and the covariate vectors Zi, i = 1 , . . . , N , are finite; (A3) The covariate design matrix with rows ZT 
+
+> 1
+
+, . . . , ZTN has full column rank; (A4) The exogenous latent-profile distribution has full support: π(2)  
+
+> a
+
+> 0 for every a ∈{0, 1}K2 . Equivalently, S = {0, 1}K2 ; in particular, S contains 0 and the basis vectors 
+
+e1, . . . , eK2 .Condition ( A1) is a necessary dimensional check. Conditions ( A2) and ( A3) are regularity requirements for the structural regression. Condition ( A4), together with the finite logistic coefficients in ( A2), gives positive probability to every complete latent profile and also supplies the zero and basis exogenous profiles needed to separate the components of γ. We now present sufficient conditions for strict and generic identifiability results for the proposed EACDM. 
+
+Proposition 1 (Strict Identifiability) . Suppose (A1) –(A4) hold. If each block Qd, d = 1 , 2,satisfies Condition (A5) below, then (β0, Q, ∆, π(2) , γ, λ) is strictly identifiable. (A5) After a row permutation, each block has the form Qd = ( I⊤ 
+
+> Kd
+
+, I⊤ 
+
+> Kd
+
+, (Q∗
+
+> d
+
+)⊤)⊤, containing two Kd×Kd identity matrices and one submatrix Q∗
+
+> d
+
+. Moreover, for every pair of distinct within-block profiles, at least one item represented in Q∗ 
+
+> d
+
+has different category-response probability vectors under those profiles. 
+
+Proposition 2 (Generic Identifiability) . Suppose (A1) –(A4) hold. If each block Qd, d = 1 , 2,satisfies Condition (A5′) below, then (β0, Q, ∆, π(2) , γ, λ) is generically identifiable. (A5′) After a row permutation, each block can be written as Qd = (( Q[1]  
+
+> d
+
+)⊤, (Q[2]  
+
+> d
+
+)⊤, (Q∗
+
+> d
+
+)⊤)⊤,containing one submatrix Q∗ 
+
+> (Jd−2Kd)×Kd
+
+in which each attribute is required by at least one item and, for r = 1 , 2,
+
+Q[r] 
+
+> d
+
+=
+
+
+
+1 ∗ · · · ∗∗ 1 · · · ∗
+
+... ... . . . ...
+
+∗ ∗ · · · 1
+
+ , r = 1 , 2, d = 1 , 2, (2)     
+
+> 1Such permutations correspond to the same permutations of the columns of Qdand ∆dand the associated entries of the structural coefficients.
+
+5where ∗ denotes either zero or one. 
+
+Under the Q-restricted likelihood, Conditions (A5) and ( A5′) are imposed separately on the two measurement blocks and are adapted from restricted-latent-class identifiability results (Xu and Shang, 2018; Gu and Xu, 2021; Culpepper, 2019). Once the class-response probabilities are identified with their blockwise attribute labels, the fixed thresholds and injective probit link identify every class-specific linear predictor. The all-zero profile identifies the item intercept βj0,and the contrast between the all-zero profile and the profile with only attribute k present identifies the effective loading δjk . Positivity gives qjk = I(δjk > 0) and βjk = δjk for active entries. The identified joint class probabilities then determine the structural conditional probabilities, and Conditions ( A2)–( A4) identify ( π(2) , γ, λ). Full proofs are provided in the Supplementary Material. 
+
+# 3 Bayesian Analysis 
+
+This section presents the Bayesian formulation and posterior computation for the EACDM. For independent subjects i = 1 , . . . , N , let Yi = ( Yi1, . . . , Y iJ )⊤ and Y∗ 
+
+> i
+
+= ( Y ∗
+
+> i1
+
+, . . . , Y ∗ 
+
+> iJ
+
+)⊤ denote the observed ordinal and augmented continuous response vectors, respectively. Each subject has a latent attribute profile αi = (( α(1)  
+
+> i
+
+)⊤, (α(2)  
+
+> i
+
+)⊤)⊤ and corresponding class label ci = α⊤ 
+
+> i
+
+v. We first specify the prior distributions and then describe the MCMC algorithm. 
+
+3.1 Prior Specification 
+
+Figure 1(a) summarizes the Bayesian path diagram for the EACDM, and Figure 1(b) illustrates the estimated item–attribute and structural relationships in the PPMI application. For the structural model, we assign independent multivariate normal priors ηk ∼ N (μη, Mη), for k = 1 , ..., K 1. Recall that π(2) = ( π(2)  
+
+> a
+
+: a ∈ { 0, 1}K2 )⊤ contains the population probabilities of the exogenous latent profiles. We assign the conjugate prior π(2) ∼ Dirichlet( n0), with n0 set to a vector of ones in the analyses. The latent-attribute prior contribution used in the sampler can be written as 
+
+p(αi | π(2) , η, Zi) = π(2) 
+
+> α(2)
+> i
+
+p(α(1)  
+
+> i
+
+| α(2)  
+
+> i
+
+, Zi, η).
+
+For notational convenience, let J1 = {1, . . . , J 1} and J2 = {J1 +1 , . . . , J } denote the item sets for the two measurement blocks. For d = 1 , 2 and j ∈ J d, write β(d) 
+
+> j0
+
+and δ(d) 
+
+> jk
+
+for the block-specific item intercept and effective loading introduced in Section 2. We assign the unconstrained intercept the prior β(d) 
+
+> j0
+
+∼ N (0 , σ 20d). For each main effect k = 1 , . . . , K d, we instead use an exact spike-and-positive-slab prior for the effective loading, 
+
+δ(d) 
+
+> jk
+
+= q(d) 
+
+> jk
+
+β(d) 
+
+> jk
+
+, δ(d) 
+
+> jk
+
+| q(d) 
+
+> jk
+
+∼ (1 − q(d) 
+
+> jk
+
+) δ0 + q(d) 
+
+> jk
+
+N(0 ,∞)(0 , σ 2
+
+> βd
+
+),
+
+where δ0 is a point mass at zero and N(0 ,∞) denotes a normal distribution truncated to the positive half-line. Equivalently, β(d) 
+
+> jk
+
+∼ N(0 ,∞)(0 , σ 2
+
+> βd
+
+) only when q(d) 
+
+> jk
+
+= 1; no inactive auxiliary coefficient is estimated when q(d) 
+
+> jk
+
+= 0. The inclusion indicators and block-specific inclusion probabilities satisfy 
+
+q(d) 
+
+> jk
+
+| ωd ∼ Bernoulli( ωd), ωd ∼ Beta( aω, b ω), d = 1 , 2.
+
+3.2 Posterior Inference 
+
+The Bayesian formulation described in the previous section allows for the implementation of a Gibbs sampler procedure for iteratively updating model parameters. Up to proportionality, the 6Figure 1: Panel (a) shows the path diagram of the proposed EACDM. Solid arrows indicate stochastic dependencies, and the dashed box groups the two latent attribute blocks, α(1) and α(2) .Panel (b) illustrates the estimated item–attribute and structural relationships in the PPMI data application. Rectangular nodes denote observed variables, including motor items, non-motor items, and covariates; circular nodes denote latent attributes. Directed arrows from latent attributes to items represent nonzero entries in the estimated Q-matrices. Directed arrows from 
+
+α(2) and the covariates to α(1) represent the structural component of the model. 7joint posterior is 
+
+p(Y∗, α, π(2) , β0, ∆, Q, ω, η | Y) ∝ p(Y | Y∗)p(Y∗ | α, ∆, β0)p(α(1) | α(2) , Z, η)
+
+× p(α(2) | π(2) )p(π(2) )p(∆, β0 | Q)p(Q | ω)p(ω)p(η). (3) We approximate this posterior using a partially collapsed Gibbs sampler with data augmentation. The required updates are stated below. 
+
+Step 1. Update the latent attributes and class probabilities. For each subject, the latent attribute vector is sampled from a discrete distribution over all 2 K possible profiles. Let 
+
+αc = (( α(1)  
+
+> c
+
+)⊤, (α(2)  
+
+> c
+
+)⊤)⊤ such that α⊤ 
+
+> c
+
+v = c. We define pik (c) = logit −1 n
+
+η⊤ 
+
+> k
+
+(Z⊤ 
+
+> i
+
+, (α(2)  
+
+> c
+
+)⊤)⊤
+
+o
+
+,k = 1 , . . . , K 1, and ϖic = π(2) 
+
+> α(2)
+> c
+
+QK1 
+
+> k=1
+
+pik (c)α(1)  
+
+> ck
+
+{1−pik (c)}1−α(1)  
+
+> ck
+
+. Here, ϖic is the conditional prior probability that subject i belongs to complete latent class c. The full conditional distribution of 
+
+ci is 
+
+P (α⊤ 
+
+> i
+
+v = c | Yi, π(2) , ∆, η) = ϖic 
+
+QJj=1 θjc,Y ij  
+
+> 2K−1
+
+X
+
+> c′=0
+
+ϖic ′
+
+> J
+
+Y
+
+> j=1
+
+θjc ′,Y ij 
+
+. (4) Because π(2) contains only the 2 K2 exogenous-profile probabilities, define n(2)  
+
+> a
+
+= PNi=1 I(α(2)  
+
+> i
+
+= a)for a ∈ { 0, 1}K2 . Its conjugate update is 
+
+π(2) | α(2) 1 , . . . , α(2)  
+
+> N
+
+∼ Dirichlet 
+
+
+
+n0 + {n(2)  
+
+> a
+
+: a ∈ { 0, 1}K2 }
+
+
+
+.
+
+Step 2. Update the augmented responses. Let ci = α⊤ 
+
+> i
+
+v. The augmented responses are updated from truncated normal distributions, 
+
+Y ∗ 
+
+> ij
+
+| Yij = m, αi, Q, ∆, β0 ∼ N βj0 +
+
+> K
+
+X
+
+> k=1
+
+δjk αik , 1
+
+!
+
+I(τjc i,m ≤ Y ∗ 
+
+> ij
+
+< τ jc i,m +1 ).
+
+Step 3. Update the structural coefficients. Let xi = ( Z⊤ 
+
+> i
+
+, (α(2)  
+
+> i
+
+)⊤)⊤ and let X be the N ×
+
+(R+K2) matrix with rows x⊤ 
+
+> i
+
+. Motivated by P´ olya–Gamma representation in Polson et al. (2013), we introduce independent P´ olya–Gamma variables ρik | ηk ∼ PG (1 , x⊤ 
+
+> i
+
+ηk) for k = 1 , ..., K 1, and let ρk = ( ρ1k, . . . , ρ N k )⊤, Wk = diag( ρ1k, . . . , ρ N k ) and κk = ( α(1) 1k − 1/2, . . . , α (1)  
+
+> N k
+
+− 1/2) ⊤. Then 
+
+ηk | α(1) , α(2) , Z, ρk ∼ N (μηk , Vηk ), where Vηk = ( X⊤WkX + M−1 
+
+> η
+
+)−1, μηk = Vηk (X⊤κk +
+
+M−1 
+
+> η
+
+μη).
+
+Step 4. Update the measurement parameters and Q-matrices. Given the current latent profiles and augmented responses, update the measurement component block by block. For 
+
+d = 1 , 2, j ∈ J d, and k = 1 , . . . , K d, define the partial residual r(d) 
+
+> ijk
+
+= Y ∗ 
+
+> ij
+
+−β(d) 
+
+> j0
+
+−P 
+
+> h̸=k
+
+q(d) 
+
+> jh
+
+β(d) 
+
+> jh
+
+α(d) 
+
+> ih
+
+.Conditional on all remaining quantities, let 
+
+m(d) 
+
+> jk
+
+(0) = 
+
+> N
+
+Y
+
+> i=1
+
+ϕ(r(d)
+
+> ijk
+
+), m(d) 
+
+> jk
+
+(1) = 
+
+Z ∞
+
+> 0
+
+( NY
+
+> i=1
+
+ϕ(r(d) 
+
+> ijk
+
+− bα (d) 
+
+> ik
+
+)
+
+)
+
+f+(b; 0 , σ 2
+
+> βd
+
+) db, 
+
+where ϕ is the standard normal density and f+ is the positive-normal slab density. The collapsed inclusion update is 
+
+P (q(d) 
+
+> jk
+
+= 1 | rest) = ωdm(d) 
+
+> jk
+
+(1) 
+
+ωdm(d) 
+
+> jk
+
+(1) + (1 − ωd)m(d) 
+
+> jk
+
+(0) .
+
+8Immediately after sampling q(d) 
+
+> jk
+
+, set δ(d) 
+
+> jk
+
+= 0 if q(d) 
+
+> jk
+
+= 0. If q(d) 
+
+> jk
+
+= 1, sample its active magnitude before proceeding to the next coordinate: 
+
+β(d) 
+
+> jk
+
+| q(d) 
+
+> jk
+
+= 1 , rest ∼ N(0 ,∞)
+
+em(d) 
+
+> jk
+
+, ev(d)
+
+> jk
+
+
+
+, ev(d) 
+
+> jk
+
+=  NX
+
+> i=1
+
+(α(d) 
+
+> ik
+
+)2 + σ−2
+
+> βd
+> −1
+
+, em(d) 
+
+> jk
+
+= ev(d)
+
+> jk N
+
+X
+
+> i=1
+
+α(d) 
+
+> ik
+
+r(d)
+
+> ijk
+
+,
+
+and set δ(d) 
+
+> jk
+
+= β(d) 
+
+> jk
+
+. After cycling through the loading coordinates, update the intercept from 
+
+β(d) 
+
+> j0
+
+| rest ∼ N
+
+em(d) 
+
+> j0
+
+, ev(d)
+
+> j0
+
+
+
+, ev(d) 
+
+> j0
+
+= ( N + σ−20d )−1, em(d) 
+
+> j0
+
+= ev(d)
+
+> j0
+> N
+
+X
+
+> i=1
+
+(
+
+Y ∗ 
+
+> ij
+
+−
+
+> Kd
+
+X
+
+> k=1
+
+δ(d) 
+
+> jk
+
+α(d)
+
+> ik
+
+)
+
+.
+
+This ordering defines a valid coordinate-wise partially collapsed Gibbs sweep. The block-specific inclusion probability retains the conjugate update 
+
+ωd | Qd ∼ Beta 
+
+aω + X
+
+> j∈J d
+> Kd
+
+X
+
+> k=1
+
+q(d) 
+
+> jk
+
+, b ω + JdKd − X
+
+> j∈J d
+> Kd
+
+X
+
+> k=1
+
+q(d)
+
+> jk
+
+ , d = 1 , 2.
+
+3.3 Model Selection 
+
+We compared candidate values of ( K1, K 2) using the following posterior-averaged complete-data information criterion, which was referred to as a modified BIC in the numerical studies: BIC mod = pK1,K 2 log N − 2
+
+T
+
+> T
+
+X
+
+> t=1
+> N
+
+X
+
+> i=1
+
+log L(t)
+
+> i, comp
+
+, (5) where 
+
+L(t) 
+
+> i, comp
+
+= π(2)( t)
+
+> α(2)( t)
+> i
+> J
+
+Y
+
+> j=1
+
+θ(t) 
+
+> jc (t)
+> i,Y ij
+> K1
+
+Y
+
+> k=1
+
+{p(t) 
+
+> ik
+
+}α(1)( t) 
+
+> ik
+
+{1 − p(t) 
+
+> ik
+
+}1−α(1)( t) 
+
+> ik
+
+. (6) Equation (5) averages the complete-data log likelihood over retained posterior draws; it is not the standard observed-data BIC evaluated at a point estimate. 
+
+# 4 Simulation 
+
+We conducted simulation studies to evaluate the finite-sample performance of the proposed EACDM. The measurement targets are the two block-specific Q-matrices and the effective loading matrices ∆d, d = 1 , 2, the structural coefficient matrix η, and the selected latent dimensions ( K1, K 2). We also compare the proposed EACDM with a conventional CDM under strong cross-block dependence among the latent attributes. 
+
+4.1 Simulation Setting 
+
+Ordinal responses were generated from the full EACDM described in Section 2. For subject i,the latent attribute vector was αi =  (α(1)  
+
+> i
+
+)⊤, (α(2)  
+
+> i
+
+)⊤⊤, where α(1)  
+
+> i
+
+= ( α(1)  
+
+> i1
+
+, . . . , α (1)  
+
+> iK 1
+
+)⊤ denotes the endogenous block and α(2)  
+
+> i
+
+= ( α(2)  
+
+> i1
+
+, . . . , α (2)  
+
+> iK 2
+
+)⊤ denotes the exogenous block. We considered balanced settings with K1 = K2 = K and K = 2 , 3, 4. All items had three ordered response categories, so Mj = 3 for every item. The true Q-matrix was block diagonal with blocks Q1 and Q2, where Q1 is a J1 × K1
+
+matrix for the endogenous item block and Q2 is a J2 × K2 matrix for the exogenous item block. We considered J1 = J2 = 24 and J1 = J2 = 36, corresponding to total item lengths 9J = 48 and J = 72, respectively. For each K, the same construction was used for both blocks. Specifically, let CK denote the matrix whose rows contain all two-attribute combinations among the K attributes; equivalently, each row of CK has exactly two entries equal to one. The base pattern was eQK = ( I⊤ 
+
+> K
+
+, I⊤ 
+
+> K
+
+, I⊤ 
+
+> K
+
+, C⊤ 
+
+> K
+
+)⊤. Thus, each attribute was measured by at least three single-attribute items, and the design also contained items involving pairs of attributes. The matrices Q1 and Q2 were obtained by repeating the rows of eQK cyclically until Jd rows were obtained. For example, when K = 3 and J1 = J2 = 36, we have 
+
+C3 =
+
+
+
+1 1 01 0 10 1 1
+
+ ,
+
+and the 12-row base pattern eQ3 = ( I3, I3, I3, C3)⊤ was repeated three times for Q1 and Q2. For the measurement parameters, all item intercepts were set to −0.2 and all active magnitudes were set to one. Consequently, the true effective loading matrices were ∆1 = Q1 and ∆2 = Q2.Ordinal responses were generated according to Y ∗ 
+
+> ij
+
+= β(d) 
+
+> j0
+
++ P 
+
+> k
+
+q(d) 
+
+> jk
+
+β(d) 
+
+> jk
+
+α(d) 
+
+> ik
+
++ ϵij .The exogenous block α(2)  
+
+> i
+
+was sampled uniformly from {0, 1}K . We generated an independent binary covariate Zi ∼ Bernoulli(0 .5) for each subject. Conditional on α(2)  
+
+> i
+
+and Zi, the endogenous attributes in α(1)  
+
+> i
+
+were generated independently according to the logistic structural model in (1). Thus, the second attribute block α(2)  
+
+> i
+
+and the covariate Zi jointly determined the probabilities of the first attribute block α(1)  
+
+> i
+
+. The true values of η under different K were provided in the Supplementary Material. We note that the true parameters in all simulation settings satisfy the conditions of Proposition 1, thereby guaranteeing strict identifiability of the EACDM. We considered sample sizes n ∈ { 500 , 1000 , 2000 }. For each combination of n, J, and K, 100 independent replicates were generated. For each replicate, the MCMC chain was run for 3000 iterations, with the first 2000 iterations discarded as burn-in. The convergence diagnostics for the MCMC algorithm are provided in the Supplementary Material. For the binary Q-matrix, we use the Adjusted Rand Index (ARI; Rand, 1971) after aligning attribute labels within each block. For continuous measurement parameters, the appropriate target is RMSE( ∆), computed from posterior estimates of ∆ = Q ⊙ BA and its true value after the same label alignment; RMSE of inactive auxiliary coefficients is undefined as a likelihood-recovery target. We separately compute RMSE for η. For each scenario, we report the median and interquartile range (IQR) of these metrics over 100 replicates. 
+
+4.2 Results 
+
+Table 1 summarizes the parameter-recovery results. Recovery of the item-attribute latent structure improved with sample size. Across the six settings with n = 2000, the median ARI ranged from 0.947 to 0.967, compared with 0.825 to 0.879 when n = 500. The corresponding IQR also generally narrowed as n increased, indicating more stable recovery across replicates. Increasing the number of items generally improved recovery, although the improvement was not uniform across all settings. The effective loadings were accurately estimated. For every ( J, K ) combination, the median RMSE of ∆ decreased monotonically as n increased. For example, when K = 3 and J = 48, the median RMSE decreased from 0.090 at n = 500 to 0.042 at n = 2000; when K = 3 and J = 72, it decreased from 0.081 to 0.039. The corresponding IQRs also decreased, indicating increasingly accurate and stable estimation of the effective loadings. The structural coefficients had larger RMSE values than the effective loadings, particularly as K increased. This pattern likely reflects the growth in both the number of possible latent profiles and the number of structural coefficients. Nevertheless, the median RMSE of η decreased monotonically with n in every ( J, K ) setting. For instance, when K = 4 and J = 72, the median 10 RMSE decreased from 0.263 at n = 500 to 0.140 at n = 2000. Overall, the proposed Bayesian estimation procedure recovered the directed dependence between the two latent attribute blocks, with accuracy improving as the available information increased. Table 1: Simulation results for different sample sizes, item lengths, and latent dimensions 
+
+## ARI (Q) RM SE (∆) RM SE (η)
+
+## n J K1 K2 median IQR median IQR median IQR 500 48 2 2 0.825 0.121 0.099 0.014 0.233 0.087 500 72 2 2 0.843 0.104 0.093 0.010 0.200 0.074 1000 48 2 2 0.889 0.082 0.068 0.008 0.165 0.052 1000 72 2 2 0.920 0.072 0.065 0.006 0.143 0.046 2000 48 2 2 0.961 0.069 0.048 0.007 0.119 0.042 2000 72 2 2 0.947 0.054 0.045 0.005 0.097 0.040 500 48 3 3 0.839 0.127 0.090 0.012 0.262 0.068 500 72 3 3 0.862 0.096 0.081 0.008 0.221 0.056 1000 48 3 3 0.901 0.088 0.062 0.008 0.178 0.048 1000 72 3 3 0.923 0.059 0.057 0.005 0.163 0.050 2000 48 3 3 0.960 0.049 0.042 0.006 0.139 0.045 2000 72 3 3 0.967 0.051 0.039 0.004 0.120 0.035 500 48 4 4 0.869 0.103 0.087 0.010 0.313 0.062 500 72 4 4 0.879 0.065 0.080 0.008 0.263 0.064 1000 48 4 4 0.923 0.072 0.058 0.008 0.223 0.049 1000 72 4 4 0.921 0.088 0.055 0.006 0.196 0.043 2000 48 4 4 0.958 0.077 0.041 0.006 0.173 0.039 2000 72 4 4 0.965 0.033 0.039 0.004 0.140 0.025 We further examined selection of the latent dimensions under n = 1000 and J = 72. For each true value K = 2 , 3, 4, candidate models with K1, K 2 ∈ { 1, 2, 3, 4, 5} were fitted to 100 simulated datasets. The modified BIC selected the true dimensions ( K1, K 2) = ( K, K ) in all 100 replicates for each value of K. Thus, the modified BIC accurately recovered the dimensions of both latent attribute blocks under the simulation settings considered. 
+
+4.3 Comparison with Conventional CDMs 
+
+We further compared the proposed EACDM with a conventional CDM that treats all items as measuring a single latent attribute vector and does not model the directed dependence between the two latent attribute blocks. This comparison examines whether ignoring the endogeneity between α(1) and α(2) distorts recovery of the true latent structure. We generated 100 datasets with n = 1000, J1 = J2 = 24, and K1 = K2 = 3. The true block-specific Q-matrices followed the construction described above, and no observed covariates were included in this comparison. For the structural model, the first two endogenous attributes were set to be strongly associated with their corresponding exogenous attributes: the probability of α(1)  
+
+> ik
+
+= 1 was approximately 0.10 when the corresponding component of α(2)  
+
+> i
+
+was 0 and approximately 0.90 when it was 1. The third pair had a weaker dependence, with corresponding 11 probabilities approximately 0.40 and 0.60. This setting creates two highly shared cross-block attribute pairs and one weakly associated pair. Details of the setting including the true parameter values are provided in Supplementary Material. For the proposed EACDM, we fitted candidate models with K1, K 2 ∈ { 2, 3, 4} and selected the latent dimensions by modified BIC. For the conventional CDM, candidate models with 
+
+K ∈ { 2, 3, 4, 5, 6} were fitted, where K denotes the total number of latent attributes in a single unstructured attribute vector. Under EACDM, the true latent dimensions ( K1, K 2) = (3 , 3) were correctly selected in all 100 simulation replicates. In contrast, under the conventional CDM, we rarely selected the true total dimension K = 6; it selected K = 4 in 65 replicates, K = 5 in 33, and K = 6 in only 2. The proposed EACDM accurately recovered the block-specific Q-matrices and selected the true latent dimensions in all replicates. In contrast, the conventional CDM typically selected fewer than six attributes, a pattern consistent with the merging of strongly dependent cross-block attributes. 
+
+# 5 Real-Data Application to the PPMI dataset 
+
+5.1 Study Design 
+
+The Parkinson’s Progression Markers Initiative (PPMI) is a large longitudinal cohort study designed to characterize Parkinson’s disease (PD) progression and identify biomarkers relevant to diagnosis and treatment. We use item-level PPMI assessments to study motor and non-motor manifestations of PD and their cross-domain dependence. The motor domain was constructed from MDS–UPDRS Parts II and III, whereas the non-motor domain was constructed from MDS–UPDRS Part I, SCOPA–AUT, and MoCA items. This partition follows the clinical design of the instruments: MDS–UPDRS Parts II and III primarily measure motor experiences and motor examination findings, while MDS–UPDRS Part I, SCOPA–AUT, and MoCA capture non-motor symptoms, autonomic dysfunction, and cognition. Motivated by previous evidence linking the caudate and putamen to PD, particularly to its motor manifestations (Rodriguez-Oroz et al., 2009; Pitcher et al., 2012), we include age, caudate uptake, and putamen uptake as covariates in the structural component. The final analytic sample is restricted to participants with complete data on the selected MDS–UPDRS, SCOPA–AUT, and MoCA items and available neuroimaging measurements for the selected brain regions, yielding n = 1127 participants. Details of data preprocessing are provided in the Supplementary Material. To improve numerical stability, we excluded items with essentially no response variation. For the remaining items, the most severe response category was rare in several cases; therefore, we collapsed the most severe category with the adjacent less severe category to reduce sparsity in the ordinal responses. The MDS–UPDRS and SCOPA–AUT items are coded so that larger values indicate greater symptom severity, whereas the MoCA items are coded as binary indicators with 1 denoting a correct response and 0 denoting an incorrect response. After preprocessing, the motor domain contains 22 items from MDS–UPDRS Parts II and III. The non-motor domain contains 31 items from MDS–UPDRS Part I, SCOPA–AUT, and MoCA, including sleep, pain, urinary, gastrointestinal, autonomic, sensory, and cognitive items. Item information is provided in Tables S2 and S3 of the Supplementary Material. 
+
+5.2 Fitting Results 
+
+We fitted the proposed EACDM and selected the number of latent attributes using modified BIC together with parsimony and interpretability of the recovered Q-matrices. We evaluated the model with different combinations of ( K1, K 2) using BIC and found that BIC tended to decrease as K2 increased, favoring models with more non-motor attributes. However, larger K2 values produced many non-motor latent profiles with low posterior prevalence, resulting in sparsely 12 populated classes that were less reliable for estimating structural relationships between non-motor and motor attributes. We therefore selected a parsimonious and interpretable specification with 
+
+K1 = 3 motor and K2 = 4 non-motor attributes. Under this specification, all 8 motor and 16 non-motor marginal profiles had an estimated posterior prevalence of at least 1%. Panel (a) of Figure 2 displays the estimated block-specific Q-matrices. 
+
+Figure 2: Comparison of the estimated Q-matrices for the PPMI data. Panel (a) shows the block-structured Q-matrices from the EACDM working model with K1 = 3 motor attributes and K2 = 4 non-motor attributes. Panel (b) shows the motor and non-motor portions of the 
+
+Q-matrix from the conventional CDM with K = 3. Rows correspond to observed assessment items, columns correspond to latent attributes, and black cells indicate selected item–attribute relationships based on posterior inclusion probabilities thresholded at 0.5. The estimated motor Q-matrix has a clinically interpretable structure. The first motor 13 attribute loads strongly on right-side motor items, including right upper-extremity rigidity, right finger tapping, right hand movement, right pronation–supination, right toe tapping, and right upper-extremity rest tremor, and is therefore interpreted as right-side motor impairment. The second motor attribute loads broadly on nearly all motor items, including axial and global motor items such as speech, facial expression, posture, and bradykinesia, and is interpreted as global motor impairment. The third motor attribute loads strongly on left-side motor items, including left upper- and lower-extremity rigidity, left finger tapping, left hand movement, left pronation–supination, left toe tapping, and left leg agility, and is interpreted as left-side motor impairment. The estimated non-motor Q-matrix is less clearly separated for its first three attributes, but it nevertheless provides a useful clinical structure. These attributes load on broad sets of sleep, pain, urinary, gastrointestinal, autonomic, and sensory symptoms, suggesting that they capture overlapping aspects of non-motor and autonomic burden. In contrast, the fourth non-motor attribute has a clearer interpretation: it loads strongly on the MoCA items, including cube copying, clock drawing, and delayed recall. Because the MoCA items are coded as 1 for correct responses and 0 for incorrect responses, positive measurement coefficients for these items indicate better cognitive performance. We therefore interpret α(2) 4 as a cognitive proficiency attribute. Thus, the non-motor block comprises three broad non-motor/autonomic burden dimensions and one cognitive proficiency dimension. We next examined the structural coefficients η, which relate the non-motor latent attributes and observed covariates to the motor latent attributes. Each of the three non-motor/autonomic burden attributes was positively associated with global motor impairment, providing evidence of cross-domain dependence between non-motor burden and motor dysfunction. The third non-motor/autonomic attribute additionally exhibited side-specific associations: it was negatively associated with right-side motor impairment and positively associated with left-side motor impairment. By contrast, cognitive proficiency showed no credible association with any motor attribute after adjustment for the other predictors. Among the imaging covariates, higher putamen uptake was associated with lower conditional odds of all three motor impairment attributes, a pattern consistent with preserved putaminal dopaminergic function. Higher caudate uptake was associated with higher conditional odds of right-side motor impairment only, whereas age showed no credible association with any motor attribute. Full posterior summaries are provided in Supplementary Table S4. We further examined whether the estimated Q-matrices were compatible with the combinato-rial requirement in Condition ( A5′). For the motor block, two row-disjoint 3 × 3 submatrices with unit diagonals can be selected, while the remaining rows contain at least one item requiring each of the three attributes. Similarly, for the non-motor block, two row-disjoint 4 × 4 submatrices with unit diagonals can be selected, and each of the four attributes is required by at least one of the remaining items. Thus, the estimated Q-matrix patterns are compatible with the Q-matrix component of Condition ( A5′), supporting the interpretation of the recovered latent attributes and their use in the downstream structural analysis. To further assess the clinical interpretation of the estimated latent attributes, we used external variables that were not used as primary item responses for the corresponding validation targets. First, we used physician-reported dominant side at diagnosis (DOMSIDE) to validate the side-specific motor attributes. Among subjects classified with the right-side motor attribute (α(1) 1 = 1), 84.3% had right-dominant onset, compared with 34.6% among subjects without this attribute. Conversely, among subjects classified with the left-side motor attribute ( α(1) 3 = 1), 66.3% had left-dominant onset, compared with 9.4% among subjects without this attribute. These patterns support the interpretation of the first and third motor attributes as right- and left-side motor impairment, respectively. We also examined whether the total number of endorsed latent attributes reflected broader clinical burden. For the motor domain, we used Hoehn and Yahr stage (NHY) as an external 14 measure of disease severity. The mean NHY stage increased with motor latent burden, defined as the number of endorsed motor attributes. The corresponding means were 0.62, 1.46, 1.86, and 2.00 among subjects with 0, 1, 2, and 3 endorsed motor attributes, respectively. For the non-motor domain, we used the REM Sleep Behavior Disorder (RBD) questionnaire as an external validation measure. Because α(2) 4 represents cognitive proficiency rather than impairment, non-motor latent burden was defined as α(2) 1 +α(2) 2 +α(2) 3 +{1−α(2) 4 }. The proportion of RBD-positive subjects increased monotonically with this non-motor burden, from 14.1% among subjects with burden 0 to 29.3%, 39.1%, 56.5%, and 73.1% among those with burdens 1, 2, 3, and 4, respectively. Taken together, these validation results indicate that the estimated latent attributes capture clinically meaningful variation in side-specific motor impairment, overall motor disease severity, and non-motor symptom burden. Figure 3 summarizes the external-validation results. 
+
+Figure 3: External validation of the estimated latent attributes in the PPMI application. Panel A compares physician-reported dominant side at diagnosis across the side-specific motor attribute groups. Panel B summarizes Hoehn–Yahr stage by the number of endorsed motor attributes. Panel C reports the proportion of RBD-positive subjects by non-motor latent burden, where the cognitive proficiency attribute contributes as 1 − α(2) 4 .15 5.3 Comparison with Conventional CDMs 
+
+We further compared the proposed EACDM with a conventional CDM fitted to the same dataset. Unlike the proposed EACDM, the conventional CDM treats all items as measuring a single shared set of latent attributes and does not impose a block structure between the motor and non-motor domains. Panel (b) of Figure 2 shows the estimated Q-matrix from the conventional CDM with K = 3. Several limitations are apparent. First, the estimated attributes do not separate the motor and non-motor domains cleanly. In particular, the first two attributes are associated with items from both domains, suggesting that the conventional CDM combines domain-specific variation into broad shared latent dimensions. Second, the cognitive component is not recovered as a distinct latent attribute. None of the seven MoCA items has a posterior inclusion probability exceeding the 0.5 threshold for any of the three attributes, leaving the cognitive items unassigned in the thresholded Q-matrix. Thus, although the conventional CDM captures general response heterogeneity, its three shared attributes provide a less clinically coherent representation of the motor, non-motor, and cognitive structure than the block-specific attributes recovered by EACDM. 
+
+# 6 Discussion 
+
+Several limitations motivate further work. First, the block-diagonal Q-matrix excludes cross-domain item loadings; allowing sparse cross-domain loadings would require regularization and identifiability conditions that distinguish measurement overlap from structural dependence. Second, the present cross-sectional formulation does not separate contemporaneous association from temporal ordering. A longitudinal EACDM could introduce time-varying attributes, transi-tion dynamics, and subject-specific trajectories, while explicitly addressing irregular assessment times and informative dropout. Third, the structural component assumes conditionally inde-pendent endogenous attributes given the exogenous block and covariates; residual dependence or reciprocal relationships would require a richer structural model and additional identifying assumptions. Fourth, exact spike-and-slab loading selection and latent-dimension selection intro-duce uncertainty that is not fully represented by thresholding posterior inclusion probabilities or by the information criterion. Model-averaged inference and sensitivity analyses for slab and selection-prior choices are natural extensions. Finally, MCMC becomes costly as the numbers of items, subjects, or attributes increase; scalable approximations such as variational Bayes warrant investigation. 
+
+# References 
+
+Yunxiao Chen, Jingchen Liu, Gongjun Xu, and Zhiliang Ying. Statistical analysis of Q-matrix based diagnostic classification models. Journal of the American Statistical Association , 110 (510):850–866, 2015. doi: 10.1080/01621459.2014.934827. Mary Kathryn Cowles. Accelerating monte carlo markov chain convergence for cumulative-link generalized linear models. Statistics and Computing , 6:101–111, 1996. Steven Andrew Culpepper. An exploratory diagnostic model for ordinal responses with binary attributes: Identifiability and estimation. Psychometrika , 84(4):921–940, 2019. Steven Andrew Culpepper and James J. Balamuta. Inferring latent structure in polytomous data with a higher-order diagnostic model. Multivariate Behavioral Research , 58(2):368–386, 2023. doi: 10.1080/00273171.2021.1985949. Jimmy De La Torre. Dina model and parameter estimation: A didactic. Journal of educational and behavioral statistics , 34(1):115–130, 2009. 16 Jimmy de la Torre. The generalized DINA model framework. Psychometrika , 76(2):179–199, 2011. doi: 10.1007/s11336-011-9207-7. Jimmy de la Torre and Jeffrey A. Douglas. Higher-order latent trait models for cognitive diagnosis. Psychometrika , 69(3):333–353, 2004. doi: 10.1007/BF02295640. Louis V DiBello, William F Stout, and Louis A Roussos. Unified cognitive/psychometric diagnostic assessment likelihood-based classification techniques. In Cognitively diagnostic assessment , pages 361–389. Routledge, 2012. Christopher G Goetz, Barbara C Tilley, Stephanie R Shaftman, Glenn T Stebbins, Stanley Fahn, Pablo Martinez-Martin, Werner Poewe, Cristina Sampaio, Matthew B Stern, Richard Dodel, et al. Movement disorder society-sponsored revision of the unified parkinson’s disease rating scale (mds-updrs): scale presentation and clinimetric testing results. Movement disorders: official journal of the Movement Disorder Society , 23(15):2129–2170, 2008. Yuqi Gu and Gongjun Xu. Sufficient and necessary conditions for the identifiability of the Q-matrix. Statistica Sinica , 31:449–472, 2021. Edward H Haertel. Using restricted latent class models to map the skill structure of achievement items. Journal of Educational Measurement , 26(4):301–321, 1989. Robert A. Henson, Jonathan Templin, and John T. Willse. Defining a family of cognitive diagnosis models using log-linear models with latent variables. Psychometrika , 74(2):191–210, 2009. doi: 10.1007/s11336-008-9089-5. Bo Hu and Jonathan Templin. Using diagnostic classification models to validate attribute hierarchies and evaluate model fit in bayesian networks. Multivariate Behavioral Research , 55 (2):300–311, 2020. doi: 10.1080/00273171.2019.1632165. Brian W. Junker and Klaas Sijtsma. Cognitive assessment models with few assumptions, and connections with nonparametric item response theory. Applied Psychological Measurement , 25 (3):258–272, 2001. Kenneth Marek, Danna Jennings, Shirley Lasch, Andrew Siderowf, Caroline Tanner, Tanya Simuni, Chris Coffey, Karl Kieburtz, Emily Flagg, Sohini Chowdhury, et al. The parkinson progression marker initiative (ppmi). Progress in neurobiology , 95(4):629–635, 2011. Ziad S Nasreddine, Natalie A Phillips, Val´ erie B´ edirian, Simon Charbonneau, Victor Whitehead, Isabelle Collin, Jeffrey L Cummings, and Howard Chertkow. The montreal cognitive assessment, moca: a brief screening tool for mild cognitive impairment. Journal of the American Geriatrics Society , 53(4):695–699, 2005. Yoon Soo Park, Kuan Xing, and Young-Sun Lee. Explanatory cognitive diagnostic models: Incorporating latent and observed predictors. Applied psychological measurement , 42(5): 376–392, 2018. Tonya L. Pitcher, Tristan R. Melzer, Michael R. MacAskill, Charlotte F. Graham, Laura Livingston, Rebecca J. Keenan, Richard Watts, John C. Dalrymple-Alford, and Tim J. Anderson. Reduced striatal volumes in parkinson’s disease: A magnetic resonance imaging study. Translational Neurodegeneration , 1(17), 2012. doi: 10.1186/2047-9158-1-17. Nicholas G Polson, James G Scott, and Jesse Windle. Bayesian inference for logistic models using p´ olya–gamma latent variables. Journal of the American statistical Association , 108(504): 1339–1349, 2013. 17 William M Rand. Objective criteria for the evaluation of clustering methods. Journal of the American Statistical association , 66(336):846–850, 1971. Maria C. Rodriguez-Oroz, Marjan Jahanshahi, Paul Krack, Irene Litvan, Ricardo Macias, Erwan Bezard, and Jose A. Obeso. Initial clinical manifestations of parkinson’s disease. The Lancet Neurology , 8(12):1128–1139, 2009. doi: 10.1016/S1474-4422(09)70293-5. Yoshito Tan, Tetsuro Ito, and Kensuke Okada. Bayesian penalization for explanatory cog-nitive diagnostic models: covariate dina model and covariate lcdm with the lasso prior. 
+
+Behaviormetrika , 51(1):237–257, 2024. Kikumi K Tatsuoka. Rule space: An approach for dealing with misconceptions based on item response theory. Journal of educational measurement , pages 345–354, 1983. Jonathan Templin and Laine Bradshaw. Hierarchical diagnostic classification models: A family of models for estimating and testing attribute hierarchies. Psychometrika , 79(2):317–339, 2014. doi: 10.1007/s11336-013-9362-0. Jonathan Templin, Robert A Henson, et al. Diagnostic measurement: Theory, methods, and applications . Guilford press, 2010. Jonathan L. Templin and Robert A. Henson. Measurement of psychological disorders using cognitive diagnosis models. Psychological Methods , 11(3):287–305, 2006. doi: 10.1037/ 1082-989X.11.3.287. Martine Visser, Johan Marinus, Anne M Stiggelbout, and Jacobus J Van Hilten. Assessment of autonomic dysfunction in parkinson’s disease: the scopa-aut. Movement disorders: official journal of the Movement Disorder Society , 19(11):1306–1312, 2004. Matthias Von Davier. A general diagnostic model applied to language testing data. British Journal of Mathematical and Statistical Psychology , 61(2):287–307, 2008. Matthias von Davier. The general diagnostic model. In Handbook of diagnostic classification models: Models and model extensions, applications, software packages , pages 133–153. Springer, 2019. Eric Alan Wayman, Steven Andrew Culpepper, Jeff Douglas, and Jesse Bowers. A restricted latent class model with polytomous attributes and respondent-level covariates. Behaviormetrika ,2025. doi: 10.1007/s41237-025-00271-8. Gongjun Xu. Identifiability of restricted latent class models with binary responses. The Annals of Statistics , 45(2):675–707, 2017. doi: {{ 10.1214/16-AOS1464 }} .Gongjun Xu and Zhuoran Shang. Identifying latent structures in restricted latent class models. 
+
+Journal of the American Statistical Association , 113(523):1284–1295, 2018. 18 Supplementary Material for “Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments” 
+
+Zhiyu Huang 1, Jing Ouyang ∗2, and Kai Kang †11Department of Statistics, Sun Yat-sen University, Guangzhou, Guangdong, China 
+
+> 2
+
+Faculty of Business and Economics, University of Hong Kong, Hong Kong, P. R. China 
+
+# 1 Main proofs of identifiability 
+
+Recall that the measurement likelihood is exactly Q-restricted: μjc = βj0 + P 
+
+> k
+
+qjk βjk αck =
+
+βj0 + δ⊤ 
+
+> j
+
+αc, where δjk = qjk βjk and every active βjk is positive. Accordingly, the proofs identify (β0, Q, ∆), the exogenous-profile probabilities, and the structural coefficients. All conclusions are understood up to simultaneous permutations of attribute labels within the two blocks. 
+
+1.1 Proof of Proposition 1 
+
+Proof. For a ∈ { 0, 1}K , define ρi(a) = P (αi = a | Zi). Under the blockwise Condition ( A5), the restricted-latent-class results invoked in the main text identify the category-response vectors θjc 
+
+and the complete-profile probabilities ρi(a), up to the stated blockwise label permutations. (Xu, 2017; Xu and Shang, 2018; Culpepper, 2019) Condition ( A4) and the finite logistic coefficients in (A2) ensure that every complete profile has positive probability, as required for this saturated-profile argument. The dimensional inequality in ( A1) is only a necessary check and is not used as a stand-alone sufficient argument. For any item j, class c, and m ≤ Mj − 2, let Fjc (m) = Pmr=0 θjcr . The fixed-threshold probit model gives 
+
+Fjc (m) = Φ {τjc,m +1 − μjc }, μjc = τjc,m +1 − Φ−1{Fjc (m)}.
+
+Thus, the identified category probabilities and the injectivity of Φ identify every class-specific linear predictor μjc . Condition ( A4) supplies the zero and basis profiles of the exogenous block; together with finite logistic coefficients in ( A2), these profiles give positive probability to the complete zero profile and to each endogenous and exogenous basis profile needed below. Under the additive main-effects model, the linear predictor for the all-zero profile equals βj0, whereas the predictor for the profile with only attribute k present equals βj0 + δjk . Thus, the all-zero profile identifies βj0 and the corresponding single-attribute contrast identifies δjk . Hence β0 and 
+
+∆ are identified, and positivity gives qjk = 1{δjk > 0} and βjk = δjk for every active entry. This identifies Q and all active loadings, while no statement is made about an inactive auxiliary βjk .It remains to identify the structural component. Summing the identified complete-profile probabilities over α(1) identifies π(2)  
+
+> a
+
+= P (α(2) = a) for every supported exogenous profile a.
+
+> ∗Corresponding author: jingoy@hku.hk
+> †Corresponding author: kangk5@mail.sysu.edu.cn
+
+1Ratios of the identified joint and marginal probabilities then identify P (α(1)  
+
+> ik
+
+= 1 | α(2)  
+
+> i
+
+= a, Zi)for each k. Define 
+
+hik (a) = logit P (α(1)  
+
+> ik
+
+= 1 | α(2)  
+
+> i
+
+= a, Zi) = λ⊤ 
+
+> k
+
+Zi + γ⊤ 
+
+> k
+
+a.
+
+At a = 0, Condition ( A3) implies that the collection {hik (0) : i = 1 , . . . , N } uniquely determines 
+
+λk. For every basis vector eℓ ∈ S , hik (eℓ) − hik (0) = γkℓ , so Condition ( A4) identifies each component of γk. Therefore ( β0, Q, ∆, π(2) , γ, λ) is strictly identifiable up to the stated blockwise label permutations. 
+
+1.2 Proof of Proposition 2 
+
+Proof. Under the blockwise Condition ( A5′), the generic-identifiability result for an unknown 
+
+Q-matrix identifies Q, the category-response vectors θjc , and the complete-profile probabilities 
+
+ρi(a) outside its exceptional parameter set (Gu and Xu, 2021). On that set, the fixed-threshold inversion and zero-and-basis contrasts identify β0 and ∆; positivity recovers the same active-loading support encoded by Q. The same marginalization, full-rank, and full-support arguments identify π(2) , γ, and λ. The resulting parameterization is therefore generically identifiable up to the stated blockwise label permutations. 
+
+# 2 Simulation settings 
+
+This section provides the structural coefficient values used in the main simulation study. For each simulated subject i, the exogenous latent attribute block α(2)  
+
+> i
+
+was sampled uniformly from {0, 1}K . An independent binary covariate was then generated as Zi ∼ Bernoulli(0 .5), independently of α(2)  
+
+> i
+
+. Conditional on α(2)  
+
+> i
+
+and Zi, the endogenous latent attributes in α(1) 
+
+> i
+
+were generated independently according to the logistic structural model. For K = 2, the structural coefficient matrix was 
+
+ηK=2 =
+
+
+
+0.6 −0.70.8 0.81.0 −1.6
+
+−0.8 0.7
+
+ .
+
+For K = 3, the structural coefficient matrix was 
+
+ηK=3 =
+
+
+
+0.6 −0.7 −0.60.8 0.8 0.81.0 −1.6 1.4
+
+−0.8 0.7 −0.8
+
+−1.5 1.5 0.6
+
+ .
+
+For K = 4, the structural coefficient matrix was 
+
+ηK=4 =
+
+
+
+0.6 −0.7 −0.6 0.40.8 0.8 0.8 0.81.0 −1.6 1.4 −0.6
+
+−0.8 0.7 −0.8 1.1
+
+−1.5 1.5 0.6 −0.90.7 −1.0 0.8 0.9
+
+
+
+.
+
+These choices induce a range of positive and negative cross-block dependencies while keeping the covariate effect positive across all endogenous attributes. 23 Convergence Diagnostics 
+
+3.1 Convergence diagnostics of simulation studies 
+
+We assessed the convergence of the proposed MCMC algorithm under all 18 simulation settings formed by n ∈ { 500 , 1000 , 2000 }, J ∈ { 48 , 72 }, and K1 = K2 ∈ { 2, 3, 4}. For each setting, we selected replicates 1, 50, and 100 and ran four independent chains for 3,000 iterations. The first 2,000 iterations were discarded as burn-in. Because the latent-attribute labels are exchangeable across chains, the posterior draws were aligned before computing the convergence diagnostics. Specifically, for each block, the attribute labels in each chain were matched to the corresponding true Q-matrix by minimizing the Hamming distance. The resulting permutations were applied jointly to the associated entries of 
+
+∆1, ∆2, η, Q1, and Q2. Running Gelman–Rubin statistics were then calculated at checkpoints from iteration 100 to iteration 3,000. For each scalar parameter, the running statistics were averaged across the three selected replicates within each simulation setting. Figures S1–S3 present the resulting running bR trajectories for K1 = K2 = 2 , 3, and 4, respectively. The dashed horizontal line indicates the commonly used threshold of 1.05. The running statistics were more variable during the early iterations but decreased steadily as the chains progressed. The displayed replicate-averaged trajectories were below 1.05 by iteration 2,000. At iteration 3,000, the largest displayed average was 1.009. Across all individual retained-draw diagnostics, 99.89% of the rank-normalized split- bR values were below 1.05. The few larger values were confined to isolated coordinates of the measurement and Q-matrix blocks. Overall, the diagnostics provide evidence of satisfactory convergence of the proposed sampler across the simulation settings. 
+
+3.2 Convergence diagnostics of the PPMI analysis 
+
+For the PPMI application, we ran four independent chains for 40,000 iterations under the selected model with K1 = 3 motor attributes and K2 = 4 non-motor attributes. The first 20,000 iterations were discarded as burn-in, and iterations 20,001–40,000 were retained for posterior inference. As in the simulation study, the latent-attribute labels were aligned across chains before computing the convergence diagnostics. For each block, the posterior mean Q-matrix from the retained draws of the first chain was used as the reference. The labels in the remaining chains were matched to this reference by minimizing the Hamming distance, and the corresponding permutations were applied jointly to ∆1, ∆2, η, Q1, and Q2.Running Gelman–Rubin statistics were calculated at checkpoints from iteration 100 to iteration 40,000. Figure S4 shows the resulting trajectories. The dashed horizontal line represents the threshold bR = 1 .05. The running bR trajectories generally decreased toward one as the number of iterations increased and were below 1.05 by iteration 20,000. Based on the retained iterations 20,001– 40,000, the maximum bR values were 1.003, 1.007, 1.001, 1.000, and 1.004 for ∆1, ∆2, η, Q1, and 
+
+Q2, respectively. All 457 scalar parameters had bR ≤ 1.01. These results indicate satisfactory convergence of the posterior sampler for the PPMI analysis. 
+
+# 4 Simulation Comparison with a Conventional CDM 
+
+We conducted an additional simulation to examine whether a conventional CDM can recover the intended latent structure when two item domains are connected through directed dependence among their latent attributes. We generated 100 independent datasets, each with n = 1000 subjects, two blocks of J1 = J2 = 24 items, and two block-specific latent attribute vectors of 3Figure S1: Running Gelman–Rubin diagnostics for the simulation settings with  K1 = K2 = 2. The curves correspond to  ∆1, ∆2, η, Q1, and  Q2,averaged across the three selected replicates for each combination of  n and  J. The dashed horizontal line denotes  bR = 1 .05. 4Figure S2: Running Gelman–Rubin diagnostics for the simulation settings with  K1 = K2 = 3. The curves correspond to  ∆1, ∆2, η, Q1, and  Q2,averaged across the three selected replicates for each combination of  n and  J. The dashed horizontal line denotes  bR = 1 .05. 5Figure S3: Running Gelman–Rubin diagnostics for the simulation settings with  K1 = K2 = 4. The curves correspond to  ∆1, ∆2, η, Q1, and  Q2,averaged across the three selected replicates for each combination of  n and  J. The dashed horizontal line denotes  bR = 1 .05. 6Figure S4: Running Gelman–Rubin diagnostics for the EACDM analysis of the PPMI data under the selected model with K1 = 3 and K2 = 4. The curves correspond to ∆1, ∆2, η, Q1,and Q2. The dashed horizontal line denotes bR = 1 .05. 7dimensions K1 = K2 = 3. All items had three ordered response categories, coded as 0, 1, and 2, and no observed covariates were included. For each subject i, the exogenous attribute vector α(2)  
+
+> i
+
+∈ { 0, 1}3 was sampled uniformly from the eight possible binary profiles. Conditional on α(2)  
+
+> i
+
+, the three elements of the endogenous attribute vector α(1)  
+
+> i
+
+were generated independently according to logit 
+
+n
+
+P
+
+
+
+α(1)  
+
+> ik
+
+= 1 | α(2) 
+
+> i
+
+o 
+
+= η0k +
+
+> 3
+
+X
+
+> ℓ=1
+
+ηℓk α(2)  
+
+> iℓ
+
+, k = 1 , 2, 3, (1) where the true structural coefficient matrix, with the intercept in the first row, was 
+
+η =
+
+
+
+−2.20 −2.20 −0.40 4.40 0 00 4.40 00 0 0.80 
+
+ . (2) Thus, the dependence was one-to-one: α(1)  
+
+> i1
+
+, α(1)  
+
+> i2
+
+, and α(1)  
+
+> i3
+
+depended only on α(2)  
+
+> i1
+
+, α(2)  
+
+> i2
+
+, and α(2)  
+
+> i3
+
+,respectively. For the first two pairs, the conditional mastery probabilities were logit −1(−2.20) = 0.100 and logit −1(2 .20) = 0 .900 when the corresponding exogenous attribute was 0 and 1. For the third pair, the probabilities were logit −1(−0.40) = 0 .401 and logit −1(0 .40) = 0 .599. This setting created two strongly dependent cross-block attribute pairs and one weakly dependent pair. The two item blocks used identical 24 × 3 true Q-matrices. Let 
+
+Q0 =
+
+
+
+1 1 01 0 10 1 1
+
+ , Qe =
+
+
+
+I3
+
+I3
+
+I3
+
+Q0
+
+ . (3) We set 
+
+Q1 = Q2 =
+
+Qe
+
+Qe
+
+
+
+. (4) Consequently, within each 24-item block, each attribute was measured by six single-attribute items, and each of the three pairwise attribute combinations was measured by two items. The complete 48 × 6 loading structure was block diagonal, diag( Q1, Q2). 
+
+4.1 Model fitting and comparison 
+
+For EACDM, we fitted all nine candidate dimension pairs with K1, K 2 ∈ { 2, 3, 4}. For the conventional CDM, the two response blocks were concatenated and all 48 items were modeled using one unstructured latent attribute vector. We fitted conventional CDMs with K ∈{2, 3, 4, 5, 6} and included only main attribute effects in the ordinal measurement model. Thus, the conventional CDM was not supplied with the item-block partition and did not include the structural equation in (1). Each candidate model was estimated using 3,000 MCMC iterations, with the first 2,000 iterations treated as burn-in. For each replicate and method, the candidate with the smallest modified BIC was selected. As shown in Table S1, EACDM selected the true dimensions ( K1, K 2) = (3 , 3) in all 100 replicates. The conventional CDM selected the true total dimension K = 6 in only 2% of replicates and most often selected K = 4. Figures S5 and S6 compare the complete true blockwise Q-matrix with the corresponding posterior mean estimate, averaged over replicates having the modal selected dimensions. The horizontal line separates the two 24-item blocks. In the true and EACDM matrices, the vertical 8Table S1: BIC-based latent-dimension selection in the simulation comparison. Model Selected latent dimension Count Proportion EACDM (K1, K 2) = (3 , 3) 100 1.00 Conventional CDM K = 4 65 0.65 Conventional CDM K = 5 33 0.33 Conventional CDM K = 6 2 0.02 line separates the two sets of three block-specific latent attributes. The EACDM result closely reproduces this block-diagonal structure. In contrast, the conventional CDM represents all 48 items using four common latent attributes and mixes item–attribute patterns across the two item blocks. The comparison illustrates why an unstructured CDM can underestimate the effective latent dimension when strongly dependent attributes are represented as a single attribute vector. 
+
+# 5 Data preprocessing in PPMI application 
+
+Because the assessment schedules in PPMI differ across instruments, requiring MDS–UPDRS, SCOPA–AUT, and MoCA to be available at the same visit would be overly restrictive and would lead to a substantial loss of participants. We therefore used a closely spaced early-visit window consisting of Screening (SC), Baseline (BL), Visit 01 (V01), and Visit 02 (V02). According to the PPMI visit schedule, SC and BL are adjacent early study visits, V01 is scheduled approximately 3 months after baseline, and V02 approximately 6 months after baseline. Thus, although the selected assessments were not always administered at the same nominal visit, they were taken from an early period of follow-up in which disease progression is expected to have a more limited impact than over later visits. The eligible visits differed by instrument because the three assessments were not administered at exactly the same set of visits. MDS–UPDRS records were selected from SC, V01, or V02, whereas SCOPA–AUT and MoCA records were selected from SC, BL, V01, or V02. After applying the visit and completeness filters, one eligible record per participant was retained for each assessment. In the final analytic sample, MDS–UPDRS records came from SC for 49 participants, V01 for 445 participants, and V02 for 633 participants. SCOPA–AUT records came from BL for 1,124 participants and V02 for 3 participants, while MoCA records came from SC for 1,126 participants and BL for 1 participant. Consequently, the analytic dataset primarily aligned MDS–UPDRS assessments from V01 or V02 with SCOPA–AUT assessments from BL and MoCA assessments from SC. This early-window strategy allowed us to retain participants whose assessments were administered on different PPMI schedules while limiting the temporal separation among the measurements. 9Figure S5: Complete true and estimated blockwise Q-matrices for EACDM in the simulation comparison. The posterior mean matrix is averaged over the replicates with the modal selected dimensions ( K1, K 2) = (3 , 3) and thresholded at 0.5. The horizontal line separates the two item blocks, and the vertical line separates their block-specific latent attributes. Dark cells indicate active item–attribute relationships. 
+
+Figure S6: Complete true blockwise Q-matrix and the estimated Q-matrix from the conventional CDM. The posterior mean matrix is averaged over the replicates with the modal selected dimension K = 4 and thresholded at 0.5. The horizontal line separates the two item blocks. Unlike EACDM, the conventional CDM uses four common latent attributes for all items and therefore has no block-specific column partition. Dark cells indicate active item–attribute relationships. 10 6 Supplementary Tables for the PPMI Application 
+
+The following tables list the item stems and empirical response-category proportions for the motor and non-motor item sets used in the real-data analysis. Table S2: Motor part: Selected MDS–UPDRS item stems and response-category proportions after preprocessing in the analytic sample of n = 1 ,127 participants. 
+
+Item 0 1 2 3
+
+1. Speech 0.6389 0.2289 0.1145 0.0177 2. Handwriting 0.3940 0.3469 0.1748 0.0843 3. Doing hobbies and other activities 0.5909 0.2848 0.0923 0.0320 4. Tremor 0.2014 0.5359 0.2245 0.0382 5. Rigidity (neck) 0.4933 0.3052 0.1801 0.0214 6. Facial expression 0.2121 0.5058 0.2564 0.0257 7. Rigidity (RUE) 0.3301 0.3416 0.2990 0.0293 8. Rigidity (LUE) 0.4374 0.3159 0.2236 0.0231 9. Rigidity (LLE) 0.6193 0.2343 0.1304 0.0160 10. Finger tapping (R) 0.3194 0.3762 0.2351 0.0693 11. Finger tapping (L) 0.3611 0.3097 0.2449 0.0843 12. Hand movements (R) 0.4286 0.3665 0.1659 0.0390 13. Hand movements (L) 0.4330 0.3372 0.1854 0.0444 14. Pronation-supination movements of hand (R) 0.4286 0.3656 0.1650 0.0408 15. Pronation-supination movements of hand (L) 0.4587 0.3088 0.1819 0.0506 16. Toe tapping (R) 0.4082 0.3860 0.1579 0.0479 17. Toe tapping (L) 0.3780 0.3452 0.2165 0.0603 18. Leg agility (L) 0.5812 0.2848 0.1198 0.0142 19. Posture 0.4623 0.4108 0.1162 0.0107 20. Body bradykinesia 0.2085 0.4437 0.2964 0.0514 21. Rest tremor amplitude (RUE) 0.6238 0.1384 0.1766 0.0612 22. Constancy of rest tremor 0.3780 0.2449 0.1562 0.2209 
+
+Note: The anchor labels before collapsing were 0 = normal, 1 = slight, 2 = mild, 3 = moderate, and 4 = severe; the severe category was collapsed into category 3 for analysis. 
+
+11 Table S3: Non-motor part: Selected MDS–UPDRS, SCOPA, and MoCA item stems and response-category proportions after preprocessing in the analytic sample of n = 1 ,127 participants. 
+
+Item 0 1 2 3
+
+23. Sleep problems 0.4295 0.2626 0.1801 0.1278 24. Daytime sleepiness 0.4463 0.2937 0.2351 0.0249 25. Pain and other sensations 0.4508 0.3594 0.1189 0.0709 26. Urinary problems 0.5146 0.3372 0.1012 0.0470 27. Constipation problems 0.6344 0.2662 0.0728 0.0266 28. Fatigue 0.4685 0.3718 0.1162 0.0435 29. Saliva and drooling 0.6477 0.1473 0.1287 0.0763 30. Had difficulty swallowing 0.7604 0.2130 0.0266 /31. Had been choked 0.8163 0.1704 0.0133 /32. Have the feeling during a meal that you were full very quickly 0.7471 0.2112 0.0417 /33. Have to strain hard to pass stools 0.4862 0.3895 0.1243 /34. Had difficulty retaining urine 0.6371 0.2813 0.0816 /35. Had involuntary loss of urine 0.7125 0.2520 0.0355 /36. Had feeling that after passing urine the bladder was not completely empty 0.5679 0.3319 0.1002 /37. Has the stream of urine been weak 0.5563 0.3310 0.1127 /38. Had to pass urine again within 2 hours of the previous time 0.1917 0.5581 0.2502 /39. Had to pass urine at night 0.1668 0.3638 0.4694 /40. When standing up had the feeling of becoming light-headed 0.6939 0.2751 0.0310 /41. Become light-headed after standing for some time 0.8554 0.1287 0.0159 /42. Perspired excessively during the day 0.7986 0.1464 0.0550 /43. Perspired excessively during the night 0.7409 0.2094 0.0497 /44. Eyes ever been over-sensitive to bright light 0.6877 0.2413 0.0710 /45. Had trouble tolerating cold 0.6593 0.2484 0.0923 /46. Had trouble tolerating heat 0.7516 0.1837 0.0647 /47. Copy cube 0.2547 0.7453 / /48. Draw clock 0.1899 0.8101 / /49. Delayed recall 1 0.4161 0.5839 / /50. Delayed recall 2 0.2298 0.7702 / /51. Delayed recall 3 0.2866 0.7134 / /52. Delayed recall 4 0.4348 0.5652 / /53. Delayed recall 5 0.2999 0.7001 / /
+
+Note: Items 23–28 are from MDS–UPDRS and labels before collapsing were 0 = normal, 1 = slight, 2 = mild, 3 = moderate, and 4 = severe; the severe category was collapsed into category 3 for analysis. Items 29–46 are from SCOPA and labels before collapsing were 0 = never, 1 = sometimes, 2 = regularly, and 3 = often; the often category was collapsed into category 2 for analysis. Items 47–53 are from MoCA and labels were 0 = wrong and 1 = correct. 
+
+12 In addition to the item-level summaries, we report posterior summaries of the structural coefficients η from the selected PPMI model. These coefficients correspond to the logistic structural component linking the non-motor latent attributes and covariates to the motor latent attributes. Thus, each coefficient is interpreted on the log-odds scale: positive values indicate higher posterior probability of endorsing the corresponding motor attribute, conditional on the other predictors, whereas negative values indicate lower posterior probability. Table S4 reports the posterior mean, 95% credible interval, and posterior probability of a positive effect for each coefficient. Table S4: Posterior summaries of the structural coefficients η in the selected PPMI model with 
+
+K1 = 3 motor attributes and K2 = 4 non-motor attributes. The motor attributes are ordered as right-side motor impairment, global motor impairment, and left-side motor impairment. The non-motor attributes α(2) 1 , α(2) 2 , and α(2) 3 correspond to broad non-motor/autonomic burden attributes, whereas α(2) 4 corresponds to cognitive proficiency. Positive coefficients indicate increased log-odds of endorsing the corresponding motor attribute. 
+
+Predictor Motor attribute Mean 2.5% 97.5% Pr( η > 0) Intercept Right-side motor -0.638 -1.426 0.151 0.056 
+
+α(2) 1 Right-side motor 0.184 -0.162 0.535 0.847 
+
+α(2) 2 Right-side motor -0.239 -0.645 0.163 0.120 
+
+α(2) 3 Right-side motor -0.788 -1.228 -0.361 0.000 
+
+α(2) 4 Right-side motor -0.335 -0.721 0.050 0.044 Age Right-side motor 0.838 -0.271 1.946 0.931 Caudate uptake Right-side motor 0.383 0.128 0.641 0.998 Putamen uptake Right-side motor -0.571 -0.855 -0.292 0.000 Intercept Global motor -0.985 -1.865 -0.118 0.013 
+
+α(2) 1 Global motor 0.717 0.283 1.156 0.999 
+
+α(2) 2 Global motor 0.557 0.102 1.011 0.992 
+
+α(2) 3 Global motor 1.370 0.835 1.940 1.000 
+
+α(2) 4 Global motor 0.121 -0.314 0.563 0.705 Age Global motor 0.082 -1.132 1.292 0.552 Caudate uptake Global motor 0.145 -0.144 0.437 0.837 Putamen uptake Global motor -1.216 -1.595 -0.854 0.000 Intercept Left-side motor -0.743 -1.566 0.078 0.038 
+
+α(2) 1 Left-side motor 0.202 -0.178 0.582 0.850 
+
+α(2) 2 Left-side motor -0.073 -0.501 0.353 0.369 
+
+α(2) 3 Left-side motor 1.346 0.873 1.842 1.000 
+
+α(2) 4 Left-side motor 0.206 -0.201 0.619 0.839 Age Left-side motor 0.639 -0.517 1.797 0.860 Caudate uptake Left-side motor 0.094 -0.174 0.363 0.752 Putamen uptake Left-side motor -0.842 -1.149 -0.546 0.000 
+
+13 References 
+
+Steven Andrew Culpepper. An exploratory diagnostic model for ordinal responses with binary attributes: Identifiability and estimation. Psychometrika , 84(4):921–940, 2019. Yuqi Gu and Gongjun Xu. Sufficient and necessary conditions for the identifiability of the Q-matrix. Statistica Sinica , 31:449–472, 2021. Gongjun Xu. Identifiability of restricted latent class models with binary responses. The Annals of Statistics , 45(2):675–707, 2017. doi: {{ 10.1214/16-AOS1464 }} .Gongjun Xu and Zhuoran Shang. Identifying latent structures in restricted latent class models. 
+
+Journal of the American Statistical Association , 113(523):1284–1295, 2018. 14

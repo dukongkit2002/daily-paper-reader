@@ -6,26 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-08-11
-- 运行时间：2026-08-11 20:57:40 UTC
+- 最新运行日期：2026-08-12
+- 运行时间：2026-08-12 21:05:36 UTC
 - 运行状态：成功
 - 本次总论文数：1
-- 精读区：1
-- 速读区：0
+- 精读区：0
+- 速读区：1
 
 ### 今日简报（AI）
-今日精读高分论文《EEG-Based Characterization of Samatha and Vipassana Meditation States》，用脑电信号量化区分了两种核心冥想状态。  
-研究揭示 Samatha（止禅）与 Vipassana（观禅）在脑部节律及空间分布上存在可测量的特征差异，为冥想的神经机制提供了清晰对比。  
-想更客观理解冥想效果，不妨从这类脑电研究中接触不同冥想技法带来的实质变化。
-- 详情：[/202608/11/README](/202608/11/README)
+今天速读了一篇关于多域有序评估的认知诊断模型论文，评分 6.0/10。  
+核心看点是它提出内生性感知的建模思路，可能减少多域有序数据中的偏差。  
+建议对教育测量或认知诊断感兴趣的读者，可进一步查看其方法细节或寻找配套实证验证。
+- 详情：[/202608/12/README](/202608/12/README)
 
 ### 精读区论文标签
-1. [EEG-Based Characterization of Samatha and Vipassana Meditation States](/202608/11/2608.09784v1-eeg-based-characterization-of-samatha-and-vipassana-meditation-states)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：从冥想状态的EEG信号中提取频带功率和小波熵
+- 本次无精读推荐。
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments](/202608/12/2608.10913v1-endogeneity-aware-cognitive-diagnostic-model-for-multidomain-ordinal-assessments)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：提出内生性感知认知诊断模型，用于潜在特质测量，可应用于批判性思维倾向评估。
 
 
 <div class="dpr-home-promo-card">
