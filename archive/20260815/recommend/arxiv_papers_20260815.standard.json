@@ -1,0 +1,60 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-15T20:34:32.748165+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2608.10647v1",
+      "source": "arxiv",
+      "title": "ProtoGIB-Workload: Learning Workload-Specific Neural Topology Prototypes across Subjects",
+      "abstract": "Reliable electroencephalography (EEG)-based mental workload recognition is crucial for adaptive human-centered systems, yet practical deployment requires models to generalize to users unseen during training. Although functional connectivity graphs are widely adopted to capture workload-related neural interactions, they inherently entangle task-relevant structures with subject-specific physiological traits and sample-level noise. This entanglement often leads models to learn structural shortcuts, severely degrading cross-subject generalization. To address this, we propose ProtoGIB-Workload, a novel framework that explicitly regularizes and aligns graph structures for subject-independent workload recognition. Our approach introduces a Stochastic Graph Information Bottleneck (SGIB) to compress dense correlation priors into compact, task-relevant subgraphs, filtering out input-related redundancy. Crucially, to prevent the retention of subject-specific spurious edges, we propose a Class-Conditional Topology Stabilizer (CTS). Leveraging the fixed electrode coordinates of EEG data, CTS operates directly on graph-generation probabilities to encourage consistent edge-generation statistics across different subjects sharing the same workload class. Extensive experiments on two public EEG workload datasets and one in-house EEG cognitive load dataset of air traffic controllers under strict leave-one-subject-out (LOSO) protocols demonstrate that ProtoGIB-Workload significantly outperforms state-of-the-art temporal and graph-based baselines, improving the cross-subject Macro-F1 score by an average of 5.15% (up to 6.34%). Further analyses confirm that our method successfully extracts stable, cross-subject consistent neural connectivity patterns.",
+      "authors": [
+        "Yuzhe Zhang",
+        "Yixi Zhang",
+        "Shengdian Jiang",
+        "Chengxi Xie",
+        "Jihong Wang",
+        "Huan Liu",
+        "Man Yao",
+        "Minnan Luo",
+        "Chao Shen"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-08-11T08:31:31+00:00",
+      "link": "https://arxiv.org/pdf/2608.10647v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "EEG-based mental workload recognition using functional connectivity graphs for cross-subject generalization",
+      "llm_evidence_cn": "基于EEG的脑力负荷识别，利用功能连接图进行跨被试泛化",
+      "llm_evidence": "基于EEG的脑力负荷识别，利用功能连接图进行跨被试泛化",
+      "canonical_evidence": "基于EEG的脑力负荷识别，利用功能连接图进行跨被试泛化",
+      "llm_tldr_en": "This paper addresses the poor cross-subject generalization of EEG-based mental workload recognition caused by entanglement of task-relevant neural structures with subject-specific traits. It proposes ProtoGIB-Workload, a framework that regularizes and aligns functional connectivity graphs to learn workload-specific neural topology prototypes. Experiments show improved subject-independent recognition, demonstrating a more robust EEG feature learning method for cognitive workload assessment.",
+      "llm_tldr_cn": "该论文针对基于EEG的脑力负荷识别在跨被试场景中因任务相关神经结构与个体生理特征及噪声纠缠而导致泛化差的问题，提出ProtoGIB-Workload框架。该框架通过显式正则化和对齐功能连接图，学习工作负荷特异的神经拓扑原型。实验表明该方法在跨被试条件下显著提升了识别性能，为认知负荷评估提供了一种更鲁棒的EEG特征学习方法。",
+      "llm_tldr": "该论文针对基于EEG的脑力负荷识别在跨被试场景中因任务相关神经结构与个体生理特征及噪声纠缠而导致泛化差的问题，提出ProtoGIB-Workload框架。该框架通过显式正则化和对齐功能连接图，学习工作负荷特异的神经拓扑原型。实验表明该方法在跨被试条件下显著提升了识别性能，为认知负荷评估提供了一种更鲁棒的EEG特征学习方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-15",
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T20:36:41",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/15/2608.10647v1-protogib-workload-learning-workload-specific-neural-topology-prototypes-across-subjects",
+      "section": "quick",
+      "title_en": "ProtoGIB-Workload: Learning Workload-Specific Neural Topology Prototypes across Subjects",
+      "authors": "Yuzhe Zhang, Yixi Zhang, Shengdian Jiang, Chengxi Xie, Jihong Wang, Huan Liu, Man Yao, Minnan Luo, Chao Shen",
+      "date": "2026-08-11",
+      "pdf": "https://arxiv.org/pdf/2608.10647v1",
+      "score": "6.0",
+      "evidence": "基于EEG的脑力负荷识别，利用功能连接图进行跨被试泛化",
+      "tldr": "针对脑电心理负荷识别跨被试泛化难题，功能连接图常混杂个体生理差异和样本噪声，导致模型依赖结构捷径。本文提出ProtoGIB-Workload，通过随机图信息瓶颈将稠密相关先验压缩为紧凑任务子图，并利用类条件拓扑稳定器约束同类跨被试的边生成概率一致。在三个脑电数据集（含空管认知负荷）的留一被试协议下，跨被试Macro-F1平均提升5.15%、最高6.34%，优于现有时间与图方法。该框架有效解耦任务相关结构与个体噪声，提取稳定跨被试神经连接模式，推动脑电负荷识别走向实用自适应系统。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Reliable electroencephalography (EEG)-based mental workload recognition is crucial for adaptive human-centered systems, yet practical deployment requires models to generalize to users unseen during training. Although functional connectivity graphs are widely adopted to capture workload-related neural interactions, they inherently entangle task-relevant structures with subject-specific physiological traits and sample-level noise. This entanglement often leads models to learn structural shortcuts, severely degrading cross-subject generalization. To address this, we propose ProtoGIB-Workload, a novel framework that explicitly regularizes and aligns graph structures for subject-independent workload recognition. Our approach introduces a Stochastic Graph Information Bottleneck (SGIB) to compress dense correlation priors into compact, task-relevant subgraphs, filtering out input-related redundancy. Crucially, to prevent the retention of subject-specific spurious edges, we propose a Class-Conditional Topology Stabilizer (CTS). Leveraging the fixed electrode coordinates of EEG data, CTS operates directly on graph-generation probabilities to encourage consistent edge-generation statistics across different subjects sharing the same workload class. Extensive experiments on two public EEG workload datasets and one in-house EEG cognitive load dataset of air traffic controllers under strict leave-one-subject-out (LOSO) protocols demonstrate that ProtoGIB-Workload significantly outperforms state-of-the-art temporal and graph-based baselines, improving the cross-subject Macro-F1 score by an average of 5.15% (up to 6.34%). Further analyses confirm that our method successfully extracts stable, cross-subject consistent neural connectivity patterns.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

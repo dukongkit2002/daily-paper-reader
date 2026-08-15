@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-08-15 <!--dpr-date:20260815-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/15/2608.10647v1-protogib-workload-learning-workload-specific-neural-topology-prototypes-across-subjects" data-sidebar-item="{&quot;title&quot;: &quot;ProtoGIB-Workload: Learning Workload-Specific Neural Topology Prototypes across Subjects&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.10647v1-protogib-workload-learning-workload-specific-neural-topology-prototypes-across-subjects&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;基于EEG的脑力负荷识别，利用功能连接图进行跨被试泛化&quot;}">ProtoGIB-Workload: Learning Workload-Specific Neural Topology Prototypes across Subjects</a>
   * 2026-08-12 <!--dpr-date:20260812-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/12/2608.10913v1-endogeneity-aware-cognitive-diagnostic-model-for-multidomain-ordinal-assessments" data-sidebar-item="{&quot;title&quot;: &quot;Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.10913v1-endogeneity-aware-cognitive-diagnostic-model-for-multidomain-ordinal-assessments&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;提出内生性感知认知诊断模型，用于潜在特质测量，可应用于批判性思维倾向评估。&quot;}">Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments</a>
