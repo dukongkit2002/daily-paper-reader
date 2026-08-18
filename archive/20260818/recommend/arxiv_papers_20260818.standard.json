@@ -1,0 +1,54 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-18T20:55:51.643357+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2608.16541v1",
+      "source": "arxiv",
+      "title": "Automating Learner Assessment: Benchmarking Machine Learning and Deep Learning Models for EEG-Based Familiarity Prediction",
+      "abstract": "Objective assessment of learning remains a fundamental challenge in education. Electroencephalography (EEG) provides a direct, non-invasive window into the neural correlates of knowledge acquisition, including cognitive familiarity. This study benchmarks fifteen machine learning (ML) and deep learning (DL) models for EEG-based familiarity prediction across two cognitive domains: faces (factual knowledge) and mathematical equations (conceptual knowledge). Using continuous EEG data from 23 participants, we extract spectral features (Power Spectral Density) across six frequency bands. We show that while standard stratified cross-validation yields artificially high classification performance (up to 0.9853 F1-score using CNN) due to temporal leakage across neighboring epochs, a rigorous trial-independent validation (Group K-Fold) drops the peak performance to 0.6038 F1-score (using CNN), which is still statistically significant above the 25% chance level. This highlights the critical necessity of trial-independent evaluation to avoid overestimating model generalizability. Furthermore, feature importance and SHAP analysis reveal that temporal and frontal Gamma and Beta oscillations are the most critical biomarkers for familiarity. This work establishes a realistic benchmark for EEG-based cognitive monitoring in educational technologies.",
+      "authors": [
+        "Isuru Nanayakkara",
+        "Thilina Halloluwa"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "published": "2026-08-17T13:15:45+00:00",
+      "link": "https://arxiv.org/pdf/2608.16541v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Uses EEG power spectral density across six bands to predict cognitive familiarity during learning tasks",
+      "llm_evidence_cn": "使用脑电六个频段的功率谱密度预测认知熟悉度",
+      "llm_evidence": "使用脑电六个频段的功率谱密度预测认知熟悉度",
+      "canonical_evidence": "使用脑电六个频段的功率谱密度预测认知熟悉度",
+      "llm_tldr_en": "This study benchmarks fifteen ML and DL models on EEG spectral features (PSD) for predicting familiarity in factual and conceptual knowledge domains, revealing inflated performance under standard cross-validation.",
+      "llm_tldr_cn": "该研究针对教育中客观评估学习的挑战，利用脑电信号提取六个频段的功率谱密度特征，对15种机器学习和深度学习模型进行基准测试，以预测面孔和数学方程两类认知熟悉度。实验发现标准分层交叉验证会高估分类性能。该工作展示了脑电频谱特征在学习评估中的潜力，并为后续认知任务中的脑电分析提供基准。",
+      "llm_tldr": "该研究针对教育中客观评估学习的挑战，利用脑电信号提取六个频段的功率谱密度特征，对15种机器学习和深度学习模型进行基准测试，以预测面孔和数学方程两类认知熟悉度。实验发现标准分层交叉验证会高估分类性能。该工作展示了脑电频谱特征在学习评估中的潜力，并为后续认知任务中的脑电分析提供基准。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}

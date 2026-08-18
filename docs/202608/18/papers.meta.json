@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-18",
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T21:00:18",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/18/2608.16541v1-automating-learner-assessment-benchmarking-machine-learning-and-deep-learning-models-for-eeg-based-familiarity-prediction",
+      "section": "deep",
+      "title_en": "Automating Learner Assessment: Benchmarking Machine Learning and Deep Learning Models for EEG-Based Familiarity Prediction",
+      "authors": "Isuru Nanayakkara, Thilina Halloluwa",
+      "date": "2026-08-17",
+      "pdf": "https://arxiv.org/pdf/2608.16541v1",
+      "score": "9.0",
+      "evidence": "使用脑电六个频段的功率谱密度预测认知熟悉度",
+      "tldr": "客观评估学习是教育中的根本挑战，脑电图（EEG）可无创监测知识获取的神经关联。本研究在23名参与者上基准测试15种机器学习与深度学习模型，提取六个频段功率谱密度特征预测熟悉度。标准分层交叉验证因时间泄漏高估性能（F1最高0.9853），采用试次独立的组K折验证后峰值降至0.6038，仍显著高于25%随机水平；颞叶和额叶Gamma及Beta振荡是关键生物标志物。该工作为教育技术中的EEG认知监测建立了现实基准，并强调试次独立评估的必要性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Objective assessment of learning remains a fundamental challenge in education. Electroencephalography (EEG) provides a direct, non-invasive window into the neural correlates of knowledge acquisition, including cognitive familiarity. This study benchmarks fifteen machine learning (ML) and deep learning (DL) models for EEG-based familiarity prediction across two cognitive domains: faces (factual knowledge) and mathematical equations (conceptual knowledge). Using continuous EEG data from 23 participants, we extract spectral features (Power Spectral Density) across six frequency bands. We show that while standard stratified cross-validation yields artificially high classification performance (up to 0.9853 F1-score using CNN) due to temporal leakage across neighboring epochs, a rigorous trial-independent validation (Group K-Fold) drops the peak performance to 0.6038 F1-score (using CNN), which is still statistically significant above the 25% chance level. This highlights the critical necessity of trial-independent evaluation to avoid overestimating model generalizability. Furthermore, feature importance and SHAP analysis reveal that temporal and frontal Gamma and Beta oscillations are the most critical biomarkers for familiarity. This work establishes a realistic benchmark for EEG-based cognitive monitoring in educational technologies.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
