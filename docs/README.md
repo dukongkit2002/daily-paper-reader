@@ -6,26 +6,29 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-08-18
-- 运行时间：2026-08-18 20:59:46 UTC
+- 最新运行日期：2026-08-19
+- 运行时间：2026-08-19 20:53:53 UTC
 - 运行状态：成功
-- 本次总论文数：1
-- 精读区：1
-- 速读区：0
+- 本次总论文数：2
+- 精读区：0
+- 速读区：2
 
 ### 今日简报（AI）
-- 今日共生成 1 篇推荐（精读 1 篇，速读 0 篇）
-- 精读：《Automating Learner Assessment: Benchmarking Machine Learning and Deep Learning Models for EEG-Based Familiarity Prediction》（9.0/10）
+- 今日共生成 2 篇推荐（精读 0 篇，速读 2 篇）
+- 速读：《EEG-PRISM: Physiologically-Grounded Interpretability of Predictions by EEG Foundation Models》（6.0/10）, 《Delta2Gamma: Band-Wise Adaptive Contrastive Learning of EEG for Alzheimer's Disease Detection》（6.0/10）
 - 这些结果覆盖了当下较热的方向，建议先看精读区论文的关键问题与方法。
-- 详情：[/202608/18/README](/202608/18/README)
+- 详情：[/202608/19/README](/202608/19/README)
 
 ### 精读区论文标签
-1. [Automating Learner Assessment: Benchmarking Machine Learning and Deep Learning Models for EEG-Based Familiarity Prediction](/202608/18/2608.16541v1-automating-learner-assessment-benchmarking-machine-learning-and-deep-learning-models-for-eeg-based-familiarity-prediction)  
-   标签：评分：9.0/10、query:cog-eeg-mpfc
-   evidence：使用脑电六个频段的功率谱密度预测认知熟悉度
+- 本次无精读推荐。
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [EEG-PRISM: Physiologically-Grounded Interpretability of Predictions by EEG Foundation Models](/202608/19/2608.13676v1-eeg-prism-physiologically-grounded-interpretability-of-predictions-by-eeg-foundation-models)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：通过可逆DFT将EEG基础模型归因映射到频域，实现频谱可解释性
+2. [Delta2Gamma: Band-Wise Adaptive Contrastive Learning of EEG for Alzheimer's Disease Detection](/202608/19/2608.17231v1-delta2gamma-band-wise-adaptive-contrastive-learning-of-eeg-for-alzheimers-disease-detection)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：将脑电分解为五个经典频段并进行自适应对比学习，与认知中的频谱功率分析相关
 
 
 <div class="dpr-home-promo-card">
