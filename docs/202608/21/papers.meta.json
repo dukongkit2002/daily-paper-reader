@@ -1,0 +1,69 @@
+{
+  "label": "2026-08-21",
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T20:59:26",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202608/21/biorxiv-10-64898-2026-08-14-744875-v1-brain-language-alignment-during-naturalistic-reading-and-its-disruption-by-mind-wandering",
+      "section": "deep",
+      "title_en": "Brain-Language Alignment During Naturalistic Reading and Its Disruption by Mind-Wandering",
+      "authors": "Sun, H., Jangraw, D. C.",
+      "date": "2026-08-19",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.14.744875v1.full.pdf",
+      "score": "9.0",
+      "evidence": "在自然阅读认知任务中分析EEG频谱功率和注视相关电位",
+      "tldr": "自然阅读中EEG脑-语言对齐是否可检测及受心游荡影响尚不明确。本研究使用ROAMM数据集44名被试的同时EEG和眼动记录，以岭回归编码模型结合五种词嵌入预测注视相关EEG特征。结果发现可靠脑-语言对齐，上下文嵌入优于静态嵌入，且在alpha/低β频段及注视后200-300ms最强。心游荡显著降低对齐，对频谱特征影响更大，表明注意力波动是编码研究中被低估的变异性来源。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Encoding models offer a principled framework for linking computational representations of language to neural activity, but most electroencephalography (EEG) evidence for brain--language alignment comes from tightly controlled, word-by-word reading paradigms. Whether such alignment is detectable during naturalistic reading, and how it is affected by lapses in attention, remains unclear. We addressed these questions using ROAMM, a multimodal dataset containing simultaneous EEG and eye-tracking recordings with time-resolved mind-wandering (MW) annotations from 44 participants reading naturalistic texts. Ridge regression encoding models were trained to predict fixation-aligned EEG spectral power and fixation-related potentials (FRPs) from five word-embedding models (GloVe, word2vec, BERT, GPT-2, and Llama 3). Using permutation testing with false discovery rate correction, we found statistically reliable brain--language alignment across both feature types, with contextual embeddings outperforming static embeddings. Spectral alignment was strongest in the alpha and low-beta bands over parietal electrodes, while FRP-based alignment peaked 200--300 ms after fixation onset over central and parietal-occipital regions. Leveraging ROAMM's span-level MW annotations, we further show that brain--language alignment is systematically reduced during MW, an effect that was substantially larger for oscillatory (PSD) than for event-related (FRP) features. These findings demonstrate that modern language-model representations are reflected in EEG activity during naturalistic reading despite the modality's inherent noise, and that fluctuations in attention constitute an underappreciated source of variability in brain--language encoding studies.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/21/biorxiv-10-64898-2026-08-14-744886-v1-cognitive-exertion-reshapes-resting-state-eeg-markers-across-the-adult-lifespan",
+      "section": "deep",
+      "title_en": "Cognitive exertion reshapes resting-state EEG markers across the adult lifespan",
+      "authors": "Ban, K., Weiss, B., Auer, T., Gajewski, P. D., Wascher, E., Vidnyanszky, Z.",
+      "date": "2026-08-19",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.08.14.744886v1.full.pdf",
+      "score": "9.0",
+      "evidence": "在认知任务前后对静息态脑电进行周期性与非周期性参数化分析，聚焦α功率与非周期指数。",
+      "tldr": "静息态脑电的个体α峰频、α功率和非周期指数常用于衰老研究，但其状态依赖性与特质性尚不明确。本研究在寿命队列、五年纵向和老年独立数据集中比较认知任务前后的周期性与非周期性参数。结果发现认知努力导致全年龄iAPF减慢和α功率增加，而非周期指数变化随年龄改变：年轻人任务后变陡，老年人变平，年龄对任务后指数影响更强。这表明常用频谱指标具有急性状态依赖性，任务后记录可为健康衰老和病理个体差异提供转化框架。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Resting-state electroencephalography (rsEEG) yields robust indices of ageing, notably individual alpha peak frequency (iAPF), alpha power, and the aperiodic exponent. Whether these markers reflect stable traits or shift with cognitive exertion remains unresolved, with direct consequences for lifespan and clinical research. We parameterised periodic and aperiodic rsEEG activity before and after cognitive tasks in a lifespan cohort (N = 390, aged 20-70), a five-year longitudinal follow-up (N = 100), and an independent older-adult dataset completing a different task (N = 71). Across datasets, cognitive exertion produced lifespan-wide iAPF slowing and increase in associated power. Notably, aperiodic shifts were age-dependent, with post-task steepening of the exponent in younger adults that progressively flattened with advancing age, resulting in a stronger effect of age on post-task exponents. Our results demonstrate that widely used spectral metrics exhibit acute state-dependency and post-task recordings offer a promising translational framework for indexing individual differences in healthy ageing and pathology.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/21/2608.16541v2-automating-learner-assessment-benchmarking-machine-learning-and-deep-learning-models-for-eeg-based-familiarity-prediction",
+      "section": "deep",
+      "title_en": "Automating Learner Assessment: Benchmarking Machine Learning and Deep Learning Models for EEG-Based Familiarity Prediction",
+      "authors": "Isuru Nanayakkara, Thilina Halloluwa",
+      "date": "2026-08-17",
+      "pdf": "https://arxiv.org/pdf/2608.16541v2",
+      "score": "8.0",
+      "evidence": "在认知领域熟悉度预测任务中提取EEG功率谱密度特征",
+      "tldr": "客观评估学习是教育核心挑战，脑电（EEG）可反映认知熟悉度。本研究系统对比15种机器学习与深度学习模型，在面孔与数学方程两个认知域上预测EEG熟悉度。发现标准交叉验证因时间泄漏高估性能（CNN F1达0.9853），而采用试验独立验证后峰值降至0.6038，但仍显著高于随机水平。该工作确立了EEG教育认知监测的现实基准，并揭示额叶Gamma和Beta振荡为关键标志物。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Objective assessment of learning remains a fundamental challenge in education. Electroencephalography (EEG) provides a direct, non-invasive window into the neural correlates of knowledge acquisition, including cognitive familiarity. This study benchmarks fifteen machine learning (ML) and deep learning (DL) models for EEG-based familiarity prediction across two cognitive domains: faces (factual knowledge) and mathematical equations (conceptual knowledge). Using continuous EEG data from 23 participants, we extract spectral features (Power Spectral Density) across six frequency bands. We show that while standard stratified cross-validation yields artificially high classification performance (up to 0.9853 F1-score using CNN) due to temporal leakage across neighboring epochs, a rigorous trial-independent validation (Group K-Fold) drops the peak performance to 0.6038 F1-score (using CNN), which is still statistically significant above the 25% chance level. This highlights the critical necessity of trial-independent evaluation to avoid overestimating model generalizability. Furthermore, feature importance and SHAP analysis reveal that temporal and frontal Gamma and Beta oscillations are the most critical biomarkers for familiarity. This work establishes a realistic benchmark for EEG-based cognitive monitoring in educational technologies.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/21/biorxiv-10-1101-2025-07-21-665987-v2-activity-induced-weakening-of-hippocampal-input-to-prefrontal-vip-interneurons-reshapes-inhibitory-microcircuit-function-implications-for-spatial-working-memory-task-acquisition",
+      "section": "quick",
+      "title_en": "Activity-induced weakening of hippocampal input to prefrontal VIP interneurons reshapes inhibitory microcircuit function: implications for spatial working memory task acquisition.",
+      "authors": "Silverstein, S. E., Clarity, T. T., Deshpande, M. S., Vaughan, E., Novik, S., Yarur, H. E., Zhang, S., Tsai, V. S., Ye, R., Mikofsky, R. M., Hsiang, M., Bauman, A., Loewinger, G., Pereira, F., Morales, M., Sohal, V. S., Tejeda, H., Gordon, J. A., Kupferschmidt, D. A.",
+      "date": "2026-08-19",
+      "pdf": "https://www.biorxiv.org/content/10.1101/2025.07.21.665987v2.full.pdf",
+      "score": "7.0",
+      "evidence": "研究腹侧海马至内侧前额叶皮层中间神经元的输入及其在空间工作记忆中的作用，属于高级认知执行功能",
+      "tldr": "腹侧海马至内侧前额叶皮层投射支持空间工作记忆，但其对中间神经元招募及可塑性机制不明。本研究结合光刺激与钙成像，发现活动诱导海马对VIP中间神经元的单突触驱动持续减弱，从而重塑抑制性微环路。该变化与Df(16)A+/-突变所致效应趋同，均伴随VIP中间神经元活动异常和空间工作记忆学习受损。结果揭示海马-VIP中间神经元通路是调控工作记忆相关微环路功能的关键可塑性位点。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Long-range projections from ventral hippocampus (vHPC) to medial prefrontal cortex (mPFC) support cognitive functions including spatial working memory (SWM). vHPC input targets multiple prefrontal interneuron classes, yet how hippocampal input recruits these populations in vivo, whether this recruitment is plastic, and how such plasticity influences cognition remain unknown. Here, we combined optical stimulation of mouse vHPC inputs with calcium recordings from discrete mPFC interneuron populations, revealing persistent activity-induced reweighting of hippocampal recruitment across prefrontal inhibitory microcircuits. Ex vivo electrophysiology and computational modeling implicated weakened monosynaptic hippocampal drive onto vasoactive intestinal polypeptide (VIP)-expressing interneurons in this circuit reconfiguration. Prior vHPC input stimulation and the schizophrenia-associated Df(16)A+/- mutation, which also yielded reduced hippocampal input onto VIP interneurons, produced convergent alterations in task-related VIP interneuron activity associated with poorer SWM task learning. These findings implicate hippocampal input to VIP interneurons as a key locus of plasticity capable of reconfiguring inhibitory microcircuit activity linked to impaired working memory task learning.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
