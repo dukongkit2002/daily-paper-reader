@@ -1,0 +1,24 @@
+{
+  "label": "2026-08-24",
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T20:50:52",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202608/24/2608.20822v1-interaction-effects-between-learner-characteristics-and-dialogue-format-in-tts-dialogue-based-lessons",
+      "section": "deep",
+      "title_en": "Interaction Effects Between Learner Characteristics and Dialogue Format in TTS Dialogue-Based Lessons",
+      "authors": "Fumie Watanabe, Tota Suko, Takashi Ishida, Yuko Kuma, Manabu Kobayashi, Shigeichi Hirasawa, Gendo Kumoi",
+      "date": "2026-08-21",
+      "pdf": "https://arxiv.org/pdf/2608.20822v1",
+      "score": "8.0",
+      "evidence": "将批判性思维倾向作为学习者特征研究其与对话形式的交互作用",
+      "tldr": "本研究考察基于大语言模型与语音合成的三种对话格式（师-生、生-生、师-师）课程中，学习者经验学习风格（CE/RCE）和批判性思维倾向对动机、学习结果及评价的交互影响。222名高一学生参与重复测量实验，采用线性混合模型分析。结果显示：动机上存在显著交互，CE在师-师格式正向效应更强而RCE较弱，学习结果仅呈趋势；师-师格式总体评价显著低于师-生，与动机效应相反。提示应根据学习者特征选择对话格式，但效应量小到中等，仅为个性化设计提供初步证据。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "This study examined how learner characteristics affect motivation, learning outcomes, and overall evaluation in three types of dialogue-based lessons---(1) teacher--student, (2) student--student, and (3) teacher--teacher---generated using a large language model (LLM) and Text-to-Speech (TTS) technology. In particular, we focused on the interaction effects between dialogue format and learners' experiential learning style (the Concrete Experience factor, CE; and the factor of active experimentation through reflective observation and abstract conceptualization, RCE) and critical thinking disposition. Using a repeated-measures design with 222 first-year high school students, we analyzed the data with linear mixed-effects models. The results showed a significant interaction between learner characteristics and dialogue format for ARCS-based motivation. Specifically, the effect of the CE factor on motivation was more strongly positive in the teacher--teacher format than in the teacher--student format, whereas the positive effect of the RCE factor was relatively weaker in the teacher--teacher format. For learning outcomes, the interactions between dialogue format and both the CE and RCE factors showed a trend toward significance. No significant interaction emerged for overall evaluation; however, the overall evaluation of the teacher--teacher format was significantly lower than that of the teacher--student format, a pattern that diverged from the positive effect observed for motivation. These results suggest that dialogue format should be selected according to learner characteristics in TTS dialogue-based lessons. Because the effect sizes of the significant interactions were all small to medium, however, the findings of this study should be regarded as preliminary evidence for the design of personalized learning.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

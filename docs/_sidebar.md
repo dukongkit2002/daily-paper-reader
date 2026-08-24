@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-08-24 <!--dpr-date:20260824-->
+    * 精读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/24/2608.20822v1-interaction-effects-between-learner-characteristics-and-dialogue-format-in-tts-dialogue-based-lessons" data-sidebar-item="{&quot;title&quot;: &quot;Interaction Effects Between Learner Characteristics and Dialogue Format in TTS Dialogue-Based Lessons&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.20822v1-interaction-effects-between-learner-characteristics-and-dialogue-format-in-tts-dialogue-based-lessons&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;将批判性思维倾向作为学习者特征研究其与对话形式的交互作用&quot;}">Interaction Effects Between Learner Characteristics and Dialogue Format in TTS Dialogue-Based Lessons</a>
   * 2026-08-21 <!--dpr-date:20260821-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/21/biorxiv-10-64898-2026-08-14-744875-v1-brain-language-alignment-during-naturalistic-reading-and-its-disruption-by-mind-wandering" data-sidebar-item="{&quot;title&quot;: &quot;Brain-Language Alignment During Naturalistic Reading and Its Disruption by Mind-Wandering&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-64898-2026-08-14-744875-v1-brain-language-alignment-during-naturalistic-reading-and-its-disruption-by-mind-wandering&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;在自然阅读认知任务中分析EEG频谱功率和注视相关电位&quot;}">Brain-Language Alignment During Naturalistic Reading and Its Disruption by Mind-Wandering</a>

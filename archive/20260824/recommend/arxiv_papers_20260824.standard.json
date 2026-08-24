@@ -1,0 +1,57 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-24T20:47:47.081863+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2608.20822v1",
+      "source": "arxiv",
+      "title": "Interaction Effects Between Learner Characteristics and Dialogue Format in TTS Dialogue-Based Lessons",
+      "abstract": "This study examined how learner characteristics affect motivation, learning outcomes, and overall evaluation in three types of dialogue-based lessons---(1) teacher--student, (2) student--student, and (3) teacher--teacher---generated using a large language model (LLM) and Text-to-Speech (TTS) technology. In particular, we focused on the interaction effects between dialogue format and learners' experiential learning style (the Concrete Experience factor, CE; and the factor of active experimentation through reflective observation and abstract conceptualization, RCE) and critical thinking disposition. Using a repeated-measures design with 222 first-year high school students, we analyzed the data with linear mixed-effects models. The results showed a significant interaction between learner characteristics and dialogue format for ARCS-based motivation. Specifically, the effect of the CE factor on motivation was more strongly positive in the teacher--teacher format than in the teacher--student format, whereas the positive effect of the RCE factor was relatively weaker in the teacher--teacher format. For learning outcomes, the interactions between dialogue format and both the CE and RCE factors showed a trend toward significance. No significant interaction emerged for overall evaluation; however, the overall evaluation of the teacher--teacher format was significantly lower than that of the teacher--student format, a pattern that diverged from the positive effect observed for motivation. These results suggest that dialogue format should be selected according to learner characteristics in TTS dialogue-based lessons. Because the effect sizes of the significant interactions were all small to medium, however, the findings of this study should be regarded as preliminary evidence for the design of personalized learning.",
+      "authors": [
+        "Fumie Watanabe",
+        "Tota Suko",
+        "Takashi Ishida",
+        "Yuko Kuma",
+        "Manabu Kobayashi",
+        "Shigeichi Hirasawa",
+        "Gendo Kumoi"
+      ],
+      "primary_category": "cs.CY",
+      "categories": [
+        "cs.CY"
+      ],
+      "published": "2026-08-21T07:43:50+00:00",
+      "link": "https://arxiv.org/pdf/2608.20822v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "examines critical thinking disposition as a learner characteristic interacting with dialogue format",
+      "llm_evidence_cn": "将批判性思维倾向作为学习者特征研究其与对话形式的交互作用",
+      "llm_evidence": "将批判性思维倾向作为学习者特征研究其与对话形式的交互作用",
+      "canonical_evidence": "将批判性思维倾向作为学习者特征研究其与对话形式的交互作用",
+      "llm_tldr_en": "This study examines how critical thinking disposition and experiential learning style interact with dialogue format in TTS-based lessons. It finds significant interaction effects using linear mixed-effects models on 222 high school students.",
+      "llm_tldr_cn": "现有TTS对话式课程研究较少关注学习者个体差异的调节作用。本文利用大语言模型生成师生、生生、师师三种对话形式的课程，并测量222名高一学生的体验式学习风格和批判性思维倾向。通过重复测量和线性混合效应模型分析，发现对话形式与具体经验、反思观察及批判性思维倾向等特征存在显著交互效应。结果表明，为优化学习动机与成效，TTS对话式教学应针对不同学习者特征进行个性化设计。",
+      "llm_tldr": "现有TTS对话式课程研究较少关注学习者个体差异的调节作用。本文利用大语言模型生成师生、生生、师师三种对话形式的课程，并测量222名高一学生的体验式学习风格和批判性思维倾向。通过重复测量和线性混合效应模型分析，发现对话形式与具体经验、反思观察及批判性思维倾向等特征存在显著交互效应。结果表明，为优化学习动机与成效，TTS对话式教学应针对不同学习者特征进行个性化设计。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}
