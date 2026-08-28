@@ -1,0 +1,94 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-28T04:05:36.575265+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2608.22722v1",
+      "source": "arxiv",
+      "title": "Temporal filling-in reduces attentional fluctuations in sustained visual attention",
+      "abstract": "Our capacity to maintain focus on task-relevant goals over time is constrained because attentional states wax and wane moment to moment. One theoretical account posits that temporal filling-in - filling temporal blank intervals between target stimuli - reduces attentional fluctuations to enhance sustained attention. This proposal, however, lacks direct empirical validation given the difficulty of tracking attentional fluctuations via behavioral measurements. To resolve this gap, we combined a visual timing task that assessed the behavioral benefit of temporal filling-in with electroencephalographic recordings of visual steady-state evoked potentials (SSEPs), which tracked neural responses associated with periodic attentional fluctuations entrained to the rhythmic visual sequence. Behavioral improvements in sustained attention via temporal filling-in were associated with reduced attentional fluctuations, as indexed by attenuated visual SSEP amplitudes. The findings highlight a fundamental neural mechanism whereby temporal filling-in reduces attentional fluctuations to stabilize sustained visual attention over extended periods.",
+      "authors": [
+        "Yingyu Huang",
+        "Liying Zhan",
+        "Xiang Wu"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC"
+      ],
+      "published": "2026-08-24T02:20:23+00:00",
+      "link": "https://arxiv.org/pdf/2608.22722v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Uses EEG steady-state evoked potentials during a visual timing task to track attentional fluctuations, providing spectral power measures in a cognitive task",
+      "llm_evidence_cn": "在视觉计时任务中使用脑电图稳态诱发电位追踪注意波动，提供认知任务中的频谱功率测量",
+      "llm_evidence": "在视觉计时任务中使用脑电图稳态诱发电位追踪注意波动，提供认知任务中的频谱功率测量",
+      "canonical_evidence": "在视觉计时任务中使用脑电图稳态诱发电位追踪注意波动，提供认知任务中的频谱功率测量",
+      "llm_tldr_en": "Combines a visual timing task with EEG recordings of steady-state evoked potentials to show that temporal filling-in reduces attentional fluctuations; demonstrates spectral power analysis during a cognitive task.",
+      "llm_tldr_cn": "针对持续注意中注意状态波动难以测量的问题，结合视觉计时任务与脑电图稳态诱发电位记录，发现时间填补能够降低注意波动。该研究为注意波动提供了神经证据，并展示了认知任务中基于频谱功率的脑电分析方法。",
+      "llm_tldr": "针对持续注意中注意状态波动难以测量的问题，结合视觉计时任务与脑电图稳态诱发电位记录，发现时间填补能够降低注意波动。该研究为注意波动提供了神经证据，并展示了认知任务中基于频谱功率的脑电分析方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2608.26998v1",
+      "source": "arxiv",
+      "title": "Virtual iEEG from Scalp EEG: Charting the Landscape of Source Imaging, Intracranial Inference and Reconstruction",
+      "abstract": "Intracranial electroencephalography (iEEG) provides temporally precise and spatially specific access to neural activity from focal and deep brain regions, but its invasiveness and restricted anatomical coverage limit routine use. These constraints have motivated scalp-to-intracranial inference, termed virtual iEEG when model outputs carry iEEG-defined event, feature, representation, or contact-level waveform semantics. This review presents a target-centred framework distinguishing event inference, feature translation, and waveform reconstruction, while separating predictability from observability, identifiability, fidelity, and utility. Evidence is evaluated according to cohort independence, anatomical and spectral coverage, train--test separation, and target-patient adaptation. Current studies support inference of selected intracranial events, low-frequency components, and task-related representations, but not unique recovery of arbitrary contact-level activity. Stronger validation requires appropriate controls, source-imaging baselines, uncertainty assessment, and incremental-utility testing. Future progress depends on independent paired datasets and prospective evidence that virtual iEEG adds value beyond scalp EEG and EEG source imaging.",
+      "authors": [
+        "Dongyi He",
+        "Xiangkai Wang",
+        "Hongjie Yan",
+        "Luping Song",
+        "Wai Ting Siok",
+        "Nizhuan Wang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-27T11:44:05+00:00",
+      "link": "https://arxiv.org/pdf/2608.26998v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "scalp EEG source imaging for deep regions such as mPFC, enabling inference for cognitive EEG analysis",
+      "llm_evidence_cn": "头皮EEG源成像用于mPFC等深部脑区，支持认知任务EEG分析",
+      "llm_evidence": "头皮EEG源成像用于mPFC等深部脑区，支持认知任务EEG分析",
+      "canonical_evidence": "头皮EEG源成像用于mPFC等深部脑区，支持认知任务EEG分析",
+      "llm_tldr_en": "Reviews scalp-to-intracranial EEG inference methods including source imaging and waveform reconstruction, providing a framework for studying deep brain regions like mPFC from scalp EEG; relevant for advanced EEG analysis in cognitive tasks.",
+      "llm_tldr_cn": "该文针对侵入性iEEG覆盖有限而头皮EEG难以直接观测深部脑区的问题，系统梳理了从头皮EEG推断颅内信号的方法，提出事件推断、特征翻译和波形重建的目标中心框架。该综述区分可预测性、可观测性、可识别性、保真度与效用，为研究mPFC等深部结构在高级认知任务中的EEG特征提供了方法学基础，间接支持相对功率谱等后续分析。",
+      "llm_tldr": "该文针对侵入性iEEG覆盖有限而头皮EEG难以直接观测深部脑区的问题，系统梳理了从头皮EEG推断颅内信号的方法，提出事件推断、特征翻译和波形重建的目标中心框架。该综述区分可预测性、可观测性、可识别性、保真度与效用，为研究mPFC等深部结构在高级认知任务中的EEG特征提供了方法学基础，间接支持相对功率谱等后续分析。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "EEG relative power spectrum analysis during higher cognitive tasks involving medial prefrontal cortex",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

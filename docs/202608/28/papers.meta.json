@@ -1,0 +1,39 @@
+{
+  "label": "2026-08-28",
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28T04:07:41",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202608/28/2608.22722v1-temporal-filling-in-reduces-attentional-fluctuations-in-sustained-visual-attention",
+      "section": "quick",
+      "title_en": "Temporal filling-in reduces attentional fluctuations in sustained visual attention",
+      "authors": "Yingyu Huang, Liying Zhan, Xiang Wu",
+      "date": "2026-08-24",
+      "pdf": "https://arxiv.org/pdf/2608.22722v1",
+      "score": "7.0",
+      "evidence": "在视觉计时任务中使用脑电图稳态诱发电位追踪注意波动，提供认知任务中的频谱功率测量",
+      "tldr": "持续性视觉注意中注意状态随时间的波动制约了任务表现，如何稳定注意是核心挑战。理论上，时间填充（填补目标刺激间的时间空白）被认为能减少注意波动，但缺乏直接神经证据。本研究结合视觉计时任务与脑电图稳态诱发电位（SSEPs），以周期性神经响应追踪注意波动。结果发现，时间填充改善了行为层面的持续性注意，并伴随视觉SSEP幅度显著减弱，表明注意波动下降。这揭示时间填充通过减少注意波动来稳定持续视觉注意的神经机制。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Our capacity to maintain focus on task-relevant goals over time is constrained because attentional states wax and wane moment to moment. One theoretical account posits that temporal filling-in - filling temporal blank intervals between target stimuli - reduces attentional fluctuations to enhance sustained attention. This proposal, however, lacks direct empirical validation given the difficulty of tracking attentional fluctuations via behavioral measurements. To resolve this gap, we combined a visual timing task that assessed the behavioral benefit of temporal filling-in with electroencephalographic recordings of visual steady-state evoked potentials (SSEPs), which tracked neural responses associated with periodic attentional fluctuations entrained to the rhythmic visual sequence. Behavioral improvements in sustained attention via temporal filling-in were associated with reduced attentional fluctuations, as indexed by attenuated visual SSEP amplitudes. The findings highlight a fundamental neural mechanism whereby temporal filling-in reduces attentional fluctuations to stabilize sustained visual attention over extended periods.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/28/2608.26998v1-virtual-ieeg-from-scalp-eeg-charting-the-landscape-of-source-imaging-intracranial-inference-and-reconstruction",
+      "section": "quick",
+      "title_en": "Virtual iEEG from Scalp EEG: Charting the Landscape of Source Imaging, Intracranial Inference and Reconstruction",
+      "authors": "Dongyi He, Xiangkai Wang, Hongjie Yan, Luping Song, Wai Ting Siok, Nizhuan Wang",
+      "date": "2026-08-27",
+      "pdf": "https://arxiv.org/pdf/2608.26998v1",
+      "score": "6.0",
+      "evidence": "头皮EEG源成像用于mPFC等深部脑区，支持认知任务EEG分析",
+      "tldr": "颅内脑电图（iEEG）精准但侵入且覆盖受限，推动从头皮EEG推断颅内活动（即virtual iEEG）。本文提出目标中心框架，区分事件推断、特征转换与波形重建，并分离可预测性与可观察性等维度。现有证据支持推断部分颅内事件、低频成分和任务相关表示，但无法唯一恢复任意接触级波形。未来需加强独立数据集验证和增量效用测试，以证明virtual iEEG超越头皮EEG与源成像的价值。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Intracranial electroencephalography (iEEG) provides temporally precise and spatially specific access to neural activity from focal and deep brain regions, but its invasiveness and restricted anatomical coverage limit routine use. These constraints have motivated scalp-to-intracranial inference, termed virtual iEEG when model outputs carry iEEG-defined event, feature, representation, or contact-level waveform semantics. This review presents a target-centred framework distinguishing event inference, feature translation, and waveform reconstruction, while separating predictability from observability, identifiability, fidelity, and utility. Evidence is evaluated according to cohort independence, anatomical and spectral coverage, train--test separation, and target-patient adaptation. Current studies support inference of selected intracranial events, low-frequency components, and task-related representations, but not unique recovery of arbitrary contact-level activity. Stronger validation requires appropriate controls, source-imaging baselines, uncertainty assessment, and incremental-utility testing. Future progress depends on independent paired datasets and prospective evidence that virtual iEEG adds value beyond scalp EEG and EEG source imaging.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
