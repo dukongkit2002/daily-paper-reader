@@ -6,22 +6,29 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-08-29
-- 运行时间：2026-08-29 22:21:19 UTC
+- 最新运行日期：2026-08-30
+- 运行时间：2026-08-30 22:49:32 UTC
 - 运行状态：成功
-- 本次总论文数：0
-- 精读区：0
-- 速读区：0
+- 本次总论文数：2
+- 精读区：1
+- 速读区：1
 
 ### 今日简报（AI）
-> 今日无新推荐，系统未产出可展示论文。
-- 详情：[/202608/29/README](/202608/29/README)
+- 今日共生成 2 篇推荐（精读 1 篇，速读 1 篇）
+- 精读：《Beta oscillation changes in ALS: A Dual-Site International Replication Study》（9.0/10）
+- 速读：《Taming foundation model with invariance-oriented pre-training for broad-spectrum EEG analysis across signal-level, brain-state, and brain-health tasks》（7.0/10）
+- 这些结果覆盖了当下较热的方向，建议先看精读区论文的关键问题与方法。
+- 详情：[/202608/30/README](/202608/30/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Beta oscillation changes in ALS: A Dual-Site International Replication Study](/202608/30/2608.27003v1-beta-oscillation-changes-in-als-a-dual-site-international-replication-study)  
+   标签：评分：9.0/10、query:cog-eeg-mpfc
+   evidence：持续注意任务(SART)中额叶与顶叶通道的EEG β波段ERD/ERS变化
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Taming foundation model with invariance-oriented pre-training for broad-spectrum EEG analysis across signal-level, brain-state, and brain-health tasks](/202608/30/2608.24597v1-taming-foundation-model-with-invariance-oriented-pre-training-for-broad-spectrum-eeg-analysis-across-signal-level-brain-state-and-brain-health-tasks)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：面向广谱EEG分析的不变性预训练，涵盖信号级、脑状态和脑健康任务
 
 
 <div class="dpr-home-promo-card">

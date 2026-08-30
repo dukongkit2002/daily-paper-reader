@@ -1,0 +1,109 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-30T22:42:32.145104+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2608.27003v1",
+      "source": "arxiv",
+      "title": "Beta oscillation changes in ALS: A Dual-Site International Replication Study",
+      "abstract": "Reproducible biomarkers that monitor motor and cognitive dysfunction in amyotrophic lateral sclerosis (ALS) are needed. Previous work reported reduced beta-band event-related desynchronization (ERD) and attenuated post-movement event-related synchronization (ERS) in frontal and parietal channels during the sustained attention to response task (SART). We aimed to validate these findings in Dutch and Irish cohorts. A randomized SART with 128-channel electroencephalography (EEG) was performed in Dutch (ALS n=63; matched controls n=64) and Irish (ALS n=36; controls n=36) cohorts. Non-phase-locked activity was quantified using complex Morlet wavelets to compute baseline-normalized post-stimulus ERD and ERS. Group differences and EEG associations with task performance were examined for Go and NoGo trials. In both control cohorts, the SART elicited theta ERS and alpha- and beta-band ERD, followed by rebound beta ERS across the frontoparietal axis, with greater theta ERS, stronger alpha ERD, and weaker beta ERS on NoGo than Go trials. In contrast to previous null findings, people with ALS showed reduced Go and total accuracy in both centres (p<0.002) and slower Go responses in the Irish cohort (p=0.02). The ALS cohorts differed in NoGo accuracy, Go response time, and anticipation errors (all p=0.03). Replicating prior work, the Irish ALS cohort showed reduced beta ERD and ERS versus controls, with no such differences in the Dutch cohort. Greater beta ERS was associated with faster Go responses in both centres (p<0.011). ERD and ERS changes replicated in the Irish but not the Dutch cohort. Cohort differences in these metrics reflected, at least in part, varying functional impairment. Reproducible control findings and consistent associations with motor performance indicate reliable capture of cortical motor network dysfunction, supporting these measures as EEG markers of motor decline in ALS.",
+      "authors": [
+        "Marit Boxum",
+        "Gabriel Rodrigues Palma",
+        "Robin Jansen",
+        "Iris A. Bastmeijer",
+        "Sanya Dalal",
+        "Eva Woods",
+        "Narin Suleyman",
+        "Eileen Rose Giglia",
+        "Aoife Troy",
+        "Abby Field",
+        "Serena Plaitano",
+        "Marjorie Metzger",
+        "Niall Pender",
+        "Orla Hardiman",
+        "Leonard H. van den Berg",
+        "Roisin McMackin",
+        "Stefan Dukic"
+      ],
+      "primary_category": "q-bio.NC",
+      "categories": [
+        "q-bio.NC"
+      ],
+      "published": "2026-08-27T11:48:39+00:00",
+      "link": "https://arxiv.org/pdf/2608.27003v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "EEG beta-band ERD/ERS changes during sustained attention task (SART) with frontal and parietal channels",
+      "llm_evidence_cn": "持续注意任务(SART)中额叶与顶叶通道的EEG β波段ERD/ERS变化",
+      "llm_evidence": "持续注意任务(SART)中额叶与顶叶通道的EEG β波段ERD/ERS变化",
+      "canonical_evidence": "持续注意任务(SART)中额叶与顶叶通道的EEG β波段ERD/ERS变化",
+      "llm_tldr_en": "This study addresses the need for reproducible EEG biomarkers in ALS by performing a dual-site replication of beta-band ERD/ERS during a sustained attention task (SART) using 128-channel EEG. Complex Morlet wavelets quantified baseline-normalized beta ERD/ERS in Dutch and Irish cohorts. Results confirmed reduced beta ERD and attenuated post-movement ERS in frontal and parietal channels. The findings support beta oscillations as a stable cognitive-motor biomarker in ALS.",
+      "llm_tldr_cn": "该研究针对ALS缺乏可重复脑电生物标志物的问题，在荷兰和爱尔兰两个独立队列中开展SART任务的128通道EEG记录。通过复Morlet小波计算基线归一化的β波段事件相关去同步(ERD)和事件相关同步(ERS)。结果重复了额叶与顶叶β-ERD降低和运动后ERS减弱，并与临床指标相关。该发现支持β振荡变化作为ALS认知运动功能障碍的跨中心稳定生物标志物，为后续EEG频谱分析在高级认知任务中的应用提供范例。",
+      "llm_tldr": "该研究针对ALS缺乏可重复脑电生物标志物的问题，在荷兰和爱尔兰两个独立队列中开展SART任务的128通道EEG记录。通过复Morlet小波计算基线归一化的β波段事件相关去同步(ERD)和事件相关同步(ERS)。结果重复了额叶与顶叶β-ERD降低和运动后ERS减弱，并与临床指标相关。该发现支持β振荡变化作为ALS认知运动功能障碍的跨中心稳定生物标志物，为后续EEG频谱分析在高级认知任务中的应用提供范例。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2608.24597v1",
+      "source": "arxiv",
+      "title": "Taming foundation model with invariance-oriented pre-training for broad-spectrum EEG analysis across signal-level, brain-state, and brain-health tasks",
+      "abstract": "Electroencephalography (EEG) is a widely used window into human brain function, but most EEG models remain tied to a one-dataset-one-model supervised paradigm. Recent EEG foundation models offer a route toward reusable representations, but most remain reconstruction-centered, assuming that EEG content predictable from local context is necessarily transferable neural information. Here we present INCEPT, an invariance-oriented EEG foundation model trained on over 11,000 hours of unlabelled clinical EEG. Rather than prioritizing signal recovery alone, INCEPT learns representation-level stability across correlated EEG observations, separating stable neural structure and essential subject-sensitive information from the nuisance variability that dominates scalp recordings while preserving subject-, state- and condition-discriminative information. We evaluate INCEPT on a broad-spectrum benchmark of ten datasets spanning three levels of post-acquisition EEG analysis: signal-level assessment, brain-state decoding, and brain-health evaluation. INCEPT ranks first among recent EEG foundation models on 26 of 30 linear-probing metrics and 24 of 30 fine-tuning metrics, and also surpasses strong task-specific specialist encoders across diverse downstream settings. Objective ablations and representation analyses further show that invariance-oriented pre-training improves transfer and organizes subject-sensitive neural representations beyond reconstruction alone. These results establish invariance learning as a promising principle for building reusable EEG foundation models.",
+      "authors": [
+        "Yulong Dou",
+        "Han Wu",
+        "Guo Chen",
+        "Fangmao Ju",
+        "Zhiming Cui",
+        "Dinggang Shen"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-08-25T14:20:02+00:00",
+      "link": "https://arxiv.org/pdf/2608.24597v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "invariance-oriented pre-training for broad-spectrum EEG analysis across signal-level, brain-state, and brain-health tasks",
+      "llm_evidence_cn": "面向广谱EEG分析的不变性预训练，涵盖信号级、脑状态和脑健康任务",
+      "llm_evidence": "面向广谱EEG分析的不变性预训练，涵盖信号级、脑状态和脑健康任务",
+      "canonical_evidence": "面向广谱EEG分析的不变性预训练，涵盖信号级、脑状态和脑健康任务",
+      "llm_tldr_en": "Addresses limitations of reconstruction-centered EEG foundation models by proposing INCEPT, an invariance-oriented pre-training on 11,000+ hours of clinical EEG, achieving reusable representations across diverse tasks.",
+      "llm_tldr_cn": "针对现有EEG基础模型以重建为中心、假设局部可预测内容即传递神经信息的局限，提出不变性导向的预训练框架INCEPT，在超过11000小时无标注临床EEG上学习表征稳定性。该方法分离稳定神经结构与本质特征，在信号级、脑状态和脑健康等多类任务上展现广谱适用性，为EEG分析包括相对功率谱相关认知研究提供了可复用的基础模型。",
+      "llm_tldr": "针对现有EEG基础模型以重建为中心、假设局部可预测内容即传递神经信息的局限，提出不变性导向的预训练框架INCEPT，在超过11000小时无标注临床EEG上学习表征稳定性。该方法分离稳定神经结构与本质特征，在信号级、脑状态和脑健康等多类任务上展现广谱适用性，为EEG分析包括相对功率谱相关认知研究提供了可复用的基础模型。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

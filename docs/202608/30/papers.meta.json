@@ -1,0 +1,39 @@
+{
+  "label": "2026-08-30",
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30T22:50:00",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202608/30/2608.27003v1-beta-oscillation-changes-in-als-a-dual-site-international-replication-study",
+      "section": "deep",
+      "title_en": "Beta oscillation changes in ALS: A Dual-Site International Replication Study",
+      "authors": "Marit Boxum, Gabriel Rodrigues Palma, Robin Jansen, Iris A. Bastmeijer, Sanya Dalal, Eva Woods, Narin Suleyman, Eileen Rose Giglia, Aoife Troy, Abby Field, Serena Plaitano, Marjorie Metzger, Niall Pender, Orla Hardiman, Leonard H. van den Berg, Roisin McMackin, Stefan Dukic",
+      "date": "2026-08-27",
+      "pdf": "https://arxiv.org/pdf/2608.27003v1",
+      "score": "9.0",
+      "evidence": "持续注意任务(SART)中额叶与顶叶通道的EEG β波段ERD/ERS变化",
+      "tldr": "ALS缺乏可重复的神经生理标志物，先前报道β振荡异常但需验证。本研究在荷兰和爱尔兰两个独立队列中，采用128通道EEG记录SART任务，分析β波段ERD和ERS。结果显示爱尔兰ALS患者β ERD/ERS显著降低，而荷兰队列未复制；但两中心均发现β ERS与更快Go反应相关。对照组的稳定任务效应和一致行为关联表明该指标能可靠捕捉皮层运动网络功能障碍，支持其作为ALS运动衰退的候选EEG标志物。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Reproducible biomarkers that monitor motor and cognitive dysfunction in amyotrophic lateral sclerosis (ALS) are needed. Previous work reported reduced beta-band event-related desynchronization (ERD) and attenuated post-movement event-related synchronization (ERS) in frontal and parietal channels during the sustained attention to response task (SART). We aimed to validate these findings in Dutch and Irish cohorts. A randomized SART with 128-channel electroencephalography (EEG) was performed in Dutch (ALS n=63; matched controls n=64) and Irish (ALS n=36; controls n=36) cohorts. Non-phase-locked activity was quantified using complex Morlet wavelets to compute baseline-normalized post-stimulus ERD and ERS. Group differences and EEG associations with task performance were examined for Go and NoGo trials. In both control cohorts, the SART elicited theta ERS and alpha- and beta-band ERD, followed by rebound beta ERS across the frontoparietal axis, with greater theta ERS, stronger alpha ERD, and weaker beta ERS on NoGo than Go trials. In contrast to previous null findings, people with ALS showed reduced Go and total accuracy in both centres (p<0.002) and slower Go responses in the Irish cohort (p=0.02). The ALS cohorts differed in NoGo accuracy, Go response time, and anticipation errors (all p=0.03). Replicating prior work, the Irish ALS cohort showed reduced beta ERD and ERS versus controls, with no such differences in the Dutch cohort. Greater beta ERS was associated with faster Go responses in both centres (p<0.011). ERD and ERS changes replicated in the Irish but not the Dutch cohort. Cohort differences in these metrics reflected, at least in part, varying functional impairment. Reproducible control findings and consistent associations with motor performance indicate reliable capture of cortical motor network dysfunction, supporting these measures as EEG markers of motor decline in ALS.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/30/2608.24597v1-taming-foundation-model-with-invariance-oriented-pre-training-for-broad-spectrum-eeg-analysis-across-signal-level-brain-state-and-brain-health-tasks",
+      "section": "quick",
+      "title_en": "Taming foundation model with invariance-oriented pre-training for broad-spectrum EEG analysis across signal-level, brain-state, and brain-health tasks",
+      "authors": "Yulong Dou, Han Wu, Guo Chen, Fangmao Ju, Zhiming Cui, Dinggang Shen",
+      "date": "2026-08-25",
+      "pdf": "https://arxiv.org/pdf/2608.24597v1",
+      "score": "7.0",
+      "evidence": "面向广谱EEG分析的不变性预训练，涵盖信号级、脑状态和脑健康任务",
+      "tldr": "现有EEG模型多受限于单数据集监督，而重构中心基础模型假设可预测即迁移，未必捕捉真实神经信息。INCEPT采用不变性导向预训练，在11000小时未标记临床EEG上学习跨观测表示稳定性，分离稳定神经结构与干扰变异。在涵盖信号级、脑状态和脑健康三个层次的10个数据集上，INCEPT在30项线性探测中26项第一，30项微调中24项第一，超越专家模型。结果表明不变性学习是构建可重用EEG基础模型的有效原则。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Electroencephalography (EEG) is a widely used window into human brain function, but most EEG models remain tied to a one-dataset-one-model supervised paradigm. Recent EEG foundation models offer a route toward reusable representations, but most remain reconstruction-centered, assuming that EEG content predictable from local context is necessarily transferable neural information. Here we present INCEPT, an invariance-oriented EEG foundation model trained on over 11,000 hours of unlabelled clinical EEG. Rather than prioritizing signal recovery alone, INCEPT learns representation-level stability across correlated EEG observations, separating stable neural structure and essential subject-sensitive information from the nuisance variability that dominates scalp recordings while preserving subject-, state- and condition-discriminative information. We evaluate INCEPT on a broad-spectrum benchmark of ten datasets spanning three levels of post-acquisition EEG analysis: signal-level assessment, brain-state decoding, and brain-health evaluation. INCEPT ranks first among recent EEG foundation models on 26 of 30 linear-probing metrics and 24 of 30 fine-tuning metrics, and also surpasses strong task-specific specialist encoders across diverse downstream settings. Objective ablations and representation analyses further show that invariance-oriented pre-training improves transfer and organizes subject-sensitive neural representations beyond reconstruction alone. These results establish invariance learning as a promising principle for building reusable EEG foundation models.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
