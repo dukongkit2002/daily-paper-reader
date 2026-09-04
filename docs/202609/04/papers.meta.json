@@ -1,0 +1,24 @@
+{
+  "label": "2026-09-04",
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T22:54:15",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202609/04/2609.03404v1-detecting-interbrain-synchronization-in-eeg-hyperscanning-with-muse-s-eeg-headban",
+      "section": "quick",
+      "title_en": "Detecting Interbrain Synchronization in EEG Hyperscanning with MUSE-S EEG headban",
+      "authors": "Tarmo Lipping, Ahmad Sharif, Matin Beiramvand, Jari Turunen",
+      "date": "2026-09-03",
+      "pdf": "https://arxiv.org/pdf/2609.03404v1",
+      "score": "6.0",
+      "evidence": "计算游戏与放松状态下的脑电频谱和互相关特征",
+      "tldr": "脑间同步检测通常依赖昂贵设备，本研究利用消费级MUSE-S EEG头带采集5对受试者在双人俄罗斯方块游戏与放松交替任务中的超扫描数据。通过提取光谱和交叉相干特征并输入卷积神经网络，区分游戏与放松状态。结果完整特征集实现100%分类准确率，仅用受试者间交叉相干特征也获得94%训练和79%测试准确率，验证了低成本设备用于人际神经同步研究的可行性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "In this study preliminary results on the classification of EEG hyperscanning data acquired using MUSE-S consumer-level EEG headband are presented. Five pairs of subjects were involved and the recording protocol contained three two-person tetris game sessions alternating with relaxation periods. The data were segmented and ten spectral and cross-coherence features were calculated. The features were arranged into feature matrices and Convolutional Neural Network model was trained to discriminate between the relaxation and gaming. Two different feature sets - the full set and a set containing only inter subject cross-coherence features were tested. The results indicate that using the full feature set, relaxation and gaming periods were perfectly discriminated. Using only inter-subject cross-coherence features 94 % and 79 % classification accuracy for training and testing data was obtained, respectively.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

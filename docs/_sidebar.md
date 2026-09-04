@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-04 <!--dpr-date:20260904-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/04/2609.03404v1-detecting-interbrain-synchronization-in-eeg-hyperscanning-with-muse-s-eeg-headban" data-sidebar-item="{&quot;title&quot;: &quot;Detecting Interbrain Synchronization in EEG Hyperscanning with MUSE-S EEG headban&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.03404v1-detecting-interbrain-synchronization-in-eeg-hyperscanning-with-muse-s-eeg-headban&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;计算游戏与放松状态下的脑电频谱和互相关特征&quot;}">Detecting Interbrain Synchronization in EEG Hyperscanning with MUSE-S EEG headban</a>
   * 2026-08-30 <!--dpr-date:20260830-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/30/2608.27003v1-beta-oscillation-changes-in-als-a-dual-site-international-replication-study" data-sidebar-item="{&quot;title&quot;: &quot;Beta oscillation changes in ALS: A Dual-Site International Replication Study&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.27003v1-beta-oscillation-changes-in-als-a-dual-site-international-replication-study&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;持续注意任务(SART)中额叶与顶叶通道的EEG β波段ERD/ERS变化&quot;}">Beta oscillation changes in ALS: A Dual-Site International Replication Study</a>
