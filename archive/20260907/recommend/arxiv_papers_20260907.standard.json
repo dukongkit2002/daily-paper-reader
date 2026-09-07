@@ -1,0 +1,56 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-09-07T23:10:31.667512+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2609.00100v1",
+      "source": "arxiv",
+      "title": "Different representation learning objectives recover distinct latent structures from the same psychometric data",
+      "abstract": "Psychometric questionnaires contain rich item-level information, yet it remains unclear whether different representation learning objectives recover the same latent organization. We investigated this question using 757 matched teacher-child pairs from the baseline assessment of the Cyprus ProW preschool trial. Behavioral structure was characterized from child SDQ, ASBI, and CBRS item responses using principal component analysis and clustering, yielding four behavioral phenotypes. A contrastive objective substantially improved teacher-child retrieval relative to PCA-based representations, increasing Top-1 accuracy from 0.13% to 7.27% and Top-10 accuracy from 1.98% to 56.14%. However, contrastive representations preserved behavioral phenotype structure less effectively than PCA-based representations. A multi-task objective jointly optimizing alignment and behavioral prediction partially restored behavioral organization but reduced retrieval performance. These findings indicate that teacher-child correspondence and behavioral phenotypes represent distinct forms of latent organization and demonstrate that the latent structure recovered from linked psychometric data depends on the representation learning objective.",
+      "authors": [
+        "Cong Cao",
+        "Tassos C. Kyriakides",
+        "Pambos Vrasidas"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "published": "2026-08-31T15:24:35+00:00",
+      "link": "https://arxiv.org/pdf/2609.00100v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "psychometric data representation learning for latent structure",
+      "llm_evidence_cn": "心理测量数据的表征学习揭示潜在结构",
+      "llm_evidence": "心理测量数据的表征学习揭示潜在结构",
+      "canonical_evidence": "心理测量数据的表征学习揭示潜在结构",
+      "llm_tldr_en": "Compares representation learning objectives on psychometric questionnaire data, showing contrastive learning improves retrieval but may distort structure; relevant for measurement methodology.",
+      "llm_tldr_cn": "该研究针对心理测量问卷数据，比较不同表征学习目标恢复潜在结构的能力。使用757对教师-儿童评估数据，通过PCA、聚类和对比学习等方法分析行为表型。结果显示对比学习显著提升教师-儿童检索准确率（Top-1从0.13%到7.27%），但也可能扭曲潜在结构。此工作为心理测量数据的复杂结构挖掘提供了新的方法视角，对相应测量工具的开发具有启示。",
+      "llm_tldr": "该研究针对心理测量问卷数据，比较不同表征学习目标恢复潜在结构的能力。使用757对教师-儿童评估数据，通过PCA、聚类和对比学习等方法分析行为表型。结果显示对比学习显著提升教师-儿童检索准确率（Top-1从0.13%到7.27%），但也可能扭曲潜在结构。此工作为心理测量数据的复杂结构挖掘提供了新的方法视角，对相应测量工具的开发具有启示。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

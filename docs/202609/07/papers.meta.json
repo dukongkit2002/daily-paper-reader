@@ -1,0 +1,24 @@
+{
+  "label": "2026-09-07",
+  "date": "2026-09-07",
+  "generated_at": "2026-09-07T23:12:36",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202609/07/2609.00100v1-different-representation-learning-objectives-recover-distinct-latent-structures-from-the-same-psychometric-data",
+      "section": "quick",
+      "title_en": "Different representation learning objectives recover distinct latent structures from the same psychometric data",
+      "authors": "Cong Cao, Tassos C. Kyriakides, Pambos Vrasidas",
+      "date": "2026-08-31",
+      "pdf": "https://arxiv.org/pdf/2609.00100v1",
+      "score": "6.0",
+      "evidence": "心理测量数据的表征学习揭示潜在结构",
+      "tldr": "心理测量问卷包含丰富项目级信息，但不同表示学习目标是否恢复相同潜在组织尚不明确。本研究使用757对教师-儿童对的SDQ、ASBI和CBRS项目数据，比较PCA与对比学习表示。对比目标将教师-儿童检索Top-1从0.13%提升至7.27%，Top-10从1.98%提升至56.14%，但保留行为表型结构较差。结果表明师生对应和行为表型是不同形式的潜在组织，表示学习目标决定所恢复的结构。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Psychometric questionnaires contain rich item-level information, yet it remains unclear whether different representation learning objectives recover the same latent organization. We investigated this question using 757 matched teacher-child pairs from the baseline assessment of the Cyprus ProW preschool trial. Behavioral structure was characterized from child SDQ, ASBI, and CBRS item responses using principal component analysis and clustering, yielding four behavioral phenotypes. A contrastive objective substantially improved teacher-child retrieval relative to PCA-based representations, increasing Top-1 accuracy from 0.13% to 7.27% and Top-10 accuracy from 1.98% to 56.14%. However, contrastive representations preserved behavioral phenotype structure less effectively than PCA-based representations. A multi-task objective jointly optimizing alignment and behavioral prediction partially restored behavioral organization but reduced retrieval performance. These findings indicate that teacher-child correspondence and behavioral phenotypes represent distinct forms of latent organization and demonstrate that the latent structure recovered from linked psychometric data depends on the representation learning objective.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
