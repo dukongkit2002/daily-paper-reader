@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-09 <!--dpr-date:20260909-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/09/2609.08788v1-adaptive-anisotropic-attention-for-axis-structured-signals" data-sidebar-item="{&quot;title&quot;: &quot;Adaptive Anisotropic Attention for Axis-Structured Signals&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.08788v1-adaptive-anisotropic-attention-for-axis-structured-signals&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;提出针对低信噪比、轴结构EEG信号的注意力方法&quot;}">Adaptive Anisotropic Attention for Axis-Structured Signals</a>
   * 2026-09-07 <!--dpr-date:20260907-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/07/2609.00100v1-different-representation-learning-objectives-recover-distinct-latent-structures-from-the-same-psychometric-data" data-sidebar-item="{&quot;title&quot;: &quot;Different representation learning objectives recover distinct latent structures from the same psychometric data&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.00100v1-different-representation-learning-objectives-recover-distinct-latent-structures-from-the-same-psychometric-data&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;心理测量数据的表征学习揭示潜在结构&quot;}">Different representation learning objectives recover distinct latent structures from the same psychometric data</a>

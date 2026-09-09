@@ -1,0 +1,24 @@
+{
+  "label": "2026-09-09",
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09T21:29:23",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202609/09/2609.08788v1-adaptive-anisotropic-attention-for-axis-structured-signals",
+      "section": "quick",
+      "title_en": "Adaptive Anisotropic Attention for Axis-Structured Signals",
+      "authors": "Mahir Jain, Parshva Runwal, Aditya Ray Mishra, Arvasu Kulkarni, Sandeep Singh, Siddharth Panwar",
+      "date": "2026-09-08",
+      "pdf": "https://arxiv.org/pdf/2609.08788v1",
+      "score": "6.0",
+      "evidence": "提出针对低信噪比、轴结构EEG信号的注意力方法",
+      "tldr": "密集自注意力将所有token对视为同等可能，忽视了EEG等信号的电极-时间轴结构，导致token暴露于大量无关交互。提出自适应各向异性注意力（AAA），将注意力分解为时间路径（同电极跨时间）和空间路径（同时刻跨电极），并由门控预测凸组合权重。在六个EEG下游任务中，模型AXON的平均平衡准确率在两种评估协议下均超过密集基线。结果表明，沿轴对齐注意力为结构化信号提供了有效归纳偏置。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Dense self-attention treats all token pairs as equally plausible before learning, an interaction-isotropic prior that can be mismatched to structured signals. For structured, low signal-to-noise ratio (SNR) signals such as EEG, dependencies are organized along the electrode and time axes, and this uniform prior exposes each token to many irrelevant interactions. We introduce Adaptive Anisotropic Attention (AAA), which splits attention into two paths: a temporal path, where each token attends to the tokens of its own electrode across time, and a spatial path, where it attends to the tokens of the other electrodes at the same time step. A small gate predicts, for every token, a convex combination of the two path outputs: two non-negative weights that sum to one. On six EEG downstream tasks, the resulting model, AXON (AXis-factorized Operator Network), improves mean balanced accuracy over a dense baseline under both linear probing and full fine-tuning. We show that both paths (temporal and spatial) are necessary and that the weighted sum beats a hard choice of one path; most of the benefit comes from the gate learning a different temporal/spatial balance at each layer of the network. Controlled audio spectrogram experiments show that axis factorization transfers beyond EEG. These results suggest that aligning attention with the natural axes of structured signals provides a useful inductive bias.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

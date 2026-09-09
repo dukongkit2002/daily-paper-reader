@@ -1,0 +1,58 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-09-09T21:27:37.784076+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2609.08788v1",
+      "source": "arxiv",
+      "title": "Adaptive Anisotropic Attention for Axis-Structured Signals",
+      "abstract": "Dense self-attention treats all token pairs as equally plausible before learning, an interaction-isotropic prior that can be mismatched to structured signals. For structured, low signal-to-noise ratio (SNR) signals such as EEG, dependencies are organized along the electrode and time axes, and this uniform prior exposes each token to many irrelevant interactions. We introduce Adaptive Anisotropic Attention (AAA), which splits attention into two paths: a temporal path, where each token attends to the tokens of its own electrode across time, and a spatial path, where it attends to the tokens of the other electrodes at the same time step. A small gate predicts, for every token, a convex combination of the two path outputs: two non-negative weights that sum to one. On six EEG downstream tasks, the resulting model, AXON (AXis-factorized Operator Network), improves mean balanced accuracy over a dense baseline under both linear probing and full fine-tuning. We show that both paths (temporal and spatial) are necessary and that the weighted sum beats a hard choice of one path; most of the benefit comes from the gate learning a different temporal/spatial balance at each layer of the network. Controlled audio spectrogram experiments show that axis factorization transfers beyond EEG. These results suggest that aligning attention with the natural axes of structured signals provides a useful inductive bias.",
+      "authors": [
+        "Mahir Jain",
+        "Parshva Runwal",
+        "Aditya Ray Mishra",
+        "Arvasu Kulkarni",
+        "Sandeep Singh",
+        "Siddharth Panwar"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-09-08T14:19:33+00:00",
+      "link": "https://arxiv.org/pdf/2609.08788v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Proposes attention method for EEG signals, which are low SNR and axis-structured",
+      "llm_evidence_cn": "提出针对低信噪比、轴结构EEG信号的注意力方法",
+      "llm_evidence": "提出针对低信噪比、轴结构EEG信号的注意力方法",
+      "canonical_evidence": "提出针对低信噪比、轴结构EEG信号的注意力方法",
+      "llm_tldr_en": "Introduces Adaptive Anisotropic Attention that splits attention into temporal and spatial paths for structured signals like EEG, improving handling of low SNR.",
+      "llm_tldr_cn": "针对密集自注意力不适合EEG等轴结构低信噪比信号的问题，提出自适应各向异性注意力，将注意力分解为时间路径（同一电极跨时间）和空间路径（不同电极同一时间），并用门控预测两者的凸组合。实验表明该方法在结构化信号上优于各向同性注意力。这项工作为EEG信号处理提供了一种更有效的注意力机制，可潜在地应用于认知任务中的EEG分析。",
+      "llm_tldr": "针对密集自注意力不适合EEG等轴结构低信噪比信号的问题，提出自适应各向异性注意力，将注意力分解为时间路径（同一电极跨时间）和空间路径（不同电极同一时间），并用门控预测两者的凸组合。实验表明该方法在结构化信号上优于各向同性注意力。这项工作为EEG信号处理提供了一种更有效的注意力机制，可潜在地应用于认知任务中的EEG分析。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
