@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-11 <!--dpr-date:20260911-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/11/2609.03404v2-detecting-interbrain-synchronization-in-eeg-hyperscanning-with-muse-s-eeg-headband" data-sidebar-item="{&quot;title&quot;: &quot;Detecting Interbrain Synchronization in EEG Hyperscanning with MUSE-S EEG headband&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.03404v2-detecting-interbrain-synchronization-in-eeg-hyperscanning-with-muse-s-eeg-headband&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;使用EEG频谱特征对游戏认知状态进行分类&quot;}">Detecting Interbrain Synchronization in EEG Hyperscanning with MUSE-S EEG headband</a>
   * 2026-09-09 <!--dpr-date:20260909-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/09/2609.08788v1-adaptive-anisotropic-attention-for-axis-structured-signals" data-sidebar-item="{&quot;title&quot;: &quot;Adaptive Anisotropic Attention for Axis-Structured Signals&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.08788v1-adaptive-anisotropic-attention-for-axis-structured-signals&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;提出针对低信噪比、轴结构EEG信号的注意力方法&quot;}">Adaptive Anisotropic Attention for Axis-Structured Signals</a>
