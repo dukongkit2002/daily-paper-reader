@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-12 <!--dpr-date:20260912-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/12/2609.05654v1-robust-community-detection-for-noisy-networks-with-covariates-application-to-functional-brain-networks" data-sidebar-item="{&quot;title&quot;: &quot;Robust Community Detection for Noisy Networks with Covariates: Application to Functional Brain Networks&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.05654v1-robust-community-detection-for-noisy-networks-with-covariates-application-to-functional-brain-networks&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;针对功能性脑网络的贝叶斯社区检测方法，可应用于 mPFC 相关认知网络模块。&quot;}">Robust Community Detection for Noisy Networks with Covariates: Application to Functional Brain Networks</a>
   * 2026-09-11 <!--dpr-date:20260911-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/11/2609.03404v2-detecting-interbrain-synchronization-in-eeg-hyperscanning-with-muse-s-eeg-headband" data-sidebar-item="{&quot;title&quot;: &quot;Detecting Interbrain Synchronization in EEG Hyperscanning with MUSE-S EEG headband&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.03404v2-detecting-interbrain-synchronization-in-eeg-hyperscanning-with-muse-s-eeg-headband&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;使用EEG频谱特征对游戏认知状态进行分类&quot;}">Detecting Interbrain Synchronization in EEG Hyperscanning with MUSE-S EEG headband</a>

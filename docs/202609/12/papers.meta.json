@@ -1,0 +1,24 @@
+{
+  "label": "2026-09-12",
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T21:01:22",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202609/12/2609.05654v1-robust-community-detection-for-noisy-networks-with-covariates-application-to-functional-brain-networks",
+      "section": "quick",
+      "title_en": "Robust Community Detection for Noisy Networks with Covariates: Application to Functional Brain Networks",
+      "authors": "Zeyu Hu, Frederick H. Xu, Suprateek Kundu, Yize Zhao, Li Shen, Jun Yan, Wenrui Li",
+      "date": "2026-09-04",
+      "pdf": "https://arxiv.org/pdf/2609.05654v1",
+      "score": "6.0",
+      "evidence": "针对功能性脑网络的贝叶斯社区检测方法，可应用于 mPFC 相关认知网络模块。",
+      "tldr": "功能脑网络社区检测面临网络噪声与协变量信息未充分利用的挑战。本文提出贝叶斯框架，联合度校正随机块模型、块结构噪声模型和协变量聚类模型，从多噪声网络和节点属性中恢复共享潜在社区结构，允许弱信号下协变量补充信息，无需预设社区数。模拟研究表明在噪声中高或网络数少时，社区恢复精度显著优于现有方法。应用于ADNI与HCP功能脑网络，识别出生物可解释模块及疾病相关重组。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Community detection is fundamental to understanding the modular organization in functional brain networks, yet noise in neuroimaging-derived networks and auxiliary node-level covariates pose critical challenges. Existing methods typically either assume networks are noise-free or ignore covariate information. We propose a Bayesian framework for recovering a shared latent community structure from multiple noisy network realizations and auxiliary covariates. The model combines a degree-corrected stochastic block model for the latent network, a block-structured noise model linking noisy observations to latent edges, and a covariate cluster model for node-level attributes. This specification allows anatomical or functional attributes of regions of interest to contribute information when network signals are weak or sparse. We develop an efficient Markov chain Monte Carlo algorithm for posterior sampling and select the number of communities using the widely applicable information criterion, avoiding prior specification of this quantity. Simulation studies demonstrate improved community recovery relative to existing methods across varying noise levels, covariate signal strengths, and numbers of noisy networks, with larger gains when network noise is moderate to high or only a small number of noisy networks is available. Applications to functional brain networks from the Alzheimer's Disease Neuroimaging Initiative and the Human Connectome Project identify biologically interpretable structures and capture disease-related reorganization and individual-level variation.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

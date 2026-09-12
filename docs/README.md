@@ -6,26 +6,24 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-09-11
-- 运行时间：2026-09-11 21:18:05 UTC
+- 最新运行日期：2026-09-12
+- 运行时间：2026-09-12 21:01:00 UTC
 - 运行状态：成功
 - 本次总论文数：1
 - 精读区：0
 - 速读区：1
 
 ### 今日简报（AI）
-今天速读了一篇用 MUSE-S 便携脑电头带检测双人脑间同步的研究。  
-值得关注：低成本可穿戴脑电设备也能用于 EEG 超扫描，捕捉人际脑同步信号。  
-下步建议：对脑机接口或社交互动研究感兴趣的读者，可继续关注便携脑电在合作、教学等真实场景中的应用。
-- 详情：[/202609/11/README](/202609/11/README)
+今日速读一篇 6.0/
+- 详情：[/202609/12/README](/202609/12/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Detecting Interbrain Synchronization in EEG Hyperscanning with MUSE-S EEG headband](/202609/11/2609.03404v2-detecting-interbrain-synchronization-in-eeg-hyperscanning-with-muse-s-eeg-headband)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：使用EEG频谱特征对游戏认知状态进行分类
+1. [Robust Community Detection for Noisy Networks with Covariates: Application to Functional Brain Networks](/202609/12/2609.05654v1-robust-community-detection-for-noisy-networks-with-covariates-application-to-functional-brain-networks)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：针对功能性脑网络的贝叶斯社区检测方法，可应用于 mPFC 相关认知网络模块。
 
 
 <div class="dpr-home-promo-card">
