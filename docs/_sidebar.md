@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-14 <!--dpr-date:20260914-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/14/2609.11032v1-bayesian-variable-selection-for-high-dimensional-predictors-with-missing-psychometric-outcomes" data-sidebar-item="{&quot;title&quot;: &quot;Bayesian Variable Selection for High-Dimensional Predictors with Missing Psychometric Outcomes&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.11032v1-bayesian-variable-selection-for-high-dimensional-predictors-with-missing-psychometric-outcomes&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;心理测量结果的贝叶斯变量选择，适用于测量倾向&quot;}">Bayesian Variable Selection for High-Dimensional Predictors with Missing Psychometric Outcomes</a>
   * 2026-09-12 <!--dpr-date:20260912-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/12/2609.05654v1-robust-community-detection-for-noisy-networks-with-covariates-application-to-functional-brain-networks" data-sidebar-item="{&quot;title&quot;: &quot;Robust Community Detection for Noisy Networks with Covariates: Application to Functional Brain Networks&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.05654v1-robust-community-detection-for-noisy-networks-with-covariates-application-to-functional-brain-networks&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;针对功能性脑网络的贝叶斯社区检测方法，可应用于 mPFC 相关认知网络模块。&quot;}">Robust Community Detection for Noisy Networks with Covariates: Application to Functional Brain Networks</a>

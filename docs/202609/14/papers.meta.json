@@ -1,0 +1,24 @@
+{
+  "label": "2026-09-14",
+  "date": "2026-09-14",
+  "generated_at": "2026-09-14T22:40:13",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202609/14/2609.11032v1-bayesian-variable-selection-for-high-dimensional-predictors-with-missing-psychometric-outcomes",
+      "section": "quick",
+      "title_en": "Bayesian Variable Selection for High-Dimensional Predictors with Missing Psychometric Outcomes",
+      "authors": "Zongyue Teng, Shujie Ma, Timothy J. Hohman, Angela L. Jefferson, Panpan Zhang",
+      "date": "2026-09-10",
+      "pdf": "https://arxiv.org/pdf/2609.11032v1",
+      "score": "6.0",
+      "evidence": "心理测量结果的贝叶斯变量选择，适用于测量倾向",
+      "tldr": "高维多模态预测因子和部分缺失的多变量结果在心理测量研究中普遍，现有正则化方法难以处理层次结构和多维响应。本文提出SHIM，一个结合分层horseshoe收缩与缺失结果贝叶斯处理的变量选择框架。模拟表明SHIM在敏感性与假阳性控制间取得平衡，系数估计准确且不确定性量化校准良好。应用于阿尔茨海默病队列，刻画多模态影像与认知关联并提供多重插补，R包shim已公开。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "High-dimensional, multimodal predictors and partially observed multivariate outcomes are common in psychometric research. However, existing regularization methods often do not accommodate hierarchical predictor structures and are primarily designed for univariate outcomes. We propose SHIM, a Bayesian framework for structured variable selection that combines hierarchical horseshoe shrinkage with a Bayesian treatment of missing outcomes. The framework jointly accommodates predictor hierarchies, dependence among outcomes, and incomplete multivariate responses. We establish theoretical properties of the proposed prior specification and evaluate SHIM through simulation studies. The results demonstrate that SHIM balances sensitivity with false-positive control while yielding accurate coefficient estimates and well-calibrated uncertainty quantification. We further apply SHIM to data from an Alzheimer's disease cohort to characterize associations between multimodal neuroimaging measures and multivariate neuropsychological outcomes and to generate posterior-based multiple imputations for downstream analyses of the relationships between fluid biomarkers and cognition. An R package, shim, is publicly available to facilitate implementation.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

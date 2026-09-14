@@ -1,0 +1,57 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-09-14T22:38:48.210826+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2609.11032v1",
+      "source": "arxiv",
+      "title": "Bayesian Variable Selection for High-Dimensional Predictors with Missing Psychometric Outcomes",
+      "abstract": "High-dimensional, multimodal predictors and partially observed multivariate outcomes are common in psychometric research. However, existing regularization methods often do not accommodate hierarchical predictor structures and are primarily designed for univariate outcomes. We propose SHIM, a Bayesian framework for structured variable selection that combines hierarchical horseshoe shrinkage with a Bayesian treatment of missing outcomes. The framework jointly accommodates predictor hierarchies, dependence among outcomes, and incomplete multivariate responses. We establish theoretical properties of the proposed prior specification and evaluate SHIM through simulation studies. The results demonstrate that SHIM balances sensitivity with false-positive control while yielding accurate coefficient estimates and well-calibrated uncertainty quantification. We further apply SHIM to data from an Alzheimer's disease cohort to characterize associations between multimodal neuroimaging measures and multivariate neuropsychological outcomes and to generate posterior-based multiple imputations for downstream analyses of the relationships between fluid biomarkers and cognition. An R package, shim, is publicly available to facilitate implementation.",
+      "authors": [
+        "Zongyue Teng",
+        "Shujie Ma",
+        "Timothy J. Hohman",
+        "Angela L. Jefferson",
+        "Panpan Zhang"
+      ],
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "stat.AP"
+      ],
+      "published": "2026-09-10T03:27:54+00:00",
+      "link": "https://arxiv.org/pdf/2609.11032v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Bayesian variable selection for psychometric outcomes, applicable to measuring dispositions",
+      "llm_evidence_cn": "心理测量结果的贝叶斯变量选择，适用于测量倾向",
+      "llm_evidence": "心理测量结果的贝叶斯变量选择，适用于测量倾向",
+      "canonical_evidence": "心理测量结果的贝叶斯变量选择，适用于测量倾向",
+      "llm_tldr_en": "Proposes SHIM, a Bayesian framework for structured variable selection with missing psychometric outcomes, handling high-dimensional predictors and outcome dependence.",
+      "llm_tldr_cn": "提出SHIM框架，结合分层马蹄收缩与贝叶斯缺失处理，用于高维预测变量和不完整心理测量结果。通过模拟研究验证其性能。该方法可用于构建或优化批判性思维倾向等心理测量工具。",
+      "llm_tldr": "提出SHIM框架，结合分层马蹄收缩与贝叶斯缺失处理，用于高维预测变量和不完整心理测量结果。通过模拟研究验证其性能。该方法可用于构建或优化批判性思维倾向等心理测量工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
