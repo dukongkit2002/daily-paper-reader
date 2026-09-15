@@ -1,0 +1,175 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-09-15T22:16:49.495536+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2609.13942v1",
+      "source": "arxiv",
+      "title": "CRITICS - Critical Science Without Borders: Language Models to Promote Critical Thinking in Science Education",
+      "abstract": "The CRITICS project addresses science accessibility and literacy by converging advanced Machine Translation (MT) based on Large Language Models (LLMs) with educational technology. By leveraging MT systems specifically optimized for scientific content, educational institutions can provide accurate, culturally relevant translations of scientific materials in students' native languages, ensuring that complex scientific concepts are comprehensible while maintaining technical accuracy. Building on these translations, the project explores the design and evaluation of innovative science teaching-learning proposals grounded in curriculum-aligned teaching-learning. Thus, CRITICS will investigate key components of scientific argumentation and critical thinking practices together with textual feedback aligned with learning objectives and assessment criteria inspired by competence-based evaluation frameworks. CRITICS aims to break down language barriers to accessing cutting-edge research and educational materials currently available only in high-resourced languages, thereby facilitating the democratization of scientific knowledge and fostering critical thinking in science education.",
+      "authors": [
+        "Rodrigo Agerri",
+        "Itziar Aldabe",
+        "Elena Cabrio",
+        "Mark Cieliebak",
+        "Jan Deriu",
+        "Mariana Flores",
+        "Jurgita Kapociute-Dzikiene",
+        "Dovile Kuiziniene",
+        "Arantza Rico",
+        "Aritz Ruiz-Gonzalez",
+        "Aitor Soroa",
+        "Mantas Vaskevicius",
+        "Serena Villata"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-09-12T13:37:10+00:00",
+      "link": "https://arxiv.org/pdf/2609.13942v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "promotes critical thinking in science education",
+      "llm_evidence_cn": "在科学教育中促进批判性思维",
+      "llm_evidence": "在科学教育中促进批判性思维",
+      "canonical_evidence": "在科学教育中促进批判性思维",
+      "llm_tldr_en": "The CRITICS project combines LLM-based scientific machine translation with educational technology to provide culturally relevant science materials and inquiry-based teaching designs; it investigates critical-thinking components in science education, aiming to improve science literacy and critical thinking across languages.",
+      "llm_tldr_cn": "本文介绍CRITICS项目，旨在解决科学教育和科学素养中的语言障碍问题，通过融合基于大语言模型的科学机器翻译与教育技术，为不同语言背景的学生提供准确且文化匹配的科学材料。在此基础上，项目设计并评估与课程对齐的科学探究式教学方案，以系统考察批判性思维的关键成分。这一跨语言、技术赋能的教育框架有助于推动科学教育中的批判性思维培养和国际科学素养公平。",
+      "llm_tldr": "本文介绍CRITICS项目，旨在解决科学教育和科学素养中的语言障碍问题，通过融合基于大语言模型的科学机器翻译与教育技术，为不同语言背景的学生提供准确且文化匹配的科学材料。在此基础上，项目设计并评估与课程对齐的科学探究式教学方案，以系统考察批判性思维的关键成分。这一跨语言、技术赋能的教育框架有助于推动科学教育中的批判性思维培养和国际科学素养公平。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "studies examining critical thinking disposition in the context of socio scientific issues and scientific reading",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2609.15864v1",
+      "source": "arxiv",
+      "title": "Towards Scalable Measurement of Durable Skills",
+      "abstract": "Durable skills, such as collaboration, creativity and critical thinking, are instrumental to success in the modern workforce. Yet, measuring these skills remains a persistent challenge. Moreover, because what is not measured is often not taught, these skills are often overlooked in mainstream educational curricula. Designing effective assessments for these skills necessitates balancing two often-conflicting requirements: ecological validity and psychometric rigor. On the one hand, the assessment environment should emulate natural real-world human interaction between humans. On the other hand, it should be scalable, controllable and reproducible. Here we argue that LLMs can be used to better capture both of these aims. Concretely, we develop a framework where the subject converses with AI teammates in a way that resembles human-human interaction for authenticity, while also offering the psychometric control required for informative and robust assessment. Importantly, the AI participants not only act as teammates but also, in an \"Executive LLM\" setup, steer the conversation towards eliciting a high density of observable evidence for skill proficiency. We complement this with an AI evaluator that can be used to measure skill proficiency in such interactions. We evaluate our assessment protocol based on transcripts of interactions of human participants with our AI framework, for multiple durable skills. For the skill of creativity, we further demonstrate the efficacy of an autorater for evaluating complex tasks performed by real students. Our analysis shows that the use of the Executive LLM significantly increases elicited evidence and that LLM-automated scoring of conversations largely agrees with that of expert annotators. This research demonstrates the utility of orchestrated LLMs approaches for measuring complex social and cognitive constructs in a scalable and controllable manner.",
+      "authors": [
+        "Amir Globerson",
+        "Amy Keeling",
+        "Anisha Choudhury",
+        "Anna Iurchenko",
+        "Aviad Segal",
+        "Avinatan Hassidim",
+        "Ayça Çakmakli",
+        "Ben Gomes",
+        "Benn Witt",
+        "Cathy Cheunga",
+        "Cristine Legare",
+        "Diana Akrong",
+        "Eliad Carmi",
+        "Elisabeth Bauer",
+        "Gal Elidan",
+        "Hadas Gelbart",
+        "Hairong Mu",
+        "Katherine Chou",
+        "Lev Borovoi",
+        "Nir Kerem",
+        "Niv Efron",
+        "Noa Kerrem Gilo",
+        "Preeti Singh",
+        "Rajvi Kapadia",
+        "Rena Levitt",
+        "Roni Rabin",
+        "Ronit Levavi Morad",
+        "Rotem Yulzary",
+        "Shashank Agarwal",
+        "Sophie Allweis",
+        "Tracey Lee-Joe",
+        "Tzvika Stein",
+        "Yael Bar Moshe",
+        "Yael Haramaty",
+        "Yaniv Carmel",
+        "Yishay Mor",
+        "Yoav Bar Sinai",
+        "Yoav Bergner",
+        "Yossi Matias",
+        "Yuri Lev"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-09-14T16:56:09+00:00",
+      "link": "https://arxiv.org/pdf/2609.15864v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Measuring critical thinking as a durable skill using LLM-based assessments",
+      "llm_evidence_cn": "使用基于LLM的评估测量批判性思维等持久技能",
+      "llm_evidence": "使用基于LLM的评估测量批判性思维等持久技能",
+      "canonical_evidence": "使用基于LLM的评估测量批判性思维等持久技能",
+      "llm_tldr_en": "Proposes an LLM-based framework for scalable, ecologically valid and psychometrically rigorous assessment of durable skills such as critical thinking, addressing measurement challenges in education.",
+      "llm_tldr_cn": "针对持久技能测量中生态效度与心理测量严谨性难以兼得的挑战，本文提出利用大语言模型构建可扩展、可控制且可复现的评估框架。通过模拟真实人际交互，该框架在保持生态效度的同时实现标准化测评，并具体应用于批判性思维等持久技能的测量。研究表明LLM能够更好地平衡这两种要求，为教育场景中难以量化的高阶技能提供了新的评估路径。",
+      "llm_tldr": "针对持久技能测量中生态效度与心理测量严谨性难以兼得的挑战，本文提出利用大语言模型构建可扩展、可控制且可复现的评估框架。通过模拟真实人际交互，该框架在保持生态效度的同时实现标准化测评，并具体应用于批判性思维等持久技能的测量。研究表明LLM能够更好地平衡这两种要求，为教育场景中难以量化的高阶技能提供了新的评估路径。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2609.14015v1",
+      "source": "arxiv",
+      "title": "Schizophrenia Detection from EEG Signals: A Transformer Framework with Spectrogram Representation",
+      "abstract": "Schizophrenia is a serious psychiatric disorder that affects millions of people worldwide, and its diagnosis remains primarily dependent on clinical assessment. Electroencephalography (EEG) provides a non-invasive approach to investigate brain activity and has shown potential to support automated Schizophrenia detection. However, existing EEG-based classification studies often suffer from limitations including small datasets, inconsistent preprocessing strategies, and evaluation protocols that may not adequately prevent subject-related data leakage. In this study, we propose an EEG-based Schizophrenia classification framework that transforms preprocessed EEG recordings into time-frequency representations using the Short-Time Fourier Transform. The generated spectrogram images are classified using both conventional Machine Learning algorithms, including Support Vector Machines, Random Forests, and XGBoost, and Deep Learning models, including convolutional architectures and CNN-Transformer hybrids. To ensure reliable evaluation, all data partitions are performed at the subject level. Experimental results demonstrate that the proposed approach achieves competitive classification performance, with the CNN-Transformer (CT-SZ) model achieving an AUC-ROC of 88.41% and the CNN + Squeeze and Excitation + Transformer (CST-SZ) achieving an AUC-ROC of 92.88% on the independent test set.",
+      "authors": [
+        "Abtin Shafiei",
+        "Mohsen Hooshmand",
+        "Majid Ramezani"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-12T15:58:55+00:00",
+      "link": "https://arxiv.org/pdf/2609.14015v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "uses EEG spectrogram representation for classification, relevant to EEG power spectrum analysis",
+      "llm_evidence_cn": "采用EEG频谱图表示进行分类，与EEG功率谱分析相关",
+      "llm_evidence": "采用EEG频谱图表示进行分类，与EEG功率谱分析相关",
+      "canonical_evidence": "采用EEG频谱图表示进行分类，与EEG功率谱分析相关",
+      "llm_tldr_en": "The paper addresses limitations in EEG-based schizophrenia classification such as small datasets and data leakage. It proposes a Transformer framework that transforms EEG into spectrogram time-frequency representations. Experiments show improved classification performance while controlling for subject leakage. The method is transferable to EEG relative power spectrum analysis in cognitive tasks.",
+      "llm_tldr_cn": "针对EEG精神分裂症检测中存在的数据集小、预处理不一致及数据泄露等问题，本文提出将EEG转换为频谱图时间-频率表示并输入Transformer进行分类的框架。实验表明该方法在防止受试者间泄露的评估下取得较好性能。该频谱图表示思路可迁移至认知任务中的EEG相对功率谱分析，提供方法参考。",
+      "llm_tldr": "针对EEG精神分裂症检测中存在的数据集小、预处理不一致及数据泄露等问题，本文提出将EEG转换为频谱图时间-频率表示并输入Transformer进行分类的框架。实验表明该方法在防止受试者间泄露的评估下取得较好性能。该频谱图表示思路可迁移至认知任务中的EEG相对功率谱分析，提供方法参考。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

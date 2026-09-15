@@ -1,0 +1,54 @@
+{
+  "label": "2026-09-15",
+  "date": "2026-09-15",
+  "generated_at": "2026-09-15T22:21:52",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202609/15/2609.13942v1-critics---critical-science-without-borders-language-models-to-promote-critical-thinking-in-science-education",
+      "section": "deep",
+      "title_en": "CRITICS - Critical Science Without Borders: Language Models to Promote Critical Thinking in Science Education",
+      "authors": "Rodrigo Agerri, Itziar Aldabe, Elena Cabrio, Mark Cieliebak, Jan Deriu, Mariana Flores, Jurgita Kapociute-Dzikiene, Dovile Kuiziniene, Arantza Rico, Aritz Ruiz-Gonzalez, Aitor Soroa, Mantas Vaskevicius, Serena Villata",
+      "date": "2026-09-12",
+      "pdf": "https://arxiv.org/pdf/2609.13942v1",
+      "score": "8.0",
+      "evidence": "在科学教育中促进批判性思维",
+      "tldr": "科学教育资源和前沿研究多集中于英语等高资源语言，非母语学生难以平等获取并理解复杂科学概念。CRITICS 项目利用面向科学内容优化的大语言模型机器翻译，将科学材料准确、文化适配地译为学习者母语，同时保持技术准确性。在此基础上，设计课程对齐的教学方案，研究科学论证与批判性思维实践，并提供与学习目标和能力评估框架一致的文本反馈。通过打破语言壁垒，该项目旨在促进科学知识民主化，并在科学教育中系统性培养批判性思维。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "The CRITICS project addresses science accessibility and literacy by converging advanced Machine Translation (MT) based on Large Language Models (LLMs) with educational technology. By leveraging MT systems specifically optimized for scientific content, educational institutions can provide accurate, culturally relevant translations of scientific materials in students' native languages, ensuring that complex scientific concepts are comprehensible while maintaining technical accuracy. Building on these translations, the project explores the design and evaluation of innovative science teaching-learning proposals grounded in curriculum-aligned teaching-learning. Thus, CRITICS will investigate key components of scientific argumentation and critical thinking practices together with textual feedback aligned with learning objectives and assessment criteria inspired by competence-based evaluation frameworks. CRITICS aims to break down language barriers to accessing cutting-edge research and educational materials currently available only in high-resourced languages, thereby facilitating the democratization of scientific knowledge and fostering critical thinking in science education.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202609/15/2609.15864v1-towards-scalable-measurement-of-durable-skills",
+      "section": "deep",
+      "title_en": "Towards Scalable Measurement of Durable Skills",
+      "authors": "Amir Globerson, Amy Keeling, Anisha Choudhury, Anna Iurchenko, Aviad Segal, Avinatan Hassidim, Ayça Çakmakli, Ben Gomes, Benn Witt, Cathy Cheunga, Cristine Legare, Diana Akrong, Eliad Carmi, Elisabeth Bauer, Gal Elidan, Hadas Gelbart, Hairong Mu, Katherine Chou, Lev Borovoi, Nir Kerem, Niv Efron, Noa Kerrem Gilo, Preeti Singh, Rajvi Kapadia, Rena Levitt, Roni Rabin, Ronit Levavi Morad, Rotem Yulzary, Shashank Agarwal, Sophie Allweis, Tracey Lee-Joe, Tzvika Stein, Yael Bar Moshe, Yael Haramaty, Yaniv Carmel, Yishay Mor, Yoav Bar Sinai, Yoav Bergner, Yossi Matias, Yuri Lev",
+      "date": "2026-09-14",
+      "pdf": "https://arxiv.org/pdf/2609.15864v1",
+      "score": "8.0",
+      "evidence": "使用基于LLM的评估测量批判性思维等持久技能",
+      "tldr": "持久技能如合作与创造力对职场至关重要却难以测量，现有评估难以兼顾真实性与标准化。本文提出用大型语言模型构建AI队友与受试者对话，并设置执行LLM引导对话以提升证据密度，配合AI评分器实现自动化测量。实验表明该方法显著增加可观察技能证据，且自动评分与专家高度一致，为复杂社会认知构念的可扩展、可控测量提供了新途径，具有重要应用价值。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Durable skills, such as collaboration, creativity and critical thinking, are instrumental to success in the modern workforce. Yet, measuring these skills remains a persistent challenge. Moreover, because what is not measured is often not taught, these skills are often overlooked in mainstream educational curricula. Designing effective assessments for these skills necessitates balancing two often-conflicting requirements: ecological validity and psychometric rigor. On the one hand, the assessment environment should emulate natural real-world human interaction between humans. On the other hand, it should be scalable, controllable and reproducible. Here we argue that LLMs can be used to better capture both of these aims. Concretely, we develop a framework where the subject converses with AI teammates in a way that resembles human-human interaction for authenticity, while also offering the psychometric control required for informative and robust assessment. Importantly, the AI participants not only act as teammates but also, in an \"Executive LLM\" setup, steer the conversation towards eliciting a high density of observable evidence for skill proficiency. We complement this with an AI evaluator that can be used to measure skill proficiency in such interactions. We evaluate our assessment protocol based on transcripts of interactions of human participants with our AI framework, for multiple durable skills. For the skill of creativity, we further demonstrate the efficacy of an autorater for evaluating complex tasks performed by real students. Our analysis shows that the use of the Executive LLM significantly increases elicited evidence and that LLM-automated scoring of conversations largely agrees with that of expert annotators. This research demonstrates the utility of orchestrated LLMs approaches for measuring complex social and cognitive constructs in a scalable and controllable manner.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202609/15/2609.14015v1-schizophrenia-detection-from-eeg-signals-a-transformer-framework-with-spectrogram-representation",
+      "section": "quick",
+      "title_en": "Schizophrenia Detection from EEG Signals: A Transformer Framework with Spectrogram Representation",
+      "authors": "Abtin Shafiei, Mohsen Hooshmand, Majid Ramezani",
+      "date": "2026-09-12",
+      "pdf": "https://arxiv.org/pdf/2609.14015v1",
+      "score": "6.0",
+      "evidence": "采用EEG频谱图表示进行分类，与EEG功率谱分析相关",
+      "tldr": "精神分裂症诊断依赖临床评估，EEG有自动检测潜力，但现有研究存在小样本和数据泄漏问题。本研究将EEG信号经短时傅里叶变换转为频谱图，采用传统机器学习与CNN-Transformer混合模型分类，并严格按受试者划分数据。CST-SZ模型在独立测试集上AUC-ROC达92.88%，显著优于传统方法。该框架为可靠EEG精神分裂症检测提供了新方案，避免了数据泄漏风险。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Schizophrenia is a serious psychiatric disorder that affects millions of people worldwide, and its diagnosis remains primarily dependent on clinical assessment. Electroencephalography (EEG) provides a non-invasive approach to investigate brain activity and has shown potential to support automated Schizophrenia detection. However, existing EEG-based classification studies often suffer from limitations including small datasets, inconsistent preprocessing strategies, and evaluation protocols that may not adequately prevent subject-related data leakage. In this study, we propose an EEG-based Schizophrenia classification framework that transforms preprocessed EEG recordings into time-frequency representations using the Short-Time Fourier Transform. The generated spectrogram images are classified using both conventional Machine Learning algorithms, including Support Vector Machines, Random Forests, and XGBoost, and Deep Learning models, including convolutional architectures and CNN-Transformer hybrids. To ensure reliable evaluation, all data partitions are performed at the subject level. Experimental results demonstrate that the proposed approach achieves competitive classification performance, with the CNN-Transformer (CT-SZ) model achieving an AUC-ROC of 88.41% and the CNN + Squeeze and Excitation + Transformer (CST-SZ) achieving an AUC-ROC of 92.88% on the independent test set.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

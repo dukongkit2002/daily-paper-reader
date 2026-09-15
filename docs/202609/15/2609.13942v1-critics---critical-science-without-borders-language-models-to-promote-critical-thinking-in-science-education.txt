@@ -1,0 +1,423 @@
+CRITICS - Critical Science Without Borders: Language
+Models to Promote Critical Thinking in Science Education
+Rodrigo Agerri1,*, Itziar Aldabe1, Elena Cabrio2, Mark Cieliebak3, Jan Deriu3,
+Mariana Flores1, Jurgita Kapoči¯uṫe-Dzikieṅe4, Dovil̇e Kuizinieṅe4, Arantza Rico5,
+Aritz Ruiz-González5, Aitor Soroa1, Mantas Vaškevičius4 and Serena Villata2
+1HiTZ Center - Ixa, University of the Basque Country EHU
+2Université Côte d’Azur, Inria, CNRS, I3S, France
+3Centre for Artificial Intelligence, ZHAW School of Engineering
+4Faculty of Informatics, Vytautas Magnus University, Lithuania
+5Department of Mathematics, Experimental and Social Sciences Education, University of the Basque Country EHU
+Abstract
+The CRITICS project addresses science accessibility and literacy through the convergence of advanced Machine
+Translation (MT) based on Large Language Models (LLMs) and educational technology. By leveraging MT
+systems specifically optimized for scientific content, educational institutions can provide accurate, culturally
+relevant translations of scientific materials in students’ native languages, ensuring that complex scientific
+concepts are comprehensible while maintaining technical accuracy. Building on these translations, the project
+explores the design and evaluation of innovative science teaching–learning proposals grounded in curriculum-
+aligned teaching–learning. Thus, CRITICS will investigate key components of scientific argumentation and
+critical thinking practices together with textual feedback aligned with learning objectives and assessment criteria
+inspired by competence-based evaluation frameworks. CRITICS aims to break down language barriers in accessing
+cutting-edge research and educational materials currently only available in high-resourced languages, thereby
+facilitating the democratization of scientific knowledge while fostering critical thinking in science education.
+Keywords
+Science Education, Scientific Terminology, Argumentation, Machine Translation, Natural Language Processing
+1. Introduction
+CRITICS1 is a three-year CHIST-ERA IV Cofund 2025 project funded within the topic “Science in your
+own language”.2 This call addresses the translation of scientific knowledge to bridge linguistic and
+cultural gaps for those who must disseminate and access scientific knowledge beyond their linguistic
+scope.
+The project is coordinated by the HiTZ Center from the University of the Basque Country EHU, funded
+by MICIU/AEI /10.13039/501100011033 and by the European Union (PCI2025-167239-2). In addition
+to HiTZ, the EHU team includes researchers from the Department of Mathematics, Experimental and
+Social Sciences Education. The consortium is also formed by the CNRS/Université Côte d’Azur in France
+(grant no ANR-25-CHR4-0002-02), Vytautas Magnus University (VMU) (funded by the Research Council
+of Lithuania, agreement No. S-CHIST-ERA-26-1), and the ZHAW Center for Artificial Intelligence in
+Switzerland (grant no. 20CH-1_238349).
+SEPLN 2026: 42nd International Conference of the Spanish Society for Natural Language Processing, León, Spain, 22-25 September
+2026.
+*Corresponding author.
+$ rodrigo.agerri@ehu.eus (R. Agerri); itziar.aldabe@ehu.eus (I. Aldabe); elena.cabrio@univ-cotedazur.fr (E. Cabrio);
+mark.cieliebak@zhaw.ch (M. Cieliebak); janmilan.deriu@zhaw.ch (J. Deriu); mariana.flores@ehu.eus (M. Flores);
+jurgita.kapociute-dzikiene@vdu.lt (J. Kapoči¯uṫe-Dzikieṅe); dovile.kuiziniene@vdu.lt (D. Kuizinieṅe); arantza.rico@ehu.eus
+(A. Rico); aritz.ruiz@ehu.eus (A. Ruiz-González); a.soroa@ehu.eus (A. Soroa); mantas.vaskevicius@vdu.lt (M. Vaškevičius);
+serena.villata@univ-cotedazur.fr (S. Villata)
+© 2026 Copyright for this paper by its authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0).
+1https://www.hitz.eus/critics
+2https://www.chistera.eu/projects-call-2025
+
+
+Figure 1: Three main components in the CRITICS approach.
+Scientific literacy and the development of critical thinking are essential components for a democratic
+society. However, access to scientific knowledge continues to be conditioned by language, since a large
+proportion of research articles and advanced educational resources are published almost exclusively in
+English or other high-resource languages such as Spanish. This situation creates linguistic inequality
+that limits learning opportunities for both students and teachers of science, particularly in low-resource
+languages such as Basque, and hinders students’ ability to learn how to construct evidence-based argu-
+ments in their own language. The CRITICS project addresses these challenges through the convergence
+of advanced MT systems based on language models (LLMs) and educational technologies.
+The accessibility to scientific content in our own languages through advanced MT naturally connects
+to the automated generation of science education materials, where LLMs can be applied to synthesize
+and adapt complex scientific concepts into level-appropriate and pedagogically sound resources. Thus,
+CRITICS will develop and adapt LLMs to facilitate the generation of customized science education
+materials [1].
+CRITICS will mostly follow recent science education research focused on Design-Based Research
+[2] and consider education materials to specify the driving problem/questions, the learning objectives
+focused on competency acquisition, the scientific practices including scientific argumentation and
+critical thinking, and the activities to be made by the science students. The availability of machine-
+translated scientific knowledge will be crucial to investigating and developing LLMs for the automatic
+generation of appropriate education materials in the students’ native languages that relate to local
+students’ experiences [2].
+Overall Approach: Figure 1 illustrates the integrated approach provided by CRITICS, which directly
+addresses the core objectives of the call by creating a comprehensive ecosystem that not only machine
+translates scientific content but transforms it into educationally meaningful resources with built-in
+assessment capabilities. CRITICS will develop a three-component system as in Figure 1 for cross-
+lingual scientific knowledge transfer. The first component is an LLM-based scientific document
+translation system that surpasses conventional MT approaches, which often struggle with domain-
+specific terminology and notation [3, 4], using adapters fine-tuned on specialized scientific corpora
+
+
+to preserve structural elements and field-specific terminology. The second component, a Teaching
+and Learning Sequence (TLS) generator, will investigate how to transform translated scientific
+literature into structured educational resources by analyzing the corpus to identify key concepts and
+pedagogical approaches, extracting argumentation graphs to generate TLSs. The third component,
+an LLM-based automatic assessor, will focus on how to evaluate student responses to TLS-derived
+activities by analyzing evidence-based argumentation and applying automatically generated scientific
+critical questions, with Argument Mining capabilities to detect misconceptions and fallacies. The
+CRITICS LLMs adapted to the tasks will be placed in a continuous improvement loop where assessments
+feed back into translation quality, teaching resource development, and assessment criteria refinement.
+2. Related Work and Novelty
+CRITICS will comply with TRL 5 – technology validated in relevant environments (industrially relevant
+environment in the case of key enabling technologies),3 where the qualitative evaluation will be done
+involving domain-experts (science education teachers and researchers on the two main disciplines
+targeted in the project, natural science and AI) in both the supervision and the actual evaluation.
+2.1. LLM-based MT of Scientific Documents
+LLMs have substantially advanced the field of MT, particularly for high-resource languages and
+general-purpose domains. Proprietary models deliver strong fluency and document-level coherence,
+benefiting from long-context modeling and multilingual pretraining, though notable gaps remain in
+low-resource scenarios [5, 6]. Prompt-based strategies (especially zero- and few-shot prompting) have
+emerged as effective methods for improving LLM translation performance [7]. Terminology-aware
+prompting and term injection have received growing attention as key techniques for addressing a
+persistent challenge in domain-specific MT: terminological inconsistency. This is especially critical
+in scholarly translation, where inaccurate terminology can distort meaning or undermine academic
+precision [3]. Recent work highlights diverse strategies for integrating terminology into LLM-based
+MT [8, 9, 4]. Despite these advances, less-resourced languages have received limited attention in
+LLM-based MT research. Recent work [10] demonstrates promising results for English–Lithuanian
+translation using open-weight LLMs. However, these findings are based on benchmark data rather than
+real scholarly texts, thus highlighting the need for more work in domain-specific, low-resource scenarios.
+Progress beyond the state-of-the-art: This project builds on recent advances in LLM-based MT but
+goes further by addressing the core challenges of scholarly translation (particularly for low-resource
+languages such as Lithuanian and Basque, with French included for comparative purposes). Our focus
+extends beyond fluency and general translation quality to include terminological precision, structural
+accuracy, and document-level coherence – i.e., key requirements in scholarly texts. We will benchmark a
+range of available LLMs, prioritizing open-weight models with good performance on the target languages
+such as Gemma [11], Llama [12] or language-specific models such as Latxa [13], to identify the most
+effective options for our target language pairs: English–Lithuanian, English–Basque, English–French
+and English-German. A central focus of the project is document-level translation, where maintaining
+consistency of terminology and coherence across sections is essential. To support this, we will develop
+domain-specific terminology glossaries. These glossaries will be integrated into the translation workflow
+through prompt engineering or as part of the fine-tuning datasets. Beyond linguistic accuracy, we
+will also develop tools to preserve the layout and structure of scholarly documents, ensuring that
+translations retain citations, equations, code, and section formatting.
+3https://horizoneuropencpportal.eu/sites/default/files/2022-12/trl-assessment-tool-guide-final.pdf
+
+
+2.2. Argument(ation) Mining (AM)
+Existing research on mining, assessing, reasoning over, and generating arguments [14, 15] involves the
+automatic extraction of arguments and their relationships from text. Starting from the identification of
+claims, premises, and evidence in a piece of text, as well as the relationships between them, such as
+support, attack, or rebuttal, computational argumentation methods can be used to analyze the strengths
+and weaknesses of arguments, their quality, and to identify common patterns and themes. Usually,
+supervised learning methods are used to address AM tasks, leading to the need to define beforehand
+annotated datasets for the specific tasks and application scenarios, even if recently some empirical
+approaches have been proposed to synthesize and generate arguments. Among the recent challenges
+of the AM field (Dagstuhl Seminar 22432 “Towards a Unified Model of Scholarly Argumentation”),
+there is the task of detecting manipulation in scientific publications through the identification of
+duplicate arguments and the computation of argument similarity [16], which strictly relates to the
+fallacy detection task. Moreover, a few works have focused on highlighting distortions in scientific
+communication [17], as well as in detecting quantified information mismatches between reported and
+actual scientific findings [18].
+Progress beyond the state-of-the-art: While scientific texts aim to present verifiable evidence for a
+series of stated claims, the interpretation of such objective sources of evidence is often ambiguous and
+subjective. In this project, we will first enhance and tailor Argument mining approaches to address
+domain-specific features of scientific argumentation in science education texts. Then, we will explore the
+notion of similarity between natural language arguments, which is currently unexplored, but it would
+be crucial to check the validity and coherence of argumentative scientific content across languages, both
+for human-generated and machine-translated texts. The result of this task is the automatic extraction
+of the full argument graph, on which further inferences can be applied. Such argumentation graphs
+will also be exploited for critical questions generation, to evaluate critical thinking in scientific contexts
+across languages. Applications of argument mining in scientific discourse have been so far limited, in
+particular, because current methods are insensitive to the factual content of scientific arguments, an
+issue that will be carefully addressed in the context of CRITICS, following our work in the medical
+education domain [19].
+2.3. Critical Questions Generation and Automatic Assessment
+Critical questions are vital for competency-based science assessments because they address deeper
+understanding beyond fact memorization to apply scientific knowledge and skills in practical contexts,
+which is the central aim of competency-based assessment. Unlike simple recall questions, critical
+questions help to evaluate essential higher-order thinking skills, measure students’ ability to transfer
+knowledge to new topic-specific contexts and provide diagnostic insights into reasoning patterns and
+misconceptions [20, 21]. There have been approaches to automated question and feedback generation
+[22, 23], but automatic Critical Questions Generation is a largely unexplored task [24], although some
+works have argued about their utility in identifying fallacious reasoning, and also for assessing the
+quality of argumentative essays [25].
+Progress beyond the state-of-the-art: Text-based automated assessment systems have been developed
+to automatically grade, classify or to provide feedback or guidance [22]. However, CRITICS will provide
+for the first time textual feedback for students by automatically generating Critical Questions, argument
+feedback and grades based on the TLSs developed for topic specific competency-based assessments in
+natural sciences and AI. More specifically, the generation of Critical Questions will be aligned with
+specific learning goals and assessment criteria specified in the TLSs, ensuring that the feedback is
+relevant and focused on the intended learning outcomes. Note that the generation will be multilingual,
+namely, in Basque, French, German and Lithuanian. These questions often apply models such as
+the Bloom’s taxonomy, CER (Claim, Evidence, Reasoning) or CQMAA (Critical Questions Model of
+
+
+Argument Assessment) to structure students’ responses and evaluations [26, 21].
+2.4. Evaluation and Benchmarking
+MT evaluation typically relies on automated metrics like BLEU, ChrF++, TER, or COMET. Though
+WMT includes some biomedical translation resources, comprehensive scientific text datasets remain
+notably absent [3]. However, automatic evaluation of text generation tasks remains an open challenge.
+In CRITICS, these tasks will be focused (apart from MT, covered above) in the evaluation of Critical
+Questions and TLS, and Automatic Feedback Generation. Although the task of automatic Critical
+Questions Generation is rather new [24], automatic metrics for question generation in general have
+been investigated. Novel approaches like QGEval offer multi-dimensional assessment [23]. Still, there is
+a strong research interest in devising more comprehensive LLM-based evaluation methods [27, 28], also
+for question generation in particular [23]. Despite these new automatic methods, human evaluation
+is still considered to be essential. Thus, expert assessments would focus on grammatical correctness,
+relevance, semantic soundness, quality of the evidence-based argumentation, and (in some cases)
+alignment with cognitive frameworks like Bloom’s Taxonomy [15].
+The consortium has ample research experience regarding evaluation and benchmarking relevant to
+the CRITICS project. EHU has developed a state-of-the-art open-source LLM for Basque, Latxa [13].
+EHU, in collaboration with CNRS, has released the first multilingual LLM for the medical domain,
+evaluating it on medical and scientific benchmarks. EHU has collected the largest corpora available for
+Basque, which contains circa 1.4 billion tokens [13], and has experience in the development of new
+benchmarks for multilingual evaluation of LLMs [29, 13, 30]. Regarding Argument Mining, CNRS and
+EHU have released the first multilingual dataset for the medical domain annotated with argument
+structures [31] and the first publicly available dataset of Critical Questions [24] linked to Argument
+Schemes. EHU has already published various results with similarity and LLM-based evaluation methods
+in pairwise ranking- and reference-based settings [24, 32, 33]. ZHAW has developed theoretical
+foundations for the applications of automated evaluation for generative models (with a focus on
+Machine Translation) [34, 35]. This provides a strong foundation for correctly applying automated
+evaluation and calibrating the metrics to avoid biased evaluation results [36]. They also published work
+on the robustness and reliability of trained metrics [35].
+Progress beyond the state-of-the-art: The use of LLM-based evaluation for text generation tasks
+related to MT and Critical Questions and Feedback generation in the scientific domain remains an open
+research problem. CRITICS will provide new LLM-based evaluation methods specifically tailored to the
+relevant features of translating MT of scientific documents and to the science teaching-related criteria
+of the automatically generated Critical Questions and Assessment/Feedback.
+3. Methodology and Work Plan
+Although CRITICS’ vision applies across disciplines, the project focuses on two areas: (i) natural sciences
+(biology, chemistry, and physics) and (ii) Artificial Intelligence. The former is key to competency-based
+assessments, while the latter poses specific translation challenges due to the continuous introduction of
+new terminology that may lack established equivalents in less-resourced languages [3, 37]. CRITICS will
+target a diverse spectrum of languages, namely, Basque (agglutinative language isolate), Lithuanian (East
+Baltic, inflectional), German (West Germanic, inflectional), and French (Romance, synthetic-fusional).
+Every objective will be addressed in a multilingual setting, namely, including the four target languages
+of the project.
+1. Objective 1. LLM-based Machine Translation of Scientific Documents: Focused on developing and
+adapting open-weight LLMs for high-quality, document-level MT of scientific texts, particularly
+in low- and medium-resource language pairs (e.g., English–Lithuanian/Basque/French/German).
+
+
+2. Objective 2. Argumentation serves as a fundamental mechanism in scientific discourse, facilitat-
+ing the process of reaching conclusions and facilitating science literacy and critical thinking. This
+objective will focus on training LLMs to recognize evidence-based argumentation and identify
+fallacies and scientific misconceptions.
+3. Objective 3. Automatic Assessment and Critical Thinking: Rather than merely identifying gaps in
+the scientific discourse, automatic assessment will also involve the generation of Critical Questions
+and Detailed Feedback in competency-based assessment settings (PISA style - Programme for
+International Student Assessment) where cross-linguistic comparability is essential.
+4. Objective 4. Evaluation: qualitatively evaluate the generation of critical questions and automatic
+assessment feedback using LLMs-as-a-Judge paradigm in a way that can be compared with
+human-generated judgments [24].
+3.1. Work Plan
+The project work plan consists of three Development-Evaluation cycles that will be replicated for each
+of the technical work packages (WP2-WP5). The overall structure of the work plan structured in work
+packages is as follows. In a first step, in WP2 the consortium will define the final requirements for
+the use cases (Parallel Translator of Scientific Documents and Teacher Evaluator) of the project. Also
+in WP2 the data collection required to address the objectives and research questions related to each
+use case will be performed. Regarding the MT use case, most of the relevant data sources for natural
+sciences (biology, chemistry, and physics) and Artificial Intelligence are already identified following
+open science criteria.
+MT of scientific data. The choice of English data sources aims to ensure a massive amount of scientific
+content to develop the LLM-based MT of scientific articles in WP3 and WP5 while being able to distribute
+the pre-processed corpus and the scientific outcomes. Data sources will include Biorxiv4 (biology and
+biochemistry), PubMed Central5 (biomedical and life sciences, some data also available in French),
+chemrxiv,6 arxiv for Physics and Artificial Intelligence,7 ACL Anthology Corpus (AI and NLP),8 and
+other sources relevant for the scientific disciplines targeted in CRITICS, for example, evidence-based
+scientific educational resources such as Scientix,9 STEM learning centre,10 e-bug.11 Note that pre-
+print papers usually include information about their peer-reviewed version, which will prioritize to
+automatically translate into the targeted languages. Furthermore, most of these resources provide API
+access to their content in some structured format to avoid any OCR of PDF articles. A final selection
+and analysis of the most appropriate data sources will be done in WP2.
+Competency-based Assessments data. We will also compile and annotate (WP2) 500 competency-
+based assessments in higher education (questionnaires with student responses and corresponding
+teacher’s assessments) are available in-house at UPV/EHU and will be the basis for developing and
+evaluating the Teacher Evaluator tool and research in WP4. This data will be fully anonymized and
+released following privacy and open science policies. Once both types of data are compiled and pre-
+processed, WP2 will annotate argumentation graphs, critical questions, and feedback/assessment for
+benchmarking in WP5. Using the data for evaluation and development, WP3 will primarily focus on the
+advancement of SOTA by training and experimenting with LLMs for MT of scientific data. In WP4 novel
+research will address the quality assessment of argumentation in scientific and educational texts. WP5
+will investigate new techniques to evaluate challenging text generation tasks such as MT of scientific
+documents, Critical Questions and Automatic Feedback Generation. Finally, WP6 will apply every
+4https://api.biorxiv.org/
+5https://pmc.ncbi.nlm.nih.gov/
+6https://chemrxiv.org/
+7https://arxiv.org/
+8https://github.com/shauryr/ACL-anthology-corpus
+9https://www.scientix.eu/
+10https://www.stem.org.uk/
+11https://www.e-bug.eu/
+
+
+result obtained in WP2, WP3 and WP4 to develop the two tools and prototypes for a Parallel Translator
+of Scientific Documents and a Teacher Evaluator.
+1. WP2. Data Collection: In this WP we will address the data collection, processing, and manual
+annotation and evaluation for benchmarking of the various modules in WP5. The correct descrip-
+tion of the data guarantees its traceability, contributing to the explainability and transparency of
+the models. We also plan to obtain new high-quality instruction and alignment datasets derived
+from already instructed models [37] using the magpie approach [38] to reduce the need for
+expensive human-annotated instruction data.
+2. WP3. LLM-based MT: Adapt and optimize MT techniques for scholarly documents, with a
+focus on low-resource language pairs (English-Lithuanian, English-Basque) and medium-resource
+pairs (English-French, English-German). Improve translation quality using open-weight LLMs
+[39, 11, 12], domain-specific data [37], and strategies like prompt engineering, terminology
+integration [4], and lightweight fine-tuning.
+3. WP4. Argumentation:. Tailor Argument mining approaches to address domain-specific features
+of scientific argumentation in multilingual educational texts. Assess the coherence of argumen-
+tative scientific content across languages. Critical questions generation [24], to enhance and
+evaluate students’ ability to analyze complex texts, evaluate claims and evidence, and construct
+well-reasoned arguments.
+4. WP5. Evaluation and Benchmarking: First, this WP evaluates the translated scientific texts.
+We investigate two approaches. First, the human evaluation, and second automated evaluation
+procedures. For human evaluation, the main challenge is reproducibility, as human ratings suffer
+from high variance; thus, we will develop protocols and guidelines to reduce this issue. The main
+challenges for automated evaluation are that they disagree with human feedback and tend to
+prefer certain systems disproportionately. Thus, the second focus of this WP is developing and
+calibrating automated metrics to evaluate MT and assessment generation [24, 32, 33].
+4. Concluding Remarks
+CRITICS aims to contribute to the democratization of scientific knowledge by integrating LLM-based
+MT with critical thinking in science education, overcoming language barriers for low- and medium-
+resource languages like Basque, Lithuanian, French, and German. Through its six work packages, the
+project will strive to deliver optimized MT for scientific documents, argumentation mining tailored to
+scientific texts, automated critical feedback generation, and robust evaluation methods, all validated via
+applications such as the Parallel Reader and Teacher Evaluator.
+By addressing key challenges in terminology consistency, document structure preservation, and
+multilingual argumentation assessment, CRITICS advances beyond the current state-of-the-art in
+domain-specific NLP and educational tech. The project’s emphasis on open-weight models, synthetic
+data generation, and LLM-as-a-judge metrics will investigate how to ensure reproducible, transparent
+results that foster scientific literacy across diverse linguistic contexts.
+Future extensions could scale to additional low-resource languages and integrate emerging multimodal
+LLMs for visual scientific content, amplifying the project’s impact on global science education.
+Acknowledgments
+EHU’s researchers acknowledge the following MCIN/AEI/10.13039/501100011033 projects: (i) CRITICS
+(PCI2025-167239-2) funded by MICIU/AEI /10.13039/501100011033 and co-funded by the European
+Union; (ii) DeepThought (PID2024-159202OB-C21) funded by ERDF, EU, and (iii) Xixare (PID2024-
+159566NB-I00). CNRS/UniCA research is supported by the French National Research Agency (grant
+ANR-25-CHR4-0002-02).
+
+
+References
+[1] M. Méheut, D. Psillos, Teaching–learning sequences: aims and tools for science education research,
+International Journal of Science Education 26 (2004) 515–535.
+[2] A. Ruiz-González, A. Rico, J. Guisasola,
+Learning About Sound in Initial Teacher Training:
+Evaluation and Redesign of a Teaching-Learning Sequence, in: Connecting Science Education with
+Cultural Heritage: Selected Papers from the ESERA 2023 Conference, Springer, 2025, pp. 157–171.
+[3] H. C. Kleidermacher, J. Zou, Science across languages: assessing LLM multilingual translation of
+scientific papers, in: Findings of the EACL 2026, 2026, pp. 3932–3947.
+[4] S. Kim, M. Sung, J. Lee, H. Lim, J. G. Perez, Efficient terminology integration for LLM-based trans-
+lation in specialized domains, in: Proceedings of the Ninth Conference on Machine Translation,
+2024, pp. 636–642.
+[5] L. Wang, C. Lyu, T. Ji, Z. Zhang, D. Yu, S. Shi, Z. Tu, Document-level machine translation with
+large language models, in: Proceedings of the 2023 Conference on Empirical Methods in Natural
+Language Processing, 2023, pp. 16646–16661.
+[6] W. Zhu, H. Liu, Q. Dong, J. Xu, S. Huang, L. Kong, J. Chen, L. Li, Multilingual machine translation
+with large language models: Empirical results and analysis, in: Findings of NAACL 2024, 2024, pp.
+2765–2781.
+[7] B. Zhang, B. Haddow, A. Birch, Prompting large language model for machine translation: A case
+study, in: International conference on machine learning, PMLR, 2023, pp. 41092–41110.
+[8] M. Sabo, J. Klein, G. Bernardinello, Boosting machine translation with AI-powered terminology
+features, in: EAMT, 2024, pp. 25–26.
+[9] H. Lu, H. Yang, H. Huang, D. Zhang, W. Lam, F. Wei, Chain-of-dictionary prompting elicits
+translation in large language models, in: EMNLP, 2024, pp. 958–976.
+[10] J. Kapoči¯uṫe-Dzikieṅe, T. Bergmanis, M. Pinnis, Localizing AI: Evaluating Open-Weight Language
+Models for Languages of Baltic States, in: NoDaLiDa/Baltic-HLT, 2025, pp. 287–295.
+[11] G. Team, T. Mesnard, C. Hardin, R. Dadashi, S. Bhupatiraju, S. Pathak, L. Sifre, M. Rivière, M. S.
+Kale, J. Love, et al., Gemma: Open models based on gemini research and technology, arXiv preprint
+arXiv:2403.08295 (2024).
+[12] A. Grattafiori, A. Dubey, A. Jauhri, A. Pandey, A. Kadian, A. Al-Dahle, A. Letman, A. Mathur,
+A. Schelten, A. Vaughan, et al., The llama 3 herd of models, arXiv preprint arXiv:2407.21783 (2024).
+[13] J. Etxaniz, O. Sainz, N. Miguel, I. Aldabe, G. Rigau, E. Agirre, A. Ormazabal, M. Artetxe, A. Soroa,
+Latxa: An open language model and evaluation suite for basque, in: Proceedings of the 62nd
+Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 2024,
+pp. 14952–14972.
+[14] M. Stede, J. Schneider, G. Hirst, Argumentation mining, Springer, 2019.
+[15] J. Lawrence, C. Reed, Argument mining: A survey, Computational linguistics 45 (2019) 765–818.
+[16] M. Glockner, Y. Hou, P. Nakov, I. Gurevych, Missci: Reconstructing fallacies in misrepresented
+science, in: Proceedings of the 62nd Annual Meeting of the Association for Computational
+Linguistics (Volume 1: Long Papers), 2024, pp. 4372–4405.
+[17] I. Augenstein, Determining the credibility of science communication, in: Proceedings of the
+Second Workshop on Scholarly Document Processing, 2021, pp. 1–6.
+[18] D. Wright, J. Pei, D. Jurgens, I. Augenstein, Modeling information change in science communication
+with semantically matched paraphrases, in: Proceedings of the 2022 Conference on Empirical
+Methods in Natural Language Processing, 2022, pp. 1783–1807.
+[19] B. Molinet, S. Marro, E. Cabrio, S. Villata, Explanatory argumentation in natural language for
+correct and incorrect medical diagnoses, Journal of Biomedical Semantics 15 (2024) 8.
+[20] P. P. Lemons, J. D. Lemons, Questions for assessing higher-order cognitive skills: It’s not just
+bloom’s, CBE—Life Sciences Education 12 (2013) 47–58.
+[21] E. M. Nussbaum, Critical integrative argumentation: Toward complexity in students’ thinking,
+Educational Psychologist 56 (2021) 1–17.
+[22] R. Gao, H. E. Merzdorf, S. Anwar, M. C. Hipwell, A. R. Srinivasa, Automatic assessment of text-
+
+
+based responses in post-secondary education: A systematic review, Computers and Education:
+Artificial Intelligence 6 (2024) 100206.
+[23] W. Fu, B. Wei, J. Hu, Z. Cai, J. Liu, Qgeval: benchmarking multi-dimensional evaluation for
+question generation, in: Proceedings of the 2024 Conference on Empirical Methods in Natural
+Language Processing, 2024, pp. 11783–11803.
+[24] B. Calvo Figueras, R. Agerri, Benchmarking Critical Questions Generation: A Challenging Reason-
+ing Task for Large Language Models, in: Findings of the EMNLP 2025, 2025, pp. 5635–5652.
+[25] Y. Song, M. Heilman, B. B. Klebanov, P. Deane, Applying argumentation schemes for essay scoring,
+in: Proceedings of the first workshop on argumentation mining, 2014, pp. 69–78.
+[26] M. Nussbaum, L. Tian, M. Van Winkle, H. Perera, L. Putney, I. Dove, K. Carroll, Using the critical
+questions model of argumentation for science teacher professional learning and student outcomes,
+International Society of the Learning Sciences (ISLS) (2020).
+[27] J. Gu, X. Jiang, Z. Shi, H. Tan, X. Zhai, C. Xu, W. Li, Y. Shen, S. Ma, H. Liu, et al., A survey on
+llm-as-a-judge, The Innovation (2024).
+[28] D. Li, B. Jiang, L. Huang, A. Beigi, C. Zhao, Z. Tan, A. Bhattacharjee, Y. Jiang, C. Chen, T. Wu, et al.,
+From generation to judgment: Opportunities and challenges of llm-as-a-judge, in: Proceedings of
+the 2025 Conference on Empirical Methods in Natural Language Processing, 2025, pp. 2757–2791.
+[29] I. Alonso, M. Oronoz, R. Agerri, Medexpqa: Multilingual benchmarking of large language models
+for medical question answering, Artificial intelligence in medicine 155 (2024) 102938.
+[30] I. García-Ferrero, R. Agerri, A. A. Salazar, E. Cabrio, I. De la Iglesia, A. Lavelli, B. Magnini, B. Molinet,
+J. Ramirez-Romero, G. Rigau, et al., Medmt5: An open-source multilingual text-to-text llm for the
+medical domain, in: Proceedings of the 2024 Joint International Conference on Computational
+Linguistics, Language Resources and Evaluation (LREC-COLING 2024), 2024, pp. 11165–11177.
+[31] E. Sviridova, A. Yeginbergen, A. Estarrona, E. Cabrio, S. Villata, R. Agerri, Casimedicos-arg: A
+medical question answering dataset annotated with explanatory argumentative structures, in:
+Proceedings of the 2024 conference on empirical methods in natural language processing, 2024,
+pp. 18463–18475.
+[32] A. Yeginbergen, M. Oronoz, R. Agerri, Dynamic knowledge integration for evidence-driven
+counter-argument generation with large language models, in: Findings of the Association for
+Computational Linguistics: ACL 2025, 2025, pp. 22568–22584.
+[33] I. Zubiaga, A. Soroa, R. Agerri, A llm-based ranking method for the evaluation of automatic
+counter-narrative generation, in: Findings of the Association for Computational Linguistics:
+EMNLP 2024, 2024, pp. 9572–9585.
+[34] P. Von Däniken, J. M. Deriu, D. Tuggener, M. Cieliebak, Favi-score: A measure for favoritism in
+automated preference ratings for generative ai evaluation, in: Proceedings of the 62nd Annual
+Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 2024, pp.
+4437–4454.
+[35] J. M. Deriu, P. Von Däniken, D. Tuggener, M. Cieliebak, Correction of errors in preference ratings
+from automated metrics for text generation, in: Findings of the Association for Computational
+Linguistics: ACL 2023, 2023, pp. 6456–6474.
+[36] P. von Däniken, J. M. Deriu, A. Rodrigo, M. Cieliebak, Improving quantification with minimal
+in-domain annotations: Beyond classify and count, in: Proceedings of the International AAAI
+Conference on Web and Social Media, volume 18, 2024, pp. 1585–1598.
+[37] D. Zhang, Z. Hu, S. Zhoubian, Z. Du, K. Yang, Z. Wang, Y. Yue, Y. Dong, J. Tang, Sciinstruct: a
+self-reflective instruction annotated dataset for training scientific language models, Advances in
+Neural Information Processing Systems 37 (2024) 1443–1473.
+[38] Z. Xu, F. Jiang, L. Niu, Y. Deng, R. Poovendran, Y. Choi, B. Y. Lin, Magpie: Alignment data synthesis
+from scratch by prompting aligned llms with nothing, arXiv preprint arXiv:2406.08464 (2024).
+[39] J. Bai, S. Bai, Y. Chu, Z. Cui, K. Dang, X. Deng, Y. Fan, W. Ge, Y. Han, F. Huang, et al., Qwen
+technical report, arXiv preprint arXiv:2309.16609 (2023).
