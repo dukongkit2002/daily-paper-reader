@@ -1,0 +1,54 @@
+{
+  "label": "2026-09-16",
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16T21:56:44",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202609/16/2609.13609v1-assumption-lean-inference-for-spectral-differential-network-analysis-of-high-dimensional-time-series",
+      "section": "quick",
+      "title_en": "Assumption-Lean Inference for Spectral Differential Network Analysis of High-Dimensional Time Series",
+      "authors": "Michael Hellstern, Byol Kim, Ali Shojaie",
+      "date": "2026-09-11",
+      "pdf": "https://arxiv.org/pdf/2609.13609v1",
+      "score": "7.0",
+      "evidence": "高维时间序列的谱差分网络分析，可应用于EEG谱连接",
+      "tldr": "针对高维时间序列网络分析中条件间差异推断问题，现有方法常依赖强假设，本文提出假设宽松的谱差分网络推断框架。该方法直接估计两个高维逆谱密度之差，并为去偏D-trace估计建立高斯近似误差界，据此指导Welch谱估计的最优窗宽选择，证明估计量的渐近正态性。同时开发基于广义D-trace估计的高效算法以应对高维计算挑战。在合成数据与脑电图数据上的实验验证了方法有效性，为神经科学等领域提供可靠工具。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Network analysis for multivariate time series is popular in many fields, from neuroscience to seismology. The inverse spectral density is a common choice for time series network analysis due to its representation of the frequency domain correlation between two variables after removing the best linear predictor of all other variables. In many applications, the goal is to study how these networks change across different conditions. For example, in neuroscience, one might be interested in how the brain connectivity network changes before and after stimulation. Towards this goal, we develop an inference framework based on a direct estimate of the difference in two high-dimensional inverse spectral densities. We develop a new Gaussian approximation error bound for any de-biased D-trace estimation procedure which is then leveraged to both inform optimal window sizes of Welch's estimators of the spectral density and establish asymptotic normality of our de-biased D-trace estimator. Moreover, we develop an efficient algorithm based on a generalized D-trace estimation procedure to overcome the computational complexity of high-dimensional inference. The method is illustrated on synthetic data experiments and on experiments with electroencephalography data.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202609/16/2609.12218v1-bridge-eeg-bridging-self-supervised-pretraining-and-efficient-deployment-for-cross-dataset-eeg-classification",
+      "section": "quick",
+      "title_en": "BRIDGE-EEG: Bridging Self-Supervised Pretraining and Efficient Deployment for Cross-Dataset EEG Classification",
+      "authors": "Meghna Roy Chowdhury, Chengwei Zhou, Haotian Yu, Gourav Datta, Shreyas Sen",
+      "date": "2026-09-10",
+      "pdf": "https://arxiv.org/pdf/2609.12218v1",
+      "score": "6.0",
+      "evidence": "用于高效跨数据集EEG分类的时频表示",
+      "tldr": "脑电自动分析需兼顾准确性、跨数据集迁移性和受限硬件部署。BRIDGE-EEG 将异构 EEG 统一为62通道时频表示，用 SimCLR 预训练 SE-ResNet18 教师，再蒸馏为 SE-ResNet8/4 轻量学生。在异常检测与情绪识别上，学生模型精度接近甚至超过参数量大10-1000倍的基础模型，边缘推理能耗降低3倍。运动想象仍存表示差距，但整体方案为可穿戴脑电分类提供了高效路径。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "The growing use of electroencephalography (EEG) motivates automated analysis that is accurate, transferable, and deployable on constrained hardware. Recent EEG foundation models learn general representations from large-scale pretraining, but their size and computational cost limit edge and wearable deployment. We introduce BRIDGE-EEG, an efficient multi-task EEG classification pipeline that preserves the benefits of pretraining while reducing model size. A unified preprocessing scheme maps heterogeneous recordings with different channel counts, montages, and sampling rates to a device-agnostic 62-channel time--frequency representation. We pretrain an SE-ResNet18 teacher (11.84 M parameters) with SimCLR on unlabeled EEG from five heterogeneous datasets, then compress it into SE-ResNet8 (1.56 M) and SE-ResNet4 (0.48 M) students using task-agnostic and task-specific distillation. We evaluate six benchmarks spanning abnormality detection, motor imagery, and emotion recognition. For abnormality detection and emotion recognition, the students achieve accuracy comparable to or better than several recent EEG foundation models with 10--1,000$\\times$ more parameters. Motor imagery shows a remaining representation gap, highlighting the importance of pretraining diversity. Inference profiling on a server GPU, desktop CPU, and NVIDIA Jetson Orin Nano shows up to 3.0$\\times$ lower edge energy per inference (15.64 mJ vs. 46.67 mJ). The compact models further support future deployment on MCU-class wearables.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202609/16/2609.15687v1-eeg-xplain-decoding-neural-black-boxes-of-eeg-foundation-models",
+      "section": "quick",
+      "title_en": "EEG-Xplain: Decoding Neural Black-Boxes of EEG Foundation Models",
+      "authors": "Hansong Ma, Junxiao Wang",
+      "date": "2026-09-14",
+      "pdf": "https://arxiv.org/pdf/2609.15687v1",
+      "score": "6.0",
+      "evidence": "频率域量化经典脑电节律",
+      "tldr": "EEG 基础模型如 BIOT、LaBraM、EEGMamba 性能出色但黑箱难解释，阻碍临床信任。本文提出统一归因框架，融合梯度、扰动与激活方法，从空间、时间、频率维度定位决策依据，并用大语言模型生成报告。在 Mumtaz2016 和 TUAB 上，解释与神经生理标记一致，同时暴露对伪影的依赖。为 EEG 基础模型提供标准化可解释性评估与生理合理性验证。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "EEG foundation models such as BIOT, LaBraM, and EEGMamba have achieved remarkable performance in neural signal decoding, but their black-box nature limits clinical trust and neuroscientific validation. We propose a unified attribution framework for interpreting EEG foundation models across heterogeneous architectures. The framework integrates gradient-, perturbation-, and activation-based explanation methods to analyze model behavior in spatial, temporal, and frequency dimensions. Spatially, it identifies critical EEG channels and visualizes their distributions using topographic maps. Temporally, it highlights decision-relevant signal segments through attribution heatmaps. In the frequency domain, it quantifies the contributions of canonical EEG rhythms via spectral perturbation analysis. To assess explanation reliability, we introduce a population-level evaluation combining Area Over the Perturbation Curve (AOPC) and cross-method consistency analysis. The framework further leverages Large Language Models (LLMs) to transform structured attribution outputs into natural-language reports, bridging low-level neural representations and high-level semantic reasoning. Experiments on benchmark datasets, including Mumtaz2016 and TUAB, demonstrate that the generated explanations are consistent with established neurophysiological markers, validating meaningful neural representations while exposing potential dependencies on artifacts and spurious patterns. The proposed framework provides a standardized approach for evaluating the interpretability, reliability, and physiological plausibility of EEG foundation models.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,133 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-09-16T21:53:18.728927+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2609.13609v1",
+      "source": "arxiv",
+      "title": "Assumption-Lean Inference for Spectral Differential Network Analysis of High-Dimensional Time Series",
+      "abstract": "Network analysis for multivariate time series is popular in many fields, from neuroscience to seismology. The inverse spectral density is a common choice for time series network analysis due to its representation of the frequency domain correlation between two variables after removing the best linear predictor of all other variables. In many applications, the goal is to study how these networks change across different conditions. For example, in neuroscience, one might be interested in how the brain connectivity network changes before and after stimulation. Towards this goal, we develop an inference framework based on a direct estimate of the difference in two high-dimensional inverse spectral densities. We develop a new Gaussian approximation error bound for any de-biased D-trace estimation procedure which is then leveraged to both inform optimal window sizes of Welch's estimators of the spectral density and establish asymptotic normality of our de-biased D-trace estimator. Moreover, we develop an efficient algorithm based on a generalized D-trace estimation procedure to overcome the computational complexity of high-dimensional inference. The method is illustrated on synthetic data experiments and on experiments with electroencephalography data.",
+      "authors": [
+        "Michael Hellstern",
+        "Byol Kim",
+        "Ali Shojaie"
+      ],
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "math.ST",
+        "stat.ML"
+      ],
+      "published": "2026-09-11T23:47:03+00:00",
+      "link": "https://arxiv.org/pdf/2609.13609v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Develops spectral differential network analysis for high-dimensional time series, applicable to EEG spectral connectivity",
+      "llm_evidence_cn": "高维时间序列的谱差分网络分析，可应用于EEG谱连接",
+      "llm_evidence": "高维时间序列的谱差分网络分析，可应用于EEG谱连接",
+      "canonical_evidence": "高维时间序列的谱差分网络分析，可应用于EEG谱连接",
+      "llm_tldr_en": "Proposes assumption-lean inference for differences in inverse spectral densities of high-dimensional time series, with application to brain connectivity analysis.",
+      "llm_tldr_cn": "针对高维时间序列中频谱网络差异推断的假设限制，提出基于逆谱密度直接差分的推断框架。该方法无需严格假设，可用于比较不同条件下的脑网络变化，例如神经科学中刺激前后连接差异。通过理论分析和数值实验验证了方法的有效性。该框架为EEG等神经信号的谱分析和网络比较提供了灵活工具。",
+      "llm_tldr": "针对高维时间序列中频谱网络差异推断的假设限制，提出基于逆谱密度直接差分的推断框架。该方法无需严格假设，可用于比较不同条件下的脑网络变化，例如神经科学中刺激前后连接差异。通过理论分析和数值实验验证了方法的有效性。该框架为EEG等神经信号的谱分析和网络比较提供了灵活工具。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2609.12218v1",
+      "source": "arxiv",
+      "title": "BRIDGE-EEG: Bridging Self-Supervised Pretraining and Efficient Deployment for Cross-Dataset EEG Classification",
+      "abstract": "The growing use of electroencephalography (EEG) motivates automated analysis that is accurate, transferable, and deployable on constrained hardware. Recent EEG foundation models learn general representations from large-scale pretraining, but their size and computational cost limit edge and wearable deployment. We introduce BRIDGE-EEG, an efficient multi-task EEG classification pipeline that preserves the benefits of pretraining while reducing model size. A unified preprocessing scheme maps heterogeneous recordings with different channel counts, montages, and sampling rates to a device-agnostic 62-channel time--frequency representation. We pretrain an SE-ResNet18 teacher (11.84 M parameters) with SimCLR on unlabeled EEG from five heterogeneous datasets, then compress it into SE-ResNet8 (1.56 M) and SE-ResNet4 (0.48 M) students using task-agnostic and task-specific distillation. We evaluate six benchmarks spanning abnormality detection, motor imagery, and emotion recognition. For abnormality detection and emotion recognition, the students achieve accuracy comparable to or better than several recent EEG foundation models with 10--1,000$\\times$ more parameters. Motor imagery shows a remaining representation gap, highlighting the importance of pretraining diversity. Inference profiling on a server GPU, desktop CPU, and NVIDIA Jetson Orin Nano shows up to 3.0$\\times$ lower edge energy per inference (15.64 mJ vs. 46.67 mJ). The compact models further support future deployment on MCU-class wearables.",
+      "authors": [
+        "Meghna Roy Chowdhury",
+        "Chengwei Zhou",
+        "Haotian Yu",
+        "Gourav Datta",
+        "Shreyas Sen"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "published": "2026-09-10T21:27:10+00:00",
+      "link": "https://arxiv.org/pdf/2609.12218v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "time-frequency representation for efficient cross-dataset EEG classification",
+      "llm_evidence_cn": "用于高效跨数据集EEG分类的时频表示",
+      "llm_evidence": "用于高效跨数据集EEG分类的时频表示",
+      "canonical_evidence": "用于高效跨数据集EEG分类的时频表示",
+      "llm_tldr_en": "BRIDGE-EEG proposes a pretraining-efficient multi-task pipeline that maps heterogeneous EEG to a unified time-frequency representation, reducing model size while preserving classification accuracy.",
+      "llm_tldr_cn": "针对EEG基础模型参数多、难以在边缘设备部署的问题，提出BRIDGE-EEG高效多任务分类框架，将异构EEG统一转换为62通道时频表示，通过SimCLR自监督预训练SE-ResNet18教师模型并压缩部署，在跨数据集实验中兼顾准确率与效率，为可穿戴EEG分析提供了轻量化方案。",
+      "llm_tldr": "针对EEG基础模型参数多、难以在边缘设备部署的问题，提出BRIDGE-EEG高效多任务分类框架，将异构EEG统一转换为62通道时频表示，通过SimCLR自监督预训练SE-ResNet18教师模型并压缩部署，在跨数据集实验中兼顾准确率与效率，为可穿戴EEG分析提供了轻量化方案。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2609.15687v1",
+      "source": "arxiv",
+      "title": "EEG-Xplain: Decoding Neural Black-Boxes of EEG Foundation Models",
+      "abstract": "EEG foundation models such as BIOT, LaBraM, and EEGMamba have achieved remarkable performance in neural signal decoding, but their black-box nature limits clinical trust and neuroscientific validation. We propose a unified attribution framework for interpreting EEG foundation models across heterogeneous architectures. The framework integrates gradient-, perturbation-, and activation-based explanation methods to analyze model behavior in spatial, temporal, and frequency dimensions. Spatially, it identifies critical EEG channels and visualizes their distributions using topographic maps. Temporally, it highlights decision-relevant signal segments through attribution heatmaps. In the frequency domain, it quantifies the contributions of canonical EEG rhythms via spectral perturbation analysis. To assess explanation reliability, we introduce a population-level evaluation combining Area Over the Perturbation Curve (AOPC) and cross-method consistency analysis. The framework further leverages Large Language Models (LLMs) to transform structured attribution outputs into natural-language reports, bridging low-level neural representations and high-level semantic reasoning. Experiments on benchmark datasets, including Mumtaz2016 and TUAB, demonstrate that the generated explanations are consistent with established neurophysiological markers, validating meaningful neural representations while exposing potential dependencies on artifacts and spurious patterns. The proposed framework provides a standardized approach for evaluating the interpretability, reliability, and physiological plausibility of EEG foundation models.",
+      "authors": [
+        "Hansong Ma",
+        "Junxiao Wang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-14T14:56:07+00:00",
+      "link": "https://arxiv.org/pdf/2609.15687v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "frequency domain quantification of EEG rhythms",
+      "llm_evidence_cn": "频率域量化经典脑电节律",
+      "llm_evidence": "频率域量化经典脑电节律",
+      "canonical_evidence": "频率域量化经典脑电节律",
+      "llm_tldr_en": "This paper proposes a unified attribution framework for interpreting EEG foundation models, revealing critical channels, segments, and quantifying canonical EEG rhythm contributions in frequency domain. It offers a transferable explainability tool for relative power spectrum analysis in cognitive EEG tasks.",
+      "llm_tldr_cn": "该研究针对脑电基础模型黑箱问题，提出统一归因框架，整合梯度、扰动和激活方法，从空间、时间、频率维度解释模型。频率域上量化经典脑电节律贡献，可支持认知任务中相对功率谱分析的解释。该框架为脑电解码提供可解释性，对高级认知任务的节律贡献分析具有方法学价值。",
+      "llm_tldr": "该研究针对脑电基础模型黑箱问题，提出统一归因框架，整合梯度、扰动和激活方法，从空间、时间、频率维度解释模型。频率域上量化经典脑电节律贡献，可支持认知任务中相对功率谱分析的解释。该框架为脑电解码提供可解释性，对高级认知任务的节律贡献分析具有方法学价值。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
