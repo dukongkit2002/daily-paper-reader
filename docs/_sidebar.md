@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-17 <!--dpr-date:20260917-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/17/2609.13717v1-manas-2-constrained-reconstruction-for-eeg-foundation-models" data-sidebar-item="{&quot;title&quot;: &quot;MANAS-2: Constrained Reconstruction for EEG Foundation Models&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.13717v1-manas-2-constrained-reconstruction-for-eeg-foundation-models&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;EEG基础模型中频谱带目标的约束重建&quot;}">MANAS-2: Constrained Reconstruction for EEG Foundation Models</a>
   * 2026-09-16 <!--dpr-date:20260916-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/16/2609.13609v1-assumption-lean-inference-for-spectral-differential-network-analysis-of-high-dimensional-time-series" data-sidebar-item="{&quot;title&quot;: &quot;Assumption-Lean Inference for Spectral Differential Network Analysis of High-Dimensional Time Series&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.13609v1-assumption-lean-inference-for-spectral-differential-network-analysis-of-high-dimensional-time-series&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;高维时间序列的谱差分网络分析，可应用于EEG谱连接&quot;}">Assumption-Lean Inference for Spectral Differential Network Analysis of High-Dimensional Time Series</a>
