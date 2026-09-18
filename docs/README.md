@@ -6,26 +6,29 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-09-17
-- 运行时间：2026-09-17 21:43:05 UTC
+- 最新运行日期：2026-09-18
+- 运行时间：2026-09-18 21:26:07 UTC
 - 运行状态：成功
-- 本次总论文数：1
+- 本次总论文数：2
 - 精读区：0
-- 速读区：1
+- 速读区：2
 
 ### 今日简报（AI）
-今日速读一篇脑电AI新作《MANAS-2》，聚焦用约束重建改进EEG基础模型。  
-值得关注的是它尝试为脑电基础模型引入约束重建，可能对数据稀缺下的稳定表征学习有参考价值。  
-建议普通读者后续重点看它在多任务、跨被试上的泛化表现，并留意是否开源可复现。
-- 详情：[/202609/17/README](/202609/17/README)
+- 今日共生成 2 篇推荐（精读 0 篇，速读 2 篇）
+- 速读：《MANAS-2: Constrained Reconstruction for EEG Foundation Models》（7.0/10）, 《Deep Learning-Based Classification of Cognitive and Resting States Using Electroencephalography Signals》（7.0/10）
+- 这些结果覆盖了当下较热的方向，建议先看精读区论文的关键问题与方法。
+- 详情：[/202609/18/README](/202609/18/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [MANAS-2: Constrained Reconstruction for EEG Foundation Models](/202609/17/2609.13717v1-manas-2-constrained-reconstruction-for-eeg-foundation-models)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：EEG基础模型中频谱带目标的约束重建
+1. [MANAS-2: Constrained Reconstruction for EEG Foundation Models](/202609/18/2609.13717v2-manas-2-constrained-reconstruction-for-eeg-foundation-models)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：EEG掩码自编码器中的谱带目标
+2. [Deep Learning-Based Classification of Cognitive and Resting States Using Electroencephalography Signals](/202609/18/2609.20467v1-deep-learning-based-classification-of-cognitive-and-resting-states-using-electroencephalography-signals)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：使用时频特征对认知与静息EEG状态进行深度学习分类
 
 
 <div class="dpr-home-promo-card">

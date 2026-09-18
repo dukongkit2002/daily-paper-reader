@@ -1,0 +1,39 @@
+{
+  "label": "2026-09-18",
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T21:26:22",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202609/18/2609.13717v2-manas-2-constrained-reconstruction-for-eeg-foundation-models",
+      "section": "quick",
+      "title_en": "MANAS-2: Constrained Reconstruction for EEG Foundation Models",
+      "authors": "Arvasu Kulkarni, Aditya Ray Mishra, Jeet Bandhu Lahiri, Mahir Jain, Parshva Runwal, Lakshya Saini, Siddharth Panwar, Sandeep Singh",
+      "date": "2026-09-12",
+      "pdf": "https://arxiv.org/pdf/2609.13717v2",
+      "score": "7.0",
+      "evidence": "EEG掩码自编码器中的谱带目标",
+      "tldr": "掩码重建虽广泛用于脑电（EEG）基础模型，但低信噪比下优化波形重建未必产生最优潜在表征。MANAS-2结合原始-频带混合掩码自编码器与约束重建正则项，通过惩罚相邻窗口RMS能量差塑造振荡包络信息，使编码器偏向谱组织。在七个留出数据集上，加入该约束使六带谱功率恢复R²从0.860升至0.906，带能量动态恢复从0.283升至0.354，且效果架构无关，时间波形信息仍可恢复。MANAS-2在多数下游迁移任务上领先，表明物理约束可提升潜在空间谱组织性与可迁移性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Masked reconstruction is widely used for EEG foundation models, but optimizing reconstruction on low-SNR waveforms does not necessarily produce the most useful latent representation. We introduce MANAS-2, a new EEG foundation model that combines a Raw-Band Hybrid (RBH) masked autoencoder with Constrained Reconstruction (ConRec), a physics-motivated regularizer. RBH jointly reconstructs temporal waveform patches and compact spectral-band targets, while ConRec acts only on the temporal decoder output, penalizing differences in RMS energy between adjacent short windows of the reconstructed waveform. ConRec is intended to shape the encoder by biasing it toward the organization of oscillatory-envelope information. Across seven held-out EEG datasets, adding ConRec to an otherwise identical RBH model increases frozen ridge recovery of six-band spectral power from mean R^2=0.860 to 0.906 and recovery of inter-patch band-energy dynamics from R^2=0.283 to 0.354, while temporal waveform information remains highly recoverable from the frozen latents. Applied to a temporal-only masked autoencoder, ConRec also improves frozen downstream transfer and frequency-dependent latent geometry despite receiving no spectral targets: i.e., the effects of ConRec are architecture-independent. MANAS-2 also outperforms leading EEG Foundation Models on most downstream knowledge-transfer tasks. From the effects of ConRec, we see that a physically motivated constraint imposed through the decoder can make for a more spectrally organized and transferable latent space. MANAS-2 therefore provides a new EEG foundation model built around constrained reconstruction as a mechanism for shaping representation--rather than reconstruction--quality.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202609/18/2609.20467v1-deep-learning-based-classification-of-cognitive-and-resting-states-using-electroencephalography-signals",
+      "section": "quick",
+      "title_en": "Deep Learning-Based Classification of Cognitive and Resting States Using Electroencephalography Signals",
+      "authors": "K. A. Januka S. Fernando, Harshit Srivastava",
+      "date": "2026-09-17",
+      "pdf": "https://arxiv.org/pdf/2609.20467v1",
+      "score": "7.0",
+      "evidence": "使用时频特征对认知与静息EEG状态进行深度学习分类",
+      "tldr": "准确区分脑电图中的静息态与认知态对理解脑功能至关重要。本研究提出一种CNN堆叠GRU的深度学习框架，结合时频分析提取特征，并评估多种分类器包括2D-Net。在静息与数学、记忆、音乐任务分类中分别获得83.177%、76.107%、83.432%的准确率。结果验证了信号处理与深度学习融合在认知状态判别中的有效性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "The categorization of cognitive and resting states derived from electroencephalography (EEG) signals is crucial for comprehending fluctuations in brain activity linked to various mental states. EEG provides a non-intrusive approach for documenting brain function in both resting and task-oriented cognitive conditions, whilst deep learning techniques enable the automatic extraction of significant patterns from intricate EEG data. This study presents a deep learning framework to distinguish between resting and cognitive states through EEG records. The proposed framework integrates a Convolutional Neural Network (CNN) stacked with a Gated Recurrent Unit (GRU) for the extraction of features from EEG signals. Time-frequency analysis is conducted to explore the salient aspects of signals, and the derived features are then assessed utilizing conventional deep learning and machine learning classifiers, including the suggested 2D-Net architecture. The proposed approach and feature extraction strategy outperform the evaluated comparative methods, achieving accuracies of 83.177% for resting-versus-mathematical task classification, 76.107% for resting-versus-memory task classification, and 83.432% for resting-versus-music task classification. The findings illustrate the efficacy of integrating signal processing with deep learning methodologies to discriminate resting from cognitive states utilizing EEG signals.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
