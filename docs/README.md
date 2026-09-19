@@ -6,29 +6,22 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-09-18
-- 运行时间：2026-09-18 21:26:07 UTC
+- 最新运行日期：2026-09-19
+- 运行时间：2026-09-19 21:42:40 UTC
 - 运行状态：成功
-- 本次总论文数：2
+- 本次总论文数：0
 - 精读区：0
-- 速读区：2
+- 速读区：0
 
 ### 今日简报（AI）
-- 今日共生成 2 篇推荐（精读 0 篇，速读 2 篇）
-- 速读：《MANAS-2: Constrained Reconstruction for EEG Foundation Models》（7.0/10）, 《Deep Learning-Based Classification of Cognitive and Resting States Using Electroencephalography Signals》（7.0/10）
-- 这些结果覆盖了当下较热的方向，建议先看精读区论文的关键问题与方法。
-- 详情：[/202609/18/README](/202609/18/README)
+> 今日无新推荐，系统未产出可展示论文。
+- 详情：[/202609/19/README](/202609/19/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [MANAS-2: Constrained Reconstruction for EEG Foundation Models](/202609/18/2609.13717v2-manas-2-constrained-reconstruction-for-eeg-foundation-models)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：EEG掩码自编码器中的谱带目标
-2. [Deep Learning-Based Classification of Cognitive and Resting States Using Electroencephalography Signals](/202609/18/2609.20467v1-deep-learning-based-classification-of-cognitive-and-resting-states-using-electroencephalography-signals)  
-   标签：评分：7.0/10、query:cog-eeg-mpfc
-   evidence：使用时频特征对认知与静息EEG状态进行深度学习分类
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">
