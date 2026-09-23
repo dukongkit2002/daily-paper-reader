@@ -1,0 +1,39 @@
+{
+  "label": "2026-09-23",
+  "date": "2026-09-23",
+  "generated_at": "2026-09-23T22:02:12",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202609/23/2609.19842v1-beyond-flattened-tokens-structure-preserving-eeg-decoding-with-reusable-tridim-blocks",
+      "section": "quick",
+      "title_en": "Beyond Flattened Tokens: Structure-Preserving EEG Decoding with Reusable TriDim Blocks",
+      "authors": "Shiyue Su, Song Wang, Zekai Zhan, Junjie Zeng, Ziling Lu, Zongsheng Li, Xinyuan Ye, Zhiyuan Ma, Xinke Shen, Quanying Liu",
+      "date": "2026-09-17",
+      "pdf": "https://arxiv.org/pdf/2609.19842v1",
+      "score": "6.0",
+      "evidence": "面向认知任务分析的结构保持 EEG 解码",
+      "tldr": "现有脑电解码架构常将通道、局部波形和长程时间信息折叠为扁平标记序列或依赖分离模块，难以保持各自角色并协同。TriDim块显式保留通道、片段内样本位置和片段位置三个轴，通过逐轴前馈变换与跨轴注意力协调空间、短时与长时时间信息。堆叠TriDim块的TriDimEEG在8个数据集跨被试评估中平均准确率较次优模型提升4.3%；替换三个脑电基础模型中的Transformer块平均提升7.4%并减少参数17.0%至47.3%。该工作为脑电解码提供结构保持的通用构建块。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Effective EEG decoding requires representations that preserve organization among channels, local waveform dynamics, and long-range temporal context. Existing EEG architectures often capture these structures using separate specialized modules or collapse them into a single token sequence, making it difficult to maintain their distinct roles and coordinate their interactions throughout the backbone. We propose TriDim, a reusable block that preserves the representation shape and keeps three EEG axes explicit: channel, sample position within each patch, and patch position across the recording. These axes correspond to spatial, short-term temporal, and long-term temporal information, respectively. Each TriDim block applies feed-forward transformations along individual axes and cross-axis attention to coordinate information exchange among them. By stacking TriDim blocks with a multi-level tri-axis readout, we construct TriDimEEG, a standalone EEG decoder. Under strict cross-subject evaluation on eight datasets spanning clinical diagnosis, sleep staging, motor imagery, and emotion recognition, TriDimEEG achieves the best overall performance among fifteen evaluated models, with a 4.3% relative improvement in average accuracy over the second-best model. Replacing Transformer blocks in three EEG foundation models with TriDim blocks yields an average relative improvement of 7.4% in downstream accuracy while reducing parameter counts by 17.0% to 47.3%. These results establish TriDim as an effective and reusable building block and TriDimEEG as a strong standalone EEG decoder. Code and parameters of TriDimEEG are available at https://github.com/ncclab-sustech/TriDim_model.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202609/23/2609.22658v1-subspace-learning-with-interval-censored-likelihoods-for-dequantizing-percept-pc-lfp-snapshots",
+      "section": "quick",
+      "title_en": "Subspace Learning with Interval-Censored Likelihoods for Dequantizing Percept PC LFP Snapshots",
+      "authors": "Shreesh Karjagi, Elif Ceren Fitoz, Maryam Khalid, Tanya Nauvel, Parisa Sarikhani, Helen S. Mayberg, Christopher J. Rozell, Sankaraleengam Alagapan",
+      "date": "2026-09-19",
+      "pdf": "https://arxiv.org/pdf/2609.22658v1",
+      "score": "6.0",
+      "evidence": "对电生理谱幅值去量化改进谱参数化，与EEG功率谱分析相关",
+      "tldr": "植入式神经刺激器Percept PC以约0.11μVp量化步长存储频谱幅度，导致低幅频段出现平台，标准FOOOF拟合将这些平台误检为振荡伪峰。在9438个真实频谱中基线伪峰率达20.6%，影响临床生物标志物和频谱基础模型。本文将去量化建模为区间截尾子空间估计，比较五类校正方法，发现量化概率PCA是唯一有效方法，将伪峰率降至18.3%且保持真实峰检测与噪声底RMSE低于q/√12。该工作为可靠频谱分析提供了关键预处理手段。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Implanted neurostimulators that sense local field potentials now enable chronic electrophysiology based biomarker tracking in patients at home. The Medtronic Percept PC, the only commercially available sensing-enabled deep brain stimulation (DBS) device, stores spectral amplitudes as 16-bit integers at approximately 0.1 $μ$V per bit (quantum $q \\approx 0.11$ $μ$Vp). At frequencies where the true amplitude spans only a few quantization levels, consecutive bins round to the same stored value. Standard spectral parameterization (FOOOF, fitting oscillations and one over f), which separates periodic peaks from the aperiodic 1/f activity, treats every value as exact and fits oscillatory peaks to these plateaus. Because these spectra feed clinical biomarker pipelines and spectral foundation models for symptom decoding, spurious peaks can corrupt downstream inference. Across 9,438 spectra from 14 hemispheres in 7 subcallosal cingulate DBS patients, 20.6% of peaks detected at [2, 45] Hz have no match in ground truth synthesized by quantizing clean in-clinic BrainSense recordings, while aggregate beta band power and the aperiodic exponent are preserved. We formalize dequantization as interval-censored subspace estimation and compare five classes of correction methods. Quantized probabilistic PCA is the only tested method that reduces the spurious rate (20.6% to 18.3%) while preserving true peak detection and keeping noise floor RMSE below $q/\\sqrt{12}$.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

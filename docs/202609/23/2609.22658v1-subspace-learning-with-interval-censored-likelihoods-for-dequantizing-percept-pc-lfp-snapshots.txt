@@ -1,0 +1,260 @@
+Title: Subspace Learning with Interval-Censored Likelihoods for Dequantizing Percept PC LFP Snapshots
+
+URL Source: https://arxiv.org/pdf/2609.22658v1
+
+Published Time: Tue, 22 Sep 2026 00:28:52 GMT
+
+Number of Pages: 6
+
+Markdown Content:
+2026 IEEE INTERNATIONAL WORKSHOP ON MACHINE LEARNING FOR SIGNAL PROCESSING, SEP. 28– OCT. 1, 2026, ATLANTA, USA 
+
+# SUBSPACE LEARNING WITH INTERVAL-CENSORED LIKELIHOODS FOR DEQUANTIZING PERCEPT ™ PC LFP SNAPSHOTS 
+
+# Shreesh Karjagi ⋆ Elif Ceren Fitoz ⋆ Maryam Khalid † Tanya Nauvel †
+
+# Parisa Sarikhani ⋆ Helen S. Mayberg † Christopher J. Rozell ⋆ Sankaraleengam Alagapan ⋆⋆ School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA 30332 
+
+† Nash Family Center for Advanced Circuit Therapeutics, Icahn School of Medicine at Mount Sinai, New York, NY 10019 
+
+ABSTRACT 
+
+Implanted neurostimulators that sense local field potentials now en-able chronic electrophysiology based biomarker tracking in patients at home. The Medtronic Percept ™ PC, the only commercially available sensing-enabled deep brain stimulation (DBS) device, stores spectral amplitudes as 16-bit integers at approximately 0.1 μV per bit (quan-tum q ≈ 0.11 μVp). At frequencies where the true amplitude spans only a few quantization levels, consecutive bins round to the same stored value. Standard spectral parameterization (FOOOF, fitting oscillations and one over f), which separates periodic peaks from the aperiodic 1/f activity, treats every value as exact and fits oscillatory peaks to these plateaus. Because these spectra feed clinical biomarker pipelines and spectral foundation models for symptom decoding, spu-rious peaks can corrupt downstream inference. Across 9,438 spectra from 14 hemispheres in 7 subcallosal cingulate DBS patients, 20.6% of peaks detected at [2, 45] Hz have no match in ground truth synthe-sized by quantizing clean in-clinic BrainSense ™ recordings, while aggregate beta band power and the aperiodic exponent are preserved. We formalize dequantization as interval-censored subspace estimation and compare five classes of correction methods. Quantized proba-bilistic PCA is the only tested method that reduces the spurious rate (20.6% to 18.3%) while preserving true peak detection and keeping noise floor RMSE below q/ √12 .
+
+Index Terms — Interval-censored inference, subspace learning, probabilistic PCA, spectral dequantization, deep brain stimulation 
+
+1. INTRODUCTION 
+
+Sensing-enabled deep brain stimulation (DBS) devices now record local field potentials (LFPs) chronically in patients at home, provid-ing objective electrophysiological measures across movement disor-ders, epilepsy, and psychiatric conditions [1–4]. Spectral features extracted from these recordings, including oscillatory peak frequency, band power, and the aperiodic exponent, form the basis of clinical biomarker tracking [3–5] and spectral foundation models for symp-tom decoding [6]. Any systematic distortion in the stored spectrum could propagate directly into these features. The Medtronic Percept ™ PC is the only commercially available sensing-enabled DBS device. Its LFP Snapshot feature stores spectral amplitude values in μVp, with each value rounded to the nearest multiple of a device-specific quantum q ≈ 0.11 μVp (16-bit storage at approximately 0.1 μV per bit) [7]. Quantization is inherent in any digital recording system. At this storage resolution, it collapses 0 10 20 30 40 Frequency (Hz)      
+
+> −7.5
+> −5.0
+> −2.5 0.0 2.5 5.0 7.5 True Stored
+> dB
+> 10 20 30 40 Frequency (Hz)
+> −10.0
+> −7.5
+> −5.0
+> −2.5 0.0 2.5 5.0 Quantized Spectrum FOOOF fit Aperiodic
+> Amplitude (dB re μVp)
+
+Fig. 1 . Quantization artifact (schematic) and its effect on spectral parameterization. Left: true versus stored spectrum in μVp. Right: FOOOF fit to the quantized spectrum in dB. Red crosses mark spuri-ous peaks. consecutive frequency bins to the same stored value wherever the true spectral amplitude varies by less than q, producing plateaus of identical amplitudes (Figure 1, left). The artifact is most severe at frequencies where the spectral amplitude is comparable to the quantization step, which in subcallosal cingulate recordings occurs above approximately 30 Hz. Spectral parameterization, which decomposes a neural power spectrum into periodic oscillatory peaks and an aperiodic 1/f activ-ity, has become standard for extracting biomarkers from chronic LFP recordings. FOOOF [8] is the most widely used tool for this decom-position. Like any parameterization that treats spectral values as exact measurements, FOOOF is sensitive to systematic distortions in the input. When quantization produces a plateau of identical bins above the fitted aperiodic curve, the parameterization reports an oscillatory peak that is not present in the underlying signal (Figure 1, right). This artifact appears in all seven patients in our dataset (Section 4.1). Our goal is to recover pre-quantization spectral amplitudes so that downstream parameterization operates on values closer to the true signal. We formalize this as interval-censored subspace estimation and compare five classes of correction methods on 9,438 spectra from seven subcallosal cingulate DBS patients. 
+
+2. BACKGROUND AND PROBLEM FORMULATION 
+
+In movement disorders, subthalamic beta power drives adaptive DBS [1]. In treatment-resistant depression, subcallosal cingulate spectra yield longitudinal recovery biomarkers [3, 4] and aperiodic slope tracks symptom severity on the timescale of hours [5]. All 979-8-3195-0884-3/26/$31.00 ©2026 IEEE arXiv:2609.22658v1 [eess.SP] 19 Sep 2026 of these biomarkers depend on the fidelity of the stored spectrum. Because each stored value is the result of rounding, the true value is not lost entirely but known to lie within a half-quantum interval around it. Interval-censored inference formalizes this structure by treating each observation as constraining the true value to its rounding interval [9, 10], and Sanger et al. [11] showed that the first principal component of windowed Percept ™ PSDs captures the shared back-ground spectral shape, separating it from transient corruption. This subspace structure is the prior that lets interval-censored methods disambiguate within the rounding interval. Any analog-to-digital converter rounds continuous values to dis-crete levels. In the Percept ™ PC, each spectral amplitude is stored as the nearest multiple of q. Clean snapshot spectra are not available because the device discards the time-domain data after computing each snapshot [7], so we approximate the forward model by applying the same rounding to clean power spectral densities (PSDs) derived from in-clinic BrainSense ™ LFP recordings. Let s(f ) ≥ 0 be the true spectral amplitude at bin f and q > 0 the quantization step. The device stores 
+
+y(f ) = round( s(f )/q ) · q, (1) which constrains the true value to s(f ) ∈ [max(0 , y (f )−q/ 2) , y (f )+ 
+
+q/ 2) . For F bins and N spectra the observation matrix Y ∈ RN ×F
+
+constrains the true matrix S elementwise. Spectra from the same recording site share shape and vary in amplitude at a few frequencies (the first five principal components capture >99% of variance in every hemisphere), so we write S = 1μ⊤ + ZW ⊤ + E with 
+
+Z ∈ RN ×K the latent scores, W ∈ RF ×K , K ≪ F , and E
+
+isotropic residual noise distinct from quantization. In our data K = 5 
+
+suffices ( F = 129 , N = 366 to 936 per hemisphere), and results are stable across K ∈ { 3, 5, 7}.
+
+3. METHODS 
+
+The interval-censored subspace formulation admits a range of es-timators that differ in how they use the quantization intervals and the low-rank prior. We organize our comparison around these two axes. Single-spectrum smoothing (SG, SG-sel) tests whether local polynomial filtering can remove plateaus without cross-spectrum in-formation. Unconstrained subspace projection (SVD) tests whether a learned PCA basis alone suffices. Constrained subspace estimation (SCCD) adds hard interval bounds to the projection. Probabilistic latent variable models with interval-censored likelihoods (Q-PPCA, QMF) test whether a statistical model of the quantization process improves recovery. A denoising autoencoder (DAE) provides a non-linear baseline that learns a direct mapping from quantized to clean spectra without explicit interval constraints. All subspace methods use K = 5 .1
+
+3.1. Savitzky-Golay smoothing (SG, SG-sel) 
+
+SG is a second-order polynomial filter [12] with a 5-bin window applied in dB. Bins with zero amplitude are temporarily filled by linear interpolation from neighboring positive bins, the filter runs over the filled spectrum, and the originally zero bins are restored to zero. SG-sel applies the same filter only to plateau bins, where a plateau is a run of two or more consecutive bins whose dB values lie within 10 −3 dB of the first bin.        
+
+> 1Iteration counts are convergence ceilings: Q-PPCA stops at relative parameter change <10 −4(cap 30 EM steps), QMF at relative log-likelihood change <10 −5(cap 200), and the DAE by early stopping (patience 10, cap 100 epochs). Adam uses learning rate 10 −3.
+
+3.2. Unconstrained subspace projection (SVD) 
+
+The test spectrum is standardized with training statistics, projected onto the K dimensional PCA basis of the unquantized training fold, and reconstructed. No interval constraints. 
+
+3.3. Subspace constrained convex dequantization (SCCD) 
+
+Maximum a posteriori (MAP) estimator of PCA scores under a Gaus-sian prior with hard interval constraints. Let B ∈ RK×F be the PCA basis of standardized training spectra (each frequency bin centered by its training-set mean μf and scaled by its training-set standard deviation σf ), and λk the eigenvalues of the standardized training covariance. The reconstruction is ˆs(f ) = μf + σf
+
+P 
+
+> k
+
+ck Bkf with scores c solving 
+
+min 
+
+> c
+> K
+
+X
+
+> k=1
+
+c2
+
+> k
+
+λk
+
+s.t. ℓf ≤ ˆs(f ) ≤ uf , f ∈ F c, (2) where Fc is the set of bins in [1 , 42] Hz with positive stored am-plitude. Bins outside Fc are reconstructed from the same c with-out constraint enforcement, and all values are clipped at zero. The quadratic program (QP) is specified using the convex modeling li-brary CVXPY [13] and solved with the QP solver OSQP [14]. If the QP fails to reach an optimal solution we re-solve with nonnegative slacks on the interval constraints, penalized at 10 3.
+
+3.4. Quantized probabilistic PCA (Q-PPCA) 
+
+Q-PPCA extends probabilistic PCA [15] to handle interval-censored observations arising from quantization. Buettner et al. [9] handle left censored gene expression data with a Gaussian process latent variable model and a probit approximation to the censored likelihood. We use a simpler model with exact truncated normal moments instead of assumed density filtering, and our censoring is two-sided (interval) rather than one-sided (left). The generative model is zi ∼ N (0, IK ),
+
+si = Wz i + μ + εi with εi ∼ N (0, σ 2I), observed through the quantizer in Eq. (1). Training alternates between an approximate E-step and a standard M-step. The exact row posterior, the distri-bution over the true amplitudes given their quantization intervals, is a multivariate truncated normal. We approximate it by a prod-uct of per-bin truncated normals centered at the PPCA predictive mean, with per-bin predictive variance σ2 diag( WM −1W⊤) + σ2
+
+where M = W⊤W + σ2I. The factorization across bins and the use of the uncensored observation in the conditioning are the two approximations. 
+
+E[sij ] = ˆ mij + √vj
+
+ϕ(αij ) − ϕ(βij )Φ( βij ) − Φ( αij ) , (3) where ˆmij is the PPCA predictive mean (the value predicted if the observation were exact), vj the per-bin predictive variance, and αij , β ij the standardized interval bounds. Here ϕ and Φ are the standard-normal pdf and cdf, and the moments in Eq. (3) are exact for univariate truncated normals. Up to 30 EM iterations with tolerance 
+
+10 −4, initialized from the SVD of the centered quantized training matrix, which only warm-starts the EM and is then re-estimated on the quantized data, unlike the fixed unquantized basis that SVD and SCCD use. At correction time the parameters are fixed. The corrected bin value is the per-bin truncated normal mean under the predictive dis-tribution conditioned on the test bin’s quantization interval. Exact inference under test time censoring would require iterating. 3.5. Quantized matrix factorization (QMF) 
+
+We adapt the quantized matrix completion formulation of Lan et al. [10] to the Percept ™ PC setting. The bin boundaries are known from the device and all frequency bins are observed, so we drop their boundary estimation and missing data machinery. We enforce rank by factorization rather than nuclear norm relaxation. We factorize 
+
+S ≈ UV ⊤ + 1μ⊤ by maximizing 
+
+X
+
+> ij
+
+log Φ( βij ) − Φ( αij ), (4) where αij , β ij are the standardized bin boundaries under the low rank model with noise scale σ = q/ 2 fixed throughout optimization. We optimize with Adam [16] (learning rate 10 −3, elementwise gradient clipping to [−5, 5] ) for up to 200 iterations or until relative log likeli-hood change falls below 10 −5. At test time V and μ are fixed, a new row u is obtained by least squares projection onto the column space of V, and the reconstruction is clipped bin by bin to the quantization interval. 
+
+3.6. Denoising autoencoder (DAE) 
+
+A feed-forward autoencoder [17] ( F → 256 → 256 → F , ReLU, dropout 0.1) trained in the denoising configuration of Vincent et al. [18] where quantization serves as deterministic corruption and the clean spectrum is the target. Inputs and targets are standardized per-bin using clean training statistics. Adam [16] with learning rate 
+
+10 −3, weight decay 10 −4, batch 64, up to 100 epochs with early stopping (patience 10). At test time the output is destandardized and clipped at zero. No interval constraint is applied. 
+
+4. EXPERIMENTAL SETUP 4.1. Data 
+
+Seven patients (S1 to S7) with bilateral subcallosal cingulate DBS for treatment-resistant depression were included in this analysis, giv-ing 14 hemispheres. All participants provided informed consent under an IRB-approved protocol. The LFP Snapshot feature stores only the averaged amplitude spectrum and discards the underlying time-domain data [7], so the original time series from which each snapshot spectrum is derived is not available. To construct ground truth, we use BrainSense ™ recordings collected in-clinic at 250 Hz, with 45 to 114 recordings per hemisphere across clinic visits. Each recording is cut into 30 s segments, yielding 366 to 936 per hemi-sphere and 9,438 in total. Clean amplitude spectra are computed via Welch’s method (256-sample Hann window, 50% overlap), produc-ing 129 bins from 0 to 125 Hz. Amplitudes are in μV peak ( μVp): the per-bin Fourier amplitude p2 Sxx (f ) ∆ f from the one-sided density Sxx , not a power spectral density. We then apply the device quantization model (Eq. 1) with q = 0 .11 μVp to each clean spec-trum. Each clean spectrum serves as ground truth, and its quantized counterpart serves as the test input for all correction methods. All evaluation in this paper uses this synthetic protocol. Code is available at https:// github.com/ shreeshkarjagi/ ic-subspace-learning .
+
+4.2. Evaluation protocol 
+
+Raw is the uncorrected quantized reference. SG and SG-sel process each spectrum independently and use no training data. Subspace methods (SVD, SCCD, Q-PPCA, QMF) and DAE are evaluated under two cross-validation schemes. LOO holds out all segments from one recording, learns the model from the remaining recordings of the same hemisphere, and applies correction to each held-out segment. LOPO holds out all hemispheres from one patient, learns the model from the other six patients, and applies correction to all held-out segments. SVD and SCCD learn their basis from unquantized training spectra. Q-PPCA and QMF train on the quantized training matrix. The DAE trains on quantized inputs with clean targets. 
+
+4.3. Spectral parameterization and metrics 
+
+We run FOOOF [8] on clean and corrected spectra at [2, 45] Hz with peak width limits [2, 8] Hz, maximum 4 peaks, minimum height 0.1 dB, and fixed aperiodic mode. Peaks are matched between clean and corrected fits by center frequency within 2 Hz using greedy nearest neighbor. We report RMSE in μVp across three frequency regimes (well-resolved WR 1 to 8 Hz, correctable CR 8 to 30 Hz, noise floor NF 30 to 42 Hz). Uniform quantization predicts q/ √12 ≈
+
+0.032 μVp. Secondary metrics are spectral SSIM (7-bin sliding win-dow in dB), quantization consistency (fraction of corrected bins that re-quantize to the stored value), and median plateau count. We also report peak detection rate and spurious rate. Significance of the spurious-rate reduction is assessed by a paired Wilcoxon signed-rank test across the 14 hemispheres and a 95% bootstrap confidence inter-val resampling the 9,438 spectra ( 5×10 3 draws). 
+
+5. RESULTS 5.1. Quantization contaminates peak detection 
+
+The aperiodic exponent is robust to quantization. On raw spectra the exponent RMSE at [2, 45] Hz is 0.037 against a natural cohort standard deviation of 0.32. Band power RMSEs in dB are below 0.07 for theta through beta but reach 0.176 in low gamma. The FOOOF fit R2 drops only from 0.991 to 0.987 (Figure 2a,b). A pipeline that tracks only aggregate parameters would see nothing wrong. But 20.6% of peaks reported on raw quantized spectra have no match in the clean fit within 2 Hz (Figure 2c). Median spurious power is 0.23 dB above the fitted slope, 90th percentile 0.46 dB. These detections concentrate above 30 Hz where amplitude spans only a few quantization levels (Figure 2d). The spurious rate depends sharply on the FOOOF fit range: 15.5% at [2, 30] Hz, 20.6% at [2, 45] Hz, and 44.2% at [2, 80] Hz, while exponent RMSE stays below 0.06 through [2, 60] Hz but breaks 0.10 at [2, 80] Hz. 
+
+5.2. Spurious peak reduction after correction 
+
+We applied each method to all 9,438 spectra and ran FOOOF on the corrected output (Figure 3). SG and SG-sel shed true and spurious peaks at similar rates, so the spurious rate stays near 20%. QMF trades 8 points of detection for less than a point on the spurious rate. SCCD and DAE both make things worse (spurious rates 32.5% and 32.2%, detection near 52%). SVD destroys the aperiodic fit (exponent RMSE >1). Q-PPCA is the only method that removes more artifacts than it introduces. The spurious rate drops 2.24 points, from 20.6% to 18.3%, in all 14 hemispheres (paired Wilcoxon p = 1 .2 × 10 −4, 95% bootstrap CI [1 .9, 2.6] over 9,438 spectra), while detection holds at 81.1% from 81.4%, exponent RMSE drops from 0.037 to 0.033, and exponent bias moves from +0 .009 to +0 .004 . Remaining spurious peaks sit above 30 Hz where each bin spans one to three quantization levels and no subspace method can resolve whether a given bin should read 0.11 or 0.22 μVp. 1 2 3
+
+Clean exponent 
+
+123
+
+> Quantized exponent
+
+RMSE = 0.037 σ = 0.32 
+
+# a
+
+0 10 
+
+Clean beta power (dB) 
+
+−5 0510 
+
+> Quantized beta power (dB)
+
+RMSE = 0.062 dB 
+
+# b
+
+Det. Miss. Spur. 020 40 60 80 100 
+
+> Rate (%)
+
+81.4% 18.6% 20.6% 
+
+# c
+
+0 10 20 30 40 50 60 70 80 
+
+Center frequency (Hz) 
+
+0500 1000 1500 2000 
+
+> Count
+
+8 Hz 30 Hz 
+
+# d
+
+Matched (n=19763) Spurious (n=15678) Fig. 2 . FOOOF on quantized versus clean spectra: exponent (a), beta band power (b), and peak rates (c) at [2, 45] Hz. Spurious and matched center frequencies (d) shown at [2, 80] Hz for full spectrum context. Raw SG SG-sel SCCD Q-PPCA QMF DAE 010 20 30 40 50 Spurious rate (%) 20.6% 20.0% 20.5% 32.5% 18.3% 19.7% 32.2% 
+
+# a
+
+> Raw SG SG-sel SCCD Q-PPCA QMF DAE
+
+025 50 75 100 125 Detection rate (%) 81.4% 76.2% 78.4% 51.6% 81.1% 73.0% 52.0% 
+
+# b
+
+> Raw SG SG-sel SCCD Q-PPCA QMF DAE
+
+0.000 0.025 0.050 0.075 0.100 Exponent RMSE 0.037 0.039 0.037 0.080 0.033 0.053 0.074 
+
+# c
+
+Fig. 3 . Spurious rate (a), detection rate (b), and exponent RMSE (c) after correction at [2, 45] Hz. SVD omitted for scale. 
+
+5.3. Spectrum recovery and consistency 
+
+Table 1 reports RMSE by regime. Raw RMSE is near 0.032 μVp in all three regimes, the uniform quantization floor q/ √12 . Between 1 and 8 Hz the signal is large enough that per-bin relative error is already tiny, and every method except Q-PPCA degrades Raw. Above 30 Hz each bin spans one to three quantization levels. Q-PPCA reaches 0.028 μVp LOO and 0.029 μVp LOPO at the noise floor, below 
+
+q/ √12 . SG reaches the same 0.028 but by polynomial smoothing that destroys the well-resolved band (0.125 μVp at WR). Q-PPCA is the only method that improves the noise floor while keeping WR within 0.003 μVp of Raw. LOO and LOPO differ by at most 0.001 μVp for Q-PPCA in any regime, so the learned subspace transfers to unseen patients. 0 10 20 30 40 
+
+## Frequency (Hz) 
+
+−10 −5 0510 15 
+
+> Amplitude (dB re μVp)
+
+# a Snapshot (quantized) 
+
+0 10 20 30 40 
+
+## Frequency (Hz) 
+
+−10 −5 0510 15 
+
+# b Corrected Fig. 4 . All snapshots from one hemisphere. Stored (a), Q-PPCA corrected (b). 
+
+Table 1 . RMSE ( μVp) by regime across 9,438 spectra. SG and SG-sel use no training data, so their LOO and LOPO columns are identical by construction. LOO LOPO Method WR CR NF WR CR NF Raw 0.031 0.032 0.031 0.031 0.032 0.031 SG 0.125 0.052 0.028 0.125 0.052 0.028 SG-sel 0.045 0.037 0.029 0.045 0.037 0.029 SVD 1.515 0.449 0.117 0.738 0.294 0.078 SCCD 0.243 0.123 0.044 0.309 0.163 0.047 Q-PPCA 0.034 0.032 0.028 0.033 0.032 0.029 
+
+QMF 0.055 0.049 0.033 0.056 0.051 0.034 DAE 0.345 0.133 0.040 0.428 0.147 0.048 
+
+Table 2 . Secondary metrics under LOO. Method SSIM Consist. Plateaus Raw 0.769 100% 14 SG 0.787 89% 5SG-sel 0.779 98% 5SVD 0.720 60% 1SCCD 0.895 71% 0Q-PPCA 0.837 ≥99.9% 2QMF 0.831 87% 8DAE 0.920 77% 0SVD and SCCD move in opposite directions under LOPO. SVD improves because a six-patient basis is less overfit than a single hemisphere one. SCCD degrades because its box constraints become infeasible on more bins when the test spectrum sits outside the training covariance. Apart from SVD, DAE is worst at WR (0.345 μVp LOO, 0.428 μVp LOPO), an order of magnitude above Raw. Of the subspace methods only Q-PPCA keeps consistency above 99% and still improves SSIM over Raw (Table 2). SCCD has the highest SSIM among subspace methods (0.895) but stays within the quantization interval on only 71% of bins. A method that moves values outside their stored bin that often is smoothing more than dequantizing. DAE scores the highest SSIM overall (0.920) because its smooth output in dB is forgiving to the 7 bin SSIM window, but its consistency is only 77% and its RMSE is an order of magnitude above Raw. SSIM alone is misleading here. Q-PPCA drops the median plateau count from 14 to 2, removing the staircase without flattening the spectrum. Figure 4 shows all snapshots from one hemisphere before and after Q-PPCA correction and SG smoothing. On one hemisphere (S6 left, 936 segments), Q-PPCA RMSE varies by at most 0.003 μVp across K ∈ { 3, 5, 7} in all three regimes, while SVD WR varies by 1.8 μVp, confirming that Q-PPCA is stable across rank. 
+
+6. DISCUSSION 
+
+Quantization at the Percept ™’s ∼0.11 μVp resolution produces an ar-tifact that standard parameterization cannot distinguish from a real os-cillation at frequencies where the true spectral amplitude spans only a few quantization levels. The aperiodic exponent and beta band power are preserved, so aggregate metrics do not flag the contamination. The problem shows up in single-peak detection when the fit range extends into frequencies where each bin spans a few quantization levels. The right correction depends on the task. Beta band (13–30 Hz) oscillatory peaks are the primary spectral biomarker tracked by the Percept ™ PC in movement disorders and treatment-resistant depression, making beta peak detection the most common clinical use of these spectra. For studies whose only use of the spectrum is beta peak detection, restricting FOOOF to [2, 30] Hz is sufficient and requires no correction at all. For pipelines that treat the full spectrum as a feature vector, including spectral foundation models for symptom decoding [6], restricting the fit range discards the frequencies that quantization corrupts most. In that setting Q-PPCA is the only tested method that reduces the spurious rate while keeping detection, noise floor RMSE, and bin consistency intact. Interval constraints alone do not explain Q-PPCA’s advantage. SVD ignores the quantization intervals and overshoots. SCCD en-forces hard box constraints but has no likelihood to mediate conflicts between the K=5 subspace and the 129 interval bounds, so when the test spectrum sits outside the training covariance the QP goes infea-sible and the slack fallback lets the reconstruction leave its stored bin. QMF has an interval censored likelihood but no row prior, so its fac-tors overfit and it trades detection for a marginal spurious reduction. DAE fails differently: MSE training produces a smooth conditional mean that distorts the spectral shape, and FOOOF fits peaks to the distortion. Q-PPCA combines a censored likelihood and a learned row prior, and among the methods tested that combination yields the best trade-off between spurious reduction and detection preservation. The contribution is the empirical finding that quantization pro-duces spurious peaks that could affect downstream spectral pipelines, and a systematic comparison showing that only one class of correction helps. Q-PPCA extends PPCA [15] with truncated normal E-step mo-ments, related to the censored PCA of Buettner et al. [9]. QMF adapts the quantized matrix completion model of Lan et al. [10]. The interval censored subspace framing connects this device-specific problem to a general estimation setting applicable to any brain-computer interface or embedded sensor that stores spectra as quantized amplitudes. 
+
+7. CONCLUSION 
+
+Quantization is inherent in any digital spectral representation. At the storage resolution of the Percept ™ PC ( q ≈ 0.11 μVp), it produces spurious spectral peaks that are invisible to aggregate band power and exponent tracking. We formalized correction as interval censored sub-space estimation and compared five methods on 9,438 spectra from seven patients. Q-PPCA is the only method that reduces the spurious rate without degrading detection or leaving the stored bin structure. Two limitations bound these results. The ground truth is synthe-sized by quantizing clean streaming PSDs, not by comparing against an independent unquantized snapshot recording, which the device does not store. And the improvement is modest. Most remaining spurious peaks sit above 30 Hz where the median amplitude is below 
+
+1.65 μVp but the spectral slope is shallow enough that adjacent bins differ by less than q and round to the same stored value, so no subspace method can resolve them. Quantization aware spectral pa-rameterization, where the aperiodic fit accounts for interval censoring directly, may prove more effective than correcting the spectrum first and fitting second. 
+
+8. ACKNOWLEDGMENTS 
+
+The authors thank Scott Stanslaski and Ben Isaacson (Medtronic, Inc.) for technical support. Percept ™ PC devices were provided by Medtronic, Inc. This work was supported by NIH grants UH3NS103550 and UH3NS141080, the Wellcome Leap MCPsych program, and the Hope for Depression Research Foundation. H.S.M. receives consulting and intellectual property licensing fees from Abbott Neuromodulation. 
+
+9. REFERENCES 
+
+[1] Helen M. Bronte-Stewart et al., “Long-term personalized adap-tive deep brain stimulation in Parkinson disease: a nonran-domized clinical trial,” JAMA Neurology , vol. 82, no. 11, pp. 1171–1180, 2025. [2] Nicole R. Provenza et al., “Disruption of neural periodicity pre-dicts clinical response after deep brain stimulation for obsessive-compulsive disorder,” Nature Medicine , vol. 30, no. 10, pp. 3004–3014, 2024. [3] Sankaraleengam Alagapan et al., “Cingulate dynamics track depression recovery with deep brain stimulation,” Nature , vol. 622, no. 7981, pp. 130–138, 2023. [4] Elif Ceren Fitoz et al., “Common electrophysiology biomarkers collected at home robustly track depression recovery with deep brain stimulation,” medRxiv , 2026, Preprint. [5] Ashan Veerakumar et al., “Field potential 1/f activity in the subcallosal cingulate region as a candidate signal for monitor-ing deep brain stimulation for treatment-resistant depression,” 
+
+Journal of Neurophysiology , vol. 122, no. 3, pp. 1023–1035, 2019. [6] Timon Merk et al., “Pre-trained transformer-models us-ing chronic invasive electrophysiology for symptom decod-ing without patient-individual training,” arXiv preprint arXiv:2508.10160 , 2025. [7] Medtronic, Inc., Percept PC and RC Neurostimulators with BrainSense Technology and Adaptive Therapy , 2025, DBS Sensing and Adaptive Therapy White Paper. [8] Thomas Donoghue et al., “Parameterizing neural power spectra into periodic and aperiodic components,” Nature Neuroscience ,vol. 23, no. 12, pp. 1655–1665, 2020. [9] Florian Buettner, Victoria Moignard, Berthold G¨ ottgens, and Fabian J. Theis, “Probabilistic PCA of censored data: account-ing for uncertainties in the visualization of high-throughput single-cell qPCR data,” Bioinformatics , vol. 30, no. 13, pp. 1867–1875, 2014. [10] Andrew S. Lan, Christoph Studer, and Richard G. Baraniuk, “Matrix recovery from quantized and corrupted measurements,” in 2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) , 2014, pp. 4973–4977. [11] Zachary T. Sanger, Steffen Ventz, Robert A. McGovern III, and Theoden I. Netoff, “Medtronic Percept recorded LFP pre-processing to remove noise and cardiac signals from neural recordings,” Journal of Neural Engineering , vol. 22, no. 6, pp. 062001, 2025. [12] Abraham Savitzky and Marcel J. E. Golay, “Smoothing and differentiation of data by simplified least squares procedures,” 
+
+Analytical Chemistry , vol. 36, no. 8, pp. 1627–1639, 1964. [13] Steven Diamond and Stephen Boyd, “CVXPY: A Python-embedded modeling language for convex optimization,” Journal of Machine Learning Research , vol. 17, no. 83, pp. 1–5, 2016. [14] Bartolomeo Stellato, Goran Banjac, Paul Goulart, Alberto Be-mporad, and Stephen Boyd, “OSQP: An operator splitting solver for quadratic programs,” Mathematical Programming Computation , vol. 12, no. 4, pp. 637–672, 2020. [15] Michael E. Tipping and Christopher M. Bishop, “Probabilistic principal component analysis,” Journal of the Royal Statistical Society: Series B , vol. 61, no. 3, pp. 611–622, 1999. [16] Diederik P. Kingma and Jimmy Ba, “Adam: A method for stochastic optimization,” in International Conference on Learn-ing Representations (ICLR) , 2015. [17] Geoffrey E. Hinton and Ruslan R. Salakhutdinov, “Reducing the dimensionality of data with neural networks,” Science , vol. 313, no. 5786, pp. 504–507, 2006. [18] Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol, “Extracting and composing robust features with denoising autoencoders,” in Proceedings of the 25th Inter-national Conference on Machine Learning (ICML) , 2008, pp. 1096–1103.
