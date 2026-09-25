@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-25 <!--dpr-date:20260925-->
+    * 精读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/25/2609.29820v1-decoding-imagined-speech-a-strictly-subject-independent-approach-using-eeg" data-sidebar-item="{&quot;title&quot;: &quot;Decoding Imagined Speech: A Strictly Subject-Independent Approach Using EEG&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.29820v1-decoding-imagined-speech-a-strictly-subject-independent-approach-using-eeg&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;使用频域谱带功率方法进行想象言语EEG分类，直接相关于认知任务中的EEG频谱功率分析&quot;}">Decoding Imagined Speech: A Strictly Subject-Independent Approach Using EEG</a>
   * 2026-09-23 <!--dpr-date:20260923-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/23/2609.19842v1-beyond-flattened-tokens-structure-preserving-eeg-decoding-with-reusable-tridim-blocks" data-sidebar-item="{&quot;title&quot;: &quot;Beyond Flattened Tokens: Structure-Preserving EEG Decoding with Reusable TriDim Blocks&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.19842v1-beyond-flattened-tokens-structure-preserving-eeg-decoding-with-reusable-tridim-blocks&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;面向认知任务分析的结构保持 EEG 解码&quot;}">Beyond Flattened Tokens: Structure-Preserving EEG Decoding with Reusable TriDim Blocks</a>

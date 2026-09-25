@@ -1,0 +1,53 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-09-25T22:37:22.887211+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2609.29820v1",
+      "source": "arxiv",
+      "title": "Decoding Imagined Speech: A Strictly Subject-Independent Approach Using EEG",
+      "abstract": "Imagined speech decoding from electroencephalography (EEG) has gained increasing attention as a potential communication pathway for individuals with severe motor impairments, yet reported performance often relies on evaluation protocols that do not clearly reflect cross-subject generalization. This study presents a transparent baseline investigation of a multi-class imagined speech EEG dataset under a strictly subject-independent evaluation framework. Two preprocessing and feature extraction pipelines were compared: a time-domain statistical feature approach and a frequency-domain spectral bandpower approach, evaluated using subject-wise cross-validation and trial-level majority voting with a random forest classifier. The spectral pipeline achieved a significantly higher mean trial-wise accuracy than the statistical pipeline (49.03 $\\pm$ 4.18% vs. 37.97 $\\pm$ 3.79%) for coarse-level classification across subjects. Forward feature selection further indicated that a limited subset of frequency bands captured most of the discriminative information. Overall, this work provides a strong basis for future brain-computer interface studies targeting improved cross-subject generalization in EEG-based imagined speech decoding.",
+      "authors": [
+        "Frederik Møllskov Trier",
+        "Xiaopeng Mao",
+        "Sadasivan Puthusserypady"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-24T13:54:59+00:00",
+      "link": "https://arxiv.org/pdf/2609.29820v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Uses frequency-domain spectral bandpower approach for EEG classification of imagined speech, directly relevant to EEG spectral power analysis in cognitive tasks",
+      "llm_evidence_cn": "使用频域谱带功率方法进行想象言语EEG分类，直接相关于认知任务中的EEG频谱功率分析",
+      "llm_evidence": "使用频域谱带功率方法进行想象言语EEG分类，直接相关于认知任务中的EEG频谱功率分析",
+      "canonical_evidence": "使用频域谱带功率方法进行想象言语EEG分类，直接相关于认知任务中的EEG频谱功率分析",
+      "llm_tldr_en": "This paper addresses unclear cross-subject generalization in imagined speech EEG decoding by comparing time-domain statistical and frequency-domain spectral bandpower pipelines under strict subject-independent evaluation. Results show the spectral pipeline achieves better performance, providing a transparent baseline for non-invasive communication, directly applying EEG spectral power analysis to a cognitive task.",
+      "llm_tldr_cn": "针对想象言语解码中跨受试者泛化评估不足的局限，本研究在严格受试者独立框架下比较了时域统计特征和频域谱带功率特征，并使用随机森林分类器。实验表明频域谱带功率方法在想象言语EEG分类中表现更好，为无创脑机接口提供了可靠基线。该工作直接采用EEG相对功率谱分析于认知任务，契合高级认知网络研究需求。",
+      "llm_tldr": "针对想象言语解码中跨受试者泛化评估不足的局限，本研究在严格受试者独立框架下比较了时域统计特征和频域谱带功率特征，并使用随机森林分类器。实验表明频域谱带功率方法在想象言语EEG分类中表现更好，为无创脑机接口提供了可靠基线。该工作直接采用EEG相对功率谱分析于认知任务，契合高级认知网络研究需求。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}

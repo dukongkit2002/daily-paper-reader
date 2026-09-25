@@ -1,0 +1,24 @@
+{
+  "label": "2026-09-25",
+  "date": "2026-09-25",
+  "generated_at": "2026-09-25T22:38:39",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202609/25/2609.29820v1-decoding-imagined-speech-a-strictly-subject-independent-approach-using-eeg",
+      "section": "deep",
+      "title_en": "Decoding Imagined Speech: A Strictly Subject-Independent Approach Using EEG",
+      "authors": "Frederik Møllskov Trier, Xiaopeng Mao, Sadasivan Puthusserypady",
+      "date": "2026-09-24",
+      "pdf": "https://arxiv.org/pdf/2609.29820v1",
+      "score": "8.0",
+      "evidence": "使用频域谱带功率方法进行想象言语EEG分类，直接相关于认知任务中的EEG频谱功率分析",
+      "tldr": "想象语音脑电解码因评估协议常不反映跨被试泛化，性能可信度受限。本研究在严格主题无关框架下，比较时域统计特征与频域谱带功率两种流程，采用随机森林和试次级多数投票。频域流程取得49.03%的平均试次准确率，显著高于时域流程的37.97%。前向特征选择显示有限频带子集捕获主要判别信息，为改进跨被试想象语音脑机接口提供了透明基线。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Imagined speech decoding from electroencephalography (EEG) has gained increasing attention as a potential communication pathway for individuals with severe motor impairments, yet reported performance often relies on evaluation protocols that do not clearly reflect cross-subject generalization. This study presents a transparent baseline investigation of a multi-class imagined speech EEG dataset under a strictly subject-independent evaluation framework. Two preprocessing and feature extraction pipelines were compared: a time-domain statistical feature approach and a frequency-domain spectral bandpower approach, evaluated using subject-wise cross-validation and trial-level majority voting with a random forest classifier. The spectral pipeline achieved a significantly higher mean trial-wise accuracy than the statistical pipeline (49.03 $\\pm$ 4.18% vs. 37.97 $\\pm$ 3.79%) for coarse-level classification across subjects. Forward feature selection further indicated that a limited subset of frequency bands captured most of the discriminative information. Overall, this work provides a strong basis for future brain-computer interface studies targeting improved cross-subject generalization in EEG-based imagined speech decoding.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
