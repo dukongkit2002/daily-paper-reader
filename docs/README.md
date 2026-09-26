@@ -6,23 +6,19 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-09-25
-- 运行时间：2026-09-25 22:38:24 UTC
+- 最新运行日期：2026-09-26
+- 运行时间：2026-09-26 21:51:47 UTC
 - 运行状态：成功
-- 本次总论文数：1
-- 精读区：1
+- 本次总论文数：0
+- 精读区：0
 - 速读区：0
 
 ### 今日简报（AI）
-- 今日共生成 1 篇推荐（精读 1 篇，速读 0 篇）
-- 精读：《Decoding Imagined Speech: A Strictly Subject-Independent Approach Using EEG》（8.0/10）
-- 这些结果覆盖了当下较热的方向，建议先看精读区论文的关键问题与方法。
-- 详情：[/202609/25/README](/202609/25/README)
+> 今日无新推荐，系统未产出可展示论文。
+- 详情：[/202609/26/README](/202609/26/README)
 
 ### 精读区论文标签
-1. [Decoding Imagined Speech: A Strictly Subject-Independent Approach Using EEG](/202609/25/2609.29820v1-decoding-imagined-speech-a-strictly-subject-independent-approach-using-eeg)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：使用频域谱带功率方法进行想象言语EEG分类，直接相关于认知任务中的EEG频谱功率分析
+- 本次无精读推荐。
 
 ### 速读区论文标签
 - 本次无速读推荐。
