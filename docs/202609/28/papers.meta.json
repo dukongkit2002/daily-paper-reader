@@ -1,0 +1,24 @@
+{
+  "label": "2026-09-28",
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T23:57:03",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202609/28/2609.30831v1-cdbg-causally-motivated-dual-invariance-learning-against-topological-and-predictive-shifts-in-eeg-workload-recognition",
+      "section": "quick",
+      "title_en": "CDBG: Causally Motivated Dual-Invariance Learning against Topological and Predictive Shifts in EEG Workload Recognition",
+      "authors": "Yuzhe Zhang, Wenmin Zhou, Chengxi Xie, Kai He, Jihong Wang, Huan Liu, Man Yao, Daoqiang Zhang",
+      "date": "2026-09-25",
+      "pdf": "https://arxiv.org/pdf/2609.30831v1",
+      "score": "6.0",
+      "evidence": "基于功能脑图与因果不变性学习的脑电心理负荷识别",
+      "tldr": "跨被试脑电工作负荷识别面临严重个体差异，功能脑图固有的主体特异性引发类条件拓扑偏移和预测机制偏移。针对此问题，论文提出因果驱动的双不变性学习框架CDBG，通过两阶段理性学习提取稀疏工作负荷预测图理性，并施加条件拉普拉斯谱对齐与主体级不变风险最小化。在自建空管数据集和多个公开数据集上，CDBG在留一被试协议下显著优于现有方法，Macro-F1最高提升4.23%。该框架有效缓解分布偏移，提升跨被试泛化能力，并提供神经生理可解释的功能理性。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Generalizing Electroencephalography (EEG)-based mental workload recognition to unseen subjects remains a formidable challenge due to severe inter-subject variability. While functional brain graphs effectively model distributed cognitive dynamics, their inherent subject-specificity induces two coupled distribution shifts: a class-conditional topological shift in the underlying functional connectivity, and a predictive mechanism shift in the learned representation-to-label mapping. Motivated by the subject-induced distribution shifts, we propose CDBG, a Causally motivated Dual-invariance learning framework for Brain Graphs. CDBG disentangles and mitigates these shifts via a two-stage rationale learning pipeline. First, it employs stochastic edge masking to extract sparse, workload-predictive graph rationales, regularized by workload-conditional Laplacian spectral alignment to enforce topological invariance across subjects. Second, it applies subject-wise Invariant Risk Minimization (IRM) to the graph representations, ensuring environment-wise risk stationarity. Extensive experiments on a self-built air traffic controller EEG cognitive workload dataset and multiple public datasets under a strict leave-one-subject-out protocol demonstrate that CDBG significantly outperforms state-of-the-art cross-subject and graph-based baselines, improving the Macro-F1 score by up to 4.23%, while simultaneously providing neurophysiologically interpretable functional rationales.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

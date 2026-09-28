@@ -1,0 +1,59 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-09-28T23:56:05.471672+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2609.30831v1",
+      "source": "arxiv",
+      "title": "CDBG: Causally Motivated Dual-Invariance Learning against Topological and Predictive Shifts in EEG Workload Recognition",
+      "abstract": "Generalizing Electroencephalography (EEG)-based mental workload recognition to unseen subjects remains a formidable challenge due to severe inter-subject variability. While functional brain graphs effectively model distributed cognitive dynamics, their inherent subject-specificity induces two coupled distribution shifts: a class-conditional topological shift in the underlying functional connectivity, and a predictive mechanism shift in the learned representation-to-label mapping. Motivated by the subject-induced distribution shifts, we propose CDBG, a Causally motivated Dual-invariance learning framework for Brain Graphs. CDBG disentangles and mitigates these shifts via a two-stage rationale learning pipeline. First, it employs stochastic edge masking to extract sparse, workload-predictive graph rationales, regularized by workload-conditional Laplacian spectral alignment to enforce topological invariance across subjects. Second, it applies subject-wise Invariant Risk Minimization (IRM) to the graph representations, ensuring environment-wise risk stationarity. Extensive experiments on a self-built air traffic controller EEG cognitive workload dataset and multiple public datasets under a strict leave-one-subject-out protocol demonstrate that CDBG significantly outperforms state-of-the-art cross-subject and graph-based baselines, improving the Macro-F1 score by up to 4.23%, while simultaneously providing neurophysiologically interpretable functional rationales.",
+      "authors": [
+        "Yuzhe Zhang",
+        "Wenmin Zhou",
+        "Chengxi Xie",
+        "Kai He",
+        "Jihong Wang",
+        "Huan Liu",
+        "Man Yao",
+        "Daoqiang Zhang"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-09-25T05:22:06+00:00",
+      "link": "https://arxiv.org/pdf/2609.30831v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "EEG-based mental workload recognition using functional brain graphs and causal invariance learning",
+      "llm_evidence_cn": "基于功能脑图与因果不变性学习的脑电心理负荷识别",
+      "llm_evidence": "基于功能脑图与因果不变性学习的脑电心理负荷识别",
+      "canonical_evidence": "基于功能脑图与因果不变性学习的脑电心理负荷识别",
+      "llm_tldr_en": "This paper addresses the challenge of generalizing EEG-based mental workload recognition across subjects due to inter-subject variability. It proposes CDBG, a causally motivated dual-invariance learning framework for functional brain graphs that disentangles topological and predictive shifts via a two-stage rationale learning pipeline. Experiments demonstrate that CDBG effectively mitigates subject-induced distribution shifts and improves cross-subject workload recognition, contributing a causally grounded approach for robust EEG cognitive state analysis.",
+      "llm_tldr_cn": "针对脑电心理负荷识别跨被试泛化困难，功能脑图建模认知动态但存在拓扑与预测分布偏移。本文提出因果驱动的双不变性学习框架CDBG，通过两阶段理性学习解耦并缓解类别条件拓扑偏移与表征-标签映射偏移。实验表明CDBG有效减轻被试间分布偏移，提升跨被试负荷识别性能，为稳健的脑电认知状态分析提供了因果不变性方法。",
+      "llm_tldr": "针对脑电心理负荷识别跨被试泛化困难，功能脑图建模认知动态但存在拓扑与预测分布偏移。本文提出因果驱动的双不变性学习框架CDBG，通过两阶段理性学习解耦并缓解类别条件拓扑偏移与表征-标签映射偏移。实验表明CDBG有效减轻被试间分布偏移，提升跨被试负荷识别性能，为稳健的脑电认知状态分析提供了因果不变性方法。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "spectral power in EEG recordings during cognitive tasks",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

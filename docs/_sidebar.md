@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-28 <!--dpr-date:20260928-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/28/2609.30831v1-cdbg-causally-motivated-dual-invariance-learning-against-topological-and-predictive-shifts-in-eeg-workload-recognition" data-sidebar-item="{&quot;title&quot;: &quot;CDBG: Causally Motivated Dual-Invariance Learning against Topological and Predictive Shifts in EEG Workload Recognition&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.30831v1-cdbg-causally-motivated-dual-invariance-learning-against-topological-and-predictive-shifts-in-eeg-workload-recognition&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;基于功能脑图与因果不变性学习的脑电心理负荷识别&quot;}">CDBG: Causally Motivated Dual-Invariance Learning against Topological and Predictive Shifts in EEG Workload Recognition</a>
   * 2026-09-25 <!--dpr-date:20260925-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/25/2609.29820v1-decoding-imagined-speech-a-strictly-subject-independent-approach-using-eeg" data-sidebar-item="{&quot;title&quot;: &quot;Decoding Imagined Speech: A Strictly Subject-Independent Approach Using EEG&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.29820v1-decoding-imagined-speech-a-strictly-subject-independent-approach-using-eeg&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;使用频域谱带功率方法进行想象言语EEG分类，直接相关于认知任务中的EEG频谱功率分析&quot;}">Decoding Imagined Speech: A Strictly Subject-Independent Approach Using EEG</a>
