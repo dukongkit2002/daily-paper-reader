@@ -6,22 +6,29 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-10-01
-- 运行时间：2026-10-01 23:16:49 UTC
+- 最新运行日期：2026-10-02
+- 运行时间：2026-10-02 22:45:33 UTC
 - 运行状态：成功
-- 本次总论文数：0
-- 精读区：0
-- 速读区：0
+- 本次总论文数：2
+- 精读区：1
+- 速读区：1
 
 ### 今日简报（AI）
-> 今日无新推荐，系统未产出可展示论文。
-- 详情：[/202610/01/README](/202610/01/README)
+- 今日共生成 2 篇推荐（精读 1 篇，速读 1 篇）
+- 精读：《Best Practices in EEG Analysis: Preprocessing, Modeling, and Machine Learning》（8.0/10）
+- 速读：《Critical Thinking with Generative AI: A Constraint-First Design Pilot of a Thinking-Partner Intervention》（7.0/10）
+- 这些结果覆盖了当下较热的方向，建议先看精读区论文的关键问题与方法。
+- 详情：[/202610/02/README](/202610/02/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Best Practices in EEG Analysis: Preprocessing, Modeling, and Machine Learning](/202610/02/2609.36609v1-best-practices-in-eeg-analysis-preprocessing-modeling-and-machine-learning)  
+   标签：评分：8.0/10、query:cog-eeg-mpfc
+   evidence：脑电分析指南中的时频分析
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Critical Thinking with Generative AI: A Constraint-First Design Pilot of a Thinking-Partner Intervention](/202610/02/2609.38029v1-critical-thinking-with-generative-ai-a-constraint-first-design-pilot-of-a-thinking-partner-intervention)  
+   标签：评分：7.0/10、query:cog-eeg-mpfc
+   evidence：高等教育中批判性思维干预及WGCTA测量
 
 
 <div class="dpr-home-promo-card">

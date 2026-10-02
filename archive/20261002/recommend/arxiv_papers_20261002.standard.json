@@ -1,0 +1,96 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-02T22:40:59.451709+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2609.36609v1",
+      "source": "arxiv",
+      "title": "Best Practices in EEG Analysis: Preprocessing, Modeling, and Machine Learning",
+      "abstract": "Electroencephalography (EEG) analysis requires careful choices in preprocessing, statistical modeling, and machine learning because EEG signals are highly susceptible to artifacts, volume conduction, low signal-to-noise ratio, and substantial inter-subject variability. This chapter provides a practical and methodological guide to modern EEG analysis, spanning EEG preprocessing, artifact removal, filtering, bad-channel detection and interpolation, re-referencing, independent component analysis (ICA), and preprocessing of simultaneous EEG-fMRI recordings. We review major approaches for computational EEG analysis, including event-related potentials (ERPs), time-frequency analysis, functional and effective connectivity, source localization, multivariate decoding, permutation testing, and multiple-comparison correction. We then examine machine-learning methods for EEG, from feature-based classifiers to deep learning and emerging EEG foundation models, with emphasis on cross-subject generalization, limited-data regimes, data leakage, evaluation metrics, and fair benchmarking. Reproducibility is treated as a core requirement throughout, including transparent preprocessing, BIDS-EEG data organization, standardized derivatives, preservation of raw data, and FAIR data practices. The chapter is intended as a practical reference for researchers developing reliable, interpretable, and reproducible EEG analysis and machine-learning pipelines.",
+      "authors": [
+        "Parsa Razmara",
+        "Woojae Jeong",
+        "Aditya Kommineni",
+        "Raymundo Cassani",
+        "Richard Leahy",
+        "Takfarinas Medani"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "published": "2026-09-29T03:26:17+00:00",
+      "link": "https://arxiv.org/pdf/2609.36609v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "time-frequency analysis in EEG guide",
+      "llm_evidence_cn": "脑电分析指南中的时频分析",
+      "llm_evidence": "脑电分析指南中的时频分析",
+      "canonical_evidence": "脑电分析指南中的时频分析",
+      "llm_tldr_en": "Provides a practical methodological guide to modern EEG analysis, including preprocessing, time-frequency analysis, connectivity, and source localization.",
+      "llm_tldr_cn": "针对脑电分析中伪迹、容积传导、信噪比低等挑战，系统综述脑电预处理、伪迹去除、ICA、时频分析、连通性与源定位等方法。该指南涵盖从预处理到机器学习的完整流程，为研究者在脑电相对功率谱分析等认知任务中提供实用参考。",
+      "llm_tldr": "针对脑电分析中伪迹、容积传导、信噪比低等挑战，系统综述脑电预处理、伪迹去除、ICA、时频分析、连通性与源定位等方法。该指南涵盖从预处理到机器学习的完整流程，为研究者在脑电相对功率谱分析等认知任务中提供实用参考。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2609.38029v1",
+      "source": "arxiv",
+      "title": "Critical Thinking with Generative AI: A Constraint-First Design Pilot of a Thinking-Partner Intervention",
+      "abstract": "Generative AI (GenAI) tools entered higher education classrooms faster than the field was able to study their effects on learning. One concern is that GenAI may displace the critical thinking and AI literacy that students will need after graduation. This paper reports a Design-Based Research pilot of a GenAI-assisted critical thinking framework, in which ChatGPT was used as a thinking partner in an undergraduate research methods and statistics course during Spring 2025 (N = 14). The mixed-methods design combined pre- and post-intervention measures of statistical learning (AASCDM), AI literacy (MAILS), and critical thinking (WGCTA) with instructor field notes, student artifacts, and student-AI interaction logs. Pre-post tests showed gains on every AASCDM dimension and on eight of nine MAILS dimensions, while WGCTA percentiles did not change. Qualitative analysis identified four themes: the ways students positioned the LLM (as answer generator, validator, or co-thinker); the depth of student engagement (procedural vs. conceptual); occasional humanizing of the tool; and the role of curriculum design in shaping each of the prior three. Read together, the findings indicate that one semester of GenAI-assisted instruction can move domain learning and self-reported AI literacy but does not move standardized critical thinking, and that the modal student-LLM relationship is one of validation instead of dialogue. We end with design principles for the next iteration of the framework and implications for research on adaptive and personalized learning.",
+      "authors": [
+        "Fatima Tuz Zahra",
+        "Jiangen He",
+        "David M. Bowers",
+        "Wei Wang"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-09-29T17:08:08+00:00",
+      "link": "https://arxiv.org/pdf/2609.38029v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Critical thinking intervention and WGCTA measurement in higher education",
+      "llm_evidence_cn": "高等教育中批判性思维干预及WGCTA测量",
+      "llm_evidence": "高等教育中批判性思维干预及WGCTA测量",
+      "canonical_evidence": "高等教育中批判性思维干预及WGCTA测量",
+      "llm_tldr_en": "Pilots a GenAI-assisted critical thinking framework in an undergraduate statistics course, using pre-post measures of critical thinking and AI literacy.",
+      "llm_tldr_cn": "针对生成式AI可能取代学生批判性思维的问题，在本科生研究方法与统计课程中开展GenAI辅助批判性思维框架的设计研究试点，将ChatGPT作为思维伙伴。混合方法结合WGCTA、AI素养等前测后测与交互日志分析，考察对批判性思维的影响。研究为AI时代批判性思维培养提供了初步证据。",
+      "llm_tldr": "针对生成式AI可能取代学生批判性思维的问题，在本科生研究方法与统计课程中开展GenAI辅助批判性思维框架的设计研究试点，将ChatGPT作为思维伙伴。混合方法结合WGCTA、AI素养等前测后测与交互日志分析，考察对批判性思维的影响。研究为AI时代批判性思维培养提供了初步证据。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "scientific critical thinking disposition and its measurement",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
