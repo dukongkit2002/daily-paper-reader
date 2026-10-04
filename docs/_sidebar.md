@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-10-04 <!--dpr-date:20261004-->
+    * 精读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202610/04/2609.37791v1-a-neural-network-that-maintains-and-retrieves-memories-based-on-context" data-sidebar-item="{&quot;title&quot;: &quot;A neural network that maintains and retrieves memories based on context&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.37791v1-a-neural-network-that-maintains-and-retrieves-memories-based-on-context&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;前额叶皮层通过情境调节工作记忆和情景记忆；RNN模型与fMRI数据匹配。&quot;}">A neural network that maintains and retrieves memories based on context</a>
   * 2026-10-03 <!--dpr-date:20261003-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202610/03/2609.37880v1-fluency-without-evidence-constraint-first-design-and-the-limits-of-self-report-in-ai-assisted-learning" data-sidebar-item="{&quot;title&quot;: &quot;Fluency Without Evidence: Constraint-First Design and the Limits of Self-Report in AI-Assisted Learning&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.37880v1-fluency-without-evidence-constraint-first-design-and-the-limits-of-self-report-in-ai-assisted-learning&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;测量AI素养、批判性思维和元认知意识；批判性思维无变化&quot;}">Fluency Without Evidence: Constraint-First Design and the Limits of Self-Report in AI-Assisted Learning</a>

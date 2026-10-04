@@ -1,0 +1,58 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-04T22:39:14.587611+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2609.37791v1",
+      "source": "arxiv",
+      "title": "A neural network that maintains and retrieves memories based on context",
+      "abstract": "Every day, people continuously infer situational context and adjust the way they understand and remember the world. Context, signaled by the prefrontal cortex, is known to modulate working memory and episodic memory, but the algorithmic understanding of this modulation remains limited. Here, we train a recurrent neural network (RNN), augmented with an episodic memory buffer, to infer context using Bayesian inference as it continuously makes predictions of upcoming scenes while watching naturalistic movies. When the inferred context modulates the RNN's recurrent connectivity (the basis of working memory) in a low-rank manner, the model's activity patterns best match neural responses in human participants who watched the same movies during fMRI. Context also modulates episodic memory retrieval, such that the model retrieves memories based on not only content similarity but also context similarity. This is implemented as a key-value system with self-attention, designed to additionally encode context and retrieve context-congruent memories. The resulting model not only better resembles human brain representations but also learns to retrieve memories like humans much faster than a model without context modulation. Together, our findings suggest a computational mechanism by which context modulates information maintenance and long-term memory retrieval in naturalistic environments.",
+      "authors": [
+        "Hayoung Song",
+        "JeongJun Park",
+        "Qihong Lu",
+        "Giacomo Vedovati",
+        "Monica D. Rosenberg",
+        "Zachariah M. Reagh",
+        "ShiNung Ching"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.NE"
+      ],
+      "published": "2026-09-29T15:20:22+00:00",
+      "link": "https://arxiv.org/pdf/2609.37791v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Prefrontal cortex context modulation of working memory and episodic memory; RNN matches fMRI data.",
+      "llm_evidence_cn": "前额叶皮层通过情境调节工作记忆和情景记忆；RNN模型与fMRI数据匹配。",
+      "llm_evidence": "前额叶皮层通过情境调节工作记忆和情景记忆；RNN模型与fMRI数据匹配。",
+      "canonical_evidence": "前额叶皮层通过情境调节工作记忆和情景记忆；RNN模型与fMRI数据匹配。",
+      "llm_tldr_en": "Trains an RNN with episodic memory buffer to infer context from naturalistic movies; context low-rank modulation matches human fMRI prefrontal cortex activity.",
+      "llm_tldr_cn": "针对前额叶皮层如何通过情境调节工作记忆和情景记忆的算法机制尚不明确的问题，该研究训练一个增强情景记忆缓冲区的循环神经网络，在看电影时用贝叶斯推断情境。当推断的情境以低秩方式调节循环连接时，模型活动模式与人类fMRI前额叶皮层反应最佳匹配。这为理解前额叶在记忆和高阶认知中的功能提供了计算解释。",
+      "llm_tldr": "针对前额叶皮层如何通过情境调节工作记忆和情景记忆的算法机制尚不明确的问题，该研究训练一个增强情景记忆缓冲区的循环神经网络，在看电影时用贝叶斯推断情境。当推断的情境以低秩方式调节循环连接时，模型活动模式与人类fMRI前额叶皮层反应最佳匹配。这为理解前额叶在记忆和高阶认知中的功能提供了计算解释。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "functional role of mPFC in higher cognitive networks and executive functions",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}
