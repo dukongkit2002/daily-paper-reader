@@ -1,20 +1,20 @@
 # 日报 · 2026-10-06
 
-- 生成时间：2026-10-06 01:04:48 UTC
-- 当次推荐总数：1
+- 生成时间：2026-10-06 23:13:09 UTC
+- 当次推荐总数：0
 - 精读区：0
-- 速读区：1
+- 速读区：0
 
 ## 今日简报（AI）
-- 今日共生成 1 篇推荐（精读 0 篇，速读 1 篇）
-- 速读：《PHASE: A Physiology-Guided Hierarchical Foundation Model for Intracranial EEG》（6.0/10）
-- 这些结果覆盖了当下较热的方向，建议先看精读区论文的关键问题与方法。
+> 今日无新推荐，系统未产出可展示论文。
+
+> 本次触发没有产出可推荐论文。
 
 ## 精读区
 - 本次无精读推荐。
 
 ## 速读区
-1. [PHASE: A Physiology-Guided Hierarchical Foundation Model for Intracranial EEG](/202610/06/2609.36087v2-phase-a-physiology-guided-hierarchical-foundation-model-for-intracranial-eeg) （6.0/10）
+- 本次无速读推荐。
 
 ---
 使用键盘方向键可在日报/论文之间快速切换。

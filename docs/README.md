@@ -7,25 +7,21 @@
 
 ## 每次日报
 - 最新运行日期：2026-10-06
-- 运行时间：2026-10-06 01:04:48 UTC
+- 运行时间：2026-10-06 23:13:09 UTC
 - 运行状态：成功
-- 本次总论文数：1
+- 本次总论文数：0
 - 精读区：0
-- 速读区：1
+- 速读区：0
 
 ### 今日简报（AI）
-今日速读《PHASE》：一个生理引导的颅内脑电分层基础模型。  
-值得关注其把生理先验嵌入分层基础模型，以提升颅内 EEG 表征的泛化与可解释性。  
-建议下一步重点看它在癫痫监测等临床任务上的实际表现与对比基准。
+> 今日无新推荐，系统未产出可展示论文。
 - 详情：[/202610/06/README](/202610/06/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [PHASE: A Physiology-Guided Hierarchical Foundation Model for Intracranial EEG](/202610/06/2609.36087v2-phase-a-physiology-guided-hierarchical-foundation-model-for-intracranial-eeg)  
-   标签：评分：6.0/10、query:cog-eeg-mpfc
-   evidence：提出以生理特征为显式学习目标的颅内脑电基础模型，有助于认知解码中的频谱分析
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">
