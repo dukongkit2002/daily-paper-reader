@@ -6,26 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-10-04
-- 运行时间：2026-10-04 22:40:33 UTC
+- 最新运行日期：2026-10-06
+- 运行时间：2026-10-06 01:04:48 UTC
 - 运行状态：成功
 - 本次总论文数：1
-- 精读区：1
-- 速读区：0
+- 精读区：0
+- 速读区：1
 
 ### 今日简报（AI）
-今日精读一篇 8.0 分论文：让神经网络能按上下文维持并调取记忆。
-核心看点是上下文驱动的记忆存取机制，为更灵活的记忆增强模型提供新思路。
-建议从该文切入，对比记忆网络与 Transformer，思考上下文记忆在你关注任务中的可用性。
-- 详情：[/202610/04/README](/202610/04/README)
+今日速读《PHASE》：一个生理引导的颅内脑电分层基础模型。  
+值得关注其把生理先验嵌入分层基础模型，以提升颅内 EEG 表征的泛化与可解释性。  
+建议下一步重点看它在癫痫监测等临床任务上的实际表现与对比基准。
+- 详情：[/202610/06/README](/202610/06/README)
 
 ### 精读区论文标签
-1. [A neural network that maintains and retrieves memories based on context](/202610/04/2609.37791v1-a-neural-network-that-maintains-and-retrieves-memories-based-on-context)  
-   标签：评分：8.0/10、query:cog-eeg-mpfc
-   evidence：前额叶皮层通过情境调节工作记忆和情景记忆；RNN模型与fMRI数据匹配。
+- 本次无精读推荐。
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [PHASE: A Physiology-Guided Hierarchical Foundation Model for Intracranial EEG](/202610/06/2609.36087v2-phase-a-physiology-guided-hierarchical-foundation-model-for-intracranial-eeg)  
+   标签：评分：6.0/10、query:cog-eeg-mpfc
+   evidence：提出以生理特征为显式学习目标的颅内脑电基础模型，有助于认知解码中的频谱分析
 
 
 <div class="dpr-home-promo-card">

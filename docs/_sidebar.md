@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-10-06 <!--dpr-date:20261006-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202610/06/2609.36087v2-phase-a-physiology-guided-hierarchical-foundation-model-for-intracranial-eeg" data-sidebar-item="{&quot;title&quot;: &quot;PHASE: A Physiology-Guided Hierarchical Foundation Model for Intracranial EEG&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.36087v2-phase-a-physiology-guided-hierarchical-foundation-model-for-intracranial-eeg&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;提出以生理特征为显式学习目标的颅内脑电基础模型，有助于认知解码中的频谱分析&quot;}">PHASE: A Physiology-Guided Hierarchical Foundation Model for Intracranial EEG</a>
   * 2026-10-04 <!--dpr-date:20261004-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202610/04/2609.37791v1-a-neural-network-that-maintains-and-retrieves-memories-based-on-context" data-sidebar-item="{&quot;title&quot;: &quot;A neural network that maintains and retrieves memories based on context&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2609.37791v1-a-neural-network-that-maintains-and-retrieves-memories-based-on-context&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;cog-eeg-mpfc&quot;}], &quot;evidence&quot;: &quot;前额叶皮层通过情境调节工作记忆和情景记忆；RNN模型与fMRI数据匹配。&quot;}">A neural network that maintains and retrieves memories based on context</a>

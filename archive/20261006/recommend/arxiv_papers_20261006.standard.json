@@ -1,0 +1,65 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-06T01:03:16.536340+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2609.36087v2",
+      "source": "arxiv",
+      "title": "PHASE: A Physiology-Guided Hierarchical Foundation Model for Intracranial EEG",
+      "abstract": "Clinicians and neuroscientists have long analyzed intracranial electroencephalography (iEEG) through directly measurable physiological characteristics, which carry much of the information that downstream tasks depend on. Recent iEEG foundation models learn by reconstructing or predicting their inputs, which leaves the retention of these characteristics implicit. They are also evaluated mainly on cognitive decoding and a narrow clinical task, i.e., seizure detection. On a broad, clinically relevant benchmark such as Omni-iEEG, they remain below task-specific models when used frozen. We introduce PHASE, a physiology-guided foundation model that makes these characteristics explicit learning targets, pairing them with masked latent prediction in a temporal stage (PHASE-T) within each channel and a spatiotemporal stage (PHASE-ST) across synchronized channels. PHASE is pretrained on heterogeneous recordings from 222 participants at nine clinical sites. On all five Omni-iEEG clinical tasks, frozen PHASE-T outperforms every evaluated foundation model by up to 31\\%, and fine-tuned PHASE-T surpasses the task-specific models, setting a new state of the art. PHASE-T benefits from physiological supervision, outperforming variants trained with latent prediction alone or auxiliary waveform reconstruction on every task in matched ablations. PHASE-T generalizes to unseen institutions, outperforming the compared models with few or no local labels. PHASE-ST further improves seizure-onset-zone identification over PHASE-T and, when frozen, decodes sound volume and pitch on BrainTreebank better than published models. Beyond task performance, PHASE learns to encapsulate the physiological characteristics clinicians recognize, from seizure onset and its propagation to anatomical region identity, even though its pretraining contains no ictal recordings or anatomical labels.",
+      "authors": [
+        "Yipeng Zhang",
+        "Chenda Duan",
+        "Yuanyi Ding",
+        "Tianyi Wang",
+        "Atsuro Daida",
+        "Masaki Izumi",
+        "Yuta Tanoue",
+        "Naoto Kuroda",
+        "Shaun A. Hussain",
+        "Nishant Sinha",
+        "Eishi Asano",
+        "Hiroki Nariai",
+        "Vwani Roychowdhury"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-09-28T18:31:25+00:00",
+      "link": "https://arxiv.org/pdf/2609.36087v2",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "introduces iEEG foundation model with explicit physiological characteristics including spectral features, aids EEG cognitive decoding",
+      "llm_evidence_cn": "提出以生理特征为显式学习目标的颅内脑电基础模型，有助于认知解码中的频谱分析",
+      "llm_evidence": "提出以生理特征为显式学习目标的颅内脑电基础模型，有助于认知解码中的频谱分析",
+      "canonical_evidence": "提出以生理特征为显式学习目标的颅内脑电基础模型，有助于认知解码中的频谱分析",
+      "llm_tldr_en": "PHASE is a physiology-guided hierarchical foundation model for intracranial EEG that makes measurable physiological characteristics explicit learning targets, paired with masked latent prediction, improving performance on cognitive decoding and clinical benchmarks.",
+      "llm_tldr_cn": "现有颅内脑电基础模型主要通过重构或预测输入学习，生理特征保留隐式，且在广泛临床与认知解码基准上冻结使用时不如任务特定模型。PHASE提出将直接可测量的生理特征作为显式学习目标，并与掩码潜在预测配对，构建分层基础模型。在Omni-iEEG等基准上，该方法改善了认知解码和临床任务表现，表明显式生理建模对脑电分析具有重要价值。",
+      "llm_tldr": "现有颅内脑电基础模型主要通过重构或预测输入学习，生理特征保留隐式，且在广泛临床与认知解码基准上冻结使用时不如任务特定模型。PHASE提出将直接可测量的生理特征作为显式学习目标，并与掩码潜在预测配对，构建分层基础模型。在Omni-iEEG等基准上，该方法改善了认知解码和临床任务表现，表明显式生理建模对脑电分析具有重要价值。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
