@@ -1,0 +1,39 @@
+{
+  "label": "2026-10-07",
+  "date": "2026-10-07",
+  "generated_at": "2026-10-07T23:27:45",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202610/07/2609.37956v1-brainnet-studio-a-unified-toolkit-for-brain-network-construction-intelligent-analysis-and-visualization",
+      "section": "quick",
+      "title_en": "BrainNet Studio: A Unified Toolkit for Brain Network Construction, Intelligent Analysis, and Visualization",
+      "authors": "Xiwei Zeng, Shengrong Li, Yiheng Liu, Chunwei Tian, Daoqiang Zhang, Qi Zhu",
+      "date": "2026-09-29",
+      "pdf": "https://arxiv.org/pdf/2609.37956v1",
+      "score": "6.0",
+      "evidence": "脑网络构建和分析工具包，可应用于研究认知网络中的mPFC",
+      "tldr": "传统静态网络难以表征脑网络的时变拓扑和高阶时空依赖，现有工具缺乏动态建模与现代学习方法的集成。BrainNet Studio提供统一工作流，涵盖网络构建、特征提取、预测建模、候选生物标志物识别、可视化和辅助解释，并集成27种算法，包括深度学习、图神经网络和时空序列模型。该平台支持分类和识别判别性脑区与连接，大语言模型可生成研究者可验证的摘要。它为认知神经科学、脑疾病探索性研究和脑机接口提供了实用且可扩展的分析平台。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Brain networks characterize structural and functional relationships among brain regions and support research on cognition, brain disorders, and brain-computer interfaces. Their time-varying topology and higher-order spatiotemporal dependencies are not adequately represented by conventional static networks. Existing tools primarily focus on static connectomes and provide limited integration of dynamic network modeling with modern graph and sequence learning methods. We present BrainNet Studio, an integrated toolkit for static and dynamic brain network analysis. It provides a unified workflow encompassing network construction, feature extraction, predictive modeling, candidate biomarker identification, visualization, and assisted interpretation. The toolkit integrates 27 algorithms, including deep learning, graph neural networks, and spatiotemporal sequence models, to support classification and the identification of discriminative brain regions and connections. A large language model generates researcher-verifiable summaries of functional connectivity, structural connectivity, and structure-function coupling at individual and group levels. Within a consistent computational framework, users can configure analytical tasks, compare methods, inspect outputs, and extend functionality without repeatedly assembling application-specific pipelines. BrainNet Studio provides a practical and extensible platform for connectome analysis in cognitive neuroscience, exploratory studies of brain disorders, and brain-computer interfaces. The toolkit is publicly available at https://github.com/xbrainnet/Brainnet-Studio.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/07/2610.07824v1-candle-cortical-null-space-decomposition-for-noninvasive-brain-source-imaging",
+      "section": "quick",
+      "title_en": "CANDLE: Cortical Null-Space Decomposition for Noninvasive Brain Source Imaging",
+      "authors": "Shuntaro Suzuki, Yuiga Wada, Komei Sugiura",
+      "date": "2026-10-06",
+      "pdf": "https://arxiv.org/pdf/2610.07824v1",
+      "score": "6.0",
+      "evidence": "基于学习的个体化皮质几何EEG源成像，可定位内侧前额叶",
+      "tldr": "脑电源成像（ESI）旨在从非侵入EEG估计皮层源活动，但源空间远高于传感器空间导致解不唯一。现有学习方法依赖数据驱动先验，难以泛化到个体化皮层几何。为此提出CANDLE，基于T1 MRI构建源-传感器映射的零空间，仅学习不可观测源的先验以保留几何约束。在涵盖1100余例个体皮层几何和26000余张统计脑图的模拟数据上训练，CANDLE在仿真估计中超越既往方法，并在颅内刺激定位和癫痫致痫区估计两项实证任务中成功泛化，为个体化解剖约束脑源成像提供了有效方案。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Electrophysiological source imaging (ESI) aims to estimate cortical source activity from noninvasive electrophysiological measurements such as electroencephalogram (EEG). However, ESI is fundamentally ill-posed because source activity is substantially higher-dimensional than sensor observations, resulting in non-unique solutions. Recent learning-based approaches address this ambiguity by learning data-driven source priors, yet they often struggle to generalize across subject-specific cortical geometries. To address this, we propose CANDLE, a learning-based ESI model that estimates source activity on subject-specific cortical geometries. CANDLE learns a prior over the null space induced by the source-to-sensor mapping derived from T1-weighted MRI, restricting learning to unobservable source components while preserving geometric constraints. To train CANDLE, we develop a whole-brain simulator spanning over 1,100 subject-specific cortical geometries with source configurations derived from over 26,000 statistical brain maps. Trained exclusively on simulated data, CANDLE outperformed prior ESI methods on simulated source activity estimation and generalized to two empirical tasks: (i) intracranial stimulation localization from simultaneously recorded scalp EEG and (ii) epileptogenic zone estimation from presurgical interictal EEG. Our project page is available at https://candle-esi.pages.dev}{https://candle-esi.pages.dev.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
