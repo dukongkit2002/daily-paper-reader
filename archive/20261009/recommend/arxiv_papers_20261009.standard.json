@@ -1,0 +1,91 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-09T00:08:12.222680+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2610.02971v1",
+      "source": "arxiv",
+      "title": "Tracking Human Daily Cognitive Activity from EEG and Biometric Data",
+      "abstract": "Understanding human cognitive activity in everyday life remains challenging due to the dynamic, context-dependent, and multimodal nature of cognition. Laboratory-based studies often fail to capture real-world cognitive processes, while single-modality approaches provide only partial insight into cognitive states. Advances in wearable sensing now enable the collection of heterogeneous data streams for a more comprehensive view of daily cognition. This paper presents a multimodal framework for tracking human cognitive activity using electroencephalography (EEG), wearable physiological signals, behavioral context, and self-reported measures. A preliminary pilot study was conducted with observational data from three participants (N = 3) over 280 annotated 10-minute intervals spanning nine activity domains across two weeks.   Results reveal consistent temporal patterns, including a discernible mid-day decrease in motivation and energy at 13:00, followed by afternoon recovery. Work and IADLs yielded the highest flow state rates (51% and 50%), while ADLs produced the lowest (15%). Motivation correlated strongly with arousal (r = 0.78) and attention (r = 0.74), whereas perceived stress showed a weaker negative relationship (r = -0.33). A linear regression model predicting motivation from arousal, attention, energy, and stress achieved R2 = 0.76 (MAE = 9.84, RMSE = 12.85). Lag-based analysis indicates that prior energy levels positively predict subsequent motivation, confirming temporal dependencies in cognitive dynamics.   These findings demonstrate the feasibility of multimodal cognitive activity analysis in real-world environments and highlight the importance of integrating physiological and behavioral indicators. The proposed framework provides a foundation for future large-scale multimodal systems and applied intelligent solutions.",
+      "authors": [
+        "Alina Gutoreva",
+        "Zhaniya Omar"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-10-02T08:06:23+00:00",
+      "link": "https://arxiv.org/pdf/2610.02971v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "EEG-based multimodal framework for tracking human daily cognitive activity",
+      "llm_evidence_cn": "基于脑电图的多模态框架追踪人类日常认知活动",
+      "llm_evidence": "基于脑电图的多模态框架追踪人类日常认知活动",
+      "canonical_evidence": "基于脑电图的多模态框架追踪人类日常认知活动",
+      "llm_tldr_en": "The paper presents a multimodal framework using EEG, wearable physiological signals, behavioral context, and self-reports to track daily cognitive activity. It addresses limitations of lab-based single-modality studies and reports a pilot study with three participants over 280 annotated 10-minute segments. The framework offers a more comprehensive view of real-world cognition.",
+      "llm_tldr_cn": "现有实验室研究难以捕捉真实世界认知过程，单一模态方法只能提供部分认知状态信息。该论文提出一个多模态框架，融合脑电图、可穿戴生理信号、行为情境和自我报告来追踪人类日常认知活动。在3名参与者的280个标注10分钟时段的初步试点研究中，该框架展示了更全面的日常认知视角。这一工作为自然情境下的脑电认知分析提供了方法基础。",
+      "llm_tldr": "现有实验室研究难以捕捉真实世界认知过程，单一模态方法只能提供部分认知状态信息。该论文提出一个多模态框架，融合脑电图、可穿戴生理信号、行为情境和自我报告来追踪人类日常认知活动。在3名参与者的280个标注10分钟时段的初步试点研究中，该框架展示了更全面的日常认知视角。这一工作为自然情境下的脑电认知分析提供了方法基础。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.07484v1",
+      "source": "arxiv",
+      "title": "SpecBraM: What Should an EEG Foundation Model Predict? Masked Band-Power Prediction versus Waveform Reconstruction",
+      "abstract": "Self-supervised EEG models often reconstruct masked waveforms or predict discrete codes. We study a task-aligned alternative: masked band-power prediction (MBP), which predicts fixed narrow-band log spectral energy for masked channel-time patches. This target retains rhythm power relevant to sleep staging while avoiding phase-sensitive waveform reconstruction and a learned codebook. Across three pretraining seeds, we compare band-power and waveform targets with matched backbones, pretraining data (2,388 hours), and training steps, including a 2x2 tokenizer-by-target design. On ISRUC and HMC sleep staging, MBP exceeds raw- and band-waveform reconstruction by 1.6-2.8 balanced-accuracy points with all labels and 4.7-7.3 points with 1% of labels under a strict linear probe; the target effect exceeds the tokenizer effect. Its frozen features reach 0.7916/0.7425 balanced accuracy, versus 0.7636/0.7227 for a matched rich handcrafted spectral baseline, although the gap is about one point with 1% of labels. Full fine-tuning reaches 0.8107/0.7669. The gains do not extend to every task with spectral cues, including motor imagery, depression screening, and vigilance regression. These results support choosing pretraining targets to match the physical quantities and spatial and temporal scales relevant to downstream labels.",
+      "authors": [
+        "Peng Xie",
+        "Yequan Bie",
+        "Jianda Mao",
+        "Kani Chen"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-10-05T22:49:16+00:00",
+      "link": "https://arxiv.org/pdf/2610.07484v1",
+      "tags": [
+        "keyword:cog-eeg-mpfc",
+        "query:cog-eeg-mpfc"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Predicts masked narrow-band log spectral energy (band power) from EEG, directly relevant to spectral power analysis",
+      "llm_evidence_cn": "通过掩码窄带对数谱能量（频带功率）预测，直接针对脑电谱功率分析",
+      "llm_evidence": "通过掩码窄带对数谱能量（频带功率）预测，直接针对脑电谱功率分析",
+      "canonical_evidence": "通过掩码窄带对数谱能量（频带功率）预测，直接针对脑电谱功率分析",
+      "llm_tldr_en": "This paper compares masked band-power prediction with waveform reconstruction for self-supervised EEG foundation models; across three seeds and 2,388 hours of pretraining, band-power targets improve sleep staging accuracy by 1.6-2.8 points, demonstrating task-aligned spectral targets are more effective.",
+      "llm_tldr_cn": "自监督脑电模型通常重建波形或预测离散码，但未对齐频谱分析任务。该研究提出掩码频带功率预测，对掩码的通道-时间块预测窄带对数谱能量，保留节律功率并避免相位敏感重建。在ISRUC和HMC睡眠分期上，该方法比波形重建提高1.6-2.8个平衡准确率点。结果表明，面向任务的频谱目标对脑电基础模型更有效，也为认知任务中的相对功率谱分析提供了可迁移的预训练策略。",
+      "llm_tldr": "自监督脑电模型通常重建波形或预测离散码，但未对齐频谱分析任务。该研究提出掩码频带功率预测，对掩码的通道-时间块预测窄带对数谱能量，保留节律功率并避免相位敏感重建。在ISRUC和HMC睡眠分期上，该方法比波形重建提高1.6-2.8个平衡准确率点。结果表明，面向任务的频谱目标对脑电基础模型更有效，也为认知任务中的相对功率谱分析提供了可迁移的预训练策略。",
+      "llm_tags": [
+        "query:cog-eeg-mpfc"
+      ],
+      "matched_query_tag": "query:cog-eeg-mpfc",
+      "matched_query_text": "electroencephalography relative power spectrum analysis in cognition",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

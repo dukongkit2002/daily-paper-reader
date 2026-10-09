@@ -1,0 +1,39 @@
+{
+  "label": "2026-10-09",
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T00:09:36",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202610/09/2610.02971v1-tracking-human-daily-cognitive-activity-from-eeg-and-biometric-data",
+      "section": "quick",
+      "title_en": "Tracking Human Daily Cognitive Activity from EEG and Biometric Data",
+      "authors": "Alina Gutoreva, Zhaniya Omar",
+      "date": "2026-10-02",
+      "pdf": "https://arxiv.org/pdf/2610.02971v1",
+      "score": "6.0",
+      "evidence": "基于脑电图的多模态框架追踪人类日常认知活动",
+      "tldr": "日常认知活动动态、情境依赖且多模态，传统实验室研究难以捕捉真实过程。本研究提出融合脑电、可穿戴生理信号、行为情境与自我报告的多模态框架，基于3名参与者两周内9个活动领域的280个10分钟片段开展试点。结果发现13时动机与能量显著下降后恢复，工作与工具性日常活动流动状态率最高达51%，动机可由唤醒、注意力等预测（R²=0.76），滞后能量正向预测动机。该框架验证真实环境多模态认知分析可行性，为大规模智能系统奠定基础。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Understanding human cognitive activity in everyday life remains challenging due to the dynamic, context-dependent, and multimodal nature of cognition. Laboratory-based studies often fail to capture real-world cognitive processes, while single-modality approaches provide only partial insight into cognitive states. Advances in wearable sensing now enable the collection of heterogeneous data streams for a more comprehensive view of daily cognition. This paper presents a multimodal framework for tracking human cognitive activity using electroencephalography (EEG), wearable physiological signals, behavioral context, and self-reported measures. A preliminary pilot study was conducted with observational data from three participants (N = 3) over 280 annotated 10-minute intervals spanning nine activity domains across two weeks.   Results reveal consistent temporal patterns, including a discernible mid-day decrease in motivation and energy at 13:00, followed by afternoon recovery. Work and IADLs yielded the highest flow state rates (51% and 50%), while ADLs produced the lowest (15%). Motivation correlated strongly with arousal (r = 0.78) and attention (r = 0.74), whereas perceived stress showed a weaker negative relationship (r = -0.33). A linear regression model predicting motivation from arousal, attention, energy, and stress achieved R2 = 0.76 (MAE = 9.84, RMSE = 12.85). Lag-based analysis indicates that prior energy levels positively predict subsequent motivation, confirming temporal dependencies in cognitive dynamics.   These findings demonstrate the feasibility of multimodal cognitive activity analysis in real-world environments and highlight the importance of integrating physiological and behavioral indicators. The proposed framework provides a foundation for future large-scale multimodal systems and applied intelligent solutions.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/09/2610.07484v1-specbram-what-should-an-eeg-foundation-model-predict-masked-band-power-prediction-versus-waveform-reconstruction",
+      "section": "quick",
+      "title_en": "SpecBraM: What Should an EEG Foundation Model Predict? Masked Band-Power Prediction versus Waveform Reconstruction",
+      "authors": "Peng Xie, Yequan Bie, Jianda Mao, Kani Chen",
+      "date": "2026-10-05",
+      "pdf": "https://arxiv.org/pdf/2610.07484v1",
+      "score": "6.0",
+      "evidence": "通过掩码窄带对数谱能量（频带功率）预测，直接针对脑电谱功率分析",
+      "tldr": "自监督脑电模型常重建波形或预测离散码，但可能忽略与下游任务相关的节律功率。本文提出掩蔽频带功率预测（MBP），预测掩蔽 patch 的窄带对数谱能量。在睡眠分期上，MBP 显著优于波形重建，尤其在少标签线性探针下提升4.7-7.3个点。结果表明预训练目标应与下游物理量和时空尺度对齐。",
+      "tags": "query:cog-eeg-mpfc",
+      "abstract_en": "Self-supervised EEG models often reconstruct masked waveforms or predict discrete codes. We study a task-aligned alternative: masked band-power prediction (MBP), which predicts fixed narrow-band log spectral energy for masked channel-time patches. This target retains rhythm power relevant to sleep staging while avoiding phase-sensitive waveform reconstruction and a learned codebook. Across three pretraining seeds, we compare band-power and waveform targets with matched backbones, pretraining data (2,388 hours), and training steps, including a 2x2 tokenizer-by-target design. On ISRUC and HMC sleep staging, MBP exceeds raw- and band-waveform reconstruction by 1.6-2.8 balanced-accuracy points with all labels and 4.7-7.3 points with 1% of labels under a strict linear probe; the target effect exceeds the tokenizer effect. Its frozen features reach 0.7916/0.7425 balanced accuracy, versus 0.7636/0.7227 for a matched rich handcrafted spectral baseline, although the gap is about one point with 1% of labels. Full fine-tuning reaches 0.8107/0.7669. The gains do not extend to every task with spectral cues, including motor imagery, depression screening, and vigilance regression. These results support choosing pretraining targets to match the physical quantities and spatial and temporal scales relevant to downstream labels.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
